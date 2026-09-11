@@ -65,6 +65,15 @@ async def _generate_with_retry(client: genai.Client, user_prompt: str, system_pr
                 raise
             await asyncio.sleep(_retry_delay_seconds(exc) + 1)
             attempt += 1
+        except genai_errors.ServerError as exc:
+            # "High demand" 503s are usually gone within seconds — confirmed
+            # by hand (an identical request succeeded on retry moments after
+            # a 503), so it's worth a short retry here instead of surfacing
+            # a raw server error straight to a student on the first hiccup.
+            if attempt >= MAX_RETRIES:
+                raise
+            await asyncio.sleep(DEFAULT_RETRY_SECONDS)
+            attempt += 1
 
 
 async def generate_lesson(topic: str, grade: int, num_questions: int, subject: str = "Mathematics") -> LessonContent:
