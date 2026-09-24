@@ -7,6 +7,9 @@ interface PasswordInputProps {
   placeholder?: string;
   autoFocus?: boolean;
   className?: string;
+  // "current-password" / "new-password" — lets the browser offer to save
+  // and fill the password.
+  autoComplete?: string;
 }
 
 export default function PasswordInput({
@@ -16,6 +19,7 @@ export default function PasswordInput({
   placeholder,
   autoFocus,
   className = "mb-4",
+  autoComplete,
 }: PasswordInputProps) {
   const [visible, setVisible] = useState(false);
 
@@ -28,6 +32,8 @@ export default function PasswordInput({
         onChange={(e) => onChange(e.target.value)}
         placeholder={placeholder}
         autoFocus={autoFocus}
+        autoComplete={autoComplete}
+        name={id}
         className="w-full rounded-lg border border-slate-300 p-2.5 pr-10 text-sm text-slate-800 focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-100"
       />
       <button

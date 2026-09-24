@@ -14,7 +14,7 @@ MODEL_ID = "gemini-3.1-flash-lite"
 MAX_RETRIES = 3
 DEFAULT_RETRY_SECONDS = 5.0
 MAX_PARSE_RETRIES = 2
-MAX_OUTPUT_TOKENS = 20000
+MAX_OUTPUT_TOKENS = 32000
 
 
 class GeminiNotConfigured(Exception):
@@ -56,7 +56,8 @@ async def _generate_with_retry(client: genai.Client, user_prompt: str, system_pr
                 config=types.GenerateContentConfig(
                     system_instruction=system_prompt,
                     response_mime_type="application/json",
-                    temperature=0.4,
+                    # Higher than a typical JSON task so repeat visits get fresh questions.
+                    temperature=0.8,
                     max_output_tokens=MAX_OUTPUT_TOKENS,
                 ),
             )
@@ -76,9 +77,15 @@ async def _generate_with_retry(client: genai.Client, user_prompt: str, system_pr
             attempt += 1
 
 
-async def generate_lesson(topic: str, grade: int, num_questions: int, subject: str = "Mathematics") -> LessonContent:
+async def generate_lesson(
+    topic: str,
+    grade: int,
+    num_questions: int,
+    subject: str = "Mathematics",
+    avoid_questions: list[str] | None = None,
+) -> LessonContent:
     client = _get_client()
-    user_prompt = build_user_prompt(topic, grade, num_questions)
+    user_prompt = build_user_prompt(topic, grade, num_questions, avoid_questions)
     system_prompt = get_system_prompt(subject)
 
     last_error = None
@@ -130,12 +137,20 @@ async def generate_lesson(topic: str, grade: int, num_questions: int, subject: s
                     explanation=str(mcq["explanation"]).strip(),
                     trick=str(mcq["trick"]).strip(),
                     visual=_parse_visual(mcq["visual"]),
+                    question_explanation=str(mcq.get("question_explanation") or "").strip(),
+                    solution_steps=_parse_steps(mcq.get("solution_steps")),
                 )
                 for mcq in data["mcqs"]
             ],
         )
 
     raise last_error
+
+
+def _parse_steps(raw) -> list[str]:
+    if not isinstance(raw, list):
+        return []
+    return [str(step).strip() for step in raw if str(step).strip()]
 
 
 def _parse_visual(raw: dict) -> VisualAid:

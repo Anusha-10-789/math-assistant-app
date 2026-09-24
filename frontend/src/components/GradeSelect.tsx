@@ -78,9 +78,9 @@ export default function GradeSelect({
         type="button"
         onClick={onGenerate}
         disabled={loading}
-        className="w-full rounded-lg bg-indigo-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-indigo-700 disabled:cursor-not-allowed disabled:opacity-50 sm:w-auto"
+        className="w-full rounded-lg bg-emerald-600 px-8 py-3 text-base font-bold text-white shadow-md transition hover:bg-emerald-700 disabled:cursor-not-allowed disabled:opacity-50 sm:w-auto"
       >
-        {loading ? "Generating..." : "Generate"}
+        {loading ? "Getting ready..." : "▶ Start"}
       </button>
     </div>
   );

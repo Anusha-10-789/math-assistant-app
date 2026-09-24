@@ -315,6 +315,12 @@ def _lock_for(topic: str) -> threading.Lock:
         return _build_locks[topic]
 
 
+def get_topic_intro_slides(topic: str) -> list[dict]:
+    data = TOPIC_INTRO_CONTENT[topic]
+    slides = [(data["title"], data["intro"])] + list(data["types"])
+    return [{"title": title, "content": content} for title, content in slides]
+
+
 def get_topic_intro_video(topic: str) -> bytes:
     """Returns the cached intro video for a topic, building and caching it
     on first request. Raises KeyError if the topic has no fixed intro text.

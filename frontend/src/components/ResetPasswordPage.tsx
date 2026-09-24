@@ -2,6 +2,7 @@ import { useState } from "react";
 import { resetPasswordWithToken } from "../api";
 import { PASSWORD_REQUIREMENTS_TEXT, validatePasswordStrength } from "../passwordPolicy";
 import PasswordInput from "./PasswordInput";
+import SchoolBackdrop from "./SchoolBackdrop";
 
 interface ResetPasswordPageProps {
   token: string;
@@ -42,8 +43,9 @@ export default function ResetPasswordPage({ token, onDone }: ResetPasswordPagePr
   }
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-slate-50 px-4">
-      <div className="w-full max-w-sm rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+    <div className="relative flex min-h-screen items-center justify-center px-4">
+      <SchoolBackdrop />
+      <div className="relative z-10 w-full max-w-sm rounded-2xl border-4 border-amber-300 bg-white/95 p-6 shadow-xl backdrop-blur">
         <h1 className="mb-4 text-lg font-semibold text-slate-900">Set a new password</h1>
 
         {done ? (

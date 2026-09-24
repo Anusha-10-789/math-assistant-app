@@ -26,6 +26,37 @@ async def send_test_result_sms(to_phone: str, topic: str, grade: int, score: int
     Auth + form POST) rather than the full twilio SDK — one less dependency
     for a single API call.
     """
+    percent = round((score / total) * 100) if total else 0
+    body = f"Math Assistant: {topic} (Grade {grade}) test result - {score}/{total} ({percent}%)."
+    await _send_sms(to_phone, body)
+
+
+async def send_password_reset_sms(to_phone: str, username: str, reset_link: str) -> None:
+    body = (
+        f"Math Assistant: hi {username}, reset your password here (valid for 1 hour): {reset_link} "
+        "If you didn't ask for this, ignore this message."
+    )
+    await _send_sms(to_phone, body)
+
+
+
+async def send_otp_sms(to_phone: str, code: str, action: str) -> None:
+    body = f"Math Assistant: your code to {action} is {code}. It expires in 10 minutes. Don't share it."
+    await _send_sms(to_phone, body)
+
+
+def _to_e164(phone: str) -> str:
+    """Twilio needs E.164 (+<country><number>). Numbers saved without a "+"
+    get SMS_DEFAULT_COUNTRY_CODE (India, +91, by default) prepended."""
+    digits = "".join(ch for ch in phone if ch.isdigit())
+    if phone.strip().startswith("+"):
+        return f"+{digits}"
+    country_code = os.environ.get("SMS_DEFAULT_COUNTRY_CODE", "+91").strip().lstrip("+") or "91"
+    return f"+{country_code}{digits.lstrip('0')}"
+
+
+async def _send_sms(to_phone: str, body: str) -> None:
+    to_phone = _to_e164(to_phone)
     if not is_configured():
         raise SmsNotConfigured(
             "SMS sending is not configured on this server "
@@ -35,9 +66,6 @@ async def send_test_result_sms(to_phone: str, topic: str, grade: int, score: int
     account_sid = os.environ["TWILIO_ACCOUNT_SID"].strip()
     auth_token = os.environ["TWILIO_AUTH_TOKEN"].strip()
     from_number = os.environ["TWILIO_FROM_NUMBER"].strip()
-
-    percent = round((score / total) * 100) if total else 0
-    body = f"Math Assistant: {topic} (Grade {grade}) test result - {score}/{total} ({percent}%)."
 
     url = TWILIO_MESSAGES_URL_TEMPLATE.format(account_sid=account_sid)
     try:

@@ -18,4 +18,12 @@ def describe_visual(visual: VisualAid) -> str:
         unshaded = "░" * max(visual.param1 - visual.param2, 0)
         return f"Picture: {visual.param2} of {visual.param1} parts shaded -> {shaded}{unshaded}"
 
+    if visual.type == "column":
+        op = {2: "-", 3: "x"}.get(visual.param3, "+")
+        return f"Picture: written sum {visual.param1} {op} {visual.param2}, worked column by column"
+
+    if visual.type == "rectangle":
+        unit = f" {visual.label}" if visual.label else ""
+        return f"Picture: rectangle {visual.param1}{unit} by {visual.param2}{unit}"
+
     return ""

@@ -16,6 +16,11 @@ services:
         sync: false
       - key: ADMIN_PASSWORD
         sync: false
+      # Postgres URL (e.g. a free Neon or Supabase database) where accounts
+      # are stored. Needed on the free plan, whose disk is wiped on every
+      # restart/redeploy — without it, accounts made online disappear.
+      - key: DATABASE_URL
+        sync: false
       # CORS_ORIGINS and FRONTEND_URL both need the frontend's actual
       # https://...onrender.com URL, which only exists after the frontend
       # service below is first created — fill these in afterwards, then

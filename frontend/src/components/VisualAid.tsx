@@ -135,6 +135,63 @@ function PieVisual({ param1, param2 }: { param1: number; param2: number }) {
   );
 }
 
+// A written column sum: param3 picks the operation (1 +, 2 −, 3 ×).
+function ColumnVisual({ param1, param2, param3 }: { param1: number; param2: number; param3: number }) {
+  const op = param3 === 2 ? "−" : param3 === 3 ? "×" : "+";
+  const result = param3 === 2 ? param1 - param2 : param3 === 3 ? param1 * param2 : param1 + param2;
+  const format = (n: number) => (n >= 1000 ? n.toLocaleString("en-IN") : String(n));
+  const rows = [format(param1), format(param2), format(result)];
+  const width = Math.max(...rows.map((r) => r.length)) * 16 + 40;
+  const right = width - 10;
+
+  return (
+    <svg viewBox={`0 0 ${width} 112`} className="mx-auto h-28 w-auto max-w-full" role="img" aria-label={`${rows[0]} ${op} ${rows[1]} = ${rows[2]}`}>
+      <g fontFamily="ui-monospace, monospace" fontSize={24} fontWeight={700} textAnchor="end">
+        <text x={right} y={28} fill="#1e293b">{rows[0]}</text>
+        <text x={14} y={60} fill={INDIGO} textAnchor="start">{op}</text>
+        <text x={right} y={60} fill="#1e293b">{rows[1]}</text>
+        <line x1={8} y1={72} x2={right + 4} y2={72} stroke="#1e293b" strokeWidth={2.5} />
+        <text x={right} y={102} fill="#059669">{rows[2]}</text>
+      </g>
+    </svg>
+  );
+}
+
+// A rectangle with its length and breadth marked; param3 = 1 draws the unit-square grid.
+function RectangleVisual({ param1, param2, param3, unit }: { param1: number; param2: number; param3: number; unit: string }) {
+  const long = Math.max(param1, 1);
+  const short = Math.max(param2, 1);
+  const w = 200;
+  const h = Math.max(50, Math.min(150, (short / long) * w));
+  const x = 40;
+  const y = 22;
+  const cols = param3 === 1 ? Math.min(param1, 12) : 0;
+  const rows = param3 === 1 ? Math.min(param2, 12) : 0;
+  const suffix = unit ? ` ${unit}` : "";
+
+  return (
+    <svg viewBox={`0 0 ${w + 60} ${h + 44}`} className="mx-auto h-36 w-full max-w-xs" role="img" aria-label={`rectangle ${param1} by ${param2}`}>
+      <rect x={x} y={y} width={w} height={h} fill="#fef3c7" stroke={AMBER} strokeWidth={2.5} rx={3} />
+      {Array.from({ length: Math.max(cols - 1, 0) }).map((_, i) => (
+        <line key={`c${i}`} x1={x + ((i + 1) * w) / cols} y1={y} x2={x + ((i + 1) * w) / cols} y2={y + h} stroke={AMBER} strokeWidth={1} />
+      ))}
+      {Array.from({ length: Math.max(rows - 1, 0) }).map((_, i) => (
+        <line key={`r${i}`} x1={x} y1={y + ((i + 1) * h) / rows} x2={x + w} y2={y + ((i + 1) * h) / rows} stroke={AMBER} strokeWidth={1} />
+      ))}
+      {param3 !== 1 && (
+        <>
+          <text x={x + w / 2} y={14} fontSize={13} fontWeight={700} textAnchor="middle" fill="#334155">
+            {param1}{suffix}
+          </text>
+          <text x={x - 6} y={y + h / 2 + 4} fontSize={13} fontWeight={700} textAnchor="end" fill="#334155">
+            {param2}{suffix}
+          </text>
+        </>
+      )}
+    </svg>
+  );
+}
+
 export default function VisualAid({ visual }: VisualAidProps) {
   if (!visual || visual.type === "none") return null;
 
@@ -145,6 +202,10 @@ export default function VisualAid({ visual }: VisualAidProps) {
     content = <NumberLineVisual param1={visual.param1} param2={visual.param2} />;
   } else if (visual.type === "pie") {
     content = <PieVisual param1={visual.param1} param2={visual.param2} />;
+  } else if (visual.type === "column") {
+    content = <ColumnVisual param1={visual.param1} param2={visual.param2} param3={visual.param3} />;
+  } else if (visual.type === "rectangle") {
+    content = <RectangleVisual param1={visual.param1} param2={visual.param2} param3={visual.param3} unit={visual.label} />;
   }
 
   if (!content) return null;
@@ -152,7 +213,7 @@ export default function VisualAid({ visual }: VisualAidProps) {
   return (
     <div className="my-2 flex flex-col items-center gap-1">
       {content}
-      {visual.label && <span className="text-xs font-medium text-slate-500">{visual.label}</span>}
+      {visual.label && visual.type !== "rectangle" && <span className="text-xs font-medium text-slate-500">{visual.label}</span>}
     </div>
   );
 }

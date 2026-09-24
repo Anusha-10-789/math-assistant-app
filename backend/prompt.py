@@ -67,6 +67,11 @@ Explanation rules, for every MCQ:
 - Do not use bullet points, bold text, or any markdown formatting.
 - Only explain why the correct answer is right. Do not discuss why the other options are wrong.
 
+Explanation video fields, for every MCQ (these are read aloud to the student, so write them the way a friendly teacher would say them):
+- "question_explanation": 1 to 2 short sentences, in simple words, saying what the question is asking and what information it gives — without revealing the answer.
+- "solution_steps": a list of 2 to 4 short sentences, one per step, showing how to get from the question to the answer; the last step must state the final answer.
+- Plain text only, no markdown, no numbering inside the strings.
+
 Respond with ONLY a JSON object, no other text, using exactly this shape:
 {
   "concept_explanation": "...",
@@ -88,6 +93,8 @@ Respond with ONLY a JSON object, no other text, using exactly this shape:
       "correct_answer": "A",
       "explanation": "...",
       "trick": "...",
+      "question_explanation": "...",
+      "solution_steps": ["Step one...", "Step two...", "So the answer is ..."],
       "visual": {"type": "number_line", "param1": 5, "param2": 8, "param3": 0, "label": "5 plus 3"}
     }
   ]
@@ -152,6 +159,11 @@ Explanation rules, for every MCQ:
 - Do not use bullet points, bold text, or any markdown formatting.
 - Only explain why the correct answer is right. Do not discuss why the other options are wrong.
 
+Explanation video fields, for every MCQ (these are read aloud to the student, so write them the way a friendly teacher would say them):
+- "question_explanation": 1 to 2 short sentences, in simple words, saying what the question is asking and what information it gives — without revealing the answer.
+- "solution_steps": a list of 2 to 4 short sentences, one per step, showing how to get from the question to the answer; the last step must state the final answer.
+- Plain text only, no markdown, no numbering inside the strings.
+
 Respond with ONLY a JSON object, no other text, using exactly this shape:
 {
   "concept_explanation": "...",
@@ -173,6 +185,8 @@ Respond with ONLY a JSON object, no other text, using exactly this shape:
       "correct_answer": "A",
       "explanation": "...",
       "trick": "...",
+      "question_explanation": "...",
+      "solution_steps": ["Step one...", "Step two...", "So the answer is ..."],
       "visual": {"type": "none", "param1": 0, "param2": 0, "param3": 0, "label": ""}
     }
   ]
@@ -188,12 +202,25 @@ def get_system_prompt(subject: str) -> str:
     return MATH_SYSTEM_PROMPT
 
 
-def build_user_prompt(topic: str, grade: int, num_questions: int) -> str:
-    return (
+def build_user_prompt(topic: str, grade: int, num_questions: int, avoid_questions: list[str] | None = None) -> str:
+    prompt = (
         f"Grade: {grade}\n"
         f"Topic: {topic}\n"
-        f"Generate exactly {num_questions} multiple-choice questions for this topic and grade."
+        f"Generate exactly {num_questions} multiple-choice questions for this topic and grade.\n"
+        f"Every question must be pitched at exactly Grade {grade} level. Even the easiest questions "
+        f"must be Grade {grade} questions, never ones meant for a lower grade, and never reach into a "
+        f"higher grade. Do not mix questions from different grades.\n"
+        "Every question must be different from every other one: never ask the same fact twice, "
+        "never reuse the same numbers, and never reword an earlier question."
     )
+    avoid = [" ".join(q.split())[:300] for q in (avoid_questions or []) if q.strip()][-60:]
+    if avoid:
+        prompt += (
+            "\n\nThe student has already answered these questions in earlier tests. Do NOT repeat "
+            "any of them or ask a close variation (same fact or same numbers):\n"
+            + "\n".join(f"- {q}" for q in avoid)
+        )
+    return prompt
 
 
 class LessonValidationError(Exception):

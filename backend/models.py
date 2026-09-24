@@ -8,22 +8,59 @@ class GenerateRequest(BaseModel):
     grade: int = Field(ge=1, le=5)
     num_questions: int = Field(default=20, ge=1, le=50)
     subject: str = "Mathematics"
+    # Questions from the student's earlier tests on this topic and grade,
+    # which the new test must not repeat.
+    avoid_questions: List[str] = Field(default_factory=list)
 
 
 class LoginRequest(BaseModel):
-    username: str  # username or email
+    username: str  # email, mobile number or username
     password: str
 
 
 class SignupRequest(BaseModel):
-    username: str
     email: str
+    phone: str
     password: str
+    security_question: str = ""
+    security_answer: str = ""
+    username: str = ""  # optional — derived from the email when blank
+    # One-time code sent to the email ("email") or mobile ("sms") being registered.
+    otp_channel: str = ""
+    otp_code: str = ""
+
+
+class OtpSendRequest(BaseModel):
+    purpose: str  # "signup", "login" or "reset"
+    destination: str  # email or mobile number (signup/login/reset), or username (login/reset)
+    channel: str = ""  # "email"/"sms" for reset, to pick where the code goes
+
+
+class OtpLoginRequest(BaseModel):
+    identifier: str
+    code: str
 
 
 class ForgotPasswordRequest(BaseModel):
-    username: str
-    email: str
+    identifier: str  # email, phone number or username
+
+
+class SecurityAnswerResetRequest(BaseModel):
+    identifier: str
+    answer: str
+    new_password: str
+
+
+class CodeResetRequest(BaseModel):
+    identifier: str
+    channel: str  # "email" or "sms" — where the code was sent
+    code: str
+    new_password: str
+
+
+class SecurityQuestionRequest(BaseModel):
+    question: str
+    answer: str
 
 
 class ResetPasswordRequest(BaseModel):
@@ -68,6 +105,11 @@ class MCQItem(BaseModel):
     explanation: str
     trick: str
     visual: VisualAid
+    # Used by the frontend's explanation video. Optional so lessons saved
+    # before these fields existed (and any response that omits them) still
+    # load — the video falls back to the plain explanation then.
+    question_explanation: str = ""
+    solution_steps: List[str] = []
 
 
 class LessonContent(BaseModel):

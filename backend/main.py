@@ -15,11 +15,17 @@ from google.oauth2 import id_token as google_id_token
 
 import email_service
 import gemini_service
+import otp_service
 from docx_export import build_lesson_docx
 from gemini_service import GeminiNotConfigured, GeminiResponseError
 from models import (
+    CodeResetRequest,
+    OtpLoginRequest,
+    OtpSendRequest,
     DownloadRequest,
     ForgotPasswordRequest,
+    SecurityAnswerResetRequest,
+    SecurityQuestionRequest,
     GenerateRequest,
     GenerateResponse,
     GoogleAuthRequest,
@@ -35,15 +41,27 @@ from models import (
 from password_policy import validate_password_strength
 from pdf_export import build_lesson_pdf
 from report_export import build_report_docx, build_report_pdf
-from security import check_login, rate_limit, verify_login, video_rate_limit
+from security import check_login, current_login, rate_limit, verify_login, video_rate_limit
 import sms_service
-from topic_intro_service import get_topic_intro_video, is_supported_topic
+from topic_intro_service import (
+    TOPIC_INTRO_CONTENT,
+    get_topic_intro_slides,
+    get_topic_intro_video,
+    is_supported_topic,
+)
 from tts_video import TTSUnavailableError, build_lecture_video, build_question_video
 from user_store import (
     UserExistsError,
     create_password_reset_token,
+    create_session_token,
     create_user,
+    find_user,
+    get_recovery_options,
+    normalize_phone,
+    reset_password_with_security_answer,
     reset_password_with_token,
+    set_password,
+    set_security_question,
     upsert_google_user,
 )
 import youtube_service
@@ -112,49 +130,215 @@ async def auth_google(request: GoogleAuthRequest) -> dict:
     return {"username": username, "password": password}
 
 
+OTP_WRONG_DETAIL = "That code is wrong or has expired. Check it, or ask for a new code."
+NO_ACCOUNT_DETAIL = "No account found with that email address or mobile number."
+ALREADY_REGISTERED_DETAIL = "That email or mobile number is already registered. Please log in instead."
+
+
+def _is_email(value: str) -> bool:
+    value = value.strip()
+    return "@" in value and "." in value.split("@")[-1]
+
+
+def _is_phone(value: str) -> bool:
+    return "@" not in value and 10 <= len(normalize_phone(value).lstrip("+")) <= 15
+
+
+def _otp_address(purpose: str, destination: str, channel: str = "") -> str:
+    """Works out where a code goes. Signing up: the new email/mobile itself
+    (which must not be registered yet). Logging in / resetting: the matching
+    account's email or mobile - the one typed in, or the chosen `channel`."""
+    destination = destination.strip()
+    if purpose == "signup":
+        if not (_is_email(destination) or _is_phone(destination)):
+            raise HTTPException(status_code=400, detail="Please enter a valid email address or mobile number.")
+        if find_user(destination):
+            raise HTTPException(status_code=400, detail=ALREADY_REGISTERED_DETAIL)
+        return destination if _is_email(destination) else normalize_phone(destination)
+
+    user = find_user(destination)
+    if not user:
+        raise HTTPException(status_code=400, detail=NO_ACCOUNT_DETAIL)
+    if not channel:
+        channel = "sms" if _is_phone(destination) else "email"
+    address = user.get("phone", "") if channel == "sms" else user.get("email", "")
+    if not address:
+        raise HTTPException(status_code=400, detail="This account has no mobile number saved. Use email instead.")
+    return address
+
+
+@app.get("/otp/config")
+async def otp_config() -> dict:
+    return {"email": otp_service.email_available(), "sms": otp_service.sms_available()}
+
+
+@app.post("/otp/send", dependencies=[Depends(rate_limit)])
+async def otp_send(request: OtpSendRequest) -> dict:
+    if request.purpose not in otp_service.PURPOSE_TEXT:
+        raise HTTPException(status_code=400, detail="Unknown code purpose.")
+    address = _otp_address(request.purpose, request.destination, request.channel)
+    channel = otp_service.channel_for(address)
+    if not (otp_service.email_available() if channel == "email" else otp_service.sms_available()):
+        raise HTTPException(
+            status_code=503,
+            detail="Codes by email are not set up on this server."
+            if channel == "email"
+            else "Codes by SMS are not set up on this server yet. Please use your email instead.",
+        )
+    try:
+        code = otp_service.issue(request.purpose, address)
+        await otp_service.deliver(request.purpose, address, code)
+    except otp_service.OtpCooldown as exc:
+        raise HTTPException(status_code=429, detail=str(exc))
+    except otp_service.OtpNotAvailable as exc:
+        raise HTTPException(status_code=503, detail=str(exc))
+    except (email_service.EmailSendError, sms_service.SmsSendError) as exc:
+        raise HTTPException(status_code=502, detail=str(exc))
+    return {"success": True, "channel": channel, "sent_to": otp_service.mask(address)}
+
+
+@app.post("/login/otp", dependencies=[Depends(rate_limit)])
+async def login_with_otp(request: OtpLoginRequest) -> dict:
+    address = _otp_address("login", request.identifier)
+    if not otp_service.verify("login", address, request.code):
+        raise HTTPException(status_code=401, detail=OTP_WRONG_DETAIL)
+    token = create_session_token(request.identifier)
+    if not token:
+        raise HTTPException(status_code=400, detail=NO_ACCOUNT_DETAIL)
+    # The token stands in for the password on every later request.
+    return {"username": request.identifier.strip(), "password": token}
+
+
+def _validate_security_question(question: str, answer: str) -> None:
+    if not question.strip() or len(question.strip()) > 200:
+        raise HTTPException(status_code=400, detail="Please choose a security question.")
+    if len(answer.strip()) < 2:
+        raise HTTPException(status_code=400, detail="Please enter an answer to your security question.")
+
+
 @app.post("/signup", dependencies=[Depends(rate_limit)])
 async def signup(request: SignupRequest) -> dict:
-    username = request.username.strip()
     email = request.email.strip()
+    phone = normalize_phone(request.phone)
     password = request.password
 
-    if len(username) < 3:
-        raise HTTPException(status_code=400, detail="Username must be at least 3 characters.")
-    if "@" not in email or "." not in email.split("@")[-1]:
+    if not _is_email(email):
         raise HTTPException(status_code=400, detail="Please enter a valid email address.")
+    if not _is_phone(phone):
+        raise HTTPException(status_code=400, detail="Please enter a valid mobile number (10-15 digits).")
     password_error = validate_password_strength(password)
     if password_error:
         raise HTTPException(status_code=400, detail=password_error)
+    _validate_security_question(request.security_question, request.security_answer)
+    if find_user(email) or find_user(phone):
+        raise HTTPException(status_code=400, detail=ALREADY_REGISTERED_DETAIL)
+
+    # When the server can send codes, the new email or mobile must be proven
+    # with one before the account is created.
+    if otp_service.any_available():
+        verified_address = phone if request.otp_channel == "sms" else email
+        if not request.otp_code or not otp_service.verify("signup", verified_address, request.otp_code):
+            raise HTTPException(status_code=400, detail=OTP_WRONG_DETAIL)
 
     try:
-        create_user(username, email, password)
+        username = create_user(
+            email,
+            phone,
+            password,
+            request.security_question,
+            request.security_answer,
+            request.username,
+        )
     except UserExistsError as exc:
         raise HTTPException(status_code=400, detail=str(exc))
 
+    return {"success": True, "username": username}
+
+
+@app.post("/forgot-password/options", dependencies=[Depends(rate_limit)])
+async def forgot_password_options(request: ForgotPasswordRequest) -> dict:
+    options = get_recovery_options(request.identifier)
+    if not options:
+        raise HTTPException(status_code=400, detail=NO_ACCOUNT_DETAIL)
+    return {
+        "security_question": options["security_question"],
+        "email_available": bool(options["email"]) and otp_service.email_available(),
+        "masked_email": otp_service.mask(options["email"]) if options["email"] else "",
+        "sms_available": bool(options["phone"]) and otp_service.sms_available(),
+        "masked_phone": otp_service.mask(options["phone"]) if options["phone"] else "",
+    }
+
+
+@app.post("/forgot-password/security-answer", dependencies=[Depends(rate_limit)])
+async def forgot_password_security_answer(request: SecurityAnswerResetRequest) -> dict:
+    password_error = validate_password_strength(request.new_password)
+    if password_error:
+        raise HTTPException(status_code=400, detail=password_error)
+    if not reset_password_with_security_answer(request.identifier, request.answer, request.new_password):
+        raise HTTPException(status_code=400, detail="That answer doesn't match. Please try again.")
+    return {"success": True}
+
+
+@app.post("/forgot-password/verify-code", dependencies=[Depends(rate_limit)])
+async def forgot_password_verify_code(request: CodeResetRequest) -> dict:
+    password_error = validate_password_strength(request.new_password)
+    if password_error:
+        raise HTTPException(status_code=400, detail=password_error)
+    address = _otp_address("reset", request.identifier, request.channel)
+    if not otp_service.verify("reset", address, request.code):
+        raise HTTPException(status_code=400, detail=OTP_WRONG_DETAIL)
+    set_password(request.identifier, request.new_password)
+    return {"success": True}
+
+
+@app.get("/account/security-question")
+async def get_own_security_question(identifier: str = Depends(current_login)) -> dict:
+    user = find_user(identifier)
+    return {"security_question": (user or {}).get("security_question", ""), "is_account": bool(user)}
+
+
+@app.post("/account/security-question", dependencies=[Depends(rate_limit)])
+async def set_own_security_question(
+    request: SecurityQuestionRequest, identifier: str = Depends(current_login)
+) -> dict:
+    _validate_security_question(request.question, request.answer)
+    if not set_security_question(identifier, request.question, request.answer):
+        raise HTTPException(
+            status_code=400,
+            detail="The built-in admin login has no account to save a security question on.",
+        )
     return {"success": True}
 
 
 @app.post("/forgot-password", dependencies=[Depends(rate_limit)])
 async def forgot_password(request: ForgotPasswordRequest) -> dict:
-    if not email_service.is_configured():
-        raise HTTPException(status_code=503, detail="Password reset email is not configured on this server.")
-
-    token = create_password_reset_token(request.username, request.email)
-    if not token:
+    result = create_password_reset_token(request.identifier)
+    if not result:
         raise HTTPException(
             status_code=400,
-            detail="No account found with that username and email combination.",
+            detail="No account found with that email address.",
         )
+    token, user, channel = result
 
     reset_link = f"{FRONTEND_URL}?reset_token={token}"
-    try:
-        await asyncio.to_thread(
-            email_service.send_password_reset_email, request.email, request.username, reset_link
-        )
-    except email_service.EmailSendError as exc:
-        raise HTTPException(status_code=502, detail=str(exc))
+    if channel == "sms":
+        try:
+            await sms_service.send_password_reset_sms(user["phone"], user["username"], reset_link)
+        except sms_service.SmsNotConfigured:
+            raise HTTPException(status_code=503, detail="Password reset by SMS is not configured on this server.")
+        except sms_service.SmsSendError as exc:
+            raise HTTPException(status_code=502, detail=str(exc))
+    else:
+        if not email_service.is_configured():
+            raise HTTPException(status_code=503, detail="Password reset email is not configured on this server.")
+        try:
+            await asyncio.to_thread(
+                email_service.send_password_reset_email, user["email"], user["username"], reset_link
+            )
+        except email_service.EmailSendError as exc:
+            raise HTTPException(status_code=502, detail=str(exc))
 
-    return {"success": True}
+    return {"success": True, "channel": channel}
 
 
 @app.post("/reset-password", dependencies=[Depends(rate_limit)])
@@ -180,7 +364,7 @@ async def generate(request: GenerateRequest) -> GenerateResponse:
 
     try:
         lesson = await gemini_service.generate_lesson(
-            topic, request.grade, request.num_questions, request.subject
+            topic, request.grade, request.num_questions, request.subject, request.avoid_questions
         )
     except GeminiNotConfigured as exc:
         raise HTTPException(status_code=400, detail=str(exc))
@@ -316,6 +500,22 @@ async def question_video(request: QuestionVideoRequest) -> Response:
         media_type="video/mp4",
         headers={"Content-Disposition": f"inline; filename={filename}"},
     )
+
+
+@app.get("/topic-intro-slides/all", dependencies=[Depends(verify_login)])
+async def all_topic_intro_slides() -> dict:
+    # Fetched once right after login, so every topic's intro can start the
+    # instant it's opened, with no request in between.
+    return {"topics": {topic: get_topic_intro_slides(topic) for topic in TOPIC_INTRO_CONTENT}}
+
+
+@app.post("/topic-intro-slides", dependencies=[Depends(verify_login)])
+async def topic_intro_slides(request: TopicIntroRequest) -> dict:
+    # Just the slide text — the frontend narrates it in the browser, so the
+    # intro starts instantly instead of waiting for an mp4 to be encoded.
+    if not is_supported_topic(request.topic):
+        raise HTTPException(status_code=404, detail="No introduction is available for this topic.")
+    return {"slides": get_topic_intro_slides(request.topic)}
 
 
 @app.post("/topic-intro-video", dependencies=[Depends(verify_login), Depends(video_rate_limit)])

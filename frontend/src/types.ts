@@ -24,6 +24,9 @@ export interface MCQItem {
   explanation: string;
   trick: string;
   visual: VisualAidData;
+  // Explanation video content — missing on tests saved before it existed.
+  question_explanation?: string;
+  solution_steps?: string[];
 }
 
 export interface LessonContent {

@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import AiBackdrop from "./components/AiBackdrop";
 import AttendancePage from "./components/AttendancePage";
 import DownloadButtons from "./components/DownloadButtons";
@@ -21,18 +21,19 @@ import {
   downloadReportDocx,
   downloadReportPdf,
   fetchLectureVideo,
-  fetchQuestionVideo,
-  fetchTopicIntroVideo,
+  fetchTopicIntroSlides,
+  prefetchAllIntroSlides,
   fetchYouTubeExplanation,
   generateLesson,
   UnauthorizedError,
   type YouTubeExplanation,
 } from "./api";
 import { clearStoredCredentials, getStoredCredentials } from "./auth";
+import { buildLocalMathLesson, isLocalMathTopic, questionKey } from "./mathQuestionBank";
 import { recordCompletedLesson } from "./profileStorage";
 import { clearTestHistory, getTestHistory, getTopicAttendance, recordCompletedTest } from "./testHistory";
 import { hasTopicIntro } from "./topicIntros";
-import type { LessonContent, MCQItem } from "./types";
+import type { LessonContent } from "./types";
 
 type Stage = "subject" | "topic" | "topic-intro" | "grade" | "lecture" | "test" | "summary";
 type View = "app" | "profile" | "history" | "attendance";
@@ -66,6 +67,50 @@ export default function App() {
   const [attendance, setAttendance] = useState(() => getTopicAttendance());
 
   const lessonStartRef = useRef<number | null>(null);
+  // Science / typed-in topics come from Gemini, which takes a while — so the
+  // request starts while the student is still on the grade screen, and Start
+  // usually finds it already done.
+  const prefetchRef = useRef<{ key: string; promise: Promise<LessonContent> } | null>(null);
+
+  function pastQuestions(topicArg: string, gradeArg: number) {
+    return testHistory
+      .filter((test) => test.topic === topicArg && test.grade === gradeArg)
+      .flatMap((test) => test.mcqs);
+  }
+
+  function requestAiLesson(topicArg: string, gradeArg: number, numQuestionsArg: number) {
+    const key = `${subject}|${topicArg}|${gradeArg}|${numQuestionsArg}`;
+    if (prefetchRef.current?.key === key) return prefetchRef.current.promise;
+    const avoid = pastQuestions(topicArg, gradeArg)
+      .map((mcq) => mcq.question)
+      .slice(-60);
+    const promise = generateLesson(topicArg, gradeArg, numQuestionsArg, subject, avoid);
+    promise.catch(() => {
+      if (prefetchRef.current?.promise === promise) prefetchRef.current = null;
+    });
+    prefetchRef.current = { key, promise };
+    return promise;
+  }
+
+  useEffect(() => {
+    if (!needsLogin) prefetchAllIntroSlides();
+  }, [needsLogin]);
+
+  useEffect(() => {
+    const trimmed = topic.trim();
+    if (stage !== "grade" || needsLogin || !trimmed || isLocalMathTopic(trimmed)) return;
+    // Debounced so flicking through grades doesn't fire a request for each.
+    const timer = setTimeout(() => requestAiLesson(trimmed, grade, numQuestions), 700);
+    return () => clearTimeout(timer);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [stage, topic, grade, numQuestions, subject, needsLogin]);
+
+  function startLesson(result: LessonContent) {
+    setLesson(result);
+    setLessonKey((k) => k + 1);
+    lessonStartRef.current = Date.now();
+    setStage("test");
+  }
 
   function handleSessionExpired(message: string) {
     clearStoredCredentials();
@@ -81,14 +126,20 @@ export default function App() {
       return;
     }
 
-    setLoading(true);
     setQuizResult(null);
+    const trimmed = topicArg.trim();
+
+    // Maths modules are built instantly in the browser — no waiting at all.
+    if (isLocalMathTopic(trimmed)) {
+      const avoid = pastQuestions(trimmed, gradeArg).map((mcq) => questionKey(mcq.topic, mcq.question));
+      startLesson(buildLocalMathLesson(trimmed, gradeArg, numQuestionsArg, avoid));
+      return;
+    }
+
+    setLoading(true);
     try {
-      const result = await generateLesson(topicArg.trim(), gradeArg, numQuestionsArg, subject);
-      setLesson(result);
-      setLessonKey((k) => k + 1);
-      lessonStartRef.current = Date.now();
-      setStage("test");
+      startLesson(await requestAiLesson(trimmed, gradeArg, numQuestionsArg));
+      prefetchRef.current = null;
     } catch (err) {
       if (err instanceof UnauthorizedError) {
         handleSessionExpired("Your session expired. Please log in again.");
@@ -223,21 +274,9 @@ export default function App() {
     }
   }
 
-  async function handleFetchTopicIntroVideo(introTopic: string): Promise<Blob> {
+  async function handleFetchTopicIntroSlides(introTopic: string) {
     try {
-      return await fetchTopicIntroVideo(introTopic);
-    } catch (err) {
-      if (err instanceof UnauthorizedError) {
-        handleSessionExpired("Your session expired. Please log in again.");
-      }
-      throw err;
-    }
-  }
-
-  async function handleFetchQuestionVideo(mcq: MCQItem): Promise<Blob> {
-    if (!lesson) throw new Error("No lesson loaded.");
-    try {
-      return await fetchQuestionVideo(mcq, lesson.grade);
+      return await fetchTopicIntroSlides(introTopic);
     } catch (err) {
       if (err instanceof UnauthorizedError) {
         handleSessionExpired("Your session expired. Please log in again.");
@@ -377,7 +416,7 @@ export default function App() {
                 topic={topic}
                 onContinue={() => setStage("grade")}
                 onBack={() => setStage("topic")}
-                onFetchVideo={handleFetchTopicIntroVideo}
+                onFetchSlides={handleFetchTopicIntroSlides}
               />
             )}
 
@@ -411,7 +450,6 @@ export default function App() {
                 key={lessonKey}
                 mcqs={lesson.mcqs}
                 onFinish={handleFinishTest}
-                onFetchQuestionVideo={handleFetchQuestionVideo}
                 onFetchYouTubeExplanation={handleFetchYouTubeExplanation}
               />
             )}

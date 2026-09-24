@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { getProfileInfo, saveProfileInfo, type ProfileInfo } from "../profileInfo";
 import { formatDuration, getProfileStats, resetProfileStats } from "../profileStorage";
+import SecurityQuestionCard from "./SecurityQuestionCard";
 
 interface ProfilePageProps {
   username: string;
@@ -189,6 +190,8 @@ export default function ProfilePage({ username, onBack, onLogout }: ProfilePageP
           </dl>
         )}
       </div>
+
+      <SecurityQuestionCard />
     </div>
   );
 }

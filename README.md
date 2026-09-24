@@ -22,8 +22,13 @@ downloadable as Word or PDF.
   visuals (grouped dots, a number line, or a fraction pie) generated from the lesson content.
 - **Test:** steps through each question one at a time with the topic name, question number,
   4 options, correct/incorrect highlighting, and — after you answer — the explanation, a
-  one-line trick, a matching visual, and a **🎬 Watch Explanation Video** button that generates
-  a short narrated `.mp4` for that one question on demand (~10-20 seconds).
+  an instant **🎬 explanation video** in the same slide format as the topic introduction:
+  The Question (with options) → Understanding the Question → How to Get the Answer (numbered
+  steps, each highlighted as it's read, with a matching visual) → The Answer → Trick to
+  Remember, all narrated aloud by the browser's clearest English voice (play/pause, jump to
+  any slide, watch again). No waiting — it plays in the browser, nothing is rendered on the
+  server. The per-question `question_explanation` and `solution_steps` it uses come from
+  Gemini alongside the rest of the lesson.
 - **Test summary:** score, percentage, an encouraging message, a review list of every missed
   question with your answer vs. the correct one, and a **downloadable test report** (Word or
   PDF) covering just the score and missed questions.
@@ -34,7 +39,7 @@ downloadable as Word or PDF.
 - **Watch Video Lecture:** turns the 4 lecture slides into a real narrated `.mp4` — Google
   Text-to-Speech reads each slide's content over its rendered visual, plays inline in the app.
 - **Login:** the whole app sits behind a login screen (see Login below), with **Create an
-  account** (username + email + password), **Forgot password?**, and (once configured) a
+  account** (username + email + phone number + password), **Forgot password?**, and (once configured) a
   **Continue with Google** button right on it. Every password field has a show/hide (👁)
   toggle. The profile panel (top-right button) shows the signed-in user, total learning time,
   and lessons completed, tracked locally in the browser (`localStorage`), plus a log-out option.
@@ -70,12 +75,12 @@ There are two ways to get into the app:
    first signup, git-ignored — with passwords hashed (PBKDF2-SHA256, salted, no plaintext ever
    stored). You can log in with either the username or the email address you signed up with.
 
-**Forgot password** (the link on the login screen) resets a self-service account's password by
-matching its username + email, then letting you set a new password immediately. There is no
-email server configured, so **no email is actually sent** — this is a simplified, self-contained
-reset flow appropriate for a personal/local app, not the "email a reset link" flow a public
-product would need. It only works for self-service accounts; the built-in admin login can only
-be changed by editing `backend/.env` directly.
+**Forgot password** (the link on the login screen) asks for a single field — your email address **or** phone number — and sends a single-use,
+1-hour reset link: by email if you entered an email (requires the SMTP settings in
+`backend/.env`), or by SMS to the registered phone if you entered a phone number (requires the
+Twilio settings). See `.env.example`. It only works
+for self-service accounts; the built-in admin login can only be changed by editing
+`backend/.env` directly.
 
 3. **Sign in with Google** — optional, only shown once configured. Create an OAuth 2.0 Client
    ID at [console.cloud.google.com](https://console.cloud.google.com/) (APIs & Services →
@@ -204,8 +209,8 @@ Open the printed URL (typically `http://localhost:5173`).
    then click **Start Test**.
 6. Work through the test question by question — pick an option to see if you're right, then
    read the explanation, trick, and visual, then click **Next** (or **Finish Test** on the last
-   question). Optionally click **🎬 Watch Explanation Video** for a short narrated video of
-   that one question.
+   question). The narrated explanation video plays automatically as soon as you answer —
+   pause it, jump to a scene, or watch it again from the player's controls.
 7. Review your **score and missed questions** on the summary screen, and click **Download
    Report (Word)** or **Download Report (PDF)** to save just the score/review as a file.
 8. Click **Download as Word** or **Download as PDF** during the lecture or test screens to
@@ -246,9 +251,10 @@ already taken.
 
 ### `POST /forgot-password`
 
-Request: `{ "username": "...", "email": "...", "new_password": "..." }`. If the username and
-email match an existing self-service account, updates its password immediately (no email is
-sent — see Login above) and returns `{ "success": true }`; otherwise 400.
+Request: `{ "identifier": "..." }` (email, phone number, or username). If it matches a
+self-service account, sends a reset link — by SMS when matched by phone, otherwise by email —
+and returns `{ "success": true, "channel": "email" | "sms" }`; 400 if no account matches, 503
+if the needed email/SMS service isn't configured.
 
 ### `POST /generate`
 

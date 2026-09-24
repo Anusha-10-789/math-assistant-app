@@ -74,3 +74,42 @@ def send_password_reset_email(to_email: str, username: str, reset_link: str) -> 
             server.sendmail(config["from_email"], [to_email], message.as_string())
     except Exception as exc:
         raise EmailSendError(f"Failed to send the reset email: {exc}") from exc
+
+
+
+def send_otp_email(to_email: str, code: str, action: str) -> None:
+    """Emails a 6-digit one-time code, used to verify a new account, log in,
+    or reset a password (`action` says which, e.g. "log in")."""
+    if not is_configured():
+        raise EmailNotConfigured(
+            "Email sending is not configured on this server (SMTP_HOST/SMTP_USERNAME/SMTP_PASSWORD)."
+        )
+
+    config = _config()
+
+    message = MIMEMultipart("alternative")
+    message["Subject"] = f"Your Math Assistant code: {code}"
+    message["From"] = config["from_email"]
+    message["To"] = to_email
+
+    text_body = (
+        f"Your Math Assistant code to {action} is: {code}\n\n"
+        "It expires in 10 minutes. If you didn't ask for this, you can safely ignore this email."
+    )
+    html_body = f"""
+    <p>Your Math Assistant code to {action} is:</p>
+    <p style="font-size:28px;font-weight:bold;letter-spacing:6px">{code}</p>
+    <p>It expires in 10 minutes. If you didn't ask for this, you can safely ignore this email.</p>
+    """
+
+    message.attach(MIMEText(text_body, "plain"))
+    message.attach(MIMEText(html_body, "html"))
+
+    try:
+        with smtplib.SMTP(config["host"], config["port"], timeout=15) as server:
+            if config["use_tls"]:
+                server.starttls()
+            server.login(config["username"], config["password"])
+            server.sendmail(config["from_email"], [to_email], message.as_string())
+    except Exception as exc:
+        raise EmailSendError(f"Failed to send the email: {exc}") from exc

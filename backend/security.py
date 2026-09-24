@@ -53,6 +53,16 @@ def verify_login(
         raise HTTPException(status_code=401, detail="Invalid or missing login credentials.")
 
 
+def current_login(
+    x_app_username: Optional[str] = Header(default=None),
+    x_app_password: Optional[str] = Header(default=None),
+) -> str:
+    """Same check as verify_login, but hands the route the identifier the
+    student logged in with, for routes that change their own account."""
+    verify_login(x_app_username, x_app_password)
+    return (x_app_username or "").strip()
+
+
 def _enforce_rate_limit(request: Request, bucket: str, max_requests: int) -> None:
     ip = request.client.host if request.client else "unknown"
     key = f"{bucket}:{ip}"
