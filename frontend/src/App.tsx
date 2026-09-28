@@ -8,6 +8,7 @@ import LecturePlayer from "./components/LecturePlayer";
 import LoadingSpinner from "./components/LoadingSpinner";
 import LoginGate from "./components/LoginGate";
 import ProfilePage from "./components/ProfilePage";
+import ProgressPage from "./components/ProgressPage";
 import QuizPlayer, { type QuizResult } from "./components/QuizPlayer";
 import ResetPasswordPage from "./components/ResetPasswordPage";
 import SubjectSelect, { type Subject } from "./components/SubjectSelect";
@@ -15,6 +16,7 @@ import TestHistoryPage from "./components/TestHistoryPage";
 import TestSummary from "./components/TestSummary";
 import TopicIntroPlayer from "./components/TopicIntroPlayer";
 import TopicSelect from "./components/TopicSelect";
+import VideoLibraryPage from "./components/VideoLibraryPage";
 import {
   downloadLessonDocx,
   downloadLessonPdf,
@@ -29,14 +31,16 @@ import {
   type YouTubeExplanation,
 } from "./api";
 import { clearStoredCredentials, getStoredCredentials } from "./auth";
+import { hasConceptVideos } from "./conceptVideos";
 import { buildLocalMathLesson, isLocalMathTopic, questionKey } from "./mathQuestionBank";
 import { recordCompletedLesson } from "./profileStorage";
 import { clearTestHistory, getTestHistory, getTopicAttendance, recordCompletedTest } from "./testHistory";
 import { hasTopicIntro } from "./topicIntros";
 import type { LessonContent } from "./types";
+import { getWatchedVideos, markVideoWatched } from "./videoProgress";
 
 type Stage = "subject" | "topic" | "topic-intro" | "grade" | "lecture" | "test" | "summary";
-type View = "app" | "profile" | "history" | "attendance";
+type View = "app" | "profile" | "history" | "attendance" | "progress" | "videos";
 
 export default function App() {
   const [resetToken, setResetToken] = useState(
@@ -65,6 +69,9 @@ export default function App() {
   const [downloadingReportPdf, setDownloadingReportPdf] = useState(false);
   const [testHistory, setTestHistory] = useState(() => getTestHistory());
   const [attendance, setAttendance] = useState(() => getTopicAttendance());
+  const [watchedVideos, setWatchedVideos] = useState(() => getWatchedVideos());
+  // Topic the video library opens on when reached from a "Videos" button.
+  const [videosTopic, setVideosTopic] = useState<string | undefined>(undefined);
 
   const lessonStartRef = useRef<number | null>(null);
   // Science / typed-in topics come from Gemini, which takes a while — so the
@@ -187,6 +194,7 @@ export default function App() {
           durationSeconds,
           mcqs: lesson.mcqs,
           missed: result.missed,
+          subject,
         }),
       );
       setAttendance(getTopicAttendance());
@@ -297,6 +305,22 @@ export default function App() {
     }
   }
 
+  function openVideos(videoTopic?: string) {
+    setVideosTopic(videoTopic);
+    setView("videos");
+  }
+
+  function handlePractice(practiceTopic: string, practiceSubject: Subject) {
+    setSubject(practiceSubject);
+    setTopic(practiceTopic);
+    // History is newest first — pick up at the grade they last tested at.
+    const lastTest = testHistory.find((test) => test.topic === practiceTopic);
+    if (lastTest) setGrade(lastTest.grade);
+    setError("");
+    setView("app");
+    setStage("grade");
+  }
+
   function handleLogout() {
     clearStoredCredentials();
     setNeedsLogin(true);
@@ -327,6 +351,8 @@ export default function App() {
   }
 
   const sidebarItems: Array<{ view: View; icon: string; label: string }> = [
+    { view: "progress", icon: "📊", label: "My Progress" },
+    { view: "videos", icon: "🎬", label: "Concept Videos" },
     { view: "attendance", icon: "📅", label: "Attendance" },
     { view: "history", icon: "📝", label: "My Tests" },
     { view: "profile", icon: "👤", label: "Profile" },
@@ -336,14 +362,14 @@ export default function App() {
     <div className="min-h-screen">
       <AiBackdrop theme={subject === "Science" ? "science" : "math"} />
 
-      <nav className="fixed left-0 top-0 z-10 flex h-full w-20 flex-col items-center gap-4 border-r border-indigo-100 bg-white/80 py-6 backdrop-blur">
+      <nav className="fixed left-0 top-0 z-10 flex h-full w-20 print:hidden flex-col items-center gap-4 border-r border-indigo-100 bg-white/80 py-6 backdrop-blur">
         {sidebarItems.map((item) => {
           const active = view === item.view;
           return (
             <button
               key={item.view}
               type="button"
-              onClick={() => setView(active ? "app" : item.view)}
+              onClick={() => (item.view === "videos" && !active ? openVideos() : setView(active ? "app" : item.view))}
               title={item.label}
               aria-label={item.label}
               className={`flex h-12 w-12 items-center justify-center rounded-full text-2xl leading-none shadow-sm transition ${
@@ -358,7 +384,7 @@ export default function App() {
         })}
       </nav>
 
-      <div className="pl-20">
+      <div className="pl-20 print:pl-0">
       <div className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
 
         <header className="mb-8 text-center">
@@ -375,6 +401,22 @@ export default function App() {
               setTestHistory(clearTestHistory());
               setAttendance([]);
             }}
+          />
+        ) : view === "progress" ? (
+          <ProgressPage
+            history={testHistory}
+            watched={watchedVideos}
+            onBack={() => setView("app")}
+            onPractice={handlePractice}
+            onWatchVideos={openVideos}
+          />
+        ) : view === "videos" ? (
+          <VideoLibraryPage
+            key={videosTopic ?? "all"}
+            initialTopic={videosTopic}
+            watched={watchedVideos}
+            onWatched={(id) => setWatchedVideos(markVideoWatched(id))}
+            onBack={() => setView("app")}
           />
         ) : view === "attendance" ? (
           <AttendancePage attendance={attendance} onBack={() => setView("app")} />
@@ -463,6 +505,8 @@ export default function App() {
                 onDownloadReportPdf={handleDownloadReportPdf}
                 downloadingReportDocx={downloadingReportDocx}
                 downloadingReportPdf={downloadingReportPdf}
+                onWatchVideos={hasConceptVideos(lesson.topic) ? () => openVideos(lesson.topic) : undefined}
+                onViewProgress={() => setView("progress")}
               />
             )}
 

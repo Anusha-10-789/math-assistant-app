@@ -11,6 +11,8 @@ interface TestSummaryProps {
   onDownloadReportPdf: () => void;
   downloadingReportDocx: boolean;
   downloadingReportPdf: boolean;
+  onWatchVideos?: () => void;
+  onViewProgress: () => void;
 }
 
 type SmsState = { status: "idle" } | { status: "sending" } | { status: "sent" } | { status: "error"; message: string };
@@ -29,6 +31,8 @@ export default function TestSummary({
   onDownloadReportPdf,
   downloadingReportDocx,
   downloadingReportPdf,
+  onWatchVideos,
+  onViewProgress,
 }: TestSummaryProps) {
   const percent = Math.round((result.score / result.total) * 100);
   const [smsConfigured, setSmsConfigured] = useState(false);
@@ -77,6 +81,25 @@ export default function TestSummary({
         </p>
         <p className="mb-3 text-sm font-semibold text-indigo-600">{percent}% correct</p>
         <p className="mb-4 text-sm text-slate-600">{encouragement(percent)}</p>
+
+        <div className="mb-4 flex flex-wrap justify-center gap-3">
+          {onWatchVideos && (
+            <button
+              type="button"
+              onClick={onWatchVideos}
+              className="rounded-lg bg-indigo-600 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-indigo-700"
+            >
+              🎬 {percent < 80 ? "Watch the concept videos to revise" : "Watch the concept videos"}
+            </button>
+          )}
+          <button
+            type="button"
+            onClick={onViewProgress}
+            className="rounded-lg border border-indigo-300 bg-white px-5 py-2.5 text-sm font-semibold text-indigo-700 transition hover:bg-indigo-50"
+          >
+            📊 See my progress
+          </button>
+        </div>
 
         <div className="flex flex-wrap justify-center gap-3">
           <button

@@ -48,3 +48,18 @@ export function getTopicModules(subject: Subject): TopicModule[] {
 export function getAllTopicsModule(subject: Subject): TopicModule {
   return subject === "Science" ? SCIENCE_ALL_TOPICS : MATH_ALL_TOPICS;
 }
+
+// Which subject a finished test's topic belongs to. Custom typed-in topics
+// aren't in either list, so they count as Mathematics unless the test itself
+// recorded its subject.
+export function subjectForTopic(topic: string): Subject {
+  if (topic === SCIENCE_ALL_TOPICS.topic || SCIENCE_MODULES.some((m) => m.topic === topic)) return "Science";
+  return "Mathematics";
+}
+
+// Mixed reviews have a long topic listing every module — shorten it for display.
+export function displayTopic(topic: string): string {
+  if (topic === MATH_ALL_TOPICS.topic) return "Mixed Review (Maths)";
+  if (topic === SCIENCE_ALL_TOPICS.topic) return "Mixed Review (Science)";
+  return topic;
+}

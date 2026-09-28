@@ -1,4 +1,5 @@
 import type { QuizResult } from "./components/QuizPlayer";
+import type { Subject } from "./components/SubjectSelect";
 import type { MCQItem } from "./types";
 import { getAllottedMinutes } from "./topicTimeConfig";
 
@@ -17,6 +18,8 @@ export interface CompletedTest {
   durationSeconds: number;
   mcqs: MCQItem[];
   missed: QuizResult["missed"];
+  // Missing on tests saved before it was recorded (see subjectForTopic).
+  subject?: Subject;
 }
 
 export interface TopicAttendance {
