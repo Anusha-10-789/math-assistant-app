@@ -321,6 +321,21 @@ export default function App() {
     setStage("grade");
   }
 
+  function goHome() {
+    setError("");
+    setTopic("");
+    setQuizResult(null);
+    setView("app");
+    setStage("subject");
+  }
+
+  function handleTryAgain() {
+    setError("");
+    setQuizResult(null);
+    setView("app");
+    setStage("grade");
+  }
+
   function handleLogout() {
     clearStoredCredentials();
     setNeedsLogin(true);
@@ -363,6 +378,19 @@ export default function App() {
       <AiBackdrop theme={subject === "Science" ? "science" : "math"} />
 
       <nav className="fixed left-0 top-0 z-10 flex h-full w-20 print:hidden flex-col items-center gap-4 border-r border-indigo-100 bg-white/80 py-6 backdrop-blur">
+        <button
+          type="button"
+          onClick={goHome}
+          title="Home"
+          aria-label="Home"
+          className={`flex h-12 w-12 items-center justify-center rounded-full text-2xl leading-none shadow-sm transition ${
+            view === "app" && stage === "subject"
+              ? "bg-indigo-600 text-white shadow-indigo-200"
+              : "bg-white text-slate-500 hover:bg-indigo-50 hover:text-indigo-600"
+          }`}
+        >
+          🏠
+        </button>
         {sidebarItems.map((item) => {
           const active = view === item.view;
           return (
@@ -444,6 +472,8 @@ export default function App() {
                 </button>
                 <TopicSelect
                   subject={subject}
+                  grade={grade}
+                  onGradeChange={setGrade}
                   topic={topic}
                   onTopicChange={setTopic}
                   onModuleSelect={handleModuleSelect}
@@ -493,6 +523,7 @@ export default function App() {
                 mcqs={lesson.mcqs}
                 onFinish={handleFinishTest}
                 onFetchYouTubeExplanation={handleFetchYouTubeExplanation}
+                onHome={goHome}
               />
             )}
 
@@ -507,6 +538,8 @@ export default function App() {
                 downloadingReportPdf={downloadingReportPdf}
                 onWatchVideos={hasConceptVideos(lesson.topic) ? () => openVideos(lesson.topic) : undefined}
                 onViewProgress={() => setView("progress")}
+                onHome={goHome}
+                onTryAgain={handleTryAgain}
               />
             )}
 

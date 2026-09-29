@@ -41,7 +41,7 @@ from models import (
 from password_policy import validate_password_strength
 from pdf_export import build_lesson_pdf
 from report_export import build_report_docx, build_report_pdf
-from security import check_login, current_login, rate_limit, verify_login, video_rate_limit
+from security import check_login, current_login, lesson_rate_limit, rate_limit, verify_login, video_rate_limit
 import sms_service
 from topic_intro_service import (
     TOPIC_INTRO_CONTENT,
@@ -356,7 +356,7 @@ async def reset_password_endpoint(request: ResetPasswordRequest) -> dict:
     return {"success": True}
 
 
-@app.post("/generate", response_model=GenerateResponse, dependencies=[Depends(verify_login), Depends(rate_limit)])
+@app.post("/generate", response_model=GenerateResponse, dependencies=[Depends(verify_login), Depends(lesson_rate_limit)])
 async def generate(request: GenerateRequest) -> GenerateResponse:
     topic = request.topic.strip()
     if not topic:
@@ -550,7 +550,7 @@ async def youtube_config() -> dict:
     return {"configured": youtube_service.is_configured()}
 
 
-@app.post("/youtube-explanation", dependencies=[Depends(verify_login), Depends(rate_limit)])
+@app.post("/youtube-explanation", dependencies=[Depends(verify_login), Depends(lesson_rate_limit)])
 async def youtube_explanation(request: YouTubeExplanationRequest) -> dict:
     if not youtube_service.is_configured():
         raise HTTPException(status_code=400, detail="YouTube search is not configured on this server.")

@@ -22,6 +22,7 @@ interface QuizPlayerProps {
   mcqs: MCQItem[];
   onFinish: (result: QuizResult) => void;
   onFetchYouTubeExplanation: (topic: string) => Promise<YouTubeExplanation>;
+  onHome: () => void;
 }
 
 type YouTubeState =
@@ -32,10 +33,18 @@ type YouTubeState =
   | { status: "error"; message: string };
 
 const OPTION_LETTERS = ["A", "B", "C", "D"] as const;
+const PRAISE = [
+  "Your hard work is paying off!",
+  "You're a superstar learner!",
+  "Brilliant thinking!",
+  "Keep up the great effort!",
+  "You really understood that!",
+];
 export default function QuizPlayer({
   mcqs,
   onFinish,
   onFetchYouTubeExplanation,
+  onHome,
 }: QuizPlayerProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<number, string>>({});
@@ -171,6 +180,16 @@ export default function QuizPlayer({
 
   return (
     <div className="rounded-2xl border border-white/60 bg-white/80 p-5 shadow-lg shadow-indigo-100 backdrop-blur sm:p-6">
+      <button
+        type="button"
+        onClick={() => {
+          if (window.confirm("Leave this test and go back to the home page?")) onHome();
+        }}
+        className="mb-3 text-sm font-medium text-indigo-600 hover:underline"
+      >
+        🏠 Back to Home
+      </button>
+
       <div className="mb-3 flex items-center justify-between text-xs font-semibold text-slate-500">
         <span>Question {currentIndex + 1} of {mcqs.length}</span>
         <span className="rounded-full bg-indigo-100 px-2.5 py-1 text-indigo-700">{current.topic}</span>
@@ -203,6 +222,19 @@ export default function QuizPlayer({
 
       {viewSelection !== null && (
         <div className="mb-4">
+          {viewSelection === current.correct_answer ? (
+            <div className="scene-in mb-3 rounded-xl border-2 border-emerald-300 bg-emerald-50 px-4 py-3 text-center">
+              <p className="text-xl font-bold text-emerald-700">🎉 Well done! That&apos;s correct!</p>
+              <p className="text-sm text-emerald-700">{PRAISE[currentIndex % PRAISE.length]}</p>
+            </div>
+          ) : (
+            <div className="scene-in mb-3 rounded-xl border-2 border-amber-300 bg-amber-50 px-4 py-3 text-center">
+              <p className="text-xl font-bold text-amber-700">💪 Good try!</p>
+              <p className="text-sm text-amber-700">
+                The correct answer is {current.correct_answer}. Let&apos;s learn it together.
+              </p>
+            </div>
+          )}
           <ExplanationVideo
             key={currentIndex}
             mcq={current}

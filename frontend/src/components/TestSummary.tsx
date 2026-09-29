@@ -13,6 +13,8 @@ interface TestSummaryProps {
   downloadingReportPdf: boolean;
   onWatchVideos?: () => void;
   onViewProgress: () => void;
+  onHome: () => void;
+  onTryAgain: () => void;
 }
 
 type SmsState = { status: "idle" } | { status: "sending" } | { status: "sent" } | { status: "error"; message: string };
@@ -33,6 +35,8 @@ export default function TestSummary({
   downloadingReportPdf,
   onWatchVideos,
   onViewProgress,
+  onHome,
+  onTryAgain,
 }: TestSummaryProps) {
   const percent = Math.round((result.score / result.total) * 100);
   const [smsConfigured, setSmsConfigured] = useState(false);
@@ -83,6 +87,20 @@ export default function TestSummary({
         <p className="mb-4 text-sm text-slate-600">{encouragement(percent)}</p>
 
         <div className="mb-4 flex flex-wrap justify-center gap-3">
+          <button
+            type="button"
+            onClick={onHome}
+            className="rounded-lg bg-emerald-600 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-emerald-700"
+          >
+            🏠 Back to Home
+          </button>
+          <button
+            type="button"
+            onClick={onTryAgain}
+            className="rounded-lg border border-emerald-300 bg-white px-5 py-2.5 text-sm font-semibold text-emerald-700 transition hover:bg-emerald-50"
+          >
+            🔁 Try another test
+          </button>
           {onWatchVideos && (
             <button
               type="button"

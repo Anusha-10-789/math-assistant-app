@@ -41,10 +41,15 @@ interface Segment extends NarrationSegment<Slide> {
 function buildScript(mcq: MCQItem, yourAnswer: string): Segment[] {
   const options = optionTexts(mcq);
   const correct = mcq.correct_answer;
-  const verdict =
-    yourAnswer === correct ? "Well done, you got it right!" : `You chose ${yourAnswer}. Nice try!`;
+  const isCorrect = yourAnswer === correct;
+  // Praise (or encouragement) comes first, before any explaining, so the
+  // student hears their effort recognised straight away.
+  const opening = isCorrect
+    ? "Well done! That's correct! Let's see why."
+    : "Good try! Let's learn the right answer together.";
+  const verdict = isCorrect ? "Great job getting it right!" : `You chose ${yourAnswer}. Keep going, you're learning!`;
   return [
-    { section: "understand", text: questionExplanation(mcq) },
+    { section: "understand", text: `${opening} ${questionExplanation(mcq)}` },
     ...solutionSteps(mcq).map((step, index) => ({
       section: "steps" as const,
       step: index,
@@ -158,7 +163,7 @@ export default function ExplanationVideo({ mcq, yourAnswer, autoPlay }: Explanat
               </p>
               <p className="mb-3 text-base leading-relaxed sm:text-lg">{mcq.explanation}</p>
               <p className="text-base font-semibold text-indigo-600">
-                {isCorrect ? "🎉 Well done, you got it right!" : `💪 You chose ${yourAnswer} — nice try!`}
+                {isCorrect ? "🎉 Great job getting it right!" : `💪 You chose ${yourAnswer} — keep going, you're learning!`}
               </p>
               {diagram}
             </>

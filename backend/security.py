@@ -8,7 +8,15 @@ from fastapi import Header, HTTPException, Request
 from user_store import verify_user_login
 
 RATE_LIMIT_WINDOW_SECONDS = 60
-RATE_LIMIT_MAX_REQUESTS = 6
+# Per real client IP. A whole class in a school computer lab usually shares
+# one public IP, so this has to allow a room of students logging in at once
+# while still slowing down password guessing.
+RATE_LIMIT_MAX_REQUESTS = 20
+
+# Lesson generation (Science / typed-in topics) is counted per logged-in
+# student rather than per IP, so classmates behind the same school network
+# don't use up each other's allowance.
+LESSON_RATE_LIMIT_MAX_REQUESTS = 15
 
 # Question-explanation videos now generate automatically as each question is
 # answered, rather than only on a manual click — a single test can run
@@ -63,9 +71,24 @@ def current_login(
     return (x_app_username or "").strip()
 
 
-def _enforce_rate_limit(request: Request, bucket: str, max_requests: int) -> None:
-    ip = request.client.host if request.client else "unknown"
-    key = f"{bucket}:{ip}"
+def _client_ip(request: Request) -> str:
+    """The student's real IP. On Render (and most hosts) every request arrives
+    via the platform's proxy, so request.client.host is the proxy's address —
+    the same for every visitor — which made all students share one rate-limit
+    bucket. The proxy passes the original address on in these headers.
+    """
+    for header in ("cf-connecting-ip", "true-client-ip"):
+        value = request.headers.get(header, "").strip()
+        if value:
+            return value
+    forwarded = request.headers.get("x-forwarded-for", "")
+    if forwarded.strip():
+        return forwarded.split(",")[0].strip()
+    return request.client.host if request.client else "unknown"
+
+
+def _enforce_rate_limit(request: Request, bucket: str, max_requests: int, who: str = "") -> None:
+    key = f"{bucket}:{who or _client_ip(request)}"
     now = time.time()
     window_start = now - RATE_LIMIT_WINDOW_SECONDS
 
@@ -73,7 +96,7 @@ def _enforce_rate_limit(request: Request, bucket: str, max_requests: int) -> Non
     if len(recent) >= max_requests:
         raise HTTPException(
             status_code=429,
-            detail="Too many requests from this IP. Please wait a minute and try again.",
+            detail="You're going a little fast! Please wait a minute and try again.",
         )
 
     recent.append(now)
@@ -85,6 +108,12 @@ def rate_limit(request: Request) -> None:
     leaked/shared login burning through the Gemini API quota or billing.
     """
     _enforce_rate_limit(request, "default", RATE_LIMIT_MAX_REQUESTS)
+
+
+def lesson_rate_limit(request: Request, x_app_username: Optional[str] = Header(default=None)) -> None:
+    """Per-student bucket for lesson generation — see LESSON_RATE_LIMIT_MAX_REQUESTS."""
+    who = (x_app_username or "").strip().lower()
+    _enforce_rate_limit(request, "lesson", LESSON_RATE_LIMIT_MAX_REQUESTS, f"user:{who}" if who else "")
 
 
 def video_rate_limit(request: Request) -> None:
