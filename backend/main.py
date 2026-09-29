@@ -64,6 +64,7 @@ from user_store import (
     set_security_question,
     upsert_google_user,
 )
+import user_store
 import youtube_service
 
 app = FastAPI(title="Mathematics Assistant for Students API")
@@ -89,7 +90,9 @@ def _safe_filename_part(text: str) -> str:
 
 @app.get("/health")
 async def health() -> dict:
-    return {"status": "ok"}
+    # "database" means accounts are kept in Postgres (DATABASE_URL); "file"
+    # means data/users.json, which Render's free plan wipes on every restart.
+    return {"status": "ok", "account_storage": "database" if user_store.DATABASE_URL else "file"}
 
 
 @app.post("/login", dependencies=[Depends(rate_limit)])
