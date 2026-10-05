@@ -21,6 +21,12 @@ services:
       # restart/redeploy — without it, accounts made online disappear.
       - key: DATABASE_URL
         sync: false
+      # Or keep accounts in Firebase Firestore instead: paste the whole
+      # service-account key JSON (Firebase console → Project settings →
+      # Service accounts → Generate new private key). Takes priority over
+      # DATABASE_URL when both are set.
+      - key: FIREBASE_SERVICE_ACCOUNT
+        sync: false
       # CORS_ORIGINS and FRONTEND_URL both need the frontend's actual
       # https://...onrender.com URL, which only exists after the frontend
       # service below is first created — fill these in afterwards, then

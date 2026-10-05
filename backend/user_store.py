@@ -65,7 +65,52 @@ def _db_save(raw: str) -> None:
     _db_cache = raw
 
 
+# Alternatively, accounts can live in Firebase Firestore. FIREBASE_SERVICE_ACCOUNT
+# holds the full JSON of a service-account key (Firebase console → Project
+# settings → Service accounts → Generate new private key). The same single
+# JSON document is kept in app_store/users, cached in memory like above.
+FIREBASE_SERVICE_ACCOUNT = os.environ.get("FIREBASE_SERVICE_ACCOUNT", "").strip()
+_fs_client = None
+_fs_cache: Optional[str] = None
+
+
+def _fs_doc():
+    global _fs_client
+    if _fs_client is None:
+        import firebase_admin  # only needed when FIREBASE_SERVICE_ACCOUNT is set
+        from firebase_admin import credentials, firestore
+
+        if not firebase_admin._apps:
+            firebase_admin.initialize_app(credentials.Certificate(json.loads(FIREBASE_SERVICE_ACCOUNT)))
+        _fs_client = firestore.client()
+    return _fs_client.collection("app_store").document("users")
+
+
+def _fs_load() -> str:
+    global _fs_cache
+    if _fs_cache is None:
+        snapshot = _fs_doc().get()
+        _fs_cache = (snapshot.to_dict() or {}).get("value", "{}") if snapshot.exists else "{}"
+    return _fs_cache
+
+
+def _fs_save(raw: str) -> None:
+    global _fs_cache
+    _fs_doc().set({"value": raw})
+    _fs_cache = raw
+
+
+def storage_kind() -> str:
+    if FIREBASE_SERVICE_ACCOUNT:
+        return "firebase"
+    if DATABASE_URL:
+        return "database"
+    return "file"
+
+
 def _load() -> dict:
+    if FIREBASE_SERVICE_ACCOUNT:
+        return json.loads(_fs_load())
     if DATABASE_URL:
         return json.loads(_db_load())
     if not os.path.exists(USERS_FILE):
@@ -75,6 +120,9 @@ def _load() -> dict:
 
 
 def _save(users: dict) -> None:
+    if FIREBASE_SERVICE_ACCOUNT:
+        _fs_save(json.dumps(users))
+        return
     if DATABASE_URL:
         _db_save(json.dumps(users))
         return

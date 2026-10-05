@@ -90,9 +90,10 @@ def _safe_filename_part(text: str) -> str:
 
 @app.get("/health")
 async def health() -> dict:
-    # "database" means accounts are kept in Postgres (DATABASE_URL); "file"
-    # means data/users.json, which Render's free plan wipes on every restart.
-    return {"status": "ok", "account_storage": "database" if user_store.DATABASE_URL else "file"}
+    # "firebase" means accounts are kept in Firestore (FIREBASE_SERVICE_ACCOUNT);
+    # "database" means Postgres (DATABASE_URL); "file" means data/users.json,
+    # which Render's free plan wipes on every restart.
+    return {"status": "ok", "account_storage": user_store.storage_kind()}
 
 
 @app.post("/login", dependencies=[Depends(rate_limit)])
