@@ -25,7 +25,7 @@ export default function TestHistoryPage({ history, onBack, onClear }: TestHistor
           onClick={onBack}
           className="rounded-lg bg-indigo-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-indigo-700"
         >
-          Back to lessons
+          🏠 Back to Home
         </button>
       </div>
 

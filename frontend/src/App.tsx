@@ -424,7 +424,7 @@ export default function App() {
         ) : view === "history" ? (
           <TestHistoryPage
             history={testHistory}
-            onBack={() => setView("app")}
+            onBack={goHome}
             onClear={() => {
               setTestHistory(clearTestHistory());
               setAttendance([]);
