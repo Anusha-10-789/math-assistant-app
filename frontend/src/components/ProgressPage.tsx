@@ -227,8 +227,8 @@ function TopicRow({ row, onPractice, onWatchVideos }: { row: TopicProgress; onPr
 
 export default function ProgressPage({ history, watched, onBack, onPractice, onWatchVideos }: ProgressPageProps) {
   const report = buildProgress(history);
-  const videos = allConceptVideos();
-  const videosWatched = videos.filter((v) => watched[v.id]).length;
+  // Hand-made videos plus AI-made ones (ids starting "ai-").
+  const videosWatched = Object.keys(watched).length;
   const mastered = report.topics.filter((t) => t.level === "mastered").length;
 
   return (
@@ -267,7 +267,7 @@ export default function ProgressPage({ history, watched, onBack, onPractice, onW
             <StatTile label="Tests taken" value={String(report.totalTests)} note={`${report.lastWeek.tests} this week`} />
             <StatTile label="Average score" value={`${report.averagePercent}%`} />
             <StatTile label="Topics mastered" value={`${mastered} / ${report.topics.length}`} />
-            <StatTile label="Videos watched" value={`${videosWatched} / ${videos.length}`} />
+            <StatTile label="Videos watched" value={String(videosWatched)} note={`${allConceptVideos().length} ready-made + any topic on request`} />
           </div>
 
           <section>
@@ -336,7 +336,14 @@ export default function ProgressPage({ history, watched, onBack, onPractice, onW
                   key={row.topic}
                   row={row}
                   onPractice={() => onPractice(row.topic, row.subject)}
-                  onWatchVideos={hasConceptVideos(row.topic) ? () => onWatchVideos(row.topic) : undefined}
+                  onWatchVideos={
+                    hasConceptVideos(row.topic)
+                      ? () => onWatchVideos(row.topic)
+                      : row.topic.startsWith("Mixed Review")
+                        ? undefined
+                        : // The topic screen offers an AI-made video for topics without hand-made ones.
+                          () => onPractice(row.topic, row.subject)
+                  }
                 />
               ))}
             </div>

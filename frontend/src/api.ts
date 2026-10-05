@@ -1,6 +1,9 @@
 import { getStoredCredentials } from "./auth";
 import type { QuizResult } from "./components/QuizPlayer";
+import type { ConceptVideo } from "./conceptVideos";
+import type { CompletedTest } from "./testHistory";
 import type { LessonContent } from "./types";
+import type { WatchedVideos } from "./videoProgress";
 
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL ?? "http://localhost:8000";
 
@@ -527,4 +530,44 @@ export async function sendResultSms(
   if (!response.ok) {
     throw new Error(await extractErrorMessage(response, "Failed to send the result by SMS."));
   }
+}
+
+const conceptVideoCache = new Map<string, Promise<ConceptVideo>>();
+
+// An AI-made animated video for topics without a hand-made one. The backend
+// caches each topic/grade, so this is usually instant after the first student.
+export function fetchConceptVideo(topic: string, grade: number): Promise<ConceptVideo> {
+  const key = `${topic.toLowerCase()}|${grade}`;
+  const cached = conceptVideoCache.get(key);
+  if (cached) return cached;
+  const promise = postJson<{ video: ConceptVideo }>(
+    "concept-video",
+    { topic, grade },
+    "Couldn't make the video. Please try again.",
+    true,
+  ).then((data) => data.video);
+  promise.catch(() => conceptVideoCache.delete(key));
+  conceptVideoCache.set(key, promise);
+  return promise;
+}
+
+export interface SavedProgress {
+  history: CompletedTest[];
+  watched: WatchedVideos;
+}
+
+export async function fetchProgress(): Promise<SavedProgress> {
+  const response = await fetch(`${API_BASE_URL}/progress`, { headers: authHeaders() });
+  if (response.status === 401) throw new UnauthorizedError("Your session expired. Please log in again.");
+  if (!response.ok) throw new Error(await extractErrorMessage(response, "Couldn't load your progress."));
+  return response.json();
+}
+
+export async function saveProgress(progress: SavedProgress): Promise<void> {
+  const response = await fetch(`${API_BASE_URL}/progress`, {
+    method: "PUT",
+    headers: { "Content-Type": "application/json", ...authHeaders() },
+    body: JSON.stringify(progress),
+  });
+  if (!response.ok) throw new Error(await extractErrorMessage(response, "Couldn't save your progress."));
 }

@@ -1,4 +1,5 @@
 import asyncio
+import json
 import os
 import re
 
@@ -13,13 +14,16 @@ from google.auth.transport import requests as google_requests
 from google.genai import errors as genai_errors
 from google.oauth2 import id_token as google_id_token
 
+import concept_video_service
 import email_service
+import kv_store
 import gemini_service
 import otp_service
 from docx_export import build_lesson_docx
 from gemini_service import GeminiNotConfigured, GeminiResponseError
 from models import (
     CodeResetRequest,
+    ConceptVideoRequest,
     OtpLoginRequest,
     OtpSendRequest,
     DownloadRequest,
@@ -30,6 +34,7 @@ from models import (
     GenerateResponse,
     GoogleAuthRequest,
     LoginRequest,
+    ProgressData,
     QuestionVideoRequest,
     ReportRequest,
     ResetPasswordRequest,
@@ -520,6 +525,51 @@ async def topic_intro_slides(request: TopicIntroRequest) -> dict:
     if not is_supported_topic(request.topic):
         raise HTTPException(status_code=404, detail="No introduction is available for this topic.")
     return {"slides": get_topic_intro_slides(request.topic)}
+
+
+# Progress (completed tests and watched videos) is kept per student so it
+# follows them to any device and parents see the same report everywhere.
+MAX_PROGRESS_TESTS = 50
+MAX_PROGRESS_BYTES = 800_000
+
+
+def _progress_key(identifier: str) -> str:
+    user = find_user(identifier)
+    owner = user["username"] if user else identifier
+    return f"progress:{owner.strip().lower()}"
+
+
+@app.get("/progress")
+async def get_progress(identifier: str = Depends(current_login)) -> dict:
+    return await asyncio.to_thread(kv_store.get, _progress_key(identifier)) or {"history": [], "watched": {}}
+
+
+@app.put("/progress", dependencies=[Depends(rate_limit)])
+async def save_progress(request: ProgressData, identifier: str = Depends(current_login)) -> dict:
+    data = {"history": request.history[:MAX_PROGRESS_TESTS], "watched": request.watched}
+    if len(json.dumps(data)) > MAX_PROGRESS_BYTES:
+        raise HTTPException(status_code=413, detail="Progress data is too large to save.")
+    await asyncio.to_thread(kv_store.put, _progress_key(identifier), data)
+    return {"success": True}
+
+
+@app.post("/concept-video", dependencies=[Depends(verify_login), Depends(lesson_rate_limit)])
+async def concept_video(request: ConceptVideoRequest) -> dict:
+    topic = request.topic.strip()
+    if not topic:
+        raise HTTPException(status_code=400, detail="Please choose a topic.")
+    try:
+        return {"video": await concept_video_service.get_concept_video(topic, request.grade)}
+    except GeminiNotConfigured as exc:
+        raise HTTPException(status_code=400, detail=str(exc))
+    except concept_video_service.ConceptVideoError as exc:
+        raise HTTPException(status_code=502, detail=str(exc))
+    except genai_errors.ClientError as exc:
+        if exc.code == 429:
+            raise HTTPException(status_code=429, detail="Lots of students are learning right now. Please try the video again in a minute.")
+        raise HTTPException(status_code=400, detail=f"Gemini API rejected the request: {exc}")
+    except genai_errors.APIError as exc:
+        raise HTTPException(status_code=502, detail=f"Gemini API error: {exc}")
 
 
 @app.post("/topic-intro-video", dependencies=[Depends(verify_login), Depends(video_rate_limit)])

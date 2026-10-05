@@ -15,6 +15,7 @@ import SubjectSelect, { type Subject } from "./components/SubjectSelect";
 import TestHistoryPage from "./components/TestHistoryPage";
 import TestSummary from "./components/TestSummary";
 import TopicIntroPlayer from "./components/TopicIntroPlayer";
+import TopicVideos from "./components/TopicVideos";
 import TopicSelect from "./components/TopicSelect";
 import VideoLibraryPage from "./components/VideoLibraryPage";
 import {
@@ -38,6 +39,7 @@ import { clearTestHistory, getTestHistory, getTopicAttendance, recordCompletedTe
 import { hasTopicIntro } from "./topicIntros";
 import type { LessonContent } from "./types";
 import { getWatchedVideos, markVideoWatched } from "./videoProgress";
+import { scheduleProgressSave, syncProgress } from "./progressSync";
 
 type Stage = "subject" | "topic" | "topic-intro" | "grade" | "lecture" | "test" | "summary";
 type View = "app" | "profile" | "history" | "attendance" | "progress" | "videos";
@@ -102,6 +104,32 @@ export default function App() {
   useEffect(() => {
     if (!needsLogin) prefetchAllIntroSlides();
   }, [needsLogin]);
+
+  // Bring in this student's saved progress from their account, so it's the
+  // same on every device. Until it arrives, this device's copy is shown.
+  useEffect(() => {
+    if (needsLogin) return;
+    let cancelled = false;
+    syncProgress()
+      .then((progress) => {
+        if (cancelled) return;
+        setTestHistory(progress.history);
+        setWatchedVideos(progress.watched);
+        setAttendance(getTopicAttendance());
+      })
+      .catch(() => {
+        // Offline or server asleep — keep using this device's copy; changes
+        // stay marked unsynced and are uploaded on the next successful sync.
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [needsLogin]);
+
+  function handleVideoWatched(videoId: string) {
+    setWatchedVideos(markVideoWatched(videoId));
+    scheduleProgressSave();
+  }
 
   useEffect(() => {
     const trimmed = topic.trim();
@@ -198,6 +226,7 @@ export default function App() {
         }),
       );
       setAttendance(getTopicAttendance());
+      scheduleProgressSave();
     }
     setStage("summary");
   }
@@ -359,6 +388,10 @@ export default function App() {
       <LoginGate
         onLogin={() => {
           setUsername(getStoredCredentials()?.username ?? "");
+          // Each student has their own saved progress — load theirs.
+          setTestHistory(getTestHistory());
+          setWatchedVideos(getWatchedVideos());
+          setAttendance(getTopicAttendance());
           setNeedsLogin(false);
         }}
       />
@@ -428,6 +461,7 @@ export default function App() {
             onClear={() => {
               setTestHistory(clearTestHistory());
               setAttendance([]);
+              scheduleProgressSave();
             }}
           />
         ) : view === "progress" ? (
@@ -443,7 +477,7 @@ export default function App() {
             key={videosTopic ?? "all"}
             initialTopic={videosTopic}
             watched={watchedVideos}
-            onWatched={(id) => setWatchedVideos(markVideoWatched(id))}
+            onWatched={handleVideoWatched}
             onBack={() => setView("app")}
           />
         ) : view === "attendance" ? (
@@ -505,6 +539,10 @@ export default function App() {
               />
             )}
 
+            {stage === "grade" && topic.trim() && !topic.startsWith("Mixed Review") && (
+              <TopicVideos key={`${topic}|${grade}`} topic={topic.trim()} grade={grade} watched={watchedVideos} onWatched={handleVideoWatched} />
+            )}
+
             {error && <ErrorMessage message={error} />}
             {loading && <LoadingSpinner />}
 
@@ -541,6 +579,10 @@ export default function App() {
                 onHome={goHome}
                 onTryAgain={handleTryAgain}
               />
+            )}
+
+            {lesson && stage === "summary" && quizResult && !hasConceptVideos(lesson.topic) && !lesson.topic.startsWith("Mixed Review") && (
+              <TopicVideos key={`${lesson.topic}|${lesson.grade}`} topic={lesson.topic} grade={lesson.grade} watched={watchedVideos} onWatched={handleVideoWatched} />
             )}
 
             {lesson && (stage === "lecture" || stage === "test") && (

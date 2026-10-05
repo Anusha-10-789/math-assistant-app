@@ -142,6 +142,18 @@ class TopicIntroRequest(BaseModel):
     topic: str
 
 
+class ConceptVideoRequest(BaseModel):
+    topic: str
+    grade: int = Field(default=3, ge=1, le=5)
+
+
+class ProgressData(BaseModel):
+    # Shapes are owned by the frontend (testHistory.ts / videoProgress.ts);
+    # the backend only stores them per student.
+    history: List[dict] = Field(default_factory=list)
+    watched: dict = Field(default_factory=dict)
+
+
 class SendResultSmsRequest(BaseModel):
     phone: str
     topic: str
