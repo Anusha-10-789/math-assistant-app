@@ -11,7 +11,7 @@ RATE_LIMIT_WINDOW_SECONDS = 60
 # Per real client IP. A whole class in a school computer lab usually shares
 # one public IP, so this has to allow a room of students logging in at once
 # while still slowing down password guessing.
-RATE_LIMIT_MAX_REQUESTS = 20
+RATE_LIMIT_MAX_REQUESTS = 60
 
 # Lesson generation (Science / typed-in topics) is counted per logged-in
 # student rather than per IP, so classmates behind the same school network
@@ -23,6 +23,8 @@ LESSON_RATE_LIMIT_MAX_REQUESTS = 15
 # through many questions per minute, so this needs its own, more generous
 # bucket instead of sharing the login/generate limit above (which would
 # otherwise also block unrelated requests like starting a new lesson).
+# Counted per logged-in student, like lessons, so a class sharing one school
+# IP doesn't use up each other's allowance.
 VIDEO_RATE_LIMIT_MAX_REQUESTS = 20
 
 _request_log: dict = defaultdict(list)
@@ -116,9 +118,10 @@ def lesson_rate_limit(request: Request, x_app_username: Optional[str] = Header(d
     _enforce_rate_limit(request, "lesson", LESSON_RATE_LIMIT_MAX_REQUESTS, f"user:{who}" if who else "")
 
 
-def video_rate_limit(request: Request) -> None:
-    """Separate, more generous bucket for question-video generation, which
-    now fires automatically per answered question instead of only on a
-    manual click — see VIDEO_RATE_LIMIT_MAX_REQUESTS above.
+def video_rate_limit(request: Request, x_app_username: Optional[str] = Header(default=None)) -> None:
+    """Separate, more generous per-student bucket for question-video
+    generation, which now fires automatically per answered question instead
+    of only on a manual click — see VIDEO_RATE_LIMIT_MAX_REQUESTS above.
     """
-    _enforce_rate_limit(request, "video", VIDEO_RATE_LIMIT_MAX_REQUESTS)
+    who = (x_app_username or "").strip().lower()
+    _enforce_rate_limit(request, "video", VIDEO_RATE_LIMIT_MAX_REQUESTS, f"user:{who}" if who else "")
