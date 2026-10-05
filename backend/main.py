@@ -50,6 +50,8 @@ from security import check_login, current_login, lesson_rate_limit, rate_limit, 
 import sms_service
 from topic_intro_service import (
     TOPIC_INTRO_CONTENT,
+    IntroGenerationError,
+    get_ai_topic_intro_slides,
     get_topic_intro_slides,
     get_topic_intro_video,
     is_supported_topic,
@@ -518,13 +520,28 @@ async def all_topic_intro_slides() -> dict:
     return {"topics": {topic: get_topic_intro_slides(topic) for topic in TOPIC_INTRO_CONTENT}}
 
 
-@app.post("/topic-intro-slides", dependencies=[Depends(verify_login)])
+@app.post("/topic-intro-slides", dependencies=[Depends(verify_login), Depends(lesson_rate_limit)])
 async def topic_intro_slides(request: TopicIntroRequest) -> dict:
     # Just the slide text — the frontend narrates it in the browser, so the
     # intro starts instantly instead of waiting for an mp4 to be encoded.
-    if not is_supported_topic(request.topic):
-        raise HTTPException(status_code=404, detail="No introduction is available for this topic.")
-    return {"slides": get_topic_intro_slides(request.topic)}
+    if is_supported_topic(request.topic):
+        return {"slides": get_topic_intro_slides(request.topic)}
+    topic = request.topic.strip()
+    if not topic:
+        raise HTTPException(status_code=400, detail="Please choose a topic.")
+    # Every other topic gets an AI-written intro in the same format.
+    try:
+        return {"slides": await get_ai_topic_intro_slides(topic, request.grade)}
+    except GeminiNotConfigured as exc:
+        raise HTTPException(status_code=400, detail=str(exc))
+    except IntroGenerationError as exc:
+        raise HTTPException(status_code=502, detail=str(exc))
+    except genai_errors.ClientError as exc:
+        if exc.code == 429:
+            raise HTTPException(status_code=429, detail="Lots of students are learning right now. Please try again in a minute.")
+        raise HTTPException(status_code=400, detail=f"Gemini API rejected the request: {exc}")
+    except genai_errors.APIError as exc:
+        raise HTTPException(status_code=502, detail=f"Gemini API error: {exc}")
 
 
 # Progress (completed tests and watched videos) is kept per student so it

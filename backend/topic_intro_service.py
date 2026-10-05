@@ -345,3 +345,74 @@ def get_topic_intro_video(topic: str) -> bytes:
             f.write(video_bytes)
         os.replace(tmp_path, path)
         return video_bytes
+
+
+# ---------- AI-written intros for every other topic ----------
+# The syllabus has far more topics than the hand-written ones above, so the
+# rest get an intro written by Gemini in the same shape — a "What is X?"
+# slide, then one slide per key idea with a question for the child — plus a
+# few emoji per slide for the picture. Written once per topic and grade, then
+# cached in kv_store for every student.
+
+AI_INTRO_CACHE_VERSION = 1
+
+AI_INTRO_SYSTEM_PROMPT = """You write the short spoken introduction to a topic for primary-school children (Grades 1-5),
+before they take a test on it. Return ONLY JSON in this shape:
+{
+  "slides": [
+    {"title": "What is <topic>?", "content": "...", "art": ["🌧️", "☁️"]},
+    {"title": "Idea 1: <short name>", "content": "...", "art": ["..."]}
+  ]
+}
+Rules:
+- 3 or 4 slides. The first slide is titled "What is ...?" / "What are ...?" and explains the topic in 2-3 sentences,
+  ending by naming the 2 or 3 key ideas that follow.
+- Each following slide is titled "Idea N: <2-4 word name>" and has 2-3 sentences explaining that idea simply, then
+  "Here's a question: <a question>? <its answer>." Use Indian names and everyday examples where natural.
+- Words a child of that grade understands; each sentence under 25 words; no markdown, no lists, no emoji in text.
+- "art": 1 to 4 emoji that picture the slide. Factually correct and age-appropriate."""
+
+
+class IntroGenerationError(Exception):
+    pass
+
+
+def _clean_ai_slides(raw: dict) -> list[dict]:
+    slides = []
+    for slide in (raw.get("slides") or [])[:4]:
+        title = str(slide.get("title", "")).strip()[:80]
+        content = str(slide.get("content", "")).strip()
+        art = [str(a).strip() for a in (slide.get("art") or []) if str(a).strip()][:4]
+        if title and content:
+            slides.append({"title": title, "content": content, **({"art": art} if art else {})})
+    if len(slides) < 2:
+        raise IntroGenerationError("The introduction came back incomplete.")
+    return slides
+
+
+async def get_ai_topic_intro_slides(topic: str, grade: int) -> list[dict]:
+    import json
+
+    import gemini_service
+    import kv_store
+
+    cache_key = f"topic-intro:v{AI_INTRO_CACHE_VERSION}:{topic.strip().lower()}:g{grade}"
+    cached = kv_store.get(cache_key)
+    if cached:
+        return cached
+
+    client = gemini_service._get_client()
+    prompt = f"Topic: {topic}\nGrade: {grade}\nWrite the introduction JSON."
+    last_error: Exception = IntroGenerationError("No response")
+    for _ in range(gemini_service.MAX_PARSE_RETRIES + 1):
+        response = await gemini_service._generate_with_retry(client, prompt, AI_INTRO_SYSTEM_PROMPT)
+        try:
+            slides = _clean_ai_slides(json.loads(response.text or ""))
+            break
+        except (json.JSONDecodeError, AttributeError, TypeError, IntroGenerationError) as exc:
+            last_error = exc
+    else:
+        raise IntroGenerationError(f"Couldn't write an introduction for this topic. Please try again. ({last_error})")
+
+    kv_store.put(cache_key, slides)
+    return slides

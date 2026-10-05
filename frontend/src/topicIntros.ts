@@ -17,6 +17,13 @@ const TOPICS_WITH_INTRO = new Set([
   "Matter and Force",
 ]);
 
-export function hasTopicIntro(topic: string): boolean {
+export function hasHandWrittenIntro(topic: string): boolean {
   return TOPICS_WITH_INTRO.has(topic);
+}
+
+// Every topic has an intro: the hand-written ones above, and an AI-written
+// one (backend topic_intro_service.get_ai_topic_intro_slides) for the rest.
+// Only the mixed reviews skip it, as they span many topics.
+export function hasTopicIntro(topic: string): boolean {
+  return topic.trim() !== "" && !topic.startsWith("Mixed Review");
 }

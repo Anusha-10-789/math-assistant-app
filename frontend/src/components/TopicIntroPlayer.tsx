@@ -2,10 +2,12 @@ import { useEffect, useState } from "react";
 import { getCachedIntroSlides, type IntroSlide } from "../api";
 import { speechSupported, useNarration, type NarrationSegment } from "../useNarration";
 import type { VisualAidData } from "../types";
+import { displayTopic } from "../subjectModules";
 import VisualAid from "./VisualAid";
 
 interface TopicIntroPlayerProps {
   topic: string;
+  grade: number;
   onContinue: () => void;
   onBack: () => void;
   onFetchSlides: (topic: string) => Promise<IntroSlide[]>;
@@ -74,7 +76,8 @@ function diagramFor(topic: string, slideIndex: number): VisualAidData | null {
   return TOPIC_DIAGRAMS[topic]?.[slideIndex] ?? null;
 }
 
-function artFor(topic: string, slideIndex: number): string[] {
+function artFor(topic: string, slideIndex: number, slide?: IntroSlide): string[] {
+  if (slide?.art?.length) return slide.art;
   const art = TOPIC_ART[topic] ?? [["📘", "✨"]];
   return art[slideIndex % art.length];
 }
@@ -82,9 +85,9 @@ function artFor(topic: string, slideIndex: number): string[] {
 // The topic introduction as a narrated slideshow, spoken by the browser's
 // own voice — it starts the moment the slides arrive, with nothing to render
 // or download first.
-export default function TopicIntroPlayer({ topic, onContinue, onBack, onFetchSlides }: TopicIntroPlayerProps) {
+export default function TopicIntroPlayer({ topic, grade, onContinue, onBack, onFetchSlides }: TopicIntroPlayerProps) {
   // Usually already loaded at login, so the intro starts on the very first render.
-  const [slides, setSlides] = useState<IntroSlide[] | null>(() => getCachedIntroSlides(topic));
+  const [slides, setSlides] = useState<IntroSlide[] | null>(() => getCachedIntroSlides(topic, grade));
   const [error, setError] = useState("");
   const [hasWatched, setHasWatched] = useState(false);
 
@@ -141,7 +144,7 @@ export default function TopicIntroPlayer({ topic, onContinue, onBack, onFetchSli
       </button>
 
       <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-indigo-500">Topic Introduction</p>
-      <h2 className="mb-4 text-lg font-bold text-slate-900">What is {topic}?</h2>
+      <h2 className="mb-4 text-lg font-bold text-slate-900">{displayTopic(topic)}</h2>
 
       {error && (
         <div className="mb-4 rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
@@ -156,6 +159,16 @@ export default function TopicIntroPlayer({ topic, onContinue, onBack, onFetchSli
         <p className="mb-4 rounded-lg border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-700">
           This browser can't speak the introduction aloud. Try the latest Chrome or Edge.
         </p>
+      )}
+
+      {!slides && !error && (
+        <div className="mb-4 flex min-h-[16rem] flex-col items-center justify-center gap-3 rounded-xl border border-indigo-200 bg-orange-50 px-5 text-center">
+          <span className="animate-bounce text-5xl" aria-hidden="true">
+            📖
+          </span>
+          <p className="text-base font-semibold text-slate-700">Getting your introduction ready…</p>
+          <p className="text-sm text-slate-500">New topics can take up to 30 seconds the first time.</p>
+        </div>
       )}
 
       {slides && slide && (
@@ -183,7 +196,7 @@ export default function TopicIntroPlayer({ topic, onContinue, onBack, onFetchSli
                 </div>
               ) : (
                 <div className="mt-4 flex flex-wrap justify-center gap-3" aria-hidden="true">
-                  {artFor(topic, slideIndex).map((emoji, index) => (
+                  {artFor(topic, slideIndex, slides[slideIndex]).map((emoji, index) => (
                     <span
                       key={index}
                       className="kid-float text-5xl sm:text-6xl"

@@ -140,6 +140,8 @@ class YouTubeExplanationRequest(BaseModel):
 
 class TopicIntroRequest(BaseModel):
     topic: str
+    # Used only for AI-written intros (topics without a hand-written one).
+    grade: int = Field(default=3, ge=1, le=5)
 
 
 class ConceptVideoRequest(BaseModel):

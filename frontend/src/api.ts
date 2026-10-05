@@ -226,12 +226,16 @@ export async function setOwnSecurityQuestion(question: string, answer: string): 
 export interface IntroSlide {
   title: string;
   content: string;
+  // Emoji for the slide's picture — sent with AI-written intros.
+  art?: string[];
 }
 
+// Hand-written intros are keyed by topic; AI-written ones by topic and grade.
 const introSlideCache = new Map<string, IntroSlide[]>();
+const introKey = (topic: string, grade: number) => `${topic.toLowerCase()}|${grade}`;
 
-export function getCachedIntroSlides(topic: string): IntroSlide[] | null {
-  return introSlideCache.get(topic) ?? null;
+export function getCachedIntroSlides(topic: string, grade: number): IntroSlide[] | null {
+  return introSlideCache.get(topic) ?? introSlideCache.get(introKey(topic, grade)) ?? null;
 }
 
 // Loads every topic's intro slides in one go (right after login), so opening
@@ -247,17 +251,28 @@ export async function prefetchAllIntroSlides(): Promise<void> {
   }
 }
 
-export async function fetchTopicIntroSlides(topic: string): Promise<IntroSlide[]> {
-  const cached = introSlideCache.get(topic);
+// A request already on its way is shared, so the intro is never written twice.
+const introSlideRequests = new Map<string, Promise<IntroSlide[]>>();
+
+export async function fetchTopicIntroSlides(topic: string, grade: number): Promise<IntroSlide[]> {
+  const cached = getCachedIntroSlides(topic, grade);
   if (cached) return cached;
-  const data = await postJson<{ slides: IntroSlide[] }>(
+  const key = introKey(topic, grade);
+  const pending = introSlideRequests.get(key);
+  if (pending) return pending;
+  const request = postJson<{ slides: IntroSlide[] }>(
     "topic-intro-slides",
-    { topic },
+    { topic, grade },
     "Failed to load the topic introduction.",
     true,
-  );
-  introSlideCache.set(topic, data.slides);
-  return data.slides;
+  )
+    .then((data) => {
+      introSlideCache.set(key, data.slides);
+      return data.slides;
+    })
+    .finally(() => introSlideRequests.delete(key));
+  introSlideRequests.set(key, request);
+  return request;
 }
 
 export async function requestPasswordReset(identifier: string): Promise<"email" | "sms"> {

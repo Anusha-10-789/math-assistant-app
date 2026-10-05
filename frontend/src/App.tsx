@@ -313,7 +313,7 @@ export default function App() {
 
   async function handleFetchTopicIntroSlides(introTopic: string) {
     try {
-      return await fetchTopicIntroSlides(introTopic);
+      return await fetchTopicIntroSlides(introTopic, grade);
     } catch (err) {
       if (err instanceof UnauthorizedError) {
         handleSessionExpired("Your session expired. Please log in again.");
@@ -518,8 +518,9 @@ export default function App() {
 
             {stage === "topic-intro" && (
               <TopicIntroPlayer
-                key={topic}
+                key={`${topic}|${grade}`}
                 topic={topic}
+                grade={grade}
                 onContinue={() => setStage("grade")}
                 onBack={() => setStage("topic")}
                 onFetchSlides={handleFetchTopicIntroSlides}
