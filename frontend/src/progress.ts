@@ -27,6 +27,8 @@ export interface TopicProgress {
   trend: number | null;
   level: MasteryLevel;
   lastActive: number;
+  // Grade of the most recent test — where a class or practice test picks up.
+  grade: number;
 }
 
 export interface SkillProgress {
@@ -86,6 +88,7 @@ export function buildProgress(history: CompletedTest[], now = Date.now()): Progr
       trend: percents.length > 1 ? latest - percents[percents.length - 2] : null,
       level: levelFor(recentPercent),
       lastActive: tests[tests.length - 1].completedAt,
+      grade: tests[tests.length - 1].grade,
     };
   });
   // Weakest first, so what needs attention is at the top.
@@ -127,4 +130,11 @@ export function buildProgress(history: CompletedTest[], now = Date.now()): Progr
       .slice(0, 6),
     timeline: chronological.slice(-20),
   };
+}
+
+// Topics to re-learn and practise: every topic not yet mastered (recent
+// average below MASTERY_PERCENT), weakest first. Mixed reviews are left out —
+// they span many topics, so the weak topic inside them is what to practise.
+export function weakTopics(history: CompletedTest[]): TopicProgress[] {
+  return buildProgress(history).topics.filter((t) => t.level !== "mastered" && !t.topic.startsWith("Mixed Review"));
 }

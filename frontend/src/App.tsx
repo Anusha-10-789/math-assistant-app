@@ -16,6 +16,7 @@ import TestHistoryPage from "./components/TestHistoryPage";
 import TestSummary from "./components/TestSummary";
 import TopicIntroPlayer from "./components/TopicIntroPlayer";
 import TopicVideos from "./components/TopicVideos";
+import PracticePlan from "./components/PracticePlan";
 import TopicSelect from "./components/TopicSelect";
 import VideoLibraryPage from "./components/VideoLibraryPage";
 import {
@@ -37,6 +38,7 @@ import { buildLocalMathLesson, isLocalMathTopic, questionKey } from "./mathQuest
 import { recordCompletedLesson } from "./profileStorage";
 import { clearTestHistory, getTestHistory, getTopicAttendance, recordCompletedTest, type CompletedTest } from "./testHistory";
 import { getProfileInfo } from "./profileInfo";
+import { weakTopics, type TopicProgress } from "./progress";
 import { displayTopic } from "./subjectModules";
 import { hasTopicIntro } from "./topicIntros";
 import type { LessonContent } from "./types";
@@ -366,6 +368,25 @@ export default function App() {
     setStage("grade");
   }
 
+  // Practice plan: re-learn a weak topic (its introduction, then the
+  // "watch first" video on the next screen)…
+  function handleWatchClass(item: TopicProgress) {
+    setSubject(item.subject);
+    setTopic(item.topic);
+    setGrade(item.grade);
+    setQuizResult(null);
+    setError("");
+    setView("app");
+    setStage(hasTopicIntro(item.topic) ? "topic-intro" : "grade");
+  }
+
+  // …or take a fresh practice test on it (questions already seen are avoided).
+  function handlePracticeTest(item: TopicProgress) {
+    handlePractice(item.topic, item.subject);
+    setGrade(item.grade);
+    setNumQuestions(10);
+  }
+
   function goHome() {
     setError("");
     setTopic("");
@@ -424,6 +445,7 @@ export default function App() {
   ];
   // The profile name, or a friendly first name from the login ("anusha.k@…" → "Anusha").
   const loginName = username.includes("@") ? username.split("@")[0].split(/[._\-+\d]/)[0] : "";
+  const weak = weakTopics(testHistory);
   const displayName =
     getProfileInfo().name.trim().split(/\s+/)[0] || (loginName ? loginName.charAt(0).toUpperCase() + loginName.slice(1) : "there");
 
@@ -516,6 +538,8 @@ export default function App() {
         ) : view === "progress" ? (
           <ProgressPage
             history={testHistory}
+            onWatchClass={handleWatchClass}
+            onPracticeTest={handlePracticeTest}
             watched={watchedVideos}
             onBack={goHome}
             onPractice={handlePractice}
@@ -549,6 +573,16 @@ export default function App() {
                   setError("");
                   setStage("topic");
                 }}
+              />
+            )}
+
+            {stage === "subject" && weak.length > 0 && (
+              <PracticePlan
+                topics={weak}
+                limit={3}
+                onSeeAll={() => setView("progress")}
+                onWatchClass={handleWatchClass}
+                onPracticeTest={handlePracticeTest}
               />
             )}
 
@@ -630,6 +664,16 @@ export default function App() {
                 onViewProgress={() => setView("progress")}
                 onHome={goHome}
                 onTryAgain={handleTryAgain}
+              />
+            )}
+
+            {lesson && stage === "summary" && quizResult && weak.some((t) => t.topic === lesson.topic) && (
+              <PracticePlan
+                topics={weak.filter((t) => t.topic === lesson.topic)}
+                title="📚 Let's make this topic stronger"
+                subtitle="Your average on this topic is below 80%. Watch the class again, then try a fresh practice test."
+                onWatchClass={handleWatchClass}
+                onPracticeTest={handlePracticeTest}
               />
             )}
 

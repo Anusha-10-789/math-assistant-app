@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { allConceptVideos, hasConceptVideos } from "../conceptVideos";
 import { getProfileInfo } from "../profileInfo";
-import { buildProgress, MASTERY_PERCENT, percentOf, type MasteryLevel, type ProgressReport, type TopicProgress } from "../progress";
+import { buildProgress, MASTERY_PERCENT, percentOf, weakTopics, type MasteryLevel, type ProgressReport, type TopicProgress } from "../progress";
 import { displayTopic } from "../subjectModules";
 import type { CompletedTest } from "../testHistory";
 import type { WatchedVideos } from "../videoProgress";
+import PracticePlan from "./PracticePlan";
 import type { Subject } from "./SubjectSelect";
 
 interface ProgressPageProps {
@@ -13,6 +14,8 @@ interface ProgressPageProps {
   onBack: () => void;
   onPractice: (topic: string, subject: Subject) => void;
   onWatchVideos: (topic: string) => void;
+  onWatchClass: (topic: TopicProgress) => void;
+  onPracticeTest: (topic: TopicProgress) => void;
 }
 
 const LEVELS: Record<MasteryLevel, { icon: string; label: string; className: string }> = {
@@ -225,8 +228,9 @@ function TopicRow({ row, onPractice, onWatchVideos }: { row: TopicProgress; onPr
   );
 }
 
-export default function ProgressPage({ history, watched, onBack, onPractice, onWatchVideos }: ProgressPageProps) {
+export default function ProgressPage({ history, watched, onBack, onPractice, onWatchVideos, onWatchClass, onPracticeTest }: ProgressPageProps) {
   const report = buildProgress(history);
+  const weak = weakTopics(history);
   // Hand-made videos plus AI-made ones (ids starting "ai-").
   const videosWatched = Object.keys(watched).length;
   const mastered = report.topics.filter((t) => t.level === "mastered").length;
@@ -282,6 +286,16 @@ export default function ProgressPage({ history, watched, onBack, onPractice, onW
             <StatTile label="Topics mastered" value={`${mastered} / ${report.topics.length}`} />
             <StatTile label="Videos watched" value={String(videosWatched)} note={`${allConceptVideos().length} ready-made + any topic on request`} />
           </div>
+
+          {weak.length > 0 ? (
+            <div className="print:hidden">
+              <PracticePlan topics={weak} onWatchClass={onWatchClass} onPracticeTest={onPracticeTest} embedded />
+            </div>
+          ) : (
+            <div className="rounded-2xl bg-emerald-50 px-4 py-3 text-sm font-semibold text-emerald-800">
+              🎉 Every topic you've tested is mastered ({MASTERY_PERCENT}%+ average). Try a new topic to keep growing!
+            </div>
+          )}
 
           <section>
             <h3 className="mb-2 text-sm font-semibold text-slate-900">Quiz scores{report.timeline.length < report.totalTests ? ` (last ${report.timeline.length})` : ""}</h3>
