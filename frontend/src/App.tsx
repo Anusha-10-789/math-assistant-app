@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import LogoMark from "./components/LogoMark";
 import ReadingPoster from "./components/ReadingPoster";
+import MathBackdrop from "./components/MathBackdrop";
 import SolarSystemBackdrop from "./components/SolarSystemBackdrop";
 import DownloadButtons from "./components/DownloadButtons";
 import ErrorMessage from "./components/ErrorMessage";
@@ -463,12 +464,13 @@ export default function App() {
     </button>
   );
 
-  // Inside the Science lessons the background becomes a solar system.
-  const spaceTheme = view === "app" && subject === "Science" && stage !== "subject";
+  // Inside the lessons the background matches the subject: a solar system
+  // for Science, a maths chalkboard for Maths.
+  const inLesson = view === "app" && stage !== "subject";
 
   return (
-    <div className={`min-h-screen ${spaceTheme ? "theme-space" : ""}`}>
-      {spaceTheme ? <SolarSystemBackdrop /> : <ReadingPoster variant="app" />}
+    <div className={`min-h-screen ${inLesson ? "theme-dark" : ""}`}>
+      {!inLesson ? <ReadingPoster variant="app" /> : subject === "Science" ? <SolarSystemBackdrop /> : <MathBackdrop />}
 
       {/* Desktop: labelled sidebar */}
       <aside className="fixed inset-y-0 left-0 z-20 hidden w-64 flex-col border-r border-white/70 bg-white/90 px-4 py-6 backdrop-blur-xl lg:flex print:hidden">

@@ -484,12 +484,13 @@
   animation: space-sun-glow 4s ease-in-out infinite;
 }
 
-/* Text that sits straight on the dark space backdrop turns light. */
-.theme-space .on-backdrop {
+/* Text that sits straight on a dark subject backdrop (space, chalkboard) turns light. */
+.theme-dark .on-backdrop {
   @apply text-white;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
 }
 
-.theme-space .on-backdrop-soft {
+.theme-dark .on-backdrop-soft {
   @apply text-indigo-200;
 }
 
@@ -510,5 +511,123 @@
   }
   .space-ufo {
     left: 60%;
+  }
+}
+
+/* MathBackdrop (Maths pages) */
+@keyframes math-chalk {
+  0% {
+    opacity: 0;
+    clip-path: inset(0 100% 0 0);
+  }
+  8% {
+    opacity: 0.45;
+    clip-path: inset(0 0 0 0);
+  }
+  40% {
+    opacity: 0.45;
+    clip-path: inset(0 0 0 0);
+  }
+  50%, 100% {
+    opacity: 0;
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes math-rise {
+  0% {
+    transform: translateY(20vh);
+    opacity: 0;
+  }
+  8% {
+    opacity: 0.95;
+  }
+  85% {
+    opacity: 0.95;
+  }
+  100% {
+    transform: translateY(-115vh);
+    opacity: 0;
+  }
+}
+
+@keyframes math-sway {
+  0%, 100% {
+    transform: rotate(-7deg);
+  }
+  50% {
+    transform: rotate(7deg);
+  }
+}
+
+@keyframes math-bead {
+  0%, 15% {
+    transform: translateX(0);
+  }
+  45%, 65% {
+    transform: translateX(52px);
+  }
+  95%, 100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes math-slice {
+  0%, 30%, 100% {
+    transform: translate(0, 0);
+  }
+  45%, 80% {
+    transform: translate(9px, -9px);
+  }
+}
+
+.math-chalk {
+  opacity: 0;
+  animation: math-chalk 20s ease-in-out infinite;
+}
+
+.math-rise {
+  opacity: 0;
+  animation: math-rise linear infinite;
+}
+
+.math-sway {
+  animation: math-sway 3.5s ease-in-out infinite;
+  transform-origin: 50% 100%;
+}
+
+.math-spin {
+  animation: space-orbit linear infinite;
+}
+
+.math-hand {
+  animation: space-orbit linear infinite;
+  transform-origin: 50px 50px;
+}
+
+.math-bead {
+  animation: math-bead ease-in-out infinite;
+}
+
+.math-slice {
+  animation: math-slice 5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .math-chalk,
+  .math-rise,
+  .math-sway,
+  .math-spin,
+  .math-hand,
+  .math-bead,
+  .math-slice {
+    animation: none;
+  }
+  .math-chalk {
+    opacity: 0.4;
+  }
+  .math-rise {
+    opacity: 0.9;
+    transform: translateY(-40vh);
   }
 }
