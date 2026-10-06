@@ -14,7 +14,7 @@ import gemini_service
 import kv_store
 
 MOTIONS = {"grow", "float", "pulse", "rise", "fall", "push", "pull", "chain"}
-CACHE_VERSION = 1
+CACHE_VERSION = 2
 MAX_SCENES = 4
 MAX_BEATS = 5
 MAX_ITEMS = 6
@@ -34,8 +34,15 @@ Return ONLY JSON in this shape:
   ]
 }}
 Rules:
-- 3 or 4 scenes; each scene has 3 to {MAX_BEATS} beats. The whole video is about 1 minute when read aloud.
-- Teach the key ideas of the topic in order, from the simplest idea to the main idea, and end with a one-line recap.
+- Exactly 4 scenes; each scene has 3 to {MAX_BEATS} beats. The whole video is about 1 to 1.5 minutes when read aloud.
+- Follow this teaching shape, pitched exactly at the given grade's syllabus:
+  1. Hook: start from something the child sees in everyday life (at home, school, a market, a park) and ask a
+     curious question that the video will answer.
+  2. The idea: explain the concept in small steps, one idea per beat, with the correct key words.
+  3. Example: work through one concrete example step by step (for maths, real numbers and the working; for
+     science, a real thing or process the child knows).
+  4. Recap: sum up the key points in two or three beats, then end with a short "Think about it" question for the child.
+- Use Indian names, places, food and money (rupees) where it helps.
 - "say": simple words a child of that grade understands, under 20 words, friendly and encouraging. No markdown.
 - "items": 1 to {MAX_ITEMS} emoji that picture exactly what the sentence says. For maths you may use short tokens
   such as "3", "+", "=", "½", "10 cm" alongside emoji. Never put words in items — show a river as 🏞️, not "river".
@@ -47,6 +54,20 @@ Rules:
 
 class ConceptVideoError(Exception):
     pass
+
+
+# A plain word ("square", "river") isn't a picture; the player shows items as
+# big pictures, so only emoji and short maths tokens ("3", "+", "½") stay,
+# along with measurements such as "10 cm".
+def _picture_items(items) -> list[str]:
+    kept = []
+    for item in items or []:
+        text = str(item).strip()
+        if not text:
+            continue
+        if re.fullmatch(r"\d+([.,]\d+)?\s?[A-Za-z]{1,3}", text) or not re.search(r"[A-Za-z]{3,}", text):
+            kept.append(text)
+    return kept[:MAX_ITEMS]
 
 
 def _slug(text: str) -> str:
@@ -61,7 +82,7 @@ def _clean(raw: dict, topic: str, grade: int) -> dict:
         narration, frames = [], []
         for beat in (scene.get("beats") or [])[:MAX_BEATS]:
             say = str(beat.get("say", "")).strip()
-            items = [str(i).strip() for i in (beat.get("items") or []) if str(i).strip()][:MAX_ITEMS]
+            items = _picture_items(beat.get("items"))
             if not say or not items:
                 continue
             motion = beat.get("motion") if beat.get("motion") in MOTIONS else "grow"

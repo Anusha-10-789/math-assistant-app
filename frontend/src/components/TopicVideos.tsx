@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { fetchConceptVideo } from "../api";
+import { getLibraryVideo } from "../conceptLibrary";
 import { estimateSeconds, getConceptVideos, type ConceptVideo } from "../conceptVideos";
 import type { WatchedVideos } from "../videoProgress";
 import ConceptVideoPlayer from "./ConceptVideoPlayer";
@@ -15,14 +16,30 @@ type AiState = { status: "idle" } | { status: "loading" } | { status: "error"; m
 
 const minutes = (video: ConceptVideo) => Math.max(1, Math.round(estimateSeconds(video) / 30) / 2);
 
-// Short animated videos for a topic: the hand-made ones where they exist,
-// otherwise one the AI storyboards for this topic and grade.
+// Short animated videos for a topic: the library video for this grade's
+// concept plus any hand-made ones; for a typed-in topic outside the syllabus,
+// one the AI storyboards on request.
 export default function TopicVideos({ topic, grade, watched, onWatched }: TopicVideosProps) {
   const handMade = getConceptVideos(topic);
   const [playing, setPlaying] = useState<ConceptVideo | null>(null);
   const [aiVideo, setAiVideo] = useState<ConceptVideo | null>(null);
   const [ai, setAi] = useState<AiState>({ status: "idle" });
-  const videos = handMade.length ? handMade : aiVideo ? [aiVideo] : [];
+  const [libraryVideo, setLibraryVideo] = useState<ConceptVideo | null>(null);
+  const [libraryChecked, setLibraryChecked] = useState(false);
+
+  useEffect(() => {
+    let cancelled = false;
+    getLibraryVideo(topic, grade).then((video) => {
+      if (cancelled) return;
+      setLibraryVideo(video);
+      setLibraryChecked(true);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [topic, grade]);
+
+  const videos = [...(libraryVideo ? [libraryVideo] : []), ...handMade, ...(aiVideo ? [aiVideo] : [])];
 
   async function makeVideo() {
     setAi({ status: "loading" });
@@ -72,7 +89,7 @@ export default function TopicVideos({ topic, grade, watched, onWatched }: TopicV
           </button>
         ))}
 
-        {!handMade.length && !aiVideo && (
+        {libraryChecked && videos.length === 0 && (
           <button
             type="button"
             onClick={makeVideo}

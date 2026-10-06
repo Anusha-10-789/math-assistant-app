@@ -77,6 +77,7 @@ export default function App() {
   const [watchedVideos, setWatchedVideos] = useState(() => getWatchedVideos());
   // Topic the video library opens on when reached from a "Videos" button.
   const [videosTopic, setVideosTopic] = useState<string | undefined>(undefined);
+  const [videosGrade, setVideosGrade] = useState<number | undefined>(undefined);
 
   const lessonStartRef = useRef<number | null>(null);
   // Science / typed-in topics come from Gemini, which takes a while — so the
@@ -349,8 +350,9 @@ export default function App() {
     }
   }
 
-  function openVideos(videoTopic?: string) {
+  function openVideos(videoTopic?: string, videoGrade?: number) {
     setVideosTopic(videoTopic);
+    setVideosGrade(videoGrade);
     setView("videos");
   }
 
@@ -539,8 +541,9 @@ export default function App() {
           />
         ) : view === "videos" ? (
           <VideoLibraryPage
-            key={videosTopic ?? "all"}
+            key={`${videosTopic ?? "all"}|${videosGrade ?? ""}`}
             initialTopic={videosTopic}
+            initialGrade={videosGrade}
             watched={watchedVideos}
             onWatched={handleVideoWatched}
             onBack={goHome}
@@ -650,7 +653,7 @@ export default function App() {
                 onDownloadReportPdf={handleDownloadReportPdf}
                 downloadingReportDocx={downloadingReportDocx}
                 downloadingReportPdf={downloadingReportPdf}
-                onWatchVideos={hasConceptVideos(lesson.topic) ? () => openVideos(lesson.topic) : undefined}
+                onWatchVideos={lesson.topic.startsWith("Mixed Review") ? undefined : () => openVideos(lesson.topic, lesson.grade)}
                 onViewProgress={() => setView("progress")}
                 onHome={goHome}
                 onTryAgain={handleTryAgain}

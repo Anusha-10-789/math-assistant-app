@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { allConceptVideos, hasConceptVideos } from "../conceptVideos";
+import { allConceptVideos } from "../conceptVideos";
 import { getProfileInfo } from "../profileInfo";
 import { buildProgress, MASTERY_PERCENT, percentOf, weakTopics, type MasteryLevel, type ProgressReport, type TopicProgress } from "../progress";
 import { displayTopic } from "../subjectModules";
@@ -13,7 +13,7 @@ interface ProgressPageProps {
   watched: WatchedVideos;
   onBack: () => void;
   onPractice: (topic: string, subject: Subject) => void;
-  onWatchVideos: (topic: string) => void;
+  onWatchVideos: (topic: string, grade: number) => void;
   onWatchClass: (topic: TopicProgress) => void;
   onPracticeTest: (topic: TopicProgress) => void;
 }
@@ -363,14 +363,7 @@ export default function ProgressPage({ history, watched, onBack, onPractice, onW
                   key={row.topic}
                   row={row}
                   onPractice={() => onPractice(row.topic, row.subject)}
-                  onWatchVideos={
-                    hasConceptVideos(row.topic)
-                      ? () => onWatchVideos(row.topic)
-                      : row.topic.startsWith("Mixed Review")
-                        ? undefined
-                        : // The topic screen offers an AI-made video for topics without hand-made ones.
-                          () => onPractice(row.topic, row.subject)
-                  }
+                  onWatchVideos={row.topic.startsWith("Mixed Review") ? undefined : () => onWatchVideos(row.topic, row.grade)}
                 />
               ))}
             </div>

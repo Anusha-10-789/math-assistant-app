@@ -1,0 +1,3345 @@
+{
+ "Plant Life Cycle": {
+  "id": "lib-science-g3-plant-life-cycle",
+  "topic": "Plant Life Cycle",
+  "title": "How a Tiny Seed Grows",
+  "icon": "🌱",
+  "scenes": [
+   {
+    "title": "The Magic Seed",
+    "narration": [
+     "Have you ever wondered how a tiny mango seed becomes a big tree?",
+     "It all starts when we bury a seed in the warm garden soil.",
+     "The seed waits patiently for a little bit of water and sunshine."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🥭",
+        "🌱"
+       ],
+       "motion": "pulse",
+       "caption": "Tiny Seed"
+      },
+      {
+       "items": [
+        "🌱",
+        "🟫"
+       ],
+       "motion": "fall",
+       "caption": "Planting"
+      },
+      {
+       "items": [
+        "💧",
+        "☀️"
+       ],
+       "motion": "float",
+       "caption": "Waiting"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Sprouting and Growing",
+    "narration": [
+     "Soon, a tiny root pushes down to drink water from the earth.",
+     "Then, a little green shoot pokes up through the soil to find light.",
+     "The plant grows leaves to catch sunlight and make its own food."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌱",
+        "🪱"
+       ],
+       "motion": "push",
+       "caption": "Roots Grow"
+      },
+      {
+       "items": [
+        "🌱",
+        "☀️"
+       ],
+       "motion": "rise",
+       "caption": "New Shoot"
+      },
+      {
+       "items": [
+        "🍃",
+        "☀️"
+       ],
+       "motion": "grow",
+       "caption": "Making Food"
+      }
+     ]
+    }
+   },
+   {
+    "title": "From Flower to Fruit",
+    "narration": [
+     "Look, our little plant is now big enough to grow a beautiful flower.",
+     "Bees visit the flower to help it turn into a yummy fruit.",
+     "Inside that juicy mango, there are new seeds waiting to start again."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌸"
+       ],
+       "motion": "grow",
+       "caption": "Flower Bloom"
+      },
+      {
+       "items": [
+        "🐝",
+        "🌸",
+        "🥭"
+       ],
+       "motion": "chain",
+       "caption": "Pollination"
+      },
+      {
+       "items": [
+        "🥭",
+        "🥭",
+        "🌱"
+       ],
+       "motion": "pulse",
+       "caption": "New Seeds"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Nature's Amazing Cycle",
+    "narration": [
+     "Plants grow from seeds, make flowers, and create new seeds for the future.",
+     "Every plant follows this special journey to help our world stay green.",
+     "Think about it, what do you think would happen if plants never made seeds?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌱",
+        "🌸",
+        "🥭"
+       ],
+       "motion": "chain",
+       "caption": "Life Cycle"
+      },
+      {
+       "items": [
+        "🌍",
+        "🌳"
+       ],
+       "motion": "float",
+       "caption": "Keep Growing"
+      },
+      {
+       "items": [
+        "🤔",
+        "🌱"
+       ],
+       "motion": "pulse",
+       "caption": "Think About It"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Animal Life Cycle": {
+  "id": "lib-science-g3-animal-life-cycle",
+  "topic": "Animal Life Cycle",
+  "title": "The Amazing Frog Life Cycle",
+  "icon": "🐸",
+  "scenes": [
+   {
+    "title": "A Pond Discovery",
+    "narration": [
+     "Have you ever seen tiny jelly bubbles in a pond near your house?",
+     "These are frog eggs, the start of an incredible journey.",
+     "How do these tiny dots turn into jumping green frogs?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏞️",
+        "🫧"
+       ],
+       "motion": "float",
+       "caption": "Pond life"
+      },
+      {
+       "items": [
+        "🥚"
+       ],
+       "motion": "pulse",
+       "caption": "Frog eggs"
+      },
+      {
+       "items": [
+        "❓",
+        "🐸"
+       ],
+       "motion": "rise",
+       "caption": "The mystery"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Growing Up Underwater",
+    "narration": [
+     "First, the egg hatches into a little tadpole that swims like a fish.",
+     "Tadpoles use special gills to breathe underwater while they eat pond plants.",
+     "Slowly, the tadpole starts to grow two back legs.",
+     "Soon, front legs pop out and its long tail gets shorter."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🐣",
+        "🐟"
+       ],
+       "motion": "chain",
+       "caption": "Tadpole stage"
+      },
+      {
+       "items": [
+        "🌿",
+        "🌊"
+       ],
+       "motion": "push",
+       "caption": "Eating plants"
+      },
+      {
+       "items": [
+        "🦵",
+        "🦵"
+       ],
+       "motion": "grow",
+       "caption": "Legs appear"
+      },
+      {
+       "items": [
+        "🐸",
+        "✂️"
+       ],
+       "motion": "grow",
+       "caption": "Changing shape"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Becoming A Frog",
+    "narration": [
+     "Now, the little froglet climbs onto a lily pad to breathe air.",
+     "Its tail disappears completely as it prepares to hop on land.",
+     "Finally, it becomes an adult frog ready to catch flies."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍃",
+        "🐸"
+       ],
+       "motion": "rise",
+       "caption": "Breathing air"
+      },
+      {
+       "items": [
+        "🚫",
+        "🌾"
+       ],
+       "motion": "pull",
+       "caption": "Tail gone"
+      },
+      {
+       "items": [
+        "🪰",
+        "👅"
+       ],
+       "motion": "push",
+       "caption": "Adult frog"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Lifecycle Recap",
+    "narration": [
+     "So, the cycle goes from egg, to tadpole, to froglet, and finally, adult.",
+     "Every stage is important for the frog to grow strong.",
+     "Think about it: why do you think frogs need water to lay their eggs?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🥚",
+        "🐟",
+        "🐸"
+       ],
+       "motion": "chain",
+       "caption": "The cycle"
+      },
+      {
+       "items": [
+        "✅"
+       ],
+       "motion": "pulse",
+       "caption": "Stay healthy"
+      },
+      {
+       "items": [
+        "🤔",
+        "💧"
+       ],
+       "motion": "float",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Animal Classification": {
+  "id": "lib-science-g3-animal-classification",
+  "topic": "Animal Classification",
+  "title": "Sorting Our Animal Friends",
+  "icon": "🐾",
+  "scenes": [
+   {
+    "title": "Spotting Animals at the Park",
+    "narration": [
+     "Have you seen a barking dog and a flying pigeon at the park?",
+     "Why are some animals fuzzy and others have shiny feathers?",
+     "Today, we will learn how scientists group these amazing creatures."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🐕",
+        "🐦",
+        "🌳"
+       ],
+       "motion": "float",
+       "caption": "Animal friends"
+      },
+      {
+       "items": [
+        "🐶",
+        "🪶",
+        "❓"
+       ],
+       "motion": "pulse",
+       "caption": "Ask why"
+      },
+      {
+       "items": [
+        "🧑‍🔬",
+        "🔍",
+        "📚"
+       ],
+       "motion": "chain",
+       "caption": "Scientists sorting"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Vertebrates and Invertebrates",
+    "narration": [
+     "Some animals have a strong backbone inside their bodies called a spine.",
+     "These are called vertebrates, like you, me, and the tiger.",
+     "Others have no bones at all, like a wiggly earthworm."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🦴",
+        "🦒",
+        "🐘"
+       ],
+       "motion": "grow",
+       "caption": "Backbones"
+      },
+      {
+       "items": [
+        "🧒",
+        "🐅",
+        "✅"
+       ],
+       "motion": "pulse",
+       "caption": "Vertebrates"
+      },
+      {
+       "items": [
+        "🪱",
+        "🐌",
+        "❌"
+       ],
+       "motion": "fall",
+       "caption": "Invertebrates"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Examples of Animal Groups",
+    "narration": [
+     "Mammals like a cow drink milk and have warm bodies.",
+     "Birds have feathers and lay eggs in a cozy nest.",
+     "Fish live in water and use gills to breathe easily."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🐄",
+        "🥛",
+        "☀️"
+       ],
+       "motion": "rise",
+       "caption": "Mammals"
+      },
+      {
+       "items": [
+        "🪶",
+        "🥚",
+        "🏠"
+       ],
+       "motion": "float",
+       "caption": "Birds"
+      },
+      {
+       "items": [
+        "🐟",
+        "🌊",
+        "🫧"
+       ],
+       "motion": "push",
+       "caption": "Fish"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Think",
+    "narration": [
+     "We group animals by their bodies, like having a backbone.",
+     "Think about it: is a butterfly a vertebrate or invertebrate?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🦴",
+        "分类",
+        "📋"
+       ],
+       "motion": "chain",
+       "caption": "Group by body"
+      },
+      {
+       "items": [
+        "🦋",
+        "🤔",
+        "❓"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Habitats": {
+  "id": "lib-science-g3-habitats",
+  "topic": "Habitats",
+  "title": "Where Do Animals Live?",
+  "icon": "🏠",
+  "scenes": [
+   {
+    "title": "The Animal Home Hunt",
+    "narration": [
+     "Look at the squirrel in the park, where does it sleep at night?",
+     "Every animal needs a special place called a habitat to survive.",
+     "A habitat gives them food, water, and a safe place to rest."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🐿️",
+        "🌳"
+       ],
+       "motion": "pulse",
+       "caption": "Squirrel home"
+      },
+      {
+       "items": [
+        "🏡",
+        "🦁",
+        "🐟"
+       ],
+       "motion": "float",
+       "caption": "What is habitat"
+      },
+      {
+       "items": [
+        "🍎",
+        "💧",
+        "🛌"
+       ],
+       "motion": "chain",
+       "caption": "Basic needs"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Different Homes for Different Friends",
+    "narration": [
+     "Some animals like the desert, where it is very hot and dry.",
+     "Others prefer the deep blue ocean, where they swim all day long.",
+     "High up in the cool Himalayan mountains, the snow leopard stays warm.",
+     "Each habitat has special features that help specific animals live there."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌵",
+        "🐪"
+       ],
+       "motion": "float",
+       "caption": "Desert habitat"
+      },
+      {
+       "items": [
+        "🌊",
+        "🐠",
+        "🦀"
+       ],
+       "motion": "float",
+       "caption": "Ocean habitat"
+      },
+      {
+       "items": [
+        "🏔️",
+        "🐆"
+       ],
+       "motion": "rise",
+       "caption": "Mountain habitat"
+      },
+      {
+       "items": [
+        "🔍",
+        "🌍"
+       ],
+       "motion": "chain",
+       "caption": "Special features"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Example: The Mango Orchard",
+    "narration": [
+     "Think about a mango orchard in India full of sweet fruit.",
+     "Parrots find plenty of mangoes to eat right in the trees.",
+     "The thick leaves keep the birds safe from the hot sun.",
+     "If we took the parrot to the desert, it would struggle to find food."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🥭",
+        "🌳",
+        "🇮🇳"
+       ],
+       "motion": "grow",
+       "caption": "Mango orchard"
+      },
+      {
+       "items": [
+        "🦜",
+        "🥭"
+       ],
+       "motion": "push",
+       "caption": "Parrot food"
+      },
+      {
+       "items": [
+        "🍃",
+        "☀️"
+       ],
+       "motion": "pull",
+       "caption": "Safe shelter"
+      },
+      {
+       "items": [
+        "🦜",
+        "➡️",
+        "🌵"
+       ],
+       "motion": "fall",
+       "caption": "Wrong habitat"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Bringing It All Together",
+    "narration": [
+     "Remember, a habitat provides everything an animal needs to grow.",
+     "From the hot desert to the cool forest, every spot is home.",
+     "Think about it: what would happen to a fish if its pond dried up?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "✅",
+        "🏠",
+        "📈"
+       ],
+       "motion": "chain",
+       "caption": "Key concept"
+      },
+      {
+       "items": [
+        "🏜️",
+        "🌲"
+       ],
+       "motion": "float",
+       "caption": "Many homes"
+      },
+      {
+       "items": [
+        "🐟",
+        "❓",
+        "🏜️"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Adaptations": {
+  "id": "lib-science-g3-adaptations",
+  "topic": "Adaptations",
+  "title": "Why Animals Look So Different",
+  "icon": "🦒",
+  "scenes": [
+   {
+    "title": "The Curious Animal Parade",
+    "narration": [
+     "Have you ever wondered why a camel has a hump but a fish has fins?",
+     "Meet Rohan at the zoo looking at the tall giraffe eating leaves.",
+     "Why is the giraffe built that way and not like a little mouse?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🐫",
+        "🐟",
+        "❓"
+       ],
+       "motion": "pulse",
+       "caption": "Strange Shapes"
+      },
+      {
+       "items": [
+        "👦",
+        "🦒",
+        "🌳"
+       ],
+       "motion": "grow",
+       "caption": "Tall Giraffe"
+      },
+      {
+       "items": [
+        "🦒",
+        "🐭"
+       ],
+       "motion": "float",
+       "caption": "Body Differences"
+      }
+     ]
+    }
+   },
+   {
+    "title": "What Are Adaptations?",
+    "narration": [
+     "Adaptations are special body parts or behaviors that help animals live in their homes.",
+     "Just like you wear a raincoat in the monsoon, animals have gear for their climate.",
+     "These features help them find food, stay safe, and keep their temperature just right."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏠",
+        "🦁",
+        "🦅"
+       ],
+       "motion": "chain",
+       "caption": "Survival Tools"
+      },
+      {
+       "items": [
+        "🧥",
+        "🌧️",
+        "🌦️"
+       ],
+       "motion": "fall",
+       "caption": "Natural Gear"
+      },
+      {
+       "items": [
+        "🍎",
+        "🛡️",
+        "🌡️"
+       ],
+       "motion": "push",
+       "caption": "Staying Safe"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Camel in the Desert",
+    "narration": [
+     "Think of a camel living in the hot Thar Desert near Rajasthan.",
+     "Its wide, flat feet help it walk on soft sand without sinking.",
+     "That big hump stores fat, giving the camel energy when food is hard to find.",
+     "Its long eyelashes keep out the blowing sand so it can see clearly."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🐫",
+        "☀️",
+        "🏜️"
+       ],
+       "motion": "rise",
+       "caption": "Hot Desert"
+      },
+      {
+       "items": [
+        "🐫",
+        "👣",
+        "🏖️"
+       ],
+       "motion": "push",
+       "caption": "Big Feet"
+      },
+      {
+       "items": [
+        "🐫",
+        "🔋"
+       ],
+       "motion": "pulse",
+       "caption": "Energy Hump"
+      },
+      {
+       "items": [
+        "🐫",
+        "👁️",
+        "💨"
+       ],
+       "motion": "pull",
+       "caption": "Protected Eyes"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Think",
+    "narration": [
+     "Animals adapt to their environment to survive and thrive in the wild.",
+     "Every feature, from a beak to a fur coat, has a special job to do.",
+     "Think about it: what special body part would you want if you lived underwater?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🦁",
+        "🐘",
+        "🌍"
+       ],
+       "motion": "grow",
+       "caption": "Living Well"
+      },
+      {
+       "items": [
+        "🐦",
+        "🧥",
+        "🔧"
+       ],
+       "motion": "chain",
+       "caption": "Special Jobs"
+      },
+      {
+       "items": [
+        "🤔",
+        "🌊",
+        "🧜"
+       ],
+       "motion": "float",
+       "caption": "Your Idea"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Food Chains: Introduction": {
+  "id": "lib-science-g3-food-chains-introduction",
+  "topic": "Food Chains: Introduction",
+  "title": "Who Eats Whom?",
+  "icon": "🌿",
+  "scenes": [
+   {
+    "title": "A Hungry Garden",
+    "narration": [
+     "Have you ever wondered what the little birds in your park eat for breakfast?",
+     "Everything living needs energy to grow, run, and play all day long.",
+     "Let's discover how energy moves from the sun to your garden visitors."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🐦",
+        "🌳",
+        "🌻"
+       ],
+       "motion": "float",
+       "caption": "Hungry birds"
+      },
+      {
+       "items": [
+        "🏃",
+        "⚡",
+        "👶"
+       ],
+       "motion": "grow",
+       "caption": "Need energy"
+      },
+      {
+       "items": [
+        "☀️",
+        "🌿",
+        "🦋"
+       ],
+       "motion": "pulse",
+       "caption": "Energy path"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Food Chain Steps",
+    "narration": [
+     "It all starts with plants, which use sunlight to make their own food.",
+     "Next, a hungry grasshopper eats the plant to get that stored energy.",
+     "Then, a lizard catches the grasshopper to fuel its own quick movements.",
+     "This special path of who eats whom is called a food chain."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "☀️",
+        "🌿"
+       ],
+       "motion": "rise",
+       "caption": "Producers"
+      },
+      {
+       "items": [
+        "🦗",
+        "🌿"
+       ],
+       "motion": "push",
+       "caption": "First consumer"
+      },
+      {
+       "items": [
+        "🦎",
+        "🦗"
+       ],
+       "motion": "chain",
+       "caption": "Second consumer"
+      },
+      {
+       "items": [
+        "🌿",
+        "🦗",
+        "🦎"
+       ],
+       "motion": "chain",
+       "caption": "Food chain"
+      }
+     ]
+    }
+   },
+   {
+    "title": "An Indian Garden Example",
+    "narration": [
+     "Imagine a bright green neem tree in a Delhi park.",
+     "A caterpillar nibbles on the neem leaves to get strong.",
+     "A small sparrow swoops down and eats the caterpillar for a snack."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌳"
+       ],
+       "motion": "grow",
+       "caption": "Neem tree"
+      },
+      {
+       "items": [
+        "🐛",
+        "🌳"
+       ],
+       "motion": "push",
+       "caption": "Caterpillar eating"
+      },
+      {
+       "items": [
+        "🐦",
+        "🐛"
+       ],
+       "motion": "fall",
+       "caption": "Sparrow eats"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Wrap Up",
+    "narration": [
+     "Plants make energy, and animals pass that energy along the chain.",
+     "Without this chain, animals would not have the fuel they need to survive.",
+     "Think about it: what would happen to the chain if all the plants disappeared?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "☀️",
+        "🌿",
+        "🐛",
+        "🐦"
+       ],
+       "motion": "chain",
+       "caption": "Energy flow"
+      },
+      {
+       "items": [
+        "🚫",
+        "⚡"
+       ],
+       "motion": "pulse",
+       "caption": "Vital chain"
+      },
+      {
+       "items": [
+        "🤔",
+        "🌿",
+        "❓"
+       ],
+       "motion": "float",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Healthy Diet": {
+  "id": "lib-science-g3-healthy-diet",
+  "topic": "Healthy Diet",
+  "title": "Fuel Your Super Body",
+  "icon": "🍎",
+  "scenes": [
+   {
+    "title": "Why Do We Eat?",
+    "narration": [
+     "Have you ever wondered why Rohan feels so tired after playing cricket?",
+     "Our bodies are like cars that need special fuel to run.",
+     "That fuel comes from the yummy food we eat every day."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏏",
+        "🏃"
+       ],
+       "motion": "pulse",
+       "caption": "Feeling tired"
+      },
+      {
+       "items": [
+        "🚗",
+        "⛽"
+       ],
+       "motion": "push",
+       "caption": "Body fuel"
+      },
+      {
+       "items": [
+        "🍎",
+        "🍛",
+        "🥛"
+       ],
+       "motion": "rise",
+       "caption": "Healthy food"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Food Groups",
+    "narration": [
+     "First, carbohydrates give us quick energy to run and jump.",
+     "Next, proteins help our muscles grow big and strong.",
+     "Finally, vitamins in fruits protect us from getting sick."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍚",
+        "🍞"
+       ],
+       "motion": "chain",
+       "caption": "Energy foods"
+      },
+      {
+       "items": [
+        "🥚",
+        "🥜",
+        "💪"
+       ],
+       "motion": "grow",
+       "caption": "Muscle builders"
+      },
+      {
+       "items": [
+        "🍊",
+        "🛡️"
+       ],
+       "motion": "float",
+       "caption": "Body shields"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Healthy Plate",
+    "narration": [
+     "Let's build Priya's lunch plate with a mix of these.",
+     "Add a scoop of dal for protein and rice for energy.",
+     "Don't forget crunchy carrots to keep your eyes bright."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍽️"
+       ],
+       "motion": "chain",
+       "caption": "Lunch plate"
+      },
+      {
+       "items": [
+        "🥣",
+        "🍚"
+       ],
+       "motion": "push",
+       "caption": "Protein and rice"
+      },
+      {
+       "items": [
+        "🥕",
+        "👁️"
+       ],
+       "motion": "grow",
+       "caption": "Vitamins"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Stay Strong Everyday",
+    "narration": [
+     "Remember, eat a rainbow of colors to stay healthy.",
+     "Avoid too many sugary snacks that make you crash.",
+     "What is your favorite healthy vegetable to eat for dinner?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍎",
+        "🥦",
+        "🍆"
+       ],
+       "motion": "pulse",
+       "caption": "Eat colors"
+      },
+      {
+       "items": [
+        "🍬",
+        "❌"
+       ],
+       "motion": "fall",
+       "caption": "Limit sugar"
+      },
+      {
+       "items": [
+        "🤔",
+        "🥗"
+       ],
+       "motion": "float",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Solids, Liquids and Gases": {
+  "id": "lib-science-g3-solids-liquids-and-gases",
+  "topic": "Solids, Liquids and Gases",
+  "title": "The Three States of Matter",
+  "icon": "🧊",
+  "scenes": [
+   {
+    "title": "Everyday Shapes and Flows",
+    "narration": [
+     "Arav is thirsty after school, so he pours some cold water into his favorite glass.",
+     "He holds a hard ice cube in his hand, but it does not change its shape.",
+     "Why can we hold ice, but water spills everywhere? Let's explore the states of matter."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "🥛",
+        "💧"
+       ],
+       "motion": "fall",
+       "caption": "Pouring water"
+      },
+      {
+       "items": [
+        "🧊",
+        "🖐️"
+       ],
+       "motion": "pulse",
+       "caption": "Solid ice"
+      },
+      {
+       "items": [
+        "🧊",
+        "💧",
+        "💨"
+       ],
+       "motion": "chain",
+       "caption": "States of matter"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Understanding Tiny Particles",
+    "narration": [
+     "In solids like a wooden block, tiny particles are packed tightly together and stay still.",
+     "In liquids like milk, the particles are looser and can slide past each other easily.",
+     "In gases like the steam from hot tea, the particles zip around fast and fill everything."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🪵",
+        "📦",
+        "🧱"
+       ],
+       "motion": "pulse",
+       "caption": "Solid particles"
+      },
+      {
+       "items": [
+        "🥛",
+        "🌊"
+       ],
+       "motion": "float",
+       "caption": "Liquid particles"
+      },
+      {
+       "items": [
+        "☕",
+        "💨",
+        "🌫️"
+       ],
+       "motion": "rise",
+       "caption": "Gas particles"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Watching Matter Change",
+    "narration": [
+     "Imagine an ice cube from your freezer starts to melt on a warm sunny day.",
+     "As it gets warmer, the solid ice turns into a liquid puddle of water.",
+     "If you boil that water, it turns into invisible steam, which is a gas."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🧊",
+        "☀️"
+       ],
+       "motion": "fall",
+       "caption": "Melting ice"
+      },
+      {
+       "items": [
+        "🧊",
+        "➡️",
+        "💧"
+       ],
+       "motion": "chain",
+       "caption": "Solid to liquid"
+      },
+      {
+       "items": [
+        "💧",
+        "🔥",
+        "💨"
+       ],
+       "motion": "rise",
+       "caption": "Liquid to gas"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Quick Recap and Challenge",
+    "narration": [
+     "Matter can be a solid, a liquid, or a gas depending on how particles move.",
+     "Heating or cooling things can make them change from one state to another.",
+     "Think about it: Is the air inside a balloon a solid, a liquid, or a gas?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🧊",
+        "💧",
+        "💨"
+       ],
+       "motion": "pulse",
+       "caption": "Matter states"
+      },
+      {
+       "items": [
+        "🌡️",
+        "🔄"
+       ],
+       "motion": "chain",
+       "caption": "Changing states"
+      },
+      {
+       "items": [
+        "🎈",
+        "🤔"
+       ],
+       "motion": "float",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Force and Motion": {
+  "id": "lib-science-g3-force-and-motion",
+  "topic": "Force and Motion",
+  "title": "How Things Move Around Us",
+  "icon": "⚽",
+  "scenes": [
+   {
+    "title": "The Mystery of Motion",
+    "narration": [
+     "Have you ever wondered why your football rolls across the school field?",
+     "It does not move by itself, it needs a push.",
+     "This push or pull is what scientists call a force."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "⚽",
+        "🏫"
+       ],
+       "motion": "float",
+       "caption": "Moving football"
+      },
+      {
+       "items": [
+        "👟",
+        "⚽"
+       ],
+       "motion": "push",
+       "caption": "Needs force"
+      },
+      {
+       "items": [
+        "✋",
+        "🔗"
+       ],
+       "motion": "pulse",
+       "caption": "What is force"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Pushing and Pulling Objects",
+    "narration": [
+     "When you push a heavy bag of apples, you apply force.",
+     "When you pull open a drawer to find your pen, that is force too.",
+     "Forces can make things start moving or stop moving."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍎",
+        "🎒"
+       ],
+       "motion": "push",
+       "caption": "Pushing force"
+      },
+      {
+       "items": [
+        "🗄️",
+        "🖊️"
+       ],
+       "motion": "pull",
+       "caption": "Pulling force"
+      },
+      {
+       "items": [
+        "🛑",
+        "▶️"
+       ],
+       "motion": "chain",
+       "caption": "Changing motion"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Helping Rohan at Home",
+    "narration": [
+     "Rohan wants to move his toy box across the room.",
+     "He pushes the box forward with his hands.",
+     "The box slides faster as he pushes harder.",
+     "When he stops pushing, the box slows down and stops."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📦",
+        "👦"
+       ],
+       "motion": "float",
+       "caption": "Rohan's toy box"
+      },
+      {
+       "items": [
+        "📦",
+        "✋"
+       ],
+       "motion": "push",
+       "caption": "Applying push"
+      },
+      {
+       "items": [
+        "📦",
+        "💨"
+       ],
+       "motion": "push",
+       "caption": "More force"
+      },
+      {
+       "items": [
+        "📦",
+        "🛑"
+       ],
+       "motion": "chain",
+       "caption": "Stopping motion"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Think",
+    "narration": [
+     "A force is simply a push or a pull.",
+     "Forces change how objects move, speed up, or stop.",
+     "Think about it, what other things in your house do you push or pull?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "✋",
+        "🔗"
+       ],
+       "motion": "pulse",
+       "caption": "Key definition"
+      },
+      {
+       "items": [
+        "🏃",
+        "🛑"
+       ],
+       "motion": "chain",
+       "caption": "Force effects"
+      },
+      {
+       "items": [
+        "🏠",
+        "🤔"
+       ],
+       "motion": "float",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Light and Shadows": {
+  "id": "lib-science-g3-light-and-shadows",
+  "topic": "Light and Shadows",
+  "title": "How Shadows Are Born",
+  "icon": "☀️",
+  "scenes": [
+   {
+    "title": "The Mystery of Shadows",
+    "narration": [
+     "Have you ever noticed your shadow following you while walking to school?",
+     "A shadow is a dark shape made when something blocks the light.",
+     "Why does a shadow only appear when it is sunny or bright?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "👤"
+       ],
+       "motion": "float",
+       "caption": "Shadows follow"
+      },
+      {
+       "items": [
+        "☀️",
+        "🚫",
+        "👤"
+       ],
+       "motion": "pulse",
+       "caption": "Blocking light"
+      },
+      {
+       "items": [
+        "❓",
+        "☀️",
+        "🔦"
+       ],
+       "motion": "pulse",
+       "caption": "Need for light"
+      }
+     ]
+    }
+   },
+   {
+    "title": "How Shadows Work",
+    "narration": [
+     "Light travels in a straight line until it hits an object.",
+     "If the object is opaque, light cannot pass through it.",
+     "The light goes around the object, but the space behind stays dark.",
+     "That dark space is the shadow we see on the ground."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "➡️",
+        "☀️"
+       ],
+       "motion": "push",
+       "caption": "Straight lines"
+      },
+      {
+       "items": [
+        "🧱",
+        "🚫",
+        "☀️"
+       ],
+       "motion": "push",
+       "caption": "Opaque objects"
+      },
+      {
+       "items": [
+        "🧱",
+        "🌑"
+       ],
+       "motion": "fall",
+       "caption": "Dark space"
+      },
+      {
+       "items": [
+        "👤",
+        "🧱"
+       ],
+       "motion": "fall",
+       "caption": "Shadow creation"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Rohan and the Torch",
+    "narration": [
+     "Rohan holds a toy elephant in front of a bright torch.",
+     "The elephant blocks the light beam perfectly.",
+     "A clear elephant shadow appears on the white wall.",
+     "When Rohan moves the torch closer, the shadow gets bigger."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🐘",
+        "🔦"
+       ],
+       "motion": "push",
+       "caption": "Rohan's elephant"
+      },
+      {
+       "items": [
+        "🐘",
+        "🚫",
+        "🔦"
+       ],
+       "motion": "push",
+       "caption": "Blocking light"
+      },
+      {
+       "items": [
+        "🐘",
+        "👤",
+        "🧱"
+       ],
+       "motion": "grow",
+       "caption": "Shadow appears"
+      },
+      {
+       "items": [
+        "🔦",
+        "🐘",
+        "👤"
+       ],
+       "motion": "grow",
+       "caption": "Changing size"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Think",
+    "narration": [
+     "Remember, light travels straight and objects block it to make shadows.",
+     "Shadows change size depending on where the light source is.",
+     "Think about it: why do your shadows look longer at sunset than at noon?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "☀️",
+        "➡️",
+        "🧱",
+        "👤"
+       ],
+       "motion": "chain",
+       "caption": "Key points"
+      },
+      {
+       "items": [
+        "☀️",
+        "📏",
+        "👤"
+       ],
+       "motion": "pulse",
+       "caption": "Changing size"
+      },
+      {
+       "items": [
+        "🌅",
+        "👤",
+        "🕒"
+       ],
+       "motion": "rise",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Bones and Muscles": {
+  "id": "lib-science-g3-bones-and-muscles",
+  "topic": "Bones and Muscles",
+  "title": "How Your Body Moves",
+  "icon": "🦴",
+  "scenes": [
+   {
+    "title": "The Body's Framework",
+    "narration": [
+     "Have you ever wondered how Rohan runs so fast on the playground?",
+     "It is because your body has a strong skeleton inside.",
+     "Your bones act like a hard frame to hold you up."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏃",
+        "🏫"
+       ],
+       "motion": "pulse",
+       "caption": "Running fast"
+      },
+      {
+       "items": [
+        "🦴",
+        "💀"
+       ],
+       "motion": "grow",
+       "caption": "Strong skeleton"
+      },
+      {
+       "items": [
+        "🏠",
+        "🦴"
+       ],
+       "motion": "rise",
+       "caption": "Body frame"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Bones and Muscles Teamwork",
+    "narration": [
+     "Bones are strong, but they cannot move on their own.",
+     "Muscles are stretchy tissues that attach to your bones.",
+     "When muscles pull on the bone, your arm or leg moves."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🦴",
+        "🚫"
+       ],
+       "motion": "fall",
+       "caption": "Still bones"
+      },
+      {
+       "items": [
+        "💪",
+        "🦴"
+       ],
+       "motion": "chain",
+       "caption": "Muscle attachment"
+      },
+      {
+       "items": [
+        "💪",
+        "🦴",
+        "➡️"
+       ],
+       "motion": "pull",
+       "caption": "Muscle pull"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Bicep at Work",
+    "narration": [
+     "Let us look at your arm when you lift a heavy school bag.",
+     "Your bicep muscle gets shorter and tighter to lift your forearm.",
+     "Then, the muscle relaxes to let your arm go back down."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🎒",
+        "💪"
+       ],
+       "motion": "pulse",
+       "caption": "Lifting bag"
+      },
+      {
+       "items": [
+        "💪",
+        "⬆️"
+       ],
+       "motion": "grow",
+       "caption": "Bicep contracts"
+      },
+      {
+       "items": [
+        "💪",
+        "⬇️"
+       ],
+       "motion": "float",
+       "caption": "Muscle relaxes"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Keep Moving Strong",
+    "narration": [
+     "Bones provide the shape, and muscles provide the movement.",
+     "Eat healthy food and play outside to keep them strong.",
+     "Think about it, what would happen if you had no bones at all?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🦴",
+        "💪",
+        "🏃"
+       ],
+       "motion": "chain",
+       "caption": "Body teamwork"
+      },
+      {
+       "items": [
+        "🍎",
+        "🥛",
+        "⚽"
+       ],
+       "motion": "rise",
+       "caption": "Stay healthy"
+      },
+      {
+       "items": [
+        "❓",
+        "🦴"
+       ],
+       "motion": "pulse",
+       "caption": "Think deeper"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Digestive System: Introduction": {
+  "id": "lib-science-g3-digestive-system-introduction",
+  "topic": "Digestive System: Introduction",
+  "title": "Your Amazing Food Journey",
+  "icon": "🍎",
+  "scenes": [
+   {
+    "title": "The Big Question",
+    "narration": [
+     "Have you ever wondered where your yummy lunch goes after you swallow it?",
+     "It travels inside your body to become the energy you need for playing.",
+     "This process is called digestion, and it happens like a big slide inside you."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍛",
+        "🤔"
+       ],
+       "motion": "pulse",
+       "caption": "Lunch mystery"
+      },
+      {
+       "items": [
+        "🏃",
+        "⚡"
+       ],
+       "motion": "grow",
+       "caption": "Body fuel"
+      },
+      {
+       "items": [
+        "🍎",
+        "🎢"
+       ],
+       "motion": "fall",
+       "caption": "Digestion begins"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Steps of Digestion",
+    "narration": [
+     "First, your teeth chew the food into tiny, soft pieces.",
+     "Next, it travels down a long tube into your tummy, the stomach.",
+     "Inside the stomach, juices mix with food to turn it into a thick soup.",
+     "Then, it moves to the intestines to soak up all the good nutrients."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🦷",
+        "🍎"
+       ],
+       "motion": "push",
+       "caption": "Chewing"
+      },
+      {
+       "items": [
+        "⬇️",
+        "🥣"
+       ],
+       "motion": "fall",
+       "caption": "Swallowing"
+      },
+      {
+       "items": [
+        "🥣",
+        "🧪"
+       ],
+       "motion": "pulse",
+       "caption": "Stomach mix"
+      },
+      {
+       "items": [
+        "🧽",
+        "🥗"
+       ],
+       "motion": "chain",
+       "caption": "Nutrient soak"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Real Life Example",
+    "narration": [
+     "Imagine eating a crisp apple for your school snack.",
+     "Your teeth crunch the apple so it is easy to swallow.",
+     "The stomach squeezes the apple bits until they become a smooth liquid.",
+     "Finally, your body takes the energy from that apple to help you run."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍎"
+       ],
+       "motion": "pulse",
+       "caption": "Fresh apple"
+      },
+      {
+       "items": [
+        "🦷",
+        "🍎"
+       ],
+       "motion": "push",
+       "caption": "Tiny pieces"
+      },
+      {
+       "items": [
+        "🥣",
+        "🍎"
+       ],
+       "motion": "pull",
+       "caption": "Apple soup"
+      },
+      {
+       "items": [
+        "🏃",
+        "⚡"
+       ],
+       "motion": "rise",
+       "caption": "Body energy"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Reflect",
+    "narration": [
+     "Chewing starts it, the stomach mashes it, and intestines take the nutrients.",
+     "Your body works hard every single day to turn food into you.",
+     "Think about it: Why is it important to chew your food slowly?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🦷",
+        "🥣",
+        "🧽"
+       ],
+       "motion": "chain",
+       "caption": "Three steps"
+      },
+      {
+       "items": [
+        "🧘",
+        "🍎"
+       ],
+       "motion": "grow",
+       "caption": "Body growth"
+      },
+      {
+       "items": [
+        "🤔",
+        "🦷"
+       ],
+       "motion": "pulse",
+       "caption": "Food for thought"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Teeth": {
+  "id": "lib-science-g3-teeth",
+  "topic": "Teeth",
+  "title": "Why Do We Have Teeth?",
+  "icon": "🦷",
+  "scenes": [
+   {
+    "title": "The Crunchy Apple Mystery",
+    "narration": [
+     "Aarav is eating a crunchy apple in the school playground.",
+     "Have you ever wondered why we have different shapes of teeth?",
+     "Our teeth are like tools that help us eat our favorite snacks."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍎",
+        "👦"
+       ],
+       "motion": "pulse",
+       "caption": "Crunchy snack"
+      },
+      {
+       "items": [
+        "🦷",
+        "❓"
+       ],
+       "motion": "pulse",
+       "caption": "Tooth shapes"
+      },
+      {
+       "items": [
+        "🦷",
+        "🥄",
+        "🍴"
+       ],
+       "motion": "chain",
+       "caption": "Special tools"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Meet Your Tooth Team",
+    "narration": [
+     "In the front, we have sharp incisors for biting into food.",
+     "Next to them are pointy canines that help tear tougher bites.",
+     "At the back, flat molars grind food until it is soft."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🦷",
+        "🍎"
+       ],
+       "motion": "push",
+       "caption": "Sharp incisors"
+      },
+      {
+       "items": [
+        "🦷",
+        "🍖"
+       ],
+       "motion": "pull",
+       "caption": "Pointy canines"
+      },
+      {
+       "items": [
+        "🦷",
+        "🥣"
+       ],
+       "motion": "chain",
+       "caption": "Flat molars"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Day With Your Teeth",
+    "narration": [
+     "Think of a crunchy carrot from the market.",
+     "First, your incisors take a big bite out of the carrot.",
+     "Then, your back molars crush it into small, safe pieces to swallow."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🥕",
+        "🛒"
+       ],
+       "motion": "fall",
+       "caption": "Fresh carrot"
+      },
+      {
+       "items": [
+        "🦷",
+        "🥕"
+       ],
+       "motion": "push",
+       "caption": "First bite"
+      },
+      {
+       "items": [
+        "🦷",
+        "🥣"
+       ],
+       "motion": "chain",
+       "caption": "Grinding food"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Keep Them Sparkling",
+    "narration": [
+     "Remember to brush twice a day to keep your tooth tools strong.",
+     "Healthy teeth help us talk clearly and eat yummy meals.",
+     "Think about it: What would happen if we only had one type of tooth shape?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🪥",
+        "🦷",
+        "✨"
+       ],
+       "motion": "rise",
+       "caption": "Daily brushing"
+      },
+      {
+       "items": [
+        "👄",
+        "🍛"
+       ],
+       "motion": "grow",
+       "caption": "Healthy smile"
+      },
+      {
+       "items": [
+        "🦷",
+        "🤔"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Sound": {
+  "id": "lib-science-g3-sound",
+  "topic": "Sound",
+  "title": "How Sound Travels to You",
+  "icon": "🔊",
+  "scenes": [
+   {
+    "title": "The Mystery of Sound",
+    "narration": [
+     "Have you ever wondered how your friend's voice reaches your ears from across the playground?",
+     "When Rohan claps his hands, he creates a tiny movement in the air.",
+     "These movements are called vibrations, and they are invisible to our eyes."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👧",
+        "👦",
+        "🏫"
+       ],
+       "motion": "pulse",
+       "caption": "Sound travels"
+      },
+      {
+       "items": [
+        "👏"
+       ],
+       "motion": "push",
+       "caption": "Making vibrations"
+      },
+      {
+       "items": [
+        "💨"
+       ],
+       "motion": "float",
+       "caption": "Invisible vibrations"
+      }
+     ]
+    }
+   },
+   {
+    "title": "How Sound Moves",
+    "narration": [
+     "Think of vibrations like ripples moving across a pond after dropping a stone.",
+     "Sound waves push the air particles forward, one after another, in a long chain.",
+     "The sound travels through the air until it finally reaches your ear."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "💧",
+        "⭕"
+       ],
+       "motion": "rise",
+       "caption": "Water ripples"
+      },
+      {
+       "items": [
+        "➡️",
+        "💨"
+       ],
+       "motion": "chain",
+       "caption": "Sound chain"
+      },
+      {
+       "items": [
+        "👂"
+       ],
+       "motion": "push",
+       "caption": "Reaching ears"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Example: Playing the Tabla",
+    "narration": [
+     "When Priya plays the tabla, the skin on top starts shaking really fast.",
+     "This shaking pushes the air, creating waves that travel across the room.",
+     "When the waves hit your ear, you hear the lovely music playing."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🥁",
+        "✨"
+       ],
+       "motion": "pulse",
+       "caption": "Tabla skin"
+      },
+      {
+       "items": [
+        "🥁",
+        "〰️",
+        "🏠"
+       ],
+       "motion": "push",
+       "caption": "Air waves"
+      },
+      {
+       "items": [
+        "🎵",
+        "👂"
+       ],
+       "motion": "float",
+       "caption": "Hearing music"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Summary and Questions",
+    "narration": [
+     "Sound starts with vibrations and travels through the air like waves.",
+     "Without these vibrations, we would not be able to hear anything at all.",
+     "Think about it: Can sound travel in a place where there is no air?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📳",
+        "🌊"
+       ],
+       "motion": "chain",
+       "caption": "Sound basics"
+      },
+      {
+       "items": [
+        "🚫",
+        "🤫"
+       ],
+       "motion": "fall",
+       "caption": "No vibration"
+      },
+      {
+       "items": [
+        "🌌",
+        "🤔"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Sun and Moon": {
+  "id": "lib-science-g3-sun-and-moon",
+  "topic": "Sun and Moon",
+  "title": "Sun, Moon, and Our Sky",
+  "icon": "☀️",
+  "scenes": [
+   {
+    "title": "The Day and Night Mystery",
+    "narration": [
+     "Have you noticed the bright sun wakes us up and the moon glows at night?",
+     "Why does the sky change colors like magic while we play in the park?",
+     "Let us find out why these two friends take turns in the sky."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "☀️",
+        "🌙",
+        "🏠"
+       ],
+       "motion": "pulse",
+       "caption": "Day and night"
+      },
+      {
+       "items": [
+        "🌳",
+        "🌅",
+        "🤔"
+       ],
+       "motion": "float",
+       "caption": "Changing sky"
+      },
+      {
+       "items": [
+        "☀️",
+        "↔️",
+        "🌙"
+       ],
+       "motion": "chain",
+       "caption": "Taking turns"
+      }
+     ]
+    }
+   },
+   {
+    "title": "How the Earth Spins",
+    "narration": [
+     "The Earth is like a giant spinning top that never stops moving.",
+     "As India faces the sun, it is bright daytime for us.",
+     "When we spin away from the sun, it gets dark and nighttime begins.",
+     "The sun stays still, but our spinning makes it look like it moves."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌍",
+        "🔄"
+       ],
+       "motion": "rise",
+       "caption": "Earth spins"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "☀️"
+       ],
+       "motion": "push",
+       "caption": "Daytime"
+      },
+      {
+       "items": [
+        "🌍",
+        "🌑"
+       ],
+       "motion": "pull",
+       "caption": "Nighttime"
+      },
+      {
+       "items": [
+        "☀️",
+        "🚫",
+        "🏃"
+       ],
+       "motion": "float",
+       "caption": "The illusion"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Moon's Cool Tricks",
+    "narration": [
+     "The moon does not make its own light like a glowing bulb.",
+     "It acts like a mirror, bouncing the sun's light back to our eyes.",
+     "Sometimes we see a full moon, and other times just a thin slice."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌙",
+        "❌",
+        "💡"
+       ],
+       "motion": "pulse",
+       "caption": "Reflected light"
+      },
+      {
+       "items": [
+        "☀️",
+        "➡️",
+        "🌙",
+        "➡️",
+        "👀"
+       ],
+       "motion": "chain",
+       "caption": "Moon mirror"
+      },
+      {
+       "items": [
+        "🌕",
+        "🌘",
+        "🌑"
+       ],
+       "motion": "grow",
+       "caption": "Moon shapes"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Think",
+    "narration": [
+     "The sun is a star, and the moon is our rocky neighbor.",
+     "Day and night happen because the Earth keeps spinning around.",
+     "Think about it: if the Earth stopped spinning, what would happen to our days?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "⭐",
+        "🪨"
+       ],
+       "motion": "float",
+       "caption": "Sun and Moon"
+      },
+      {
+       "items": [
+        "🌍",
+        "🔄"
+       ],
+       "motion": "rise",
+       "caption": "Earth rotation"
+      },
+      {
+       "items": [
+        "🌍",
+        "🛑",
+        "❓"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Weather": {
+  "id": "lib-science-g3-weather",
+  "topic": "Weather",
+  "title": "Why Does It Rain Today?",
+  "icon": "🌤️",
+  "scenes": [
+   {
+    "title": "The Curious Morning Sky",
+    "narration": [
+     "Ananya looks out her window at the fluffy white clouds in Delhi.",
+     "Have you ever wondered where rain comes from before it hits the ground?",
+     "Let us go on a journey to find out how clouds turn into rain."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👧",
+        "☁️",
+        "🏙️"
+       ],
+       "motion": "float",
+       "caption": "Morning Sky"
+      },
+      {
+       "items": [
+        "❓",
+        "🌧️"
+       ],
+       "motion": "pulse",
+       "caption": "The Big Question"
+      },
+      {
+       "items": [
+        "🚀",
+        "☁️",
+        "💧"
+       ],
+       "motion": "chain",
+       "caption": "The Journey"
+      }
+     ]
+    }
+   },
+   {
+    "title": "How Clouds Are Made",
+    "narration": [
+     "The hot sun warms up water in rivers and lakes.",
+     "This warm water turns into invisible mist called water vapor.",
+     "High in the sky, the vapor cools down to form tiny cloud droplets.",
+     "When millions of these droplets join together, they create a big, heavy cloud."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "☀️",
+        "🌊"
+       ],
+       "motion": "rise",
+       "caption": "Sun Warms Water"
+      },
+      {
+       "items": [
+        "💨",
+        "🌡️"
+       ],
+       "motion": "rise",
+       "caption": "Water Vapor"
+      },
+      {
+       "items": [
+        "☁️",
+        "❄️"
+       ],
+       "motion": "float",
+       "caption": "Droplet Formation"
+      },
+      {
+       "items": [
+        "☁️",
+        "💧",
+        "➕"
+       ],
+       "motion": "grow",
+       "caption": "Cloud Growing"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Rain Falls Down",
+    "narration": [
+     "Inside the cloud, droplets bump into each other and grow bigger.",
+     "Soon, the cloud gets too heavy to hold all that water.",
+     "Gravity pulls the drops, and they fall down as refreshing rain.",
+     "The water lands in the park, helping the flowers grow tall."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "💧",
+        "💥",
+        "💧"
+       ],
+       "motion": "pulse",
+       "caption": "Droplets Collide"
+      },
+      {
+       "items": [
+        "☁️",
+        "🌑",
+        "⬇️"
+       ],
+       "motion": "push",
+       "caption": "Too Heavy"
+      },
+      {
+       "items": [
+        "🌧️",
+        "🌳"
+       ],
+       "motion": "fall",
+       "caption": "Rain Falling"
+      },
+      {
+       "items": [
+        "🌸",
+        "💧"
+       ],
+       "motion": "grow",
+       "caption": "Helping Plants"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap And Think",
+    "narration": [
+     "Sun warms water, vapor rises, and clouds eventually release rain.",
+     "Everything happens in a cycle that repeats every single time it rains.",
+     "Think about it: What would happen to our thirsty plants if it never rained?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "☀️",
+        "💨",
+        "☁️",
+        "🌧️"
+       ],
+       "motion": "chain",
+       "caption": "Quick Recap"
+      },
+      {
+       "items": [
+        "🔄",
+        "💧"
+       ],
+       "motion": "pulse",
+       "caption": "Water Cycle"
+      },
+      {
+       "items": [
+        "🤔",
+        "🌻",
+        "🏜️"
+       ],
+       "motion": "float",
+       "caption": "Think About It"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Our Earth, Water, and Air": {
+  "id": "lib-science-g3-the-earth",
+  "topic": "Our Earth, Water, and Air",
+  "title": "Our Amazing Planet Earth",
+  "icon": "🌍",
+  "scenes": [
+   {
+    "title": "Where We Live",
+    "narration": [
+     "Have you ever wondered why we do not fall off the Earth?",
+     "We live on a giant ball spinning in space called Earth.",
+     "Everything we see is held down by a secret force called gravity."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "🌍"
+       ],
+       "motion": "pulse",
+       "caption": "Gravity wonder"
+      },
+      {
+       "items": [
+        "🌍",
+        "✨"
+       ],
+       "motion": "float",
+       "caption": "Our home"
+      },
+      {
+       "items": [
+        "🍎",
+        "⬇️"
+       ],
+       "motion": "fall",
+       "caption": "Invisible gravity"
+      }
+     ]
+    }
+   },
+   {
+    "title": "What Makes Earth Special",
+    "narration": [
+     "Most of our Earth is covered in beautiful blue water.",
+     "We have rocky ground, tall mountains, and green forests.",
+     "A thin layer of air called the atmosphere wraps us like a blanket."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌊",
+        "💧"
+       ],
+       "motion": "float",
+       "caption": "Blue oceans"
+      },
+      {
+       "items": [
+        "🏔️",
+        "🌳"
+       ],
+       "motion": "grow",
+       "caption": "Land types"
+      },
+      {
+       "items": [
+        "☁️",
+        "🌍"
+       ],
+       "motion": "push",
+       "caption": "The atmosphere"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Trip Around India",
+    "narration": [
+     "Imagine flying over the snowy Himalayan mountains in the north.",
+     "Then, we glide down to the green plains where farmers grow wheat.",
+     "Finally, we visit the sunny beaches by the vast Indian Ocean."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏔️",
+        "❄️"
+       ],
+       "motion": "rise",
+       "caption": "High mountains"
+      },
+      {
+       "items": [
+        "🌾",
+        "🚜"
+       ],
+       "motion": "grow",
+       "caption": "Fertile plains"
+      },
+      {
+       "items": [
+        "🏖️",
+        "🌊"
+       ],
+       "motion": "float",
+       "caption": "Sandy coasts"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Keeping Earth Happy",
+    "narration": [
+     "Earth gives us water, air, and food to grow strong.",
+     "We must take care of our planet by keeping it clean.",
+     "Think about it: what is one way you can help Earth today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "💧",
+        "🍎",
+        "🌱"
+       ],
+       "motion": "chain",
+       "caption": "Earth's gifts"
+      },
+      {
+       "items": [
+        "♻️",
+        "🧹"
+       ],
+       "motion": "push",
+       "caption": "Care for Earth"
+      },
+      {
+       "items": [
+        "🤔",
+        "🌍"
+       ],
+       "motion": "pulse",
+       "caption": "Your turn"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Heat": {
+  "id": "lib-science-g3-heat",
+  "topic": "Heat",
+  "title": "How Heat Moves Around",
+  "icon": "🔥",
+  "scenes": [
+   {
+    "title": "The Warm Morning Tea",
+    "narration": [
+     "Have you ever touched a hot cup of chai and felt your fingers get warm?",
+     "Why does the heat move from the cup into your hands?",
+     "Let us discover how heat travels in our daily lives."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "☕",
+        "🧒"
+       ],
+       "motion": "pulse",
+       "caption": "Hot cup"
+      },
+      {
+       "items": [
+        "❓",
+        "🔥"
+       ],
+       "motion": "pulse",
+       "caption": "Heat movement"
+      },
+      {
+       "items": [
+        "🔍",
+        "💡"
+       ],
+       "motion": "grow",
+       "caption": "Heat travel"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Learning About Heat",
+    "narration": [
+     "Heat is a special kind of energy that makes things feel warm.",
+     "It always likes to travel from a warmer place to a cooler place.",
+     "This movement happens until everything is the same temperature."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "☀️",
+        "🔥"
+       ],
+       "motion": "grow",
+       "caption": "Heat energy"
+      },
+      {
+       "items": [
+        "🔥",
+        "➡️",
+        "❄️"
+       ],
+       "motion": "push",
+       "caption": "Warm to cool"
+      },
+      {
+       "items": [
+        "⚖️",
+        "🌡️"
+       ],
+       "motion": "float",
+       "caption": "Equal temperature"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Cooking Breakfast at Home",
+    "narration": [
+     "Imagine your mother frying a crispy dosa on a hot metal pan.",
+     "The stove gives heat to the metal pan, making it very hot.",
+     "Then, the hot pan gives its heat to the cool dosa batter.",
+     "Soon, the dosa is cooked perfectly and ready to eat."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🥘",
+        "🍳",
+        "😋"
+       ],
+       "motion": "chain",
+       "caption": "Cooking dosa"
+      },
+      {
+       "items": [
+        "🔥",
+        "🍳"
+       ],
+       "motion": "rise",
+       "caption": "Heating pan"
+      },
+      {
+       "items": [
+        "🍳",
+        "➡️",
+        "🥞"
+       ],
+       "motion": "push",
+       "caption": "Cooking batter"
+      },
+      {
+       "items": [
+        "🥞",
+        "✅"
+       ],
+       "motion": "grow",
+       "caption": "Ready dosa"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Quick Heat Summary",
+    "narration": [
+     "Heat is energy that moves from hot things to cold things.",
+     "It keeps our food warm and our homes cozy.",
+     "Think about it: Why does an ice cream melt when you hold it?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🔥",
+        "➡️",
+        "❄️"
+       ],
+       "motion": "pulse",
+       "caption": "Energy flow"
+      },
+      {
+       "items": [
+        "🏠",
+        "🍲"
+       ],
+       "motion": "float",
+       "caption": "Daily use"
+      },
+      {
+       "items": [
+        "🍦",
+        "🖐️",
+        "💧"
+       ],
+       "motion": "fall",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Water Cycle: Introduction": {
+  "id": "lib-science-g3-water-cycle-introduction",
+  "topic": "Water Cycle: Introduction",
+  "title": "The Magical Water Journey",
+  "icon": "💧",
+  "scenes": [
+   {
+    "title": "Where does rain go?",
+    "narration": [
+     "Have you ever wondered where rain goes after it splashes on the ground in your garden?",
+     "Does it just disappear, or does it go on a secret adventure?",
+     "Today, let us follow a tiny drop of water on its big trip around Earth."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌧️",
+        "🏡",
+        "🪴"
+       ],
+       "motion": "fall",
+       "caption": "Rainy day"
+      },
+      {
+       "items": [
+        "🔍",
+        "🤔"
+       ],
+       "motion": "pulse",
+       "caption": "Hidden mystery"
+      },
+      {
+       "items": [
+        "💧",
+        "🌍"
+       ],
+       "motion": "float",
+       "caption": "Water's journey"
+      }
+     ]
+    }
+   },
+   {
+    "title": "How Water Moves Up",
+    "narration": [
+     "When the hot sun shines on a pond, the water gets warm and turns into invisible vapor.",
+     "This process is called evaporation, and it lifts the water high up into the blue sky.",
+     "High up in the cool air, the vapor turns back into tiny water droplets to form clouds."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "☀️",
+        "🪷",
+        "💨"
+       ],
+       "motion": "rise",
+       "caption": "Evaporation"
+      },
+      {
+       "items": [
+        "💨",
+        "⬆️",
+        "☁️"
+       ],
+       "motion": "rise",
+       "caption": "Rising vapor"
+      },
+      {
+       "items": [
+        "☁️",
+        "🧊",
+        "💧"
+       ],
+       "motion": "float",
+       "caption": "Condensation"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Rain Falls Down Again",
+    "narration": [
+     "Imagine a big, fluffy cloud over a farm in Punjab getting heavy with too much water.",
+     "When the cloud cannot hold the water anymore, it falls down as cool, refreshing rain.",
+     "The water flows into rivers and fills up our buckets, ready to start all over again."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "☁️",
+        "🚜",
+        "🌾"
+       ],
+       "motion": "pulse",
+       "caption": "Heavy clouds"
+      },
+      {
+       "items": [
+        "☁️",
+        "🌧️",
+        "🌾"
+       ],
+       "motion": "fall",
+       "caption": "Precipitation"
+      },
+      {
+       "items": [
+        "🌧️",
+        "🌊",
+        "🪣"
+       ],
+       "motion": "fall",
+       "caption": "Flowing water"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Never Ending Loop",
+    "narration": [
+     "Water goes from the ground to the sky and back down in a never ending loop.",
+     "We call this repeating journey the water cycle, and it keeps our planet green and healthy.",
+     "Think about it: how would your day change if the rain decided to take a long holiday?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "💧",
+        "🔄",
+        "🌍"
+       ],
+       "motion": "chain",
+       "caption": "Water cycle"
+      },
+      {
+       "items": [
+        "🌳",
+        "💧",
+        "♻️"
+       ],
+       "motion": "grow",
+       "caption": "Nature's cycle"
+      },
+      {
+       "items": [
+        "☀️",
+        "🌵",
+        "🤔"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Natural Resources": {
+  "id": "lib-science-g3-natural-resources",
+  "topic": "Natural Resources",
+  "title": "Earth's Amazing Natural Treasures",
+  "icon": "🌍",
+  "scenes": [
+   {
+    "title": "The World Around Us",
+    "narration": [
+     "Look around your home or park, what do you see that comes from nature?",
+     "Everything we use starts as a natural resource, like the sun, air, or water.",
+     "Have you ever wondered where the wood for your pencil or water comes from?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌳",
+        "☀️",
+        "💧",
+        "🪨"
+       ],
+       "motion": "pulse",
+       "caption": "Nature gifts"
+      },
+      {
+       "items": [
+        "☀️",
+        "🌬️",
+        "💧"
+       ],
+       "motion": "float",
+       "caption": "Natural resources"
+      },
+      {
+       "items": [
+        "✏️",
+        "🪵",
+        "🚰"
+       ],
+       "motion": "rise",
+       "caption": "Origins"
+      }
+     ]
+    }
+   },
+   {
+    "title": "What are Natural Resources?",
+    "narration": [
+     "Natural resources are things found in nature that humans use to survive.",
+     "Some resources like sunlight and wind never run out, so we call them renewable.",
+     "Others like coal or oil take millions of years to form, so we must save them."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌍",
+        "🍎",
+        "🏠"
+       ],
+       "motion": "chain",
+       "caption": "Definition"
+      },
+      {
+       "items": [
+        "☀️",
+        "🌬️",
+        "♾️"
+       ],
+       "motion": "float",
+       "caption": "Renewable resources"
+      },
+      {
+       "items": [
+        "🪨",
+        "🛢️",
+        "⏳"
+       ],
+       "motion": "fall",
+       "caption": "Non-renewable"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Day in India",
+    "narration": [
+     "Think of a farmer in Punjab using water from the river to grow wheat.",
+     "Or sunlight hitting solar panels on a rooftop in Delhi to make electricity.",
+     "Even the iron used to build our trains comes from rocks dug from the ground."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👨‍🌾",
+        "🌾",
+        "🌊"
+       ],
+       "motion": "grow",
+       "caption": "Using water"
+      },
+      {
+       "items": [
+        "☀️",
+        "🏠",
+        "⚡"
+       ],
+       "motion": "pulse",
+       "caption": "Solar power"
+      },
+      {
+       "items": [
+        "🪨",
+        "🚂",
+        "🏗️"
+       ],
+       "motion": "pull",
+       "caption": "Mining metals"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Protecting Our Earth",
+    "narration": [
+     "Nature gives us so much, so we must use these gifts carefully every day.",
+     "By saving water and turning off lights, we help our planet stay healthy.",
+     "Think about it: which natural resource could you use a little less of today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌍",
+        "❤️",
+        "♻️"
+       ],
+       "motion": "float",
+       "caption": "Conservation"
+      },
+      {
+       "items": [
+        "🚰",
+        "💡",
+        "🚫"
+       ],
+       "motion": "push",
+       "caption": "Saving energy"
+      },
+      {
+       "items": [
+        "🤔",
+        "🌍",
+        "✨"
+       ],
+       "motion": "pulse",
+       "caption": "Reflect"
+      }
+     ]
+    }
+   }
+  ]
+ }
+}

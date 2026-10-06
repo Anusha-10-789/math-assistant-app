@@ -1,0 +1,2141 @@
+{
+ "Numbers up to 10,000": {
+  "id": "lib-mathematics-g3-numbers-up-to-10-000",
+  "topic": "Numbers up to 10,000",
+  "title": "Exploring Numbers Up To 10000",
+  "icon": "🔢",
+  "scenes": [
+   {
+    "title": "The Big Number Mystery",
+    "narration": [
+     "Have you ever wondered how many grains of rice are in a huge bag?",
+     "At the local grocery shop, we see numbers much bigger than one hundred.",
+     "Let's learn how to read and write numbers all the way up to ten thousand!"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍚",
+        "🍚",
+        "🍚"
+       ],
+       "motion": "pulse",
+       "caption": "Counting rice"
+      },
+      {
+       "items": [
+        "🏪",
+        "🏷️"
+       ],
+       "motion": "float",
+       "caption": "Grocery shop"
+      },
+      {
+       "items": [
+        "1",
+        "0",
+        "0",
+        "0",
+        "0"
+       ],
+       "motion": "grow",
+       "caption": "Big numbers"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Understanding Place Value",
+    "narration": [
+     "Every number has a place like ones, tens, hundreds, and thousands.",
+     "Think of the number two thousand three hundred forty-five.",
+     "The 2 is in the thousands place, worth two thousand units.",
+     "The 3 is in the hundreds, 4 in tens, and 5 in ones."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "1",
+        "10",
+        "100",
+        "1000"
+       ],
+       "motion": "chain",
+       "caption": "Place values"
+      },
+      {
+       "items": [
+        "2",
+        "3",
+        "4",
+        "5"
+       ],
+       "motion": "pulse",
+       "caption": "2345"
+      },
+      {
+       "items": [
+        "2",
+        "000"
+       ],
+       "motion": "push",
+       "caption": "Thousands place"
+      },
+      {
+       "items": [
+        "300",
+        "40",
+        "5"
+       ],
+       "motion": "chain",
+       "caption": "Breaking it down"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Counting Rupees at the Market",
+    "narration": [
+     "Imagine Rohan wants to buy a bicycle that costs 5670 rupees.",
+     "We write it as five thousand six hundred seventy.",
+     "If we add one more rupee, it becomes 5671."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🚲",
+        "5",
+        "6",
+        "7",
+        "0",
+        "₹"
+       ],
+       "motion": "float",
+       "caption": "Bicycle price"
+      },
+      {
+       "items": [
+        "5",
+        "6",
+        "7",
+        "0"
+       ],
+       "motion": "pulse",
+       "caption": "Number name"
+      },
+      {
+       "items": [
+        "5",
+        "6",
+        "7",
+        "0",
+        "+",
+        "1"
+       ],
+       "motion": "grow",
+       "caption": "Adding one"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Challenge",
+    "narration": [
+     "Remember, numbers are just groups of ones, tens, hundreds, and thousands.",
+     "Always check the place of each digit to know its true value.",
+     "Think about it: what is the smallest four-digit number you can write?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "1",
+        "10",
+        "100",
+        "1000"
+       ],
+       "motion": "chain",
+       "caption": "Summary"
+      },
+      {
+       "items": [
+        "🔍",
+        "🔢"
+       ],
+       "motion": "pulse",
+       "caption": "Check values"
+      },
+      {
+       "items": [
+        "?",
+        "1",
+        "0",
+        "0",
+        "0"
+       ],
+       "motion": "rise",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Fractions": {
+  "id": "lib-mathematics-g3-fractions",
+  "topic": "Fractions",
+  "title": "Fun With Sharing Fractions",
+  "icon": "🍕",
+  "scenes": [
+   {
+    "title": "The Pizza Problem",
+    "narration": [
+     "Aarav and Meera have one delicious pizza to share equally.",
+     "How can they split it so it is fair for everyone?",
+     "We use fractions to show parts of a whole thing."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍕",
+        "👦",
+        "👧"
+       ],
+       "motion": "float",
+       "caption": "One whole pizza"
+      },
+      {
+       "items": [
+        "🍕",
+        "❓"
+       ],
+       "motion": "pulse",
+       "caption": "Fair sharing"
+      },
+      {
+       "items": [
+        "🍕",
+        "✂️"
+       ],
+       "motion": "chain",
+       "caption": "Meaning of fractions"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Understanding The Parts",
+    "narration": [
+     "The bottom number, the denominator, shows how many pieces total.",
+     "The top number, the numerator, shows how many pieces we have.",
+     "So, one piece out of two is written as one-half."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍕",
+        "2"
+       ],
+       "motion": "pulse",
+       "caption": "Bottom number"
+      },
+      {
+       "items": [
+        "🍕",
+        "1"
+       ],
+       "motion": "pulse",
+       "caption": "Top number"
+      },
+      {
+       "items": [
+        "1",
+        "/",
+        "2"
+       ],
+       "motion": "chain",
+       "caption": "Writing one-half"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Tasty Example",
+    "narration": [
+     "Imagine a chocolate bar with four equal squares.",
+     "If you eat one square, you have eaten one-fourth.",
+     "The fraction is one on top and four on the bottom.",
+     "The three squares left are three-fourths of the bar."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍫",
+        "4"
+       ],
+       "motion": "chain",
+       "caption": "Four equal parts"
+      },
+      {
+       "items": [
+        "🍫",
+        "1",
+        "/",
+        "4"
+       ],
+       "motion": "push",
+       "caption": "One-fourth eaten"
+      },
+      {
+       "items": [
+        "1",
+        "➖",
+        "4"
+       ],
+       "motion": "chain",
+       "caption": "Fraction notation"
+      },
+      {
+       "items": [
+        "🍫",
+        "3",
+        "/",
+        "4"
+       ],
+       "motion": "pulse",
+       "caption": "Three-fourths remain"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Think",
+    "narration": [
+     "Fractions help us name equal parts of a whole.",
+     "Always remember that the parts must be exactly the same size.",
+     "Think about it: If you share a cake with four friends, what fraction do you get?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍕",
+        "🍫",
+        "✅"
+       ],
+       "motion": "float",
+       "caption": "Summary"
+      },
+      {
+       "items": [
+        "📏",
+        "✂️",
+        "🍕"
+       ],
+       "motion": "push",
+       "caption": "Equal parts"
+      },
+      {
+       "items": [
+        "🎂",
+        "👦",
+        "👧",
+        "❓"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Division": {
+  "id": "lib-mathematics-g3-division",
+  "topic": "Division",
+  "title": "Sharing Treats Equally",
+  "icon": "🍬",
+  "scenes": [
+   {
+    "title": "A Tasty Problem",
+    "narration": [
+     "Aarav has 12 yummy mango candies to share with his 3 best friends.",
+     "He wants everyone to get the exact same amount so nobody feels sad.",
+     "How can we split these candies fairly using math?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "🍬",
+        "🍬",
+        "🍬",
+        "🍬"
+       ],
+       "motion": "pulse",
+       "caption": "Aarav's candies"
+      },
+      {
+       "items": [
+        "👦",
+        "👦",
+        "👦",
+        "🍬"
+       ],
+       "motion": "float",
+       "caption": "Fair sharing"
+      },
+      {
+       "items": [
+        "?",
+        "🍬",
+        "➗"
+       ],
+       "motion": "pulse",
+       "caption": "Division question"
+      }
+     ]
+    }
+   },
+   {
+    "title": "What is Division?",
+    "narration": [
+     "Division is just splitting a big group into smaller, equal groups.",
+     "The division sign looks like a little line with two dots.",
+     "It helps us find out how many items go into each group."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍬",
+        "🍬",
+        "🍬",
+        "✂️"
+       ],
+       "motion": "chain",
+       "caption": "Splitting groups"
+      },
+      {
+       "items": [
+        "➗"
+       ],
+       "motion": "pulse",
+       "caption": "Division symbol"
+      },
+      {
+       "items": [
+        "🍬",
+        "🍬",
+        "➡️",
+        "👦"
+       ],
+       "motion": "push",
+       "caption": "Grouping items"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Solving the Puzzle",
+    "narration": [
+     "We start with 12 candies and divide them by 3 friends.",
+     "Aarav gives one to each friend, then another, until they are gone.",
+     "Each friend ends up with exactly 4 candies in their hand.",
+     "So, 12 divided by 3 equals 4."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "12",
+        "➗",
+        "3",
+        "="
+       ],
+       "motion": "chain",
+       "caption": "The math problem"
+      },
+      {
+       "items": [
+        "🍬",
+        "➡️",
+        "👦",
+        "👦",
+        "👦"
+       ],
+       "motion": "push",
+       "caption": "Sharing out"
+      },
+      {
+       "items": [
+        "👦",
+        "🍬",
+        "🍬",
+        "🍬",
+        "🍬"
+       ],
+       "motion": "grow",
+       "caption": "Equal share"
+      },
+      {
+       "items": [
+        "12",
+        "➗",
+        "3",
+        "=",
+        "4"
+       ],
+       "motion": "pulse",
+       "caption": "Final answer"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Quick Recap",
+    "narration": [
+     "Division is about sharing things into equal, fair groups.",
+     "Remember, the total number gets smaller as you split it up.",
+     "Think about it: If you had 10 rupees and 2 friends, how much would they get?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "⚖️",
+        "🍬"
+       ],
+       "motion": "float",
+       "caption": "Fairness"
+      },
+      {
+       "items": [
+        "12",
+        "➡️",
+        "4"
+       ],
+       "motion": "fall",
+       "caption": "Getting smaller"
+      },
+      {
+       "items": [
+        "💰",
+        "10",
+        "➗",
+        "2",
+        "?"
+       ],
+       "motion": "pulse",
+       "caption": "Your turn"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Multiplication Tables": {
+  "id": "lib-mathematics-g3-tables",
+  "topic": "Multiplication Tables",
+  "title": "Mastering The 3 Times Table",
+  "icon": "🔢",
+  "scenes": [
+   {
+    "title": "Counting Sweet Treats",
+    "narration": [
+     "Aarav is buying laddoos for his friends at the market.",
+     "Each small box has exactly three laddoos inside.",
+     "How can we find the total without counting every single one?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍬",
+        "🍬",
+        "🍬"
+       ],
+       "motion": "grow",
+       "caption": "Sweet treats"
+      },
+      {
+       "items": [
+        "📦",
+        "🍬",
+        "🍬",
+        "🍬"
+       ],
+       "motion": "pulse",
+       "caption": "Three per box"
+      },
+      {
+       "items": [
+        "🤔",
+        "📦",
+        "📦"
+       ],
+       "motion": "float",
+       "caption": "Quick counting"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Learning The Pattern",
+    "narration": [
+     "A multiplication table is just a fast way to add the same number.",
+     "One group of three is three.",
+     "Two groups of three makes six.",
+     "Keep adding three to get the next number in the pattern."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "3",
+        "+",
+        "3",
+        "=",
+        "6"
+       ],
+       "motion": "chain",
+       "caption": "Adding faster"
+      },
+      {
+       "items": [
+        "1",
+        "×",
+        "3",
+        "=",
+        "3"
+       ],
+       "motion": "pulse",
+       "caption": "One times three"
+      },
+      {
+       "items": [
+        "2",
+        "×",
+        "3",
+        "=",
+        "6"
+       ],
+       "motion": "grow",
+       "caption": "Two times three"
+      },
+      {
+       "items": [
+        "6",
+        "+",
+        "3",
+        "=",
+        "9"
+       ],
+       "motion": "chain",
+       "caption": "Keep adding"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Counting Aarav's Laddoos",
+    "narration": [
+     "Aarav has four boxes of laddoos.",
+     "That is four groups of three.",
+     "Counting by threes gives us three, six, nine, twelve.",
+     "So, Aarav has twelve yummy laddoos in total."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📦",
+        "📦",
+        "📦",
+        "📦"
+       ],
+       "motion": "push",
+       "caption": "Four boxes"
+      },
+      {
+       "items": [
+        "4",
+        "×",
+        "3"
+       ],
+       "motion": "pulse",
+       "caption": "Four times three"
+      },
+      {
+       "items": [
+        "3",
+        "6",
+        "9",
+        "12"
+       ],
+       "motion": "rise",
+       "caption": "Counting up"
+      },
+      {
+       "items": [
+        "🍬",
+        "🍬",
+        "🍬",
+        "🍬",
+        "🍬",
+        "🍬"
+       ],
+       "motion": "grow",
+       "caption": "Total laddoos"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Quick Recap",
+    "narration": [
+     "Multiplication helps us count groups quickly.",
+     "The three times table follows a pattern of adding three every time.",
+     "Think about it: If you had five boxes, how many laddoos would you have?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "✖️",
+        "✅"
+       ],
+       "motion": "pulse",
+       "caption": "Easy math"
+      },
+      {
+       "items": [
+        "3",
+        "6",
+        "9",
+        "12",
+        "15"
+       ],
+       "motion": "chain",
+       "caption": "The pattern"
+      },
+      {
+       "items": [
+        "📦",
+        "📦",
+        "📦",
+        "📦",
+        "📦",
+        "?"
+       ],
+       "motion": "float",
+       "caption": "Your turn"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Multiplication": {
+  "id": "lib-mathematics-g3-multiplication",
+  "topic": "Multiplication",
+  "title": "Magic of Multiplication",
+  "icon": "✖️",
+  "scenes": [
+   {
+    "title": "The Sweet Market Surprise",
+    "narration": [
+     "Rohan is at the market buying delicious mangoes for his friends.",
+     "He picks up 4 baskets and each basket has 3 mangoes.",
+     "How can we find the total number of mangoes quickly?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "🥭"
+       ],
+       "motion": "float",
+       "caption": "Market Visit"
+      },
+      {
+       "items": [
+        "🧺",
+        "🧺",
+        "🧺",
+        "🧺",
+        "🥭",
+        "🥭"
+       ],
+       "motion": "pulse",
+       "caption": "Counting Baskets"
+      },
+      {
+       "items": [
+        "🤔",
+        "🥭",
+        "?"
+       ],
+       "motion": "pulse",
+       "caption": "The Big Question"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Adding Groups Together",
+    "narration": [
+     "We could add them: 3 plus 3 plus 3 plus 3.",
+     "But multiplication is a much faster way to do this math.",
+     "It is just adding the same number over and over again."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "3",
+        "+",
+        "3",
+        "+",
+        "3",
+        "+"
+       ],
+       "motion": "chain",
+       "caption": "Repeated Addition"
+      },
+      {
+       "items": [
+        "⚡",
+        "✖️"
+       ],
+       "motion": "push",
+       "caption": "Faster Math"
+      },
+      {
+       "items": [
+        "➕",
+        "✖️"
+       ],
+       "motion": "grow",
+       "caption": "Key Idea"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Solving Rohan's Mango Problem",
+    "narration": [
+     "We have 4 groups of 3 mangoes each.",
+     "Four times three equals twelve total mangoes.",
+     "See how much quicker that was than counting one by one?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "4",
+        "×",
+        "3"
+       ],
+       "motion": "rise",
+       "caption": "Setting Equation"
+      },
+      {
+       "items": [
+        "4",
+        "×",
+        "3",
+        "=",
+        "12",
+        "🥭"
+       ],
+       "motion": "pulse",
+       "caption": "The Answer"
+      },
+      {
+       "items": [
+        "🚀",
+        "🥭"
+       ],
+       "motion": "push",
+       "caption": "Efficiency"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Wrapping Up Our Math",
+    "narration": [
+     "Multiplication helps us find totals when we have equal groups.",
+     "Remember, it is just fancy repeated addition.",
+     "Think about it: how many wheels would 5 bicycles have?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🧮",
+        "✅"
+       ],
+       "motion": "float",
+       "caption": "Summary"
+      },
+      {
+       "items": [
+        "➕",
+        "➡️",
+        "✖️"
+       ],
+       "motion": "chain",
+       "caption": "Simple Logic"
+      },
+      {
+       "items": [
+        "🚲",
+        "🚲",
+        "🚲",
+        "🚲",
+        "🚲",
+        "?"
+       ],
+       "motion": "pulse",
+       "caption": "Try Yourself"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Area and Perimeter": {
+  "id": "lib-mathematics-g3-perimeter-and-area",
+  "topic": "Area and Perimeter",
+  "title": "Measuring Your Garden Space",
+  "icon": "📏",
+  "scenes": [
+   {
+    "title": "The Garden Fence Mystery",
+    "narration": [
+     "Rohan wants to build a fence around his small vegetable patch.",
+     "How much wood does he need to go all the way around?",
+     "Let us learn how to find this distance, called the perimeter."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "🥕"
+       ],
+       "motion": "pulse",
+       "caption": "Vegetable patch"
+      },
+      {
+       "items": [
+        "🪵",
+        "📏"
+       ],
+       "motion": "pull",
+       "caption": "Measuring distance"
+      },
+      {
+       "items": [
+        "🏠",
+        "📐"
+       ],
+       "motion": "chain",
+       "caption": "Perimeter"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Calculating Perimeter and Area",
+    "narration": [
+     "Perimeter is the length of the boundary line around a shape.",
+     "Area is the flat space inside the shape, like the soil.",
+     "We measure perimeter in units like centimeters, but area in squares."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "➖",
+        "➕",
+        "➖",
+        "➕"
+       ],
+       "motion": "chain",
+       "caption": "Total boundary"
+      },
+      {
+       "items": [
+        "🟫",
+        "🌱"
+       ],
+       "motion": "grow",
+       "caption": "Inside space"
+      },
+      {
+       "items": [
+        "📏",
+        "⏹️"
+       ],
+       "motion": "pulse",
+       "caption": "Measuring units"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Rohan's Garden Example",
+    "narration": [
+     "Rohan's garden is 4 meters long and 3 meters wide.",
+     "For perimeter, add all four sides together: 4 plus 3 plus 4 plus 3.",
+     "That equals 14 meters of wooden fence needed.",
+     "For area, multiply length by width, so 4 times 3 is 12 square meters."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "4m",
+        "3m"
+       ],
+       "motion": "push",
+       "caption": "Garden size"
+      },
+      {
+       "items": [
+        "4",
+        "+",
+        "3",
+        "+",
+        "4",
+        "+"
+       ],
+       "motion": "chain",
+       "caption": "Adding sides"
+      },
+      {
+       "items": [
+        "14",
+        "m",
+        "🪵"
+       ],
+       "motion": "pull",
+       "caption": "Total fence"
+      },
+      {
+       "items": [
+        "4",
+        "x",
+        "3",
+        "=",
+        "12",
+        "⏹️"
+       ],
+       "motion": "grow",
+       "caption": "Total area"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Quick Garden Recap",
+    "narration": [
+     "Perimeter is the distance around the edge of a shape.",
+     "Area is the amount of flat space hidden inside.",
+     "Think about it, would you measure the carpet area in centimeters or meters?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📏",
+        "➰"
+       ],
+       "motion": "pulse",
+       "caption": "Perimeter check"
+      },
+      {
+       "items": [
+        "⬜",
+        "🔍"
+       ],
+       "motion": "float",
+       "caption": "Area check"
+      },
+      {
+       "items": [
+        "🛋️",
+        "❓"
+       ],
+       "motion": "rise",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Introduction to Decimals": {
+  "id": "lib-mathematics-g3-introduction-to-decimals",
+  "topic": "Introduction to Decimals",
+  "title": "Making Sense of Decimals",
+  "icon": "🔢",
+  "scenes": [
+   {
+    "title": "The Price of Candy",
+    "narration": [
+     "Arav is at the shop buying a chocolate bar for his friend.",
+     "The sign says the price is 15.50 rupees.",
+     "Why is there a little dot in the middle of the numbers?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "🍫",
+        "🏪"
+       ],
+       "motion": "float",
+       "caption": "Arav shops"
+      },
+      {
+       "items": [
+        "15",
+        ".",
+        "50",
+        "₹"
+       ],
+       "motion": "pulse",
+       "caption": "Decimal price"
+      },
+      {
+       "items": [
+        "❓",
+        ".",
+        "🔢"
+       ],
+       "motion": "push",
+       "caption": "The dot"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Parts of a Whole",
+    "narration": [
+     "A decimal dot helps us show parts that are smaller than one.",
+     "The number before the dot is the whole rupee.",
+     "The numbers after the dot are the tiny paise coins.",
+     "One hundred paise makes exactly one rupee."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍰",
+        "🔪",
+        "🤏"
+       ],
+       "motion": "chain",
+       "caption": "Smaller parts"
+      },
+      {
+       "items": [
+        "15",
+        "₹"
+       ],
+       "motion": "grow",
+       "caption": "Whole rupees"
+      },
+      {
+       "items": [
+        "50",
+        "🪙"
+       ],
+       "motion": "rise",
+       "caption": "Tiny paise"
+      },
+      {
+       "items": [
+        "100",
+        "🪙",
+        "=",
+        "1",
+        "₹"
+       ],
+       "motion": "chain",
+       "caption": "Equal value"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Counting the Paisa",
+    "narration": [
+     "If we have 15 rupees and 50 paise, we write it as 15.50.",
+     "The dot acts like a wall between rupees and paise.",
+     "So 15.50 means 15 full rupees and half of another rupee."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "15",
+        ".",
+        "50",
+        "₹"
+       ],
+       "motion": "float",
+       "caption": "Writing decimals"
+      },
+      {
+       "items": [
+        "₹",
+        "|",
+        "🪙"
+       ],
+       "motion": "push",
+       "caption": "The wall"
+      },
+      {
+       "items": [
+        "15",
+        "+",
+        "½"
+       ],
+       "motion": "grow",
+       "caption": "Half rupee"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Putting it Together",
+    "narration": [
+     "Decimals help us count things that are not whole numbers.",
+     "Remember, the dot separates the whole from the part.",
+     "Think about it: how many paise would be in 10.25 rupees?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📏",
+        "🍎",
+        "🔢"
+       ],
+       "motion": "pulse",
+       "caption": "Counting parts"
+      },
+      {
+       "items": [
+        "✅",
+        "."
+       ],
+       "motion": "chain",
+       "caption": "Dot rule"
+      },
+      {
+       "items": [
+        "10",
+        ".",
+        "25",
+        "₹",
+        "❓"
+       ],
+       "motion": "fall",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Angles": {
+  "id": "lib-mathematics-g3-angles",
+  "topic": "Angles",
+  "title": "Learning About Amazing Angles",
+  "icon": "📐",
+  "scenes": [
+   {
+    "title": "Finding Angles At Home",
+    "narration": [
+     "Have you ever wondered why a square notebook has sharp corners?",
+     "Those corners are special shapes called angles.",
+     "Let us explore how these angles hide everywhere in our house."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📒"
+       ],
+       "motion": "pulse",
+       "caption": "Sharp corners"
+      },
+      {
+       "items": [
+        "📐"
+       ],
+       "motion": "pulse",
+       "caption": "What are angles"
+      },
+      {
+       "items": [
+        "🏠"
+       ],
+       "motion": "float",
+       "caption": "Hidden angles"
+      }
+     ]
+    }
+   },
+   {
+    "title": "What Makes An Angle",
+    "narration": [
+     "An angle is made when two straight lines meet at a point.",
+     "This meeting point is called the vertex.",
+     "The space between the lines tells us how wide the angle is."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "➖",
+        "➖",
+        "📍"
+       ],
+       "motion": "chain",
+       "caption": "Meeting lines"
+      },
+      {
+       "items": [
+        "📍"
+       ],
+       "motion": "pulse",
+       "caption": "The vertex"
+      },
+      {
+       "items": [
+        "〰️"
+       ],
+       "motion": "grow",
+       "caption": "Angle size"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Angles In A Clock",
+    "narration": [
+     "Look at the hands of a wall clock in your living room.",
+     "When the time is three o'clock, the hands make a square corner.",
+     "This perfect corner is called a right angle.",
+     "If the hands are closer together, the angle is smaller than a right angle."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🕰️"
+       ],
+       "motion": "float",
+       "caption": "Clock hands"
+      },
+      {
+       "items": [
+        "3",
+        "🕰️"
+       ],
+       "motion": "chain",
+       "caption": "Right angle"
+      },
+      {
+       "items": [
+        "✅",
+        "📐"
+       ],
+       "motion": "pulse",
+       "caption": "Right angle"
+      },
+      {
+       "items": [
+        "🤏",
+        "🕰️"
+       ],
+       "motion": "push",
+       "caption": "Smaller angle"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap And Explore",
+    "narration": [
+     "Angles are formed where two lines meet at a vertex.",
+     "Right angles look like the corner of a book or a square.",
+     "Think about it: can you find a right angle in your classroom today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "➖",
+        "📍",
+        "➖"
+       ],
+       "motion": "chain",
+       "caption": "Summary point"
+      },
+      {
+       "items": [
+        "📖",
+        "🟦"
+       ],
+       "motion": "pulse",
+       "caption": "Right angles"
+      },
+      {
+       "items": [
+        "🏫",
+        "🔍"
+       ],
+       "motion": "float",
+       "caption": "Classroom hunt"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Money": {
+  "id": "lib-mathematics-g3-money",
+  "topic": "Money",
+  "title": "Learning How Money Works",
+  "icon": "💰",
+  "scenes": [
+   {
+    "title": "The Magic of Spending",
+    "narration": [
+     "Have you ever wondered how we buy toys or snacks using coins and notes?",
+     "Money is a way to trade for things we need or want every day.",
+     "In India, we use the Rupee as our special money to pay for things."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🧸",
+        "🍪",
+        "🪙",
+        "💵"
+       ],
+       "motion": "pulse",
+       "caption": "Buying things"
+      },
+      {
+       "items": [
+        "🍎",
+        "🏫",
+        "🚌"
+       ],
+       "motion": "chain",
+       "caption": "Trading value"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "₹"
+       ],
+       "motion": "pulse",
+       "caption": "Indian Rupee"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Coins and Notes",
+    "narration": [
+     "Coins are small, round pieces of metal used for smaller amounts.",
+     "Notes are made of paper and represent larger amounts of money.",
+     "When you put them together, you can count up to exactly what you need."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "1₹",
+        "2₹",
+        "5₹",
+        "10₹"
+       ],
+       "motion": "float",
+       "caption": "Metal coins"
+      },
+      {
+       "items": [
+        "20₹",
+        "100₹",
+        "500₹"
+       ],
+       "motion": "float",
+       "caption": "Paper notes"
+      },
+      {
+       "items": [
+        "🧮",
+        "➕"
+       ],
+       "motion": "chain",
+       "caption": "Counting money"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Buying A Pencil Box",
+    "narration": [
+     "Let us say Rohan wants a pencil box that costs fifty rupees.",
+     "He can pay with one fifty rupee note or five ten rupee coins.",
+     "Both ways equal fifty rupees so he can take his box home."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "✏️",
+        "📦",
+        "50₹"
+       ],
+       "motion": "push",
+       "caption": "The price"
+      },
+      {
+       "items": [
+        "50₹",
+        "10₹",
+        "10₹",
+        "10₹",
+        "10₹",
+        "10₹"
+       ],
+       "motion": "chain",
+       "caption": "Equal value"
+      },
+      {
+       "items": [
+        "✅",
+        "📦",
+        "😊"
+       ],
+       "motion": "push",
+       "caption": "Successful trade"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Saving Your Rupees",
+    "narration": [
+     "Money is important, so we should save it in a piggy bank.",
+     "Saving helps you buy bigger things later instead of spending all at once.",
+     "Think about it: What is one thing you would like to save your money for?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🐖",
+        "💰"
+       ],
+       "motion": "grow",
+       "caption": "Saving money"
+      },
+      {
+       "items": [
+        "⏳",
+        "🚲"
+       ],
+       "motion": "rise",
+       "caption": "Planning ahead"
+      },
+      {
+       "items": [
+        "🤔",
+        "💭"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Time and Calendar": {
+  "id": "lib-mathematics-g3-time-and-calendar",
+  "topic": "Time and Calendar",
+  "title": "Mastering the Magic Calendar",
+  "icon": "📅",
+  "scenes": [
+   {
+    "title": "Why we use calendars",
+    "narration": [
+     "Have you ever wondered how we know exactly when your birthday or Diwali is coming?",
+     "We use a calendar to track the passing of days, weeks, and months in a year.",
+     "It is like a big map that helps us plan our fun activities at school."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🎂",
+        "🪔"
+       ],
+       "motion": "pulse",
+       "caption": "Special Days"
+      },
+      {
+       "items": [
+        "📅"
+       ],
+       "motion": "chain",
+       "caption": "Tracking Time"
+      },
+      {
+       "items": [
+        "🏫",
+        "🗺️"
+       ],
+       "motion": "float",
+       "caption": "Planning Ahead"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Breaking down the time",
+    "narration": [
+     "A single year is made up of twelve months, starting from January to December.",
+     "Most months have thirty or thirty-one days, but February is special and much shorter.",
+     "Each week inside these months has exactly seven days, from Monday to Sunday."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "1",
+        "2",
+        "12",
+        "🗓️"
+       ],
+       "motion": "chain",
+       "caption": "Twelve Months"
+      },
+      {
+       "items": [
+        "30",
+        "31",
+        "28"
+       ],
+       "motion": "pulse",
+       "caption": "Days in Month"
+      },
+      {
+       "items": [
+        "🗓️",
+        "7"
+       ],
+       "motion": "chain",
+       "caption": "Seven Days"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Planning your school trip",
+    "narration": [
+     "Imagine your school trip is on the second Friday of October.",
+     "First, find the month of October on your calendar wall chart.",
+     "Next, count down the Fridays until you land on the second one.",
+     "That is the lucky day when you and your friends go on your adventure!"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🚌",
+        "🔟",
+        "🗓️"
+       ],
+       "motion": "push",
+       "caption": "Finding Dates"
+      },
+      {
+       "items": [
+        "🔟",
+        "🔍"
+       ],
+       "motion": "pull",
+       "caption": "Locate Month"
+      },
+      {
+       "items": [
+        "☝️",
+        "✌️",
+        "🗓️"
+       ],
+       "motion": "chain",
+       "caption": "Count Weeks"
+      },
+      {
+       "items": [
+        "🎒",
+        "👧",
+        "👦"
+       ],
+       "motion": "rise",
+       "caption": "Trip Day"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and explore",
+    "narration": [
+     "Remember, a year has twelve months, and every month is divided into weeks and days.",
+     "Using a calendar helps us stay organized and never miss out on important events.",
+     "Think about it: how many days would pass if you waited for your next birthday?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🗓️",
+        "12",
+        "4",
+        "365"
+       ],
+       "motion": "pulse",
+       "caption": "Yearly Structure"
+      },
+      {
+       "items": [
+        "✅",
+        "📅"
+       ],
+       "motion": "float",
+       "caption": "Stay Organized"
+      },
+      {
+       "items": [
+        "🎂",
+        "🤔"
+       ],
+       "motion": "rise",
+       "caption": "Next Birthday"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Measurement": {
+  "id": "lib-mathematics-g3-measurement",
+  "topic": "Measurement",
+  "title": "Measuring Our World",
+  "icon": "📏",
+  "scenes": [
+   {
+    "title": "Why Do We Measure?",
+    "narration": [
+     "Have you ever wondered how tall you are or how much rice is in your lunch?",
+     "We use measurement to understand the size and amount of things around us.",
+     "Without it, building houses or buying snacks would be very confusing!"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📏",
+        "👦",
+        "🍚"
+       ],
+       "motion": "pulse",
+       "caption": "Daily measurement"
+      },
+      {
+       "items": [
+        "🍎",
+        "⚖️",
+        "📏"
+       ],
+       "motion": "float",
+       "caption": "Understanding size"
+      },
+      {
+       "items": [
+        "🏠",
+        "💰",
+        "🤔"
+       ],
+       "motion": "push",
+       "caption": "Why it matters"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Units of Measure",
+    "narration": [
+     "To measure length, we use centimeters and meters.",
+     "We use grams and kilograms to see how heavy something is.",
+     "And for liquids like milk, we use milliliters and liters."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "1cm",
+        "1m",
+        "📏"
+       ],
+       "motion": "chain",
+       "caption": "Measuring length"
+      },
+      {
+       "items": [
+        "1g",
+        "1kg",
+        "⚖️"
+       ],
+       "motion": "chain",
+       "caption": "Measuring weight"
+      },
+      {
+       "items": [
+        "1ml",
+        "1l",
+        "🥛"
+       ],
+       "motion": "chain",
+       "caption": "Measuring volume"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Measuring Riya's Book",
+    "narration": [
+     "Let us measure Riya's notebook with a ruler.",
+     "We line up the zero mark with the edge of the book.",
+     "The end of the book reaches the number 20.",
+     "So, the book is exactly twenty centimeters long."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📖",
+        "📏"
+       ],
+       "motion": "pull",
+       "caption": "Start measuring"
+      },
+      {
+       "items": [
+        "0",
+        "📖",
+        "📏"
+       ],
+       "motion": "push",
+       "caption": "Aligning zero"
+      },
+      {
+       "items": [
+        "20",
+        "cm",
+        "📖"
+       ],
+       "motion": "pulse",
+       "caption": "Reading result"
+      },
+      {
+       "items": [
+        "20",
+        "cm",
+        "✅"
+       ],
+       "motion": "grow",
+       "caption": "Final length"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Time to Wrap Up",
+    "narration": [
+     "Remember, we use different tools for length, weight, and volume.",
+     "Always check your starting point to get the right number.",
+     "Think about it: what is one thing in your room you can measure today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📏",
+        "⚖️",
+        "🥛"
+       ],
+       "motion": "float",
+       "caption": "Tool variety"
+      },
+      {
+       "items": [
+        "0",
+        "✅",
+        "🔢"
+       ],
+       "motion": "pulse",
+       "caption": "Accuracy tip"
+      },
+      {
+       "items": [
+        "🏠",
+        "🔍",
+        "📏"
+       ],
+       "motion": "rise",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Pictographs and Bar Graphs": {
+  "id": "lib-mathematics-g3-pictographs-and-bar-graphs",
+  "topic": "Pictographs and Bar Graphs",
+  "title": "Making Sense of Data",
+  "icon": "📊",
+  "scenes": [
+   {
+    "title": "The Fruit Shop Mystery",
+    "narration": [
+     "Aanya is helping her dad count the mangoes in his shop.",
+     "How can we show these numbers so they are easy to read?",
+     "Let us learn how to turn numbers into pictures and bars."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🥭",
+        "🥭",
+        "🥭"
+       ],
+       "motion": "pulse",
+       "caption": "Counting fruit"
+      },
+      {
+       "items": [
+        "🤔",
+        "📊"
+       ],
+       "motion": "float",
+       "caption": "Need a graph"
+      },
+      {
+       "items": [
+        "✏️",
+        "📏"
+       ],
+       "motion": "chain",
+       "caption": "Learning graphs"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Using a Pictograph",
+    "narration": [
+     "A pictograph uses little pictures to stand for quantities.",
+     "If one apple symbol means two apples, we just count by twos.",
+     "So three apple symbols show us there are six apples in total."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍎",
+        "🍎"
+       ],
+       "motion": "grow",
+       "caption": "Using pictures"
+      },
+      {
+       "items": [
+        "🍎",
+        "2"
+       ],
+       "motion": "chain",
+       "caption": "Key symbol"
+      },
+      {
+       "items": [
+        "🍎",
+        "🍎",
+        "🍎",
+        "6"
+       ],
+       "motion": "pulse",
+       "caption": "Total count"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Building a Bar Graph",
+    "narration": [
+     "Now let us draw a bar graph for the mangoes and bananas.",
+     "We draw a tall bar for mangoes reaching up to the number five.",
+     "And a shorter bar for three bananas.",
+     "Looking at the height helps us see which fruit we have more of."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🥭",
+        "🍌",
+        "📏"
+       ],
+       "motion": "rise",
+       "caption": "Drawing bars"
+      },
+      {
+       "items": [
+        "5",
+        "🥭"
+       ],
+       "motion": "rise",
+       "caption": "Mango bar"
+      },
+      {
+       "items": [
+        "3",
+        "🍌"
+       ],
+       "motion": "rise",
+       "caption": "Banana bar"
+      },
+      {
+       "items": [
+        "👀",
+        "📏"
+       ],
+       "motion": "pulse",
+       "caption": "Comparing sizes"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Quick Summary",
+    "narration": [
+     "Pictographs use symbols, while bar graphs use colored bars to show data.",
+     "Both tools help us organize information quickly and clearly.",
+     "Think about it, what would you like to count and graph today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🖼️",
+        "📊"
+       ],
+       "motion": "chain",
+       "caption": "Graph types"
+      },
+      {
+       "items": [
+        "✅",
+        "📋"
+       ],
+       "motion": "float",
+       "caption": "Staying organized"
+      },
+      {
+       "items": [
+        "💭",
+        "🧒"
+       ],
+       "motion": "pulse",
+       "caption": "Your turn"
+      }
+     ]
+    }
+   }
+  ]
+ }
+}

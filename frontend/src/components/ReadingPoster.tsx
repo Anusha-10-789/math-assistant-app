@@ -48,7 +48,7 @@ export default function ReadingPoster({ variant = "login" }: ReadingPosterProps)
       {FLOATERS.map(([text, left, top, size, color, seconds], index) => (
         <span
           key={index}
-          className="kid-float absolute font-display font-semibold opacity-70"
+          className={`kid-float absolute font-display font-semibold ${isLogin ? "opacity-70" : "opacity-25"}`}
           style={{ left, top, fontSize: size, color, animationDuration: `${seconds}s`, animationDelay: `${index * 0.4}s` }}
         >
           {text}

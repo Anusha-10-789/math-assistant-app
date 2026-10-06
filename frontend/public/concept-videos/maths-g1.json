@@ -1,0 +1,2074 @@
+{
+ "Comparing Numbers": {
+  "id": "lib-mathematics-g1-comparing-numbers",
+  "topic": "Comparing Numbers",
+  "title": "Who Has More Mangoes?",
+  "icon": "🥭",
+  "scenes": [
+   {
+    "title": "A Sunny Market Day",
+    "narration": [
+     "Aarav and Meera are at the market buying sweet mangoes.",
+     "Aarav has five mangoes in his basket.",
+     "Meera has eight mangoes in hers.",
+     "How can we tell who has more?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "👧",
+        "🥭"
+       ],
+       "motion": "float",
+       "caption": "Market day"
+      },
+      {
+       "items": [
+        "5",
+        "🥭"
+       ],
+       "motion": "pulse",
+       "caption": "Aarav's mangoes"
+      },
+      {
+       "items": [
+        "8",
+        "🥭"
+       ],
+       "motion": "pulse",
+       "caption": "Meera's mangoes"
+      },
+      {
+       "items": [
+        "❓",
+        "🥭"
+       ],
+       "motion": "float",
+       "caption": "Comparing amounts"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Learning To Compare",
+    "narration": [
+     "We look at the numbers to see which is bigger.",
+     "Numbers that come later when counting are always bigger.",
+     "Eight comes after five, so eight is bigger than five."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "1",
+        "2",
+        "3",
+        "4"
+       ],
+       "motion": "chain",
+       "caption": "Counting numbers"
+      },
+      {
+       "items": [
+        "5",
+        "➡️",
+        "8"
+       ],
+       "motion": "grow",
+       "caption": "Counting order"
+      },
+      {
+       "items": [
+        "8",
+        ">",
+        "5"
+       ],
+       "motion": "pulse",
+       "caption": "Bigger number"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Checking The Baskets",
+    "narration": [
+     "Let us line up the mangoes side by side.",
+     "Now we add the others to make eight.",
+     "Meera's row is much longer than Aarav's row."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🥭",
+        "🥭",
+        "🥭",
+        "🥭",
+        "🥭"
+       ],
+       "motion": "push",
+       "caption": "Five mangoes"
+      },
+      {
+       "items": [
+        "🥭",
+        "🥭",
+        "🥭",
+        "🥭",
+        "🥭",
+        "🥭"
+       ],
+       "motion": "push",
+       "caption": "Eight mangoes"
+      },
+      {
+       "items": [
+        "📏",
+        "👧",
+        "👦"
+       ],
+       "motion": "grow",
+       "caption": "Measuring rows"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap And Think",
+    "narration": [
+     "Numbers further in counting are always larger.",
+     "Meera has eight mangoes, which is more than five.",
+     "Think about it: if you had ten rupees and your friend had six, who has more?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🔢",
+        "📈"
+       ],
+       "motion": "rise",
+       "caption": "Number size"
+      },
+      {
+       "items": [
+        "8",
+        "🥭",
+        "5",
+        "🥭"
+       ],
+       "motion": "pulse",
+       "caption": "Meera wins"
+      },
+      {
+       "items": [
+        "10",
+        "₹",
+        "6",
+        "₹"
+       ],
+       "motion": "float",
+       "caption": "Your turn"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Number Names": {
+  "id": "lib-mathematics-g1-number-names",
+  "topic": "Number Names",
+  "title": "Learning Our Number Names",
+  "icon": "🔢",
+  "scenes": [
+   {
+    "title": "What Are Number Names",
+    "narration": [
+     "Aarav is counting his marbles at home today.",
+     "He has one, two, and three shiny marbles.",
+     "Did you know that numbers have names?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "🔮"
+       ],
+       "motion": "pulse",
+       "caption": "Counting marbles"
+      },
+      {
+       "items": [
+        "1",
+        "2",
+        "3"
+       ],
+       "motion": "chain",
+       "caption": "Counting aloud"
+      },
+      {
+       "items": [
+        "🔢",
+        "🔡"
+       ],
+       "motion": "rise",
+       "caption": "Number names"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Learning The Words",
+    "narration": [
+     "The number 1 is written as O-N-E.",
+     "The number 2 is written as T-W-O.",
+     "And the number 3 is T-H-R-E-E."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "1",
+        "O",
+        "N",
+        "E"
+       ],
+       "motion": "grow",
+       "caption": "Number one"
+      },
+      {
+       "items": [
+        "2",
+        "T",
+        "W",
+        "O"
+       ],
+       "motion": "grow",
+       "caption": "Number two"
+      },
+      {
+       "items": [
+        "3",
+        "T",
+        "H",
+        "R",
+        "E",
+        "E"
+       ],
+       "motion": "grow",
+       "caption": "Number three"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Counting Rupees",
+    "narration": [
+     "Meera goes to the shop with 5 rupees.",
+     "She buys a pencil that costs 4 rupees.",
+     "F-O-U-R is for 4 and F-I-V-E is 5."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👧",
+        "🪙",
+        "5"
+       ],
+       "motion": "push",
+       "caption": "Five rupees"
+      },
+      {
+       "items": [
+        "✏️",
+        "4"
+       ],
+       "motion": "push",
+       "caption": "Four rupees"
+      },
+      {
+       "items": [
+        "4",
+        "F-O-U-R",
+        "5",
+        "F-I-V-E"
+       ],
+       "motion": "chain",
+       "caption": "Spelling numbers"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Time To Recap",
+    "narration": [
+     "Numbers have special names we write down.",
+     "Keep practicing your counting every single day.",
+     "Can you write the name for the number 6?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📝",
+        "🔢"
+       ],
+       "motion": "float",
+       "caption": "Writing names"
+      },
+      {
+       "items": [
+        "📅",
+        "🔢"
+       ],
+       "motion": "pulse",
+       "caption": "Daily practice"
+      },
+      {
+       "items": [
+        "6",
+        "?"
+       ],
+       "motion": "rise",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Place Value: Ones and Tens": {
+  "id": "lib-mathematics-g1-place-value-ones-and-tens",
+  "topic": "Place Value: Ones and Tens",
+  "title": "Magic of Tens and Ones",
+  "icon": "🔢",
+  "scenes": [
+   {
+    "title": "Counting Rohan's Marbles",
+    "narration": [
+     "Rohan has a big pile of marbles, but counting them one by one takes forever.",
+     "How can we count them faster without getting confused?",
+     "Let's learn the secret of grouping them into tens."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🔵",
+        "🔵",
+        "🔵",
+        "🔵",
+        "🔵"
+       ],
+       "motion": "float",
+       "caption": "Too many marbles"
+      },
+      {
+       "items": [
+        "🤔",
+        "🔵"
+       ],
+       "motion": "pulse",
+       "caption": "Need a trick"
+      },
+      {
+       "items": [
+        "🔟",
+        "🔵"
+       ],
+       "motion": "grow",
+       "caption": "Group by ten"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Making a Group of Ten",
+    "narration": [
+     "Take ten marbles and tie them together with a rubber band.",
+     "Now, one bundle of ten is just one group of ten.",
+     "Any marbles left over are called ones."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🔵",
+        "🔵",
+        "🔵",
+        "🔵",
+        "🔵",
+        "🔟"
+       ],
+       "motion": "chain",
+       "caption": "Make a ten"
+      },
+      {
+       "items": [
+        "🔟"
+       ],
+       "motion": "pulse",
+       "caption": "One ten"
+      },
+      {
+       "items": [
+        "🔵",
+        "🔵"
+       ],
+       "motion": "float",
+       "caption": "The ones"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Counting the Marbles",
+    "narration": [
+     "Rohan has two bundles of ten and four loose marbles.",
+     "Two tens make twenty, and four ones make four.",
+     "Together, they make the number twenty-four."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🔟",
+        "🔟",
+        "🔵",
+        "🔵",
+        "🔵",
+        "🔵"
+       ],
+       "motion": "push",
+       "caption": "Two tens"
+      },
+      {
+       "items": [
+        "20",
+        "+",
+        "4"
+       ],
+       "motion": "pulse",
+       "caption": "Twenty four"
+      },
+      {
+       "items": [
+        "24"
+       ],
+       "motion": "grow",
+       "caption": "Number 24"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Challenge",
+    "narration": [
+     "We group items into tens to count much faster.",
+     "The place on the left is for tens, and the right is for ones.",
+     "Think about it, how many tens are in the number thirty-five?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🔟",
+        "📊"
+       ],
+       "motion": "chain",
+       "caption": "Faster counting"
+      },
+      {
+       "items": [
+        "1️⃣",
+        "0️⃣"
+       ],
+       "motion": "pulse",
+       "caption": "Place value"
+      },
+      {
+       "items": [
+        "3️⃣",
+        "5️⃣",
+        "🤔"
+       ],
+       "motion": "float",
+       "caption": "Your turn"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Addition": {
+  "id": "lib-mathematics-g1-addition",
+  "topic": "Addition",
+  "title": "Adding Up Sweet Mangoes",
+  "icon": "🥭",
+  "scenes": [
+   {
+    "title": "The Mango Market Mystery",
+    "narration": [
+     "Aarav is at the market buying juicy mangoes for his family.",
+     "He has two mangoes in his bag already.",
+     "Then he picks up one more yellow mango.",
+     "How many mangoes does he have in total now?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "🥭"
+       ],
+       "motion": "pulse",
+       "caption": "Mango shopping"
+      },
+      {
+       "items": [
+        "2",
+        "🥭",
+        "🥭"
+       ],
+       "motion": "pulse",
+       "caption": "Starting count"
+      },
+      {
+       "items": [
+        "1",
+        "🥭"
+       ],
+       "motion": "push",
+       "caption": "Adding more"
+      },
+      {
+       "items": [
+        "?",
+        "🥭"
+       ],
+       "motion": "pulse",
+       "caption": "Total count"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Learning to Add",
+    "narration": [
+     "Addition means putting two groups together to make a bigger group.",
+     "We use the plus sign to show we are adding.",
+     "The equals sign shows us the final total."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🥭",
+        "🥭",
+        "+",
+        "🥭"
+       ],
+       "motion": "chain",
+       "caption": "Putting together"
+      },
+      {
+       "items": [
+        "+"
+       ],
+       "motion": "pulse",
+       "caption": "Plus sign"
+      },
+      {
+       "items": [
+        "="
+       ],
+       "motion": "pulse",
+       "caption": "Equals sign"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Solving the Mango Sum",
+    "narration": [
+     "Start with the two mangoes Aarav already had.",
+     "Add the one new mango he just picked up.",
+     "Two plus one makes three mangoes in total."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "2"
+       ],
+       "motion": "pulse",
+       "caption": "Start number"
+      },
+      {
+       "items": [
+        "+",
+        "1"
+       ],
+       "motion": "push",
+       "caption": "Add one"
+      },
+      {
+       "items": [
+        "3",
+        "🥭",
+        "🥭",
+        "🥭"
+       ],
+       "motion": "grow",
+       "caption": "The total"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Practice",
+    "narration": [
+     "Adding helps us count things quickly when we put them together.",
+     "Remember, the total is always bigger than the numbers you started with.",
+     "Think about it: If you have three rupees and I give you two more, how many do you have?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "➕"
+       ],
+       "motion": "pulse",
+       "caption": "Addition rule"
+      },
+      {
+       "items": [
+        "⬆️"
+       ],
+       "motion": "rise",
+       "caption": "Getting bigger"
+      },
+      {
+       "items": [
+        "₹",
+        "3",
+        "+",
+        "2"
+       ],
+       "motion": "pulse",
+       "caption": "Your turn"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Subtraction": {
+  "id": "lib-mathematics-g1-subtraction",
+  "topic": "Subtraction",
+  "title": "Subtracting Treats with Rohan",
+  "icon": "🍭",
+  "scenes": [
+   {
+    "title": "A Tasty Snack Mystery",
+    "narration": [
+     "Rohan has five yummy lollipops in his pocket today.",
+     "He gives two lollipops to his best friend Meera.",
+     "How many lollipops does Rohan have left now?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍭",
+        "🍭",
+        "🍭",
+        "🍭",
+        "🍭"
+       ],
+       "motion": "pulse",
+       "caption": "Five lollipops"
+      },
+      {
+       "items": [
+        "🍭",
+        "🍭"
+       ],
+       "motion": "push",
+       "caption": "Giving away"
+      },
+      {
+       "items": [
+        "?",
+        "🍭"
+       ],
+       "motion": "pulse",
+       "caption": "Counting remaining"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Taking Away Means Less",
+    "narration": [
+     "Subtraction means we take items away from a group.",
+     "We start with a big number and make it smaller.",
+     "The minus sign shows us we are subtracting today."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "➖"
+       ],
+       "motion": "chain",
+       "caption": "Subtraction sign"
+      },
+      {
+       "items": [
+        "5",
+        "➖",
+        "2"
+       ],
+       "motion": "chain",
+       "caption": "Getting smaller"
+      },
+      {
+       "items": [
+        "➖"
+       ],
+       "motion": "pulse",
+       "caption": "Minus sign"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Solving the Lollipop Problem",
+    "narration": [
+     "We start with five lollipops on the table.",
+     "Cross out two because Meera took them.",
+     "Count the ones that are still there.",
+     "Five minus two equals three."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "5",
+        "🍭",
+        "🍭",
+        "🍭",
+        "🍭",
+        "🍭"
+       ],
+       "motion": "float",
+       "caption": "Start with five"
+      },
+      {
+       "items": [
+        "🍭",
+        "🍭",
+        "❌"
+       ],
+       "motion": "fall",
+       "caption": "Cross out two"
+      },
+      {
+       "items": [
+        "🍭",
+        "🍭",
+        "🍭"
+       ],
+       "motion": "pulse",
+       "caption": "Three left"
+      },
+      {
+       "items": [
+        "5",
+        "➖",
+        "2",
+        "=",
+        "3"
+       ],
+       "motion": "chain",
+       "caption": "The answer"
+      }
+     ]
+    }
+   },
+   {
+    "title": "You Are a Math Star",
+    "narration": [
+     "Subtraction helps us find what remains after sharing.",
+     "Always count carefully when you take things away.",
+     "If you have ten rupees and spend four, how many are left?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍬",
+        "🤝"
+       ],
+       "motion": "grow",
+       "caption": "Sharing snacks"
+      },
+      {
+       "items": [
+        "🔢",
+        "✅"
+       ],
+       "motion": "pulse",
+       "caption": "Count carefully"
+      },
+      {
+       "items": [
+        "10",
+        "₹",
+        "➖",
+        "4",
+        "₹"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Counting 1 to 100": {
+  "id": "lib-mathematics-g1-counting-1-to-100",
+  "topic": "Counting 1 to 100",
+  "title": "Counting to One Hundred",
+  "icon": "🔢",
+  "scenes": [
+   {
+    "title": "Numbers All Around Us",
+    "narration": [
+     "Look at your classroom wall, how many pencils are in your bag?",
+     "Counting helps us know how much of something we have.",
+     "Let us learn to count all the way to one hundred!"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "✏️",
+        "🎒"
+       ],
+       "motion": "pulse",
+       "caption": "Counting objects"
+      },
+      {
+       "items": [
+        "🍎",
+        "🍎",
+        "🍎"
+       ],
+       "motion": "grow",
+       "caption": "Why count"
+      },
+      {
+       "items": [
+        "1",
+        "50",
+        "100"
+       ],
+       "motion": "rise",
+       "caption": "Goal 100"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Building Our Numbers",
+    "narration": [
+     "We start with single digits from one up to nine.",
+     "When we reach ten, we start using two digits together.",
+     "Like ten, twenty, and thirty, they grow by tens.",
+     "We fill the spaces in between with single digits."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "1",
+        "5",
+        "9"
+       ],
+       "motion": "chain",
+       "caption": "Single digits"
+      },
+      {
+       "items": [
+        "1",
+        "0"
+       ],
+       "motion": "pulse",
+       "caption": "The number ten"
+      },
+      {
+       "items": [
+        "10",
+        "20",
+        "30"
+       ],
+       "motion": "grow",
+       "caption": "Counting by tens"
+      },
+      {
+       "items": [
+        "2",
+        "1",
+        "2",
+        "2"
+       ],
+       "motion": "chain",
+       "caption": "Filling gaps"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Counting Rohan's Cricket Cards",
+    "narration": [
+     "Rohan has a pile of cricket cards to count.",
+     "He counts by tens first to get to fifty.",
+     "Then he adds the last five cards one by one.",
+     "Now Rohan has fifty-five cards in his hand!"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🃏",
+        "🃏",
+        "🃏"
+       ],
+       "motion": "float",
+       "caption": "Rohan's cards"
+      },
+      {
+       "items": [
+        "5",
+        "0"
+       ],
+       "motion": "chain",
+       "caption": "Groups of ten"
+      },
+      {
+       "items": [
+        "5",
+        "0",
+        "+",
+        "5"
+       ],
+       "motion": "push",
+       "caption": "Adding units"
+      },
+      {
+       "items": [
+        "5",
+        "5"
+       ],
+       "motion": "pulse",
+       "caption": "Fifty-five"
+      }
+     ]
+    }
+   },
+   {
+    "title": "You Can Count Anything",
+    "narration": [
+     "Counting by tens helps us reach one hundred fast.",
+     "Remember, every number follows the one before it.",
+     "Can you count to one hundred using your fingers?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "10",
+        "50",
+        "100"
+       ],
+       "motion": "grow",
+       "caption": "Counting fast"
+      },
+      {
+       "items": [
+        "1",
+        "2",
+        "3"
+       ],
+       "motion": "chain",
+       "caption": "Number order"
+      },
+      {
+       "items": [
+        "🖐️",
+        "🖐️"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Time: Days and the Clock": {
+  "id": "lib-mathematics-g1-time-days-and-the-clock",
+  "topic": "Time: Days and the Clock",
+  "title": "How Time Moves Every Day",
+  "icon": "⏰",
+  "scenes": [
+   {
+    "title": "The Daily Clock Puzzle",
+    "narration": [
+     "Have you ever wondered why we wake up when the sun rises?",
+     "The sun helps us know it is time to start our day.",
+     "But how do we know exactly when it is time for school?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌅",
+        "👧🏽",
+        "⏰"
+       ],
+       "motion": "rise",
+       "caption": "Sunrise wakeup"
+      },
+      {
+       "items": [
+        "☀️",
+        "🌳"
+       ],
+       "motion": "float",
+       "caption": "Daytime starts"
+      },
+      {
+       "items": [
+        "🏫",
+        "🎒",
+        "🕰️"
+       ],
+       "motion": "pulse",
+       "caption": "School time"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Understanding the Clock Face",
+    "narration": [
+     "A clock has a round face with numbers from one to twelve.",
+     "The short hand tells us the hour of the day.",
+     "The long hand counts the minutes as they tick by.",
+     "Together, they show us exactly what time it is right now."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "1",
+        "6",
+        "12"
+       ],
+       "motion": "chain",
+       "caption": "Clock numbers"
+      },
+      {
+       "items": [
+        "⬇️",
+        "🕒"
+       ],
+       "motion": "pulse",
+       "caption": "Short hand"
+      },
+      {
+       "items": [
+        "⬆️",
+        "⏱️"
+       ],
+       "motion": "push",
+       "caption": "Long hand"
+      },
+      {
+       "items": [
+        "🕒",
+        "✨"
+       ],
+       "motion": "float",
+       "caption": "Reading time"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Day With Aarav",
+    "narration": [
+     "Look at Aarav, he eats his breakfast at seven o'clock.",
+     "By one o'clock, he is finished with his school lessons.",
+     "At eight o'clock, he is tucked into bed to sleep."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🥣",
+        "🥛",
+        "7"
+       ],
+       "motion": "grow",
+       "caption": "Breakfast time"
+      },
+      {
+       "items": [
+        "📚",
+        "1",
+        "🏫"
+       ],
+       "motion": "chain",
+       "caption": "School ends"
+      },
+      {
+       "items": [
+        "🛌",
+        "🌙",
+        "8"
+       ],
+       "motion": "fall",
+       "caption": "Bedtime"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Think",
+    "narration": [
+     "The sun marks our day and the clock counts the hours.",
+     "Every day is made of twelve hours for day and twelve for night.",
+     "Think about it, what is your favorite time of the day?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "☀️",
+        "🕰️",
+        "📅"
+       ],
+       "motion": "rise",
+       "caption": "Time tools"
+      },
+      {
+       "items": [
+        "☀️",
+        "🌙",
+        "24"
+       ],
+       "motion": "chain",
+       "caption": "Total hours"
+      },
+      {
+       "items": [
+        "🤔",
+        "💭"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Measurement: Long and Short, Heavy and Light": {
+  "id": "lib-mathematics-g1-measurement-long-and-short-heavy-and-light",
+  "topic": "Measurement: Long and Short, Heavy and Light",
+  "title": "Measuring Our World",
+  "icon": "📏",
+  "scenes": [
+   {
+    "title": "The Big Question",
+    "narration": [
+     "Ananya is packing her school bag for class today.",
+     "She wonders why her book is heavy but her pencil is light.",
+     "How can we tell what is long or short?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🎒",
+        "👧"
+       ],
+       "motion": "float",
+       "caption": "Packing bag"
+      },
+      {
+       "items": [
+        "📚",
+        "✏️"
+       ],
+       "motion": "pulse",
+       "caption": "Heavy and light"
+      },
+      {
+       "items": [
+        "📏",
+        "❓"
+       ],
+       "motion": "pulse",
+       "caption": "Measuring size"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Size and Weight",
+    "narration": [
+     "Length helps us see how long or short an object is.",
+     "We use a ruler to measure items in centimeters.",
+     "Weight tells us if something is heavy or light.",
+     "A heavy object pushes the scale down further."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📏",
+        "✏️",
+        "🏏"
+       ],
+       "motion": "grow",
+       "caption": "Length"
+      },
+      {
+       "items": [
+        "📏",
+        "1",
+        "2",
+        "3"
+       ],
+       "motion": "chain",
+       "caption": "Using ruler"
+      },
+      {
+       "items": [
+        "⚖️",
+        "🐘",
+        "🎈"
+       ],
+       "motion": "push",
+       "caption": "Weight"
+      },
+      {
+       "items": [
+        "⚖️",
+        "⬇️"
+       ],
+       "motion": "fall",
+       "caption": "Scale balance"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Ananya's Market Trip",
+    "narration": [
+     "Ananya buys a long carrot and a short cucumber.",
+     "She picks up a heavy bag of rice for fifty rupees.",
+     "The light packet of toffees is easy to carry."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🥕",
+        "🥒"
+       ],
+       "motion": "chain",
+       "caption": "Comparing length"
+      },
+      {
+       "items": [
+        "💰",
+        "🍚"
+       ],
+       "motion": "pull",
+       "caption": "Heavy rice"
+      },
+      {
+       "items": [
+        "🍬",
+        "🎈"
+       ],
+       "motion": "float",
+       "caption": "Light toffees"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Quick Review",
+    "narration": [
+     "Remember, length measures how long, and weight measures how heavy.",
+     "Use a ruler for length and a scale for weight.",
+     "Can you find something in your room that is heavier than a pillow?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📏",
+        "⚖️"
+       ],
+       "motion": "pulse",
+       "caption": "Key concepts"
+      },
+      {
+       "items": [
+        "📏",
+        "⚖️"
+       ],
+       "motion": "chain",
+       "caption": "Use tools"
+      },
+      {
+       "items": [
+        "🛌",
+        "❓"
+       ],
+       "motion": "rise",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Shapes": {
+  "id": "lib-mathematics-g1-shapes",
+  "topic": "Shapes",
+  "title": "Finding Shapes All Around Us",
+  "icon": "📐",
+  "scenes": [
+   {
+    "title": "Shapes in our room",
+    "narration": [
+     "Look around your room, what shapes do you see hiding in plain sight?",
+     "Do you see a round clock or a square window?",
+     "Shapes are everywhere, helping us build and play every single day."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏠",
+        "🧸"
+       ],
+       "motion": "pulse",
+       "caption": "Spotting shapes"
+      },
+      {
+       "items": [
+        "⏰",
+        "🪟"
+       ],
+       "motion": "float",
+       "caption": "Everyday objects"
+      },
+      {
+       "items": [
+        "🧱",
+        "🧩"
+       ],
+       "motion": "grow",
+       "caption": "Building blocks"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Learning the basics",
+    "narration": [
+     "A circle is perfectly round, like a hot roti on your plate.",
+     "A square has four equal sides that look exactly the same.",
+     "A triangle has three sharp corners and three straight sides.",
+     "Rectangles are like squares, but two sides are a bit longer."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "⭕",
+        "🫓"
+       ],
+       "motion": "float",
+       "caption": "The circle"
+      },
+      {
+       "items": [
+        "🟦",
+        "⬜"
+       ],
+       "motion": "push",
+       "caption": "The square"
+      },
+      {
+       "items": [
+        "🔺",
+        "📐"
+       ],
+       "motion": "pulse",
+       "caption": "The triangle"
+      },
+      {
+       "items": [
+        "📏",
+        "📱"
+       ],
+       "motion": "pull",
+       "caption": "The rectangle"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Shapes in the kitchen",
+    "narration": [
+     "Let us find shapes in a yummy lunch box.",
+     "The sandwich is cut into two triangles, see their pointy corners?",
+     "Your biscuit is a circle, and the chocolate bar is a rectangle."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍱"
+       ],
+       "motion": "chain",
+       "caption": "Lunch box"
+      },
+      {
+       "items": [
+        "🥪",
+        "🔺"
+       ],
+       "motion": "fall",
+       "caption": "Triangle sandwich"
+      },
+      {
+       "items": [
+        "🍪",
+        "🍫"
+       ],
+       "motion": "float",
+       "caption": "Tasty shapes"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Explore",
+    "narration": [
+     "Remember, circles are round, squares are equal, and triangles have three sides.",
+     "Everything you touch is made of these amazing, simple shapes.",
+     "Think about it: can you find a triangle shape outside in the park today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "⭕",
+        "🟦",
+        "🔺"
+       ],
+       "motion": "pulse",
+       "caption": "Quick review"
+      },
+      {
+       "items": [
+        "🌟",
+        "🖐️"
+       ],
+       "motion": "grow",
+       "caption": "Shapes everywhere"
+      },
+      {
+       "items": [
+        "🌳",
+        "🚩"
+       ],
+       "motion": "rise",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Patterns": {
+  "id": "lib-mathematics-g1-patterns",
+  "topic": "Patterns",
+  "title": "Spotting Magical Patterns",
+  "icon": "✨",
+  "scenes": [
+   {
+    "title": "Where are the patterns?",
+    "narration": [
+     "Have you ever looked at your school uniform and seen stripes?",
+     "Patterns are things that repeat over and over again.",
+     "Can we find them hiding in our classroom today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👕"
+       ],
+       "motion": "pulse",
+       "caption": "Striped shirt"
+      },
+      {
+       "items": [
+        "🔄"
+       ],
+       "motion": "chain",
+       "caption": "Repeating design"
+      },
+      {
+       "items": [
+        "🏫",
+        "🔍"
+       ],
+       "motion": "float",
+       "caption": "Finding patterns"
+      }
+     ]
+    }
+   },
+   {
+    "title": "How patterns work",
+    "narration": [
+     "A pattern needs a rule to follow.",
+     "Think of a red bead then a blue bead.",
+     "The rule is to keep repeating that exact order.",
+     "If you know what comes next, you solved it!"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📏"
+       ],
+       "motion": "push",
+       "caption": "The rule"
+      },
+      {
+       "items": [
+        "🔴",
+        "🔵"
+       ],
+       "motion": "chain",
+       "caption": "Red then blue"
+      },
+      {
+       "items": [
+        "🔴",
+        "🔵",
+        "🔴",
+        "🔵"
+       ],
+       "motion": "chain",
+       "caption": "Repeating order"
+      },
+      {
+       "items": [
+        "💡",
+        "🎉"
+       ],
+       "motion": "rise",
+       "caption": "Pattern solved"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Snack time patterns",
+    "narration": [
+     "Let us make a pattern with Rohan's lunch box snacks.",
+     "First, we place one crunchy apple slice.",
+     "Next, we place one sweet biscuit.",
+     "If we repeat apple then biscuit, what comes next?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍱",
+        "🍎",
+        "🍪"
+       ],
+       "motion": "float",
+       "caption": "Lunch snacks"
+      },
+      {
+       "items": [
+        "🍎"
+       ],
+       "motion": "push",
+       "caption": "Apple slice"
+      },
+      {
+       "items": [
+        "🍪"
+       ],
+       "motion": "push",
+       "caption": "Sweet biscuit"
+      },
+      {
+       "items": [
+        "🍎",
+        "🍪",
+        "?"
+       ],
+       "motion": "pulse",
+       "caption": "What is next"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and explore",
+    "narration": [
+     "Patterns repeat in a special order.",
+     "You can find them in clothes, toys, and food.",
+     "Look at the floor tiles today, can you spot a pattern there?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🔁"
+       ],
+       "motion": "chain",
+       "caption": "Repeating order"
+      },
+      {
+       "items": [
+        "👕",
+        "🧸",
+        "🍎"
+       ],
+       "motion": "float",
+       "caption": "All around"
+      },
+      {
+       "items": [
+        "🏠",
+        "👣"
+       ],
+       "motion": "rise",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Picture Data": {
+  "id": "lib-mathematics-g1-picture-data",
+  "topic": "Picture Data",
+  "title": "Counting With Fun Pictures",
+  "icon": "📊",
+  "scenes": [
+   {
+    "title": "The Fruit Basket Mystery",
+    "narration": [
+     "Aarav has a basket full of yummy snacks for his friends.",
+     "Can you tell how many of each fruit he has?",
+     "It is hard to count when they are all mixed up."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍎",
+        "🍌",
+        "🧺"
+       ],
+       "motion": "float",
+       "caption": "Snack Time"
+      },
+      {
+       "items": [
+        "🍎",
+        "?",
+        "🍌",
+        "?"
+       ],
+       "motion": "pulse",
+       "caption": "Count Fruits"
+      },
+      {
+       "items": [
+        "🍎",
+        "🍌",
+        "🍎",
+        "🍎",
+        "🍌"
+       ],
+       "motion": "fall",
+       "caption": "Too Many"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Making a Picture Graph",
+    "narration": [
+     "Let us organize these fruits in a neat line.",
+     "Now we place the bananas in their own row.",
+     "This way, we can see the data clearly."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍎",
+        "🍎",
+        "🍎"
+       ],
+       "motion": "chain",
+       "caption": "Line Up"
+      },
+      {
+       "items": [
+        "🍌",
+        "🍌"
+       ],
+       "motion": "chain",
+       "caption": "Bananas Row"
+      },
+      {
+       "items": [
+        "📊"
+       ],
+       "motion": "rise",
+       "caption": "See Data"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Counting The Snacks",
+    "narration": [
+     "Count the apples: one, two, and three.",
+     "Now count the bananas: one and two.",
+     "We have more apples than bananas in the basket."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "1",
+        "2",
+        "3",
+        "🍎"
+       ],
+       "motion": "pulse",
+       "caption": "Three Apples"
+      },
+      {
+       "items": [
+        "1",
+        "2",
+        "🍌"
+       ],
+       "motion": "pulse",
+       "caption": "Two Bananas"
+      },
+      {
+       "items": [
+        "🍎",
+        ">",
+        "🍌"
+       ],
+       "motion": "push",
+       "caption": "Compare Amounts"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Wrap Up Our Chart",
+    "narration": [
+     "A picture graph helps us count things easily.",
+     "It shows us exactly how many of each item we have.",
+     "Think about it: what would you count in your kitchen today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🖼️",
+        "📊"
+       ],
+       "motion": "rise",
+       "caption": "Easy Counting"
+      },
+      {
+       "items": [
+        "✅",
+        "🍎",
+        "🍌"
+       ],
+       "motion": "float",
+       "caption": "Clear Data"
+      },
+      {
+       "items": [
+        "🏠",
+        "🤔"
+       ],
+       "motion": "pulse",
+       "caption": "Think About It"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Money: Coins and Notes": {
+  "id": "lib-mathematics-g1-money-coins-and-notes",
+  "topic": "Money: Coins and Notes",
+  "title": "Learning About Indian Money",
+  "icon": "💰",
+  "scenes": [
+   {
+    "title": "The Magic of Buying Things",
+    "narration": [
+     "Have you ever wondered how we buy a yummy samosa from the shop?",
+     "We use money to pay for the things we need and want.",
+     "In India, we use little metal coins and paper notes."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🥟",
+        "🏫"
+       ],
+       "motion": "pulse",
+       "caption": "Buying treats"
+      },
+      {
+       "items": [
+        "💰",
+        "🛍️"
+       ],
+       "motion": "float",
+       "caption": "Using money"
+      },
+      {
+       "items": [
+        "🪙",
+        "💵"
+       ],
+       "motion": "fall",
+       "caption": "Coins and notes"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Coins and Notes Explained",
+    "narration": [
+     "Coins are small, round, and hard metal pieces.",
+     "Notes are soft paper rectangles with different colors.",
+     "Every piece has a number that tells us its value."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "1",
+        "🪙",
+        "2",
+        "🪙",
+        "5",
+        "🪙"
+       ],
+       "motion": "chain",
+       "caption": "Round coins"
+      },
+      {
+       "items": [
+        "10",
+        "💵",
+        "20",
+        "💵",
+        "50",
+        "💵"
+       ],
+       "motion": "chain",
+       "caption": "Paper notes"
+      },
+      {
+       "items": [
+        "10",
+        "🔢",
+        "50",
+        "🔢"
+       ],
+       "motion": "pulse",
+       "caption": "Value numbers"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Counting Your Rupees",
+    "narration": [
+     "Imagine Rohan has one five rupee coin and one two rupee coin.",
+     "To find the total, we add five and two together.",
+     "Now Rohan has seven rupees to spend on his friend."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "5",
+        "🪙",
+        "+",
+        "2",
+        "🪙"
+       ],
+       "motion": "push",
+       "caption": "Adding coins"
+      },
+      {
+       "items": [
+        "5",
+        "+",
+        "2",
+        "=",
+        "7"
+       ],
+       "motion": "chain",
+       "caption": "Total sum"
+      },
+      {
+       "items": [
+        "7",
+        "💰",
+        "🧒"
+       ],
+       "motion": "grow",
+       "caption": "Seven rupees"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Quick Money Recap",
+    "narration": [
+     "Money comes as coins or notes, and each has a special value.",
+     "We can add these values together to see how much we have.",
+     "Think about it: If you had ten rupees, what would you buy?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🪙",
+        "💵",
+        "🔢"
+       ],
+       "motion": "float",
+       "caption": "Money types"
+      },
+      {
+       "items": [
+        "➕",
+        "💰",
+        "=",
+        "✅"
+       ],
+       "motion": "rise",
+       "caption": "Adding up"
+      },
+      {
+       "items": [
+        "10",
+        "💵",
+        "🤔"
+       ],
+       "motion": "pulse",
+       "caption": "Your choice"
+      }
+     ]
+    }
+   }
+  ]
+ }
+}

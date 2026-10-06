@@ -1,0 +1,2824 @@
+{
+ "Large Numbers and Place Value": {
+  "id": "lib-mathematics-g5-large-numbers-and-place-value",
+  "topic": "Large Numbers and Place Value",
+  "title": "Mastering Big Numbers Easily",
+  "icon": "🔢",
+  "scenes": [
+   {
+    "title": "The Big Number Mystery",
+    "narration": [
+     "Have you ever wondered how much a brand new car costs in rupees?",
+     "It might cost 8,50,000 rupees, which is a very large number!",
+     "Today we will learn how to read and understand these giant numbers."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🚗",
+        "💰"
+       ],
+       "motion": "pulse",
+       "caption": "Car price"
+      },
+      {
+       "items": [
+        "8",
+        "5",
+        "0",
+        "0",
+        "0",
+        "₹"
+       ],
+       "motion": "grow",
+       "caption": "Large number"
+      },
+      {
+       "items": [
+        "🧠",
+        "✨"
+       ],
+       "motion": "float",
+       "caption": "Learning goals"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Understanding Place Value",
+    "narration": [
+     "Every digit in a number has a special home called a place value.",
+     "Starting from the right, we have ones, tens, and hundreds.",
+     "Next come thousands, ten thousands, and lakhs.",
+     "Where a digit sits tells us exactly how much it is worth."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏠",
+        "🔢"
+       ],
+       "motion": "chain",
+       "caption": "Place value"
+      },
+      {
+       "items": [
+        "1",
+        "10",
+        "100"
+       ],
+       "motion": "push",
+       "caption": "Small places"
+      },
+      {
+       "items": [
+        "1,000",
+        "10,000",
+        "1,00,000"
+       ],
+       "motion": "push",
+       "caption": "Big places"
+      },
+      {
+       "items": [
+        "📍",
+        "💎"
+       ],
+       "motion": "pulse",
+       "caption": "Digit worth"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Breaking Down 8,50,000",
+    "narration": [
+     "Let's look at our 8,50,000 rupees again.",
+     "The 8 is in the lakh place, so it means 8 lakhs.",
+     "The 5 is in the ten thousands place, meaning 50,000.",
+     "Together, they add up to make the full value of the number."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "8",
+        "5",
+        "0",
+        "0",
+        "0",
+        "0"
+       ],
+       "motion": "float",
+       "caption": "Breakdown"
+      },
+      {
+       "items": [
+        "8",
+        "1,00,000"
+       ],
+       "motion": "rise",
+       "caption": "Eight lakhs"
+      },
+      {
+       "items": [
+        "5",
+        "10,000"
+       ],
+       "motion": "rise",
+       "caption": "Fifty thousand"
+      },
+      {
+       "items": [
+        "8,00,000",
+        "+",
+        "50,000"
+       ],
+       "motion": "chain",
+       "caption": "Total value"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Quick Recap",
+    "narration": [
+     "Remember, digits change value based on where they are sitting.",
+     "Always use commas to group numbers into thousands and lakhs.",
+     "Think about it, what is the biggest number you can write using five digits?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "↔️",
+        "🔢"
+       ],
+       "motion": "pulse",
+       "caption": "Position matters"
+      },
+      {
+       "items": [
+        ",",
+        "🔢"
+       ],
+       "motion": "chain",
+       "caption": "Use commas"
+      },
+      {
+       "items": [
+        "❓",
+        "🤔"
+       ],
+       "motion": "float",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Division": {
+  "id": "lib-mathematics-g5-long-division",
+  "topic": "Division",
+  "title": "Sharing Treats With Division",
+  "icon": "🍭",
+  "scenes": [
+   {
+    "title": "The Big Candy Problem",
+    "narration": [
+     "Aarav has 75 yummy mango candies to share equally among 5 friends.",
+     "How many candies does each friend get without any leftovers?",
+     "We use long division to solve this big problem step by step."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍬",
+        "🍬",
+        "🍬",
+        "5"
+       ],
+       "motion": "pulse",
+       "caption": "Sharing Candies"
+      },
+      {
+       "items": [
+        "?",
+        "🍭",
+        "🍭"
+       ],
+       "motion": "float",
+       "caption": "Finding Shares"
+      },
+      {
+       "items": [
+        "⟌",
+        "7",
+        "5",
+        "5"
+       ],
+       "motion": "chain",
+       "caption": "Long Division"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Step by Step Division",
+    "narration": [
+     "First, see how many times 5 goes into the tens digit, which is 7.",
+     "5 fits into 7 one time, so we write 1 on top.",
+     "Multiply 1 times 5 and subtract it from 7 to get 2.",
+     "Now, bring down the 5 from the ones place to make 25."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "7",
+        "5",
+        "1"
+       ],
+       "motion": "push",
+       "caption": "Divide Tens"
+      },
+      {
+       "items": [
+        "1"
+       ],
+       "motion": "rise",
+       "caption": "Write Quotient"
+      },
+      {
+       "items": [
+        "7",
+        "-",
+        "5",
+        "=",
+        "2"
+       ],
+       "motion": "fall",
+       "caption": "Subtract"
+      },
+      {
+       "items": [
+        "2",
+        "5"
+       ],
+       "motion": "fall",
+       "caption": "Bring Down"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Completing the Share",
+    "narration": [
+     "Now divide 25 by 5 to find our final answer.",
+     "Since 5 times 5 is 25, we write 5 on top.",
+     "Subtract 25 from 25, and we have 0 left over."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "2",
+        "5",
+        "÷",
+        "5"
+       ],
+       "motion": "push",
+       "caption": "Divide Ones"
+      },
+      {
+       "items": [
+        "5",
+        "×",
+        "5",
+        "=",
+        "2",
+        "5"
+       ],
+       "motion": "grow",
+       "caption": "Multiply"
+      },
+      {
+       "items": [
+        "2",
+        "5",
+        "-",
+        "2",
+        "5",
+        "="
+       ],
+       "motion": "fall",
+       "caption": "No Remainder"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Challenge",
+    "narration": [
+     "We divided, multiplied, subtracted, and brought down to get 15.",
+     "Each friend gets 15 delicious mango candies to enjoy.",
+     "Think about it: what would happen if we had 76 candies instead?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "1",
+        "5",
+        "🍬"
+       ],
+       "motion": "chain",
+       "caption": "Final Answer"
+      },
+      {
+       "items": [
+        "🙋",
+        "🙋",
+        "🙋",
+        "🙋",
+        "🙋"
+       ],
+       "motion": "float",
+       "caption": "Fair Sharing"
+      },
+      {
+       "items": [
+        "7",
+        "6",
+        "?"
+       ],
+       "motion": "pulse",
+       "caption": "Think About It"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Prime Numbers": {
+  "id": "lib-mathematics-g5-prime-numbers",
+  "topic": "Prime Numbers",
+  "title": "The Mystery of Prime Numbers",
+  "icon": "🔢",
+  "scenes": [
+   {
+    "title": "The Curious Cookie Riddle",
+    "narration": [
+     "Imagine Priya has seven delicious ladoos on her plate today.",
+     "Can she share them equally with her friends without breaking any?",
+     "Let us see if we can arrange these numbers into perfect rows."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "7",
+        "🪔"
+       ],
+       "motion": "pulse",
+       "caption": "Seven Ladoos"
+      },
+      {
+       "items": [
+        "👧",
+        "👧",
+        "👧"
+       ],
+       "motion": "pull",
+       "caption": "Sharing Fairly"
+      },
+      {
+       "items": [
+        "🔢",
+        "📏"
+       ],
+       "motion": "chain",
+       "caption": "Number Rows"
+      }
+     ]
+    }
+   },
+   {
+    "title": "What Makes a Prime?",
+    "narration": [
+     "A prime number is a special number that only has two factors.",
+     "It can only be divided by the number one and itself.",
+     "If you try to make groups with other numbers, you always get leftovers."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "1",
+        "✖️",
+        "N"
+       ],
+       "motion": "grow",
+       "caption": "Prime Definition"
+      },
+      {
+       "items": [
+        "1",
+        "✅",
+        "7"
+       ],
+       "motion": "pulse",
+       "caption": "Only Two Factors"
+      },
+      {
+       "items": [
+        "🧺",
+        "❌"
+       ],
+       "motion": "push",
+       "caption": "No Equal Groups"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Testing the Number Five",
+    "narration": [
+     "Let us test the number five to see if it is prime.",
+     "We can make one row of five or five rows of one.",
+     "But we cannot divide five into two or three equal groups.",
+     "Because five has only two factors, it is definitely a prime number."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "5",
+        "🔍"
+       ],
+       "motion": "float",
+       "caption": "Testing Five"
+      },
+      {
+       "items": [
+        "1",
+        "x",
+        "5"
+       ],
+       "motion": "chain",
+       "caption": "One times Five"
+      },
+      {
+       "items": [
+        "5",
+        "÷",
+        "2",
+        "❌"
+       ],
+       "motion": "pull",
+       "caption": "Cannot Divide"
+      },
+      {
+       "items": [
+        "🌟",
+        "5"
+       ],
+       "motion": "grow",
+       "caption": "Five is Prime"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Challenge",
+    "narration": [
+     "Remember, prime numbers are lonely numbers that only share with one and themselves.",
+     "Numbers like four or six are not prime because they have more factors.",
+     "Think about it: is the number eleven a prime number or not?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "1",
+        "7",
+        "11",
+        "13"
+       ],
+       "motion": "pulse",
+       "caption": "Lonely Primes"
+      },
+      {
+       "items": [
+        "4",
+        "6",
+        "✖️"
+       ],
+       "motion": "fall",
+       "caption": "Not Prime"
+      },
+      {
+       "items": [
+        "11",
+        "❓"
+       ],
+       "motion": "rise",
+       "caption": "Your Turn"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Multiplication": {
+  "id": "lib-mathematics-g5-multi-digit-multiplication",
+  "topic": "Multiplication",
+  "title": "Mastering Multi-Digit Multiplication",
+  "icon": "🧮",
+  "scenes": [
+   {
+    "title": "The Big Shopping Trip",
+    "narration": [
+     "Imagine we buy 12 packets of yummy mango sweets at 25 rupees each.",
+     "How do we find the total cost without counting every single rupee?",
+     "Multiplication helps us solve this big problem quickly and easily."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🥭",
+        "🍬",
+        "12",
+        "x",
+        "25"
+       ],
+       "motion": "pulse",
+       "caption": "Mango sweets"
+      },
+      {
+       "items": [
+        "🤔",
+        "💰"
+       ],
+       "motion": "float",
+       "caption": "Total cost"
+      },
+      {
+       "items": [
+        "⚡",
+        "➕"
+       ],
+       "motion": "rise",
+       "caption": "Quick math"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Breaking Down the Numbers",
+    "narration": [
+     "First, we write 25 and 12 one above the other carefully.",
+     "We multiply the top number by the ones place first.",
+     "Then, we multiply by the tens place, adding a zero placeholder.",
+     "Always remember to carry over any extra tens to the next column."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "25",
+        "12"
+       ],
+       "motion": "chain",
+       "caption": "Line up"
+      },
+      {
+       "items": [
+        "25",
+        "x",
+        "2"
+       ],
+       "motion": "push",
+       "caption": "Ones place"
+      },
+      {
+       "items": [
+        "25",
+        "x",
+        "10"
+       ],
+       "motion": "push",
+       "caption": "Tens place"
+      },
+      {
+       "items": [
+        "➕",
+        "🔟"
+       ],
+       "motion": "grow",
+       "caption": "Carry over"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Solving the Mango Problem",
+    "narration": [
+     "Two times 25 gives us 50 for the ones part.",
+     "Ten times 25 gives us 250 for the tens part.",
+     "Finally, we add 50 and 250 together to get 300."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "50"
+       ],
+       "motion": "chain",
+       "caption": "First part"
+      },
+      {
+       "items": [
+        "250"
+       ],
+       "motion": "chain",
+       "caption": "Second part"
+      },
+      {
+       "items": [
+        "50",
+        "+",
+        "250",
+        "=",
+        "300"
+       ],
+       "motion": "rise",
+       "caption": "Final answer"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Quick Recap and Challenge",
+    "narration": [
+     "Multiply ones, then multiply tens with a zero, then add both parts.",
+     "You can multiply any big number using these simple steps.",
+     "Think about it: how much would 15 notebooks cost if each is 40 rupees?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "1️⃣",
+        "🔟",
+        "➕"
+       ],
+       "motion": "chain",
+       "caption": "Steps summary"
+      },
+      {
+       "items": [
+        "🌟",
+        "🔢"
+       ],
+       "motion": "grow",
+       "caption": "Math power"
+      },
+      {
+       "items": [
+        "📓",
+        "40",
+        "15"
+       ],
+       "motion": "pulse",
+       "caption": "Try yourself"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Factors and Multiples": {
+  "id": "lib-mathematics-g5-factors-and-multiples",
+  "topic": "Factors and Multiples",
+  "title": "Fun with Factors and Multiples",
+  "icon": "🔢",
+  "scenes": [
+   {
+    "title": "The Sweet Sharing Mystery",
+    "narration": [
+     "Aarav has 12 ladoos to share equally with his friends.",
+     "How can he group them without leaving any behind?",
+     "Let us discover how numbers work together."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "12",
+        "🍬"
+       ],
+       "motion": "pulse",
+       "caption": "12 Ladoos"
+      },
+      {
+       "items": [
+        "?",
+        "👦",
+        "👧",
+        "🍬"
+       ],
+       "motion": "pulse",
+       "caption": "Fair Sharing"
+      },
+      {
+       "items": [
+        "🔍",
+        "🔢"
+       ],
+       "motion": "grow",
+       "caption": "Math Discovery"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Finding Hidden Factors",
+    "narration": [
+     "Factors are numbers that divide another number perfectly.",
+     "For 12, the factors are 1, 2, 3, 4, 6, and 12.",
+     "Notice how they always come in pairs."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "12",
+        "÷",
+        "3",
+        "=",
+        "4"
+       ],
+       "motion": "chain",
+       "caption": "Definition"
+      },
+      {
+       "items": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "6",
+        "12"
+       ],
+       "motion": "grow",
+       "caption": "List Factors"
+      },
+      {
+       "items": [
+        "1",
+        "×",
+        "12",
+        "2",
+        "×",
+        "6"
+       ],
+       "motion": "chain",
+       "caption": "Factor Pairs"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Making Giant Multiples",
+    "narration": [
+     "Multiples are what we get when we multiply numbers.",
+     "Think of multiples like skipping numbers on a line.",
+     "A multiple of 3 keeps growing bigger forever."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "3",
+        "×",
+        "1",
+        "=",
+        "3"
+       ],
+       "motion": "rise",
+       "caption": "Multiplication"
+      },
+      {
+       "items": [
+        "3",
+        "6",
+        "9",
+        "12",
+        "15"
+       ],
+       "motion": "float",
+       "caption": "Skip Counting"
+      },
+      {
+       "items": [
+        "3",
+        "→",
+        "30",
+        "→",
+        "300"
+       ],
+       "motion": "grow",
+       "caption": "Infinite Growth"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Reviewing Our Math Skills",
+    "narration": [
+     "Factors are small and fixed, multiples are big and endless.",
+     "Remember, factors divide, but multiples multiply.",
+     "Think about it: Is 5 a factor or a multiple of 20?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📏",
+        "♾️"
+       ],
+       "motion": "pulse",
+       "caption": "Quick Summary"
+      },
+      {
+       "items": [
+        "➗",
+        "✖️"
+       ],
+       "motion": "push",
+       "caption": "Key Difference"
+      },
+      {
+       "items": [
+        "5",
+        "?",
+        "20"
+       ],
+       "motion": "pulse",
+       "caption": "Challenge Question"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Ratio Basics": {
+  "id": "lib-mathematics-g5-ratio-basics",
+  "topic": "Ratio Basics",
+  "title": "Sharing Treats With Ratios",
+  "icon": "🍭",
+  "scenes": [
+   {
+    "title": "The Sweet Snack Hook",
+    "narration": [
+     "Aarav is packing his tiffin for school today.",
+     "He has two samosas and three ladoos.",
+     "How can we describe this mix of snacks using numbers?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🎒",
+        "🍱"
+       ],
+       "motion": "pulse",
+       "caption": "School tiffin"
+      },
+      {
+       "items": [
+        "🥟",
+        "🥟",
+        "🫔",
+        "🫔",
+        "🫔"
+       ],
+       "motion": "pulse",
+       "caption": "The snacks"
+      },
+      {
+       "items": [
+        "🤔",
+        "🔢"
+       ],
+       "motion": "pulse",
+       "caption": "What is ratio?"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Understanding Ratio Basics",
+    "narration": [
+     "A ratio shows how much of one thing we have compared to another.",
+     "We write it with a special colon symbol like this.",
+     "The order of numbers matters a lot."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "⚖️",
+        "↔️"
+       ],
+       "motion": "chain",
+       "caption": "Comparing amounts"
+      },
+      {
+       "items": [
+        ":"
+       ],
+       "motion": "chain",
+       "caption": "The colon"
+      },
+      {
+       "items": [
+        "1",
+        ":",
+        "2"
+       ],
+       "motion": "chain",
+       "caption": "Proper order"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Working The Samosa Ratio",
+    "narration": [
+     "Aarav has two samosas for every three ladoos.",
+     "So the ratio of samosas to ladoos is two to three.",
+     "If he doubles his snacks, the ratio stays the same."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🥟",
+        "🥟",
+        ":",
+        "🫔",
+        "🫔",
+        "🫔"
+       ],
+       "motion": "push",
+       "caption": "2 to 3"
+      },
+      {
+       "items": [
+        "2",
+        ":",
+        "3"
+       ],
+       "motion": "push",
+       "caption": "2 : 3 ratio"
+      },
+      {
+       "items": [
+        "4",
+        ":",
+        "6"
+       ],
+       "motion": "grow",
+       "caption": "Equivalent ratios"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap And Think",
+    "narration": [
+     "Ratios compare parts of a group using a colon.",
+     "Remember to keep the same order as the objects.",
+     "Think about it: If you have four pens and two pencils, what is your ratio?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📊",
+        "✅"
+       ],
+       "motion": "pulse",
+       "caption": "Quick recap"
+      },
+      {
+       "items": [
+        "🔄",
+        "🔢"
+       ],
+       "motion": "pulse",
+       "caption": "Watch order"
+      },
+      {
+       "items": [
+        "🖊️",
+        "🖊️",
+        "🖊️",
+        "🖊️",
+        ":",
+        "✏️"
+       ],
+       "motion": "pulse",
+       "caption": "Your turn"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Geometry": {
+  "id": "lib-mathematics-g5-geometry",
+  "topic": "Geometry",
+  "title": "Exploring Shapes Around Us",
+  "icon": "📐",
+  "scenes": [
+   {
+    "title": "Shapes in Your Home",
+    "narration": [
+     "Have you noticed how your sandwich is a square and your bowl is a circle?",
+     "Geometry is just the study of these shapes and how they fit together perfectly.",
+     "Why do builders use triangles to make roofs strong instead of squares?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🥪",
+        "🥣"
+       ],
+       "motion": "float",
+       "caption": "Everyday shapes"
+      },
+      {
+       "items": [
+        "📏",
+        "📐",
+        "✏️"
+       ],
+       "motion": "pulse",
+       "caption": "What is geometry"
+      },
+      {
+       "items": [
+        "🏠",
+        "📐"
+       ],
+       "motion": "rise",
+       "caption": "Strong triangles"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Understanding Geometry Basics",
+    "narration": [
+     "A point is just a tiny dot marking a spot in space.",
+     "When you connect two points, you get a straight line.",
+     "When lines meet at a corner, they create an angle.",
+     "Closed shapes made of straight lines are called polygons."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📍"
+       ],
+       "motion": "pulse",
+       "caption": "A point"
+      },
+      {
+       "items": [
+        "📍",
+        "➖",
+        "📍"
+       ],
+       "motion": "chain",
+       "caption": "A line"
+      },
+      {
+       "items": [
+        "📐"
+       ],
+       "motion": "push",
+       "caption": "An angle"
+      },
+      {
+       "items": [
+        "🔺",
+        "⏹️",
+        "⬠"
+       ],
+       "motion": "grow",
+       "caption": "Polygons"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Measuring a Rectangle",
+    "narration": [
+     "Let us find the area of a rectangular table top in your room.",
+     "First, measure the length which is 10 cm.",
+     "Next, measure the width which is 5 cm.",
+     "Multiply 10 by 5 to get 50 square centimeters of space."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🪑",
+        "📏"
+       ],
+       "motion": "float",
+       "caption": "Measuring area"
+      },
+      {
+       "items": [
+        "10cm"
+       ],
+       "motion": "pulse",
+       "caption": "Length"
+      },
+      {
+       "items": [
+        "5cm"
+       ],
+       "motion": "pulse",
+       "caption": "Width"
+      },
+      {
+       "items": [
+        "10",
+        "✖️",
+        "5",
+        "=",
+        "50"
+       ],
+       "motion": "chain",
+       "caption": "Area calculation"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Challenge",
+    "narration": [
+     "Geometry helps us measure points, lines, angles, and shapes all around us.",
+     "Remember, area is just the space inside a flat shape.",
+     "Think about it, why do you think wheels are always circles instead of squares?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📍",
+        "➖",
+        "📐"
+       ],
+       "motion": "float",
+       "caption": "Quick recap"
+      },
+      {
+       "items": [
+        "⏹️",
+        "✨"
+       ],
+       "motion": "grow",
+       "caption": "Area concept"
+      },
+      {
+       "items": [
+        "🚲",
+        "🎡"
+       ],
+       "motion": "push",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Introduction to Percentages": {
+  "id": "lib-mathematics-g5-introduction-to-percentages",
+  "topic": "Introduction to Percentages",
+  "title": "Understanding Percentages Made Easy",
+  "icon": "💯",
+  "scenes": [
+   {
+    "title": "The Big Sale Hook",
+    "narration": [
+     "Aarav sees a store sign saying 50 percent off his favorite toy cricket bat.",
+     "He wonders what percent actually means when buying toys with his pocket money.",
+     "Let us discover how percentages help us understand parts of a whole."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏏",
+        "🏷️",
+        "50%"
+       ],
+       "motion": "pulse",
+       "caption": "Big Sale"
+      },
+      {
+       "items": [
+        "💰",
+        "🤔",
+        "🧒"
+       ],
+       "motion": "float",
+       "caption": "Curious Question"
+      },
+      {
+       "items": [
+        "🔍",
+        "🧩",
+        "100"
+       ],
+       "motion": "rise",
+       "caption": "Finding Parts"
+      }
+     ]
+    }
+   },
+   {
+    "title": "What is a Percent",
+    "narration": [
+     "Percent simply means out of one hundred.",
+     "Think of a hundred rupee note made of one hundred small coins.",
+     "If you have twenty coins, that is twenty out of one hundred.",
+     "In math language, we call this twenty percent."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "100",
+        "÷",
+        "1"
+       ],
+       "motion": "chain",
+       "caption": "Per Cent"
+      },
+      {
+       "items": [
+        "💵",
+        "🪙",
+        "100"
+       ],
+       "motion": "fall",
+       "caption": "100 Coins"
+      },
+      {
+       "items": [
+        "20",
+        "🪙",
+        "100"
+       ],
+       "motion": "pulse",
+       "caption": "20 Percent"
+      },
+      {
+       "items": [
+        "20",
+        "%",
+        "✅"
+       ],
+       "motion": "grow",
+       "caption": "20 Percent"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Solving a Discount Example",
+    "narration": [
+     "Aarav's cricket bat costs two hundred rupees.",
+     "The store offers a fifty percent discount, which is half the price.",
+     "Fifty percent of two hundred rupees is exactly one hundred rupees."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏏",
+        "200",
+        "₹"
+       ],
+       "motion": "push",
+       "caption": "Total Price"
+      },
+      {
+       "items": [
+        "50%",
+        "½",
+        "🏷️"
+       ],
+       "motion": "chain",
+       "caption": "Half Price"
+      },
+      {
+       "items": [
+        "100",
+        "₹",
+        "🎉"
+       ],
+       "motion": "grow",
+       "caption": "Savings"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Think",
+    "narration": [
+     "Percentages always compare a number to one hundred.",
+     "They help us compare deals, marks, and parts of things easily.",
+     "Think about it: If you eat ten percent of a pizza, how much is left?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "100",
+        "🔢",
+        "📊"
+       ],
+       "motion": "pulse",
+       "caption": "Key Rule"
+      },
+      {
+       "items": [
+        "📝",
+        "🛍️",
+        "🌟"
+       ],
+       "motion": "float",
+       "caption": "Uses"
+      },
+      {
+       "items": [
+        "🍕",
+        "10%",
+        "🤔"
+       ],
+       "motion": "rise",
+       "caption": "Think About It"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Coordinate Basics": {
+  "id": "lib-mathematics-g5-coordinate-basics",
+  "topic": "Coordinate Basics",
+  "title": "Finding Treasure on a Grid",
+  "icon": "🗺️",
+  "scenes": [
+   {
+    "title": "Where is the hidden toy",
+    "narration": [
+     "Have you ever played a game of hide and seek with your toys?",
+     "Imagine Priya hid her teddy bear inside a large floor grid.",
+     "How can we tell exactly where the bear is hiding?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🧸",
+        "🏠"
+       ],
+       "motion": "pulse",
+       "caption": "Hide and seek"
+      },
+      {
+       "items": [
+        "👧",
+        "⬜"
+       ],
+       "motion": "float",
+       "caption": "Floor grid"
+      },
+      {
+       "items": [
+        "❓",
+        "🧸"
+       ],
+       "motion": "push",
+       "caption": "Finding location"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Magic of Coordinates",
+    "narration": [
+     "We use two lines to map out our space.",
+     "The horizontal line is the x-axis, going left to right.",
+     "The vertical line is the y-axis, going up and down.",
+     "Together, they help us find any spot using two numbers."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "↔️",
+        "↕️"
+       ],
+       "motion": "chain",
+       "caption": "Two lines"
+      },
+      {
+       "items": [
+        "➡️",
+        "x"
+       ],
+       "motion": "rise",
+       "caption": "X-axis"
+      },
+      {
+       "items": [
+        "⬆️",
+        "y"
+       ],
+       "motion": "rise",
+       "caption": "Y-axis"
+      },
+      {
+       "items": [
+        "(",
+        "3",
+        ",",
+        "2",
+        ")"
+       ],
+       "motion": "chain",
+       "caption": "Coordinate pair"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Mapping Priya's Teddy Bear",
+    "narration": [
+     "Start at the corner, which is zero zero.",
+     "Move three steps to the right along the x-axis.",
+     "Now move two steps up the y-axis.",
+     "We found the bear at point three, two!"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "0",
+        ",",
+        "0"
+       ],
+       "motion": "pulse",
+       "caption": "The start"
+      },
+      {
+       "items": [
+        "3",
+        "➡️"
+       ],
+       "motion": "push",
+       "caption": "Move right"
+      },
+      {
+       "items": [
+        "2",
+        "⬆️"
+       ],
+       "motion": "push",
+       "caption": "Move up"
+      },
+      {
+       "items": [
+        "🧸",
+        "3",
+        "2"
+       ],
+       "motion": "grow",
+       "caption": "Target found"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Quick Review",
+    "narration": [
+     "Always walk along the floor before you climb the wall.",
+     "Coordinates are just a secret address for any spot.",
+     "Think about it: where would you place a snack on a grid?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "↔️",
+        "↕️"
+       ],
+       "motion": "chain",
+       "caption": "X then Y"
+      },
+      {
+       "items": [
+        "📍",
+        "🏠"
+       ],
+       "motion": "float",
+       "caption": "Secret address"
+      },
+      {
+       "items": [
+        "🍎",
+        "⬜"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Fractions": {
+  "id": "lib-mathematics-g5-fractions",
+  "topic": "Fractions",
+  "title": "Fun with Yummy Fractions",
+  "icon": "🍕",
+  "scenes": [
+   {
+    "title": "Sharing A Delicious Pizza",
+    "narration": [
+     "Arjun bought a large pizza to share with his best friend Meera.",
+     "But how can they split it so they both get an equal amount?",
+     "Fractions help us divide things into equal parts."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍕",
+        "👦",
+        "👧"
+       ],
+       "motion": "pulse",
+       "caption": "Sharing pizza"
+      },
+      {
+       "items": [
+        "❓",
+        "🍕",
+        "🔪"
+       ],
+       "motion": "pull",
+       "caption": "Equal parts"
+      },
+      {
+       "items": [
+        "🍕",
+        "÷",
+        "2"
+       ],
+       "motion": "chain",
+       "caption": "Dividing equally"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Understanding The Parts",
+    "narration": [
+     "The bottom number is the denominator, showing the total number of slices.",
+     "The top number is the numerator, showing how many slices you take.",
+     "So one slice out of four is written as one-fourth.",
+     "The line between them acts like a division sign."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "4",
+        "🍕"
+       ],
+       "motion": "pulse",
+       "caption": "Denominator"
+      },
+      {
+       "items": [
+        "1",
+        "🍕"
+       ],
+       "motion": "rise",
+       "caption": "Numerator"
+      },
+      {
+       "items": [
+        "1",
+        "/",
+        "4"
+       ],
+       "motion": "float",
+       "caption": "Writing fractions"
+      },
+      {
+       "items": [
+        "-",
+        "÷"
+       ],
+       "motion": "push",
+       "caption": "Fraction line"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Counting Real Rupees",
+    "narration": [
+     "Imagine you have ten rupees and you give half to your brother.",
+     "Half of ten is five rupees, because ten divided by two is five.",
+     "Fractions work for money just like they work for pizza slices."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "10",
+        "₹",
+        "½"
+       ],
+       "motion": "pull",
+       "caption": "Half share"
+      },
+      {
+       "items": [
+        "10",
+        "÷",
+        "2",
+        "=",
+        "5"
+       ],
+       "motion": "chain",
+       "caption": "Calculating half"
+      },
+      {
+       "items": [
+        "₹",
+        "🍕"
+       ],
+       "motion": "float",
+       "caption": "Same concept"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap And Think",
+    "narration": [
+     "Fractions show parts of a whole, like a yummy pizza.",
+     "Think about it, if you have a chocolate bar with six squares, what is two-sixths?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍕",
+        "1",
+        "/",
+        "4"
+       ],
+       "motion": "pulse",
+       "caption": "Parts of whole"
+      },
+      {
+       "items": [
+        "🍫",
+        "6",
+        "❓"
+       ],
+       "motion": "grow",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Area and Volume": {
+  "id": "lib-mathematics-g5-area-and-volume",
+  "topic": "Area and Volume",
+  "title": "Measuring Spaces Around Us",
+  "icon": "📦",
+  "scenes": [
+   {
+    "title": "The Big Box Question",
+    "narration": [
+     "Have you ever wondered how much space is inside your school tiffin box?",
+     "Let us explore why we need to measure the surface and the space inside.",
+     "We use area for flat shapes and volume for things that hold stuff."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍱"
+       ],
+       "motion": "pulse",
+       "caption": "Tiffin Box"
+      },
+      {
+       "items": [
+        "📏",
+        "📐"
+       ],
+       "motion": "push",
+       "caption": "Measuring Tools"
+      },
+      {
+       "items": [
+        "🟦",
+        "🧊"
+       ],
+       "motion": "float",
+       "caption": "Area vs Volume"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Understanding Area and Volume",
+    "narration": [
+     "Area is how much flat space a shape covers, measured in square centimeters.",
+     "To find area, multiply the length by the width.",
+     "Volume is how much space an object takes up in three dimensions.",
+     "Volume is length times width times height."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🟥",
+        "2",
+        "cm"
+       ],
+       "motion": "grow",
+       "caption": "Flat Area"
+      },
+      {
+       "items": [
+        "📏",
+        "×",
+        "📏"
+       ],
+       "motion": "chain",
+       "caption": "Area Formula"
+      },
+      {
+       "items": [
+        "📦",
+        "3",
+        "cm"
+       ],
+       "motion": "rise",
+       "caption": "3D Volume"
+      },
+      {
+       "items": [
+        "📏",
+        "×",
+        "📏",
+        "×",
+        "📏"
+       ],
+       "motion": "chain",
+       "caption": "Volume Formula"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Tasty Geometry Example",
+    "narration": [
+     "Let us measure a small chocolate box that is 5 cm long, 2 cm wide, and 3 cm high.",
+     "First, the base area is 5 times 2, which is 10 square centimeters.",
+     "Now, multiply that 10 by the height of 3 to get 30 cubic centimeters."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍫",
+        "5",
+        "2",
+        "3"
+       ],
+       "motion": "float",
+       "caption": "Chocolate Box"
+      },
+      {
+       "items": [
+        "5",
+        "×",
+        "2",
+        "=",
+        "10"
+       ],
+       "motion": "push",
+       "caption": "Calculating Area"
+      },
+      {
+       "items": [
+        "10",
+        "×",
+        "3",
+        "=",
+        "30"
+       ],
+       "motion": "grow",
+       "caption": "Calculating Volume"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Quick Recap and Challenge",
+    "narration": [
+     "Remember, area is for flat surfaces and volume is for solid objects.",
+     "Area uses square units, while volume uses cubic units.",
+     "Think about it: does a flat sticker have volume?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🟦",
+        "🧊"
+       ],
+       "motion": "pulse",
+       "caption": "Key Summary"
+      },
+      {
+       "items": [
+        "2",
+        "3"
+       ],
+       "motion": "fall",
+       "caption": "Units Check"
+      },
+      {
+       "items": [
+        "🏷️",
+        "?"
+       ],
+       "motion": "float",
+       "caption": "Think About It"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Decimals": {
+  "id": "lib-mathematics-g5-decimals",
+  "topic": "Decimals",
+  "title": "Decimals Make Money Easy",
+  "icon": "💰",
+  "scenes": [
+   {
+    "title": "The Curious Market Trip",
+    "narration": [
+     "Aarav is at the market buying a chocolate bar.",
+     "The price tag says 25 point 50 rupees.",
+     "What does that little dot actually mean?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "🍫"
+       ],
+       "motion": "pulse",
+       "caption": "Market visit"
+      },
+      {
+       "items": [
+        "25",
+        ".",
+        "50",
+        "₹"
+       ],
+       "motion": "float",
+       "caption": "Price tag"
+      },
+      {
+       "items": [
+        "?"
+       ],
+       "motion": "pulse",
+       "caption": "Question"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Parts of a Whole",
+    "narration": [
+     "A decimal dot separates whole numbers from parts.",
+     "The first spot is for tenths, like one slice of ten.",
+     "The second spot is for hundredths, like one coin of a hundred."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "1",
+        ".",
+        "0"
+       ],
+       "motion": "chain",
+       "caption": "The dot"
+      },
+      {
+       "items": [
+        "1",
+        "/",
+        "10"
+       ],
+       "motion": "rise",
+       "caption": "Tenths place"
+      },
+      {
+       "items": [
+        "1",
+        "/",
+        "100"
+       ],
+       "motion": "rise",
+       "caption": "Hundredths place"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Counting Aarav's Rupees",
+    "narration": [
+     "Aarav has 25 whole rupees in his pocket.",
+     "The 50 means 50 paise, which is half a rupee.",
+     "So 25 point 50 is just 25 rupees and 50 paise."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "₹",
+        "₹",
+        "₹"
+       ],
+       "motion": "grow",
+       "caption": "Whole rupees"
+      },
+      {
+       "items": [
+        "50",
+        "p",
+        "=",
+        "½",
+        "₹"
+       ],
+       "motion": "push",
+       "caption": "The fraction"
+      },
+      {
+       "items": [
+        "25",
+        ".",
+        "50"
+       ],
+       "motion": "chain",
+       "caption": "Total amount"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Decimals Are Everywhere",
+    "narration": [
+     "Decimals help us measure money, height, and weight perfectly.",
+     "Remember, the dot divides whole numbers from smaller parts.",
+     "Think about it, how would you write 75 paise using a decimal?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "⚖️",
+        "📏",
+        "💰"
+       ],
+       "motion": "pulse",
+       "caption": "Uses"
+      },
+      {
+       "items": [
+        "."
+       ],
+       "motion": "fall",
+       "caption": "Key rule"
+      },
+      {
+       "items": [
+        "0",
+        ".",
+        "75",
+        "₹"
+       ],
+       "motion": "float",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Word Problems": {
+  "id": "lib-mathematics-g5-word-problems",
+  "topic": "Word Problems",
+  "title": "Mastering Math Word Problems",
+  "icon": "🧮",
+  "scenes": [
+   {
+    "title": "The Grocery Store Mystery",
+    "narration": [
+     "Have you ever felt confused by a long math story at school?",
+     "Imagine you are at the market with Aarav buying mangoes.",
+     "How do we turn these words into a simple math equation?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "😕",
+        "📝"
+       ],
+       "motion": "pulse",
+       "caption": "Math confusion"
+      },
+      {
+       "items": [
+        "🥭",
+        "🛍️"
+       ],
+       "motion": "float",
+       "caption": "Market trip"
+      },
+      {
+       "items": [
+        "❓",
+        "➕",
+        "➖"
+       ],
+       "motion": "push",
+       "caption": "Finding numbers"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Breaking Down The Problem",
+    "narration": [
+     "First, read the story carefully and underline the important numbers.",
+     "Next, look for clue words like total, difference, or each.",
+     "Total usually means you need to add things together.",
+     "If you see the word difference, you probably need to subtract."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🖊️",
+        "🔢"
+       ],
+       "motion": "chain",
+       "caption": "Highlight numbers"
+      },
+      {
+       "items": [
+        "🔎",
+        "🔑"
+       ],
+       "motion": "pulse",
+       "caption": "Keyword clues"
+      },
+      {
+       "items": [
+        "➕",
+        "📦"
+       ],
+       "motion": "grow",
+       "caption": "Adding up"
+      },
+      {
+       "items": [
+        "➖",
+        "📉"
+       ],
+       "motion": "fall",
+       "caption": "Subtracting"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Solving Aarav's Mango Problem",
+    "narration": [
+     "Aarav has 50 rupees and buys mangoes for 35 rupees.",
+     "We need to find the change left in his pocket.",
+     "Fifty minus thirty-five equals fifteen rupees."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "50",
+        "➖",
+        "35"
+       ],
+       "motion": "chain",
+       "caption": "Set equation"
+      },
+      {
+       "items": [
+        "💰",
+        "🤔"
+       ],
+       "motion": "pulse",
+       "caption": "Find change"
+      },
+      {
+       "items": [
+        "15",
+        "₹"
+       ],
+       "motion": "rise",
+       "caption": "The result"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap And Challenge",
+    "narration": [
+     "Read, identify keywords, and pick the right operation.",
+     "Checking your answer helps ensure your math makes sense.",
+     "Think about it: what clue words would you use for multiplication?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📖",
+        "✅"
+       ],
+       "motion": "chain",
+       "caption": "Steps summary"
+      },
+      {
+       "items": [
+        "✔️",
+        "🧠"
+       ],
+       "motion": "pulse",
+       "caption": "Check work"
+      },
+      {
+       "items": [
+        "✖️",
+        "🤔"
+       ],
+       "motion": "float",
+       "caption": "Think deeper"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Logical Reasoning": {
+  "id": "lib-mathematics-g5-logical-reasoning",
+  "topic": "Logical Reasoning",
+  "title": "Solving Puzzles With Logic",
+  "icon": "🧩",
+  "scenes": [
+   {
+    "title": "The Mystery At Home",
+    "narration": [
+     "Aarav is looking for his favorite cricket bat in his messy room.",
+     "He knows it is not under his bed or inside his cupboard.",
+     "If it is not there, where could it be hiding?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "🏏",
+        "🛏️"
+       ],
+       "motion": "pulse",
+       "caption": "Aarav's mystery"
+      },
+      {
+       "items": [
+        "❌",
+        "🛏️",
+        "❌",
+        "🚪"
+       ],
+       "motion": "float",
+       "caption": "Rule out"
+      },
+      {
+       "items": [
+        "🤔",
+        "💭"
+       ],
+       "motion": "pulse",
+       "caption": "Logical question"
+      }
+     ]
+    }
+   },
+   {
+    "title": "How Logic Works",
+    "narration": [
+     "Logic is like being a detective using clues to find the truth.",
+     "We use facts we know to cross out things that are impossible.",
+     "What is left standing must be the answer."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🕵️",
+        "🔍",
+        "💡"
+       ],
+       "motion": "chain",
+       "caption": "Detective work"
+      },
+      {
+       "items": [
+        "📝",
+        "❌",
+        "✅"
+       ],
+       "motion": "push",
+       "caption": "Elimination"
+      },
+      {
+       "items": [
+        "🎯",
+        "🏆"
+       ],
+       "motion": "grow",
+       "caption": "Finding truth"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Solving The Fruit Puzzle",
+    "narration": [
+     "Priya has an apple, a banana, and a mango in three bowls.",
+     "The apple is not in the blue bowl and the mango is in the red bowl.",
+     "Since the mango is red, the apple must be in the green bowl.",
+     "That leaves the banana for the blue bowl."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍎",
+        "🍌",
+        "🥭",
+        "🥣"
+       ],
+       "motion": "float",
+       "caption": "Three fruits"
+      },
+      {
+       "items": [
+        "🍎",
+        "❌",
+        "🔵",
+        "🥭",
+        "🔴"
+       ],
+       "motion": "chain",
+       "caption": "First clue"
+      },
+      {
+       "items": [
+        "🍎",
+        "➡️",
+        "🟢"
+       ],
+       "motion": "push",
+       "caption": "Deduction"
+      },
+      {
+       "items": [
+        "🍌",
+        "➡️",
+        "🔵"
+       ],
+       "motion": "chain",
+       "caption": "Final answer"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap And Think",
+    "narration": [
+     "Logic uses facts to clear away guesses.",
+     "Always check your clues step by step.",
+     "Think about it: If your friend says they are not wearing blue, what colors could they be wearing?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🧠",
+        "✨"
+       ],
+       "motion": "rise",
+       "caption": "Clear thinking"
+      },
+      {
+       "items": [
+        "1️⃣",
+        "2️⃣",
+        "3️⃣"
+       ],
+       "motion": "chain",
+       "caption": "Step by step"
+      },
+      {
+       "items": [
+        "👕",
+        "❌",
+        "🔵",
+        "❓"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Data Interpretation": {
+  "id": "lib-mathematics-g5-data-interpretation",
+  "topic": "Data Interpretation",
+  "title": "Making Sense of Data",
+  "icon": "📊",
+  "scenes": [
+   {
+    "title": "The Fruit Market Mystery",
+    "narration": [
+     "Have you ever wondered which fruit is the most popular in the school canteen?",
+     "Arjun counted the fruits sold today to find the answer.",
+     "He kept a simple tally to track every single sale."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍎",
+        "🍌",
+        "🍇"
+       ],
+       "motion": "pulse",
+       "caption": "Popular snacks"
+      },
+      {
+       "items": [
+        "👦",
+        "🍎",
+        "🍌"
+       ],
+       "motion": "chain",
+       "caption": "Collecting data"
+      },
+      {
+       "items": [
+        "📝",
+        "🍎",
+        "🍎",
+        "🍎"
+       ],
+       "motion": "push",
+       "caption": "Tally marks"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Reading the Graph",
+    "narration": [
+     "Now Arjun puts his numbers into a tidy bar graph.",
+     "The taller the bar, the more fruits were sold that day.",
+     "Each square on the side represents one yummy fruit sold.",
+     "This helps us see the trends without counting one by one."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📊",
+        "🍎",
+        "🍌"
+       ],
+       "motion": "grow",
+       "caption": "Bar graph"
+      },
+      {
+       "items": [
+        "📏",
+        "🍎",
+        "🍎",
+        "🍎"
+       ],
+       "motion": "rise",
+       "caption": "Height means more"
+      },
+      {
+       "items": [
+        "1",
+        "2",
+        "3",
+        "🍎"
+       ],
+       "motion": "chain",
+       "caption": "Scale"
+      },
+      {
+       "items": [
+        "👁️",
+        "📊"
+       ],
+       "motion": "float",
+       "caption": "Easy viewing"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Solving the Puzzle",
+    "narration": [
+     "Look at the graph: five students bought apples, but only two bought bananas.",
+     "To find the total, we add five plus two to get seven.",
+     "It is much faster than counting every single fruit by hand!"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "5",
+        "🍎",
+        "2",
+        "🍌"
+       ],
+       "motion": "pulse",
+       "caption": "Comparing items"
+      },
+      {
+       "items": [
+        "5",
+        "+",
+        "2",
+        "=",
+        "7"
+       ],
+       "motion": "chain",
+       "caption": "Total calculation"
+      },
+      {
+       "items": [
+        "⚡",
+        "🍎",
+        "🍌"
+       ],
+       "motion": "push",
+       "caption": "Saving time"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Think",
+    "narration": [
+     "Data helps us organize information so we can compare things quickly.",
+     "Remember to always check the labels and the scale on your graph.",
+     "Think about it: if you tracked your favorite colors, which color would have the tallest bar?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "✅",
+        "📊"
+       ],
+       "motion": "float",
+       "caption": "Organized data"
+      },
+      {
+       "items": [
+        "🏷️",
+        "📏"
+       ],
+       "motion": "pulse",
+       "caption": "Check labels"
+      },
+      {
+       "items": [
+        "🎨",
+        "📊"
+       ],
+       "motion": "rise",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Patterns": {
+  "id": "lib-mathematics-g5-patterns",
+  "topic": "Patterns",
+  "title": "Finding Patterns All Around Us",
+  "icon": "🧩",
+  "scenes": [
+   {
+    "title": "Spotting Everyday Patterns",
+    "narration": [
+     "Have you noticed the beautiful flowers in Rohan's garden or the tiles on your kitchen floor?",
+     "Patterns are designs that repeat in a predictable way.",
+     "Why do you think nature and builders love using them so much?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌻",
+        "🌻",
+        "🌻",
+        "🏠"
+       ],
+       "motion": "pulse",
+       "caption": "Look around"
+      },
+      {
+       "items": [
+        "🟦",
+        "🟥",
+        "🟦",
+        "🟥"
+       ],
+       "motion": "chain",
+       "caption": "What is pattern"
+      },
+      {
+       "items": [
+        "🤔",
+        "🌿",
+        "🧱"
+       ],
+       "motion": "float",
+       "caption": "The mystery"
+      }
+     ]
+    }
+   },
+   {
+    "title": "How Patterns Work",
+    "narration": [
+     "Every pattern has a core part called the rule that repeats over and over.",
+     "You can find patterns in shapes, colors, numbers, or even sounds.",
+     "If you know the rule, you can predict exactly what comes next."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🔄",
+        "⭐",
+        "🌙"
+       ],
+       "motion": "chain",
+       "caption": "The rule"
+      },
+      {
+       "items": [
+        "📐",
+        "🎨",
+        "🔢",
+        "🎵"
+       ],
+       "motion": "rise",
+       "caption": "Pattern types"
+      },
+      {
+       "items": [
+        "🔮",
+        "➡️",
+        "⏭️"
+       ],
+       "motion": "push",
+       "caption": "Predicting forward"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Maths Number Patterns",
+    "narration": [
+     "Let us look at a sequence of numbers: 2, 4, 6, and 8.",
+     "The rule here is to add two to the previous number every time.",
+     "If we follow the rule, what number comes after eight?",
+     "That is right, the next number is ten!"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "2",
+        "4",
+        "6",
+        "8"
+       ],
+       "motion": "grow",
+       "caption": "Number sequence"
+      },
+      {
+       "items": [
+        "+",
+        "2",
+        "🟰"
+       ],
+       "motion": "chain",
+       "caption": "Adding two"
+      },
+      {
+       "items": [
+        "8",
+        "+",
+        "2",
+        "❓"
+       ],
+       "motion": "pulse",
+       "caption": "Solve it"
+      },
+      {
+       "items": [
+        "🔟",
+        "🎉"
+       ],
+       "motion": "rise",
+       "caption": "Ten"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Think",
+    "narration": [
+     "Patterns are repeating designs based on a specific rule.",
+     "They help us organize the world and solve tricky math problems.",
+     "Think about it: can you find a pattern in your house today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📝",
+        "✅"
+       ],
+       "motion": "float",
+       "caption": "Quick summary"
+      },
+      {
+       "items": [
+        "🌍",
+        "🧠",
+        "💡"
+       ],
+       "motion": "push",
+       "caption": "Why it matters"
+      },
+      {
+       "items": [
+        "🏠",
+        "🔎",
+        "❓"
+       ],
+       "motion": "pulse",
+       "caption": "Your turn"
+      }
+     ]
+    }
+   }
+  ]
+ }
+}
