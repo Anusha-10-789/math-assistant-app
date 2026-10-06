@@ -1,3 +1,5 @@
+import ReadingKid from "./ReadingKid";
+
 export type Subject = "Mathematics" | "Science";
 
 interface SubjectSelectProps {
@@ -50,9 +52,14 @@ export default function SubjectSelect({ onSelectSubject, name, testsTaken, avera
   return (
     <div className="space-y-6">
       <section className="overflow-hidden rounded-3xl bg-gradient-to-br from-indigo-100 via-white to-sky-100 p-5 shadow-lg ring-1 ring-white sm:p-7">
-        <p className="text-sm font-bold text-indigo-600">{greeting()} 👋</p>
-        <h1 className="mt-1 text-3xl font-semibold sm:text-4xl">Hi {name}!</h1>
-        <p className="mt-1 text-base text-slate-600">What would you like to learn today?</p>
+        <div className="flex items-center gap-2">
+          <div className="min-w-0 flex-1">
+            <p className="text-sm font-bold text-indigo-600">{greeting()} 👋</p>
+            <h1 className="mt-1 text-3xl font-semibold sm:text-4xl">Hi {name}!</h1>
+            <p className="mt-1 text-base text-slate-600">What would you like to learn today?</p>
+          </div>
+          <ReadingKid className="-my-4 h-28 w-28 shrink-0 sm:-my-6 sm:h-40 sm:w-40" />
+        </div>
         <div className="mt-5 grid grid-cols-3 gap-2 sm:gap-3">
           <Stat icon="📝" value={String(testsTaken)} label="Tests done" />
           <Stat icon="⭐" value={averagePercent === null ? "–" : `${averagePercent}%`} label="Average score" />

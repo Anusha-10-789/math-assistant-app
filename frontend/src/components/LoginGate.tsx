@@ -18,6 +18,7 @@ import { PASSWORD_REQUIREMENTS_TEXT, validatePasswordStrength } from "../passwor
 import { SECURITY_QUESTIONS } from "../securityQuestions";
 import GoogleSignInButton from "./GoogleSignInButton";
 import PasswordInput from "./PasswordInput";
+import ReadingKid from "./ReadingKid";
 import SchoolBackdrop from "./SchoolBackdrop";
 
 interface LoginGateProps {
@@ -405,6 +406,7 @@ export default function LoginGate({ onLogin }: LoginGateProps) {
   return (
     <div className="relative flex min-h-screen flex-col items-center justify-start px-4 py-8 sm:justify-center">
       <SchoolBackdrop />
+      <ReadingKid className="relative z-20 -mb-7 h-36 w-36 shrink-0 drop-shadow-sm sm:h-40 sm:w-40" />
       <form
         onSubmit={handleSubmit}
         className="relative z-10 w-full max-w-sm rounded-3xl bg-white/95 p-6 shadow-xl ring-1 ring-white backdrop-blur-xl sm:p-7"

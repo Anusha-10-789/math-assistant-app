@@ -278,3 +278,72 @@
   .anim-fly { animation: anim-vanish 0.01s both !important; }
   .anim-rise, .anim-fall, .anim-push, .anim-pull { animation: none !important; }
 }
+
+/* ReadingKid mascot */
+@keyframes kid-rise {
+  0% {
+    opacity: 0;
+    transform: translateY(0) scale(0.7);
+  }
+  15% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-70px) scale(1.1);
+  }
+}
+
+@keyframes kid-nod {
+  0%, 100% {
+    transform: rotate(-2deg);
+  }
+  50% {
+    transform: rotate(3deg) translateY(1px);
+  }
+}
+
+/* The right-hand page lifts over the spine and settles on the left, then
+   the next page waits a moment before turning. */
+@keyframes kid-page-turn {
+  0%, 55% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+  80% {
+    transform: scaleX(-1);
+    opacity: 1;
+  }
+  90%, 100% {
+    transform: scaleX(-1);
+    opacity: 0;
+  }
+}
+
+.kid-rise {
+  opacity: 0;
+  animation: kid-rise 5.5s ease-out infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.kid-nod {
+  animation: kid-nod 3.2s ease-in-out infinite;
+  transform-origin: 110px 118px;
+}
+
+.kid-page-turn {
+  animation: kid-page-turn 4.5s ease-in-out infinite;
+  transform-origin: 110px 160px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .kid-rise,
+  .kid-nod,
+  .kid-page-turn {
+    animation: none;
+  }
+}

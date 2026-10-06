@@ -3,6 +3,7 @@ import { getCachedIntroSlides, type IntroSlide } from "../api";
 import { speechSupported, useNarration, type NarrationSegment } from "../useNarration";
 import type { VisualAidData } from "../types";
 import { displayTopic } from "../subjectModules";
+import ReadingKid from "./ReadingKid";
 import VisualAid from "./VisualAid";
 
 interface TopicIntroPlayerProps {
@@ -171,9 +172,7 @@ export default function TopicIntroPlayer({ topic, grade, onContinue, onBack, onF
 
       {!slides && !error && (
         <div className="mb-4 flex min-h-[16rem] flex-col items-center justify-center gap-3 rounded-xl border border-indigo-200 bg-orange-50 px-5 text-center">
-          <span className="animate-bounce text-5xl" aria-hidden="true">
-            📖
-          </span>
+          <ReadingKid className="h-36 w-36" />
           <p className="text-base font-semibold text-slate-700">Getting your introduction ready…</p>
           <p className="text-sm text-slate-500">New topics can take up to 30 seconds the first time.</p>
         </div>
