@@ -36,6 +36,7 @@ import { hasConceptVideos } from "./conceptVideos";
 import { buildLocalMathLesson, isLocalMathTopic, questionKey } from "./mathQuestionBank";
 import { recordCompletedLesson } from "./profileStorage";
 import { clearTestHistory, getTestHistory, getTopicAttendance, recordCompletedTest } from "./testHistory";
+import { getProfileInfo } from "./profileInfo";
 import { hasTopicIntro } from "./topicIntros";
 import type { LessonContent } from "./types";
 import { getWatchedVideos, markVideoWatched } from "./videoProgress";
@@ -398,62 +399,94 @@ export default function App() {
     );
   }
 
-  const sidebarItems: Array<{ view: View; icon: string; label: string }> = [
-    { view: "progress", icon: "📊", label: "My Progress" },
-    { view: "videos", icon: "🎬", label: "Concept Videos" },
-    { view: "attendance", icon: "📅", label: "Attendance" },
-    { view: "history", icon: "📝", label: "My Tests" },
-    { view: "profile", icon: "👤", label: "Profile" },
+  const navItems: Array<{ view: View; icon: string; label: string; short: string }> = [
+    { view: "app", icon: "🏠", label: "Learn", short: "Learn" },
+    { view: "progress", icon: "📊", label: "My Progress", short: "Progress" },
+    { view: "videos", icon: "🎬", label: "Concept Videos", short: "Videos" },
+    { view: "history", icon: "📝", label: "My Tests", short: "Tests" },
+    { view: "attendance", icon: "📅", label: "Attendance", short: "Time" },
+    { view: "profile", icon: "👤", label: "Profile", short: "Me" },
   ];
+  // The profile name, or a friendly first name from the login ("anusha.k@…" → "Anusha").
+  const loginName = username.includes("@") ? username.split("@")[0].split(/[._\-+\d]/)[0] : "";
+  const displayName =
+    getProfileInfo().name.trim().split(/\s+/)[0] || (loginName ? loginName.charAt(0).toUpperCase() + loginName.slice(1) : "there");
+
+  function handleNav(target: View) {
+    if (target === "app") goHome();
+    else if (target === "videos") openVideos();
+    else setView(target);
+  }
+
+  const brand = (
+    <button type="button" onClick={goHome} className="flex items-center gap-2.5 text-left">
+      <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-indigo-500 to-fuchsia-500 text-xl shadow-md shadow-indigo-300/50">
+        🎒
+      </span>
+      <span className="font-display text-lg font-semibold leading-tight text-slate-900">
+        AI Assistant
+        <span className="block text-xs font-sans font-bold uppercase tracking-wider text-indigo-500">for Kids</span>
+      </span>
+    </button>
+  );
 
   return (
     <div className="min-h-screen">
       <AiBackdrop theme={subject === "Science" ? "science" : "math"} />
 
-      <nav className="fixed left-0 top-0 z-10 flex h-full w-20 print:hidden flex-col items-center gap-4 border-r border-indigo-100 bg-white/80 py-6 backdrop-blur">
+      {/* Desktop: labelled sidebar */}
+      <aside className="fixed inset-y-0 left-0 z-20 hidden w-64 flex-col border-r border-white/70 bg-white/70 px-4 py-6 backdrop-blur-xl lg:flex print:hidden">
+        <div className="mb-8 px-2">{brand}</div>
+        <nav className="flex flex-1 flex-col gap-1" aria-label="Main">
+          {navItems.map((item) => {
+            const active = view === item.view;
+            return (
+              <button
+                key={item.view}
+                type="button"
+                onClick={() => handleNav(item.view)}
+                aria-current={active ? "page" : undefined}
+                className={`flex items-center gap-3 rounded-xl px-3 py-2.5 text-left text-[15px] font-bold ${
+                  active ? "bg-indigo-600 text-white shadow-md shadow-indigo-300/50" : "text-slate-600 hover:bg-indigo-50 hover:text-indigo-700"
+                }`}
+              >
+                <span
+                  className={`flex h-9 w-9 items-center justify-center rounded-lg text-lg ${active ? "bg-white/20" : "bg-white shadow-sm"}`}
+                  aria-hidden="true"
+                >
+                  {item.icon}
+                </span>
+                {item.label}
+              </button>
+            );
+          })}
+        </nav>
+        <div className="rounded-2xl bg-gradient-to-br from-amber-100 to-orange-100 p-4">
+          <p className="font-display text-base font-semibold text-amber-900">Keep it up, {displayName}! 🌟</p>
+          <p className="mt-1 text-xs font-semibold text-amber-800/80">
+            {testHistory.length ? `${testHistory.length} ${testHistory.length === 1 ? "test" : "tests"} done so far` : "Take your first test today"}
+          </p>
+        </div>
+      </aside>
+
+      {/* Phone and tablet: slim top bar */}
+      <header className="sticky top-0 z-20 flex items-center justify-between border-b border-white/70 bg-white/75 px-4 py-2.5 backdrop-blur-xl lg:hidden print:hidden">
+        {brand}
         <button
           type="button"
-          onClick={goHome}
-          title="Home"
-          aria-label="Home"
-          className={`flex h-12 w-12 items-center justify-center rounded-full text-2xl leading-none shadow-sm transition ${
-            view === "app" && stage === "subject"
-              ? "bg-indigo-600 text-white shadow-indigo-200"
-              : "bg-white text-slate-500 hover:bg-indigo-50 hover:text-indigo-600"
-          }`}
+          onClick={() => setView("profile")}
+          aria-label="Profile"
+          className="flex h-10 w-10 items-center justify-center rounded-full bg-indigo-100 font-display text-base font-semibold uppercase text-indigo-700"
         >
-          🏠
+          {displayName.charAt(0) || "👤"}
         </button>
-        {sidebarItems.map((item) => {
-          const active = view === item.view;
-          return (
-            <button
-              key={item.view}
-              type="button"
-              onClick={() => (item.view === "videos" && !active ? openVideos() : setView(active ? "app" : item.view))}
-              title={item.label}
-              aria-label={item.label}
-              className={`flex h-12 w-12 items-center justify-center rounded-full text-2xl leading-none shadow-sm transition ${
-                active
-                  ? "bg-indigo-600 text-white shadow-indigo-200"
-                  : "bg-white text-slate-500 hover:bg-indigo-50 hover:text-indigo-600"
-              }`}
-            >
-              {item.icon}
-            </button>
-          );
-        })}
-      </nav>
+      </header>
 
-      <div className="pl-20 print:pl-0">
-      <div className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
-
-        <header className="mb-8 text-center">
-          <h1 className="text-2xl font-bold text-slate-900 sm:text-3xl">AI Assistant for Kids</h1>
-        </header>
+      <main className="pb-28 lg:pb-12 lg:pl-64 print:p-0">
+      <div className="mx-auto max-w-4xl px-4 py-6 sm:px-6 lg:py-10">
 
         {view === "profile" ? (
-          <ProfilePage username={username} onBack={() => setView("app")} onLogout={handleLogout} />
+          <ProfilePage username={username} onBack={goHome} onLogout={handleLogout} />
         ) : view === "history" ? (
           <TestHistoryPage
             history={testHistory}
@@ -468,7 +501,7 @@ export default function App() {
           <ProgressPage
             history={testHistory}
             watched={watchedVideos}
-            onBack={() => setView("app")}
+            onBack={goHome}
             onPractice={handlePractice}
             onWatchVideos={openVideos}
           />
@@ -478,14 +511,22 @@ export default function App() {
             initialTopic={videosTopic}
             watched={watchedVideos}
             onWatched={handleVideoWatched}
-            onBack={() => setView("app")}
+            onBack={goHome}
           />
         ) : view === "attendance" ? (
-          <AttendancePage attendance={attendance} onBack={() => setView("app")} />
+          <AttendancePage attendance={attendance} onBack={goHome} />
         ) : (
           <div className="space-y-6">
             {stage === "subject" && (
               <SubjectSelect
+                name={displayName}
+                testsTaken={testHistory.length}
+                averagePercent={
+                  testHistory.length
+                    ? Math.round(testHistory.reduce((sum, test) => sum + (test.total ? (test.score / test.total) * 100 : 0), 0) / testHistory.length)
+                    : null
+                }
+                videosWatched={Object.keys(watchedVideos).length}
                 onSelectSubject={(selected) => {
                   setSubject(selected);
                   setTopic("");
@@ -497,14 +538,8 @@ export default function App() {
 
             {stage === "topic" && (
               <>
-                <button
-                  type="button"
-                  onClick={() => setStage("subject")}
-                  className="text-sm font-medium text-indigo-600 hover:underline"
-                >
-                  ← Change subject
-                </button>
                 <TopicSelect
+                  onBack={() => setStage("subject")}
                   subject={subject}
                   grade={grade}
                   onGradeChange={setGrade}
@@ -597,7 +632,35 @@ export default function App() {
           </div>
         )}
       </div>
-      </div>
+      </main>
+
+      {/* Phone and tablet: bottom tab bar */}
+      <nav
+        className="fixed inset-x-0 bottom-0 z-20 grid grid-cols-6 border-t border-slate-200/70 bg-white/90 px-1 pb-[max(0.4rem,env(safe-area-inset-bottom))] pt-1.5 backdrop-blur-xl lg:hidden print:hidden"
+        aria-label="Main"
+      >
+        {navItems.map((item) => {
+          const active = view === item.view;
+          return (
+            <button
+              key={item.view}
+              type="button"
+              onClick={() => handleNav(item.view)}
+              aria-current={active ? "page" : undefined}
+              aria-label={item.label}
+              className={`flex flex-col items-center gap-0.5 rounded-xl py-1 text-[11px] font-bold ${active ? "text-indigo-700" : "text-slate-500"}`}
+            >
+              <span
+                className={`flex h-8 w-12 items-center justify-center rounded-full text-lg leading-none ${active ? "bg-indigo-100" : ""}`}
+                aria-hidden="true"
+              >
+                {item.icon}
+              </span>
+              {item.short}
+            </button>
+          );
+        })}
+      </nav>
     </div>
   );
 }

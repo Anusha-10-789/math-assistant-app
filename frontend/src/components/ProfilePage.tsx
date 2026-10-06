@@ -65,7 +65,7 @@ export default function ProfilePage({ username, onBack, onLogout }: ProfilePageP
 
   return (
     <div className="space-y-6">
-      <div className="rounded-2xl border border-white/60 bg-white/80 p-6 shadow-lg shadow-indigo-100 backdrop-blur">
+      <div className="rounded-3xl bg-white ring-1 ring-slate-200/70 p-6 shadow-lg">
         <div className="mb-6 flex items-center gap-4">
           <div className="flex h-14 w-14 items-center justify-center rounded-full bg-indigo-100 text-2xl">
             🧑‍🎓
@@ -101,7 +101,7 @@ export default function ProfilePage({ username, onBack, onLogout }: ProfilePageP
             onClick={onBack}
             className="rounded-lg bg-indigo-600 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-indigo-700"
           >
-            Back to lessons
+            🏠 Back to Home
           </button>
           <button
             type="button"
@@ -120,7 +120,7 @@ export default function ProfilePage({ username, onBack, onLogout }: ProfilePageP
         </div>
       </div>
 
-      <div className="rounded-2xl border border-white/60 bg-white/80 p-6 shadow-lg shadow-indigo-100 backdrop-blur">
+      <div className="rounded-3xl bg-white ring-1 ring-slate-200/70 p-6 shadow-lg">
         <div className="mb-4 flex items-center justify-between">
           <h3 className="text-sm font-semibold text-slate-900">Profile details</h3>
           {!isEditing && (

@@ -28,10 +28,10 @@ type Mode = "login" | "signup" | "signup-verify" | "forgot" | "forgot-choose" | 
 type LoginMethod = "password" | "otp";
 
 const INPUT_CLASS =
-  "mb-4 w-full rounded-lg border border-slate-300 p-2.5 text-sm text-slate-800 focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-100";
-const LABEL_CLASS = "mb-1 block text-sm font-medium text-slate-700";
+  "mb-4 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-base text-slate-800 placeholder:text-slate-400 focus:border-indigo-400 focus:bg-white focus:outline-none focus:ring-4 focus:ring-indigo-100";
+const LABEL_CLASS = "mb-1.5 block text-sm font-bold text-slate-700";
 const OPTION_BUTTON_CLASS =
-  "mb-3 w-full rounded-lg border border-indigo-200 bg-indigo-50 px-4 py-3 text-left text-sm font-semibold text-indigo-700 transition hover:bg-indigo-100 disabled:opacity-50";
+  "mb-3 w-full rounded-xl border border-indigo-200 bg-indigo-50 px-4 py-3 text-left text-sm font-semibold text-indigo-700 transition hover:bg-indigo-100 disabled:opacity-50";
 
 const TITLES: Record<Mode, string> = {
   login: "Log in",
@@ -405,17 +405,23 @@ export default function LoginGate({ onLogin }: LoginGateProps) {
   return (
     <div className="relative flex min-h-screen flex-col items-center justify-start px-4 py-8 sm:justify-center">
       <SchoolBackdrop />
-      <p className="relative z-10 mb-4 rounded-full bg-white/85 px-5 py-2 text-center text-lg font-extrabold text-indigo-700 shadow-md sm:text-xl">
-        🎒 AI Assistant for Kids
-      </p>
       <form
         onSubmit={handleSubmit}
-        className="relative z-10 w-full max-w-sm rounded-2xl border-4 border-amber-300 bg-white/95 p-6 shadow-xl backdrop-blur"
+        className="relative z-10 w-full max-w-sm rounded-3xl bg-white/95 p-6 shadow-xl ring-1 ring-white backdrop-blur-xl sm:p-7"
       >
-        <h1 className="mb-4 text-lg font-semibold text-slate-900">{TITLES[mode]}</h1>
+        <div className="mb-5 flex items-center gap-3">
+          <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-500 to-fuchsia-500 text-2xl shadow-md shadow-indigo-300/50" aria-hidden="true">
+            🎒
+          </span>
+          <span className="font-display text-lg font-semibold leading-tight text-slate-900">
+            AI Assistant
+            <span className="block font-sans text-xs font-bold uppercase tracking-wider text-indigo-500">for Kids</span>
+          </span>
+        </div>
+        <h1 className="mb-5 text-2xl font-semibold">{mode === "login" ? "Welcome! Let's log in 👋" : TITLES[mode]}</h1>
 
         {mode === "login" && otpAvailable && (
-          <div className="mb-4 grid grid-cols-2 gap-1 rounded-lg bg-slate-100 p-1 text-sm font-semibold">
+          <div className="mb-5 grid grid-cols-2 gap-1 rounded-full bg-slate-100 p-1 text-sm font-bold">
             {(["password", "otp"] as LoginMethod[]).map((method) => (
               <button
                 key={method}
@@ -427,7 +433,7 @@ export default function LoginGate({ onLogin }: LoginGateProps) {
                   setOtpSentTo("");
                   setOtpCode("");
                 }}
-                className={`rounded-md px-3 py-2 transition ${
+                className={`rounded-full px-3 py-2 transition ${
                   loginMethod === method ? "bg-white text-indigo-700 shadow" : "text-slate-500 hover:text-slate-700"
                 }`}
               >
@@ -643,7 +649,7 @@ export default function LoginGate({ onLogin }: LoginGateProps) {
           <button
             type="submit"
             disabled={loading}
-            className="mb-4 w-full rounded-lg bg-indigo-600 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-indigo-700 disabled:cursor-not-allowed disabled:opacity-50"
+            className="mb-4 w-full rounded-xl bg-indigo-600 px-4 py-3.5 text-base font-bold text-white shadow-md shadow-indigo-300/50 transition hover:bg-indigo-700 disabled:cursor-not-allowed disabled:opacity-50"
           >
             {loading ? "Please wait..." : submitLabel[mode]}
           </button>

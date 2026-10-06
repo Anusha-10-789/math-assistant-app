@@ -76,7 +76,7 @@ export default function TestSummary({
 
   return (
     <div className="space-y-6">
-      <div className="rounded-2xl border border-white/60 bg-white/80 p-6 text-center shadow-lg shadow-indigo-100 backdrop-blur">
+      <div className="rounded-3xl bg-white ring-1 ring-slate-200/70 p-6 text-center shadow-lg">
         <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-indigo-500">
           Grade {grade} · {topic}
         </p>
@@ -157,7 +157,7 @@ export default function TestSummary({
       </div>
 
       {result.missed.length > 0 && (
-        <div className="rounded-2xl border border-white/60 bg-white/80 p-5 shadow-lg shadow-indigo-100 backdrop-blur sm:p-6">
+        <div className="rounded-3xl bg-white ring-1 ring-slate-200/70 p-5 shadow-lg sm:p-6">
           <h3 className="mb-3 text-sm font-semibold text-slate-900">Questions to review</h3>
           <ul className="space-y-2 text-sm text-slate-700">
             {result.missed.map((item) => (

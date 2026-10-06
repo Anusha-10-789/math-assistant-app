@@ -138,13 +138,21 @@ export default function TopicIntroPlayer({ topic, grade, onContinue, onBack, onF
   }
 
   return (
-    <div className="rounded-2xl border border-white/60 bg-white/80 p-5 shadow-lg shadow-indigo-100 backdrop-blur sm:p-6">
-      <button type="button" onClick={onBack} className="mb-4 text-sm font-medium text-indigo-600 hover:underline">
-        ← Back to topics
-      </button>
-
-      <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-indigo-500">Topic Introduction</p>
-      <h2 className="mb-4 text-lg font-bold text-slate-900">{displayTopic(topic)}</h2>
+    <div className="rounded-3xl bg-white p-5 shadow-lg ring-1 ring-slate-200/70 sm:p-6">
+      <div className="mb-5 flex items-center gap-3">
+        <button
+          type="button"
+          onClick={onBack}
+          aria-label="Back to topics"
+          className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-slate-100 text-lg text-slate-700 hover:bg-indigo-50 hover:text-indigo-700"
+        >
+          ←
+        </button>
+        <div className="min-w-0">
+          <p className="text-xs font-bold uppercase tracking-wider text-indigo-500">📖 Topic introduction</p>
+          <h1 className="text-2xl font-semibold">{displayTopic(topic)}</h1>
+        </div>
+      </div>
 
       {error && (
         <div className="mb-4 rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">

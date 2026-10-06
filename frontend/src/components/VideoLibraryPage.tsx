@@ -32,10 +32,10 @@ export default function VideoLibraryPage({ initialTopic, watched, onWatched, onB
   }
 
   return (
-    <div className="rounded-2xl border border-white/60 bg-white/80 p-5 shadow-lg shadow-indigo-100 backdrop-blur sm:p-6">
+    <div className="rounded-3xl bg-white ring-1 ring-slate-200/70 p-5 shadow-lg sm:p-6">
       <div className="mb-4 flex items-center justify-between gap-3">
         <div>
-          <h2 className="text-lg font-bold text-slate-900">Concept Videos</h2>
+          <h2 className="text-2xl font-semibold">Concept Videos</h2>
           <p className="text-sm text-slate-500">Short animated videos that explain each topic. Watch any time!</p>
         </div>
         <button
@@ -43,7 +43,7 @@ export default function VideoLibraryPage({ initialTopic, watched, onWatched, onB
           onClick={onBack}
           className="shrink-0 rounded-lg bg-indigo-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-indigo-700"
         >
-          Back to lessons
+          🏠 Back to Home
         </button>
       </div>
 

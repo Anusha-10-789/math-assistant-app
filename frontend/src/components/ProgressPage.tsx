@@ -232,9 +232,9 @@ export default function ProgressPage({ history, watched, onBack, onPractice, onW
   const mastered = report.topics.filter((t) => t.level === "mastered").length;
 
   return (
-    <div className="space-y-5 rounded-2xl border border-white/60 bg-white/80 p-5 shadow-lg shadow-indigo-100 backdrop-blur sm:p-6">
+    <div className="space-y-5 rounded-3xl bg-white ring-1 ring-slate-200/70 p-5 shadow-lg sm:p-6">
       <div className="flex items-center justify-between gap-3">
-        <h2 className="text-lg font-bold text-slate-900">My Progress</h2>
+        <h2 className="text-2xl font-semibold">My Progress</h2>
         <div className="flex gap-2 print:hidden">
           {report.totalTests > 0 && (
             <button
@@ -246,16 +246,29 @@ export default function ProgressPage({ history, watched, onBack, onPractice, onW
             </button>
           )}
           <button type="button" onClick={onBack} className="rounded-lg bg-indigo-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-indigo-700">
-            Back to lessons
+            🏠 Back to Home
           </button>
         </div>
       </div>
 
       {report.totalTests === 0 ? (
-        <p className="text-sm text-slate-500">
-          No tests yet. Finish a test and your scores, topic progress and practice suggestions will show up here.
-          {videosWatched > 0 && ` You've already watched ${videosWatched} concept ${videosWatched === 1 ? "video" : "videos"} — great start!`}
-        </p>
+        <div className="flex flex-col items-center rounded-2xl bg-gradient-to-br from-indigo-50 to-sky-50 px-6 py-10 text-center">
+          <span className="text-6xl" aria-hidden="true">
+            🚀
+          </span>
+          <h3 className="mt-3 text-xl font-semibold">Your learning journey starts here</h3>
+          <p className="mt-1 max-w-md text-sm text-slate-600">
+            Finish a test and your scores, topic progress and practice suggestions will show up here.
+            {videosWatched > 0 && ` You've already watched ${videosWatched} concept ${videosWatched === 1 ? "video" : "videos"} — great start!`}
+          </p>
+          <button
+            type="button"
+            onClick={onBack}
+            className="mt-5 rounded-xl bg-indigo-600 px-6 py-3 text-base font-bold text-white shadow-md shadow-indigo-300/50 hover:bg-indigo-700 print:hidden"
+          >
+            Start learning →
+          </button>
+        </div>
       ) : (
         <>
           <div className="rounded-xl border border-indigo-100 bg-indigo-50/70 p-4">

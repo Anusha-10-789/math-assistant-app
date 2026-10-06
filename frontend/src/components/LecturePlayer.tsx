@@ -103,7 +103,7 @@ export default function LecturePlayer({ lesson, onStartTest, onFetchVideo }: Lec
   }
 
   return (
-    <div className="rounded-2xl border border-white/60 bg-white/80 p-5 shadow-lg shadow-indigo-100 backdrop-blur sm:p-6">
+    <div className="rounded-3xl bg-white ring-1 ring-slate-200/70 p-5 shadow-lg sm:p-6">
       <div className="mb-3 flex items-center justify-between text-xs font-semibold text-slate-500">
         <span>
           Lecture — Slide {index + 1} of {slides.length}

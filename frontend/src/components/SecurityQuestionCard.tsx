@@ -44,7 +44,7 @@ export default function SecurityQuestionCard() {
   }
 
   return (
-    <div className="rounded-2xl border border-white/60 bg-white/80 p-6 shadow-lg shadow-indigo-100 backdrop-blur">
+    <div className="rounded-3xl bg-white ring-1 ring-slate-200/70 p-6 shadow-lg">
       <div className="mb-3 flex items-center justify-between">
         <h3 className="text-sm font-semibold text-slate-900">Password recovery</h3>
         {!editing && (

@@ -37,7 +37,7 @@ export default function TopicVideos({ topic, grade, watched, onWatched }: TopicV
   }
 
   return (
-    <div className="rounded-2xl border border-white/60 bg-white/80 p-4 shadow-lg shadow-indigo-100 backdrop-blur sm:p-5">
+    <div className="rounded-3xl bg-white ring-1 ring-slate-200/70 p-4 shadow-lg sm:p-5">
       <h3 className="mb-1 text-base font-bold text-slate-900">🎬 Watch first: a short animated video</h3>
       <p className="mb-3 text-sm text-slate-500">See the key ideas explained with pictures and a voice — then try the test.</p>
 

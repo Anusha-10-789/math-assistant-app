@@ -34,7 +34,7 @@ export default function PasswordInput({
         autoFocus={autoFocus}
         autoComplete={autoComplete}
         name={id}
-        className="w-full rounded-lg border border-slate-300 p-2.5 pr-10 text-sm text-slate-800 focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-100"
+        className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 pr-11 text-base text-slate-800 placeholder:text-slate-400 focus:border-indigo-400 focus:bg-white focus:outline-none focus:ring-4 focus:ring-indigo-100"
       />
       <button
         type="button"

@@ -17,9 +17,9 @@ export default function TestHistoryPage({ history, onBack, onClear }: TestHistor
   const [expandedId, setExpandedId] = useState<string | null>(null);
 
   return (
-    <div className="rounded-2xl border border-white/60 bg-white/80 p-6 shadow-lg shadow-indigo-100 backdrop-blur">
+    <div className="rounded-3xl bg-white ring-1 ring-slate-200/70 p-6 shadow-lg">
       <div className="mb-4 flex items-center justify-between">
-        <h2 className="text-lg font-bold text-slate-900">Completed Tests</h2>
+        <h2 className="text-2xl font-semibold">Completed Tests</h2>
         <button
           type="button"
           onClick={onBack}

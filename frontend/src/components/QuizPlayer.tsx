@@ -160,26 +160,34 @@ export default function QuizPlayer({
   }
 
   function optionClasses(letter: string): string {
-    const base =
-      "w-full rounded-lg border p-3 text-left text-sm transition focus:outline-none focus:ring-2 focus:ring-indigo-100";
+    const base = "group flex w-full items-center gap-3 rounded-2xl border-2 p-3 text-left text-base font-semibold transition sm:p-3.5";
 
     if (viewSelection === null) {
-      return `${base} border-slate-300 bg-white text-slate-800 hover:border-indigo-400 hover:bg-indigo-50`;
+      return `${base} border-slate-200 bg-white text-slate-800 shadow-sm hover:-translate-y-0.5 hover:border-indigo-400 hover:bg-indigo-50/60 hover:shadow-md`;
     }
 
     if (letter === current.correct_answer) {
-      return `${base} cursor-not-allowed border-green-400 bg-green-50 text-green-800`;
+      return `${base} cursor-not-allowed border-emerald-400 bg-emerald-50 text-emerald-900`;
     }
 
     if (letter === viewSelection) {
-      return `${base} cursor-not-allowed border-red-400 bg-red-50 text-red-800`;
+      return `${base} cursor-not-allowed border-rose-400 bg-rose-50 text-rose-900`;
     }
 
-    return `${base} cursor-not-allowed border-slate-200 bg-white text-slate-400`;
+    return `${base} cursor-not-allowed border-slate-100 bg-white text-slate-400`;
+  }
+
+  // The round A/B/C/D badge, which turns into a tick or cross once answered.
+  function badgeFor(letter: string): { className: string; text: string } {
+    const base = "flex h-9 w-9 shrink-0 items-center justify-center rounded-full font-display text-base font-semibold";
+    if (viewSelection !== null && letter === current.correct_answer) return { className: `${base} bg-emerald-500 text-white`, text: "✓" };
+    if (viewSelection !== null && letter === viewSelection) return { className: `${base} bg-rose-500 text-white`, text: "✗" };
+    if (viewSelection !== null) return { className: `${base} bg-slate-100 text-slate-400`, text: letter };
+    return { className: `${base} bg-indigo-100 text-indigo-700 group-hover:bg-indigo-600 group-hover:text-white`, text: letter };
   }
 
   return (
-    <div className="rounded-2xl border border-white/60 bg-white/80 p-5 shadow-lg shadow-indigo-100 backdrop-blur sm:p-6">
+    <div className="rounded-3xl bg-white ring-1 ring-slate-200/70 p-5 shadow-lg sm:p-6">
       <button
         type="button"
         onClick={() => {
@@ -190,23 +198,23 @@ export default function QuizPlayer({
         🏠 Back to Home
       </button>
 
-      <div className="mb-3 flex items-center justify-between text-xs font-semibold text-slate-500">
-        <span>Question {currentIndex + 1} of {mcqs.length}</span>
-        <span className="rounded-full bg-indigo-100 px-2.5 py-1 text-indigo-700">{current.topic}</span>
+      <div className="mb-3 flex items-center justify-between gap-3 text-sm font-bold text-slate-500">
+        <span>
+          Question <span className="font-display text-lg text-slate-900">{currentIndex + 1}</span> of {mcqs.length}
+        </span>
+        <span className="truncate rounded-full bg-indigo-100 px-3 py-1 text-xs text-indigo-700">{current.topic}</span>
       </div>
 
-      <div className="mb-4 h-2 w-full overflow-hidden rounded-full bg-slate-200">
+      <div className="mb-5 h-3 w-full overflow-hidden rounded-full bg-slate-100">
         <div
-          className="h-full rounded-full bg-indigo-500 transition-all"
+          className="h-full rounded-full bg-gradient-to-r from-indigo-500 to-fuchsia-500 transition-all"
           style={{ width: `${progressPercent}%` }}
         />
       </div>
 
-      <h3 className="mb-4 text-lg font-semibold text-slate-900">
-        Q.{current.question_number}) {current.question}
-      </h3>
+      <h3 className="mb-5 text-xl font-semibold leading-snug sm:text-2xl">{current.question}</h3>
 
-      <div className="mb-4 space-y-2.5">
+      <div className="mb-5 grid gap-2.5 sm:grid-cols-2">
         {OPTION_LETTERS.map((letter) => (
           <button
             key={`${currentIndex}-${letter}`}
@@ -215,7 +223,11 @@ export default function QuizPlayer({
             disabled={viewSelection !== null}
             className={optionClasses(letter)}
           >
-            <span className="font-bold">{letter})</span> {options[letter]}
+            <span className={badgeFor(letter).className} aria-hidden="true">
+              {badgeFor(letter).text}
+            </span>
+            <span className="sr-only">{letter})</span>
+            <span className="min-w-0 flex-1">{options[letter]}</span>
           </button>
         ))}
       </div>
@@ -295,7 +307,7 @@ export default function QuizPlayer({
           type="button"
           onClick={() => goTo(currentIndex - 1)}
           disabled={isFirst}
-          className="rounded-lg border border-slate-300 px-5 py-2.5 text-sm font-semibold text-slate-700 transition hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-50"
+          className="rounded-xl border-2 border-slate-200 px-5 py-3 text-base font-bold text-slate-700 transition hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-40"
         >
           Previous
         </button>
@@ -304,7 +316,7 @@ export default function QuizPlayer({
             type="button"
             onClick={handleFinish}
             disabled={viewSelection === null}
-            className="rounded-lg bg-emerald-600 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-emerald-700 disabled:cursor-not-allowed disabled:opacity-50"
+            className="rounded-xl bg-emerald-500 px-6 py-3 text-base font-bold text-white shadow-[0_4px_0_0_#047857] transition hover:bg-emerald-600 disabled:cursor-not-allowed disabled:opacity-50"
           >
             Finish Test
           </button>
@@ -313,7 +325,7 @@ export default function QuizPlayer({
             type="button"
             onClick={() => goTo(currentIndex + 1)}
             disabled={viewSelection === null}
-            className="rounded-lg bg-indigo-600 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-indigo-700 disabled:cursor-not-allowed disabled:opacity-50"
+            className="rounded-xl bg-indigo-600 px-6 py-3 text-base font-bold text-white shadow-[0_4px_0_0_#4b25ab] transition hover:bg-indigo-700 disabled:cursor-not-allowed disabled:opacity-40 disabled:shadow-none"
           >
             Next
           </button>
