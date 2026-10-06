@@ -2,10 +2,6 @@ export type Subject = "Mathematics" | "Science";
 
 interface SubjectSelectProps {
   onSelectSubject: (subject: Subject) => void;
-  name: string;
-  testsTaken: number;
-  averagePercent: number | null;
-  videosWatched: number;
 }
 
 const SUBJECTS: Array<{ subject: Subject; icon: string; tagline: string; art: string[]; className: string }> = [
@@ -25,47 +21,11 @@ const SUBJECTS: Array<{ subject: Subject; icon: string; tagline: string; art: st
   },
 ];
 
-function greeting(): string {
-  const hour = new Date().getHours();
-  if (hour < 12) return "Good morning";
-  if (hour < 17) return "Good afternoon";
-  return "Good evening";
-}
-
-function Stat({ icon, value, label }: { icon: string; value: string; label: string }) {
-  return (
-    <div className="flex flex-col items-start gap-2 rounded-2xl bg-white/70 p-3 shadow-sm ring-1 ring-white sm:flex-row sm:items-center sm:gap-3">
-      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-indigo-50 text-lg sm:h-10 sm:w-10 sm:text-xl" aria-hidden="true">
-        {icon}
-      </span>
-      <span className="min-w-0">
-        <span className="block font-display text-xl font-semibold leading-none text-slate-900">{value}</span>
-        <span className="block truncate text-xs font-semibold text-slate-500">{label}</span>
-      </span>
-    </div>
-  );
-}
-
-export default function SubjectSelect({ onSelectSubject, name, testsTaken, averagePercent, videosWatched }: SubjectSelectProps) {
+export default function SubjectSelect({ onSelectSubject }: SubjectSelectProps) {
   return (
     <div className="space-y-6">
-      <section className="overflow-hidden rounded-3xl bg-gradient-to-br from-indigo-100 via-white to-sky-100 p-5 shadow-lg ring-1 ring-white sm:p-7">
-        <div className="flex items-center gap-2">
-          <div className="min-w-0 flex-1">
-            <p className="text-sm font-bold text-indigo-600">{greeting()} 👋</p>
-            <h1 className="mt-1 text-3xl font-semibold sm:text-4xl">Hi {name}!</h1>
-            <p className="mt-1 text-base text-slate-600">What would you like to learn today?</p>
-          </div>
-        </div>
-        <div className="mt-5 grid grid-cols-3 gap-2 sm:gap-3">
-          <Stat icon="📝" value={String(testsTaken)} label="Tests done" />
-          <Stat icon="⭐" value={averagePercent === null ? "–" : `${averagePercent}%`} label="Average score" />
-          <Stat icon="🎬" value={String(videosWatched)} label="Videos watched" />
-        </div>
-      </section>
-
       <section>
-        <h2 className="mb-3 px-1 text-xl font-semibold">Choose a subject</h2>
+        <h1 className="mb-4 px-1 text-2xl font-semibold sm:text-3xl">Choose a subject</h1>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           {SUBJECTS.map((item) => (
             <button
@@ -90,7 +50,6 @@ export default function SubjectSelect({ onSelectSubject, name, testsTaken, avera
             </button>
           ))}
         </div>
-        <p className="mt-3 px-1 text-xs font-semibold text-slate-500">CBSE &amp; AP State Board syllabus</p>
       </section>
     </div>
   );

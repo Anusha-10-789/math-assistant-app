@@ -552,14 +552,6 @@ export default function App() {
           <div className="space-y-6">
             {stage === "subject" && (
               <SubjectSelect
-                name={displayName}
-                testsTaken={testHistory.length}
-                averagePercent={
-                  testHistory.length
-                    ? Math.round(testHistory.reduce((sum, test) => sum + (test.total ? (test.score / test.total) * 100 : 0), 0) / testHistory.length)
-                    : null
-                }
-                videosWatched={Object.keys(watchedVideos).length}
                 onSelectSubject={(selected) => {
                   setSubject(selected);
                   setTopic("");
@@ -569,15 +561,6 @@ export default function App() {
               />
             )}
 
-            {stage === "subject" && weak.length > 0 && (
-              <PracticePlan
-                topics={weak}
-                limit={3}
-                onSeeAll={() => setView("progress")}
-                onWatchClass={handleWatchClass}
-                onPracticeTest={handlePracticeTest}
-              />
-            )}
 
             {stage === "topic" && (
               <>
