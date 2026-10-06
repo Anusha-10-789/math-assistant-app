@@ -385,10 +385,11 @@ export function downloadLessonPdf(lesson: LessonContent): Promise<void> {
   );
 }
 
-function toReportPayload(topic: string, grade: number, result: QuizResult) {
+function toReportPayload(topic: string, grade: number, result: QuizResult, details = "") {
   return {
     topic,
     grade,
+    details,
     result: {
       score: result.score,
       total: result.total,
@@ -406,19 +407,19 @@ function toReportPayload(topic: string, grade: number, result: QuizResult) {
   };
 }
 
-export function downloadReportDocx(topic: string, grade: number, result: QuizResult): Promise<void> {
+export function downloadReportDocx(topic: string, grade: number, result: QuizResult, details = ""): Promise<void> {
   return downloadFile(
     "download/report/docx",
-    toReportPayload(topic, grade, result),
+    toReportPayload(topic, grade, result, details),
     "Failed to generate the report.",
     "Math_Assistant_Report.docx",
   );
 }
 
-export function downloadReportPdf(topic: string, grade: number, result: QuizResult): Promise<void> {
+export function downloadReportPdf(topic: string, grade: number, result: QuizResult, details = ""): Promise<void> {
   return downloadFile(
     "download/report/pdf",
-    toReportPayload(topic, grade, result),
+    toReportPayload(topic, grade, result, details),
     "Failed to generate the report.",
     "Math_Assistant_Report.pdf",
   );

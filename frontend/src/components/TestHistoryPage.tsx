@@ -1,31 +1,59 @@
 import { useState } from "react";
+import { displayTopic } from "../subjectModules";
 import type { CompletedTest } from "../testHistory";
+
+type ReportFormat = "pdf" | "docx";
 
 interface TestHistoryPageProps {
   history: CompletedTest[];
   onBack: () => void;
   onClear: () => void;
+  onDownload: (test: CompletedTest, format: ReportFormat) => Promise<void>;
 }
 
 const OPTION_LETTERS = ["A", "B", "C", "D"] as const;
 
 function formatDate(timestamp: number): string {
-  return new Date(timestamp).toLocaleString();
+  return new Date(timestamp).toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" });
 }
 
-export default function TestHistoryPage({ history, onBack, onClear }: TestHistoryPageProps) {
+function scoreClass(percent: number): string {
+  if (percent >= 80) return "bg-emerald-100 text-emerald-800";
+  if (percent >= 50) return "bg-amber-100 text-amber-800";
+  return "bg-rose-100 text-rose-800";
+}
+
+export default function TestHistoryPage({ history, onBack, onClear, onDownload }: TestHistoryPageProps) {
   const [expandedId, setExpandedId] = useState<string | null>(null);
+  // Which download is in progress ("<test id>:pdf"), and a failed one's message.
+  const [downloading, setDownloading] = useState<string | null>(null);
+  const [downloadError, setDownloadError] = useState<{ id: string; message: string } | null>(null);
+
+  async function download(test: CompletedTest, format: ReportFormat) {
+    setDownloadError(null);
+    setDownloading(`${test.id}:${format}`);
+    try {
+      await onDownload(test, format);
+    } catch (err) {
+      setDownloadError({ id: test.id, message: err instanceof Error ? err.message : "Couldn't download the summary. Please try again." });
+    } finally {
+      setDownloading(null);
+    }
+  }
 
   return (
     <div className="rounded-3xl bg-white ring-1 ring-slate-200/70 p-6 shadow-lg">
-      <div className="mb-4 flex items-center justify-between">
-        <h2 className="text-2xl font-semibold">Completed Tests</h2>
+      <div className="mb-4 flex items-center justify-between gap-3">
+        <div>
+          <h2 className="text-2xl font-semibold">My Tests</h2>
+          <p className="text-sm text-slate-500">Revise any test, or download its summary as a PDF or Word file.</p>
+        </div>
         <button
           type="button"
           onClick={onBack}
-          className="rounded-lg bg-indigo-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-indigo-700"
+          className="shrink-0 whitespace-nowrap rounded-lg bg-indigo-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-indigo-700"
         >
-          🏠 Back to Home
+          🏠 <span className="hidden sm:inline">Back to </span>Home
         </button>
       </div>
 
@@ -40,25 +68,48 @@ export default function TestHistoryPage({ history, onBack, onClear }: TestHistor
             const isExpanded = expandedId === test.id;
 
             return (
-              <div key={test.id} className="rounded-xl border border-slate-200 bg-white">
-                <button
-                  type="button"
-                  onClick={() => setExpandedId(isExpanded ? null : test.id)}
-                  className="flex w-full items-center justify-between gap-3 px-4 py-3 text-left"
-                >
-                  <span>
-                    <span className="block font-semibold text-slate-900">
-                      Grade {test.grade} · {test.topic}
+              <div key={test.id} className="rounded-2xl border border-slate-200 bg-white shadow-sm">
+                <div className="flex flex-col gap-2 px-4 py-3 sm:flex-row sm:items-center">
+                  <button
+                    type="button"
+                    onClick={() => setExpandedId(isExpanded ? null : test.id)}
+                    aria-expanded={isExpanded}
+                    className="flex min-w-0 flex-1 items-center justify-between gap-3 text-left"
+                  >
+                    <span className="min-w-0">
+                      <span className="block font-display text-lg font-semibold text-slate-900">{displayTopic(test.topic)}</span>
+                      <span className="block text-xs font-semibold text-slate-500">
+                        Grade {test.grade} · {formatDate(test.completedAt)}
+                      </span>
                     </span>
-                    <span className="block text-xs text-slate-500">{formatDate(test.completedAt)}</span>
-                  </span>
-                  <span className="flex flex-shrink-0 items-center gap-3">
-                    <span className="rounded-full bg-indigo-100 px-2.5 py-1 text-xs font-semibold text-indigo-700">
-                      {test.score}/{test.total} ({percent}%)
+                    <span className="flex flex-shrink-0 items-center gap-2">
+                      <span className={`rounded-full px-3 py-1 text-sm font-bold ${scoreClass(percent)}`}>
+                        {test.score}/{test.total} · {percent}%
+                      </span>
+                      <span className="text-slate-400" aria-hidden="true">
+                        {isExpanded ? "▲" : "▼"}
+                      </span>
                     </span>
-                    <span className="text-slate-400">{isExpanded ? "▲" : "▼"}</span>
-                  </span>
-                </button>
+                  </button>
+                  <div className="flex gap-2 sm:ml-2" role="group" aria-label={`Download summary of ${displayTopic(test.topic)}`}>
+                    {(["pdf", "docx"] as ReportFormat[]).map((format) => {
+                      const busy = downloading === `${test.id}:${format}`;
+                      return (
+                        <button
+                          key={format}
+                          type="button"
+                          onClick={() => download(test, format)}
+                          disabled={downloading !== null}
+                          title={`Download test summary as ${format === "pdf" ? "PDF" : "Word"}`}
+                          className="flex-1 whitespace-nowrap rounded-xl border border-indigo-200 bg-indigo-50 px-3 py-1.5 text-sm font-bold text-indigo-700 hover:bg-indigo-100 disabled:cursor-wait disabled:opacity-60 sm:flex-none"
+                        >
+                          {busy ? "⏳ Saving…" : format === "pdf" ? "⬇ PDF" : "⬇ Word"}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+                {downloadError?.id === test.id && <p className="px-4 pb-3 text-sm text-rose-600">{downloadError.message}</p>}
 
                 {isExpanded && (
                   <div className="space-y-3 border-t border-slate-100 p-4">

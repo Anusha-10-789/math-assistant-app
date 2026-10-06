@@ -428,7 +428,7 @@ async def download_pdf(request: DownloadRequest) -> StreamingResponse:
 
 @app.post("/download/report/docx", dependencies=[Depends(verify_login)])
 async def download_report_docx(request: ReportRequest) -> StreamingResponse:
-    buffer = build_report_docx(request.topic, request.grade, request.result)
+    buffer = build_report_docx(request.topic, request.grade, request.result, request.details)
     filename = f"Math_Assistant_{_safe_filename_part(request.topic)}_Report.docx"
 
     return StreamingResponse(
@@ -440,7 +440,7 @@ async def download_report_docx(request: ReportRequest) -> StreamingResponse:
 
 @app.post("/download/report/pdf", dependencies=[Depends(verify_login)])
 async def download_report_pdf(request: ReportRequest) -> StreamingResponse:
-    buffer = build_report_pdf(request.topic, request.grade, request.result)
+    buffer = build_report_pdf(request.topic, request.grade, request.result, request.details)
     filename = f"Math_Assistant_{_safe_filename_part(request.topic)}_Report.pdf"
 
     return StreamingResponse(

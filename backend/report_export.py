@@ -27,13 +27,18 @@ def _encouragement(percent: int) -> str:
     return "Nice try! Let's keep practicing this topic together."
 
 
-def build_report_docx(topic: str, grade: int, result: QuizResultData) -> io.BytesIO:
+def build_report_docx(topic: str, grade: int, result: QuizResultData, details: str = "") -> io.BytesIO:
     document = Document()
     percent = _percent(result)
 
     title = document.add_heading(level=1)
     title_run = title.add_run(f"Test Report — {topic} (Grade {grade})")
     title_run.font.color.rgb = BLACK
+
+    if details:
+        details_run = document.add_paragraph().add_run(details)
+        details_run.italic = True
+        details_run.font.color.rgb = BLACK
 
     score_run = document.add_paragraph().add_run(f"Score: {result.score} / {result.total} ({percent}%)")
     score_run.bold = True
@@ -83,7 +88,7 @@ def _p(text: str, style: ParagraphStyle) -> Paragraph:
     return Paragraph(escape(text), style)
 
 
-def build_report_pdf(topic: str, grade: int, result: QuizResultData) -> io.BytesIO:
+def build_report_pdf(topic: str, grade: int, result: QuizResultData, details: str = "") -> io.BytesIO:
     buffer = io.BytesIO()
     doc = SimpleDocTemplate(
         buffer,
@@ -97,6 +102,7 @@ def build_report_pdf(topic: str, grade: int, result: QuizResultData) -> io.Bytes
 
     story = [
         _p(f"Test Report — {topic} (Grade {grade})", TITLE_STYLE),
+        *([_p(details, BODY_STYLE)] if details else []),
         _p(f"Score: {result.score} / {result.total} ({percent}%)", BODY_STYLE),
         _p(_encouragement(percent), BODY_STYLE),
         Spacer(1, 10),

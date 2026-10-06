@@ -185,3 +185,6 @@ class ReportRequest(BaseModel):
     topic: str
     grade: int
     result: QuizResultData
+    # Optional details line, e.g. "Taken on 5 Oct 2026, 7:15 PM · Time spent: 6 min" —
+    # sent when downloading the summary of a past test from My Tests.
+    details: str = ""

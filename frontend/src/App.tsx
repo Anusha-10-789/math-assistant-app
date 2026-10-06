@@ -35,8 +35,9 @@ import { clearStoredCredentials, getStoredCredentials } from "./auth";
 import { hasConceptVideos } from "./conceptVideos";
 import { buildLocalMathLesson, isLocalMathTopic, questionKey } from "./mathQuestionBank";
 import { recordCompletedLesson } from "./profileStorage";
-import { clearTestHistory, getTestHistory, getTopicAttendance, recordCompletedTest } from "./testHistory";
+import { clearTestHistory, getTestHistory, getTopicAttendance, recordCompletedTest, type CompletedTest } from "./testHistory";
 import { getProfileInfo } from "./profileInfo";
+import { displayTopic } from "./subjectModules";
 import { hasTopicIntro } from "./topicIntros";
 import type { LessonContent } from "./types";
 import { getWatchedVideos, markVideoWatched } from "./videoProgress";
@@ -300,6 +301,20 @@ export default function App() {
     }
   }
 
+  // Summary of a past test, from My Tests. Errors are shown on that page.
+  async function handleDownloadPastTest(test: CompletedTest, format: "pdf" | "docx") {
+    const minutes = Math.max(1, Math.round(test.durationSeconds / 60));
+    const takenOn = new Date(test.completedAt).toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" });
+    const details = `Taken on ${takenOn}${test.durationSeconds > 0 ? ` · Time spent: ${minutes} min` : ""}`;
+    const result = { score: test.score, total: test.total, missed: test.missed };
+    try {
+      await (format === "pdf" ? downloadReportPdf : downloadReportDocx)(displayTopic(test.topic), test.grade, result, details);
+    } catch (err) {
+      if (err instanceof UnauthorizedError) handleSessionExpired("Your session expired. Please log in again.");
+      throw err;
+    }
+  }
+
   async function handleFetchVideo(): Promise<Blob> {
     if (!lesson) throw new Error("No lesson loaded.");
     try {
@@ -490,6 +505,7 @@ export default function App() {
         ) : view === "history" ? (
           <TestHistoryPage
             history={testHistory}
+            onDownload={handleDownloadPastTest}
             onBack={goHome}
             onClear={() => {
               setTestHistory(clearTestHistory());
