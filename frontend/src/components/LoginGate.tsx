@@ -358,13 +358,7 @@ export default function LoginGate({ onLogin }: LoginGateProps) {
         onChange={(e) => setRememberMe(e.target.checked)}
         className="mt-0.5 h-4 w-4 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500"
       />
-      <span>
-        Remember me on this device
-        <span className="block text-xs text-slate-500">
-          Keeps you logged in. Leave unticked on a shared computer — we'll still remember your email
-          or mobile number.
-        </span>
-      </span>
+      <span>Remember me on this device</span>
     </label>
   );
 
@@ -446,9 +440,6 @@ export default function LoginGate({ onLogin }: LoginGateProps) {
 
         {mode === "login" && (
           <>
-            {rememberedUsername && identifier === rememberedUsername && !notice && (
-              <p className="mb-4 text-sm text-slate-500">Welcome back!</p>
-            )}
             {googleClientId && (
               <>
                 <GoogleSignInButton clientId={googleClientId} onCredential={handleGoogleCredential} />

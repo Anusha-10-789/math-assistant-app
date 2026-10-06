@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import { GRADES, getAllTopicsModule, getGradeTopicModules } from "../subjectModules";
 import type { Subject } from "./SubjectSelect";
 
@@ -76,8 +77,14 @@ export default function TopicSelect({
 
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
         {modules.map((module, index) => (
+          <Fragment key={`${module.group ?? ""}|${module.topic}|${module.label}`}>
+          {module.group && module.group !== modules[index - 1]?.group && (
+            <h2 className="mt-3 flex items-center gap-2 px-1 text-lg font-semibold first:mt-0 sm:col-span-2">
+              <span className="h-2 w-2 rounded-full bg-indigo-500" aria-hidden="true" />
+              {module.group}
+            </h2>
+          )}
           <button
-            key={module.topic}
             type="button"
             onClick={() => onModuleSelect(module.topic)}
             className="tile group flex w-full items-center gap-4 p-4 text-left"
@@ -96,6 +103,7 @@ export default function TopicSelect({
               ›
             </span>
           </button>
+          </Fragment>
         ))}
 
         <button
