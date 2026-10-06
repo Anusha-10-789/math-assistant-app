@@ -18,6 +18,7 @@ import { PASSWORD_REQUIREMENTS_TEXT, validatePasswordStrength } from "../passwor
 import { SECURITY_QUESTIONS } from "../securityQuestions";
 import GoogleSignInButton from "./GoogleSignInButton";
 import PasswordInput from "./PasswordInput";
+import LogoMark from "./LogoMark";
 import ReadingPoster from "./ReadingPoster";
 
 interface LoginGateProps {
@@ -410,9 +411,7 @@ export default function LoginGate({ onLogin }: LoginGateProps) {
         className="relative z-10 w-full max-w-sm rounded-3xl bg-white/95 p-6 shadow-xl ring-1 ring-white backdrop-blur-xl sm:p-7"
       >
         <div className="mb-5 flex items-center gap-3">
-          <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-500 to-fuchsia-500 text-2xl shadow-md shadow-indigo-300/50" aria-hidden="true">
-            🎒
-          </span>
+          <LogoMark className="h-12 w-12 shrink-0 drop-shadow-md" />
           <span className="font-display text-lg font-semibold leading-tight text-slate-900">
             AI Assistant
             <span className="block font-sans text-xs font-bold uppercase tracking-wider text-indigo-500">for Kids</span>

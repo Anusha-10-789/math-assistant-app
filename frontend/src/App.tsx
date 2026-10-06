@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import LogoMark from "./components/LogoMark";
 import ReadingPoster from "./components/ReadingPoster";
 import AttendancePage from "./components/AttendancePage";
 import DownloadButtons from "./components/DownloadButtons";
@@ -457,9 +458,7 @@ export default function App() {
 
   const brand = (
     <button type="button" onClick={goHome} className="flex items-center gap-2.5 text-left">
-      <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-indigo-500 to-fuchsia-500 text-xl shadow-md shadow-indigo-300/50">
-        🎒
-      </span>
+      <LogoMark className="h-10 w-10 shrink-0 drop-shadow-md" />
       <span className="font-display text-lg font-semibold leading-tight text-slate-900">
         AI Assistant
         <span className="block text-xs font-sans font-bold uppercase tracking-wider text-indigo-500">for Kids</span>
