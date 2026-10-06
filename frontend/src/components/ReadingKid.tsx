@@ -66,13 +66,6 @@ export default function ReadingKid({ className = "" }: ReadingKidProps) {
       <path d="M110 146 Q85 135 58 141 L58 175 Q85 169 110 180 Q135 169 162 175 L162 141 Q135 135 110 146 Z" fill="#ef4444" />
       <path d="M110 143 Q87 133 63 138 L63 171 Q87 165 110 176 Z" fill="#ffffff" stroke="#e2e8f0" strokeWidth="1.5" />
       <path d="M110 143 Q133 133 157 138 L157 171 Q133 165 110 176 Z" fill="#fffdf5" stroke="#e2e8f0" strokeWidth="1.5" />
-      <g stroke="#cbd5e1" strokeWidth="2" strokeLinecap="round">
-        <path d="M72 147 Q88 143 102 149" />
-        <path d="M72 155 Q88 151 102 157" />
-        <path d="M72 163 Q86 159 98 164" />
-        <path d="M118 149 Q132 143 148 147" />
-        <path d="M118 157 Q132 151 148 155" />
-      </g>
       <path
         d="M110 143 Q133 133 157 138 L157 171 Q133 165 110 176 Z"
         fill="#ffffff"
@@ -81,6 +74,13 @@ export default function ReadingKid({ className = "" }: ReadingKidProps) {
         className="kid-page-turn"
       />
       <line x1="110" y1="143" x2="110" y2="176" stroke="#e2e8f0" strokeWidth="2" />
+      <g stroke="#cbd5e1" strokeWidth="2" strokeLinecap="round" fill="none">
+        <path d="M72 147 Q88 143 102 149" />
+        <path d="M72 155 Q88 151 102 157" />
+        <path d="M72 163 Q86 159 98 164" />
+        <path d="M118 149 Q132 143 148 147" />
+        <path d="M118 157 Q132 151 148 155" />
+      </g>
 
       {/* Hands holding the book */}
       <circle cx="64" cy="158" r="8" fill="#d39a6a" />

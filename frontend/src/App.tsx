@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import AiBackdrop from "./components/AiBackdrop";
+import ReadingPoster from "./components/ReadingPoster";
 import AttendancePage from "./components/AttendancePage";
 import DownloadButtons from "./components/DownloadButtons";
 import ErrorMessage from "./components/ErrorMessage";
@@ -469,7 +469,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen">
-      <AiBackdrop theme={subject === "Science" ? "science" : "math"} />
+      <ReadingPoster variant="app" />
 
       {/* Desktop: labelled sidebar */}
       <aside className="fixed inset-y-0 left-0 z-20 hidden w-64 flex-col border-r border-white/70 bg-white/70 px-4 py-6 backdrop-blur-xl lg:flex print:hidden">
@@ -520,7 +520,7 @@ export default function App() {
       </header>
 
       <main className="pb-28 lg:pb-12 lg:pl-64 print:p-0">
-      <div className="mx-auto max-w-4xl px-4 py-6 sm:px-6 lg:py-10">
+      <div className="mx-auto max-w-4xl px-4 py-6 sm:px-6 lg:py-10 xl:ml-10 xl:mr-0 xl:max-w-3xl 2xl:mx-auto 2xl:max-w-4xl">
 
         {view === "profile" ? (
           <ProfilePage username={username} onBack={goHome} onLogout={handleLogout} />
