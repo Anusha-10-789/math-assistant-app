@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import LogoMark from "./components/LogoMark";
 import ReadingPoster from "./components/ReadingPoster";
-import AttendancePage from "./components/AttendancePage";
 import DownloadButtons from "./components/DownloadButtons";
 import ErrorMessage from "./components/ErrorMessage";
 import GradeSelect from "./components/GradeSelect";
@@ -37,7 +36,7 @@ import { clearStoredCredentials, getStoredCredentials } from "./auth";
 import { hasConceptVideos } from "./conceptVideos";
 import { buildLocalMathLesson, isLocalMathTopic, questionKey } from "./mathQuestionBank";
 import { recordCompletedLesson } from "./profileStorage";
-import { clearTestHistory, getTestHistory, getTopicAttendance, recordCompletedTest, type CompletedTest } from "./testHistory";
+import { clearTestHistory, getTestHistory, recordCompletedTest, type CompletedTest } from "./testHistory";
 import { getProfileInfo } from "./profileInfo";
 import { weakTopics, type TopicProgress } from "./progress";
 import { displayTopic } from "./subjectModules";
@@ -47,7 +46,7 @@ import { getWatchedVideos, markVideoWatched } from "./videoProgress";
 import { scheduleProgressSave, syncProgress } from "./progressSync";
 
 type Stage = "subject" | "topic" | "topic-intro" | "grade" | "lecture" | "test" | "summary";
-type View = "app" | "profile" | "history" | "attendance" | "progress" | "videos";
+type View = "app" | "profile" | "history" | "progress" | "videos";
 
 export default function App() {
   const [resetToken, setResetToken] = useState(
@@ -75,7 +74,6 @@ export default function App() {
   const [downloadingReportDocx, setDownloadingReportDocx] = useState(false);
   const [downloadingReportPdf, setDownloadingReportPdf] = useState(false);
   const [testHistory, setTestHistory] = useState(() => getTestHistory());
-  const [attendance, setAttendance] = useState(() => getTopicAttendance());
   const [watchedVideos, setWatchedVideos] = useState(() => getWatchedVideos());
   // Topic the video library opens on when reached from a "Videos" button.
   const [videosTopic, setVideosTopic] = useState<string | undefined>(undefined);
@@ -120,7 +118,6 @@ export default function App() {
         if (cancelled) return;
         setTestHistory(progress.history);
         setWatchedVideos(progress.watched);
-        setAttendance(getTopicAttendance());
       })
       .catch(() => {
         // Offline or server asleep — keep using this device's copy; changes
@@ -230,7 +227,6 @@ export default function App() {
           subject,
         }),
       );
-      setAttendance(getTopicAttendance());
       scheduleProgressSave();
     }
     setStage("summary");
@@ -429,7 +425,6 @@ export default function App() {
           // Each student has their own saved progress — load theirs.
           setTestHistory(getTestHistory());
           setWatchedVideos(getWatchedVideos());
-          setAttendance(getTopicAttendance());
           setNeedsLogin(false);
         }}
       />
@@ -441,7 +436,6 @@ export default function App() {
     { view: "progress", icon: "📊", label: "My Progress", short: "Progress" },
     { view: "videos", icon: "🎬", label: "Concept Videos", short: "Videos" },
     { view: "history", icon: "📝", label: "My Tests", short: "Tests" },
-    { view: "attendance", icon: "📅", label: "Attendance", short: "Time" },
     { view: "profile", icon: "👤", label: "Profile", short: "Me" },
   ];
   // The profile name, or a friendly first name from the login ("anusha.k@…" → "Anusha").
@@ -530,7 +524,6 @@ export default function App() {
             onBack={goHome}
             onClear={() => {
               setTestHistory(clearTestHistory());
-              setAttendance([]);
               scheduleProgressSave();
             }}
           />
@@ -552,8 +545,6 @@ export default function App() {
             onWatched={handleVideoWatched}
             onBack={goHome}
           />
-        ) : view === "attendance" ? (
-          <AttendancePage attendance={attendance} onBack={goHome} />
         ) : (
           <div className="space-y-6">
             {stage === "subject" && (
@@ -695,7 +686,7 @@ export default function App() {
 
       {/* Phone and tablet: bottom tab bar */}
       <nav
-        className="fixed inset-x-0 bottom-0 z-20 grid grid-cols-6 border-t border-slate-200/70 bg-white/90 px-1 pb-[max(0.4rem,env(safe-area-inset-bottom))] pt-1.5 backdrop-blur-xl lg:hidden print:hidden"
+        className="fixed inset-x-0 bottom-0 z-20 grid grid-cols-5 border-t border-slate-200/70 bg-white/90 px-1 pb-[max(0.4rem,env(safe-area-inset-bottom))] pt-1.5 backdrop-blur-xl lg:hidden print:hidden"
         aria-label="Main"
       >
         {navItems.map((item) => {

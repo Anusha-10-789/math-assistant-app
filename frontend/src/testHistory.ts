@@ -2,7 +2,6 @@ import { getStoredCredentials } from "./auth";
 import type { QuizResult } from "./components/QuizPlayer";
 import type { Subject } from "./components/SubjectSelect";
 import type { MCQItem } from "./types";
-import { getAllottedMinutes } from "./topicTimeConfig";
 
 // Before progress was saved per account, every student on a device shared
 // this one key; it's now only read once, to carry those tests over.
@@ -34,14 +33,6 @@ export interface CompletedTest {
   subject?: Subject;
 }
 
-export interface TopicAttendance {
-  topic: string;
-  allottedMinutes: number;
-  spentSeconds: number;
-  sessionCount: number;
-  lastActive: number;
-}
-
 function readHistory(key: string): CompletedTest[] {
   try {
     const raw = localStorage.getItem(key);
@@ -50,7 +41,7 @@ function readHistory(key: string): CompletedTest[] {
     if (!Array.isArray(parsed)) return [];
     // durationSeconds didn't exist in entries recorded before this field was
     // added — default those to 0 rather than letting them poison the
-    // Attendance page's totals with `undefined`/NaN.
+    // time totals with `undefined`/NaN.
     return parsed.map((entry) => ({
       ...entry,
       durationSeconds: typeof entry.durationSeconds === "number" ? entry.durationSeconds : 0,
@@ -121,27 +112,6 @@ export function replaceTestHistory(history: CompletedTest[]): CompletedTest[] {
     .slice(0, MAX_HISTORY_ENTRIES);
   writeHistory(merged);
   return merged;
-}
-
-export function getTopicAttendance(): TopicAttendance[] {
-  const byTopic = new Map<string, TopicAttendance>();
-  for (const test of getTestHistory()) {
-    const existing = byTopic.get(test.topic);
-    if (existing) {
-      existing.spentSeconds += test.durationSeconds;
-      existing.sessionCount += 1;
-      existing.lastActive = Math.max(existing.lastActive, test.completedAt);
-    } else {
-      byTopic.set(test.topic, {
-        topic: test.topic,
-        allottedMinutes: getAllottedMinutes(test.topic),
-        spentSeconds: test.durationSeconds,
-        sessionCount: 1,
-        lastActive: test.completedAt,
-      });
-    }
-  }
-  return Array.from(byTopic.values()).sort((a, b) => b.lastActive - a.lastActive);
 }
 
 export function recordCompletedTest(entry: Omit<CompletedTest, "id">): CompletedTest[] {
