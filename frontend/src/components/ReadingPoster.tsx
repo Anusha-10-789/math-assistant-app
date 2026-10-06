@@ -16,24 +16,34 @@ const FLOATERS: Array<[string, string, string, string, string, number]> = [
 ];
 
 interface ReadingPosterProps {
-  // "app": a smaller child, so page content beside it doesn't hide the face.
+  // "login": a boy and a girl reading on either side of the centred card.
+  // "app": one smaller child on the right, so page content doesn't hide the face.
   variant?: "login" | "app";
 }
 
 // The backdrop for every page: a poster of a child reading a book, sitting
 // in a warm pool of light, with letters and numbers floating around.
 export default function ReadingPoster({ variant = "login" }: ReadingPosterProps) {
-  const kidSize =
-    variant === "app"
-      ? "sm:h-[52vh] sm:max-h-[560px] sm:w-[52vh] sm:max-w-[560px]"
-      : "sm:h-[74vh] sm:max-h-[820px] sm:w-[74vh] sm:max-w-[820px]";
+  const isLogin = variant === "login";
   return (
     <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden print:hidden" aria-hidden="true">
       <div className="absolute inset-0 bg-gradient-to-b from-sky-200 via-indigo-50 to-amber-100" />
 
-      {/* Soft sunshine behind the child */}
-      <div className="absolute bottom-[-30vh] left-1/2 h-[110vh] w-[110vh] -translate-x-1/2 rounded-full bg-amber-200/60 blur-3xl sm:left-auto sm:right-[-22vh] sm:translate-x-0" />
-      <div className={`absolute bottom-[6vh] left-1/2 h-[44vh] w-[44vh] -translate-x-1/2 rounded-full bg-white/70 sm:left-auto sm:right-[6vh] sm:translate-x-0 ${variant === "app" ? "sm:h-[46vh] sm:w-[46vh]" : "sm:h-[66vh] sm:w-[66vh]"}`} />
+      {/* Soft sunshine behind the children */}
+      {isLogin && (
+        <>
+          <div className="absolute bottom-[-30vh] left-[-22vh] h-[90vh] w-[90vh] rounded-full bg-sky-200/60 blur-3xl" />
+          <div className="absolute bottom-[4vh] left-[-6vh] h-[30vh] w-[30vh] rounded-full bg-white/70 sm:left-[2vh] sm:h-[56vh] sm:w-[56vh]" />
+        </>
+      )}
+      <div className="absolute bottom-[-30vh] right-[-22vh] h-[90vh] w-[90vh] rounded-full bg-amber-200/60 blur-3xl" />
+      <div
+        className={`absolute rounded-full bg-white/70 ${
+          isLogin
+            ? "bottom-[4vh] right-[-6vh] h-[30vh] w-[30vh] sm:right-[2vh] sm:h-[56vh] sm:w-[56vh]"
+            : "bottom-[6vh] left-1/2 h-[44vh] w-[44vh] -translate-x-1/2 sm:left-auto sm:right-[6vh] sm:h-[46vh] sm:w-[46vh] sm:translate-x-0"
+        }`}
+      />
 
       {FLOATERS.map(([text, left, top, size, color, seconds], index) => (
         <span
@@ -45,9 +55,26 @@ export default function ReadingPoster({ variant = "login" }: ReadingPosterProps)
         </span>
       ))}
 
-      {/* Floor and the reading child */}
+      {/* Floor and the reading children */}
       <div className="absolute inset-x-0 bottom-0 h-[9vh] bg-gradient-to-b from-amber-200/70 to-amber-300/80" />
-      <ReadingKid className={`absolute bottom-[2vh] left-1/2 h-[46vh] w-[46vh] -translate-x-1/2 sm:left-auto sm:right-[2vh] sm:translate-x-0 ${kidSize}`} />
+      {isLogin ? (
+        <>
+          {/* Login: a boy reading on the left, a girl reading on the right, the card between them */}
+          <ReadingKid
+            kid="boy"
+            className="absolute bottom-[1vh] left-[-4vh] h-[30vh] w-[30vh] sm:left-[1vh] sm:h-[min(62vh,calc(50vw_-_13rem),700px)] sm:w-[min(62vh,calc(50vw_-_13rem),700px)]"
+          />
+          <ReadingKid
+            kid="girl"
+            className="absolute bottom-[1vh] right-[-4vh] h-[30vh] w-[30vh] sm:right-[1vh] sm:h-[min(62vh,calc(50vw_-_13rem),700px)] sm:w-[min(62vh,calc(50vw_-_13rem),700px)]"
+          />
+        </>
+      ) : (
+        <ReadingKid
+          kid="girl"
+          className="absolute bottom-[2vh] left-1/2 h-[46vh] w-[46vh] -translate-x-1/2 sm:left-auto sm:right-[2vh] sm:h-[52vh] sm:max-h-[560px] sm:w-[52vh] sm:max-w-[560px] sm:translate-x-0"
+        />
+      )}
     </div>
   );
 }

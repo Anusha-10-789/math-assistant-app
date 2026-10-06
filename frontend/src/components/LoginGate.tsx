@@ -403,7 +403,7 @@ export default function LoginGate({ onLogin }: LoginGateProps) {
     Boolean(otpSentTo) && (mode === "signup-verify" || mode === "forgot-code" || (mode === "login" && loginMethod === "otp"));
 
   return (
-    <div className="relative flex min-h-screen flex-col items-center justify-start px-4 py-8 sm:justify-center lg:items-start lg:pl-[10vw]">
+    <div className="relative flex min-h-screen flex-col items-center justify-start px-4 py-8 sm:justify-center">
       <ReadingPoster />
       <form
         onSubmit={handleSubmit}
