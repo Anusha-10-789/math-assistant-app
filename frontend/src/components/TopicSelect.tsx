@@ -48,8 +48,8 @@ export default function TopicSelect({
           ←
         </button>
         <div className="min-w-0">
-          <p className="text-xs font-bold uppercase tracking-wider text-indigo-500">{isScience ? "🔬 Science" : "🧮 Mathematics"}</p>
-          <h1 className="text-2xl font-semibold sm:text-3xl">Pick a topic</h1>
+          <p className="on-backdrop-soft text-xs font-bold uppercase tracking-wider text-indigo-500">{isScience ? "🔬 Science" : "🧮 Mathematics"}</p>
+          <h1 className="on-backdrop text-2xl font-semibold sm:text-3xl">Pick a topic</h1>
         </div>
       </div>
 
@@ -79,7 +79,7 @@ export default function TopicSelect({
         {modules.map((module, index) => (
           <Fragment key={`${module.group ?? ""}|${module.topic}|${module.label}`}>
           {module.group && module.group !== modules[index - 1]?.group && (
-            <h2 className="mt-3 flex items-center gap-2 px-1 text-lg font-semibold first:mt-0 sm:col-span-2">
+            <h2 className="on-backdrop mt-3 flex items-center gap-2 px-1 text-lg font-semibold first:mt-0 sm:col-span-2">
               <span className="h-2 w-2 rounded-full bg-indigo-500" aria-hidden="true" />
               {module.group}
             </h2>

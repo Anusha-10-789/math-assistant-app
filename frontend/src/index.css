@@ -347,3 +347,168 @@
     animation: none;
   }
 }
+
+/* SolarSystemBackdrop (Science pages) */
+@keyframes space-orbit {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes space-counter {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+
+@keyframes space-twinkle {
+  0%, 100% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes space-shooting {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0) rotate(20deg);
+  }
+  3% {
+    opacity: 1;
+  }
+  12% {
+    opacity: 0;
+    transform: translate(40vw, 15vw) rotate(20deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(40vw, 15vw) rotate(20deg);
+  }
+}
+
+/* The rocket zooms from bottom-left to top-right, then waits off-screen. */
+@keyframes space-rocket {
+  0% {
+    transform: translate(-10vw, 10vh);
+    opacity: 1;
+  }
+  45% {
+    transform: translate(110vw, -110vh);
+    opacity: 1;
+  }
+  46%, 100% {
+    transform: translate(110vw, -110vh);
+    opacity: 0;
+  }
+}
+
+@keyframes space-astronaut {
+  0%, 100% {
+    transform: translate(0, 0) rotate(-12deg);
+  }
+  50% {
+    transform: translate(3vw, 4vh) rotate(14deg);
+  }
+}
+
+@keyframes space-ufo {
+  0% {
+    left: -10%;
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(3vh);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(3vh);
+  }
+  100% {
+    left: 110%;
+    transform: translateY(0);
+  }
+}
+
+@keyframes space-sun-glow {
+  0%, 100% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.12);
+  }
+}
+
+.space-orbit {
+  animation: space-orbit linear infinite;
+}
+
+.space-counter {
+  animation: space-counter linear infinite;
+}
+
+.space-moon {
+  animation: space-orbit 6s linear infinite;
+}
+
+.space-twinkle {
+  animation: space-twinkle ease-in-out infinite;
+}
+
+.space-shooting {
+  opacity: 0;
+  animation: space-shooting 11s ease-out infinite;
+}
+
+.space-rocket {
+  animation: space-rocket 18s ease-in infinite 2s;
+  transform: translate(-10vw, 10vh);
+}
+
+.space-astronaut {
+  animation: space-astronaut 9s ease-in-out infinite;
+}
+
+.space-ufo {
+  left: -10%;
+  animation: space-ufo 40s linear infinite;
+}
+
+.space-sun-glow {
+  animation: space-sun-glow 4s ease-in-out infinite;
+}
+
+/* Text that sits straight on the dark space backdrop turns light. */
+.theme-space .on-backdrop {
+  @apply text-white;
+}
+
+.theme-space .on-backdrop-soft {
+  @apply text-indigo-200;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .space-orbit,
+  .space-counter,
+  .space-moon,
+  .space-twinkle,
+  .space-shooting,
+  .space-rocket,
+  .space-astronaut,
+  .space-ufo,
+  .space-sun-glow {
+    animation: none;
+  }
+  .space-rocket {
+    transform: translate(70vw, -60vh);
+  }
+  .space-ufo {
+    left: 60%;
+  }
+}

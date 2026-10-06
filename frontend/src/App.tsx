@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import LogoMark from "./components/LogoMark";
 import ReadingPoster from "./components/ReadingPoster";
+import SolarSystemBackdrop from "./components/SolarSystemBackdrop";
 import DownloadButtons from "./components/DownloadButtons";
 import ErrorMessage from "./components/ErrorMessage";
 import GradeSelect from "./components/GradeSelect";
@@ -462,12 +463,15 @@ export default function App() {
     </button>
   );
 
+  // Inside the Science lessons the background becomes a solar system.
+  const spaceTheme = view === "app" && subject === "Science" && stage !== "subject";
+
   return (
-    <div className="min-h-screen">
-      <ReadingPoster variant="app" />
+    <div className={`min-h-screen ${spaceTheme ? "theme-space" : ""}`}>
+      {spaceTheme ? <SolarSystemBackdrop /> : <ReadingPoster variant="app" />}
 
       {/* Desktop: labelled sidebar */}
-      <aside className="fixed inset-y-0 left-0 z-20 hidden w-64 flex-col border-r border-white/70 bg-white/70 px-4 py-6 backdrop-blur-xl lg:flex print:hidden">
+      <aside className="fixed inset-y-0 left-0 z-20 hidden w-64 flex-col border-r border-white/70 bg-white/90 px-4 py-6 backdrop-blur-xl lg:flex print:hidden">
         <div className="mb-8 px-2">{brand}</div>
         <nav className="flex flex-1 flex-col gap-1" aria-label="Main">
           {navItems.map((item) => {
@@ -502,7 +506,7 @@ export default function App() {
       </aside>
 
       {/* Phone and tablet: slim top bar */}
-      <header className="sticky top-0 z-20 flex items-center justify-between border-b border-white/70 bg-white/75 px-4 py-2.5 backdrop-blur-xl lg:hidden print:hidden">
+      <header className="sticky top-0 z-20 flex items-center justify-between border-b border-white/70 bg-white/90 px-4 py-2.5 backdrop-blur-xl lg:hidden print:hidden">
         {brand}
         <button
           type="button"
