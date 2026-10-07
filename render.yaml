@@ -31,6 +31,10 @@ services:
       # Admin portal, in addition to the ADMIN_USERNAME login above.
       - key: ADMIN_EMAILS
         sync: false
+      # Secret code a teacher types to create an admin account on the sign-up
+      # page. Leave unset to turn admin sign-up off.
+      - key: ADMIN_SIGNUP_CODE
+        sync: false
       # CORS_ORIGINS and FRONTEND_URL both need the frontend's actual
       # https://...onrender.com URL, which only exists after the frontend
       # service below is first created — fill these in afterwards, then

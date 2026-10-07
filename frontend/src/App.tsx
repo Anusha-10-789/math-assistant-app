@@ -40,7 +40,7 @@ import {
   submitAssignmentResult,
   type MyAssignment,
 } from "./api";
-import { clearStoredCredentials, getStoredCredentials } from "./auth";
+import { clearStoredCredentials, getStoredCredentials, getStoredRole } from "./auth";
 import { hasConceptVideos } from "./conceptVideos";
 import { buildLocalMathLesson, isLocalMathTopic, questionKey } from "./mathQuestionBank";
 import { recordCompletedLesson } from "./profileStorage";
@@ -491,12 +491,15 @@ export default function App() {
           // Each student has their own saved progress — load theirs.
           setTestHistory(getTestHistory());
           setWatchedVideos(getWatchedVideos());
+          // Teachers who chose Admin at login go straight to the Admin page.
+          setView(getStoredRole() === "admin" ? "admin" : "app");
           setNeedsLogin(false);
         }}
       />
     );
   }
 
+  const adminMode = isAdmin && getStoredRole() === "admin";
   const pendingAssignments = myAssignments.filter((a) => !a.result).length;
   const navItems: Array<{ view: View; icon: string; label: string; short: string; badge?: number }> = [
     { view: "app", icon: "🏠", label: "Learn", short: "Learn" },
@@ -504,7 +507,7 @@ export default function App() {
     { view: "videos", icon: "🎬", label: "Concept Videos", short: "Videos" },
     { view: "history", icon: "📝", label: "My Tests", short: "Tests", badge: pendingAssignments },
     { view: "profile", icon: "👤", label: "Profile", short: "Me" },
-    ...(isAdmin ? [{ view: "admin" as View, icon: "🛠️", label: "Admin", short: "Admin" }] : []),
+    ...(adminMode ? [{ view: "admin" as View, icon: "🛠️", label: "Admin", short: "Admin" }] : []),
   ];
   // The profile name, or a friendly first name from the login ("anusha.k@…" → "Anusha").
   const loginName = username.includes("@") ? username.split("@")[0].split(/[._\-+\d]/)[0] : "";
@@ -592,7 +595,7 @@ export default function App() {
       <main className="pb-28 lg:pb-12 lg:pl-64 print:p-0">
       <div className="mx-auto max-w-4xl px-4 py-6 sm:px-6 lg:py-10 xl:ml-10 xl:mr-0 xl:max-w-3xl 2xl:mx-auto 2xl:max-w-4xl">
 
-        {view === "admin" && isAdmin ? (
+        {view === "admin" && adminMode ? (
           <AdminPage onBack={goHome} onContentChanged={refreshTeacherData} />
         ) : view === "profile" ? (
           <ProfilePage username={username} onBack={goHome} onLogout={handleLogout} />

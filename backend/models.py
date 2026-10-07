@@ -28,6 +28,9 @@ class SignupRequest(BaseModel):
     # One-time code sent to the email ("email") or mobile ("sms") being registered.
     otp_channel: str = ""
     otp_code: str = ""
+    # "student", or "admin" for teachers — which needs ADMIN_SIGNUP_CODE.
+    role: str = "student"
+    admin_code: str = ""
 
 
 class OtpSendRequest(BaseModel):

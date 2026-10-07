@@ -1,9 +1,9 @@
 """Admin portal API: teacher-made lessons, test assignments, and hiding
 syllabus topics — plus the student-side endpoints that read them.
 
-Who is an admin: the built-in login from ADMIN_USERNAME/ADMIN_PASSWORD, and
-any account whose email or username is listed in ADMIN_EMAILS (comma
-separated). Everything is stored with kv_store, so it lives in Firestore /
+Who is an admin: the built-in login from ADMIN_USERNAME/ADMIN_PASSWORD, any
+account created as a teacher/admin with the ADMIN_SIGNUP_CODE, and any account
+whose email or username is listed in ADMIN_EMAILS (comma separated). Everything is stored with kv_store, so it lives in Firestore /
 Postgres in production like accounts and progress do.
 """
 
@@ -21,7 +21,7 @@ from pydantic import BaseModel, Field
 import gemini_service
 import kv_store
 import user_store
-from security import current_login, lesson_rate_limit
+from security import current_login, lesson_rate_limit, rate_limit
 
 router = APIRouter()
 
@@ -56,6 +56,8 @@ def is_admin(identifier: str) -> bool:
     user = user_store.find_user(identifier)
     if not user:
         return False
+    if user.get("role") == "admin":
+        return True
     admins = _admin_emails()
     return user.get("email", "").strip().lower() in admins or user["username"].strip().lower() in admins
 
@@ -120,6 +122,39 @@ def _check_subject(subject: str) -> None:
 
 def _load(key: str, default):
     return kv_store.get(key) or default
+
+
+# ---------- creating admin accounts ----------
+
+def admin_signup_code() -> str:
+    return os.environ.get("ADMIN_SIGNUP_CODE", "").strip()
+
+
+def check_admin_code(code: str) -> None:
+    """Raises unless `code` is the admin sign-up code. Without a code set,
+    nobody can sign up as an admin (they can still be added via ADMIN_EMAILS)."""
+    expected = admin_signup_code()
+    if not expected:
+        raise HTTPException(status_code=400, detail="Teacher/admin sign-up isn't turned on. Please ask the site admin.")
+    if not secrets.compare_digest(code.strip().encode(), expected.encode()):
+        raise HTTPException(status_code=400, detail="That admin code isn't right. Please check with the site admin.")
+
+
+class AdminCodeIn(BaseModel):
+    code: str = Field(default="", max_length=200)
+
+
+@router.get("/signup/config")
+async def signup_config() -> dict:
+    return {"admin_signup": bool(admin_signup_code())}
+
+
+@router.post("/signup/admin-code", dependencies=[Depends(rate_limit)])
+async def verify_admin_code(data: AdminCodeIn) -> dict:
+    # Checked before the sign-up code is sent, so a wrong admin code is
+    # caught straight away rather than after the email/SMS step.
+    check_admin_code(data.code)
+    return {"success": True}
 
 
 # ---------- shared ----------

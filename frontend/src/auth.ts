@@ -80,3 +80,17 @@ export function getRememberedUsername(): string {
 export function getRememberMe(): boolean {
   return read(localStorage, REMEMBER_ME_KEY) === "true";
 }
+
+// Whether the person logged in as a student or as an admin (teacher). Kept
+// after logging out, so the login form remembers the choice.
+const ROLE_KEY = "math_assistant_login_role";
+
+export type LoginRole = "student" | "admin";
+
+export function getStoredRole(): LoginRole {
+  return read(localStorage, ROLE_KEY) === "admin" ? "admin" : "student";
+}
+
+export function setStoredRole(role: LoginRole): void {
+  write(localStorage, ROLE_KEY, role);
+}

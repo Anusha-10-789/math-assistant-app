@@ -247,6 +247,10 @@ async def signup(request: SignupRequest) -> dict:
     if password_error:
         raise HTTPException(status_code=400, detail=password_error)
     _validate_security_question(request.security_question, request.security_answer)
+    if request.role not in ("student", "admin"):
+        raise HTTPException(status_code=400, detail="Please choose Student or Teacher (Admin).")
+    if request.role == "admin":
+        admin_api.check_admin_code(request.admin_code)
     if find_user(email) or find_user(phone):
         raise HTTPException(status_code=400, detail=ALREADY_REGISTERED_DETAIL)
 
@@ -265,6 +269,7 @@ async def signup(request: SignupRequest) -> dict:
             request.security_question,
             request.security_answer,
             request.username,
+            role=request.role,
         )
     except UserExistsError as exc:
         raise HTTPException(status_code=400, detail=str(exc))

@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 import {
+  checkAdminCode,
+  getMe,
+  getSignupConfig,
   getGoogleAuthConfig,
   getOtpConfig,
   getRecoveryOptions,
@@ -13,7 +16,7 @@ import {
   type OtpChannel,
   type RecoveryOptions,
 } from "../api";
-import { getRememberedUsername, getRememberMe, setStoredCredentials } from "../auth";
+import { clearStoredCredentials, getRememberedUsername, getRememberMe, getStoredRole, setStoredCredentials, setStoredRole, type Credentials, type LoginRole } from "../auth";
 import { PASSWORD_REQUIREMENTS_TEXT, validatePasswordStrength } from "../passwordPolicy";
 import { SECURITY_QUESTIONS } from "../securityQuestions";
 import GoogleSignInButton from "./GoogleSignInButton";
@@ -74,6 +77,10 @@ export default function LoginGate({ onLogin }: LoginGateProps) {
   const [error, setError] = useState("");
   const [notice, setNotice] = useState("");
   const [loading, setLoading] = useState(false);
+  // Logging in / signing up as a student or as an admin (teacher).
+  const [role, setRole] = useState<LoginRole>(() => getStoredRole());
+  const [adminCode, setAdminCode] = useState("");
+  const [adminSignup, setAdminSignup] = useState(false);
   const [googleClientId, setGoogleClientId] = useState("");
 
   const otpAvailable = otpConfig.email || otpConfig.sms;
@@ -81,6 +88,9 @@ export default function LoginGate({ onLogin }: LoginGateProps) {
 
   useEffect(() => {
     let cancelled = false;
+    getSignupConfig().then(({ adminSignup: enabled }) => {
+      if (!cancelled) setAdminSignup(enabled);
+    });
     getGoogleAuthConfig().then(({ configured, clientId }) => {
       if (!cancelled && configured) setGoogleClientId(clientId);
     });
@@ -144,11 +154,27 @@ export default function LoginGate({ onLogin }: LoginGateProps) {
     setNotice(`We've sent a 6-digit code to ${sentTo}. It expires in 10 minutes.`);
   }
 
+  async function finishLogin(credentials: Credentials) {
+    setStoredCredentials(credentials, rememberMe);
+    if (role === "admin") {
+      let isAdmin = false;
+      try {
+        isAdmin = (await getMe()).is_admin;
+      } catch {
+        isAdmin = false;
+      }
+      if (!isAdmin) {
+        clearStoredCredentials();
+        throw new Error("This account doesn't have admin access. Choose Student, or ask the site admin to make you an admin.");
+      }
+    }
+    setStoredRole(role);
+    onLogin();
+  }
+
   async function handleGoogleCredential(idToken: string) {
     await run(async () => {
-      const credentials = await googleAuth(idToken);
-      setStoredCredentials(credentials, rememberMe);
-      onLogin();
+      await finishLogin(await googleAuth(idToken));
     }, "Google sign-in failed.");
   }
 
@@ -168,9 +194,7 @@ export default function LoginGate({ onLogin }: LoginGateProps) {
       }
       if (!checkCode()) return;
       run(async () => {
-        const credentials = await loginWithOtp(loginName, otpCode.trim());
-        setStoredCredentials(credentials, rememberMe);
-        onLogin();
+        await finishLogin(await loginWithOtp(loginName, otpCode.trim()));
       }, "That code didn't work.");
       return;
     }
@@ -181,18 +205,16 @@ export default function LoginGate({ onLogin }: LoginGateProps) {
     }
     run(async () => {
       await login(loginName, password);
-      setStoredCredentials({ username: loginName, password }, rememberMe);
-      onLogin();
+      await finishLogin({ username: loginName, password });
     }, "Incorrect email, mobile number or password.");
   }
 
   // ---------- sign up ----------
 
   async function createAccount(channel: OtpChannel | "", code: string) {
-    await signup({ email: email.trim(), phone, password, securityQuestion, securityAnswer, otpChannel: channel, otpCode: code });
+    await signup({ email: email.trim(), phone, password, securityQuestion, securityAnswer, otpChannel: channel, otpCode: code, role, adminCode });
     await login(email.trim(), password);
-    setStoredCredentials({ username: email.trim(), password }, rememberMe);
-    onLogin();
+    await finishLogin({ username: email.trim(), password });
   }
 
   function handleSignupSubmit() {
@@ -205,11 +227,19 @@ export default function LoginGate({ onLogin }: LoginGateProps) {
       setError("Please answer your security question — it lets you reset your password later.");
       return;
     }
+    if (role === "admin" && !adminCode.trim()) {
+      setError("Please enter the admin code from your school or the site admin.");
+      return;
+    }
     if (!otpAvailable) {
-      run(() => createAccount("", ""), "Failed to create the account.");
+      run(async () => {
+        if (role === "admin") await checkAdminCode(adminCode);
+        await createAccount("", "");
+      }, "Failed to create the account.");
       return;
     }
     run(async () => {
+      if (role === "admin") await checkAdminCode(adminCode);
       const sentTo = await sendOtp("signup", verifyChannel === "sms" ? phone : email.trim());
       // Not switchMode — the details just typed must survive for the final step.
       setMode("signup-verify");
@@ -411,7 +441,42 @@ export default function LoginGate({ onLogin }: LoginGateProps) {
             <span className="block font-sans text-xs font-bold uppercase tracking-wider text-indigo-500">for Kids</span>
           </span>
         </div>
-        <h1 className="mb-5 text-2xl font-semibold">{mode === "login" ? "Welcome! Let's log in 👋" : TITLES[mode]}</h1>
+        <h1 className="mb-5 text-2xl font-semibold">
+          {mode === "login" ? (role === "admin" ? "Welcome, teacher! 👋" : "Welcome! Let's log in 👋") : TITLES[mode]}
+        </h1>
+
+        {(mode === "login" || mode === "signup") && (
+          <div className="mb-5">
+            <p className="mb-1.5 text-sm font-bold text-slate-700">{mode === "signup" ? "I am a" : "Log in as"}</p>
+            <div className="grid grid-cols-2 gap-2" role="radiogroup" aria-label={mode === "signup" ? "I am a" : "Log in as"}>
+              {(
+                [
+                  ["student", "🎒", "Student"],
+                  ["admin", "🧑‍🏫", mode === "signup" ? "Teacher / Admin" : "Admin"],
+                ] as const
+              ).map(([value, icon, label]) => (
+                <button
+                  key={value}
+                  type="button"
+                  role="radio"
+                  aria-checked={role === value}
+                  onClick={() => {
+                    setRole(value);
+                    setError("");
+                  }}
+                  className={`flex items-center justify-center gap-2 rounded-2xl border-2 px-3 py-3 text-sm font-bold transition ${
+                    role === value ? "border-indigo-500 bg-indigo-50 text-indigo-700" : "border-slate-200 bg-white text-slate-600 hover:border-indigo-200"
+                  }`}
+                >
+                  <span className="text-xl" aria-hidden="true">
+                    {icon}
+                  </span>
+                  {label}
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
 
         {mode === "login" && otpAvailable && (
           <div className="mb-5 grid grid-cols-2 gap-1 rounded-full bg-slate-100 p-1 text-sm font-bold">
@@ -483,6 +548,27 @@ export default function LoginGate({ onLogin }: LoginGateProps) {
             <p className="mb-4 text-sm text-slate-500">
               You'll log in with your email or mobile number. You only need to do this once.
             </p>
+            {role === "admin" &&
+              (adminSignup ? (
+                <>
+                  <label htmlFor="signup-admin-code" className={LABEL_CLASS}>
+                    Admin code
+                  </label>
+                  <input
+                    id="signup-admin-code"
+                    type="password"
+                    autoComplete="off"
+                    value={adminCode}
+                    onChange={(e) => setAdminCode(e.target.value)}
+                    placeholder="Code from your school or the site admin"
+                    className={INPUT_CLASS}
+                  />
+                </>
+              ) : (
+                <p className="mb-4 rounded-xl bg-amber-50 px-3 py-2 text-sm text-amber-800">
+                  Teacher / admin sign-up isn't turned on yet. Please ask the site admin to add you, or sign up as a student.
+                </p>
+              ))}
             <label htmlFor="signup-email" className={LABEL_CLASS}>
               Email address
             </label>

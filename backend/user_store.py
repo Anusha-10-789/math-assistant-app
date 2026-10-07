@@ -158,6 +158,7 @@ def create_user(
     security_question: str = "",
     security_answer: str = "",
     username: str = "",
+    role: str = "student",
 ) -> str:
     """Creates an account and returns its username. The email address and
     mobile number are what the student logs in with; the username is only an
@@ -185,6 +186,8 @@ def create_user(
             "phone": phone,
             "password_hash": hash_password(password),
         }
+        if role == "admin":
+            user["role"] = "admin"
         if security_question.strip() and security_answer.strip():
             user["security_question"] = security_question.strip()
             user["security_answer_hash"] = hash_password(_normalize_answer(security_answer))

@@ -94,6 +94,8 @@ export interface SignupDetails {
   securityAnswer: string;
   otpChannel: OtpChannel | "";
   otpCode: string;
+  role: "student" | "admin";
+  adminCode: string;
 }
 
 export async function signup(details: SignupDetails): Promise<void> {
@@ -108,12 +110,30 @@ export async function signup(details: SignupDetails): Promise<void> {
       security_answer: details.securityAnswer,
       otp_channel: details.otpChannel,
       otp_code: details.otpCode,
+      role: details.role,
+      admin_code: details.adminCode,
     }),
   });
 
   if (!response.ok) {
     throw new Error(await extractErrorMessage(response, "Failed to create the account."));
   }
+}
+
+// Whether teachers can create admin accounts here (an admin code is set).
+export async function getSignupConfig(): Promise<{ adminSignup: boolean }> {
+  try {
+    const response = await fetch(`${API_BASE_URL}/signup/config`);
+    if (!response.ok) return { adminSignup: false };
+    const data = await response.json();
+    return { adminSignup: Boolean(data.admin_signup) };
+  } catch {
+    return { adminSignup: false };
+  }
+}
+
+export async function checkAdminCode(code: string): Promise<void> {
+  await postJson("signup/admin-code", { code }, "That admin code isn't right.");
 }
 
 async function postJson<T>(path: string, body: unknown, fallbackError: string, withAuth = false): Promise<T> {
