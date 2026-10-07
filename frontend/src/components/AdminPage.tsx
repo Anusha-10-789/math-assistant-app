@@ -19,7 +19,7 @@ import {
 } from "../api";
 import { GRADES, getGradeTopicModules } from "../subjectModules";
 import { hiddenTopicKey } from "../teacherContent";
-import type { Subject } from "./SubjectSelect";
+import { SUBJECTS, subjectWithIcon, type Subject } from "../subjects";
 
 interface AdminPageProps {
   onBack: () => void;
@@ -29,8 +29,7 @@ interface AdminPageProps {
 
 type Tab = "lessons" | "assign" | "topics";
 
-const SUBJECTS: Subject[] = ["Mathematics", "Science"];
-const subjectLabel = (s: Subject) => (s === "Science" ? "🔬 Science" : "🧮 Maths");
+const subjectLabel = subjectWithIcon;
 const errorText = (err: unknown) => (err instanceof Error ? err.message : "Something went wrong. Please try again.");
 
 const INPUT = "w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-2.5 text-sm text-slate-800 focus:border-indigo-400 focus:bg-white focus:outline-none focus:ring-4 focus:ring-indigo-100";

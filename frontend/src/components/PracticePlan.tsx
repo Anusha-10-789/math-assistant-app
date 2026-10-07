@@ -1,5 +1,6 @@
 import type { TopicProgress } from "../progress";
 import { displayTopic } from "../subjectModules";
+import { subjectLabel } from "../subjects";
 
 interface PracticePlanProps {
   // Weak topics, weakest first (see weakTopics in progress.ts).
@@ -53,7 +54,7 @@ export default function PracticePlan({
                   <div className="min-w-0">
                     <p className="font-display text-lg font-semibold leading-snug text-slate-900">{displayTopic(topic.topic)}</p>
                     <p className="text-xs font-semibold text-slate-500">
-                      Grade {topic.grade} · {topic.subject === "Science" ? "Science" : "Maths"} · {topic.attempts} {topic.attempts === 1 ? "test" : "tests"}
+                      Grade {topic.grade} · {subjectLabel(topic.subject)} · {topic.attempts} {topic.attempts === 1 ? "test" : "tests"}
                     </p>
                   </div>
                 </div>

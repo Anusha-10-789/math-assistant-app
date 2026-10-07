@@ -1,4 +1,4 @@
-import type { Subject } from "./components/SubjectSelect";
+import { SUBJECT_INFO, type Subject } from "./subjects";
 import type { ConceptVideo } from "./conceptVideos";
 import { subjectForTopic } from "./subjectModules";
 
@@ -13,7 +13,7 @@ type Library = Record<string, ConceptVideo>;
 const loads = new Map<string, Promise<Library>>();
 
 export function loadConceptLibrary(subject: Subject, grade: number): Promise<Library> {
-  const file = `${subject === "Science" ? "science" : "maths"}-g${grade}.json`;
+  const file = `${SUBJECT_INFO[subject].file}-g${grade}.json`;
   let load = loads.get(file);
   if (!load) {
     load = fetch(`${import.meta.env.BASE_URL}concept-videos/${file}`)

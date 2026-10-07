@@ -1,3 +1,4 @@
+import EmojiText from "./EmojiText";
 import { useEffect, useState } from "react";
 import type { ConceptVideo } from "../conceptVideos";
 import { speechSupported, useNarration, type NarrationSegment } from "../useNarration";
@@ -73,7 +74,7 @@ export default function ConceptVideoPlayer({ video, onWatched, onClose }: Concep
     <div className="overflow-hidden rounded-xl border border-indigo-200 bg-white shadow-sm">
       <div className="flex items-center justify-between gap-3 border-b border-indigo-100 px-4 py-2">
         <p className="text-sm font-bold text-slate-900">
-          {video.icon} {video.title}
+          <EmojiText text={`${video.icon} ${video.title}`} />
         </p>
         <button type="button" onClick={onClose} className="text-sm font-medium text-indigo-600 hover:underline">
           Close

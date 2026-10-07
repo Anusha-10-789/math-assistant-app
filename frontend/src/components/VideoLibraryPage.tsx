@@ -1,10 +1,11 @@
+import EmojiText from "./EmojiText";
 import { Fragment, useEffect, useRef, useState } from "react";
 import { loadConceptLibrary } from "../conceptLibrary";
 import { estimateSeconds, getConceptVideos, type ConceptVideo } from "../conceptVideos";
 import { GRADES, getGradeTopicModules, subjectForTopic, type TopicModule } from "../subjectModules";
 import type { WatchedVideos } from "../videoProgress";
 import ConceptVideoPlayer from "./ConceptVideoPlayer";
-import type { Subject } from "./SubjectSelect";
+import { SUBJECTS, SUBJECT_INFO, subjectLabel, type Subject } from "../subjects";
 
 interface VideoLibraryPageProps {
   // Open on this topic (and grade), e.g. from a "Videos" button.
@@ -15,10 +16,7 @@ interface VideoLibraryPageProps {
   onBack: () => void;
 }
 
-const SUBJECTS: Array<{ subject: Subject; label: string; icon: string }> = [
-  { subject: "Mathematics", label: "Maths", icon: "🧮" },
-  { subject: "Science", label: "Science", icon: "🔬" },
-];
+const SUBJECT_TABS = SUBJECTS.map((subject) => ({ subject, label: SUBJECT_INFO[subject].label, icon: SUBJECT_INFO[subject].icon }));
 
 const ICON_TINTS = ["bg-amber-100", "bg-sky-100", "bg-emerald-100", "bg-pink-100", "bg-violet-100", "bg-orange-100", "bg-teal-100", "bg-rose-100"];
 
@@ -104,7 +102,7 @@ export default function VideoLibraryPage({ initialTopic, initialGrade, watched, 
 
       <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
         <div className="inline-flex gap-1 self-start rounded-full bg-white p-1 shadow-sm ring-1 ring-slate-200">
-          {SUBJECTS.map((item) => (
+          {SUBJECT_TABS.map((item) => (
             <button key={item.subject} type="button" aria-pressed={subject === item.subject} onClick={() => switchTo(item.subject, grade)} className={tabClass(subject === item.subject)}>
               {item.icon} {item.label}
             </button>
@@ -124,7 +122,7 @@ export default function VideoLibraryPage({ initialTopic, initialGrade, watched, 
       {library && gradeVideos.length > 0 && (
         <div className="flex items-center gap-3 rounded-2xl bg-white/80 px-4 py-3 shadow-sm ring-1 ring-white">
           <span className="text-sm font-bold text-slate-700">
-            Grade {grade} {subject === "Science" ? "Science" : "Maths"}: {watchedCount} of {gradeVideos.length} videos watched
+            Grade {grade} {subjectLabel(subject)}: {watchedCount} of {gradeVideos.length} videos watched
           </span>
           <div className="h-2.5 flex-1 overflow-hidden rounded-full bg-slate-200" aria-hidden="true">
             <div className="h-full rounded-full bg-gradient-to-r from-indigo-500 to-fuchsia-500" style={{ width: `${(watchedCount / gradeVideos.length) * 100}%` }} />
@@ -154,7 +152,7 @@ export default function VideoLibraryPage({ initialTopic, initialGrade, watched, 
                       playing?.id === video.id ? "bg-indigo-600 text-white" : "bg-indigo-50 text-indigo-700 hover:bg-indigo-100"
                     }`}
                   >
-                    {video.icon} {video.title}
+                    <EmojiText text={`${video.icon} ${video.title}`} />
                     {watched[video.id] ? " ✓" : ""}
                   </button>
                 ))}
@@ -192,7 +190,7 @@ export default function VideoLibraryPage({ initialTopic, initialGrade, watched, 
                   </span>
                   <span className="min-w-0 flex-1">
                     <span className="block font-display text-lg font-semibold leading-snug text-slate-900">{module.label}</span>
-                    <span className="block text-sm text-slate-500">{main ? main.title : "Video coming soon"}</span>
+                    <span className="block text-sm text-slate-500">{main ? <EmojiText text={main.title} /> : "Video coming soon"}</span>
                     {main && (
                       <span className="mt-0.5 block text-xs font-bold text-slate-400">
                         {videos.length > 1 ? `${videos.length} videos` : `About ${minutes(main)} min`}

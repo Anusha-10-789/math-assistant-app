@@ -40,9 +40,11 @@ Rules:
      curious question that the video will answer.
   2. The idea: explain the concept in small steps, one idea per beat, with the correct key words.
   3. Example: work through one concrete example step by step (for maths, real numbers and the working; for
-     science, a real thing or process the child knows).
+     science, a real thing or process the child knows; for social studies, a real place, person, festival,
+     map or event in India the child can picture).
   4. Recap: sum up the key points in two or three beats, then end with a short "Think about it" question for the child.
-- Use Indian names, places, food and money (rupees) where it helps.
+- Use Indian names, places, food and money (rupees) where it helps. Facts about India (symbols, states,
+  rivers, history, government) must be exactly right, and every community and religion treated with respect.
 - "say": simple words a child of that grade understands, under 20 words, friendly and encouraging. No markdown.
 - "items": 1 to {MAX_ITEMS} emoji that picture exactly what the sentence says. For maths you may use short tokens
   such as "3", "+", "=", "½", "10 cm" alongside emoji. Never put words in items — show a river as 🏞️, not "river".

@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import { GRADES, getAllTopicsModule, getGradeTopicModules } from "../subjectModules";
 import { isTopicHidden, teacherLessonsFor, teacherTopicModule } from "../teacherContent";
-import type { Subject } from "./SubjectSelect";
+import { SUBJECT_INFO, subjectWithIcon, type Subject } from "../subjects";
 
 interface TopicSelectProps {
   subject: Subject;
@@ -38,7 +38,6 @@ export default function TopicSelect({
       .map((m) => (teacherModules.length && !m.group ? { ...m, group: "📚 Syllabus topics" } : m)),
   ];
   const allTopicsModule = getAllTopicsModule(subject);
-  const isScience = subject === "Science";
 
   function handleKeyDown(e: React.KeyboardEvent<HTMLInputElement>) {
     if (e.key === "Enter") {
@@ -58,7 +57,7 @@ export default function TopicSelect({
           ←
         </button>
         <div className="min-w-0">
-          <p className="on-backdrop-soft text-xs font-bold uppercase tracking-wider text-indigo-500">{isScience ? "🔬 Science" : "🧮 Mathematics"}</p>
+          <p className="on-backdrop-soft text-xs font-bold uppercase tracking-wider text-indigo-500">{subjectWithIcon(subject)}</p>
           <h1 className="on-backdrop text-2xl font-semibold sm:text-3xl">Pick a topic</h1>
         </div>
       </div>
@@ -145,7 +144,7 @@ export default function TopicSelect({
             value={topic}
             onChange={(e) => onTopicChange(e.target.value)}
             onKeyDown={handleKeyDown}
-            placeholder={isScience ? "e.g. How do animals breathe?" : "e.g. What is a fraction?"}
+            placeholder={SUBJECT_INFO[subject].example}
             className="min-w-0 flex-1 rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-base text-slate-800 placeholder:text-slate-400 focus:border-indigo-400 focus:bg-white focus:outline-none focus:ring-4 focus:ring-indigo-100"
           />
           <button

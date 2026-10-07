@@ -1,0 +1,6119 @@
+{
+ "Family and Relationships: Different Family Traditions": {
+  "id": "lib-social-studies-g2-family-and-relationships-different-family-traditions",
+  "topic": "Family and Relationships: Different Family Traditions",
+  "title": "Our Special Family Traditions",
+  "icon": "👨‍👩‍",
+  "scenes": [
+   {
+    "title": "What are family traditions?",
+    "narration": [
+     "Have you ever wondered why your family celebrates special days in a unique way?",
+     "Every family has its own fun habits that make them feel close together.",
+     "These special habits are what we call family traditions."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏠",
+        "🎉",
+        "❓"
+       ],
+       "motion": "pulse",
+       "caption": "Special Days"
+      },
+      {
+       "items": [
+        "❤️",
+        "👪"
+       ],
+       "motion": "float",
+       "caption": "Family Bonding"
+      },
+      {
+       "items": [
+        "✨",
+        "📅"
+       ],
+       "motion": "grow",
+       "caption": "Defining Traditions"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Why do we have them?",
+    "narration": [
+     "Traditions help us remember our history and the people who came before us.",
+     "They also bring joy and comfort to our daily lives.",
+     "When we do things together, we create happy memories that last forever."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👵",
+        "👴",
+        "📜"
+       ],
+       "motion": "chain",
+       "caption": "Our History"
+      },
+      {
+       "items": [
+        "😊",
+        "🧸"
+       ],
+       "motion": "rise",
+       "caption": "Bringing Joy"
+      },
+      {
+       "items": [
+        "📸",
+        "💛"
+       ],
+       "motion": "float",
+       "caption": "Happy Memories"
+      }
+     ]
+    }
+   },
+   {
+    "title": "An Indian family example",
+    "narration": [
+     "Meet Aarav, whose family makes delicious homemade jalebis every Sunday morning.",
+     "Aarav helps his dad stir the batter while his mom fries them hot.",
+     "They all sit together on the balcony to eat and talk about their week.",
+     "This simple act is a tradition that keeps their family bond very strong."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "🍭",
+        "🥣"
+       ],
+       "motion": "chain",
+       "caption": "Sunday Jalebis"
+      },
+      {
+       "items": [
+        "👨",
+        "👩",
+        "🥄"
+       ],
+       "motion": "push",
+       "caption": "Cooking Together"
+      },
+      {
+       "items": [
+        "🏡",
+        "🍽️",
+        "💬"
+       ],
+       "motion": "float",
+       "caption": "Sharing Time"
+      },
+      {
+       "items": [
+        "🤝",
+        "💪"
+       ],
+       "motion": "grow",
+       "caption": "Strong Bonds"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Remember and think",
+    "narration": [
+     "Traditions can be about food, festivals, games, or even how we greet elders.",
+     "They connect us to our culture and make every family special.",
+     "Think about it: What is one special tradition your family does every year?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🥘",
+        "🪔",
+        "🙏"
+       ],
+       "motion": "chain",
+       "caption": "Many Traditions"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🌟"
+       ],
+       "motion": "rise",
+       "caption": "Cultural Roots"
+      },
+      {
+       "items": [
+        "🤔",
+        "💭"
+       ],
+       "motion": "pulse",
+       "caption": "Your Turn"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Family and Relationships: Caring for Others": {
+  "id": "lib-social-studies-g2-family-and-relationships-caring-for-others",
+  "topic": "Family and Relationships: Caring for Others",
+  "title": "Caring for Your Family",
+  "icon": "❤️",
+  "scenes": [
+   {
+    "title": "The Magic of Helping",
+    "narration": [
+     "Have you ever seen your grandmother struggle to carry her heavy grocery bags from the market?",
+     "What can you do to make her day a little bit brighter and easier?",
+     "Caring for others is like planting a seed of love that grows every single day."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👵",
+        "🛍️"
+       ],
+       "motion": "pulse",
+       "caption": "Helping hands"
+      },
+      {
+       "items": [
+        "🏠",
+        "🤔"
+       ],
+       "motion": "float",
+       "caption": "Kind choices"
+      },
+      {
+       "items": [
+        "🌱",
+        "❤️"
+       ],
+       "motion": "grow",
+       "caption": "Growing kindness"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Ways to Show Love",
+    "narration": [
+     "We show we care by listening when someone shares a story about their day.",
+     "You can also help by tidying up your toys after you finish playing.",
+     "Small acts like bringing a glass of water show you are thoughtful.",
+     "When we share our snacks or toys, it makes our family feel happy."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👂",
+        "🗣️"
+       ],
+       "motion": "chain",
+       "caption": "Active listening"
+      },
+      {
+       "items": [
+        "🧸",
+        "🧹"
+       ],
+       "motion": "push",
+       "caption": "Helping out"
+      },
+      {
+       "items": [
+        "🥛",
+        "✨"
+       ],
+       "motion": "float",
+       "caption": "Small gestures"
+      },
+      {
+       "items": [
+        "🍎",
+        "🤝"
+       ],
+       "motion": "chain",
+       "caption": "Sharing love"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Day with Rohan",
+    "narration": [
+     "Rohan sees his sister struggling with her math homework at the kitchen table.",
+     "Instead of playing, he sits down and helps her solve a tricky problem.",
+     "His sister smiles, and their bond becomes even stronger because of his kindness."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "👧",
+        "📚"
+       ],
+       "motion": "pulse",
+       "caption": "Seeing need"
+      },
+      {
+       "items": [
+        "✏️",
+        "➕",
+        "💡"
+       ],
+       "motion": "chain",
+       "caption": "Giving time"
+      },
+      {
+       "items": [
+        "😊",
+        "🫂"
+       ],
+       "motion": "grow",
+       "caption": "Stronger bond"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Remembering to Care",
+    "narration": [
+     "Caring means helping, listening, and sharing with the people we love most.",
+     "You become a hero in your own home every time you show kindness.",
+     "Think about it: who can you surprise with a kind act today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "❤️",
+        "🏠"
+       ],
+       "motion": "float",
+       "caption": "What is care"
+      },
+      {
+       "items": [
+        "🦸",
+        "🏡"
+       ],
+       "motion": "rise",
+       "caption": "Home hero"
+      },
+      {
+       "items": [
+        "💭",
+        "🎁"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Our Community: Rural and Urban Communities": {
+  "id": "lib-social-studies-g2-our-community-rural-and-urban-communities",
+  "topic": "Our Community: Rural and Urban Communities",
+  "title": "City Life or Village Life",
+  "icon": "🏘️",
+  "scenes": [
+   {
+    "title": "Where do you live?",
+    "narration": [
+     "Look around your home, do you see tall buildings or wide green fields?",
+     "I live in a busy city, but my cousin Kabir lives in a quiet village.",
+     "Why are these two places so different from each other?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏢",
+        "🌾"
+       ],
+       "motion": "float",
+       "caption": "Our surroundings"
+      },
+      {
+       "items": [
+        "👦",
+        "🌆",
+        "🏡"
+       ],
+       "motion": "float",
+       "caption": "Different homes"
+      },
+      {
+       "items": [
+        "❓",
+        "🌆",
+        "🌾"
+       ],
+       "motion": "pulse",
+       "caption": "The big question"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Learning about Communities",
+    "narration": [
+     "Urban areas are cities with many tall buildings, buses, and busy roads.",
+     "Rural areas are villages with open land, farms, and fewer people.",
+     "Both places have houses, schools, and markets for the people living there."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏢",
+        "🚌",
+        "🛣️"
+       ],
+       "motion": "push",
+       "caption": "Urban city life"
+      },
+      {
+       "items": [
+        "🚜",
+        "🌳",
+        "🌾"
+       ],
+       "motion": "grow",
+       "caption": "Rural village life"
+      },
+      {
+       "items": [
+        "🏠",
+        "🏫",
+        "🛒"
+       ],
+       "motion": "chain",
+       "caption": "Common needs"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Day in India",
+    "narration": [
+     "In Mumbai, Priya takes a fast train to her crowded school.",
+     "In a Punjab village, Harpreet helps his father harvest wheat on the farm.",
+     "Priya buys snacks at a mall, while Harpreet buys vegetables at a weekly haat."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🚆",
+        "🏫",
+        "👩"
+       ],
+       "motion": "push",
+       "caption": "City commute"
+      },
+      {
+       "items": [
+        "🌾",
+        "🚜",
+        "👨"
+       ],
+       "motion": "grow",
+       "caption": "Farm work"
+      },
+      {
+       "items": [
+        "🛍️",
+        "🍎",
+        "🧺"
+       ],
+       "motion": "chain",
+       "caption": "Buying food"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Wrapping it Up",
+    "narration": [
+     "Cities have many buildings and people, while villages have farms and nature.",
+     "Every community helps us live, learn, and grow together in our country.",
+     "If you could visit a village or a city today, where would you go?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌆",
+        "🌾"
+       ],
+       "motion": "pulse",
+       "caption": "Key differences"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🤝"
+       ],
+       "motion": "rise",
+       "caption": "Growing together"
+      },
+      {
+       "items": [
+        "🤔",
+        "🌍"
+       ],
+       "motion": "float",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Family and Relationships: Family Responsibilities": {
+  "id": "lib-social-studies-g2-family-and-relationships-family-responsibilities",
+  "topic": "Family and Relationships: Family Responsibilities",
+  "title": "Helping Out at Home",
+  "icon": "🏠",
+  "scenes": [
+   {
+    "title": "The Happy Home Puzzle",
+    "narration": [
+     "Look around your home, do you see how much work your family does every single day?",
+     "Have you ever wondered why we all help each other with chores like cleaning and cooking?",
+     "Being part of a family means we are a team that works together."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏠",
+        "👪"
+       ],
+       "motion": "pulse",
+       "caption": "Busy home"
+      },
+      {
+       "items": [
+        "🧹",
+        "🥘"
+       ],
+       "motion": "float",
+       "caption": "Shared work"
+      },
+      {
+       "items": [
+        "🤝",
+        "❤️"
+       ],
+       "motion": "chain",
+       "caption": "Family team"
+      }
+     ]
+    }
+   },
+   {
+    "title": "What Are Responsibilities",
+    "narration": [
+     "A responsibility is a job we do to help our family run smoothly.",
+     "When we do our part, it makes our home a happy and organized place.",
+     "Chores might seem small, but they show that we care about our loved ones."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "✅",
+        "📋"
+       ],
+       "motion": "grow",
+       "caption": "Our jobs"
+      },
+      {
+       "items": [
+        "✨",
+        "😊"
+       ],
+       "motion": "rise",
+       "caption": "Happy home"
+      },
+      {
+       "items": [
+        "💖",
+        "🧺"
+       ],
+       "motion": "push",
+       "caption": "Showing love"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Day With Rohan",
+    "narration": [
+     "Rohan helps his mother by setting the table with plates for dinner.",
+     "Then, he waters the tulsi plant in the balcony while his father cooks dal.",
+     "By tidying his toys, Rohan makes more space for everyone to relax together.",
+     "Everyone is happy because they finished their tasks as a team."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍽️",
+        "👦"
+       ],
+       "motion": "chain",
+       "caption": "Setting table"
+      },
+      {
+       "items": [
+        "🪴",
+        "💧",
+        "🥘"
+       ],
+       "motion": "grow",
+       "caption": "Helping out"
+      },
+      {
+       "items": [
+        "🧸",
+        "📦"
+       ],
+       "motion": "pull",
+       "caption": "Tidying toys"
+      },
+      {
+       "items": [
+        "🤗",
+        "👨‍👩‍👦"
+       ],
+       "motion": "pulse",
+       "caption": "Teamwork"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Think",
+    "narration": [
+     "Remember, chores help our family and show we care for each other.",
+     "When everyone helps, we have more time to laugh and play games.",
+     "Think about it: what is one small job you can do today to surprise your family?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏠",
+        "✅"
+       ],
+       "motion": "chain",
+       "caption": "Remember this"
+      },
+      {
+       "items": [
+        "🎲",
+        "😂"
+       ],
+       "motion": "float",
+       "caption": "More fun"
+      },
+      {
+       "items": [
+        "🤔",
+        "💡"
+       ],
+       "motion": "pulse",
+       "caption": "Your turn"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Our Community: Local Occupations": {
+  "id": "lib-social-studies-g2-our-community-local-occupations",
+  "topic": "Our Community: Local Occupations",
+  "title": "Who Helps Our Neighborhood Work",
+  "icon": "🏘️",
+  "scenes": [
+   {
+    "title": "Meet Your Helpful Neighbors",
+    "narration": [
+     "Have you ever wondered who keeps our neighborhood running smoothly every single day?",
+     "From the bread in your kitchen to the school bus, people work hard to help us.",
+     "Let us look at some of the important jobs right here in our town."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏘️",
+        "🚶",
+        "🚲"
+       ],
+       "motion": "float",
+       "caption": "Local community"
+      },
+      {
+       "items": [
+        "🍞",
+        "🚌",
+        "🏠"
+       ],
+       "motion": "chain",
+       "caption": "Daily needs"
+      },
+      {
+       "items": [
+        "🔍",
+        "🇮🇳"
+       ],
+       "motion": "pulse",
+       "caption": "Exploring jobs"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Learning About Important Jobs",
+    "narration": [
+     "A baker wakes up early to bake fresh rotis and bread for our breakfast.",
+     "A shopkeeper sells us milk, rice, and pulses at the local corner store.",
+     "The postman delivers our letters and parcels all across the city streets.",
+     "Teachers at school help us learn new things and discover the world."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👨‍🍳",
+        "🍞",
+        "🔥"
+       ],
+       "motion": "grow",
+       "caption": "The baker"
+      },
+      {
+       "items": [
+        "🛍️",
+        "🥛",
+        "🍚"
+       ],
+       "motion": "push",
+       "caption": "The shopkeeper"
+      },
+      {
+       "items": [
+        "📮",
+        "✉️",
+        "🚲"
+       ],
+       "motion": "pull",
+       "caption": "The postman"
+      },
+      {
+       "items": [
+        "🍎",
+        "📚",
+        "👩‍🏫"
+       ],
+       "motion": "rise",
+       "caption": "The teacher"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Day With Rohan",
+    "narration": [
+     "Rohan visits the vegetable seller, Mrs. Gupta, to buy fresh carrots with ten rupees.",
+     "Then, he sees the traffic police officer keeping the busy street crossing safe.",
+     "Finally, the doctor at the clinic checks his pulse to make sure he is healthy."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🥕",
+        "👩‍🌾",
+        "₹10"
+       ],
+       "motion": "chain",
+       "caption": "Buying vegetables"
+      },
+      {
+       "items": [
+        "👮",
+        "🚦",
+        "🚗"
+       ],
+       "motion": "fall",
+       "caption": "Traffic safety"
+      },
+      {
+       "items": [
+        "🩺",
+        "🏥",
+        "👨‍⚕️"
+       ],
+       "motion": "pulse",
+       "caption": "Doctor visit"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Thank You To Our Helpers",
+    "narration": [
+     "Every job is special because it makes our lives easier and better.",
+     "We should always be kind and say thank you to people who help us.",
+     "Think about it, what job would you like to do when you grow up?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🤝",
+        "🌟",
+        "🏘️"
+       ],
+       "motion": "float",
+       "caption": "Valuing work"
+      },
+      {
+       "items": [
+        "🙏",
+        "😊",
+        "❤️"
+       ],
+       "motion": "rise",
+       "caption": "Be kind"
+      },
+      {
+       "items": [
+        "🤔",
+        "👩‍🚀",
+        "👨‍🔬"
+       ],
+       "motion": "grow",
+       "caption": "Future dreams"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Our Community: Community Services": {
+  "id": "lib-social-studies-g2-our-community-community-services",
+  "topic": "Our Community: Community Services",
+  "title": "Who Helps Our Community?",
+  "icon": "🏘️",
+  "scenes": [
+   {
+    "title": "The Busy Neighborhood",
+    "narration": [
+     "Have you noticed how many people help us in our neighborhood every single day?",
+     "From the park to the post office, who makes sure everything works smoothly?",
+     "Let's find out how community services keep our lives safe and happy."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏘️",
+        "🚶",
+        "🚲"
+       ],
+       "motion": "float",
+       "caption": "Neighborhood life"
+      },
+      {
+       "items": [
+        "🌳",
+        "📮",
+        "❓"
+       ],
+       "motion": "pulse",
+       "caption": "Community helpers"
+      },
+      {
+       "items": [
+        "🤝",
+        "✨",
+        "😊"
+       ],
+       "motion": "grow",
+       "caption": "Services help"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Essential Services Defined",
+    "narration": [
+     "Community services are jobs that help everyone living in the same area.",
+     "We pay for these with taxes, which are small amounts of money from everyone.",
+     "The government uses this money to hire workers and build important places.",
+     "These services make our daily lives much easier and safer."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏠",
+        "👥",
+        "🤝"
+       ],
+       "motion": "chain",
+       "caption": "What are services"
+      },
+      {
+       "items": [
+        "💰",
+        "🪙",
+        "🧾"
+       ],
+       "motion": "push",
+       "caption": "How we pay"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🏛️",
+        "📋"
+       ],
+       "motion": "chain",
+       "caption": "Government role"
+      },
+      {
+       "items": [
+        "✅",
+        "🛡️",
+        "🌟"
+       ],
+       "motion": "pulse",
+       "caption": "Safety first"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Day in Our Town",
+    "narration": [
+     "Meet Arjun, he visits the local library to borrow books for his school project.",
+     "Later, a fire truck rushes past to keep the neighborhood safe from accidents.",
+     "Then, a sanitation worker clears the street to keep our town clean and healthy.",
+     "Finally, the doctor at the clinic helps his sister feel better."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "📚",
+        "🏫"
+       ],
+       "motion": "rise",
+       "caption": "Library"
+      },
+      {
+       "items": [
+        "🚒",
+        "🚨",
+        "🔥"
+       ],
+       "motion": "push",
+       "caption": "Fire station"
+      },
+      {
+       "items": [
+        "🧹",
+        "♻️",
+        "🚮"
+       ],
+       "motion": "pull",
+       "caption": "Clean streets"
+      },
+      {
+       "items": [
+        "🩺",
+        "🏥",
+        "👩‍⚕️"
+       ],
+       "motion": "grow",
+       "caption": "Local clinic"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Reflect",
+    "narration": [
+     "Community services include schools, libraries, hospitals, and emergency helpers.",
+     "These helpers work together to keep our community clean, safe, and organized.",
+     "Think about it: What is one community service you use every single week?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏫",
+        "📚",
+        "🏥",
+        "🚒"
+       ],
+       "motion": "chain",
+       "caption": "Key services"
+      },
+      {
+       "items": [
+        "🤝",
+        "🧼",
+        "🛡️"
+       ],
+       "motion": "pulse",
+       "caption": "Working together"
+      },
+      {
+       "items": [
+        "🤔",
+        "💭",
+        "❓"
+       ],
+       "motion": "float",
+       "caption": "Your turn"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Places Around Us: School": {
+  "id": "lib-social-studies-g2-places-around-us-school",
+  "topic": "Places Around Us: School",
+  "title": "Exploring Our Wonderful School",
+  "icon": "🏫",
+  "scenes": [
+   {
+    "title": "Welcome to School",
+    "narration": [
+     "Do you ever wonder why your school has so many special rooms?",
+     "Every school is a place where we learn, play, and make friends.",
+     "Let us look at the places that make our school work."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏫",
+        "🧒",
+        "👧"
+       ],
+       "motion": "pulse",
+       "caption": "Our school"
+      },
+      {
+       "items": [
+        "📚",
+        "⚽",
+        "🤝"
+       ],
+       "motion": "grow",
+       "caption": "Learning together"
+      },
+      {
+       "items": [
+        "🔍",
+        "🏫"
+       ],
+       "motion": "float",
+       "caption": "Exploring rooms"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Learning and Growing",
+    "narration": [
+     "The classroom is where we read books and learn about numbers.",
+     "The library is a quiet place filled with thousands of stories.",
+     "We visit the computer lab to learn about the digital world."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "✏️",
+        "📖",
+        "🔢"
+       ],
+       "motion": "chain",
+       "caption": "Classroom"
+      },
+      {
+       "items": [
+        "📚",
+        "🤫"
+       ],
+       "motion": "float",
+       "caption": "Library"
+      },
+      {
+       "items": [
+        "💻",
+        "🖱️"
+       ],
+       "motion": "pulse",
+       "caption": "Computer lab"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Playing and Staying Healthy",
+    "narration": [
+     "At playtime, we run and jump in the big school playground.",
+     "We go to the canteen to buy a healthy snack with our rupees.",
+     "Our school clinic is there to help us feel better if we get hurt."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏃",
+        "🤸",
+        "🌳"
+       ],
+       "motion": "push",
+       "caption": "Playground"
+      },
+      {
+       "items": [
+        "🍎",
+        "🥪",
+        "💰"
+       ],
+       "motion": "chain",
+       "caption": "School canteen"
+      },
+      {
+       "items": [
+        "🏥",
+        "🩹"
+       ],
+       "motion": "float",
+       "caption": "School clinic"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Reflect",
+    "narration": [
+     "From classrooms to playgrounds, every space has a special purpose.",
+     "We must keep these places clean and respect our school property.",
+     "Which part of your school is your favorite, and why do you like it?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏫",
+        "💡"
+       ],
+       "motion": "pulse",
+       "caption": "Key spaces"
+      },
+      {
+       "items": [
+        "🧹",
+        "✨"
+       ],
+       "motion": "push",
+       "caption": "Keep it clean"
+      },
+      {
+       "items": [
+        "🤔",
+        "🏫"
+       ],
+       "motion": "float",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Places Around Us: Market": {
+  "id": "lib-social-studies-g2-places-around-us-market",
+  "topic": "Places Around Us: Market",
+  "title": "A Day at the Market",
+  "icon": "🛍️",
+  "scenes": [
+   {
+    "title": "The Busy Market Hook",
+    "narration": [
+     "Have you ever wondered where your favorite fresh vegetables come from?",
+     "Today we are visiting the colorful local market near our school.",
+     "Let us see what makes a market such a busy place."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🥕",
+        "🥦",
+        "🍅"
+       ],
+       "motion": "pulse",
+       "caption": "Fresh food"
+      },
+      {
+       "items": [
+        "🏫",
+        "🚶",
+        "🏘️"
+       ],
+       "motion": "float",
+       "caption": "Local market"
+      },
+      {
+       "items": [
+        "🛒",
+        "💰",
+        "🍎"
+       ],
+       "motion": "chain",
+       "caption": "Busy bustle"
+      }
+     ]
+    }
+   },
+   {
+    "title": "How a Market Works",
+    "narration": [
+     "Markets are places where people sell things they have grown or made.",
+     "Buyers come with money to pick out exactly what they need.",
+     "Shopkeepers set up stalls and arrange their items neatly on shelves.",
+     "It is a big community effort to keep us fed and happy."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👨‍🌾",
+        "🧺",
+        "🌾"
+       ],
+       "motion": "grow",
+       "caption": "Selling goods"
+      },
+      {
+       "items": [
+        "👩",
+        "₹",
+        "🛍️"
+       ],
+       "motion": "push",
+       "caption": "Buying things"
+      },
+      {
+       "items": [
+        "📦",
+        "🏢",
+        "🏷️"
+       ],
+       "motion": "rise",
+       "caption": "Setting up"
+      },
+      {
+       "items": [
+        "🤝",
+        "🇮🇳",
+        "🏘️"
+       ],
+       "motion": "chain",
+       "caption": "Community effort"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Trip to the Shop",
+    "narration": [
+     "Rohan goes to the market with fifty rupees in his pocket.",
+     "He chooses a bunch of shiny bananas for twenty rupees.",
+     "He gives the money to the shopkeeper and gets his change back.",
+     "Now he has healthy fruit and thirty rupees left for tomorrow."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "₹50"
+       ],
+       "motion": "float",
+       "caption": "Rohan shopping"
+      },
+      {
+       "items": [
+        "🍌",
+        "₹20"
+       ],
+       "motion": "push",
+       "caption": "Buying fruit"
+      },
+      {
+       "items": [
+        "🤝",
+        "₹30"
+       ],
+       "motion": "chain",
+       "caption": "Paying money"
+      },
+      {
+       "items": [
+        "🍌",
+        "₹30",
+        "😊"
+       ],
+       "motion": "rise",
+       "caption": "Successful trip"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Think",
+    "narration": [
+     "Markets help us buy goods like food, clothes, and school supplies.",
+     "Remember, always be polite when you talk to the shopkeeper.",
+     "Think about it: what would you buy if you had ten rupees today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍎",
+        "👕",
+        "✏️"
+       ],
+       "motion": "pulse",
+       "caption": "Market goods"
+      },
+      {
+       "items": [
+        "😊",
+        "🗣️"
+       ],
+       "motion": "float",
+       "caption": "Be polite"
+      },
+      {
+       "items": [
+        "🤔",
+        "₹10"
+       ],
+       "motion": "rise",
+       "caption": "Think now"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Places Around Us: Bank": {
+  "id": "lib-social-studies-g2-places-around-us-bank",
+  "topic": "Places Around Us: Bank",
+  "title": "What Happens At The Bank",
+  "icon": "🏦",
+  "scenes": [
+   {
+    "title": "Visiting The Busy Bank",
+    "narration": [
+     "Have you ever seen your parents putting money into a safe place called a bank?",
+     "Why do we keep money there instead of just inside a piggy bank?",
+     "Let us find out how a bank helps us keep our money safe."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏦",
+        "🏠",
+        "💰"
+       ],
+       "motion": "pulse",
+       "caption": "Safe Money"
+      },
+      {
+       "items": [
+        "🐷",
+        "🪙",
+        "❓"
+       ],
+       "motion": "float",
+       "caption": "Asking Why"
+      },
+      {
+       "items": [
+        "🏦",
+        "🔒",
+        "💵"
+       ],
+       "motion": "chain",
+       "caption": "Keeping Safe"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Keeping Our Money Safe",
+    "narration": [
+     "A bank is a building that protects our paper money and metal coins.",
+     "We can open a special account to store our savings securely.",
+     "The bank staff helps us count and record every single rupee."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏢",
+        "💵",
+        "🪙"
+       ],
+       "motion": "rise",
+       "caption": "The Building"
+      },
+      {
+       "items": [
+        "👤",
+        "📖",
+        "💰"
+       ],
+       "motion": "grow",
+       "caption": "Bank Account"
+      },
+      {
+       "items": [
+        "👨‍💼",
+        "🔢",
+        "₹"
+       ],
+       "motion": "chain",
+       "caption": "Counting Money"
+      }
+     ]
+    }
+   },
+   {
+    "title": "An Afternoon At The Bank",
+    "narration": [
+     "Rohan goes to the bank with his mother to deposit five hundred rupees.",
+     "The teller writes the amount in Rohan's small bank passbook.",
+     "Now his money is safe and he can take it out later."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "👩",
+        "₹500"
+       ],
+       "motion": "push",
+       "caption": "Depositing Cash"
+      },
+      {
+       "items": [
+        "✍️",
+        "📖",
+        "₹"
+       ],
+       "motion": "chain",
+       "caption": "The Passbook"
+      },
+      {
+       "items": [
+        "✅",
+        "🔒",
+        "💵"
+       ],
+       "motion": "float",
+       "caption": "Safe Savings"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap And Think",
+    "narration": [
+     "Banks are safe places to store money and keep it growing.",
+     "They help families manage their money for important things like school fees.",
+     "Think about it: If you had a hundred rupees, would you save it or spend it?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏦",
+        "💰",
+        "📈"
+       ],
+       "motion": "grow",
+       "caption": "Bank Benefits"
+      },
+      {
+       "items": [
+        "🏫",
+        "📚",
+        "₹"
+       ],
+       "motion": "chain",
+       "caption": "Managing Money"
+      },
+      {
+       "items": [
+        "🤔",
+        "₹100",
+        "💭"
+       ],
+       "motion": "pulse",
+       "caption": "Think About It"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Places Around Us: Hospital": {
+  "id": "lib-social-studies-g2-places-around-us-hospital",
+  "topic": "Places Around Us: Hospital",
+  "title": "Visiting Our Helpful Hospital",
+  "icon": "🏥",
+  "scenes": [
+   {
+    "title": "A Place That Helps",
+    "narration": [
+     "Have you ever wondered who helps you feel better when you are sick?",
+     "When we need extra care, we visit a special place called a hospital.",
+     "Let us see who works inside to keep us healthy and strong."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🤒"
+       ],
+       "motion": "pulse",
+       "caption": "Feeling sick"
+      },
+      {
+       "items": [
+        "🏥"
+       ],
+       "motion": "rise",
+       "caption": "The hospital"
+      },
+      {
+       "items": [
+        "🩺",
+        "📋"
+       ],
+       "motion": "chain",
+       "caption": "Health helpers"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Hospital Team",
+    "narration": [
+     "Doctors are experts who listen to our heart and check our health.",
+     "Nurses are very kind and help us take our medicine on time.",
+     "Receptionists help us find the right room when we first walk in."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👩‍⚕️",
+        "🫀"
+       ],
+       "motion": "pulse",
+       "caption": "The doctor"
+      },
+      {
+       "items": [
+        "👩‍⚕️",
+        "💊"
+       ],
+       "motion": "grow",
+       "caption": "The nurse"
+      },
+      {
+       "items": [
+        "💻",
+        "🚪"
+       ],
+       "motion": "push",
+       "caption": "The receptionist"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Check-up Visit",
+    "narration": [
+     "Imagine Rohan visits the hospital for a routine check-up in Delhi.",
+     "First, the nurse weighs him and checks how tall he has grown.",
+     "Then, the doctor uses a stethoscope to listen to his happy heartbeat.",
+     "Rohan leaves with a sticker and a big smile because he is healthy."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "🇮🇳"
+       ],
+       "motion": "float",
+       "caption": "Rohan visits"
+      },
+      {
+       "items": [
+        "⚖️",
+        "📏"
+       ],
+       "motion": "grow",
+       "caption": "Measuring growth"
+      },
+      {
+       "items": [
+        "🩺",
+        "🫀"
+       ],
+       "motion": "pulse",
+       "caption": "Doctor's exam"
+      },
+      {
+       "items": [
+        "🌟",
+        "😊"
+       ],
+       "motion": "rise",
+       "caption": "Healthy child"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Remembering Our Helpers",
+    "narration": [
+     "Hospitals are important places filled with people who care for our community.",
+     "Doctors and nurses work hard every single day to keep us safe.",
+     "Think about it: What is one nice thing you could say to a doctor?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏥",
+        "🤝"
+       ],
+       "motion": "float",
+       "caption": "Community care"
+      },
+      {
+       "items": [
+        "👩‍⚕️",
+        "🕒"
+       ],
+       "motion": "chain",
+       "caption": "Hard work"
+      },
+      {
+       "items": [
+        "💭",
+        "💬"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Places Around Us: Post Office": {
+  "id": "lib-social-studies-g2-places-around-us-post-office",
+  "topic": "Places Around Us: Post Office",
+  "title": "How Does Mail Travel?",
+  "icon": "📮",
+  "scenes": [
+   {
+    "title": "Sending A Special Letter",
+    "narration": [
+     "Have you ever wondered how your birthday card reaches your friend in another city?",
+     "It all starts at the local post office in your neighborhood.",
+     "Let us follow the journey of a letter today."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "💌",
+        "👧🏽",
+        "🏠"
+       ],
+       "motion": "float",
+       "caption": "Sending mail"
+      },
+      {
+       "items": [
+        "🏢",
+        "🇮🇳"
+       ],
+       "motion": "pulse",
+       "caption": "Local post office"
+      },
+      {
+       "items": [
+        "✉️",
+        "➡️",
+        "🛤️"
+       ],
+       "motion": "chain",
+       "caption": "Journey starts"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Inside The Post Office",
+    "narration": [
+     "First, you drop your letter into a big red post box.",
+     "A postal worker collects the mail and takes it inside the building.",
+     "Every letter gets a special ink stamp called a postmark.",
+     "This mark shows where and when the letter was posted."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📮",
+        "✉️"
+       ],
+       "motion": "fall",
+       "caption": "Post box"
+      },
+      {
+       "items": [
+        "🧑🏽‍💼",
+        "✉️",
+        "🏢"
+       ],
+       "motion": "push",
+       "caption": "Collecting mail"
+      },
+      {
+       "items": [
+        "🖌️",
+        "✉️",
+        "✔️"
+       ],
+       "motion": "pulse",
+       "caption": "Stamping mail"
+      },
+      {
+       "items": [
+        "📅",
+        "📍",
+        "✉️"
+       ],
+       "motion": "float",
+       "caption": "Sorting details"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Letter To Chennai",
+    "narration": [
+     "Imagine you are sending a letter from Delhi to your cousin in Chennai.",
+     "Your letter travels on a fast train or an airplane.",
+     "It arrives at the Chennai post office to be sorted by street.",
+     "Finally, the friendly postman puts the letter right in your cousin's mailbox."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "📍",
+        "📍"
+       ],
+       "motion": "chain",
+       "caption": "Long distance"
+      },
+      {
+       "items": [
+        "🚂",
+        "✈️",
+        "✉️"
+       ],
+       "motion": "push",
+       "caption": "Fast travel"
+      },
+      {
+       "items": [
+        "🏢",
+        "🗺️",
+        "✉️"
+       ],
+       "motion": "float",
+       "caption": "Regional sorting"
+      },
+      {
+       "items": [
+        "🚴🏽",
+        "✉️",
+        "🏠"
+       ],
+       "motion": "chain",
+       "caption": "Final delivery"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap And Think",
+    "narration": [
+     "Post offices collect, stamp, sort, and deliver our letters everywhere.",
+     "They help us stay connected with family and friends across India.",
+     "Think about it: what would you write in a letter to a friend today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📮",
+        "✉️",
+        "✅"
+       ],
+       "motion": "chain",
+       "caption": "Key steps"
+      },
+      {
+       "items": [
+        "❤️",
+        "🇮🇳",
+        "🤝"
+       ],
+       "motion": "grow",
+       "caption": "Staying connected"
+      },
+      {
+       "items": [
+        "✍️",
+        "💭",
+        "✉️"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Places Around Us: Police Station": {
+  "id": "lib-social-studies-g2-places-around-us-police-station",
+  "topic": "Places Around Us: Police Station",
+  "title": "Who Helps at the Station",
+  "icon": "👮",
+  "scenes": [
+   {
+    "title": "Meeting a Friendly Helper",
+    "narration": [
+     "Have you seen a police station while walking to your school in India?",
+     "It is a special place where officers work hard to keep us safe.",
+     "Have you ever wondered what exactly happens inside those walls?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏫",
+        "🚶",
+        "👮"
+       ],
+       "motion": "float",
+       "caption": "Your Neighborhood"
+      },
+      {
+       "items": [
+        "🏢",
+        "👮",
+        "🛡️"
+       ],
+       "motion": "pulse",
+       "caption": "Safe Place"
+      },
+      {
+       "items": [
+        "🔍",
+        "❓",
+        "🏢"
+       ],
+       "motion": "pulse",
+       "caption": "Curious Question"
+      }
+     ]
+    }
+   },
+   {
+    "title": "What Police Officers Do",
+    "narration": [
+     "Police officers help people who are in trouble or need some advice.",
+     "They patrol the streets in jeeps to make sure rules are followed.",
+     "They also help find lost things or help children who get separated.",
+     "They work day and night so that our neighborhoods stay peaceful."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👮",
+        "🤝",
+        "😊"
+       ],
+       "motion": "chain",
+       "caption": "Helping Hands"
+      },
+      {
+       "items": [
+        "🚙",
+        "🛣️",
+        "👮"
+       ],
+       "motion": "push",
+       "caption": "Patrolling Streets"
+      },
+      {
+       "items": [
+        "🔎",
+        "🧒",
+        "📍"
+       ],
+       "motion": "pull",
+       "caption": "Finding People"
+      },
+      {
+       "items": [
+        "☀️",
+        "🌙",
+        "🏘️"
+       ],
+       "motion": "float",
+       "caption": "Always Working"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Day at the Station",
+    "narration": [
+     "Imagine Rohan loses his bag at the busy Delhi local market.",
+     "Rohan and his father go to the nearest police station for help.",
+     "An officer listens carefully and writes down the details in a book.",
+     "Soon, the officers use their network to find the lost bag safely."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "🎒",
+        "🛍️"
+       ],
+       "motion": "chain",
+       "caption": "Rohan's Problem"
+      },
+      {
+       "items": [
+        "🚶",
+        "🏢",
+        "👮"
+       ],
+       "motion": "chain",
+       "caption": "Asking Help"
+      },
+      {
+       "items": [
+        "📝",
+        "👮",
+        "📖"
+       ],
+       "motion": "chain",
+       "caption": "Taking Notes"
+      },
+      {
+       "items": [
+        "📞",
+        "📡",
+        "🎒"
+       ],
+       "motion": "chain",
+       "caption": "Success"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Remembering Our Helpers",
+    "narration": [
+     "Police stations keep our community safe and follow the law.",
+     "Remember, you can always ask a police officer for help if needed.",
+     "Think about it: Why is it important for us to follow rules?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🛡️",
+        "⚖️",
+        "🏘️"
+       ],
+       "motion": "pulse",
+       "caption": "Keeping Safety"
+      },
+      {
+       "items": [
+        "👮",
+        "🙋",
+        "🌟"
+       ],
+       "motion": "rise",
+       "caption": "Friendly Help"
+      },
+      {
+       "items": [
+        "🚦",
+        "🤔",
+        "🇮🇳"
+       ],
+       "motion": "pulse",
+       "caption": "Think About It"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Occupations: Farmers": {
+  "id": "lib-social-studies-g2-occupations-farmers",
+  "topic": "Occupations: Farmers",
+  "title": "Who Grows Our Food?",
+  "icon": "👨‍🌾",
+  "scenes": [
+   {
+    "title": "The Daily Meal Hook",
+    "narration": [
+     "Have you ever wondered where your yummy dal and rice come from?",
+     "It all starts far away in big, green fields.",
+     "Let's meet the amazing farmers who work hard every day."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍛",
+        "🍚"
+       ],
+       "motion": "float",
+       "caption": "Daily meal"
+      },
+      {
+       "items": [
+        "🌱",
+        "🚜"
+       ],
+       "motion": "grow",
+       "caption": "Green fields"
+      },
+      {
+       "items": [
+        "👨‍🌾",
+        "👩‍🌾"
+       ],
+       "motion": "pulse",
+       "caption": "Meet farmers"
+      }
+     ]
+    }
+   },
+   {
+    "title": "How Farmers Grow Food",
+    "narration": [
+     "First, the farmer prepares the soil to make it soft and healthy.",
+     "Then, they carefully sow tiny seeds into the earth.",
+     "The farmer adds water and sunshine to help the plants grow tall.",
+     "Finally, when the crops are ready, it is time for the harvest."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🚜",
+        "🟫"
+       ],
+       "motion": "push",
+       "caption": "Preparing soil"
+      },
+      {
+       "items": [
+        "🌱",
+        "💧"
+       ],
+       "motion": "fall",
+       "caption": "Sowing seeds"
+      },
+      {
+       "items": [
+        "☀️",
+        "💧",
+        "🌾"
+       ],
+       "motion": "rise",
+       "caption": "Nurturing growth"
+      },
+      {
+       "items": [
+        "🌾",
+        "✂️"
+       ],
+       "motion": "pull",
+       "caption": "Harvest time"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Example: Paddy Fields",
+    "narration": [
+     "In places like Punjab or West Bengal, farmers grow rice plants.",
+     "They stand in water to plant the green rice stalks.",
+     "After months of care, the golden grains are ready for us.",
+     "The rice is packed into bags and sent to our local market."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "🌾"
+       ],
+       "motion": "float",
+       "caption": "Rice farms"
+      },
+      {
+       "items": [
+        "💧",
+        "🌾"
+       ],
+       "motion": "chain",
+       "caption": "Planting rice"
+      },
+      {
+       "items": [
+        "🌾",
+        "💛"
+       ],
+       "motion": "grow",
+       "caption": "Golden harvest"
+      },
+      {
+       "items": [
+        "🌾",
+        "🚚",
+        "🛒"
+       ],
+       "motion": "push",
+       "caption": "To market"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Reflection",
+    "narration": [
+     "Farmers work hard to plant, grow, and harvest our food.",
+     "Without them, we would not have delicious meals on our plates.",
+     "Think about it: what is your favorite vegetable grown by a farmer?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👨‍🌾",
+        "🌾",
+        "🍛"
+       ],
+       "motion": "chain",
+       "caption": "Farmer's work"
+      },
+      {
+       "items": [
+        "🍽️",
+        "❤️"
+       ],
+       "motion": "pulse",
+       "caption": "Gratitude"
+      },
+      {
+       "items": [
+        "🥕",
+        "🥦",
+        "🤔"
+       ],
+       "motion": "float",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Occupations: Engineers": {
+  "id": "lib-social-studies-g2-occupations-engineers",
+  "topic": "Occupations: Engineers",
+  "title": "What Do Engineers Actually Do",
+  "icon": "🏗️",
+  "scenes": [
+   {
+    "title": "The Amazing World Around Us",
+    "narration": [
+     "Have you ever wondered how a tall bridge stays up over a river?",
+     "Or how your school bus engine starts every single morning?",
+     "These things don't just appear; they are designed by clever people called engineers!"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌉",
+        "🏞️"
+       ],
+       "motion": "pulse",
+       "caption": "Strong bridge"
+      },
+      {
+       "items": [
+        "🚌",
+        "⚙️"
+       ],
+       "motion": "push",
+       "caption": "School bus"
+      },
+      {
+       "items": [
+        "👷",
+        "📐",
+        "✏️"
+       ],
+       "motion": "grow",
+       "caption": "Meet engineers"
+      }
+     ]
+    }
+   },
+   {
+    "title": "How Engineers Solve Problems",
+    "narration": [
+     "Engineers are like super-solvers who use science and math to build cool things.",
+     "First, they think of a plan and draw it out on paper.",
+     "Then, they test their ideas to make sure everything is safe and strong.",
+     "If something breaks, they don't give up; they fix it and try again!"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🔢",
+        "🔬",
+        "💡"
+       ],
+       "motion": "chain",
+       "caption": "Science and math"
+      },
+      {
+       "items": [
+        "📝",
+        "📏"
+       ],
+       "motion": "float",
+       "caption": "The plan"
+      },
+      {
+       "items": [
+        "✅",
+        "🛡️"
+       ],
+       "motion": "push",
+       "caption": "Testing safety"
+      },
+      {
+       "items": [
+        "🔧",
+        "⚙️"
+       ],
+       "motion": "rise",
+       "caption": "Never give up"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Building a Real Bridge",
+    "narration": [
+     "Let us see how Arjun the engineer helps build a bridge over a canal.",
+     "He picks strong materials like steel and heavy concrete.",
+     "He calculates how much weight the bridge can hold safely.",
+     "Finally, the bridge is finished, and cars can cross it safely!"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👷",
+        "💧",
+        "🏗️"
+       ],
+       "motion": "chain",
+       "caption": "Arjun working"
+      },
+      {
+       "items": [
+        "🏗️",
+        "🧱"
+       ],
+       "motion": "push",
+       "caption": "Choosing materials"
+      },
+      {
+       "items": [
+        "⚖️",
+        "🔢"
+       ],
+       "motion": "pulse",
+       "caption": "Weight check"
+      },
+      {
+       "items": [
+        "🚗",
+        "🌉"
+       ],
+       "motion": "rise",
+       "caption": "Bridge ready"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Engineers Change the World",
+    "narration": [
+     "Engineers build our roads, our tall buildings, and even our computers.",
+     "They work hard to make our lives safer, faster, and much more fun.",
+     "Think about it: if you could build one new invention, what would it be?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🛣️",
+        "🏢",
+        "💻"
+       ],
+       "motion": "chain",
+       "caption": "Building India"
+      },
+      {
+       "items": [
+        "✨",
+        "😊"
+       ],
+       "motion": "grow",
+       "caption": "Helping people"
+      },
+      {
+       "items": [
+        "🤔",
+        "💡"
+       ],
+       "motion": "float",
+       "caption": "Your invention"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Occupations: Teachers": {
+  "id": "lib-social-studies-g2-occupations-teachers",
+  "topic": "Occupations: Teachers",
+  "title": "Why Do Teachers Help Us?",
+  "icon": "🍎",
+  "scenes": [
+   {
+    "title": "Meeting Our Classroom Teacher",
+    "narration": [
+     "Have you ever wondered how your teacher knows so much about everything?",
+     "Every morning at school, we see them ready to help us learn.",
+     "Teachers are special people who spend their days guiding us to grow."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👩‍🏫",
+        "📚",
+        "🏫"
+       ],
+       "motion": "pulse",
+       "caption": "Curious Minds"
+      },
+      {
+       "items": [
+        "⏰",
+        "🏫",
+        "🎒"
+       ],
+       "motion": "rise",
+       "caption": "Morning School"
+      },
+      {
+       "items": [
+        "🌱",
+        "✨",
+        "👩‍🏫"
+       ],
+       "motion": "grow",
+       "caption": "Guiding Growth"
+      }
+     ]
+    }
+   },
+   {
+    "title": "What Do Teachers Actually Do?",
+    "narration": [
+     "Teachers plan fun lessons to help us understand numbers and stories.",
+     "They show us how to write, read, and solve tricky math problems.",
+     "They also teach us how to be kind friends to our classmates."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📝",
+        "🔢",
+        "📖"
+       ],
+       "motion": "chain",
+       "caption": "Planning Lessons"
+      },
+      {
+       "items": [
+        "✏️",
+        "🔤",
+        "➕"
+       ],
+       "motion": "chain",
+       "caption": "Learning Skills"
+      },
+      {
+       "items": [
+        "🤝",
+        "❤️",
+        "👫"
+       ],
+       "motion": "chain",
+       "caption": "Building Kindness"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Day With Ms. Anjali",
+    "narration": [
+     "Let us look at Ms. Anjali, a teacher in a school in Delhi.",
+     "First, she writes today's big science project on the green board.",
+     "Next, she walks around to help little Rahul with his drawing.",
+     "Finally, she cheers for everyone when they finish their work."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "👩‍🏫",
+        "📍"
+       ],
+       "motion": "float",
+       "caption": "Meet Ms. Anjali"
+      },
+      {
+       "items": [
+        "🧼",
+        "🧪",
+        "✅"
+       ],
+       "motion": "chain",
+       "caption": "Science Project"
+      },
+      {
+       "items": [
+        "🎨",
+        "👦",
+        "👩‍🏫"
+       ],
+       "motion": "push",
+       "caption": "Helping Rahul"
+      },
+      {
+       "items": [
+        "🎉",
+        "👏",
+        "😊"
+       ],
+       "motion": "rise",
+       "caption": "Celebrating Success"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap And Think",
+    "narration": [
+     "Teachers work hard to share knowledge and help us become our best.",
+     "They make our classrooms a safe place to ask questions.",
+     "What is one thing you learned today that made you smile?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🧠",
+        "🌟",
+        "📚"
+       ],
+       "motion": "pulse",
+       "caption": "Hard Work"
+      },
+      {
+       "items": [
+        "🏠",
+        "🛡️",
+        "❓"
+       ],
+       "motion": "float",
+       "caption": "Safe Learning"
+      },
+      {
+       "items": [
+        "🤔",
+        "💭",
+        "😊"
+       ],
+       "motion": "pulse",
+       "caption": "Think About It"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Occupations: Shopkeepers": {
+  "id": "lib-social-studies-g2-occupations-shopkeepers",
+  "topic": "Occupations: Shopkeepers",
+  "title": "Who Are Our Local Shopkeepers?",
+  "icon": "🏪",
+  "scenes": [
+   {
+    "title": "The Friendly Neighborhood Shop",
+    "narration": [
+     "Have you ever wondered how your favorite snacks get to your kitchen shelf?",
+     "When you visit a shop, you meet a very busy and helpful person.",
+     "Let us learn how our local shopkeeper helps the whole neighborhood."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍪",
+        "🥛",
+        "🏠"
+       ],
+       "motion": "pulse",
+       "caption": "Daily Snacks"
+      },
+      {
+       "items": [
+        "🙋",
+        "🏪"
+       ],
+       "motion": "float",
+       "caption": "The Shopkeeper"
+      },
+      {
+       "items": [
+        "🤝",
+        "🏘️"
+       ],
+       "motion": "chain",
+       "caption": "Our Community"
+      }
+     ]
+    }
+   },
+   {
+    "title": "What Does A Shopkeeper Do?",
+    "narration": [
+     "A shopkeeper orders goods from big markets to keep shelves full.",
+     "They organize items neatly so you can find your pencil or soap.",
+     "They also help us by selling small amounts of things we need."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🚚",
+        "📦",
+        "📋"
+       ],
+       "motion": "chain",
+       "caption": "Ordering Goods"
+      },
+      {
+       "items": [
+        "✏️",
+        "🧼",
+        "🛒"
+       ],
+       "motion": "push",
+       "caption": "Organizing Stock"
+      },
+      {
+       "items": [
+        "⚖️",
+        "💰"
+       ],
+       "motion": "pull",
+       "caption": "Fair Pricing"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Buying Milk at the Shop",
+    "narration": [
+     "Imagine you go to Mr. Gupta's shop to buy a packet of milk.",
+     "You pick the milk and bring it to the counter.",
+     "Mr. Gupta checks the price and you pay him 30 rupees.",
+     "He gives you the milk and a friendly smile too."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "🥛",
+        "🏪"
+       ],
+       "motion": "float",
+       "caption": "Mr. Gupta"
+      },
+      {
+       "items": [
+        "🥛",
+        "➡️",
+        "🙋"
+       ],
+       "motion": "push",
+       "caption": "The Counter"
+      },
+      {
+       "items": [
+        "3️⃣",
+        "0️⃣",
+        "₹"
+       ],
+       "motion": "chain",
+       "caption": "Making Payment"
+      },
+      {
+       "items": [
+        "🥛",
+        "😊"
+       ],
+       "motion": "rise",
+       "caption": "Happy Exchange"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Our Helpful Community Friends",
+    "narration": [
+     "Shopkeepers work hard to make sure we have food and supplies every day.",
+     "Without them, we would have to travel very far for everything.",
+     "Think about it: What is the most important thing you bought from a shop today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍎",
+        "🍞",
+        "💪"
+       ],
+       "motion": "grow",
+       "caption": "Working Hard"
+      },
+      {
+       "items": [
+        "❌",
+        "🗺️",
+        "🚶"
+       ],
+       "motion": "fall",
+       "caption": "Saving Time"
+      },
+      {
+       "items": [
+        "🤔",
+        "💭"
+       ],
+       "motion": "pulse",
+       "caption": "Think About It"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Occupations: Doctors": {
+  "id": "lib-social-studies-g2-occupations-doctors",
+  "topic": "Occupations: Doctors",
+  "title": "Our Kind Helpers: The Doctors",
+  "icon": "🩺",
+  "scenes": [
+   {
+    "title": "Meeting a Local Doctor",
+    "narration": [
+     "Have you ever visited Dr. Sharma at the clinic when you felt unwell?",
+     "She helps us feel better when we have a cough or a fever.",
+     "Have you ever wondered how doctors learn to fix our ouchies?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🩺",
+        "🏥",
+        "👦"
+       ],
+       "motion": "pulse",
+       "caption": "Friendly doctor"
+      },
+      {
+       "items": [
+        "🌡️",
+        "🤒",
+        "💊"
+       ],
+       "motion": "float",
+       "caption": "Getting better"
+      },
+      {
+       "items": [
+        "🤔",
+        "💭"
+       ],
+       "motion": "pulse",
+       "caption": "Curious mind"
+      }
+     ]
+    }
+   },
+   {
+    "title": "What Doctors Do",
+    "narration": [
+     "Doctors study very hard to understand how our amazing bodies work.",
+     "They listen to our heartbeat using a cool tool called a stethoscope.",
+     "They check our eyes, ears, and throat to see what is wrong.",
+     "Then, they give us the right medicine to help us heal."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📚",
+        "🧠",
+        "❤️"
+       ],
+       "motion": "grow",
+       "caption": "Learning hard"
+      },
+      {
+       "items": [
+        "👂",
+        "🩺"
+       ],
+       "motion": "pulse",
+       "caption": "Checking heart"
+      },
+      {
+       "items": [
+        "👁️",
+        "👂",
+        "👅"
+       ],
+       "motion": "float",
+       "caption": "Health check"
+      },
+      {
+       "items": [
+        "💊",
+        "🥤",
+        "✨"
+       ],
+       "motion": "chain",
+       "caption": "Healing medicine"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Day at the Clinic",
+    "narration": [
+     "Imagine little Rohan has a tummy ache after eating too many spicy samosas.",
+     "Dr. Sharma gently presses his tummy to find the sore spot.",
+     "She tells Rohan to drink lots of water and rest well.",
+     "Rohan feels much happier knowing he will be fine soon."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "🥟",
+        "😫"
+       ],
+       "motion": "fall",
+       "caption": "Tummy ache"
+      },
+      {
+       "items": [
+        "👩‍⚕️",
+        "🩺",
+        "👦"
+       ],
+       "motion": "push",
+       "caption": "Gentle touch"
+      },
+      {
+       "items": [
+        "💧",
+        "🛌",
+        "✅"
+       ],
+       "motion": "float",
+       "caption": "Healthy advice"
+      },
+      {
+       "items": [
+        "😊",
+        "☀️"
+       ],
+       "motion": "rise",
+       "caption": "Feeling happy"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Remembering Our Heroes",
+    "narration": [
+     "Doctors are important helpers who keep our whole community strong.",
+     "They work in hospitals and clinics to take care of everyone.",
+     "Think about it: What is one nice thing you could say to a doctor next time you see one?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👩‍⚕️",
+        "👨‍⚕️",
+        "🏘️"
+       ],
+       "motion": "pulse",
+       "caption": "Community helpers"
+      },
+      {
+       "items": [
+        "🏥",
+        "🚑",
+        "👨‍👩‍👧‍👦"
+       ],
+       "motion": "float",
+       "caption": "Everywhere"
+      },
+      {
+       "items": [
+        "💬",
+        "💖"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Transport and Communication: Types of Transport": {
+  "id": "lib-social-studies-g2-transport-and-communication-types-of-transport",
+  "topic": "Transport and Communication: Types of Transport",
+  "title": "How We Move Around India",
+  "icon": "🚲",
+  "scenes": [
+   {
+    "title": "The Big Question",
+    "narration": [
+     "Have you ever wondered how Rohan gets to school or how your mangoes reach the market?",
+     "We use many different types of transport to move people and things everywhere.",
+     "Let us learn about land, water, and air travel together!"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🎒",
+        "🥭",
+        "🏫"
+       ],
+       "motion": "float",
+       "caption": "Daily travel"
+      },
+      {
+       "items": [
+        "🚲",
+        "🚌",
+        "🚆",
+        "✈️"
+       ],
+       "motion": "chain",
+       "caption": "Moving around"
+      },
+      {
+       "items": [
+        "🛣️",
+        "🌊",
+        "☁️"
+       ],
+       "motion": "pulse",
+       "caption": "Types of transport"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Travel on Land",
+    "narration": [
+     "Land transport is the most common way to travel in our cities and villages.",
+     "Bicycles and auto-rickshaws are perfect for short trips inside your busy neighborhood.",
+     "For long distances, we use big buses or fast trains like the Vande Bharat.",
+     "Trains are great because they carry many people across our huge country."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🚗",
+        "🚲",
+        "🚜"
+       ],
+       "motion": "push",
+       "caption": "Land transport"
+      },
+      {
+       "items": [
+        "🚲",
+        "🛺"
+       ],
+       "motion": "push",
+       "caption": "Short trips"
+      },
+      {
+       "items": [
+        "🚌",
+        "🚆"
+       ],
+       "motion": "push",
+       "caption": "Long distances"
+      },
+      {
+       "items": [
+        "🚆",
+        "🇮🇳"
+       ],
+       "motion": "push",
+       "caption": "Indian Railways"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Water and Air",
+    "narration": [
+     "Do you live near a river? People use boats and ferries to cross the water.",
+     "Airplanes are the fastest way to travel if you need to go very far away.",
+     "Imagine flying from Delhi to Kochi in just a few hours instead of days!"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🛶",
+        "🌊"
+       ],
+       "motion": "float",
+       "caption": "Water travel"
+      },
+      {
+       "items": [
+        "✈️",
+        "☁️"
+       ],
+       "motion": "rise",
+       "caption": "Air travel"
+      },
+      {
+       "items": [
+        "📍",
+        "✈️",
+        "📍"
+       ],
+       "motion": "rise",
+       "caption": "Fast travel"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Quick Recap",
+    "narration": [
+     "We use land vehicles, boats for water, and airplanes to fly high.",
+     "Each transport type helps us reach our friends, family, and schools every single day.",
+     "Think about it: If you could travel anywhere tomorrow, would you go by train or plane?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🛣️",
+        "🌊",
+        "✈️"
+       ],
+       "motion": "chain",
+       "caption": "Three types"
+      },
+      {
+       "items": [
+        "🏠",
+        "🏫",
+        "🤝"
+       ],
+       "motion": "pulse",
+       "caption": "Connecting us"
+      },
+      {
+       "items": [
+        "🤔",
+        "🚆",
+        "✈️"
+       ],
+       "motion": "float",
+       "caption": "Your choice"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Occupations: Artisans": {
+  "id": "lib-social-studies-g2-occupations-artisans",
+  "topic": "Occupations: Artisans",
+  "title": "Making Things By Hand",
+  "icon": "🎨",
+  "scenes": [
+   {
+    "title": "Who Makes Your Things",
+    "narration": [
+     "Look at the colorful clay pot on your kitchen table.",
+     "Have you ever wondered how it was made?",
+     "It was created by a talented person called an artisan."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏺"
+       ],
+       "motion": "float",
+       "caption": "Clay pot"
+      },
+      {
+       "items": [
+        "🤔"
+       ],
+       "motion": "pulse",
+       "caption": "Curious question"
+      },
+      {
+       "items": [
+        "👩‍🎨"
+       ],
+       "motion": "rise",
+       "caption": "Meet artisans"
+      }
+     ]
+    }
+   },
+   {
+    "title": "What Do Artisans Do",
+    "narration": [
+     "Artisans are skilled workers who make things by hand.",
+     "They use special tools to turn simple materials into art.",
+     "They spend years practicing to get their work just right."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🙌"
+       ],
+       "motion": "chain",
+       "caption": "Handmade skills"
+      },
+      {
+       "items": [
+        "🔨",
+        "🪚",
+        "🖌️"
+       ],
+       "motion": "push",
+       "caption": "Using tools"
+      },
+      {
+       "items": [
+        "⏳",
+        "⭐"
+       ],
+       "motion": "grow",
+       "caption": "Lots of practice"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Weaver at Work",
+    "narration": [
+     "Let us visit a weaver in a village in India.",
+     "First, the weaver gathers soft, colorful cotton threads.",
+     "Then, they move the loom back and forth to weave fabric.",
+     "Finally, a beautiful saree is ready to be worn."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "🏠"
+       ],
+       "motion": "float",
+       "caption": "Visiting weaver"
+      },
+      {
+       "items": [
+        "🧵",
+        "🧶"
+       ],
+       "motion": "pull",
+       "caption": "Gathering threads"
+      },
+      {
+       "items": [
+        "🧺",
+        "↔️"
+       ],
+       "motion": "push",
+       "caption": "Weaving cloth"
+      },
+      {
+       "items": [
+        "👗"
+       ],
+       "motion": "rise",
+       "caption": "Finished saree"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Why Artisans Are Special",
+    "narration": [
+     "Artisans bring beauty and culture to our daily lives.",
+     "Remember, every handmade item tells a special story.",
+     "Think about it: What is one handmade thing in your house?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "✨",
+        "🌍"
+       ],
+       "motion": "pulse",
+       "caption": "Adding beauty"
+      },
+      {
+       "items": [
+        "📖"
+       ],
+       "motion": "float",
+       "caption": "Special stories"
+      },
+      {
+       "items": [
+        "🏠",
+        "❓"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Transport and Communication: Public Transport": {
+  "id": "lib-social-studies-g2-transport-and-communication-public-transport",
+  "topic": "Transport and Communication: Public Transport",
+  "title": "How We Travel Together",
+  "icon": "🚌",
+  "scenes": [
+   {
+    "title": "The Big Red Bus",
+    "narration": [
+     "Have you ever seen a big bus full of people in your city?",
+     "Why do so many people ride the bus instead of driving cars?",
+     "Let us find out how public transport helps us move around India."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🚌",
+        "👥"
+       ],
+       "motion": "float",
+       "caption": "Public Transport"
+      },
+      {
+       "items": [
+        "🚗",
+        "🚫",
+        "🚌",
+        "✅"
+       ],
+       "motion": "pulse",
+       "caption": "Saving Space"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🗺️",
+        "🚉"
+       ],
+       "motion": "chain",
+       "caption": "Moving Together"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Sharing The Ride",
+    "narration": [
+     "Public transport means vehicles that anyone can pay a small ticket price to ride.",
+     "Buses, local trains, and the Metro are all ways we share our travel.",
+     "By sharing, we use less fuel and keep our air cleaner for everyone."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🎫",
+        "₹",
+        "🚌"
+       ],
+       "motion": "chain",
+       "caption": "Buying Tickets"
+      },
+      {
+       "items": [
+        "🚌",
+        "🚆",
+        "🚇"
+       ],
+       "motion": "chain",
+       "caption": "Many Options"
+      },
+      {
+       "items": [
+        "🌳",
+        "💨",
+        "✨"
+       ],
+       "motion": "rise",
+       "caption": "Cleaner Air"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Trip to School",
+    "narration": [
+     "Aarav walks to the bus stop with his school bag.",
+     "He pays ten rupees and finds a seat next to his friend.",
+     "The bus driver takes them safely through the busy market streets.",
+     "Aarav arrives at school on time and ready to learn."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "🎒",
+        "🛑"
+       ],
+       "motion": "push",
+       "caption": "Bus Stop"
+      },
+      {
+       "items": [
+        "₹",
+        "10",
+        "💺",
+        "👦"
+       ],
+       "motion": "chain",
+       "caption": "Pay And Sit"
+      },
+      {
+       "items": [
+        "🚌",
+        "👨‍✈️",
+        "🏙️"
+       ],
+       "motion": "float",
+       "caption": "Safe Travel"
+      },
+      {
+       "items": [
+        "🏫",
+        "⏰",
+        "📚"
+       ],
+       "motion": "grow",
+       "caption": "Ready School"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Summing It Up",
+    "narration": [
+     "Public transport is shared, cheap, and good for our environment.",
+     "Remember to always queue nicely and be polite to others on board.",
+     "Think about it: What would your neighborhood look like if everyone drove their own car?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👥",
+        "💰",
+        "🌍"
+       ],
+       "motion": "pulse",
+       "caption": "Why It Matters"
+      },
+      {
+       "items": [
+        "🚶",
+        "🚶",
+        "🤝"
+       ],
+       "motion": "chain",
+       "caption": "Be Kind"
+      },
+      {
+       "items": [
+        "🚗",
+        "🚗",
+        "🚗",
+        "🛑"
+       ],
+       "motion": "fall",
+       "caption": "Think About It"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Transport and Communication: Telephone": {
+  "id": "lib-social-studies-g2-transport-and-communication-telephone",
+  "topic": "Transport and Communication: Telephone",
+  "title": "How Telephones Connect Us",
+  "icon": "☎️",
+  "scenes": [
+   {
+    "title": "The Mystery of Talking",
+    "narration": [
+     "Have you ever wondered how you talk to Grandma far away in Chennai?",
+     "We use a telephone to send our voice across many kilometers.",
+     "It is like a magic bridge for our voices."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏠",
+        "👧",
+        "💭"
+       ],
+       "motion": "pulse",
+       "caption": "Wondering how"
+      },
+      {
+       "items": [
+        "☎️",
+        "🌍"
+       ],
+       "motion": "float",
+       "caption": "Using telephones"
+      },
+      {
+       "items": [
+        "🌉",
+        "🗣️"
+       ],
+       "motion": "grow",
+       "caption": "Voice bridge"
+      }
+     ]
+    }
+   },
+   {
+    "title": "How the Sound Travels",
+    "narration": [
+     "When you speak, your voice turns into tiny electrical signals.",
+     "These signals travel very fast through wires or through the air.",
+     "Then, the other phone turns those signals back into sound."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👄",
+        "⚡"
+       ],
+       "motion": "chain",
+       "caption": "Electrical signals"
+      },
+      {
+       "items": [
+        "➰",
+        "💨"
+       ],
+       "motion": "push",
+       "caption": "Fast travel"
+      },
+      {
+       "items": [
+        "⚡",
+        "🔊"
+       ],
+       "motion": "pull",
+       "caption": "Sound return"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Call to Grandma",
+    "narration": [
+     "Aarav dials his grandmother's number on his mobile phone.",
+     "The signal zips through invisible waves to reach her home.",
+     "Grandma hears Aarav say hello and smiles happily."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "📱",
+        "🔢"
+       ],
+       "motion": "pulse",
+       "caption": "Dialing number"
+      },
+      {
+       "items": [
+        "📡",
+        "🏡"
+       ],
+       "motion": "rise",
+       "caption": "Invisible waves"
+      },
+      {
+       "items": [
+        "👵",
+        "😊",
+        "📞"
+       ],
+       "motion": "float",
+       "caption": "Happy connection"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Key Points to Remember",
+    "narration": [
+     "Telephones help us talk to people far away instantly.",
+     "Our voice travels as signals through wires or air.",
+     "Think about it: How did people send messages before phones?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "☎️",
+        "🤝"
+       ],
+       "motion": "chain",
+       "caption": "Instant talking"
+      },
+      {
+       "items": [
+        "⚡",
+        "➰"
+       ],
+       "motion": "chain",
+       "caption": "Signal path"
+      },
+      {
+       "items": [
+        "📜",
+        "✉️",
+        "❓"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Transport and Communication: Postal Services": {
+  "id": "lib-social-studies-g2-transport-and-communication-postal-services",
+  "topic": "Transport and Communication: Postal Services",
+  "title": "How a Letter Travels Home",
+  "icon": "✉️",
+  "scenes": [
+   {
+    "title": "Writing a Surprise Letter",
+    "narration": [
+     "Have you ever sent a surprise letter to your friend in another city?",
+     "How does a piece of paper travel so far to reach someone?",
+     "Let us follow the journey of a letter from Delhi to Chennai."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "✍️",
+        "📄",
+        "✉️"
+       ],
+       "motion": "pulse",
+       "caption": "Writing letters"
+      },
+      {
+       "items": [
+        "🤔",
+        "🌍",
+        "📬"
+       ],
+       "motion": "float",
+       "caption": "The big question"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "📍",
+        "📍"
+       ],
+       "motion": "chain",
+       "caption": "Starting the journey"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Post Office Journey",
+    "narration": [
+     "First, you drop your letter into the red post box at the corner.",
+     "A postman collects it and takes it to the local post office.",
+     "Workers sort the letters by the address pin code written on them.",
+     "Each letter is stamped to show where it started its long trip."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "✉️",
+        "📮"
+       ],
+       "motion": "fall",
+       "caption": "Post box"
+      },
+      {
+       "items": [
+        "👨‍💼",
+        "✉️",
+        "🏤"
+       ],
+       "motion": "push",
+       "caption": "Collection"
+      },
+      {
+       "items": [
+        "🔢",
+        "✉️",
+        "🔍"
+       ],
+       "motion": "pulse",
+       "caption": "Sorting"
+      },
+      {
+       "items": [
+        "📅",
+        "✉️",
+        "🔨"
+       ],
+       "motion": "push",
+       "caption": "Stamping"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Traveling Across India",
+    "narration": [
+     "The letters are put into big bags and loaded onto a fast train.",
+     "The train speeds across India to reach the city of Chennai.",
+     "At the Chennai post office, another postman gets your letter.",
+     "He carries it safely to your friend’s house in his bag."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👜",
+        "🚆"
+       ],
+       "motion": "chain",
+       "caption": "Loading bags"
+      },
+      {
+       "items": [
+        "🚆",
+        "💨",
+        "🇮🇳"
+       ],
+       "motion": "push",
+       "caption": "Fast travel"
+      },
+      {
+       "items": [
+        "🏤",
+        "👨‍💼",
+        "✉️"
+       ],
+       "motion": "push",
+       "caption": "Arrival"
+      },
+      {
+       "items": [
+        "🚲",
+        "👨‍💼",
+        "🏠"
+       ],
+       "motion": "push",
+       "caption": "Final delivery"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Wrapping Up Our Trip",
+    "narration": [
+     "Post offices help us share news and love with people far away.",
+     "Remember, the pin code and address must be written clearly.",
+     "Think about it: who would you like to write a letter to today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "💌",
+        "❤️",
+        "🌍"
+       ],
+       "motion": "grow",
+       "caption": "Connecting people"
+      },
+      {
+       "items": [
+        "✍️",
+        "🔢",
+        "🏠"
+       ],
+       "motion": "pulse",
+       "caption": "Key tips"
+      },
+      {
+       "items": [
+        "💭",
+        "✏️",
+        "🙋‍♂️"
+       ],
+       "motion": "float",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Transport and Communication: Internet Basics": {
+  "id": "lib-social-studies-g2-transport-and-communication-internet-basics",
+  "topic": "Transport and Communication: Internet Basics",
+  "title": "How Does The Internet Work",
+  "icon": "🌐",
+  "scenes": [
+   {
+    "title": "The Magic Screen",
+    "narration": [
+     "Have you ever wondered how your tablet shows your favorite cartoon instantly?",
+     "It happens because of a super fast network called the internet.",
+     "Let us see how it connects our homes to the whole world."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📱",
+        "📺"
+       ],
+       "motion": "pulse",
+       "caption": "Magic screens"
+      },
+      {
+       "items": [
+        "🌐",
+        "⚡"
+       ],
+       "motion": "float",
+       "caption": "The internet"
+      },
+      {
+       "items": [
+        "🏠",
+        "🌍",
+        "🔗"
+       ],
+       "motion": "chain",
+       "caption": "Global connection"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Invisible Web of Wires",
+    "narration": [
+     "The internet is like a giant spider web of cables.",
+     "These long wires run deep under the ground and even under oceans.",
+     "Data travels through these wires as tiny pulses of light.",
+     "Finally, the signal reaches your home router to give you Wi-Fi."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🕸️",
+        "🔌"
+       ],
+       "motion": "chain",
+       "caption": "Invisible web"
+      },
+      {
+       "items": [
+        "🕳️",
+        "🌊",
+        "🧵"
+       ],
+       "motion": "fall",
+       "caption": "Underground cables"
+      },
+      {
+       "items": [
+        "💡",
+        "⚡",
+        "🏃"
+       ],
+       "motion": "push",
+       "caption": "Fast data"
+      },
+      {
+       "items": [
+        "📡",
+        "🏠"
+       ],
+       "motion": "rise",
+       "caption": "Wi-Fi signal"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Sending a Digital Letter",
+    "narration": [
+     "Imagine you want to send a photo of a yummy Dosa to a friend.",
+     "Your device breaks the photo into tiny digital pieces.",
+     "These pieces travel through wires to your friend's phone very fast.",
+     "The friend's phone puts the pieces back together to show the photo."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📸",
+        "😋",
+        "🥞"
+       ],
+       "motion": "pulse",
+       "caption": "Tasty photo"
+      },
+      {
+       "items": [
+        "🧩",
+        "📱"
+       ],
+       "motion": "fall",
+       "caption": "Digital pieces"
+      },
+      {
+       "items": [
+        "⚡",
+        "🧵",
+        "📱"
+       ],
+       "motion": "chain",
+       "caption": "Sending data"
+      },
+      {
+       "items": [
+        "🧩",
+        "🖼️",
+        "😊"
+       ],
+       "motion": "grow",
+       "caption": "Rebuilding image"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Wrapping Up",
+    "narration": [
+     "The internet uses wires and light to share information globally.",
+     "It connects our family, friends, and schools across India and beyond.",
+     "Think about it: what is the most fun thing you have ever learned online?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌐",
+        "🧵",
+        "💡"
+       ],
+       "motion": "float",
+       "caption": "Fast sharing"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🤝",
+        "🏫"
+       ],
+       "motion": "pulse",
+       "caption": "Staying connected"
+      },
+      {
+       "items": [
+        "🤔",
+        "💭",
+        "📚"
+       ],
+       "motion": "rise",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Maps and Directions: Near and Far": {
+  "id": "lib-social-studies-g2-maps-and-directions-near-and-far",
+  "topic": "Maps and Directions: Near and Far",
+  "title": "Finding Our Way Around",
+  "icon": "🗺️",
+  "scenes": [
+   {
+    "title": "Where are things?",
+    "narration": [
+     "Have you ever wondered how to find your way to the park?",
+     "We use maps to see where places are.",
+     "Maps show us if a place is near or far."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏃",
+        "🌳"
+       ],
+       "motion": "pulse",
+       "caption": "Finding the way"
+      },
+      {
+       "items": [
+        "🗺️",
+        "🏠"
+       ],
+       "motion": "float",
+       "caption": "Using maps"
+      },
+      {
+       "items": [
+        "📍",
+        "↔️"
+       ],
+       "motion": "push",
+       "caption": "Near and far"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Understanding Directions",
+    "narration": [
+     "We use directions like left, right, and straight.",
+     "Near means you can walk there quickly.",
+     "Far means you need a bus or a train."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "⬅️",
+        "➡️",
+        "⬆️"
+       ],
+       "motion": "chain",
+       "caption": "Following directions"
+      },
+      {
+       "items": [
+        "🚶",
+        "🏫"
+       ],
+       "motion": "grow",
+       "caption": "Close by"
+      },
+      {
+       "items": [
+        "🚌",
+        "🚂"
+       ],
+       "motion": "rise",
+       "caption": "Long distance"
+      }
+     ]
+    }
+   },
+   {
+    "title": "An Afternoon in Delhi",
+    "narration": [
+     "Let's look at a map of a neighborhood in Delhi.",
+     "Your house is near the vegetable market.",
+     "The big India Gate is far away.",
+     "You walk to the market but drive to the gate."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "📍"
+       ],
+       "motion": "pulse",
+       "caption": "Delhi map"
+      },
+      {
+       "items": [
+        "🏠",
+        "🍎",
+        "🥦"
+       ],
+       "motion": "float",
+       "caption": "Nearby market"
+      },
+      {
+       "items": [
+        "🏛️",
+        "🛣️"
+       ],
+       "motion": "push",
+       "caption": "Far landmark"
+      },
+      {
+       "items": [
+        "👟",
+        "🚗"
+       ],
+       "motion": "chain",
+       "caption": "Different travel"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Time to Remember",
+    "narration": [
+     "Maps help us find our way home.",
+     "Near is close and far needs a ride.",
+     "Think about it: what is one place near your school?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🗺️",
+        "🏠"
+       ],
+       "motion": "float",
+       "caption": "Map helper"
+      },
+      {
+       "items": [
+        "📍",
+        "🚗"
+       ],
+       "motion": "pulse",
+       "caption": "Distance rules"
+      },
+      {
+       "items": [
+        "🏫",
+        "🤔"
+       ],
+       "motion": "rise",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Maps and Directions: North, South, East, West": {
+  "id": "lib-social-studies-g2-maps-and-directions-north-south-east-west",
+  "topic": "Maps and Directions: North, South, East, West",
+  "title": "Finding Our Way With Maps",
+  "icon": "🧭",
+  "scenes": [
+   {
+    "title": "Which Way Do We Go",
+    "narration": [
+     "Have you ever been lost in a big market in Delhi?",
+     "How do we know which way to turn to get home?",
+     "Today we will learn how maps help us find our way."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🛒",
+        "👦",
+        "👧"
+       ],
+       "motion": "float",
+       "caption": "Lost market"
+      },
+      {
+       "items": [
+        "🏠",
+        "❓"
+       ],
+       "motion": "pulse",
+       "caption": "Finding home"
+      },
+      {
+       "items": [
+        "🗺️",
+        "🧭"
+       ],
+       "motion": "chain",
+       "caption": "Using maps"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Four Main Directions",
+    "narration": [
+     "The sun rises every morning in the East.",
+     "If you point your right hand to the East, the West is on your left.",
+     "North is always in front of you, and South is behind you.",
+     "These are the four main directions we use to travel."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌅",
+        "☀️"
+       ],
+       "motion": "rise",
+       "caption": "Rising sun"
+      },
+      {
+       "items": [
+        "👉",
+        "👈"
+       ],
+       "motion": "push",
+       "caption": "East and West"
+      },
+      {
+       "items": [
+        "⬆️",
+        "⬇️"
+       ],
+       "motion": "pulse",
+       "caption": "North and South"
+      },
+      {
+       "items": [
+        "🧭",
+        "🌍"
+       ],
+       "motion": "float",
+       "caption": "Cardinal directions"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Reading a Map of India",
+    "narration": [
+     "Look at a map of India to find your state.",
+     "Kashmir is way up North, near the high mountains.",
+     "Kanyakumari is way down South, where the ocean meets the land.",
+     "Maps use symbols to show us exactly where cities are located."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "📍"
+       ],
+       "motion": "pulse",
+       "caption": "India map"
+      },
+      {
+       "items": [
+        "🏔️",
+        "🇮🇳"
+       ],
+       "motion": "grow",
+       "caption": "Northern India"
+      },
+      {
+       "items": [
+        "🌊",
+        "🏝️"
+       ],
+       "motion": "fall",
+       "caption": "Southern India"
+      },
+      {
+       "items": [
+        "📍",
+        "🗺️"
+       ],
+       "motion": "chain",
+       "caption": "Map symbols"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Time to Recap",
+    "narration": [
+     "Remember, maps help us find places using North, South, East, and West.",
+     "The sun always gives us a clue by rising in the East.",
+     "Think about it: If you face the rising sun, what direction is behind you?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🧭",
+        "🗺️"
+       ],
+       "motion": "chain",
+       "caption": "Map review"
+      },
+      {
+       "items": [
+        "☀️",
+        "🌅"
+       ],
+       "motion": "rise",
+       "caption": "Sun clue"
+      },
+      {
+       "items": [
+        "🤔",
+        "☀️"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Maps and Directions: Left and Right": {
+  "id": "lib-social-studies-g2-maps-and-directions-left-and-right",
+  "topic": "Maps and Directions: Left and Right",
+  "title": "Finding Our Way Around",
+  "icon": "🗺️",
+  "scenes": [
+   {
+    "title": "Where are we going",
+    "narration": [
+     "Have you ever been lost in a big park or a busy market?",
+     "Rohan is trying to find his way to the school gate.",
+     "How can we tell him which way to turn?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌳",
+        "🛍️",
+        "😕"
+       ],
+       "motion": "float",
+       "caption": "Lost"
+      },
+      {
+       "items": [
+        "👦",
+        "🎒",
+        "🏫"
+       ],
+       "motion": "pulse",
+       "caption": "Rohan"
+      },
+      {
+       "items": [
+        "❓",
+        "⬅️",
+        "➡️"
+       ],
+       "motion": "push",
+       "caption": "Directions"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Learning Left and Right",
+    "narration": [
+     "Look at your own two hands right now.",
+     "Your right hand is the one you usually use to write.",
+     "Your other hand is your left hand.",
+     "Imagine holding a cricket bat or a spoon to know which is which."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "✋",
+        "🤚"
+       ],
+       "motion": "pulse",
+       "caption": "Your hands"
+      },
+      {
+       "items": [
+        "✍️",
+        "🤚"
+       ],
+       "motion": "grow",
+       "caption": "Right hand"
+      },
+      {
+       "items": [
+        "✋"
+       ],
+       "motion": "grow",
+       "caption": "Left hand"
+      },
+      {
+       "items": [
+        "🏏",
+        "🥄"
+       ],
+       "motion": "chain",
+       "caption": "Practice"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Using a Map",
+    "narration": [
+     "Rohan sees a simple map of his neighborhood.",
+     "To reach the park, he must turn right at the red building.",
+     "Then he turns left at the big banyan tree.",
+     "Following the map helps him arrive safely!"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🗺️",
+        "🏠",
+        "🛣️"
+       ],
+       "motion": "float",
+       "caption": "Map"
+      },
+      {
+       "items": [
+        "🏢",
+        "➡️",
+        "🌳"
+       ],
+       "motion": "push",
+       "caption": "Turn right"
+      },
+      {
+       "items": [
+        "🌳",
+        "⬅️",
+        "🚶"
+       ],
+       "motion": "push",
+       "caption": "Turn left"
+      },
+      {
+       "items": [
+        "✅",
+        "🏫"
+       ],
+       "motion": "chain",
+       "caption": "Success"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Summary and Thinking",
+    "narration": [
+     "Remember, your right hand helps you find your way.",
+     "Maps use symbols to show us where to go.",
+     "Think about it: Can you draw a map from your front door to your kitchen?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🤚",
+        "🗺️"
+       ],
+       "motion": "pulse",
+       "caption": "Right side"
+      },
+      {
+       "items": [
+        "📍",
+        "🗺️"
+       ],
+       "motion": "float",
+       "caption": "Symbols"
+      },
+      {
+       "items": [
+        "🏠",
+        "🚪",
+        "🥘"
+       ],
+       "motion": "rise",
+       "caption": "Your turn"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Maps and Directions: Simple Maps": {
+  "id": "lib-social-studies-g2-maps-and-directions-simple-maps",
+  "topic": "Maps and Directions: Simple Maps",
+  "title": "Finding Our Way With Maps",
+  "icon": "🗺️",
+  "scenes": [
+   {
+    "title": "Where are we going",
+    "narration": [
+     "Have you ever wondered how to find your way to a friend's house?",
+     "Today, we will learn how to read a simple map.",
+     "A map is a drawing that shows us where places are."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏠",
+        "🧒",
+        "❓"
+       ],
+       "motion": "pulse",
+       "caption": "Finding the path"
+      },
+      {
+       "items": [
+        "🗺️",
+        "📍"
+       ],
+       "motion": "float",
+       "caption": "Map basics"
+      },
+      {
+       "items": [
+        "🖍️",
+        "📄",
+        "🏙️"
+       ],
+       "motion": "grow",
+       "caption": "Drawing places"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Parts of a map",
+    "narration": [
+     "Look for the compass rose that shows North, South, East, and West.",
+     "The map key explains what the tiny symbols mean.",
+     "Blue lines on a map often show us a river.",
+     "Black lines usually show the roads we walk on."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🧭",
+        "⬆️",
+        "⬇️",
+        "⬅️",
+        "➡️"
+       ],
+       "motion": "pulse",
+       "caption": "The compass"
+      },
+      {
+       "items": [
+        "🔑",
+        "🌲",
+        "🏫",
+        "🏥"
+       ],
+       "motion": "chain",
+       "caption": "Map key"
+      },
+      {
+       "items": [
+        "〰️",
+        "💧",
+        "🏞️"
+       ],
+       "motion": "float",
+       "caption": "Water symbols"
+      },
+      {
+       "items": [
+        "🛣️",
+        "🚶"
+       ],
+       "motion": "push",
+       "caption": "Roads"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A trip in Delhi",
+    "narration": [
+     "Let us look at a map of a park in Delhi.",
+     "First, find the gate on the map near the swings.",
+     "Follow the path North to reach the big water fountain.",
+     "Turn East to find the ice cream stall."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "🌳",
+        "🗺️"
+       ],
+       "motion": "float",
+       "caption": "Delhi park"
+      },
+      {
+       "items": [
+        "🚪",
+        "🛝"
+       ],
+       "motion": "pulse",
+       "caption": "Starting point"
+      },
+      {
+       "items": [
+        "⬆️",
+        "⛲"
+       ],
+       "motion": "push",
+       "caption": "Moving North"
+      },
+      {
+       "items": [
+        "➡️",
+        "🍦"
+       ],
+       "motion": "push",
+       "caption": "Finding treats"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Reviewing what we learned",
+    "narration": [
+     "Maps use symbols and a compass to show directions.",
+     "Always check the key to understand the map drawing.",
+     "Think about it, what would you draw to represent your school?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🗺️",
+        "📍",
+        "🧭"
+       ],
+       "motion": "chain",
+       "caption": "Key recap"
+      },
+      {
+       "items": [
+        "🔑",
+        "📖"
+       ],
+       "motion": "pulse",
+       "caption": "Read the key"
+      },
+      {
+       "items": [
+        "🏫",
+        "🤔"
+       ],
+       "motion": "rise",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Our Environment: Clean Surroundings": {
+  "id": "lib-social-studies-g2-our-environment-clean-surroundings",
+  "topic": "Our Environment: Clean Surroundings",
+  "title": "Keeping Our Neighborhood Clean",
+  "icon": "🧹",
+  "scenes": [
+   {
+    "title": "A Messy Park",
+    "narration": [
+     "Look at this park filled with candy wrappers and plastic bottles.",
+     "Have you ever wondered why we must keep our surroundings clean?",
+     "Let us learn how a clean home makes a happy world."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌳",
+        "🍬",
+        "🥤"
+       ],
+       "motion": "float",
+       "caption": "Messy park"
+      },
+      {
+       "items": [
+        "🤔",
+        "🌍"
+       ],
+       "motion": "pulse",
+       "caption": "Why clean"
+      },
+      {
+       "items": [
+        "🏠",
+        "✨",
+        "😊"
+       ],
+       "motion": "grow",
+       "caption": "Happy world"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Why Clean Matters",
+    "narration": [
+     "Germs love to hide in piles of garbage and dirt.",
+     "Dirty places can make us feel sick and sneeze a lot.",
+     "But clean streets help us stay healthy and strong.",
+     "We must pick up trash to keep our air fresh."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🦠",
+        "🗑️",
+        "🤢"
+       ],
+       "motion": "fall",
+       "caption": "Germs hide"
+      },
+      {
+       "items": [
+        "🤧",
+        "🤒"
+       ],
+       "motion": "pulse",
+       "caption": "Feeling sick"
+      },
+      {
+       "items": [
+        "🍎",
+        "🏃",
+        "✨"
+       ],
+       "motion": "rise",
+       "caption": "Staying healthy"
+      },
+      {
+       "items": [
+        "🌬️",
+        "🍃"
+       ],
+       "motion": "push",
+       "caption": "Fresh air"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Cleaning Up Together",
+    "narration": [
+     "Rohan sees an empty juice box on the ground.",
+     "He picks it up and puts it in the blue bin.",
+     "Now the park looks beautiful for everyone to play."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "🧃",
+        "⬇️"
+       ],
+       "motion": "chain",
+       "caption": "Spot trash"
+      },
+      {
+       "items": [
+        "♻️",
+        "🗑️"
+       ],
+       "motion": "pull",
+       "caption": "Recycle bin"
+      },
+      {
+       "items": [
+        "⚽",
+        "🌳",
+        "🌻"
+       ],
+       "motion": "grow",
+       "caption": "Beautiful park"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Thinking",
+    "narration": [
+     "Remember to throw trash in the bin, not the floor.",
+     "Clean places stop germs and keep our earth smiling.",
+     "Think about it, what can you clean in your room today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🚫",
+        "🚮"
+       ],
+       "motion": "push",
+       "caption": "Use bins"
+      },
+      {
+       "items": [
+        "🌍",
+        "😄"
+       ],
+       "motion": "pulse",
+       "caption": "Happy earth"
+      },
+      {
+       "items": [
+        "🏠",
+        "🧹",
+        "✨"
+       ],
+       "motion": "float",
+       "caption": "Your turn"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Maps and Directions: Map Symbols": {
+  "id": "lib-social-studies-g2-maps-and-directions-map-symbols",
+  "topic": "Maps and Directions: Map Symbols",
+  "title": "Finding Treasure With Map Symbols",
+  "icon": "🗺️",
+  "scenes": [
+   {
+    "title": "The Hidden Secret Map",
+    "narration": [
+     "Have you ever wondered how a map fits a whole city on one piece of paper?",
+     "Look at this map of Ananya's neighborhood in Delhi.",
+     "How do we know where the park or the school is without getting lost?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🗺️",
+        "🏠",
+        "🏫"
+       ],
+       "motion": "float",
+       "caption": "City Map"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🗺️"
+       ],
+       "motion": "pulse",
+       "caption": "Neighborhood Map"
+      },
+      {
+       "items": [
+        "🌳",
+        "🏫",
+        "❓"
+       ],
+       "motion": "pulse",
+       "caption": "Finding Places"
+      }
+     ]
+    }
+   },
+   {
+    "title": "What Are Map Symbols",
+    "narration": [
+     "Maps use tiny pictures called symbols to show real things.",
+     "A symbol is like a shortcut for our eyes.",
+     "Instead of drawing a whole tree, we use a simple green circle.",
+     "These symbols help us read maps quickly and easily."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🖼️",
+        "📍"
+       ],
+       "motion": "chain",
+       "caption": "Map Symbols"
+      },
+      {
+       "items": [
+        "⚡",
+        "👁️"
+       ],
+       "motion": "push",
+       "caption": "Visual Shortcut"
+      },
+      {
+       "items": [
+        "🌳",
+        "🟢"
+       ],
+       "motion": "chain",
+       "caption": "Symbol Meaning"
+      },
+      {
+       "items": [
+        "📖",
+        "🗺️"
+       ],
+       "motion": "float",
+       "caption": "Easy Reading"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Ananya's Map Adventure",
+    "narration": [
+     "Ananya wants to walk from her house to the ice cream shop.",
+     "She spots a blue wavy line symbol for the Yamuna river.",
+     "She sees a red cross symbol showing the local hospital.",
+     "Finally, she finds the triangle symbol for the ice cream shop."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏠",
+        "🚶",
+        "🍦"
+       ],
+       "motion": "chain",
+       "caption": "Path Planning"
+      },
+      {
+       "items": [
+        "🌊",
+        "💙"
+       ],
+       "motion": "pulse",
+       "caption": "River Symbol"
+      },
+      {
+       "items": [
+        "🏥",
+        "➕"
+       ],
+       "motion": "pulse",
+       "caption": "Hospital Symbol"
+      },
+      {
+       "items": [
+        "🍦",
+        "🔺"
+       ],
+       "motion": "chain",
+       "caption": "Destination Found"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Mapping It All Out",
+    "narration": [
+     "Symbols stand for real places like parks, rivers, and schools.",
+     "Always check the map key to see what each symbol means.",
+     "Think about it: What symbol would you draw for your own house?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌳",
+        "🌊",
+        "🏫"
+       ],
+       "motion": "float",
+       "caption": "Key Symbols"
+      },
+      {
+       "items": [
+        "🔑",
+        "🗺️"
+       ],
+       "motion": "pulse",
+       "caption": "Map Key"
+      },
+      {
+       "items": [
+        "🏠",
+        "✏️",
+        "🤔"
+       ],
+       "motion": "rise",
+       "caption": "Your Turn"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Our Environment: Waste Management": {
+  "id": "lib-social-studies-g2-our-environment-waste-management",
+  "topic": "Our Environment: Waste Management",
+  "title": "Keeping Our Neighborhood Clean",
+  "icon": "♻️",
+  "scenes": [
+   {
+    "title": "The Trash Mystery",
+    "narration": [
+     "Look at your dustbin after lunch, where does all that trash go?",
+     "When we throw things away, they do not just disappear forever.",
+     "Let us learn how to keep our beautiful India clean and green."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍎",
+        "📦",
+        "🗑️"
+       ],
+       "motion": "pulse",
+       "caption": "Trash mystery"
+      },
+      {
+       "items": [
+        "🚚",
+        "🌍"
+       ],
+       "motion": "float",
+       "caption": "Not disappearing"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🌳",
+        "✨"
+       ],
+       "motion": "grow",
+       "caption": "Clean India"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Sorting Our Waste",
+    "narration": [
+     "First, we separate wet waste like leftover fruit peels and food.",
+     "Next, we put dry waste like paper, plastic, and glass together.",
+     "Wet waste turns into soil to help our garden plants grow.",
+     "Dry waste goes to factories to be made into new things."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍌",
+        "🍎",
+        "🟢"
+       ],
+       "motion": "chain",
+       "caption": "Wet waste"
+      },
+      {
+       "items": [
+        "📄",
+        "🥤",
+        "🔵"
+       ],
+       "motion": "chain",
+       "caption": "Dry waste"
+      },
+      {
+       "items": [
+        "🌱",
+        "💩",
+        "🌻"
+       ],
+       "motion": "grow",
+       "caption": "Making compost"
+      },
+      {
+       "items": [
+        "🏭",
+        "♻️",
+        "🎁"
+       ],
+       "motion": "push",
+       "caption": "Recycling"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Example at Home",
+    "narration": [
+     "Rohan ate an orange and put the peel in the green bin.",
+     "Then he rinsed his empty milk carton and put it in the blue bin.",
+     "By sorting, Rohan stops the trash from hurting our local park."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "🍊",
+        "🟢"
+       ],
+       "motion": "fall",
+       "caption": "Green bin"
+      },
+      {
+       "items": [
+        "🥛",
+        "💧",
+        "🔵"
+       ],
+       "motion": "chain",
+       "caption": "Blue bin"
+      },
+      {
+       "items": [
+        "🌳",
+        "⚽",
+        "✅"
+       ],
+       "motion": "float",
+       "caption": "Happy park"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Think",
+    "narration": [
+     "Remember, wet waste helps plants and dry waste becomes new treasures.",
+     "Sorting your trash is a big help to Mother Earth.",
+     "Think about it: what is one thing you can recycle today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌿",
+        "♻️",
+        "📦"
+       ],
+       "motion": "pulse",
+       "caption": "Waste cycle"
+      },
+      {
+       "items": [
+        "🌍",
+        "❤️",
+        "🙌"
+       ],
+       "motion": "rise",
+       "caption": "Big help"
+      },
+      {
+       "items": [
+        "🤔",
+        "💡",
+        "♻️"
+       ],
+       "motion": "pulse",
+       "caption": "Your turn"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "India: National Symbols": {
+  "id": "lib-social-studies-g2-india-national-symbols",
+  "topic": "India: National Symbols",
+  "title": "Our Proud National Symbols",
+  "icon": "🇮🇳",
+  "scenes": [
+   {
+    "title": "A Look Around India",
+    "narration": [
+     "Have you noticed the beautiful peacock dancing in the park?",
+     "India has special symbols that make our country unique.",
+     "Do you know why we chose these specific ones?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🦚",
+        "🌳"
+       ],
+       "motion": "grow",
+       "caption": "National Bird"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "✨"
+       ],
+       "motion": "pulse",
+       "caption": "Our Symbols"
+      },
+      {
+       "items": [
+        "🤔",
+        "💭"
+       ],
+       "motion": "float",
+       "caption": "Curious Minds"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Learning Our National Icons",
+    "narration": [
+     "Our national flower is the lovely pink lotus.",
+     "The Bengal Tiger is our strong national animal.",
+     "The majestic Banyan tree is our national tree.",
+     "These represent the nature of our vast land."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🪷"
+       ],
+       "motion": "grow",
+       "caption": "National Flower"
+      },
+      {
+       "items": [
+        "🐅"
+       ],
+       "motion": "push",
+       "caption": "National Animal"
+      },
+      {
+       "items": [
+        "🌳"
+       ],
+       "motion": "grow",
+       "caption": "National Tree"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🌍"
+       ],
+       "motion": "chain",
+       "caption": "Nature's Pride"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Mango and The River",
+    "narration": [
+     "Think of a yummy, sweet yellow mango in summer.",
+     "It is our favorite fruit from the orchard.",
+     "Then there is the long and holy River Ganga.",
+     "It flows from the Himalayas to the sea."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🥭"
+       ],
+       "motion": "rise",
+       "caption": "National Fruit"
+      },
+      {
+       "items": [
+        "🧺",
+        "🥭"
+       ],
+       "motion": "chain",
+       "caption": "Sweet Mango"
+      },
+      {
+       "items": [
+        "🌊",
+        "🏞️"
+       ],
+       "motion": "fall",
+       "caption": "National River"
+      },
+      {
+       "items": [
+        "🏔️",
+        "🌊"
+       ],
+       "motion": "fall",
+       "caption": "Ganga Journey"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Remembering Our Symbols",
+    "narration": [
+     "We have symbols for our birds, trees, and rivers.",
+     "These help us remember the beauty of India.",
+     "Think about it: which national symbol is your favorite?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🦚",
+        "🌳",
+        "🌊"
+       ],
+       "motion": "chain",
+       "caption": "Recap Symbols"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "❤️"
+       ],
+       "motion": "pulse",
+       "caption": "Love India"
+      },
+      {
+       "items": [
+        "🤔",
+        "✨"
+       ],
+       "motion": "float",
+       "caption": "Your Favorite"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "India: States and Capitals": {
+  "id": "lib-social-studies-g2-india-states-and-capitals",
+  "topic": "India: States and Capitals",
+  "title": "Exploring India's States and Capitals",
+  "icon": "🇮🇳",
+  "scenes": [
+   {
+    "title": "Our Big Beautiful Country",
+    "narration": [
+     "Have you ever traveled on a train across our giant country, India?",
+     "India is so big that we divide it into smaller parts called states.",
+     "Each state has a special city that acts as its main office, called a capital."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🚂",
+        "🇮🇳"
+       ],
+       "motion": "float",
+       "caption": "Train journey"
+      },
+      {
+       "items": [
+        "🗺️",
+        "🧩"
+       ],
+       "motion": "pulse",
+       "caption": "Indian states"
+      },
+      {
+       "items": [
+        "🏛️",
+        "📍"
+       ],
+       "motion": "rise",
+       "caption": "The capital"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Understanding States and Capitals",
+    "narration": [
+     "Think of a state like a room in your house, and the capital is the main room.",
+     "The capital city is where the state leaders work to help everyone.",
+     "India has twenty-eight states, and each one has its own unique capital city."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏠",
+        "🛋️"
+       ],
+       "motion": "grow",
+       "caption": "Room analogy"
+      },
+      {
+       "items": [
+        "👩‍💼",
+        "📋",
+        "🏢"
+       ],
+       "motion": "push",
+       "caption": "Helping people"
+      },
+      {
+       "items": [
+        "🔢",
+        "28",
+        "📍"
+       ],
+       "motion": "chain",
+       "caption": "Twenty-eight states"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Visit to Maharashtra",
+    "narration": [
+     "Let us look at the state of Maharashtra, famous for its yummy vada pav.",
+     "The capital city of Maharashtra is the busy and bright city of Mumbai.",
+     "Leaders meet in Mumbai to make plans for the people of Maharashtra."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🥔",
+        "🍞",
+        "🇮🇳"
+       ],
+       "motion": "float",
+       "caption": "Maharashtra state"
+      },
+      {
+       "items": [
+        "🏙️",
+        "🌊"
+       ],
+       "motion": "rise",
+       "caption": "Mumbai capital"
+      },
+      {
+       "items": [
+        "🤝",
+        "🏛️"
+       ],
+       "motion": "pull",
+       "caption": "State office"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Quick Recap and Think",
+    "narration": [
+     "States are parts of India, and capitals are the main cities where leaders work.",
+     "Remember, every state in our country has its own special capital city.",
+     "Can you find out the name of the capital city of your own state?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "🗺️",
+        "📍"
+       ],
+       "motion": "chain",
+       "caption": "Key points"
+      },
+      {
+       "items": [
+        "✅",
+        "📍",
+        "🇮🇳"
+       ],
+       "motion": "pulse",
+       "caption": "Every state"
+      },
+      {
+       "items": [
+        "❓",
+        "🔎",
+        "🏠"
+       ],
+       "motion": "float",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "India: Important Places": {
+  "id": "lib-social-studies-g2-india-important-places",
+  "topic": "India: Important Places",
+  "title": "Amazing Places Across India",
+  "icon": "🇮🇳",
+  "scenes": [
+   {
+    "title": "The Wonder of India",
+    "narration": [
+     "Have you ever traveled to see a big, beautiful building or a tall mountain?",
+     "Our country, India, is filled with many special places to visit.",
+     "Let's explore some famous landmarks together today!"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🚗",
+        "🏠",
+        "🏔️"
+       ],
+       "motion": "float",
+       "caption": "Travel fun"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🗺️",
+        "📍"
+       ],
+       "motion": "pulse",
+       "caption": "Special places"
+      },
+      {
+       "items": [
+        "🔭",
+        "✨"
+       ],
+       "motion": "rise",
+       "caption": "Let's explore"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Famous Landmarks",
+    "narration": [
+     "In Agra, the Taj Mahal shines bright white like a jewel.",
+     "In Delhi, the India Gate stands tall to honor brave soldiers.",
+     "These places tell us stories about our history.",
+     "They help us remember the past in a fun way."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🕌",
+        "✨"
+       ],
+       "motion": "grow",
+       "caption": "Taj Mahal"
+      },
+      {
+       "items": [
+        "🏛️",
+        "🎖️"
+       ],
+       "motion": "rise",
+       "caption": "India Gate"
+      },
+      {
+       "items": [
+        "📖",
+        "🕰️"
+       ],
+       "motion": "chain",
+       "caption": "Our history"
+      },
+      {
+       "items": [
+        "😊",
+        "🖼️"
+       ],
+       "motion": "float",
+       "caption": "Remembering past"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Natural Beauty",
+    "narration": [
+     "Now, let's look at the cool mountains in the North.",
+     "The Himalayas are home to beautiful snowy peaks.",
+     "In the South, we find warm, sunny beaches with blue water.",
+     "India has everything from tall mountains to sandy shores."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏔️",
+        "❄️"
+       ],
+       "motion": "rise",
+       "caption": "High mountains"
+      },
+      {
+       "items": [
+        "🏔️",
+        "🧥"
+       ],
+       "motion": "grow",
+       "caption": "Himalayas"
+      },
+      {
+       "items": [
+        "🏝️",
+        "🌊",
+        "☀️"
+       ],
+       "motion": "float",
+       "caption": "Sunny beaches"
+      },
+      {
+       "items": [
+        "🏔️",
+        "🏖️"
+       ],
+       "motion": "pulse",
+       "caption": "Diverse land"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Explore",
+    "narration": [
+     "We learned about historic buildings and amazing nature.",
+     "India is a big country with so much to see.",
+     "Think about it: which place would you want to visit first?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏛️",
+        "🏔️",
+        "🌊"
+       ],
+       "motion": "chain",
+       "caption": "Quick recap"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🌍"
+       ],
+       "motion": "pulse",
+       "caption": "Big country"
+      },
+      {
+       "items": [
+        "🤔",
+        "✈️"
+       ],
+       "motion": "float",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Our Environment: Natural and Human-made Things": {
+  "id": "lib-social-studies-g2-our-environment-natural-and-human-made-things",
+  "topic": "Our Environment: Natural and Human-made Things",
+  "title": "Natural or Human-Made?",
+  "icon": "🌳",
+  "scenes": [
+   {
+    "title": "Spotting Things Around Us",
+    "narration": [
+     "Look around your room, what do you see?",
+     "Some things are made by nature, like trees.",
+     "Other things are made by people, like your toys."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🧸",
+        "📚",
+        "🪴"
+       ],
+       "motion": "pulse",
+       "caption": "Look around"
+      },
+      {
+       "items": [
+        "🌳",
+        "🌸"
+       ],
+       "motion": "grow",
+       "caption": "Natural things"
+      },
+      {
+       "items": [
+        "🧩",
+        "🚗",
+        "🧸"
+       ],
+       "motion": "push",
+       "caption": "Human-made things"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Understanding Natural Things",
+    "narration": [
+     "Nature creates things that grow on their own.",
+     "Like the sun, the clouds, and the river Ganges.",
+     "They do not need people to build them.",
+     "They are here for us to enjoy and protect."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌱",
+        "☀️",
+        "☁️"
+       ],
+       "motion": "rise",
+       "caption": "Nature's gift"
+      },
+      {
+       "items": [
+        "☀️",
+        "☁️",
+        "🌊"
+       ],
+       "motion": "float",
+       "caption": "Earth's treasures"
+      },
+      {
+       "items": [
+        "🏔️",
+        "🐒"
+       ],
+       "motion": "pulse",
+       "caption": "Wild nature"
+      },
+      {
+       "items": [
+        "🌍",
+        "💚"
+       ],
+       "motion": "grow",
+       "caption": "Respect nature"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Understanding Human-Made Things",
+    "narration": [
+     "People use materials to build new things.",
+     "Like your school bag, a bicycle, or a table.",
+     "We use wood, metal, or plastic to make them.",
+     "Think of a yummy samosa made in a kitchen."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🔨",
+        "🪵",
+        "🏗️"
+       ],
+       "motion": "chain",
+       "caption": "Using materials"
+      },
+      {
+       "items": [
+        "🎒",
+        "🚲",
+        "🪑"
+       ],
+       "motion": "push",
+       "caption": "Our inventions"
+      },
+      {
+       "items": [
+        "🪵",
+        "⚙️",
+        "🧴"
+       ],
+       "motion": "chain",
+       "caption": "Building blocks"
+      },
+      {
+       "items": [
+        "🥟",
+        "🥘"
+       ],
+       "motion": "push",
+       "caption": "Cooking food"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Explore",
+    "narration": [
+     "Natural things are from nature, not made by us.",
+     "Human-made things are created by people.",
+     "Now, can you find one natural and one human-made thing in your park?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌳",
+        "🌊",
+        "☀️"
+       ],
+       "motion": "pulse",
+       "caption": "Natural things"
+      },
+      {
+       "items": [
+        "🏫",
+        "💻",
+        "🚲"
+       ],
+       "motion": "pulse",
+       "caption": "Human-made things"
+      },
+      {
+       "items": [
+        "🌳",
+        "🛝"
+       ],
+       "motion": "float",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "India: Indian Diversity": {
+  "id": "lib-social-studies-g2-india-indian-diversity",
+  "topic": "India: Indian Diversity",
+  "title": "India: Many Colors, One Nation",
+  "icon": "🇮🇳",
+  "scenes": [
+   {
+    "title": "What Makes India Special?",
+    "narration": [
+     "Have you noticed how many different languages your friends speak?",
+     "From spicy dosas to sweet rasgullas, our food is so different everywhere!",
+     "Why is India like a giant, beautiful patchwork quilt?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🗣️",
+        "👧",
+        "👦"
+       ],
+       "motion": "pulse",
+       "caption": "Many languages"
+      },
+      {
+       "items": [
+        "🥘",
+        "🍲",
+        "🍬"
+       ],
+       "motion": "float",
+       "caption": "Yummy food"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🧵"
+       ],
+       "motion": "rise",
+       "caption": "Big question"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Our Different Ways",
+    "narration": [
+     "People in India celebrate many happy festivals like Diwali, Eid, and Christmas.",
+     "We wear colorful clothes like sarees, kurtas, and turbans depending on where we live.",
+     "Even our houses look different, from snowy mountains to sunny beaches.",
+     "These differences are what make our country so exciting and fun."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🪔",
+        "🌙",
+        "🎄"
+       ],
+       "motion": "chain",
+       "caption": "Festivals"
+      },
+      {
+       "items": [
+        "👗",
+        "👕",
+        "👳"
+       ],
+       "motion": "grow",
+       "caption": "Special clothes"
+      },
+      {
+       "items": [
+        "🏔️",
+        "🏖️",
+        "🏠"
+       ],
+       "motion": "float",
+       "caption": "Different homes"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "✨"
+       ],
+       "motion": "pulse",
+       "caption": "Exciting diversity"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Day in India",
+    "narration": [
+     "Imagine Priya in Kerala eating rice on a banana leaf.",
+     "Think of Kabir in Punjab dancing to the beat of a dhol.",
+     "Even though they are far apart, they are both proud Indians."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👧",
+        "🍛",
+        "🍃"
+       ],
+       "motion": "float",
+       "caption": "Priya's lunch"
+      },
+      {
+       "items": [
+        "👦",
+        "🥁",
+        "💃"
+       ],
+       "motion": "push",
+       "caption": "Kabir's dance"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🤝"
+       ],
+       "motion": "pull",
+       "caption": "Proud citizens"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Big Picture",
+    "narration": [
+     "We have many languages, foods, and clothes, but we are one big family.",
+     "Respecting our differences helps India stay strong and happy.",
+     "What is your favorite festival that you share with your friends?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👨‍👩‍👧‍👦",
+        "🇮🇳"
+       ],
+       "motion": "rise",
+       "caption": "One family"
+      },
+      {
+       "items": [
+        "❤️",
+        "🇮🇳"
+       ],
+       "motion": "grow",
+       "caption": "Respecting others"
+      },
+      {
+       "items": [
+        "🎉",
+        "🤔"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ }
+}

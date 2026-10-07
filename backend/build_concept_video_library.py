@@ -29,9 +29,12 @@ OUT_DIR = os.path.join(os.path.dirname(__file__), "..", "frontend", "public", "c
 CONCURRENCY = 4
 
 
+# Must match the file names in frontend/src/subjects.ts.
+SUBJECT_FILES = {"Mathematics": "maths", "Science": "science", "Social Studies": "social"}
+
+
 def _file_for(subject: str, grade: int) -> str:
-    name = "maths" if subject == "Mathematics" else "science"
-    return os.path.join(OUT_DIR, f"{name}-g{grade}.json")
+    return os.path.join(OUT_DIR, f"{SUBJECT_FILES[subject]}-g{grade}.json")
 
 
 def _load(path: str) -> dict:
@@ -66,14 +69,18 @@ async def main(topics_path: str) -> None:
             # The label is the grade's own name for the concept, e.g.
             # "Addition with Carrying" for the shared "Addition" module.
             try:
-                video = await concept_video_service.get_concept_video(t["label"], t["grade"])
+                # Social Studies names carry their chapter ("Community Helpers:
+                # Doctor"), which tells the AI the context.
+                about = t["topic"] if t["subject"] == "Social Studies" else t["label"]
+                video = await concept_video_service.get_concept_video(about, t["grade"])
             except Exception as exc:  # keep going; report at the end
                 failed.append((t, exc))
                 print(f"  FAILED  {t['subject']} G{t['grade']} {t['label']}: {exc}")
                 return
         video = {
             **video,
-            "id": f"lib-{_slug(t['subject'])}-g{t['grade']}-{_slug(t['label'])}",
+            # Social Studies labels repeat across chapters ("Food"), so its ids use the full topic.
+            "id": f"lib-{_slug(t['subject'])}-g{t['grade']}-{_slug(about)}",
             "topic": t["topic"],
         }
         path = _file_for(t["subject"], t["grade"])

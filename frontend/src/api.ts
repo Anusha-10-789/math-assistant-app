@@ -1,6 +1,7 @@
 import { getStoredCredentials } from "./auth";
 import type { QuizResult } from "./components/QuizPlayer";
 import type { ConceptVideo } from "./conceptVideos";
+import type { Subject } from "./subjects";
 import type { CompletedTest } from "./testHistory";
 import type { LessonContent } from "./types";
 import type { WatchedVideos } from "./videoProgress";
@@ -522,11 +523,11 @@ export interface YouTubeExplanation {
   embedUrl?: string;
 }
 
-export async function fetchYouTubeExplanation(topic: string, grade: number): Promise<YouTubeExplanation> {
+export async function fetchYouTubeExplanation(topic: string, grade: number, subject: Subject = "Mathematics"): Promise<YouTubeExplanation> {
   const response = await fetch(`${API_BASE_URL}/youtube-explanation`, {
     method: "POST",
     headers: { "Content-Type": "application/json", ...authHeaders() },
-    body: JSON.stringify({ topic, grade }),
+    body: JSON.stringify({ topic, grade, subject }),
   });
 
   if (response.status === 401) {
@@ -632,7 +633,7 @@ export interface TeacherQuestion {
 }
 
 export interface TeacherLessonInput {
-  subject: "Mathematics" | "Science";
+  subject: Subject;
   grade: number;
   title: string;
   description: string;
@@ -649,7 +650,7 @@ export interface TeacherLesson extends TeacherLessonInput {
 }
 
 export interface AssignmentInput {
-  subject: "Mathematics" | "Science";
+  subject: Subject;
   grade: number;
   topic: string;
   lesson_id: string;

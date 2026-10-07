@@ -1,4 +1,6 @@
-export type Subject = "Mathematics" | "Science";
+import type { Subject } from "../subjects";
+
+export type { Subject };
 
 interface SubjectSelectProps {
   onSelectSubject: (subject: Subject) => void;
@@ -19,6 +21,13 @@ const SUBJECTS: Array<{ subject: Subject; icon: string; tagline: string; art: st
     art: ["🌱", "🪐", "💧"],
     className: "from-emerald-400 via-teal-500 to-sky-500 shadow-teal-300/60",
   },
+  {
+    subject: "Social Studies",
+    icon: "🌏",
+    tagline: "Family, community, maps, India and the world",
+    art: ["🗺️", "🏛️", "🧭"],
+    className: "from-amber-400 via-orange-500 to-red-500 shadow-orange-300/60",
+  },
 ];
 
 export default function SubjectSelect({ onSelectSubject }: SubjectSelectProps) {
@@ -26,7 +35,7 @@ export default function SubjectSelect({ onSelectSubject }: SubjectSelectProps) {
     <div className="space-y-6">
       <section>
         <h1 className="mb-4 px-1 text-2xl font-semibold sm:text-3xl">Choose a subject</h1>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {SUBJECTS.map((item) => (
             <button
               key={item.subject}

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import type { MyAssignment } from "../api";
 import { displayTopic } from "../subjectModules";
+import { subjectLabel } from "../subjects";
 import type { CompletedTest } from "../testHistory";
 
 type ReportFormat = "pdf" | "docx";
@@ -37,7 +38,7 @@ function AssignedTests({ assignments, onStart }: { assignments: MyAssignment[]; 
               <div className="min-w-0 flex-1">
                 <p className="font-display text-lg font-semibold text-slate-900">{a.topic}</p>
                 <p className="text-xs font-semibold text-slate-500">
-                  {a.subject === "Science" ? "Science" : "Maths"} · Grade {a.grade} · {a.num_questions} questions
+                  {subjectLabel(a.subject)} · Grade {a.grade} · {a.num_questions} questions
                   {due.text && <span className={due.late && !a.result ? " font-bold text-rose-600" : ""}> · {due.text}</span>}
                 </p>
                 {a.note && <p className="mt-1 text-sm text-slate-600">“{a.note}”</p>}

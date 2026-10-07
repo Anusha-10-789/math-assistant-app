@@ -631,3 +631,165 @@
     transform: translateY(-40vh);
   }
 }
+
+/* WorldBackdrop (Social Studies pages) */
+@keyframes world-spin {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-200px);
+  }
+}
+
+@keyframes world-bob {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes world-pin {
+  0%, 70%, 100% {
+    transform: translateY(0);
+  }
+  80% {
+    transform: translateY(-16px);
+  }
+  90% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes world-flag {
+  0%, 100% {
+    transform: skewY(-2deg) scaleX(1);
+  }
+  50% {
+    transform: skewY(2deg) scaleX(0.97);
+  }
+}
+
+@keyframes world-needle {
+  0%, 100% {
+    transform: rotate(-14deg);
+  }
+  50% {
+    transform: rotate(18deg);
+  }
+}
+
+/* The plane follows the dotted route (a curve from bottom-left to top-right). */
+@keyframes world-plane {
+  0% {
+    transform: translate(-5vw, 85vh) rotate(-8deg);
+    opacity: 1;
+  }
+  20% {
+    transform: translate(18.75vw, 53.4vh) rotate(-4deg);
+  }
+  40% {
+    transform: translate(45vw, 33.75vh) rotate(8deg);
+  }
+  60% {
+    transform: translate(73.75vw, 25.9vh) rotate(18deg);
+  }
+  80% {
+    transform: translate(105vw, 30vh) rotate(24deg);
+    opacity: 1;
+  }
+  81%, 100% {
+    transform: translate(105vw, 30vh);
+    opacity: 0;
+  }
+}
+
+@keyframes world-boat {
+  0% {
+    left: -8%;
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(4deg);
+  }
+  100% {
+    left: 108%;
+    transform: rotate(-4deg);
+  }
+}
+
+@keyframes world-train {
+  from {
+    transform: translateX(105vw);
+  }
+  to {
+    transform: translateX(-60vw);
+  }
+}
+
+.world-spin {
+  animation: world-spin 30s linear infinite;
+}
+
+.world-bob {
+  animation: world-bob ease-in-out infinite;
+}
+
+.world-pin {
+  animation: world-pin 3s ease-in-out infinite;
+}
+
+.world-flag {
+  animation: world-flag 3s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: left center;
+}
+
+.world-chakra {
+  animation: space-orbit 8s linear infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.world-needle {
+  animation: world-needle 4s ease-in-out infinite;
+  transform-origin: 50px 50px;
+}
+
+.world-plane {
+  animation: world-plane 18s ease-in-out infinite;
+}
+
+.world-boat {
+  left: -8%;
+  animation: world-boat 40s linear infinite;
+}
+
+.world-train {
+  animation: world-train 24s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .world-spin,
+  .world-bob,
+  .world-pin,
+  .world-flag,
+  .world-chakra,
+  .world-needle,
+  .world-plane,
+  .world-boat,
+  .world-train {
+    animation: none;
+  }
+  .world-plane {
+    transform: translate(45vw, 33vh) rotate(8deg);
+  }
+  .world-boat {
+    left: 40%;
+  }
+  .world-train {
+    transform: translateX(20vw);
+  }
+}

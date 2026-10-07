@@ -1,3 +1,4 @@
+import EmojiText from "./EmojiText";
 import type { CSSProperties, ReactNode } from "react";
 import type { ConceptAnim, SceneFrame, SceneMotion } from "../conceptVideos";
 
@@ -380,7 +381,7 @@ function Scene({ frames, beat }: { frames: SceneFrame[]; beat: number }) {
               style={{ animationDelay: `${i * stagger}s`, animationDuration: frame.motion === "float" ? `${2.2 + i * 0.4}s` : undefined }}
               aria-hidden="true"
             >
-              {token}
+              <EmojiText text={token} />
             </span>
           );
         })}

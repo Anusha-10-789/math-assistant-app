@@ -1,0 +1,7636 @@
+{
+ "India: Location and Physical Features: States and Union Territories": {
+  "id": "lib-social-studies-g4-india-location-and-physical-features-states-and-union-territories",
+  "topic": "India: Location and Physical Features: States and Union Territories",
+  "title": "India: Our Big Beautiful Home",
+  "icon": "🇮🇳",
+  "scenes": [
+   {
+    "title": "Mapping Our Amazing Country",
+    "narration": [
+     "Have you ever looked at a map of India and wondered why it has so many colors?",
+     "Our country is huge and stretches from the snowy Himalayas down to the ocean.",
+     "To manage such a big place, we divide it into smaller pieces called states and territories."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🗺️",
+        "🇮🇳"
+       ],
+       "motion": "pulse",
+       "caption": "India map"
+      },
+      {
+       "items": [
+        "🏔️",
+        "🌊"
+       ],
+       "motion": "float",
+       "caption": "Vast land"
+      },
+      {
+       "items": [
+        "🧩",
+        "🇮🇳"
+       ],
+       "motion": "chain",
+       "caption": "Dividing land"
+      }
+     ]
+    }
+   },
+   {
+    "title": "States and Union Territories",
+    "narration": [
+     "India has twenty-eight states, like Maharashtra or West Bengal, each with its own government.",
+     "We also have eight Union Territories, like Delhi or Ladakh, managed by the central government.",
+     "Every state has its own capital city, language, and yummy food traditions.",
+     "Together, these parts make up the one big puzzle of our nation."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏢",
+        "🏛️"
+       ],
+       "motion": "grow",
+       "caption": "28 States"
+      },
+      {
+       "items": [
+        "📍",
+        "🏛️"
+       ],
+       "motion": "pulse",
+       "caption": "8 Territories"
+      },
+      {
+       "items": [
+        "🍲",
+        "🗣️"
+       ],
+       "motion": "float",
+       "caption": "Diverse culture"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🧩"
+       ],
+       "motion": "chain",
+       "caption": "One nation"
+      }
+     ]
+    }
+   },
+   {
+    "title": "An Example: Looking Closer",
+    "narration": [
+     "Let us look at Rajasthan, our largest state, known for its vast, sandy Thar Desert.",
+     "Its capital city is Jaipur, which is famous for its beautiful pink buildings.",
+     "Even though it is dry, it is a key part of our country's history."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏜️",
+        "🐪"
+       ],
+       "motion": "float",
+       "caption": "Rajasthan desert"
+      },
+      {
+       "items": [
+        "🏰",
+        "🎨"
+       ],
+       "motion": "pulse",
+       "caption": "Pink City"
+      },
+      {
+       "items": [
+        "📜",
+        "🕰️"
+       ],
+       "motion": "rise",
+       "caption": "Rich history"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Explore",
+    "narration": [
+     "Remember, India is made of twenty-eight states and eight union territories.",
+     "Each area is different, yet we are all united as one proud country.",
+     "Think about it: Can you find the state you live in on a map today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "28",
+        "8",
+        "🇮🇳"
+       ],
+       "motion": "chain",
+       "caption": "Quick facts"
+      },
+      {
+       "items": [
+        "🤝",
+        "🇮🇳"
+       ],
+       "motion": "pulse",
+       "caption": "United India"
+      },
+      {
+       "items": [
+        "🔍",
+        "🗺️"
+       ],
+       "motion": "float",
+       "caption": "Your home"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "India: Location and Physical Features: Himalayas": {
+  "id": "lib-social-studies-g4-india-location-and-physical-features-himalayas",
+  "topic": "India: Location and Physical Features: Himalayas",
+  "title": "The Mighty Himalayas Explained",
+  "icon": "🏔️",
+  "scenes": [
+   {
+    "title": "The Giant Northern Wall",
+    "narration": [
+     "Have you ever looked at a map and seen the giant mountains north of India?",
+     "These are the Himalayas, our country's natural northern boundary.",
+     "They stretch like a giant arch across our northern states."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "🗺️",
+        "🏔️"
+       ],
+       "motion": "pulse",
+       "caption": "India's Map"
+      },
+      {
+       "items": [
+        "🏔️",
+        "🇮🇳",
+        "🧱"
+       ],
+       "motion": "float",
+       "caption": "Natural Border"
+      },
+      {
+       "items": [
+        "🏔️",
+        "🏹"
+       ],
+       "motion": "grow",
+       "caption": "Giant Arch"
+      }
+     ]
+    }
+   },
+   {
+    "title": "How They Were Formed",
+    "narration": [
+     "Long ago, two giant pieces of the Earth pushed against each other.",
+     "This slow push forced the land to fold and rise high up.",
+     "That is how these massive, snowy peaks were created."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌍",
+        "➡️",
+        "⬅️"
+       ],
+       "motion": "push",
+       "caption": "Earth Plates"
+      },
+      {
+       "items": [
+        "📉",
+        "⛰️"
+       ],
+       "motion": "rise",
+       "caption": "Folding Land"
+      },
+      {
+       "items": [
+        "🏔️",
+        "❄️"
+       ],
+       "motion": "grow",
+       "caption": "Mountain Formation"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Three Layers of Mountains",
+    "narration": [
+     "The Himalayas have three main layers starting from the very top.",
+     "The top layer is the Himadri, covered in thick snow all year.",
+     "Below that is the Himachal, where we find beautiful hill stations.",
+     "The lowest layer is the Shiwalik, with green forests and valleys."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "1️⃣",
+        "2️⃣",
+        "3️⃣"
+       ],
+       "motion": "chain",
+       "caption": "Three Ranges"
+      },
+      {
+       "items": [
+        "🏔️",
+        "❄️"
+       ],
+       "motion": "float",
+       "caption": "Himadri Range"
+      },
+      {
+       "items": [
+        "🌲",
+        "🏘️"
+       ],
+       "motion": "float",
+       "caption": "Himachal Range"
+      },
+      {
+       "items": [
+        "🌳",
+        "⛰️"
+       ],
+       "motion": "float",
+       "caption": "Shiwalik Range"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Why They Matter",
+    "narration": [
+     "The Himalayas stop cold winds and bring us life-giving rain.",
+     "Great rivers like the Ganga and Yamuna start from these icy glaciers.",
+     "Think about it: how would our life in India change without these mountains?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🛡️",
+        "🌬️",
+        "🌧️"
+       ],
+       "motion": "fall",
+       "caption": "Climate Guard"
+      },
+      {
+       "items": [
+        "🏔️",
+        "💧",
+        "🌊"
+       ],
+       "motion": "rise",
+       "caption": "Source of Rivers"
+      },
+      {
+       "items": [
+        "🤔",
+        "🇮🇳",
+        "🏔️"
+       ],
+       "motion": "pulse",
+       "caption": "Think About It"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "India: Location and Physical Features: Location of India": {
+  "id": "lib-social-studies-g4-india-location-and-physical-features-location-of-india",
+  "topic": "India: Location and Physical Features: Location of India",
+  "title": "Where in the World is India?",
+  "icon": "🇮🇳",
+  "scenes": [
+   {
+    "title": "Finding India on the Map",
+    "narration": [
+     "Have you ever looked at a giant globe and wondered where India is hiding?",
+     "India is a huge country located in the continent of Asia.",
+     "It sits right in the heart of South Asia, surrounded by amazing neighbors."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌍",
+        "🔍"
+       ],
+       "motion": "float",
+       "caption": "World Globe"
+      },
+      {
+       "items": [
+        "🗺️",
+        "🌏"
+       ],
+       "motion": "pulse",
+       "caption": "Asia Continent"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🗺️"
+       ],
+       "motion": "rise",
+       "caption": "South Asia"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Water and Land Borders",
+    "narration": [
+     "India is a peninsula, which means water touches it on three sides.",
+     "To the west is the Arabian Sea, and to the east is the Bay of Bengal.",
+     "Down south, the big Indian Ocean waves wash against our sandy beaches."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "🌊",
+        "🌊",
+        "🌊"
+       ],
+       "motion": "push",
+       "caption": "Peninsula"
+      },
+      {
+       "items": [
+        "🌊",
+        "⬅️",
+        "➡️",
+        "🌊"
+       ],
+       "motion": "float",
+       "caption": "Oceans"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "⬇️",
+        "🌊"
+       ],
+       "motion": "fall",
+       "caption": "Indian Ocean"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Mountains and Neighbors",
+    "narration": [
+     "In the north, the mighty Himalayas act like a giant snowy wall.",
+     "We share our land borders with friendly neighbors like Nepal, Bhutan, and Bangladesh.",
+     "Think of our country as a land of mountains, plains, and vast blue seas."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏔️",
+        "🏔️",
+        "🏔️"
+       ],
+       "motion": "rise",
+       "caption": "Himalayas"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🤝",
+        "🗺️",
+        "🗺️",
+        "🗺️"
+       ],
+       "motion": "chain",
+       "caption": "Land Borders"
+      },
+      {
+       "items": [
+        "🏔️",
+        "🌾",
+        "🌊"
+       ],
+       "motion": "pulse",
+       "caption": "Diverse Landscapes"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Explore",
+    "narration": [
+     "India is in South Asia, touching three oceans and guarded by the tall Himalayas.",
+     "It is a special place with neighbors by land and water on every side.",
+     "If you could travel to any border of India, would you choose the mountains or the sea?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌏",
+        "🌊",
+        "🏔️"
+       ],
+       "motion": "chain",
+       "caption": "Key Features"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🗺️"
+       ],
+       "motion": "float",
+       "caption": "Location Summary"
+      },
+      {
+       "items": [
+        "🏔️",
+        "❓",
+        "🌊"
+       ],
+       "motion": "pulse",
+       "caption": "Think About It"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "India: Location and Physical Features: Northern Plains": {
+  "id": "lib-social-studies-g4-india-location-and-physical-features-northern-plains",
+  "topic": "India: Location and Physical Features: Northern Plains",
+  "title": "India's Fertile Northern Plains",
+  "icon": "🌾",
+  "scenes": [
+   {
+    "title": "The Golden Wheat Fields",
+    "narration": [
+     "Have you ever wondered where most of our rotis come from?",
+     "In the north of India, there is a giant, flat, and super green area.",
+     "It is called the Northern Plains, and it is a very special place."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍲",
+        "🌾"
+       ],
+       "motion": "pulse",
+       "caption": "Tasty Roti"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🗺️"
+       ],
+       "motion": "float",
+       "caption": "Northern Plains"
+      },
+      {
+       "items": [
+        "✨",
+        "🏞️"
+       ],
+       "motion": "rise",
+       "caption": "Special Land"
+      }
+     ]
+    }
+   },
+   {
+    "title": "How the Plains Were Made",
+    "narration": [
+     "Great rivers like the Ganga, Yamuna, and Brahmaputra flow down from the Himalayas.",
+     "These rivers carry tiny bits of rich soil called silt.",
+     "When the rivers slow down, they spread this silt to create fertile land."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏔️",
+        "💧",
+        "🌊"
+       ],
+       "motion": "fall",
+       "caption": "Mountain Rivers"
+      },
+      {
+       "items": [
+        "🪨",
+        "🤏",
+        "🤎"
+       ],
+       "motion": "chain",
+       "caption": "Rich Silt"
+      },
+      {
+       "items": [
+        "🌊",
+        "〰️",
+        "🌱"
+       ],
+       "motion": "push",
+       "caption": "Fertile Soil"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Life in the Plains",
+    "narration": [
+     "Because the soil is so good, farmers grow lots of wheat and rice here.",
+     "Imagine big cities like Delhi, Lucknow, and Patna standing on this flat land.",
+     "Millions of people live here because it is easy to build roads and houses."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌾",
+        "🍚",
+        "👨‍🌾"
+       ],
+       "motion": "grow",
+       "caption": "Bumper Harvest"
+      },
+      {
+       "items": [
+        "🏙️",
+        "📍",
+        "📍"
+       ],
+       "motion": "float",
+       "caption": "Busy Cities"
+      },
+      {
+       "items": [
+        "🏠",
+        "🛣️",
+        "👥"
+       ],
+       "motion": "chain",
+       "caption": "Many Homes"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Why They Matter",
+    "narration": [
+     "The Northern Plains are like India's food bowl, feeding so many of us.",
+     "Rich soil and big rivers make this region the heart of our country.",
+     "If you could visit any farm in the plains, what would you want to see growing?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🥣",
+        "🌾",
+        "🇮🇳"
+       ],
+       "motion": "pulse",
+       "caption": "Food Bowl"
+      },
+      {
+       "items": [
+        "❤️",
+        "🌍",
+        "💧"
+       ],
+       "motion": "rise",
+       "caption": "India's Heart"
+      },
+      {
+       "items": [
+        "🤔",
+        "🚜",
+        "🌱"
+       ],
+       "motion": "float",
+       "caption": "Think About It"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "India: Location and Physical Features: Peninsular Plateau": {
+  "id": "lib-social-studies-g4-india-location-and-physical-features-peninsular-plateau",
+  "topic": "India: Location and Physical Features: Peninsular Plateau",
+  "title": "Exploring India's Ancient Plateau",
+  "icon": "⛰️",
+  "scenes": [
+   {
+    "title": "The Giant Triangle Land",
+    "narration": [
+     "Have you ever wondered why the southern part of India looks like a big triangle on a map?",
+     "This huge, rocky, raised piece of land is called the Peninsular Plateau.",
+     "It is one of the oldest and strongest parts of our beautiful country."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "🗺️",
+        "🔺"
+       ],
+       "motion": "pulse",
+       "caption": "Map shape"
+      },
+      {
+       "items": [
+        "⛰️",
+        "🌍"
+       ],
+       "motion": "rise",
+       "caption": "The Plateau"
+      },
+      {
+       "items": [
+        "⏳",
+        "🇮🇳"
+       ],
+       "motion": "float",
+       "caption": "Ancient land"
+      }
+     ]
+    }
+   },
+   {
+    "title": "What Makes a Plateau",
+    "narration": [
+     "A plateau is like a table; it is flat on top but has steep sides.",
+     "The Peninsular Plateau is surrounded by water on three sides: the Arabian Sea and Bay of Bengal.",
+     "To the north, it is bordered by the Aravalli and Vindhya mountain ranges.",
+     "The ground here is made of very hard, old volcanic rock."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🪑",
+        "⛰️"
+       ],
+       "motion": "push",
+       "caption": "Table land"
+      },
+      {
+       "items": [
+        "🌊",
+        "🇮🇳",
+        "🌊"
+       ],
+       "motion": "float",
+       "caption": "Three waters"
+      },
+      {
+       "items": [
+        "🏔️",
+        "⬆️"
+       ],
+       "motion": "rise",
+       "caption": "Northern borders"
+      },
+      {
+       "items": [
+        "🪨",
+        "🌋"
+       ],
+       "motion": "pulse",
+       "caption": "Hard rocks"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Rivers and Treasures",
+    "narration": [
+     "Important rivers like the Narmada and Godavari flow through this rocky landscape.",
+     "Deep beneath the ground, this region is a storehouse of valuable minerals like iron and coal.",
+     "These minerals help us build our trains, bridges, and big cities across India."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "💧"
+       ],
+       "motion": "chain",
+       "caption": "Flowing rivers"
+      },
+      {
+       "items": [
+        "💎",
+        "⛏️",
+        "🪨"
+       ],
+       "motion": "pull",
+       "caption": "Hidden minerals"
+      },
+      {
+       "items": [
+        "🚂",
+        "🌉",
+        "🏗️"
+       ],
+       "motion": "chain",
+       "caption": "Building India"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Quick Recap and Think",
+    "narration": [
+     "So, the plateau is a high, flat, triangular land rich in rocks and minerals.",
+     "It supports our country with water and resources from deep underground.",
+     "Think about it: If the plateau was not there, how would our rivers flow differently?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🔺",
+        "🪨",
+        "💎"
+       ],
+       "motion": "pulse",
+       "caption": "Key points"
+      },
+      {
+       "items": [
+        "💧",
+        "🌍",
+        "🇮🇳"
+       ],
+       "motion": "grow",
+       "caption": "Supporting India"
+      },
+      {
+       "items": [
+        "🤔",
+        "💭",
+        "🗺️"
+       ],
+       "motion": "float",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "India: Location and Physical Features: Islands": {
+  "id": "lib-social-studies-g4-india-location-and-physical-features-islands",
+  "topic": "India: Location and Physical Features: Islands",
+  "title": "India's Amazing Island Treasures",
+  "icon": "🏝️",
+  "scenes": [
+   {
+    "title": "Finding Islands in the Ocean",
+    "narration": [
+     "Have you ever looked at a map and seen small land pieces surrounded by water?",
+     "These are called islands, and India has beautiful ones in its vast oceans.",
+     "Do you know where our two main island groups are hidden?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🗺️",
+        "🇮🇳"
+       ],
+       "motion": "pulse",
+       "caption": "India Map"
+      },
+      {
+       "items": [
+        "🏝️",
+        "🌊"
+       ],
+       "motion": "float",
+       "caption": "Island Definition"
+      },
+      {
+       "items": [
+        "🤔",
+        "📍"
+       ],
+       "motion": "pulse",
+       "caption": "Locating Islands"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Lakshadweep Islands",
+    "narration": [
+     "In the Arabian Sea, we find the stunning Lakshadweep islands.",
+     "These islands are formed by tiny sea creatures called corals.",
+     "They are small, flat, and have crystal clear blue water all around.",
+     "People there love catching fish and growing delicious coconuts."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌊",
+        "🏝️"
+       ],
+       "motion": "float",
+       "caption": "Arabian Sea"
+      },
+      {
+       "items": [
+        "🪸",
+        "✨"
+       ],
+       "motion": "grow",
+       "caption": "Coral Formation"
+      },
+      {
+       "items": [
+        "💧",
+        "🏝️"
+       ],
+       "motion": "float",
+       "caption": "Clear Water"
+      },
+      {
+       "items": [
+        "🐟",
+        "🥥"
+       ],
+       "motion": "chain",
+       "caption": "Island Life"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Andaman and Nicobar Islands",
+    "narration": [
+     "Across in the Bay of Bengal lie the Andaman and Nicobar islands.",
+     "These islands are much bigger and covered in thick, green forests.",
+     "They were once mountain tops that poked out above the ocean surface.",
+     "It is home to many unique animals and tall, ancient trees."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌊",
+        "🏝️"
+       ],
+       "motion": "float",
+       "caption": "Bay of Bengal"
+      },
+      {
+       "items": [
+        "🌳",
+        "⛰️"
+       ],
+       "motion": "grow",
+       "caption": "Dense Forests"
+      },
+      {
+       "items": [
+        "⛰️",
+        "🌊"
+       ],
+       "motion": "rise",
+       "caption": "Mountain Peaks"
+      },
+      {
+       "items": [
+        "🦜",
+        "🌳"
+       ],
+       "motion": "pulse",
+       "caption": "Rich Wildlife"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Think About It",
+    "narration": [
+     "India has Lakshadweep in the west and Andaman and Nicobar in the east.",
+     "One group is made of coral, while the other is made of mountain peaks.",
+     "If you could visit one, would you choose the flat coral island or the forest mountain island?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "⬅️",
+        "🇮🇳",
+        "➡️"
+       ],
+       "motion": "chain",
+       "caption": "Location Summary"
+      },
+      {
+       "items": [
+        "🪸",
+        "⛰️"
+       ],
+       "motion": "pulse",
+       "caption": "Main Differences"
+      },
+      {
+       "items": [
+        "🏝️",
+        "🤔"
+       ],
+       "motion": "pulse",
+       "caption": "Think About It"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "India: Location and Physical Features: Coastal Plains": {
+  "id": "lib-social-studies-g4-india-location-and-physical-features-coastal-plains",
+  "topic": "India: Location and Physical Features: Coastal Plains",
+  "title": "India's Beautiful Coastal Plains",
+  "icon": "🏖️",
+  "scenes": [
+   {
+    "title": "The Golden Coastline",
+    "narration": [
+     "Have you ever visited a beach in Mumbai or Chennai and felt the salty sea breeze?",
+     "India has a very long coastline that wraps around our country like a big border.",
+     "Today, let us explore the flat, sandy lands called the Coastal Plains."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏖️",
+        "🌊",
+        "🇮🇳"
+       ],
+       "motion": "float",
+       "caption": "Beach fun"
+      },
+      {
+       "items": [
+        "🗺️",
+        "📍"
+       ],
+       "motion": "pulse",
+       "caption": "Long coastline"
+      },
+      {
+       "items": [
+        "🏜️",
+        "🌾"
+       ],
+       "motion": "grow",
+       "caption": "Coastal Plains"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Two Sides of India",
+    "narration": [
+     "Our coast is divided into two main parts: the Western and the Eastern Coastal Plains.",
+     "The Western Coastal Plains sit between the Arabian Sea and the tall Western Ghats.",
+     "The Eastern Coastal Plains lie between the Bay of Bengal and the Eastern Ghats.",
+     "These plains are narrow in the west but get much wider in the east."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "⬅️",
+        "➡️",
+        "🇮🇳"
+       ],
+       "motion": "chain",
+       "caption": "Two sides"
+      },
+      {
+       "items": [
+        "🌊",
+        "⛰️",
+        "📍"
+       ],
+       "motion": "push",
+       "caption": "Western side"
+      },
+      {
+       "items": [
+        "🌊",
+        "⛰️",
+        "📍"
+       ],
+       "motion": "push",
+       "caption": "Eastern side"
+      },
+      {
+       "items": [
+        "📏",
+        "⬅️",
+        "➡️"
+       ],
+       "motion": "pulse",
+       "caption": "Size difference"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Life Near the Sea",
+    "narration": [
+     "Many farmers grow rice and coconuts in these fertile, flat lands.",
+     "People like Arav in Kochi use boats to catch fresh fish every single morning.",
+     "Big ports like Visakhapatnam help ships carry goods to other countries."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌾",
+        "🥥",
+        "🚜"
+       ],
+       "motion": "grow",
+       "caption": "Farming"
+      },
+      {
+       "items": [
+        "⛵",
+        "🐟",
+        "🧑‍🤝‍🧑"
+       ],
+       "motion": "float",
+       "caption": "Fishing"
+      },
+      {
+       "items": [
+        "🚢",
+        "📦",
+        "⚓"
+       ],
+       "motion": "push",
+       "caption": "Trade ports"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Our Coastal Treasures",
+    "narration": [
+     "The coastal plains give us food, beautiful beaches, and important trade routes.",
+     "They connect India to the rest of the world through the blue ocean.",
+     "If you could visit any beach in India, which one would you pick and why?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍚",
+        "🥥",
+        "🚢"
+       ],
+       "motion": "chain",
+       "caption": "Key points"
+      },
+      {
+       "items": [
+        "🌏",
+        "🌊",
+        "🇮🇳"
+       ],
+       "motion": "pulse",
+       "caption": "Global link"
+      },
+      {
+       "items": [
+        "🤔",
+        "🏖️",
+        "✨"
+       ],
+       "motion": "float",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Rivers of India: River Systems": {
+  "id": "lib-social-studies-g4-rivers-of-india-river-systems",
+  "topic": "Rivers of India: River Systems",
+  "title": "India's Amazing River Journeys",
+  "icon": "🏞️",
+  "scenes": [
+   {
+    "title": "The Big River Mystery",
+    "narration": [
+     "Have you ever wondered where the water in our taps actually comes from?",
+     "Many towns in India get water from mighty rivers flowing nearby.",
+     "Let us discover how these rivers travel across our beautiful country."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🚰",
+        "💧"
+       ],
+       "motion": "pulse",
+       "caption": "Water source"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🏞️",
+        "🏘️"
+       ],
+       "motion": "float",
+       "caption": "River towns"
+      },
+      {
+       "items": [
+        "🗺️",
+        "🏔️",
+        "🌊"
+       ],
+       "motion": "chain",
+       "caption": "River journey"
+      }
+     ]
+    }
+   },
+   {
+    "title": "How Rivers Begin and Grow",
+    "narration": [
+     "Most rivers start high up in the mountains as melting snow.",
+     "This tiny stream grows bigger as it meets other small rivers.",
+     "We call these smaller streams that join the main river tributaries.",
+     "Finally, the wide river reaches the big blue sea."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏔️",
+        "❄️",
+        "💧"
+       ],
+       "motion": "rise",
+       "caption": "Mountain start"
+      },
+      {
+       "items": [
+        "💧",
+        "➕",
+        "🌊"
+       ],
+       "motion": "grow",
+       "caption": "Joining streams"
+      },
+      {
+       "items": [
+        "🌊",
+        "➡️",
+        "🏞️"
+       ],
+       "motion": "chain",
+       "caption": "Tributaries"
+      },
+      {
+       "items": [
+        "🏞️",
+        "🌊",
+        "⚓"
+       ],
+       "motion": "float",
+       "caption": "Reaching sea"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Journey of River Ganga",
+    "narration": [
+     "The Ganga starts at the snowy Gangotri Glacier in the Himalayas.",
+     "It flows down through the plains, giving water to many farms.",
+     "Many people use the river water to grow tasty wheat and rice.",
+     "Finally, it reaches the Bay of Bengal in the east."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏔️",
+        "❄️",
+        "🇮🇳"
+       ],
+       "motion": "rise",
+       "caption": "Ganga source"
+      },
+      {
+       "items": [
+        "🌾",
+        "🚜",
+        "💧"
+       ],
+       "motion": "push",
+       "caption": "Feeding farms"
+      },
+      {
+       "items": [
+        "🌾",
+        "🍚",
+        "🥗"
+       ],
+       "motion": "grow",
+       "caption": "Agriculture"
+      },
+      {
+       "items": [
+        "🌊",
+        "📍",
+        "🇮🇳"
+       ],
+       "motion": "fall",
+       "caption": "River mouth"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Wrapping Up Our River Trip",
+    "narration": [
+     "Rivers start in mountains, grow with tributaries, and end in oceans.",
+     "They are essential for our drinking water and our healthy crops.",
+     "Think about it: which river flows closest to your house today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏔️",
+        "🌊",
+        "💧"
+       ],
+       "motion": "chain",
+       "caption": "River cycle"
+      },
+      {
+       "items": [
+        "🚰",
+        "🌾",
+        "🍎"
+       ],
+       "motion": "pulse",
+       "caption": "Importance"
+      },
+      {
+       "items": [
+        "🏠",
+        "📍",
+        "🤔"
+       ],
+       "motion": "float",
+       "caption": "Local river"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Rivers of India: Importance of Rivers": {
+  "id": "lib-social-studies-g4-rivers-of-india-importance-of-rivers",
+  "topic": "Rivers of India: Importance of Rivers",
+  "title": "India’s Amazing Life-Giving Rivers",
+  "icon": "🌊",
+  "scenes": [
+   {
+    "title": "The Magic of Rivers",
+    "narration": [
+     "Have you ever wondered where the water in your glass comes from?",
+     "Rivers like the Ganga flow across India bringing life everywhere.",
+     "Why are these moving streams so important to all of us?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🥛",
+        "🏠"
+       ],
+       "motion": "pulse",
+       "caption": "Daily water"
+      },
+      {
+       "items": [
+        "🏞️",
+        "🇮🇳"
+       ],
+       "motion": "float",
+       "caption": "Ganga River"
+      },
+      {
+       "items": [
+        "🤔",
+        "🌊"
+       ],
+       "motion": "float",
+       "caption": "Big question"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Why Rivers Matter",
+    "narration": [
+     "Rivers provide fresh water for us to drink and wash.",
+     "Farmers use river water to grow crops like rice and wheat.",
+     "Rivers are also homes for many fish and special animals."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "💧",
+        "🚰"
+       ],
+       "motion": "push",
+       "caption": "Fresh water"
+      },
+      {
+       "items": [
+        "🌾",
+        "🚜"
+       ],
+       "motion": "grow",
+       "caption": "Farming aid"
+      },
+      {
+       "items": [
+        "🐟",
+        "🐬"
+       ],
+       "motion": "float",
+       "caption": "River wildlife"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Journey with the Kaveri",
+    "narration": [
+     "Let us look at the beautiful Kaveri river in South India.",
+     "It starts high up in the hills as a small stream.",
+     "Then it flows down to water big green fields.",
+     "Finally, it reaches the wide sea, helping cities along the way."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📍",
+        "🗺️"
+       ],
+       "motion": "chain",
+       "caption": "Kaveri river"
+      },
+      {
+       "items": [
+        "🏔️",
+        "💧"
+       ],
+       "motion": "fall",
+       "caption": "Source point"
+      },
+      {
+       "items": [
+        "🌱",
+        "🚜"
+       ],
+       "motion": "grow",
+       "caption": "Irrigation"
+      },
+      {
+       "items": [
+        "🌊",
+        "🏙️"
+       ],
+       "motion": "push",
+       "caption": "Reaching sea"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Rivers are Precious",
+    "narration": [
+     "Rivers give us water, help our food grow, and provide homes.",
+     "We must keep our rivers clean to protect all this life.",
+     "Think about it: what can you do today to save water?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "💧",
+        "🌾",
+        "🐟"
+       ],
+       "motion": "pulse",
+       "caption": "Main benefits"
+      },
+      {
+       "items": [
+        "🧼",
+        "♻️"
+       ],
+       "motion": "push",
+       "caption": "Keep clean"
+      },
+      {
+       "items": [
+        "💡",
+        "🤔"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Rivers of India: River Conservation": {
+  "id": "lib-social-studies-g4-rivers-of-india-river-conservation",
+  "topic": "Rivers of India: River Conservation",
+  "title": "Saving Our Beautiful Rivers",
+  "icon": "🌊",
+  "scenes": [
+   {
+    "title": "Rivers in Our Daily Life",
+    "narration": [
+     "Have you ever played by a river or seen one while traveling with your family?",
+     "Rivers like the Ganga or Yamuna give water to millions of people every single day.",
+     "But have you noticed trash in the water? Why is it important to keep them clean?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏞️",
+        "🚗",
+        "👨‍👩‍👧‍👦"
+       ],
+       "motion": "float",
+       "caption": "River visit"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "💧",
+        "🏙️"
+       ],
+       "motion": "pulse",
+       "caption": "Life source"
+      },
+      {
+       "items": [
+        "🗑️",
+        "🌊",
+        "❓"
+       ],
+       "motion": "pull",
+       "caption": "Pollution problem"
+      }
+     ]
+    }
+   },
+   {
+    "title": "How Rivers Get Dirty",
+    "narration": [
+     "Rivers start clean in the mountains, but they pick up things along the way.",
+     "Sometimes plastic bottles, bags, and factory waste end up inside the river water.",
+     "This makes the water unsafe for the fish and plants living underwater."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏔️",
+        "💧",
+        "➡️"
+       ],
+       "motion": "fall",
+       "caption": "Mountain start"
+      },
+      {
+       "items": [
+        "🥤",
+        "🛍️",
+        "🏭"
+       ],
+       "motion": "push",
+       "caption": "Human waste"
+      },
+      {
+       "items": [
+        "🐟",
+        "🌿",
+        "❌"
+       ],
+       "motion": "pulse",
+       "caption": "Harmful impact"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Cleaning the Yamuna",
+    "narration": [
+     "Let's look at the Yamuna river in Delhi, where many people are working together.",
+     "First, volunteers pull out plastic waste from the river banks using big nets.",
+     "Next, factories are being asked to filter their water before it reaches the river.",
+     "Finally, planting trees along the banks keeps the soil strong and the water clean."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📍",
+        "🇮🇳",
+        "🧹"
+       ],
+       "motion": "chain",
+       "caption": "Community effort"
+      },
+      {
+       "items": [
+        "🕸️",
+        "🗑️",
+        "🧤"
+       ],
+       "motion": "pull",
+       "caption": "Removing trash"
+      },
+      {
+       "items": [
+        "🏭",
+        "⚙️",
+        "💧"
+       ],
+       "motion": "push",
+       "caption": "Filtering waste"
+      },
+      {
+       "items": [
+        "🌳",
+        "🌱",
+        "💧"
+       ],
+       "motion": "grow",
+       "caption": "Planting trees"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Protecting Our Waters",
+    "narration": [
+     "Rivers are the heartbeat of India, and they need all of our help.",
+     "Remember to use less plastic and never throw garbage into the water.",
+     "Think about it, what is one thing you can do at home to save water?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "❤️",
+        "🌊"
+       ],
+       "motion": "pulse",
+       "caption": "Our duty"
+      },
+      {
+       "items": [
+        "🚫",
+        "🛍️",
+        "🚮"
+       ],
+       "motion": "push",
+       "caption": "Smart habits"
+      },
+      {
+       "items": [
+        "🏠",
+        "💧",
+        "🤔"
+       ],
+       "motion": "float",
+       "caption": "Your choice"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Rivers of India: Major Rivers": {
+  "id": "lib-social-studies-g4-rivers-of-india-major-rivers",
+  "topic": "Rivers of India: Major Rivers",
+  "title": "India's Amazing River Journey",
+  "icon": "🌊",
+  "scenes": [
+   {
+    "title": "The Hook",
+    "narration": [
+     "Have you ever wondered where the water in your tap comes from?",
+     "In India, our giant rivers are like nature's highways for water.",
+     "Let us follow these rivers from the high mountains to the sea."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🚰",
+        "🤔"
+       ],
+       "motion": "pulse",
+       "caption": "Tap water"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🛣️",
+        "💧"
+       ],
+       "motion": "float",
+       "caption": "Nature's highways"
+      },
+      {
+       "items": [
+        "🏔️",
+        "🌊",
+        "🗺️"
+       ],
+       "motion": "chain",
+       "caption": "River journey"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Idea",
+    "narration": [
+     "Most rivers start high up in snowy mountains like the Himalayas.",
+     "As they flow down, they collect water from rain and melting snow.",
+     "They get wider as they travel across the plains towards the ocean.",
+     "This long journey creates fertile land where farmers grow food."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏔️",
+        "❄️",
+        "💧"
+       ],
+       "motion": "rise",
+       "caption": "Mountain source"
+      },
+      {
+       "items": [
+        "🌧️",
+        "🌨️",
+        "💧"
+       ],
+       "motion": "fall",
+       "caption": "Collecting water"
+      },
+      {
+       "items": [
+        "🏞️",
+        "🌊",
+        "➡️"
+       ],
+       "motion": "push",
+       "caption": "Flowing wider"
+      },
+      {
+       "items": [
+        "🌾",
+        "🚜",
+        "☀️"
+       ],
+       "motion": "grow",
+       "caption": "Fertile land"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Our Great Rivers",
+    "narration": [
+     "The Ganga is our longest river, starting in the icy Gangotri glacier.",
+     "The Yamuna flows past Delhi, keeping our capital city hydrated.",
+     "Down south, the Godavari is a huge river that helps many farmers.",
+     "Finally, all these rivers carry water to the vast Indian Ocean."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "🏔️",
+        "🌊"
+       ],
+       "motion": "float",
+       "caption": "River Ganga"
+      },
+      {
+       "items": [
+        "🏙️",
+        "💧",
+        "🌊"
+       ],
+       "motion": "pulse",
+       "caption": "Yamuna river"
+      },
+      {
+       "items": [
+        "📍",
+        "🌾",
+        "🌊"
+       ],
+       "motion": "push",
+       "caption": "River Godavari"
+      },
+      {
+       "items": [
+        "🌊",
+        "🌏",
+        "⛵"
+       ],
+       "motion": "chain",
+       "caption": "Reaching sea"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Reflect",
+    "narration": [
+     "Rivers start in mountains and travel across plains to the sea.",
+     "They give us water to drink and help grow our crops.",
+     "Think about it: Can you name a river that flows near your city?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏔️",
+        "🏞️",
+        "🌊"
+       ],
+       "motion": "chain",
+       "caption": "River path"
+      },
+      {
+       "items": [
+        "💧",
+        "🍎",
+        "🌾"
+       ],
+       "motion": "pulse",
+       "caption": "Vital resource"
+      },
+      {
+       "items": [
+        "🤔",
+        "🗺️",
+        "📍"
+       ],
+       "motion": "float",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Climate and Weather: Seasons": {
+  "id": "lib-social-studies-g4-climate-and-weather-seasons",
+  "topic": "Climate and Weather: Seasons",
+  "title": "Why Do Our Seasons Change?",
+  "icon": "☀️",
+  "scenes": [
+   {
+    "title": "The Daily Weather Mystery",
+    "narration": [
+     "Look outside, is it sunny or raining today?",
+     "Why does it get very hot in May but cold in December?",
+     "Let us discover why the Earth changes its clothes."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "☀️",
+        "🌧️"
+       ],
+       "motion": "float",
+       "caption": "Daily Weather"
+      },
+      {
+       "items": [
+        "🔥",
+        "❄️"
+       ],
+       "motion": "pulse",
+       "caption": "Changing Seasons"
+      },
+      {
+       "items": [
+        "🌍",
+        "👗"
+       ],
+       "motion": "rise",
+       "caption": "Earth's Seasons"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Tilted Earth Secret",
+    "narration": [
+     "The Earth is like a spinning top that tilts a bit.",
+     "As it travels around the Sun, the tilt changes.",
+     "When India leans toward the Sun, we get summer heat.",
+     "When we lean away, the air gets much cooler."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌍",
+        "💫"
+       ],
+       "motion": "chain",
+       "caption": "Earth's Tilt"
+      },
+      {
+       "items": [
+        "🌍",
+        "☀️"
+       ],
+       "motion": "chain",
+       "caption": "Orbiting Sun"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "☀️"
+       ],
+       "motion": "push",
+       "caption": "Summer Heat"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "❄️"
+       ],
+       "motion": "pull",
+       "caption": "Winter Chill"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Seasons Across Beautiful India",
+    "narration": [
+     "In summer, we love eating sweet mangoes in the heat.",
+     "Then, the monsoon clouds bring rain for our thirsty farms.",
+     "Finally, winter arrives, and we wear warm woolen sweaters."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🥭",
+        "☀️"
+       ],
+       "motion": "grow",
+       "caption": "Summer Mangoes"
+      },
+      {
+       "items": [
+        "☁️",
+        "🌧️",
+        "🌾"
+       ],
+       "motion": "fall",
+       "caption": "Monsoon Rains"
+      },
+      {
+       "items": [
+        "🧥",
+        "🧣"
+       ],
+       "motion": "pull",
+       "caption": "Winter Wear"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Wrapping Up Our Journey",
+    "narration": [
+     "Remember, the tilt of the Earth creates our seasons.",
+     "It is a cycle that happens every single year.",
+     "Think about it: which season do you love the most and why?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌍",
+        "📐"
+       ],
+       "motion": "pulse",
+       "caption": "The Tilt"
+      },
+      {
+       "items": [
+        "🔄",
+        "📅"
+       ],
+       "motion": "chain",
+       "caption": "Yearly Cycle"
+      },
+      {
+       "items": [
+        "🤔",
+        "🎨"
+       ],
+       "motion": "float",
+       "caption": "Think About It"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Agriculture: Crops": {
+  "id": "lib-social-studies-g4-agriculture-crops",
+  "topic": "Agriculture: Crops",
+  "title": "How Our Food Grows",
+  "icon": "🌾",
+  "scenes": [
+   {
+    "title": "Where Does Food Come From",
+    "narration": [
+     "Have you ever wondered where your yummy roti comes from before it reaches your plate?",
+     "It all starts in the big, green farms across our beautiful country, India.",
+     "Farmers work hard to grow the crops that feed all of us."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍞",
+        "🍽️"
+       ],
+       "motion": "pulse",
+       "caption": "Lunch time"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🚜",
+        "🌱"
+       ],
+       "motion": "float",
+       "caption": "Indian farms"
+      },
+      {
+       "items": [
+        "👨‍🌾",
+        "🌾"
+       ],
+       "motion": "grow",
+       "caption": "Hard work"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Steps of Farming",
+    "narration": [
+     "First, the farmer prepares the soil by loosening it with a plow.",
+     "Next, seeds are sown carefully into the ground to start their journey.",
+     "Then, crops need water and sunlight to grow big and strong.",
+     "Finally, when the plants are ready, the farmer harvests the crops."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🚜",
+        "🟫"
+       ],
+       "motion": "push",
+       "caption": "Preparing soil"
+      },
+      {
+       "items": [
+        "🌱",
+        "🤲"
+       ],
+       "motion": "fall",
+       "caption": "Sowing seeds"
+      },
+      {
+       "items": [
+        "💧",
+        "☀️"
+       ],
+       "motion": "rise",
+       "caption": "Water and sun"
+      },
+      {
+       "items": [
+        "🌾",
+        "✂️"
+       ],
+       "motion": "chain",
+       "caption": "Harvest time"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Wheat in Punjab",
+    "narration": [
+     "Let us look at wheat, a major crop grown in sunny Punjab.",
+     "Farmers plant seeds in the cool winter months when the weather is just right.",
+     "They use canals and tube wells to give the wheat enough water.",
+     "By April, the golden stalks are ready to be cut for making flour."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌾",
+        "📍"
+       ],
+       "motion": "float",
+       "caption": "Wheat fields"
+      },
+      {
+       "items": [
+        "❄️",
+        "🌱"
+       ],
+       "motion": "grow",
+       "caption": "Winter planting"
+      },
+      {
+       "items": [
+        "🌊",
+        "🚰"
+       ],
+       "motion": "push",
+       "caption": "Irrigation"
+      },
+      {
+       "items": [
+        "✨",
+        "🌾",
+        "🚚"
+       ],
+       "motion": "chain",
+       "caption": "Golden harvest"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Think",
+    "narration": [
+     "Remember, crops need soil, water, and sun to grow for us.",
+     "Farmers follow steps like plowing, sowing, and harvesting to bring food to markets.",
+     "Think about it: What is your favorite vegetable, and do you know which season it grows in?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🟫",
+        "💧",
+        "☀️"
+       ],
+       "motion": "pulse",
+       "caption": "Plant needs"
+      },
+      {
+       "items": [
+        "🚜",
+        "🌾",
+        "🛒"
+       ],
+       "motion": "chain",
+       "caption": "Farming steps"
+      },
+      {
+       "items": [
+        "🥕",
+        "🤔"
+       ],
+       "motion": "float",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Climate and Weather: Different Climatic Regions": {
+  "id": "lib-social-studies-g4-climate-and-weather-different-climatic-regions",
+  "topic": "Climate and Weather: Different Climatic Regions",
+  "title": "Weather vs Climate Adventures",
+  "icon": "🌍",
+  "scenes": [
+   {
+    "title": "What is the difference",
+    "narration": [
+     "Have you noticed how it rains one day and is sunny the next?",
+     "This daily change is called weather, but climate is something much bigger.",
+     "Today we will explore why some places stay hot and others stay cold."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌧️",
+        "☀️",
+        "🏠"
+       ],
+       "motion": "float",
+       "caption": "Changing weather"
+      },
+      {
+       "items": [
+        "🌡️",
+        "📅"
+       ],
+       "motion": "pulse",
+       "caption": "Weather vs Climate"
+      },
+      {
+       "items": [
+        "🔥",
+        "❄️",
+        "🗺️"
+       ],
+       "motion": "chain",
+       "caption": "Climatic regions"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Understanding Climatic Zones",
+    "narration": [
+     "Climate is the average weather pattern of a place over many years.",
+     "India has different zones like the hot Thar desert or the cool Himalayas.",
+     "These zones happen because of how much sunlight hits the earth."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📈",
+        "⏳"
+       ],
+       "motion": "grow",
+       "caption": "Average weather"
+      },
+      {
+       "items": [
+        "🏜️",
+        "🏔️",
+        "🇮🇳"
+       ],
+       "motion": "push",
+       "caption": "Indian zones"
+      },
+      {
+       "items": [
+        "☀️",
+        "🌍"
+       ],
+       "motion": "rise",
+       "caption": "Sunlight angle"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Example from India",
+    "narration": [
+     "Think about our beautiful Kerala, where it is often humid and tropical.",
+     "Compare that to Ladakh, a cold desert with very little rain.",
+     "The distance from the equator decides if a place is hot or cold."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌴",
+        "💧",
+        "🌊"
+       ],
+       "motion": "float",
+       "caption": "Tropical climate"
+      },
+      {
+       "items": [
+        "🏔️",
+        "❄️",
+        "🧊"
+       ],
+       "motion": "fall",
+       "caption": "Cold desert"
+      },
+      {
+       "items": [
+        "📍",
+        "🌍",
+        "📏"
+       ],
+       "motion": "pull",
+       "caption": "Equator distance"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Think",
+    "narration": [
+     "Weather changes daily, but climate is the long-term pattern of a region.",
+     "Geography and the sun shape our world's different climate zones.",
+     "Think about it: how does the climate in your town affect what clothes you wear?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📆",
+        "🔄",
+        "🌏"
+       ],
+       "motion": "pulse",
+       "caption": "Key summary"
+      },
+      {
+       "items": [
+        "☀️",
+        "🗺️",
+        "🌍"
+       ],
+       "motion": "chain",
+       "caption": "Geography's role"
+      },
+      {
+       "items": [
+        "👕",
+        "🧥",
+        "🤔"
+       ],
+       "motion": "float",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Climate and Weather: Monsoon": {
+  "id": "lib-social-studies-g4-climate-and-weather-monsoon",
+  "topic": "Climate and Weather: Monsoon",
+  "title": "The Magic of Indian Monsoons",
+  "icon": "🌧️",
+  "scenes": [
+   {
+    "title": "Why does it rain so much?",
+    "narration": [
+     "Have you ever wondered why June in India feels so wet and rainy?",
+     "It is because of the Monsoon, our very special seasonal wind.",
+     "Let us find out how these winds bring life to our country."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏠",
+        "🌧️",
+        "📅"
+       ],
+       "motion": "float",
+       "caption": "Summer rain"
+      },
+      {
+       "items": [
+        "💨",
+        "🇮🇳"
+       ],
+       "motion": "push",
+       "caption": "Seasonal winds"
+      },
+      {
+       "items": [
+        "🌾",
+        "🌱",
+        "🏞️"
+       ],
+       "motion": "grow",
+       "caption": "Life cycle"
+      }
+     ]
+    }
+   },
+   {
+    "title": "How the Monsoon works",
+    "narration": [
+     "In summer, the land in India gets very hot.",
+     "Hot air rises, leaving space for cool, wet air to rush in.",
+     "These winds come from the Indian Ocean, full of water.",
+     "They hit the mountains and turn into heavy rain clouds."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "☀️",
+        "🔥",
+        "🏜️"
+       ],
+       "motion": "pulse",
+       "caption": "Land heating"
+      },
+      {
+       "items": [
+        "⬆️",
+        "💨",
+        "🌊"
+       ],
+       "motion": "rise",
+       "caption": "Air movement"
+      },
+      {
+       "items": [
+        "🌊",
+        "🚢",
+        "💨"
+       ],
+       "motion": "push",
+       "caption": "Moist winds"
+      },
+      {
+       "items": [
+        "🏔️",
+        "☁️",
+        "🌧️"
+       ],
+       "motion": "fall",
+       "caption": "Rain formation"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Monsoon in the Field",
+    "narration": [
+     "Farmer Rohan in Punjab waits for these clouds to water his wheat.",
+     "The rain fills rivers like the Ganga, helping crops grow fast.",
+     "Without this rain, our fields would be dry and dusty."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👨‍🌾",
+        "🌾",
+        "🚜"
+       ],
+       "motion": "chain",
+       "caption": "Rohan's farm"
+      },
+      {
+       "items": [
+        "🏞️",
+        "💧",
+        "🌽"
+       ],
+       "motion": "grow",
+       "caption": "River flow"
+      },
+      {
+       "items": [
+        "🏜️",
+        "❌",
+        "🌾"
+       ],
+       "motion": "fall",
+       "caption": "Need for water"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Reflect",
+    "narration": [
+     "The monsoon is a seasonal wind that brings us water for farming.",
+     "It starts when hot land pulls moist air from the ocean.",
+     "Think about it: How would your life change if it never rained again?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "💨",
+        "🌧️",
+        "🌾"
+       ],
+       "motion": "chain",
+       "caption": "Key summary"
+      },
+      {
+       "items": [
+        "🔥",
+        "🌊",
+        "🌬️"
+       ],
+       "motion": "push",
+       "caption": "Wind cycle"
+      },
+      {
+       "items": [
+        "🤔",
+        "💧",
+        "🌍"
+       ],
+       "motion": "float",
+       "caption": "Big question"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Agriculture: Farmers' Role": {
+  "id": "lib-social-studies-g4-agriculture-farmers-role",
+  "topic": "Agriculture: Farmers' Role",
+  "title": "Our Amazing Farmers",
+  "icon": "🌾",
+  "scenes": [
+   {
+    "title": "Where Does Food Come From",
+    "narration": [
+     "Have you ever wondered how the rice on your plate reaches your kitchen?",
+     "It all starts far away in a sunny field.",
+     "Let's learn how our farmers grow the food we eat every day."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍚",
+        "🏠"
+       ],
+       "motion": "float",
+       "caption": "Food journey"
+      },
+      {
+       "items": [
+        "☀️",
+        "🌾"
+       ],
+       "motion": "grow",
+       "caption": "Sunny fields"
+      },
+      {
+       "items": [
+        "👨‍🌾",
+        "🥕"
+       ],
+       "motion": "pulse",
+       "caption": "Hard work"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Steps to Grow Crops",
+    "narration": [
+     "First, the farmer prepares the soil by digging and cleaning it.",
+     "Next, they sow seeds carefully so they have room to sprout.",
+     "Farmers add water and nutrients to help the plants grow strong.",
+     "Finally, when the crops are ripe, it is time for the harvest."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🚜",
+        "🌱"
+       ],
+       "motion": "push",
+       "caption": "Ploughing soil"
+      },
+      {
+       "items": [
+        "🌱",
+        "🤲"
+       ],
+       "motion": "grow",
+       "caption": "Sowing seeds"
+      },
+      {
+       "items": [
+        "💧",
+        "☀️",
+        "🌿"
+       ],
+       "motion": "rise",
+       "caption": "Nurturing plants"
+      },
+      {
+       "items": [
+        "🌾",
+        "✂️"
+       ],
+       "motion": "chain",
+       "caption": "Harvest time"
+      }
+     ]
+    }
+   },
+   {
+    "title": "From Farm to Market",
+    "narration": [
+     "Look at Farmer Ravi in Punjab preparing his wheat crop.",
+     "He loads the sacks onto a truck to send them to the mandi.",
+     "At the market, shopkeepers buy the grain to sell to our parents."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👨‍🌾",
+        "🌾",
+        "🇮🇳"
+       ],
+       "motion": "pulse",
+       "caption": "Farmer Ravi"
+      },
+      {
+       "items": [
+        "🚚",
+        "🌾"
+       ],
+       "motion": "push",
+       "caption": "To market"
+      },
+      {
+       "items": [
+        "🏪",
+        "💰",
+        "🍚"
+       ],
+       "motion": "chain",
+       "caption": "Buying food"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Why Farmers Matter",
+    "narration": [
+     "Farmers work very hard in sun and rain to feed our country.",
+     "Without them, we would not have healthy meals on our tables.",
+     "Next time you eat, can you thank the farmer who grew it?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "☀️",
+        "🌧️",
+        "🇮🇳"
+       ],
+       "motion": "float",
+       "caption": "Feeding India"
+      },
+      {
+       "items": [
+        "🍽️",
+        "🍎",
+        "🥦"
+       ],
+       "motion": "pulse",
+       "caption": "Essential work"
+      },
+      {
+       "items": [
+        "🙏",
+        "🌾"
+       ],
+       "motion": "float",
+       "caption": "Be thankful"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Agriculture: Irrigation": {
+  "id": "lib-social-studies-g4-agriculture-irrigation",
+  "topic": "Agriculture: Irrigation",
+  "title": "How Plants Drink Water",
+  "icon": "💧",
+  "scenes": [
+   {
+    "title": "The Thirsty Field",
+    "narration": [
+     "Have you ever wondered how farmers keep crops green when it does not rain for weeks?",
+     "Meet Ravi, a farmer in Punjab who needs a smart way to water his wheat field.",
+     "Bringing water to fields so plants can grow is called irrigation."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "☀️",
+        "🌾",
+        "🚜"
+       ],
+       "motion": "pulse",
+       "caption": "Hot sunny day"
+      },
+      {
+       "items": [
+        "👨‍🌾",
+        "🌾",
+        "🇮🇳"
+       ],
+       "motion": "float",
+       "caption": "Farmer Ravi"
+      },
+      {
+       "items": [
+        "💧",
+        "🌱",
+        "🛤️"
+       ],
+       "motion": "grow",
+       "caption": "What is irrigation"
+      }
+     ]
+    }
+   },
+   {
+    "title": "How Irrigation Works",
+    "narration": [
+     "Farmers get water from big sources like rivers, wells, or canals.",
+     "They use pumps to push this water through pipes to reach the thirsty soil.",
+     "Once the water reaches the roots, the plant drinks it up to stay healthy."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏞️",
+        "🕳️",
+        "🌊"
+       ],
+       "motion": "chain",
+       "caption": "Water sources"
+      },
+      {
+       "items": [
+        "⚙️",
+        "💧",
+        "➡️"
+       ],
+       "motion": "push",
+       "caption": "Using pumps"
+      },
+      {
+       "items": [
+        "🌱",
+        "💧",
+        "🔍"
+       ],
+       "motion": "grow",
+       "caption": "Roots drinking"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Drip Irrigation Example",
+    "narration": [
+     "In dry areas, Ravi uses a clever method called drip irrigation.",
+     "He lays a pipe with tiny holes right next to each plant's roots.",
+     "Water drips slowly, so no water is wasted on the dry dirt between rows.",
+     "This helps Ravi save 50 rupees on electricity and keeps his plants happy."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "💧",
+        "🪴",
+        "🚿"
+       ],
+       "motion": "chain",
+       "caption": "Drip method"
+      },
+      {
+       "items": [
+        "➖",
+        "🕳️",
+        "🌱"
+       ],
+       "motion": "push",
+       "caption": "Tiny holes"
+      },
+      {
+       "items": [
+        "💧",
+        "💧",
+        "🚫"
+       ],
+       "motion": "fall",
+       "caption": "Saving water"
+      },
+      {
+       "items": [
+        "💰",
+        "📉",
+        "✅"
+       ],
+       "motion": "rise",
+       "caption": "Cost effective"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Summary of Irrigation",
+    "narration": [
+     "Irrigation brings water to crops when nature does not provide enough rain.",
+     "It uses pipes, pumps, and canals to help farmers grow our food.",
+     "Think about it: Why do you think saving water is important for farmers in India?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌧️",
+        "❌",
+        "💧"
+       ],
+       "motion": "chain",
+       "caption": "Artificial watering"
+      },
+      {
+       "items": [
+        "🚜",
+        "🌾",
+        "🍎"
+       ],
+       "motion": "float",
+       "caption": "Helping farmers"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🌍",
+        "💧"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Resources: Natural Resources": {
+  "id": "lib-social-studies-g4-resources-natural-resources",
+  "topic": "Resources: Natural Resources",
+  "title": "Gifts From Our Mother Earth",
+  "icon": "🌍",
+  "scenes": [
+   {
+    "title": "What Are Natural Resources?",
+    "narration": [
+     "Have you ever wondered where your school pencil or a glass of water comes from?",
+     "These things come from nature, so we call them natural resources.",
+     "Nature gives us everything we need to live comfortably every single day."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "✏️",
+        "🥛"
+       ],
+       "motion": "pulse",
+       "caption": "Everyday objects"
+      },
+      {
+       "items": [
+        "🌳",
+        "☀️",
+        "💧"
+       ],
+       "motion": "float",
+       "caption": "Nature's gifts"
+      },
+      {
+       "items": [
+        "🏠",
+        "🍎"
+       ],
+       "motion": "grow",
+       "caption": "Our needs"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Types of Resources",
+    "narration": [
+     "Some resources are renewable, which means they never run out, like sunlight.",
+     "Others are non-renewable, like coal or oil, which take millions of years to form.",
+     "We must use these carefully so we do not finish them too quickly."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "☀️"
+       ],
+       "motion": "rise",
+       "caption": "Renewable sunlight"
+      },
+      {
+       "items": [
+        "🪨",
+        "⛽"
+       ],
+       "motion": "fall",
+       "caption": "Limited coal"
+      },
+      {
+       "items": [
+        "⚠️",
+        "⏳"
+       ],
+       "motion": "pull",
+       "caption": "Use carefully"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Real Indian Example",
+    "narration": [
+     "Look at the mighty River Ganga, a precious water resource for millions of Indians.",
+     "Farmers use this water to grow delicious wheat and rice in our fields.",
+     "We must keep the water clean so everyone stays healthy and happy."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏞️",
+        "🇮🇳"
+       ],
+       "motion": "float",
+       "caption": "River Ganga"
+      },
+      {
+       "items": [
+        "🌾",
+        "🍚",
+        "🚜"
+       ],
+       "motion": "grow",
+       "caption": "Growing food"
+      },
+      {
+       "items": [
+        "💧",
+        "✨",
+        "😊"
+       ],
+       "motion": "push",
+       "caption": "Keep clean"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Reflect",
+    "narration": [
+     "Natural resources are gifts from Earth that help us live and grow.",
+     "Always remember to save water and electricity to protect our future.",
+     "Think about it: What is one thing you can do today to save our resources?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌍",
+        "🎁"
+       ],
+       "motion": "chain",
+       "caption": "Earth's gifts"
+      },
+      {
+       "items": [
+        "🚰",
+        "💡"
+       ],
+       "motion": "pulse",
+       "caption": "Save resources"
+      },
+      {
+       "items": [
+        "🤔",
+        "♻️"
+       ],
+       "motion": "float",
+       "caption": "Your turn"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Agriculture: Farming Methods": {
+  "id": "lib-social-studies-g4-agriculture-farming-methods",
+  "topic": "Agriculture: Farming Methods",
+  "title": "How Food Grows in India",
+  "icon": "🌾",
+  "scenes": [
+   {
+    "title": "The Daily Meal Hook",
+    "narration": [
+     "Have you ever wondered how the rice on your plate reaches your home?",
+     "Every grain of rice started its long journey on a green farm.",
+     "Let us see how farmers grow our food across India."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍚",
+        "🏠"
+       ],
+       "motion": "float",
+       "caption": "Food Journey"
+      },
+      {
+       "items": [
+        "🌾",
+        "🚜"
+       ],
+       "motion": "grow",
+       "caption": "The Farm"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "👩‍🌾"
+       ],
+       "motion": "chain",
+       "caption": "Indian Farming"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Steps of Farming",
+    "narration": [
+     "First, the farmer prepares the soil by ploughing the land carefully.",
+     "Then, seeds are sown into the soft, rich earth.",
+     "Farmers add water through irrigation to help the tiny plants grow.",
+     "Finally, the crops are harvested when they are fully ripe."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🚜",
+        "🌍"
+       ],
+       "motion": "push",
+       "caption": "Ploughing"
+      },
+      {
+       "items": [
+        "🌱",
+        "✨"
+       ],
+       "motion": "fall",
+       "caption": "Sowing Seeds"
+      },
+      {
+       "items": [
+        "💧",
+        "🚿"
+       ],
+       "motion": "rise",
+       "caption": "Irrigation"
+      },
+      {
+       "items": [
+        "✂️",
+        "🌾"
+       ],
+       "motion": "pulse",
+       "caption": "Harvesting"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Day in Punjab",
+    "narration": [
+     "Meet Farmer Arjun in Punjab who grows golden wheat fields.",
+     "He uses a tractor to work faster on his large fields.",
+     "He checks the wheat stalks to ensure they are healthy and strong.",
+     "He sells the grain at the local Mandi for people to buy."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👨‍🌾",
+        "🌾"
+       ],
+       "motion": "float",
+       "caption": "Farmer Arjun"
+      },
+      {
+       "items": [
+        "🚜",
+        "⚙️"
+       ],
+       "motion": "push",
+       "caption": "Using Technology"
+      },
+      {
+       "items": [
+        "🔍",
+        "🌾"
+       ],
+       "motion": "pulse",
+       "caption": "Checking Crops"
+      },
+      {
+       "items": [
+        "💰",
+        "🛍️"
+       ],
+       "motion": "chain",
+       "caption": "Selling Food"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Think",
+    "narration": [
+     "Farming involves preparing soil, sowing seeds, watering, and harvesting.",
+     "Hard work by our farmers brings food to every kitchen in India.",
+     "Think about it: Which crops grow in your state during winter?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌍",
+        "🌱",
+        "💧",
+        "🌾"
+       ],
+       "motion": "chain",
+       "caption": "Farming Steps"
+      },
+      {
+       "items": [
+        "👩‍🌾",
+        "🇮🇳",
+        "🏠"
+       ],
+       "motion": "rise",
+       "caption": "Hard Work"
+      },
+      {
+       "items": [
+        "🤔",
+        "❄️"
+       ],
+       "motion": "pulse",
+       "caption": "Think About It"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Agriculture: Major Agricultural Regions": {
+  "id": "lib-social-studies-g4-agriculture-major-agricultural-regions",
+  "topic": "Agriculture: Major Agricultural Regions",
+  "title": "India's Amazing Farming Regions",
+  "icon": "🌾",
+  "scenes": [
+   {
+    "title": "Where Our Food Grows",
+    "narration": [
+     "Have you ever wondered where the rice in your lunch box comes from?",
+     "India is a huge country with many different regions for farming.",
+     "Different plants need different soil and weather to grow big and strong."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍱",
+        "🍚"
+       ],
+       "motion": "float",
+       "caption": "Lunchtime curiosity"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🚜"
+       ],
+       "motion": "pulse",
+       "caption": "Farming in India"
+      },
+      {
+       "items": [
+        "☀️",
+        "🌧️",
+        "🌱"
+       ],
+       "motion": "grow",
+       "caption": "Plant needs"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Fertile Plains",
+    "narration": [
+     "The Northern Plains are famous for growing lots of golden wheat.",
+     "Rivers like the Ganga bring rich soil that makes plants very happy.",
+     "Farmers here work hard to feed people all across our country."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌾",
+        "🚜"
+       ],
+       "motion": "push",
+       "caption": "Northern Plains"
+      },
+      {
+       "items": [
+        "🏞️",
+        "💧",
+        "🌻"
+       ],
+       "motion": "rise",
+       "caption": "River water"
+      },
+      {
+       "items": [
+        "👨‍🌾",
+        "🍞"
+       ],
+       "motion": "chain",
+       "caption": "Hard work"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Tea and Spices",
+    "narration": [
+     "In the cool hills of Assam, tea leaves grow on green slopes.",
+     "Down south in Kerala, the warm weather is perfect for spicy pepper.",
+     "Each region has a special crop that it is famous for growing."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍵",
+        "⛰️"
+       ],
+       "motion": "grow",
+       "caption": "Assam tea"
+      },
+      {
+       "items": [
+        "🌶️",
+        "🌴"
+       ],
+       "motion": "float",
+       "caption": "Kerala spices"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "📍",
+        "🍎"
+       ],
+       "motion": "pulse",
+       "caption": "Regional crops"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Summary and Discovery",
+    "narration": [
+     "India grows many crops because of our different climates and soils.",
+     "From wheat in the north to tea in the east, farming is vital.",
+     "Think about it: what is your favorite vegetable, and where might it grow?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌦️",
+        "🌏",
+        "🌽"
+       ],
+       "motion": "chain",
+       "caption": "Climate variety"
+      },
+      {
+       "items": [
+        "🌾",
+        "🍵"
+       ],
+       "motion": "float",
+       "caption": "Crop diversity"
+      },
+      {
+       "items": [
+        "🥕",
+        "🤔"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Resources: Renewable and Non-renewable Resources": {
+  "id": "lib-social-studies-g4-resources-renewable-and-non-renewable-resources",
+  "topic": "Resources: Renewable and Non-renewable Resources",
+  "title": "Energy Treasure Hunt",
+  "icon": "⚡",
+  "scenes": [
+   {
+    "title": "The Magic Light Switch",
+    "narration": [
+     "Have you ever wondered what makes the lights glow when you flip a switch at home?",
+     "We use energy to power our fans, lights, and even your school laptop.",
+     "But where does this energy come from, and will it ever run out?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "💡",
+        "🏠"
+       ],
+       "motion": "pulse",
+       "caption": "Light switch"
+      },
+      {
+       "items": [
+        "🌀",
+        "💻"
+       ],
+       "motion": "rise",
+       "caption": "Using energy"
+      },
+      {
+       "items": [
+        "❓",
+        "🔋"
+       ],
+       "motion": "pulse",
+       "caption": "Energy source"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Renewable vs Non-Renewable",
+    "narration": [
+     "Renewable resources are like nature's gift that keeps on giving, like bright sunlight.",
+     "Non-renewable resources are hidden underground, like coal, and there is only a limited amount.",
+     "Once we use up all the coal to make electricity, it takes millions of years to return."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "☀️"
+       ],
+       "motion": "grow",
+       "caption": "Renewable energy"
+      },
+      {
+       "items": [
+        "🪨",
+        "⛏️"
+       ],
+       "motion": "fall",
+       "caption": "Non-renewable"
+      },
+      {
+       "items": [
+        "⌛",
+        "⏳"
+       ],
+       "motion": "chain",
+       "caption": "Limited supply"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Powering India",
+    "narration": [
+     "In India, we use coal from mines in Jharkhand to power our big factories.",
+     "But we are also building giant wind farms in Tamil Nadu to catch the breeze.",
+     "Solar panels on rooftops in Rajasthan turn the hot desert sun into clean electricity."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "🚂",
+        "🏭"
+       ],
+       "motion": "push",
+       "caption": "Coal mining"
+      },
+      {
+       "items": [
+        "🌬️",
+        "🗼"
+       ],
+       "motion": "float",
+       "caption": "Wind energy"
+      },
+      {
+       "items": [
+        "☀️",
+        "🏠",
+        "⚡"
+       ],
+       "motion": "rise",
+       "caption": "Solar power"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Smart Energy Choices",
+    "narration": [
+     "Renewable energy is better for our Earth because it never runs out.",
+     "We should turn off lights when leaving a room to save precious resources.",
+     "Think about it: What is one way you can save electricity in your house today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌍",
+        "🌱"
+       ],
+       "motion": "grow",
+       "caption": "Better choice"
+      },
+      {
+       "items": [
+        "🚫",
+        "💡"
+       ],
+       "motion": "pull",
+       "caption": "Save energy"
+      },
+      {
+       "items": [
+        "🤔",
+        "💡"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Resources: Conservation": {
+  "id": "lib-social-studies-g4-resources-conservation",
+  "topic": "Resources: Conservation",
+  "title": "Saving Our Earth's Treasures",
+  "icon": "🌍",
+  "scenes": [
+   {
+    "title": "The Daily Water Mystery",
+    "narration": [
+     "Look at Rohan brushing his teeth with the tap running wide open.",
+     "Did you know that water is a precious resource that can run out?",
+     "Why should we save the water we use at home?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "🚰",
+        "💧"
+       ],
+       "motion": "float",
+       "caption": "Running water"
+      },
+      {
+       "items": [
+        "💧",
+        "🚫",
+        "🌏"
+       ],
+       "motion": "pulse",
+       "caption": "Limited resource"
+      },
+      {
+       "items": [
+        "🤔",
+        "🏠",
+        "💧"
+       ],
+       "motion": "pulse",
+       "caption": "Saving water"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Understanding Natural Resources",
+    "narration": [
+     "Resources are gifts from nature like sunlight, air, and water.",
+     "Some resources take millions of years to form, like coal.",
+     "If we use them too fast, they might disappear forever.",
+     "Conservation means using these things wisely so they last."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "☀️",
+        "🌬️",
+        "💧"
+       ],
+       "motion": "grow",
+       "caption": "Nature's gifts"
+      },
+      {
+       "items": [
+        "💎",
+        "⏳",
+        "🪨"
+       ],
+       "motion": "chain",
+       "caption": "Slow formation"
+      },
+      {
+       "items": [
+        "📉",
+        "⌛",
+        "🚫"
+       ],
+       "motion": "fall",
+       "caption": "Running out"
+      },
+      {
+       "items": [
+        "♻️",
+        "🤝",
+        "🌍"
+       ],
+       "motion": "push",
+       "caption": "Conservation"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Day of Conservation",
+    "narration": [
+     "Priya turns off the lights when she leaves her room.",
+     "Instead of throwing away paper, she uses both sides.",
+     "She carries a cloth bag for shopping at the market.",
+     "These small acts help protect our beautiful India."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "💡",
+        "✅",
+        "👧"
+       ],
+       "motion": "push",
+       "caption": "Saving electricity"
+      },
+      {
+       "items": [
+        "📝",
+        "♻️",
+        "📖"
+       ],
+       "motion": "chain",
+       "caption": "Reduce waste"
+      },
+      {
+       "items": [
+        "🛍️",
+        "🥦",
+        "🍎"
+       ],
+       "motion": "push",
+       "caption": "Cloth bags"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🌳",
+        "✨"
+       ],
+       "motion": "grow",
+       "caption": "Protecting India"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Wrapping Up Our Mission",
+    "narration": [
+     "Remember, resources are limited, so we must use them carefully.",
+     "Reduce, reuse, and recycle are the keys to a green future.",
+     "What is one thing you can save starting today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌏",
+        "⚠️",
+        "⚖️"
+       ],
+       "motion": "pulse",
+       "caption": "Use carefully"
+      },
+      {
+       "items": [
+        "♻️",
+        "🌱",
+        "🔑"
+       ],
+       "motion": "chain",
+       "caption": "Three Rs"
+      },
+      {
+       "items": [
+        "🤔",
+        "💡",
+        "📅"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Indian History: Ancient India": {
+  "id": "lib-social-studies-g4-indian-history-ancient-india",
+  "topic": "Indian History: Ancient India",
+  "title": "Secrets of Ancient India",
+  "icon": "🏺",
+  "scenes": [
+   {
+    "title": "A Mystery in the Soil",
+    "narration": [
+     "Have you ever wondered how old the houses in your city are?",
+     "Long ago, people lived in the Indus Valley near a great river.",
+     "Let us travel back thousands of years to see how they lived."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏠",
+        "🏺",
+        "🔍"
+       ],
+       "motion": "pulse",
+       "caption": "Old mysteries"
+      },
+      {
+       "items": [
+        "🏞️",
+        "🇮🇳"
+       ],
+       "motion": "float",
+       "caption": "Ancient homes"
+      },
+      {
+       "items": [
+        "⏳",
+        "📜"
+       ],
+       "motion": "chain",
+       "caption": "Time travel"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Life in Harappa",
+    "narration": [
+     "They built houses with baked bricks and had special drains for water.",
+     "Farmers grew wheat and barley in the rich soil near the river.",
+     "People traded beautiful beads and seals with distant lands.",
+     "They even had a system of writing that we still cannot read today."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🧱",
+        "💧"
+       ],
+       "motion": "grow",
+       "caption": "Smart cities"
+      },
+      {
+       "items": [
+        "🌾",
+        "🚜"
+       ],
+       "motion": "rise",
+       "caption": "Farming life"
+      },
+      {
+       "items": [
+        "💎",
+        "🚢"
+       ],
+       "motion": "push",
+       "caption": "Ancient trade"
+      },
+      {
+       "items": [
+        "✍️",
+        "🔣"
+       ],
+       "motion": "pulse",
+       "caption": "Hidden code"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Daily Routine",
+    "narration": [
+     "Imagine a child in Harappa playing with clay toys.",
+     "They used flat copper weights to measure grain at the market.",
+     "They wore colorful cotton clothes and pretty stone necklaces."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🧸",
+        "🏺"
+       ],
+       "motion": "float",
+       "caption": "Toy time"
+      },
+      {
+       "items": [
+        "⚖️",
+        "💰"
+       ],
+       "motion": "pull",
+       "caption": "Market math"
+      },
+      {
+       "items": [
+        "👕",
+        "📿"
+       ],
+       "motion": "grow",
+       "caption": "Daily style"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Remembering the Past",
+    "narration": [
+     "Ancient India was home to very clever planners and builders.",
+     "We learn about them by digging up old pottery and tools.",
+     "Think about it: what will people find if they dig up your house in a thousand years?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏗️",
+        "🧠"
+       ],
+       "motion": "rise",
+       "caption": "Great builders"
+      },
+      {
+       "items": [
+        "🏺",
+        "🪚"
+       ],
+       "motion": "fall",
+       "caption": "Archaeology"
+      },
+      {
+       "items": [
+        "🏠",
+        "⏳",
+        "❓"
+       ],
+       "motion": "pulse",
+       "caption": "Your legacy"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Indian History: Mauryan Empire": {
+  "id": "lib-social-studies-g4-indian-history-mauryan-empire",
+  "topic": "Indian History: Mauryan Empire",
+  "title": "The Great Mauryan Empire",
+  "icon": "🦁",
+  "scenes": [
+   {
+    "title": "A Powerful Ancient Kingdom",
+    "narration": [
+     "Have you ever seen the four lions on our Indian coins and notes?",
+     "That symbol comes from a very famous empire called the Mauryan Empire.",
+     "Do you wonder how one ruler managed such a huge land long ago?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "🪙",
+        "🦁"
+       ],
+       "motion": "pulse",
+       "caption": "National Emblem"
+      },
+      {
+       "items": [
+        "🏛️",
+        "👑"
+       ],
+       "motion": "grow",
+       "caption": "Mauryan History"
+      },
+      {
+       "items": [
+        "🗺️",
+        "🤔"
+       ],
+       "motion": "float",
+       "caption": "Giant Empire"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Building the Empire",
+    "narration": [
+     "Chandragupta Maurya started the empire with the help of his clever teacher, Chanakya.",
+     "They built a strong army to unite many small kingdoms into one.",
+     "They also created a system to collect taxes and keep the people safe."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👑",
+        "📜",
+        "👨‍🏫"
+       ],
+       "motion": "chain",
+       "caption": "The Founders"
+      },
+      {
+       "items": [
+        "⚔️",
+        "🛡️",
+        "🇮🇳"
+       ],
+       "motion": "push",
+       "caption": "United India"
+      },
+      {
+       "items": [
+        "💰",
+        "🛡️",
+        "🏡"
+       ],
+       "motion": "pull",
+       "caption": "Good Governance"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Story of Ashoka",
+    "narration": [
+     "Ashoka the Great was the most famous ruler of this powerful dynasty.",
+     "After a big battle, he felt sad about the fighting and chose peace instead.",
+     "He carved messages of kindness on stone pillars all across his kingdom."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👑",
+        "🦁"
+       ],
+       "motion": "rise",
+       "caption": "Emperor Ashoka"
+      },
+      {
+       "items": [
+        "⚔️",
+        "🚫",
+        "🕊️"
+       ],
+       "motion": "float",
+       "caption": "Path of Peace"
+      },
+      {
+       "items": [
+        "🗿",
+        "✍️",
+        "📜"
+       ],
+       "motion": "push",
+       "caption": "Ashoka's Pillars"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Remembering the Mauryas",
+    "narration": [
+     "The Mauryas taught us about unity, peaceful living, and good government.",
+     "Their symbols still remind us of our history every time we use money.",
+     "Think about it: Why do you think peace is better than fighting a war?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🤝",
+        "☮️",
+        "⚖️"
+       ],
+       "motion": "chain",
+       "caption": "Lasting Lessons"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🪙"
+       ],
+       "motion": "pulse",
+       "caption": "Ancient Legacy"
+      },
+      {
+       "items": [
+        "🤔",
+        "🕊️",
+        "🌍"
+       ],
+       "motion": "float",
+       "caption": "Think About It"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Indian History: Gupta Period": {
+  "id": "lib-social-studies-g4-indian-history-gupta-period",
+  "topic": "Indian History: Gupta Period",
+  "title": "The Golden Age of India",
+  "icon": "👑",
+  "scenes": [
+   {
+    "title": "A Time of Treasures",
+    "narration": [
+     "Have you ever seen a beautiful old gold coin in a museum?",
+     "Long ago, India entered a special time called the Gupta Period.",
+     "It was known as the Golden Age because so many amazing things happened."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "💰",
+        "🏛️"
+       ],
+       "motion": "float",
+       "caption": "Gold Coins"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "⏳"
+       ],
+       "motion": "pulse",
+       "caption": "Gupta Period"
+      },
+      {
+       "items": [
+        "✨",
+        "🌟"
+       ],
+       "motion": "grow",
+       "caption": "Golden Age"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Learning and Inventions",
+    "narration": [
+     "Smart scholars lived in places like Nalanda to study math and science.",
+     "They invented the number zero and learned how the Earth moves.",
+     "Beautiful books were written in Sanskrit, our ancient language.",
+     "Artists carved stunning statues of gods and heroes in caves."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📚",
+        "🎓",
+        "🏫"
+       ],
+       "motion": "chain",
+       "caption": "Nalanda University"
+      },
+      {
+       "items": [
+        "0",
+        "🌍",
+        "🔭"
+       ],
+       "motion": "rise",
+       "caption": "Great Inventions"
+      },
+      {
+       "items": [
+        "📜",
+        "✒️"
+       ],
+       "motion": "push",
+       "caption": "Sanskrit Literature"
+      },
+      {
+       "items": [
+        "🗿",
+        "🎨"
+       ],
+       "motion": "grow",
+       "caption": "Art and Sculpture"
+      }
+     ]
+    }
+   },
+   {
+    "title": "King Chandra Gupta's Reign",
+    "narration": [
+     "King Chandra Gupta was a strong leader who kept the country safe.",
+     "He helped trade grow by building long roads across the land.",
+     "Farmers grew plenty of rice and wheat for everyone to eat."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👑",
+        "🛡️",
+        "⚔️"
+       ],
+       "motion": "pull",
+       "caption": "Strong Leader"
+      },
+      {
+       "items": [
+        "🛣️",
+        "🚛",
+        "💎"
+       ],
+       "motion": "push",
+       "caption": "Trade Routes"
+      },
+      {
+       "items": [
+        "🌾",
+        "🍚",
+        "🚜"
+       ],
+       "motion": "grow",
+       "caption": "Prosperous Farms"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Remembering the Golden Age",
+    "narration": [
+     "The Gupta Period gave us math, science, and beautiful art.",
+     "It is a time in our history we remember with great pride.",
+     "If you could invent something for the future, what would it be?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "➕",
+        "🧪",
+        "🎭"
+       ],
+       "motion": "pulse",
+       "caption": "Lasting Gifts"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "❤️"
+       ],
+       "motion": "float",
+       "caption": "National Pride"
+      },
+      {
+       "items": [
+        "💡",
+        "🤔"
+       ],
+       "motion": "rise",
+       "caption": "Think About It"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Indian History: Vedic Period": {
+  "id": "lib-social-studies-g4-indian-history-vedic-period",
+  "topic": "Indian History: Vedic Period",
+  "title": "Life in the Vedic Age",
+  "icon": "📜",
+  "scenes": [
+   {
+    "title": "A Journey to the Past",
+    "narration": [
+     "Have you ever wondered how people lived in India thousands of years ago?",
+     "Long ago, people lived in small settlements near the mighty rivers.",
+     "This time is called the Vedic Period, named after the sacred Vedas."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏠",
+        "🤔",
+        "🇮🇳"
+       ],
+       "motion": "pulse",
+       "caption": "Ancient India"
+      },
+      {
+       "items": [
+        "🏞️",
+        "🛖",
+        "🌾"
+       ],
+       "motion": "float",
+       "caption": "Early Settlements"
+      },
+      {
+       "items": [
+        "📚",
+        "✨",
+        "⏳"
+       ],
+       "motion": "rise",
+       "caption": "The Vedas"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Learning about Vedic Life",
+    "narration": [
+     "The Vedas are ancient books filled with beautiful prayers and hymns.",
+     "Students learned these lessons by listening closely to their teachers, called Gurus.",
+     "People lived in harmony with nature and followed simple, peaceful lives.",
+     "They farmed land and raised cows, which were very important to them."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📖",
+        "🎶",
+        "🙏"
+       ],
+       "motion": "chain",
+       "caption": "Ancient Wisdom"
+      },
+      {
+       "items": [
+        "🧑‍🏫",
+        "👂",
+        "🧘"
+       ],
+       "motion": "grow",
+       "caption": "Guru-Shishya Tradition"
+      },
+      {
+       "items": [
+        "🌳",
+        "🐄",
+        "☀️"
+       ],
+       "motion": "float",
+       "caption": "Simple Living"
+      },
+      {
+       "items": [
+        "🐄",
+        "🌾",
+        "🚜"
+       ],
+       "motion": "push",
+       "caption": "Farming Life"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Day in the Village",
+    "narration": [
+     "Imagine young Aarav helping his father tend to their herd of cows.",
+     "In the evening, the family gathers to sing songs and share stories.",
+     "They eat simple food like grains, milk, and fresh vegetables."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "🐄",
+        "🌾"
+       ],
+       "motion": "chain",
+       "caption": "Daily Chores"
+      },
+      {
+       "items": [
+        "🔥",
+        "👪",
+        "🎶"
+       ],
+       "motion": "pulse",
+       "caption": "Family Gathering"
+      },
+      {
+       "items": [
+        "🥣",
+        "🥛",
+        "🥕"
+       ],
+       "motion": "grow",
+       "caption": "Healthy Food"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Reflect",
+    "narration": [
+     "The Vedic period gave us the Vedas and taught us the value of learning.",
+     "Nature, family, and knowledge were the most important parts of their world.",
+     "Think about it: What is one thing you learn from your teachers today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📜",
+        "💡",
+        "🎓"
+       ],
+       "motion": "rise",
+       "caption": "Lasting Knowledge"
+      },
+      {
+       "items": [
+        "🌳",
+        "👪",
+        "📚"
+       ],
+       "motion": "float",
+       "caption": "Key Values"
+      },
+      {
+       "items": [
+        "🤔",
+        "🏫",
+        "✏️"
+       ],
+       "motion": "pulse",
+       "caption": "Think About It"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Indian History: Indus Valley Civilization": {
+  "id": "lib-social-studies-g4-indian-history-indus-valley-civilization",
+  "topic": "Indian History: Indus Valley Civilization",
+  "title": "Secrets of the Indus Valley",
+  "icon": "🏺",
+  "scenes": [
+   {
+    "title": "A Mysterious Discovery",
+    "narration": [
+     "Have you ever found an old treasure buried in your garden?",
+     "Long ago, near the Indus River, people built a huge city.",
+     "Archaeologists dug deep to find these hidden homes."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌱",
+        "🔍",
+        "🏺"
+       ],
+       "motion": "pulse",
+       "caption": "Buried History"
+      },
+      {
+       "items": [
+        "🏞️",
+        "🏠",
+        "🏗️"
+       ],
+       "motion": "grow",
+       "caption": "Ancient Cities"
+      },
+      {
+       "items": [
+        "⛏️",
+        "🧱",
+        "🇮🇳"
+       ],
+       "motion": "pull",
+       "caption": "Digging Deep"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Smart City Planning",
+    "narration": [
+     "They built straight streets that crossed like a grid.",
+     "They even had covered drains to keep the city clean.",
+     "Houses were made of strong, baked bricks."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📏",
+        "🛣️",
+        "🏘️"
+       ],
+       "motion": "chain",
+       "caption": "Smart Layout"
+      },
+      {
+       "items": [
+        "💧",
+        "🚿",
+        "🧼"
+       ],
+       "motion": "float",
+       "caption": "Clean Living"
+      },
+      {
+       "items": [
+        "🧱",
+        "🏠",
+        "🧱"
+       ],
+       "motion": "rise",
+       "caption": "Strong Bricks"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Trade and Daily Life",
+    "narration": [
+     "People traded colorful beads and pretty pottery.",
+     "Farmers grew wheat and barley in the fertile soil.",
+     "They used special seals to mark their goods."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📿",
+        "🏺",
+        "⚖️"
+       ],
+       "motion": "push",
+       "caption": "Trading Goods"
+      },
+      {
+       "items": [
+        "🌾",
+        "🚜",
+        "☀️"
+       ],
+       "motion": "grow",
+       "caption": "Farming Life"
+      },
+      {
+       "items": [
+        "🏷️",
+        "🐅",
+        "🐄"
+       ],
+       "motion": "pulse",
+       "caption": "Unique Seals"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Remembering the Past",
+    "narration": [
+     "The Indus Valley was one of the world's first civilizations.",
+     "They taught us how to build cities and trade.",
+     "If you built a city, what important invention would you add?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌍",
+        "⏳",
+        "📜"
+       ],
+       "motion": "float",
+       "caption": "Great History"
+      },
+      {
+       "items": [
+        "🏗️",
+        "🤝",
+        "💡"
+       ],
+       "motion": "chain",
+       "caption": "Learning Lessons"
+      },
+      {
+       "items": [
+        "🤔",
+        "✍️",
+        "🏰"
+       ],
+       "motion": "pulse",
+       "caption": "Think About It"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Indian Heritage: Monuments": {
+  "id": "lib-social-studies-g4-indian-heritage-monuments",
+  "topic": "Indian Heritage: Monuments",
+  "title": "Exploring India's Amazing Monuments",
+  "icon": "🏰",
+  "scenes": [
+   {
+    "title": "Our Beautiful Landmarks",
+    "narration": [
+     "Have you ever visited a place that looks like it came from a storybook?",
+     "These special buildings are called monuments, and they tell us about India's history.",
+     "Why were these grand structures built so long ago?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏰",
+        "🇮🇳"
+       ],
+       "motion": "float",
+       "caption": "Historic places"
+      },
+      {
+       "items": [
+        "📜",
+        "🕰️"
+       ],
+       "motion": "pulse",
+       "caption": "What are monuments"
+      },
+      {
+       "items": [
+        "🤔",
+        "🏗️"
+       ],
+       "motion": "rise",
+       "caption": "Curious question"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Understanding Our Heritage",
+    "narration": [
+     "Monuments are built to remember important people, events, or great kings and queens.",
+     "They show us the amazing art and building skills people had in the past.",
+     "Materials like red sandstone and marble were often used to make them last forever."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👑",
+        "🤴"
+       ],
+       "motion": "chain",
+       "caption": "Honoring leaders"
+      },
+      {
+       "items": [
+        "🎨",
+        "🔨"
+       ],
+       "motion": "grow",
+       "caption": "Special skills"
+      },
+      {
+       "items": [
+        "🪨",
+        "💎"
+       ],
+       "motion": "push",
+       "caption": "Strong materials"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Visit to the Taj",
+    "narration": [
+     "Let us look at the Taj Mahal in Agra, built by Emperor Shah Jahan.",
+     "First, the workers carefully carved beautiful patterns into the white marble walls.",
+     "Then, they added colorful precious stones to create flowers that shine in the sun.",
+     "Finally, the grand dome was placed on top, making it a wonder of the world."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "🕌"
+       ],
+       "motion": "float",
+       "caption": "Taj Mahal"
+      },
+      {
+       "items": [
+        "✍️",
+        "⬜"
+       ],
+       "motion": "push",
+       "caption": "Carving marble"
+      },
+      {
+       "items": [
+        "🌸",
+        "💎"
+       ],
+       "motion": "grow",
+       "caption": "Beautiful designs"
+      },
+      {
+       "items": [
+        "✨",
+        "🔝"
+       ],
+       "motion": "rise",
+       "caption": "Grand completion"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Protecting Our Past",
+    "narration": [
+     "Monuments are our heritage, connecting us to our ancestors and our culture.",
+     "We must always keep them clean and respect these protected sites.",
+     "Think about it: If you could build a monument today, what would it represent?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👵",
+        "🧒",
+        "🇮🇳"
+       ],
+       "motion": "pulse",
+       "caption": "Our heritage"
+      },
+      {
+       "items": [
+        "🧹",
+        "🚫",
+        "🛡️"
+       ],
+       "motion": "pull",
+       "caption": "Protecting history"
+      },
+      {
+       "items": [
+        "💭",
+        "🏗️",
+        "💡"
+       ],
+       "motion": "rise",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Indian Heritage: Architecture": {
+  "id": "lib-social-studies-g4-indian-heritage-architecture",
+  "topic": "Indian Heritage: Architecture",
+  "title": "Marvels of Indian Architecture",
+  "icon": "🕌",
+  "scenes": [
+   {
+    "title": "The Wonder in Our Streets",
+    "narration": [
+     "Have you ever noticed the beautiful domes and tall towers on old buildings in our cities?",
+     "Why do some buildings look like giant stone puzzles or castles from long ago?",
+     "Let's discover the amazing stories behind India's famous architectural treasures."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🕌",
+        "🏙️",
+        "🏛️"
+       ],
+       "motion": "pulse",
+       "caption": "Old buildings"
+      },
+      {
+       "items": [
+        "🧩",
+        "🏰",
+        "🤔"
+       ],
+       "motion": "float",
+       "caption": "Ancient mysteries"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "✨",
+        "📜"
+       ],
+       "motion": "rise",
+       "caption": "Let's explore"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Building With History",
+    "narration": [
+     "Architecture is the art of designing and building structures that stand the test of time.",
+     "In India, builders used local materials like red sandstone, marble, and strong granite rocks.",
+     "They also used clever shapes like arches and domes to keep buildings strong for centuries.",
+     "Artists carved intricate patterns and stories directly into the stone walls."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📐",
+        "🏗️",
+        "🧱"
+       ],
+       "motion": "grow",
+       "caption": "Designing art"
+      },
+      {
+       "items": [
+        "🪨",
+        "⚪",
+        "🔴"
+       ],
+       "motion": "chain",
+       "caption": "Natural materials"
+      },
+      {
+       "items": [
+        "🏗️",
+        "🟢",
+        "💪"
+       ],
+       "motion": "push",
+       "caption": "Strong shapes"
+      },
+      {
+       "items": [
+        "🔨",
+        "🎨",
+        "🗿"
+       ],
+       "motion": "pulse",
+       "caption": "Stone carvings"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Look at Taj Mahal",
+    "narration": [
+     "Look at the Taj Mahal in Agra, a masterpiece made of gleaming white marble.",
+     "It has four tall towers called minarets standing perfectly straight around the main dome.",
+     "Inside, artisans used tiny, colorful gemstones to create floral patterns on the walls.",
+     "Every part was placed with perfect balance, making it look like a dream in stone."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏛️",
+        "⚪",
+        "✨"
+       ],
+       "motion": "float",
+       "caption": "White marble"
+      },
+      {
+       "items": [
+        "🗼",
+        "🗼",
+        "⚪"
+       ],
+       "motion": "rise",
+       "caption": "Tall minarets"
+      },
+      {
+       "items": [
+        "💎",
+        "🌸",
+        "✨"
+       ],
+       "motion": "grow",
+       "caption": "Intricate gems"
+      },
+      {
+       "items": [
+        "⚖️",
+        "✨",
+        "🏛️"
+       ],
+       "motion": "pulse",
+       "caption": "Perfect balance"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Legacy of Stone",
+    "narration": [
+     "India's buildings tell us how people lived, prayed, and ruled many years ago.",
+     "By protecting these monuments, we keep our beautiful culture alive for everyone to see.",
+     "Think about it, what is the oldest building you have ever seen in your town?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📜",
+        "🙏",
+        "👑"
+       ],
+       "motion": "chain",
+       "caption": "Our history"
+      },
+      {
+       "items": [
+        "🛡️",
+        "🇮🇳",
+        "❤️"
+       ],
+       "motion": "float",
+       "caption": "Protecting heritage"
+      },
+      {
+       "items": [
+        "🏠",
+        "🕰️",
+        "❓"
+       ],
+       "motion": "pulse",
+       "caption": "Your local history"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Indian Heritage: Art": {
+  "id": "lib-social-studies-g4-indian-heritage-art",
+  "topic": "Indian Heritage: Art",
+  "title": "Colors of Indian Art",
+  "icon": "🎨",
+  "scenes": [
+   {
+    "title": "A World of Patterns",
+    "narration": [
+     "Have you ever seen beautiful patterns drawn on the floor at your friend's house?",
+     "That is called Rangoli, a special way we celebrate art in India every day.",
+     "How do these simple colors tell us so many stories about our history?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏠",
+        "✨"
+       ],
+       "motion": "pulse",
+       "caption": "Beautiful Rangoli"
+      },
+      {
+       "items": [
+        "🎨",
+        "🇮🇳"
+       ],
+       "motion": "float",
+       "caption": "Indian Art"
+      },
+      {
+       "items": [
+        "❓",
+        "📖"
+       ],
+       "motion": "rise",
+       "caption": "Asking Questions"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Stories in Stone and Paint",
+    "narration": [
+     "Long ago, artists carved amazing stories into the walls of caves like Ajanta.",
+     "They used natural colors from flowers, stones, and earth to make their paints.",
+     "These paintings helped people learn about kings, queens, and their daily lives.",
+     "Every brushstroke was a way to keep our culture alive for everyone."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🪨",
+        "🖌️",
+        "🖼️"
+       ],
+       "motion": "chain",
+       "caption": "Ancient Carvings"
+      },
+      {
+       "items": [
+        "🌸",
+        "🪨",
+        "🌍"
+       ],
+       "motion": "fall",
+       "caption": "Natural Pigments"
+      },
+      {
+       "items": [
+        "👑",
+        "👸",
+        "📜"
+       ],
+       "motion": "float",
+       "caption": "History Lessons"
+      },
+      {
+       "items": [
+        "🖌️",
+        "🇮🇳"
+       ],
+       "motion": "push",
+       "caption": "Preserving Culture"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Madhubani Magic",
+    "narration": [
+     "Let us look at Madhubani art from the beautiful state of Bihar.",
+     "First, artists draw a strong border around the edge of their paper.",
+     "Then, they fill the empty space with bright patterns of nature and animals.",
+     "Finally, they use bold black lines to make every picture pop out."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🗺️",
+        "🇮🇳"
+       ],
+       "motion": "pulse",
+       "caption": "Bihar Art"
+      },
+      {
+       "items": [
+        "✏️",
+        "🖼️"
+       ],
+       "motion": "chain",
+       "caption": "Drawing Borders"
+      },
+      {
+       "items": [
+        "🐦",
+        "🐟",
+        "🌻"
+       ],
+       "motion": "grow",
+       "caption": "Adding Patterns"
+      },
+      {
+       "items": [
+        "🖊️",
+        "⚫"
+       ],
+       "motion": "push",
+       "caption": "Defining Lines"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Keep the Art Alive",
+    "narration": [
+     "Indian art uses nature, bright colors, and wonderful stories to connect us all.",
+     "From cave walls to colorful rangoli, our heritage is a vibrant gift.",
+     "If you could paint a story about your own life, what would you draw?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🎨",
+        "🌿",
+        "📖"
+       ],
+       "motion": "float",
+       "caption": "Art Summary"
+      },
+      {
+       "items": [
+        "🪨",
+        "✨",
+        "🎁"
+       ],
+       "motion": "rise",
+       "caption": "Vibrant Heritage"
+      },
+      {
+       "items": [
+        "🤔",
+        "🎨"
+       ],
+       "motion": "pulse",
+       "caption": "Think About It"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Government: What Is Government?": {
+  "id": "lib-social-studies-g4-government-what-is-government",
+  "topic": "Government: What Is Government?",
+  "title": "Who Runs Our Country?",
+  "icon": "🇮🇳",
+  "scenes": [
+   {
+    "title": "A Day in the Neighborhood",
+    "narration": [
+     "Look at the smooth roads and the clean park in your city.",
+     "Have you ever wondered who makes sure the streetlights turn on?",
+     "All these things happen because of our government."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🛣️",
+        "🌳",
+        "🚲"
+       ],
+       "motion": "float",
+       "caption": "Public spaces"
+      },
+      {
+       "items": [
+        "💡",
+        "🌃",
+        "🤔"
+       ],
+       "motion": "pulse",
+       "caption": "Who helps?"
+      },
+      {
+       "items": [
+        "🏛️",
+        "🇮🇳"
+       ],
+       "motion": "rise",
+       "caption": "The government"
+      }
+     ]
+    }
+   },
+   {
+    "title": "What Does Government Do?",
+    "narration": [
+     "The government is a group of people who make important decisions.",
+     "They create rules called laws to keep everyone safe and fair.",
+     "They also manage schools, hospitals, and public transport for us.",
+     "They make sure money is spent to help all citizens."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👥",
+        "📜",
+        "🖊️"
+       ],
+       "motion": "chain",
+       "caption": "Making decisions"
+      },
+      {
+       "items": [
+        "⚖️",
+        "🛡️",
+        "📜"
+       ],
+       "motion": "push",
+       "caption": "Creating laws"
+      },
+      {
+       "items": [
+        "🏫",
+        "🏥",
+        "🚌"
+       ],
+       "motion": "grow",
+       "caption": "Public services"
+      },
+      {
+       "items": [
+        "💰",
+        "₹",
+        "🤝"
+       ],
+       "motion": "pull",
+       "caption": "Managing money"
+      }
+     ]
+    }
+   },
+   {
+    "title": "How it Works in India",
+    "narration": [
+     "In India, we live in a democracy, which means we choose our leaders.",
+     "Adults vote in elections to pick people to represent them.",
+     "These leaders work at different levels, like in New Delhi or our state capital."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🗳️",
+        "🇮🇳",
+        "🙋"
+       ],
+       "motion": "chain",
+       "caption": "Democracy"
+      },
+      {
+       "items": [
+        "✅",
+        "🗳️",
+        "👵",
+        "👴"
+       ],
+       "motion": "pulse",
+       "caption": "Elections"
+      },
+      {
+       "items": [
+        "📍",
+        "🏢",
+        "🗺️"
+       ],
+       "motion": "float",
+       "caption": "Different levels"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Summary and Reflection",
+    "narration": [
+     "The government keeps society organized, safe, and helpful for everyone.",
+     "It is like a big team working together to run our nation.",
+     "Think about it: What is one rule in your school that keeps everyone safe?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏘️",
+        "🛡️",
+        "🌟"
+       ],
+       "motion": "rise",
+       "caption": "Summary"
+      },
+      {
+       "items": [
+        "🤝",
+        "🇮🇳",
+        "🏃"
+       ],
+       "motion": "chain",
+       "caption": "Teamwork"
+      },
+      {
+       "items": [
+        "🏫",
+        "🚫",
+        "🏃‍♂️"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Indian Heritage: Literature": {
+  "id": "lib-social-studies-g4-indian-heritage-literature",
+  "topic": "Indian Heritage: Literature",
+  "title": "Stories of Ancient India",
+  "icon": "📜",
+  "scenes": [
+   {
+    "title": "A Library of Wonders",
+    "narration": [
+     "Have you ever wondered how people shared stories before books were printed?",
+     "Long ago, scholars in India wrote down wisdom on dried palm leaves.",
+     "These ancient writings are our precious literary heritage."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "👧",
+        "💭"
+       ],
+       "motion": "pulse",
+       "caption": "Sharing Stories"
+      },
+      {
+       "items": [
+        "🌴",
+        "✍️",
+        "📜"
+       ],
+       "motion": "float",
+       "caption": "Palm Leaves"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "📚",
+        "✨"
+       ],
+       "motion": "grow",
+       "caption": "Our Heritage"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Great Epics and Poems",
+    "narration": [
+     "The Ramayana and Mahabharata are two of our most famous epic poems.",
+     "Sanskrit was the language used for many of these early texts.",
+     "Kalidasa wrote beautiful plays that people still enjoy watching today."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏹",
+        "👑",
+        "📖"
+       ],
+       "motion": "chain",
+       "caption": "Famous Epics"
+      },
+      {
+       "items": [
+        "🔤",
+        "🕉️"
+       ],
+       "motion": "float",
+       "caption": "Sanskrit Language"
+      },
+      {
+       "items": [
+        "🎭",
+        "✍️",
+        "🌟"
+       ],
+       "motion": "rise",
+       "caption": "Great Plays"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Storyteller's Example",
+    "narration": [
+     "Think of the Panchatantra, a collection of stories about clever animals.",
+     "These stories taught children lessons about friendship and being wise.",
+     "Even today, we read these tales in our classrooms in India."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🦁",
+        "🦊",
+        "📖"
+       ],
+       "motion": "push",
+       "caption": "Panchatantra Tales"
+      },
+      {
+       "items": [
+        "🤝",
+        "💡",
+        "🧠"
+       ],
+       "motion": "grow",
+       "caption": "Learning Wisdom"
+      },
+      {
+       "items": [
+        "🏫",
+        "📖",
+        "🇮🇳"
+       ],
+       "motion": "float",
+       "caption": "Modern Learning"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Keeping Stories Alive",
+    "narration": [
+     "Our literature preserves the thoughts and dreams of people from the past.",
+     "Reading these books helps us understand our culture better.",
+     "If you could write a story about India, what would it be?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "⏳",
+        "💭",
+        "📜"
+       ],
+       "motion": "pulse",
+       "caption": "Preserving History"
+      },
+      {
+       "items": [
+        "📚",
+        "🌍",
+        "❤️"
+       ],
+       "motion": "grow",
+       "caption": "Cultural Pride"
+      },
+      {
+       "items": [
+        "🖊️",
+        "📝",
+        "🇮🇳"
+       ],
+       "motion": "rise",
+       "caption": "Think About It"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Government: Local Government": {
+  "id": "lib-social-studies-g4-government-local-government",
+  "topic": "Government: Local Government",
+  "title": "Who Runs Your Neighborhood?",
+  "icon": "🏠",
+  "scenes": [
+   {
+    "title": "The Neighborhood Problem",
+    "narration": [
+     "Have you ever noticed a broken street light or a pile of trash near your home?",
+     "Who fixes these things so our street stays clean and safe?",
+     "It is not the Prime Minister in Delhi, but our local government!"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "💡",
+        "🗑️",
+        "🏠"
+       ],
+       "motion": "pulse",
+       "caption": "Local issues"
+      },
+      {
+       "items": [
+        "🧹",
+        "🛠️",
+        "🚶"
+       ],
+       "motion": "float",
+       "caption": "Who helps?"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🏛️"
+       ],
+       "motion": "pulse",
+       "caption": "Local government"
+      }
+     ]
+    }
+   },
+   {
+    "title": "How Local Government Works",
+    "narration": [
+     "In cities, we have a Municipal Corporation to look after big tasks.",
+     "Elected members called Councilors meet to discuss plans for our ward.",
+     "They use tax money to build parks and keep our water supply running."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏙️",
+        "🏢"
+       ],
+       "motion": "grow",
+       "caption": "Municipal Corporation"
+      },
+      {
+       "items": [
+        "🙋",
+        "🙋‍♀️",
+        "📋"
+       ],
+       "motion": "chain",
+       "caption": "Ward Councilors"
+      },
+      {
+       "items": [
+        "₹",
+        "🌳",
+        "🚰"
+       ],
+       "motion": "push",
+       "caption": "Using funds"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Gram Panchayat Example",
+    "narration": [
+     "In a village like Rampur, the local government is called a Gram Panchayat.",
+     "The villagers vote for a leader called the Sarpanch.",
+     "Together, they decide where to build a new school or fix the road."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌾",
+        "🏡",
+        "🇮🇳"
+       ],
+       "motion": "float",
+       "caption": "Gram Panchayat"
+      },
+      {
+       "items": [
+        "🗳️",
+        "👵",
+        "🤝"
+       ],
+       "motion": "chain",
+       "caption": "The Sarpanch"
+      },
+      {
+       "items": [
+        "🏫",
+        "🛣️",
+        "🔨"
+       ],
+       "motion": "grow",
+       "caption": "Village development"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Thinking",
+    "narration": [
+     "Local government keeps our daily life running smoothly in cities and villages.",
+     "Councilors and Sarpanchs listen to our needs and use taxes for public good.",
+     "Think about it: What is one thing you would change in your neighborhood today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "✅",
+        "🏙️",
+        "🌾"
+       ],
+       "motion": "pulse",
+       "caption": "Running smoothly"
+      },
+      {
+       "items": [
+        "🗣️",
+        "₹",
+        "✨"
+       ],
+       "motion": "chain",
+       "caption": "Public service"
+      },
+      {
+       "items": [
+        "🤔",
+        "💭"
+       ],
+       "motion": "float",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Indian Heritage: Classical Dances": {
+  "id": "lib-social-studies-g4-indian-heritage-classical-dances",
+  "topic": "Indian Heritage: Classical Dances",
+  "title": "Magical Classical Dances of India",
+  "icon": "💃",
+  "scenes": [
+   {
+    "title": "A Colorful Cultural Hook",
+    "narration": [
+     "Have you ever seen a dancer tell a story without saying a single word?",
+     "In India, we have beautiful classical dances that have been performed for hundreds of years.",
+     "How do these dancers use their hands and eyes to share history?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "💃",
+        "✨"
+       ],
+       "motion": "pulse",
+       "caption": "Silent stories"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🏛️"
+       ],
+       "motion": "float",
+       "caption": "Ancient tradition"
+      },
+      {
+       "items": [
+        "🖐️",
+        "👁️",
+        "📖"
+       ],
+       "motion": "pulse",
+       "caption": "Dancing expressions"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Meaning of Mudras",
+    "narration": [
+     "Classical dance uses special hand gestures called mudras to represent objects or emotions.",
+     "Every dance form, like Bharatanatyam or Kathak, follows strict rules set long ago.",
+     "The costumes are bright, and the dancers wear jingling ankle bells called ghungroos.",
+     "The music is traditional, keeping the rhythm steady for every graceful step."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🖐️",
+        "🌸",
+        "🐦"
+       ],
+       "motion": "chain",
+       "caption": "Hand mudras"
+      },
+      {
+       "items": [
+        "📜",
+        "🩰"
+       ],
+       "motion": "chain",
+       "caption": "Strict rules"
+      },
+      {
+       "items": [
+        "👘",
+        "🔔"
+       ],
+       "motion": "grow",
+       "caption": "Ghungroo bells"
+      },
+      {
+       "items": [
+        "🥁",
+        "🎵"
+       ],
+       "motion": "float",
+       "caption": "Traditional music"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Example: The Story of Kathak",
+    "narration": [
+     "Let us look at Kathak, a dance from North India that tells epic stories.",
+     "The dancer spins quickly, creating beautiful patterns with their colorful skirts.",
+     "They use their feet to create complex rhythms that match the fast tabla beats.",
+     "By changing their expression, they show if a character is happy or sad."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📍",
+        "📖"
+       ],
+       "motion": "float",
+       "caption": "North India"
+      },
+      {
+       "items": [
+        "👗",
+        "🌀"
+       ],
+       "motion": "rise",
+       "caption": "Fast spins"
+      },
+      {
+       "items": [
+        "👣",
+        "🥁"
+       ],
+       "motion": "push",
+       "caption": "Rhythmic feet"
+      },
+      {
+       "items": [
+        "😊",
+        "😔"
+       ],
+       "motion": "pulse",
+       "caption": "Facial expressions"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Reflection",
+    "narration": [
+     "Classical dances keep our traditions alive through music, mudras, and storytelling.",
+     "From the bells on ankles to the stories told, it is a living art form.",
+     "Think about it: If you had to dance a story, what animal or emotion would you show first?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌟",
+        "🇮🇳"
+       ],
+       "motion": "chain",
+       "caption": "Cultural heritage"
+      },
+      {
+       "items": [
+        "🔔",
+        "🎭"
+       ],
+       "motion": "float",
+       "caption": "Living art"
+      },
+      {
+       "items": [
+        "🤔",
+        "🦁",
+        "🎨"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Government: State Government": {
+  "id": "lib-social-studies-g4-government-state-government",
+  "topic": "Government: State Government",
+  "title": "Who Runs Our State",
+  "icon": "🏛️",
+  "scenes": [
+   {
+    "title": "The Big Question",
+    "narration": [
+     "Have you ever noticed new roads being built or schools getting new books in your town?",
+     "It is not just one person doing everything, our state government helps make it happen.",
+     "Do you wonder how our leaders decide what our state needs most?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🛣️",
+        "📚"
+       ],
+       "motion": "grow",
+       "caption": "New projects"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🏛️"
+       ],
+       "motion": "pulse",
+       "caption": "State government"
+      },
+      {
+       "items": [
+        "🤔",
+        "🗺️"
+       ],
+       "motion": "float",
+       "caption": "Decision making"
+      }
+     ]
+    }
+   },
+   {
+    "title": "How It Works",
+    "narration": [
+     "Every state is divided into smaller areas called constituencies.",
+     "People vote to choose a representative called an MLA to speak for them.",
+     "All these MLAs meet in the Vidhan Sabha to discuss laws and budgets.",
+     "The party with the most MLAs forms the government for the state."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🗺️",
+        "✂️"
+       ],
+       "motion": "push",
+       "caption": "Constituencies"
+      },
+      {
+       "items": [
+        "🗳️",
+        "👤"
+       ],
+       "motion": "chain",
+       "caption": "Voting"
+      },
+      {
+       "items": [
+        "🏛️",
+        "🗣️"
+       ],
+       "motion": "pulse",
+       "caption": "Vidhan Sabha"
+      },
+      {
+       "items": [
+        "🏆",
+        "👥"
+       ],
+       "motion": "grow",
+       "caption": "Forming government"
+      }
+     ]
+    }
+   },
+   {
+    "title": "An Example in Action",
+    "narration": [
+     "Imagine the state needs a new hospital in a village like in Maharashtra.",
+     "The local MLA tells the Chief Minister about the need for better healthcare.",
+     "The government allocates money from the budget to build and staff it.",
+     "Soon, doctors arrive and the hospital opens to help everyone nearby."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏥",
+        "📍"
+       ],
+       "motion": "rise",
+       "caption": "New hospital"
+      },
+      {
+       "items": [
+        "👤",
+        "🗣️",
+        "🏥"
+       ],
+       "motion": "push",
+       "caption": "Bringing requests"
+      },
+      {
+       "items": [
+        "💰",
+        "🏗️",
+        "🩺"
+       ],
+       "motion": "chain",
+       "caption": "Budgeting"
+      },
+      {
+       "items": [
+        "🩺",
+        "👩‍⚕️",
+        "🏥"
+       ],
+       "motion": "grow",
+       "caption": "Service delivery"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Think",
+    "narration": [
+     "State governments use votes to pick leaders who work in the Vidhan Sabha.",
+     "They manage budgets to build schools, roads, and hospitals for us.",
+     "Think about it: If you were an MLA, what is one thing you would build in your town?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🗳️",
+        "🏛️",
+        "👤"
+       ],
+       "motion": "chain",
+       "caption": "Key process"
+      },
+      {
+       "items": [
+        "🏫",
+        "🛣️",
+        "🏥"
+       ],
+       "motion": "pulse",
+       "caption": "Helping people"
+      },
+      {
+       "items": [
+        "🤔",
+        "🏗️",
+        "✨"
+       ],
+       "motion": "float",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Rights and Responsibilities: Rules": {
+  "id": "lib-social-studies-g4-rights-and-responsibilities-rules",
+  "topic": "Rights and Responsibilities: Rules",
+  "title": "Why Do We Need Rules?",
+  "icon": "⚖️",
+  "scenes": [
+   {
+    "title": "The Playground Chaos",
+    "narration": [
+     "Have you ever seen a game of cricket with no rules at all?",
+     "If everyone runs whenever they want, the game becomes a big mess.",
+     "Rules help us play fair and keep everyone safe and happy."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏏",
+        "🏃"
+       ],
+       "motion": "pulse",
+       "caption": "Chaotic cricket"
+      },
+      {
+       "items": [
+        "😫",
+        "⚽"
+       ],
+       "motion": "fall",
+       "caption": "No order"
+      },
+      {
+       "items": [
+        "🤝",
+        "😊"
+       ],
+       "motion": "grow",
+       "caption": "Why rules exist"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Our Rights and Duties",
+    "narration": [
+     "A right is something you deserve, like going to school to learn.",
+     "But your right comes with a responsibility to be kind to others.",
+     "Rules are like a promise we make to live together peacefully.",
+     "In India, our Constitution gives us rights and asks us to follow laws."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📚",
+        "🏫"
+       ],
+       "motion": "rise",
+       "caption": "Your rights"
+      },
+      {
+       "items": [
+        "❤️",
+        "👫"
+       ],
+       "motion": "float",
+       "caption": "Being kind"
+      },
+      {
+       "items": [
+        "📜",
+        "🤝"
+       ],
+       "motion": "chain",
+       "caption": "Social promise"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "⚖️"
+       ],
+       "motion": "pulse",
+       "caption": "Constitution"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Rules in Daily Life",
+    "narration": [
+     "Think about crossing a busy street in Delhi or Mumbai.",
+     "The red light tells cars to stop so you can walk safely.",
+     "If drivers ignored the rules, the road would be very dangerous.",
+     "By following the light, you protect yourself and others too."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🚦",
+        "🚗",
+        "🚶"
+       ],
+       "motion": "push",
+       "caption": "Traffic lights"
+      },
+      {
+       "items": [
+        "🛑",
+        "🦶"
+       ],
+       "motion": "pull",
+       "caption": "Red light"
+      },
+      {
+       "items": [
+        "⚠️",
+        "😱"
+       ],
+       "motion": "fall",
+       "caption": "Ignoring rules"
+      },
+      {
+       "items": [
+        "✅",
+        "🛡️"
+       ],
+       "motion": "rise",
+       "caption": "Safe crossing"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Wrapping Up",
+    "narration": [
+     "Remember, rules are not there to stop fun, but to make life better.",
+     "When we all follow the rules, our country becomes a happier place.",
+     "Think about it: What is one rule at home that helps your family?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🎉",
+        "✨"
+       ],
+       "motion": "grow",
+       "caption": "Better life"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🏠",
+        "🌟"
+       ],
+       "motion": "rise",
+       "caption": "Happy India"
+      },
+      {
+       "items": [
+        "🏠",
+        "🤔"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Government: Central Government": {
+  "id": "lib-social-studies-g4-government-central-government",
+  "topic": "Government: Central Government",
+  "title": "Running Our Big Country India",
+  "icon": "🇮🇳",
+  "scenes": [
+   {
+    "title": "Who Makes The Rules",
+    "narration": [
+     "Have you ever wondered who decides the rules for all of India?",
+     "From Kashmir to Kanyakumari, one team helps keep us safe.",
+     "This team is called the Central Government."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "🏫",
+        "🤔"
+       ],
+       "motion": "pulse",
+       "caption": "Big Questions"
+      },
+      {
+       "items": [
+        "🏔️",
+        "🌊",
+        "🤝"
+       ],
+       "motion": "float",
+       "caption": "One Nation"
+      },
+      {
+       "items": [
+        "🏢",
+        "🏛️",
+        "🇮🇳"
+       ],
+       "motion": "grow",
+       "caption": "Central Government"
+      }
+     ]
+    }
+   },
+   {
+    "title": "How The Government Works",
+    "narration": [
+     "The government is like a big team with three main parts.",
+     "The Parliament makes new laws for everyone to follow.",
+     "The President and Prime Minister lead the country's work.",
+     "Courts make sure everyone plays fair by the rules."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👥",
+        "3️⃣"
+       ],
+       "motion": "chain",
+       "caption": "Three Parts"
+      },
+      {
+       "items": [
+        "📜",
+        "⚖️"
+       ],
+       "motion": "push",
+       "caption": "Making Laws"
+      },
+      {
+       "items": [
+        "👨‍💼",
+        "👩‍💼",
+        "🇮🇳"
+       ],
+       "motion": "rise",
+       "caption": "Leadership"
+      },
+      {
+       "items": [
+        "🔨",
+        "⚖️"
+       ],
+       "motion": "pulse",
+       "caption": "Justice"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Keeping India Running",
+    "narration": [
+     "Think of building a new highway from Delhi to Mumbai.",
+     "The Central Government plans the budget and the path.",
+     "They ensure engineers and workers get everything they need.",
+     "Soon, families can travel safely across our beautiful land."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🛣️",
+        "🚗",
+        "🏗️"
+       ],
+       "motion": "grow",
+       "caption": "New Highways"
+      },
+      {
+       "items": [
+        "💰",
+        "🗺️",
+        "✏️"
+       ],
+       "motion": "chain",
+       "caption": "Planning"
+      },
+      {
+       "items": [
+        "👷",
+        "🛠️",
+        "✅"
+       ],
+       "motion": "push",
+       "caption": "Getting Ready"
+      },
+      {
+       "items": [
+        "👨‍👩‍👧‍👦",
+        "🚌",
+        "🇮🇳"
+       ],
+       "motion": "float",
+       "caption": "Safe Travel"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap And Think",
+    "narration": [
+     "The Central Government leads, makes laws, and keeps us fair.",
+     "They work to make life better for every citizen here.",
+     "If you were a leader, what rule would you make?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "⚖️",
+        "🛡️"
+       ],
+       "motion": "pulse",
+       "caption": "Key Roles"
+      },
+      {
+       "items": [
+        "🏠",
+        "🌻",
+        "😊"
+       ],
+       "motion": "grow",
+       "caption": "Better Lives"
+      },
+      {
+       "items": [
+        "👑",
+        "✍️",
+        "💭"
+       ],
+       "motion": "float",
+       "caption": "Think About It"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Rights and Responsibilities: Duties": {
+  "id": "lib-social-studies-g4-rights-and-responsibilities-duties",
+  "topic": "Rights and Responsibilities: Duties",
+  "title": "Being a Great Indian Citizen",
+  "icon": "🇮🇳",
+  "scenes": [
+   {
+    "title": "The Hook: Our Shared Home",
+    "narration": [
+     "Have you ever wondered why we have rules at school and at home?",
+     "India is like a giant home for all of us, and it needs rules too.",
+     "These rules are called rights and duties, but what is a duty?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏫",
+        "🏠",
+        "❓"
+       ],
+       "motion": "pulse",
+       "caption": "Living together"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🏡"
+       ],
+       "motion": "float",
+       "caption": "Our country"
+      },
+      {
+       "items": [
+        "📜",
+        "🤝"
+       ],
+       "motion": "chain",
+       "caption": "Rights and Duties"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Understanding Our Duties",
+    "narration": [
+     "A duty is a responsibility we have to help our country grow stronger.",
+     "Our Constitution lists these as Fundamental Duties for every Indian citizen.",
+     "It is like being part of a team where everyone plays their part."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌱",
+        "🇮🇳"
+       ],
+       "motion": "grow",
+       "caption": "What is duty"
+      },
+      {
+       "items": [
+        "📖",
+        "✍️"
+       ],
+       "motion": "chain",
+       "caption": "The Constitution"
+      },
+      {
+       "items": [
+        "🏏",
+        "👥"
+       ],
+       "motion": "push",
+       "caption": "Teamwork"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Examples in Real Life",
+    "narration": [
+     "First, we show respect to our national flag and our beautiful national anthem.",
+     "Second, we must protect our forests, rivers, and all living creatures in India.",
+     "Third, we keep our streets clean, just like Aarav does in his colony.",
+     "Finally, we help each other and keep the peace in our communities."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "🎵"
+       ],
+       "motion": "rise",
+       "caption": "Show respect"
+      },
+      {
+       "items": [
+        "🌳",
+        "🌊",
+        "🐘"
+       ],
+       "motion": "float",
+       "caption": "Protect nature"
+      },
+      {
+       "items": [
+        "🧹",
+        "🏘️"
+       ],
+       "motion": "push",
+       "caption": "Keep it clean"
+      },
+      {
+       "items": [
+        "🤝",
+        "☮️"
+       ],
+       "motion": "chain",
+       "caption": "Help others"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Reflection",
+    "narration": [
+     "Duties are our way of saying thank you to our country.",
+     "When we follow our duties, India becomes a happier place for everyone.",
+     "Think about it: what is one small duty you can do today to help your neighborhood?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "❤️"
+       ],
+       "motion": "pulse",
+       "caption": "Being thankful"
+      },
+      {
+       "items": [
+        "😊",
+        "🇮🇳"
+       ],
+       "motion": "grow",
+       "caption": "Happy India"
+      },
+      {
+       "items": [
+        "🤔",
+        "🏡"
+       ],
+       "motion": "rise",
+       "caption": "Your turn"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Rights and Responsibilities: Respecting Others": {
+  "id": "lib-social-studies-g4-rights-and-responsibilities-respecting-others",
+  "topic": "Rights and Responsibilities: Respecting Others",
+  "title": "Being a Kind Citizen",
+  "icon": "🤝",
+  "scenes": [
+   {
+    "title": "The Community Park",
+    "narration": [
+     "Have you ever seen Rohan sharing his cricket bat at the park?",
+     "Why is it important to be kind and respect others in our neighborhood?",
+     "Respect means treating everyone the way you want to be treated yourself."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏏",
+        "👦",
+        "🌳"
+       ],
+       "motion": "float",
+       "caption": "Kindness at play"
+      },
+      {
+       "items": [
+        "🤔",
+        "🏘️",
+        "🤝"
+       ],
+       "motion": "pulse",
+       "caption": "The big question"
+      },
+      {
+       "items": [
+        "✨",
+        "❤️",
+        "😊"
+       ],
+       "motion": "rise",
+       "caption": "Golden rule"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Rights and Responsibilities",
+    "narration": [
+     "A right is something you are entitled to, like going to school.",
+     "A responsibility is a duty, like keeping our classroom clean.",
+     "When we respect rights, we build a happy community together.",
+     "Respecting others means listening even when you have a different opinion."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📚",
+        "🏫",
+        "✅"
+       ],
+       "motion": "grow",
+       "caption": "Your rights"
+      },
+      {
+       "items": [
+        "🧹",
+        "🪣",
+        "🏫"
+       ],
+       "motion": "push",
+       "caption": "Your duties"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🤝",
+        "🏠"
+       ],
+       "motion": "chain",
+       "caption": "Living together"
+      },
+      {
+       "items": [
+        "👂",
+        "🗣️",
+        "💬"
+       ],
+       "motion": "float",
+       "caption": "Active listening"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Real Life Example",
+    "narration": [
+     "Imagine Priya is playing music loudly while her neighbor studies.",
+     "Priya realizes her right to music shouldn't stop others from working.",
+     "She turns the volume down so her neighbor can finish their homework."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🎶",
+        "🔊",
+        "📖"
+       ],
+       "motion": "pulse",
+       "caption": "Noise issue"
+      },
+      {
+       "items": [
+        "🤔",
+        "🔇",
+        "💡"
+       ],
+       "motion": "pull",
+       "caption": "Being thoughtful"
+      },
+      {
+       "items": [
+        "🔉",
+        "📝",
+        "😊"
+       ],
+       "motion": "fall",
+       "caption": "Respecting space"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Wrap Up",
+    "narration": [
+     "Remember, rights and responsibilities go hand in hand every day.",
+     "Small acts of kindness make India a better place for everyone.",
+     "How will you show respect to someone at school tomorrow?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "⚖️",
+        "🤝",
+        "🌟"
+       ],
+       "motion": "chain",
+       "caption": "The balance"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "❤️",
+        "🌍"
+       ],
+       "motion": "rise",
+       "caption": "Better together"
+      },
+      {
+       "items": [
+        "🙋",
+        "🏫",
+        "🤔"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Rights and Responsibilities: Being a Responsible Citizen": {
+  "id": "lib-social-studies-g4-rights-and-responsibilities-being-a-responsible-citizen",
+  "topic": "Rights and Responsibilities: Being a Responsible Citizen",
+  "title": "Being a Great Citizen",
+  "icon": "🇮🇳",
+  "scenes": [
+   {
+    "title": "The Community Hook",
+    "narration": [
+     "Have you noticed how clean our local park in Delhi stays?",
+     "It stays beautiful because people like you take care of it.",
+     "Do you know what it means to be a responsible citizen?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌳",
+        "🧹"
+       ],
+       "motion": "pulse",
+       "caption": "Our Park"
+      },
+      {
+       "items": [
+        "👧",
+        "👦",
+        "✨"
+       ],
+       "motion": "grow",
+       "caption": "Taking Care"
+      },
+      {
+       "items": [
+        "🤔",
+        "🇮🇳"
+       ],
+       "motion": "float",
+       "caption": "Being Responsible"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Rights and Duties",
+    "narration": [
+     "In India, you have rights, like the right to go to school.",
+     "Rights are special things you are allowed to have or do.",
+     "But for every right, you also have a responsibility.",
+     "A responsibility is a duty to help our country thrive."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏫",
+        "📚"
+       ],
+       "motion": "chain",
+       "caption": "Your Rights"
+      },
+      {
+       "items": [
+        "⚖️",
+        "📜"
+       ],
+       "motion": "pulse",
+       "caption": "What You Get"
+      },
+      {
+       "items": [
+        "🤝",
+        "🇮🇳"
+       ],
+       "motion": "push",
+       "caption": "Your Duty"
+      },
+      {
+       "items": [
+        "💪",
+        "🇮🇳"
+       ],
+       "motion": "rise",
+       "caption": "Helping India"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Day of Responsibility",
+    "narration": [
+     "Meet Arjun, who follows rules by waiting for the green light.",
+     "He also puts his candy wrapper in the dustbin, not on the road.",
+     "Arjun treats his neighbors with kindness and respect every single day.",
+     "By doing these small things, Arjun helps his whole community grow."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🚦",
+        "🚶‍♂️"
+       ],
+       "motion": "chain",
+       "caption": "Following Rules"
+      },
+      {
+       "items": [
+        "🍬",
+        "🗑️"
+       ],
+       "motion": "fall",
+       "caption": "Keeping Clean"
+      },
+      {
+       "items": [
+        "🏠",
+        "🤝"
+       ],
+       "motion": "float",
+       "caption": "Showing Respect"
+      },
+      {
+       "items": [
+        "🌱",
+        "🇮🇳"
+       ],
+       "motion": "grow",
+       "caption": "Community Growth"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Reflect",
+    "narration": [
+     "Remember, rights keep us safe, while responsibilities keep our country strong.",
+     "Being responsible means being kind, following rules, and caring for others.",
+     "Think about it: What is one small thing you will do today to help your neighborhood?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🛡️",
+        "🇮🇳"
+       ],
+       "motion": "pulse",
+       "caption": "Stay Strong"
+      },
+      {
+       "items": [
+        "❤️",
+        "✅"
+       ],
+       "motion": "chain",
+       "caption": "Good Citizen"
+      },
+      {
+       "items": [
+        "💭",
+        "🏘️"
+       ],
+       "motion": "float",
+       "caption": "Your Turn"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Economy and Occupations: Agriculture": {
+  "id": "lib-social-studies-g4-economy-and-occupations-agriculture",
+  "topic": "Economy and Occupations: Agriculture",
+  "title": "How Food Reaches Our Plate",
+  "icon": "🌾",
+  "scenes": [
+   {
+    "title": "Where does food come from?",
+    "narration": [
+     "Have you ever wondered how the dal and rice get to your lunchbox?",
+     "It all starts far away in the green fields of our country.",
+     "Let us follow the journey of a single grain of wheat."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍛",
+        "🍱"
+       ],
+       "motion": "pulse",
+       "caption": "Lunchtime mystery"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🌾"
+       ],
+       "motion": "float",
+       "caption": "Green fields"
+      },
+      {
+       "items": [
+        "🌾",
+        "➡️"
+       ],
+       "motion": "chain",
+       "caption": "Wheat's journey"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Life of a Farmer",
+    "narration": [
+     "First, a farmer prepares the soil by ploughing the land.",
+     "Next, they sow tiny seeds and make sure they get enough water.",
+     "The crops grow tall under the bright Indian sun.",
+     "Finally, when the crops are golden, it is time for harvesting."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🚜",
+        "👩‍🌾"
+       ],
+       "motion": "push",
+       "caption": "Preparing soil"
+      },
+      {
+       "items": [
+        "🌱",
+        "💧"
+       ],
+       "motion": "grow",
+       "caption": "Sowing seeds"
+      },
+      {
+       "items": [
+        "☀️",
+        "🌾"
+       ],
+       "motion": "rise",
+       "caption": "Sunlight"
+      },
+      {
+       "items": [
+        "🌾",
+        "✂️"
+       ],
+       "motion": "pull",
+       "caption": "Harvest time"
+      }
+     ]
+    }
+   },
+   {
+    "title": "From Field to Market",
+    "narration": [
+     "The farmer brings bags of grain to the big wholesale market.",
+     "Shopkeepers buy the grain and pay the farmer in rupees.",
+     "Then, the grains are packed into bags and sent to local stores.",
+     "Finally, your parents buy the wheat at the store to make flour."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌾",
+        "🚚",
+        "🏢"
+       ],
+       "motion": "chain",
+       "caption": "Wholesale market"
+      },
+      {
+       "items": [
+        "💰",
+        "🌾"
+       ],
+       "motion": "push",
+       "caption": "Earning money"
+      },
+      {
+       "items": [
+        "🛍️",
+        "🏪"
+       ],
+       "motion": "float",
+       "caption": "Packing"
+      },
+      {
+       "items": [
+        "🛒",
+        "👩‍🍳"
+       ],
+       "motion": "chain",
+       "caption": "Buying groceries"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Big Picture",
+    "narration": [
+     "Agriculture is the backbone of our country's economy.",
+     "Farmers work hard every day so we have food to eat.",
+     "Think about it: What would happen if farmers stopped growing crops?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "💪"
+       ],
+       "motion": "pulse",
+       "caption": "Economy backbone"
+      },
+      {
+       "items": [
+        "👨‍🌾",
+        "🍛"
+       ],
+       "motion": "float",
+       "caption": "Hard work"
+      },
+      {
+       "items": [
+        "🤔",
+        "🌾"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Economy and Occupations: Trade": {
+  "id": "lib-social-studies-g4-economy-and-occupations-trade",
+  "topic": "Economy and Occupations: Trade",
+  "title": "How We Trade in India",
+  "icon": "🛍️",
+  "scenes": [
+   {
+    "title": "The Everyday Market",
+    "narration": [
+     "Have you ever wondered how your favourite snacks reach the local shop?",
+     "Everything we use starts its journey far away from our homes.",
+     "Trade is simply the act of buying and selling things we need."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍪",
+        "🏪",
+        "🤔"
+       ],
+       "motion": "pulse",
+       "caption": "Market mystery"
+      },
+      {
+       "items": [
+        "🚛",
+        "📦",
+        "🌍"
+       ],
+       "motion": "float",
+       "caption": "Long journey"
+      },
+      {
+       "items": [
+        "🤝",
+        "💰",
+        "🛍️"
+       ],
+       "motion": "chain",
+       "caption": "What is trade"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Producers and Consumers",
+    "narration": [
+     "People who make goods, like farmers growing wheat, are called producers.",
+     "People who buy these goods to use them are called consumers.",
+     "Trade connects producers to consumers through shops and markets."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌾",
+        "👨‍🌾",
+        "🚜"
+       ],
+       "motion": "grow",
+       "caption": "The producers"
+      },
+      {
+       "items": [
+        "👧",
+        "🍎",
+        "🛒"
+       ],
+       "motion": "push",
+       "caption": "The consumers"
+      },
+      {
+       "items": [
+        "🚜",
+        "➡️",
+        "🏪",
+        "➡️",
+        "👧"
+       ],
+       "motion": "chain",
+       "caption": "Connecting everyone"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Basket of Apples",
+    "narration": [
+     "Imagine fresh apples grown in the beautiful orchards of Himachal Pradesh.",
+     "Trucks carry these apples across many states to a market in Delhi.",
+     "The shopkeeper pays the farmer rupees, and then you pay the shopkeeper.",
+     "This smooth exchange allows us to enjoy fruits from far away."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍎",
+        "🏔️",
+        "🇮🇳"
+       ],
+       "motion": "rise",
+       "caption": "Orchard harvest"
+      },
+      {
+       "items": [
+        "🚛",
+        "🛣️",
+        "🍎"
+       ],
+       "motion": "fall",
+       "caption": "Transporting goods"
+      },
+      {
+       "items": [
+        "💸",
+        "🍎",
+        "🛍️"
+       ],
+       "motion": "chain",
+       "caption": "Trading money"
+      },
+      {
+       "items": [
+        "😋",
+        "🇮🇳",
+        "🍎"
+       ],
+       "motion": "float",
+       "caption": "Successful trade"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Why Trade Matters",
+    "narration": [
+     "Trade helps us get things we cannot make ourselves.",
+     "It also creates many jobs, like drivers, shopkeepers, and farmers.",
+     "Think about it: what is one thing you bought today that came from another city?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🤝",
+        "🌍",
+        "📦"
+       ],
+       "motion": "pulse",
+       "caption": "Sharing resources"
+      },
+      {
+       "items": [
+        "🚛",
+        "🏪",
+        "👨‍🌾"
+       ],
+       "motion": "rise",
+       "caption": "Creating jobs"
+      },
+      {
+       "items": [
+        "🤔",
+        "🇮🇳",
+        "🗺️"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Economy and Occupations: Manufacturing": {
+  "id": "lib-social-studies-g4-economy-and-occupations-manufacturing",
+  "topic": "Economy and Occupations: Manufacturing",
+  "title": "From Raw Materials to Goods",
+  "icon": "🏭",
+  "scenes": [
+   {
+    "title": "The World of Things",
+    "narration": [
+     "Have you ever wondered how your school notebook is made?",
+     "Every object you use starts as a raw material.",
+     "Let us see how nature turns into something useful."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📓",
+        "✏️",
+        "❓"
+       ],
+       "motion": "pulse",
+       "caption": "Mystery object"
+      },
+      {
+       "items": [
+        "🌳",
+        "🪵",
+        "🏗️"
+       ],
+       "motion": "float",
+       "caption": "Raw materials"
+      },
+      {
+       "items": [
+        "🌳",
+        "➡️",
+        "📓"
+       ],
+       "motion": "chain",
+       "caption": "The journey"
+      }
+     ]
+    }
+   },
+   {
+    "title": "What is Manufacturing?",
+    "narration": [
+     "Manufacturing is changing raw things into finished goods.",
+     "Workers use big machines in factories to do this.",
+     "It takes many people and steps to finish one item."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🔨",
+        "⚙️",
+        "📦"
+       ],
+       "motion": "push",
+       "caption": "Changing materials"
+      },
+      {
+       "items": [
+        "🏭",
+        "👷",
+        "🤖"
+       ],
+       "motion": "rise",
+       "caption": "Factory work"
+      },
+      {
+       "items": [
+        "👥",
+        "➕",
+        "📝"
+       ],
+       "motion": "chain",
+       "caption": "Team effort"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Making a Paper Notebook",
+    "narration": [
+     "First, wood is cut from trees in the forest.",
+     "Next, the mill turns wood into soft paper pulp.",
+     "Then, machines press the pulp into smooth paper sheets.",
+     "Finally, the paper is cut and bound into your notebook."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌳",
+        "🪓"
+       ],
+       "motion": "fall",
+       "caption": "Harvesting wood"
+      },
+      {
+       "items": [
+        "🪵",
+        "➡️",
+        "🥣"
+       ],
+       "motion": "grow",
+       "caption": "Making pulp"
+      },
+      {
+       "items": [
+        "📃",
+        "⚙️"
+       ],
+       "motion": "push",
+       "caption": "Pressing paper"
+      },
+      {
+       "items": [
+        "✂️",
+        "📓",
+        "₹"
+       ],
+       "motion": "chain",
+       "caption": "Finished product"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Wrapping Up",
+    "narration": [
+     "Manufacturing turns raw materials into products we use daily.",
+     "It helps our economy grow and creates many jobs.",
+     "Think about it: what is one object in your room that was made in a factory?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏭",
+        "➡️",
+        "🛍️"
+       ],
+       "motion": "float",
+       "caption": "Main idea"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "📈",
+        "💼"
+       ],
+       "motion": "rise",
+       "caption": "Economic growth"
+      },
+      {
+       "items": [
+        "🏡",
+        "🔎",
+        "🤔"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Economy and Occupations: Services": {
+  "id": "lib-social-studies-g4-economy-and-occupations-services",
+  "topic": "Economy and Occupations: Services",
+  "title": "Who Helps Us Every Day?",
+  "icon": "🤝",
+  "scenes": [
+   {
+    "title": "The Busy Morning Hook",
+    "narration": [
+     "Have you ever wondered how your bread arrives at the local bakery each morning?",
+     "Many people work hard to bring us the things we use every single day.",
+     "These helpers provide services, which means they do something useful for us."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍞",
+        "🏠",
+        "🚲"
+       ],
+       "motion": "pulse",
+       "caption": "Daily Needs"
+      },
+      {
+       "items": [
+        "👨‍👩‍👧‍👦",
+        "💼"
+       ],
+       "motion": "float",
+       "caption": "Hard Workers"
+      },
+      {
+       "items": [
+        "✅",
+        "🤝"
+       ],
+       "motion": "rise",
+       "caption": "What Services"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Understanding Service Jobs",
+    "narration": [
+     "Unlike farmers who grow crops, service workers provide skills or help.",
+     "When you visit a doctor, you are paying for their expert advice and care.",
+     "Teachers at school provide the service of sharing knowledge with all of you.",
+     "These jobs keep our neighborhoods safe, clean, and happy places to live."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👩‍🏫",
+        "🩺",
+        "👮"
+       ],
+       "motion": "chain",
+       "caption": "Service Skills"
+      },
+      {
+       "items": [
+        "🩺",
+        "🏥",
+        "₹"
+       ],
+       "motion": "push",
+       "caption": "Doctor Visit"
+      },
+      {
+       "items": [
+        "📚",
+        "👩‍🏫",
+        "🏫"
+       ],
+       "motion": "grow",
+       "caption": "Teachers Help"
+      },
+      {
+       "items": [
+        "🏘️",
+        "🧹",
+        "✨"
+       ],
+       "motion": "pulse",
+       "caption": "Community Impact"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Day at the Market",
+    "narration": [
+     "Let us visit Rohan at the busy neighborhood grocery store in Delhi.",
+     "Rohan organizes the shelves so you can easily find your favorite milk packets.",
+     "When you pay him ten rupees, he provides the service of convenient shopping.",
+     "Without Rohan and his shop, getting your snacks would be very difficult."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📍",
+        "🇮🇳",
+        "🏪"
+       ],
+       "motion": "float",
+       "caption": "Local Market"
+      },
+      {
+       "items": [
+        "🥛",
+        "📦"
+       ],
+       "motion": "push",
+       "caption": "Organizing Goods"
+      },
+      {
+       "items": [
+        "₹",
+        "🔟",
+        "🛒"
+       ],
+       "motion": "pull",
+       "caption": "Service Exchange"
+      },
+      {
+       "items": [
+        "🚫",
+        "🥨",
+        "🤔"
+       ],
+       "motion": "fall",
+       "caption": "Value of Service"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Think",
+    "narration": [
+     "Services are jobs where people help us instead of making physical goods.",
+     "From doctors to shopkeepers, everyone plays a part in our economy.",
+     "Think about it: which service worker would you miss the most if they stopped working?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🧠",
+        "🤝",
+        "❌",
+        "🏭"
+       ],
+       "motion": "pulse",
+       "caption": "Key Summary"
+      },
+      {
+       "items": [
+        "🩺",
+        "🏪",
+        "🇮🇳"
+       ],
+       "motion": "chain",
+       "caption": "Economic Roles"
+      },
+      {
+       "items": [
+        "💭",
+        "🙋",
+        "❓"
+       ],
+       "motion": "rise",
+       "caption": "Think About It"
+      }
+     ]
+    }
+   }
+  ]
+ }
+}

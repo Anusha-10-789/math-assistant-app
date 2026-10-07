@@ -148,6 +148,7 @@ class QuestionVideoRequest(BaseModel):
 class YouTubeExplanationRequest(BaseModel):
     topic: str
     grade: int = Field(ge=1, le=5)
+    subject: str = "Mathematics"
 
 
 class TopicIntroRequest(BaseModel):

@@ -4,6 +4,7 @@ import AdminPage from "./components/AdminPage";
 import ReadingPoster from "./components/ReadingPoster";
 import MathBackdrop from "./components/MathBackdrop";
 import SolarSystemBackdrop from "./components/SolarSystemBackdrop";
+import WorldBackdrop from "./components/WorldBackdrop";
 import DownloadButtons from "./components/DownloadButtons";
 import ErrorMessage from "./components/ErrorMessage";
 import GradeSelect from "./components/GradeSelect";
@@ -179,7 +180,7 @@ export default function App() {
 
   useEffect(() => {
     const trimmed = topic.trim();
-    if (stage !== "grade" || needsLogin || !trimmed || isLocalMathTopic(trimmed)) return;
+    if (stage !== "grade" || needsLogin || !trimmed || (subject === "Mathematics" && isLocalMathTopic(trimmed))) return;
     // Debounced so flicking through grades doesn't fire a request for each.
     const timer = setTimeout(() => requestAiLesson(trimmed, grade, numQuestions), 700);
     return () => clearTimeout(timer);
@@ -218,7 +219,7 @@ export default function App() {
     }
 
     // Maths modules are built instantly in the browser — no waiting at all.
-    if (isLocalMathTopic(trimmed)) {
+    if (subjectArg === "Mathematics" && isLocalMathTopic(trimmed)) {
       const avoid = pastQuestions(trimmed, gradeArg).map((mcq) => questionKey(mcq.topic, mcq.question));
       startLesson(buildLocalMathLesson(trimmed, gradeArg, numQuestionsArg, avoid));
       return;
@@ -400,7 +401,7 @@ export default function App() {
   async function handleFetchYouTubeExplanation(topic: string): Promise<YouTubeExplanation> {
     if (!lesson) throw new Error("No lesson loaded.");
     try {
-      return await fetchYouTubeExplanation(topic, lesson.grade);
+      return await fetchYouTubeExplanation(topic, lesson.grade, subject);
     } catch (err) {
       if (err instanceof UnauthorizedError) {
         handleSessionExpired("Your session expired. Please log in again.");
@@ -536,12 +537,20 @@ export default function App() {
   );
 
   // Inside the lessons the background matches the subject: a solar system
-  // for Science, a maths chalkboard for Maths.
+  // for Science, a maths chalkboard for Maths, a world map for Social Studies.
   const inLesson = view === "app" && stage !== "subject";
 
   return (
     <div className={`min-h-screen ${inLesson ? "theme-dark" : ""}`}>
-      {!inLesson ? <ReadingPoster variant="app" /> : subject === "Science" ? <SolarSystemBackdrop /> : <MathBackdrop />}
+      {!inLesson ? (
+        <ReadingPoster variant="app" />
+      ) : subject === "Science" ? (
+        <SolarSystemBackdrop />
+      ) : subject === "Social Studies" ? (
+        <WorldBackdrop />
+      ) : (
+        <MathBackdrop />
+      )}
 
       {/* Desktop: labelled sidebar */}
       <aside className="fixed inset-y-0 left-0 z-20 hidden w-64 flex-col border-r border-white/70 bg-white/90 px-4 py-6 backdrop-blur-xl lg:flex print:hidden">
@@ -704,7 +713,7 @@ export default function App() {
             )}
 
             {stage === "grade" && topic.trim() && !topic.startsWith("Mixed Review") && !findTeacherLesson(topic.trim(), undefined, subject) && (
-              <TopicVideos key={`${topic}|${grade}`} topic={topic.trim()} grade={grade} watched={watchedVideos} onWatched={handleVideoWatched} />
+              <TopicVideos key={`${topic}|${grade}`} topic={topic.trim()} grade={grade} subject={subject} watched={watchedVideos} onWatched={handleVideoWatched} />
             )}
 
             {error && <ErrorMessage message={error} />}
@@ -756,7 +765,7 @@ export default function App() {
             )}
 
             {lesson && stage === "summary" && quizResult && !hasConceptVideos(lesson.topic) && !lesson.topic.startsWith("Mixed Review") && (
-              <TopicVideos key={`${lesson.topic}|${lesson.grade}`} topic={lesson.topic} grade={lesson.grade} watched={watchedVideos} onWatched={handleVideoWatched} />
+              <TopicVideos key={`${lesson.topic}|${lesson.grade}`} topic={lesson.topic} grade={lesson.grade} subject={subject} watched={watchedVideos} onWatched={handleVideoWatched} />
             )}
 
             {lesson && (stage === "lecture" || stage === "test") && (

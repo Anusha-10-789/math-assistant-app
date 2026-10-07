@@ -29,6 +29,11 @@ _CACHE_TTL_SECONDS = 24 * 60 * 60
 _cache: dict[tuple[str, int], tuple[float, dict | None]] = {}
 
 
+# The subject word added to the search, so Science and Social Studies topics
+# don't come back as maths videos.
+SEARCH_WORD = {"Mathematics": "math", "Science": "science", "Social Studies": "social studies"}
+
+
 def _api_key() -> str:
     return os.environ.get("YOUTUBE_API_KEY", "").strip()
 
@@ -37,7 +42,7 @@ def is_configured() -> bool:
     return bool(_api_key())
 
 
-async def find_kid_friendly_video(topic: str, grade: int) -> dict | None:
+async def find_kid_friendly_video(topic: str, grade: int, subject: str = "Mathematics") -> dict | None:
     """Searches YouTube for a kid-safe explanation video for a topic/grade.
 
     Returns {"video_id", "title", "channel_title"} or None if nothing
@@ -56,7 +61,7 @@ async def find_kid_friendly_video(topic: str, grade: int) -> dict | None:
 
     params = {
         "key": api_key,
-        "q": f"{topic} explained for kids grade {grade} math",
+        "q": f"{topic} explained for kids grade {grade} {SEARCH_WORD.get(subject, 'math')}",
         "part": "snippet",
         "type": "video",
         "maxResults": 10,

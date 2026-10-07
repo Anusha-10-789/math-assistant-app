@@ -1,6 +1,8 @@
+import EmojiText from "./EmojiText";
 import { useEffect, useState } from "react";
 import { fetchConceptVideo } from "../api";
 import { getLibraryVideo } from "../conceptLibrary";
+import type { Subject } from "../subjects";
 import { estimateSeconds, getConceptVideos, type ConceptVideo } from "../conceptVideos";
 import type { WatchedVideos } from "../videoProgress";
 import ConceptVideoPlayer from "./ConceptVideoPlayer";
@@ -8,6 +10,7 @@ import ConceptVideoPlayer from "./ConceptVideoPlayer";
 interface TopicVideosProps {
   topic: string;
   grade: number;
+  subject?: Subject;
   watched: WatchedVideos;
   onWatched: (videoId: string) => void;
 }
@@ -19,7 +22,7 @@ const minutes = (video: ConceptVideo) => Math.max(1, Math.round(estimateSeconds(
 // Short animated videos for a topic: the library video for this grade's
 // concept plus any hand-made ones; for a typed-in topic outside the syllabus,
 // one the AI storyboards on request.
-export default function TopicVideos({ topic, grade, watched, onWatched }: TopicVideosProps) {
+export default function TopicVideos({ topic, grade, subject, watched, onWatched }: TopicVideosProps) {
   const handMade = getConceptVideos(topic);
   const [playing, setPlaying] = useState<ConceptVideo | null>(null);
   const [aiVideo, setAiVideo] = useState<ConceptVideo | null>(null);
@@ -29,7 +32,7 @@ export default function TopicVideos({ topic, grade, watched, onWatched }: TopicV
 
   useEffect(() => {
     let cancelled = false;
-    getLibraryVideo(topic, grade).then((video) => {
+    getLibraryVideo(topic, grade, subject).then((video) => {
       if (cancelled) return;
       setLibraryVideo(video);
       setLibraryChecked(true);
@@ -37,7 +40,7 @@ export default function TopicVideos({ topic, grade, watched, onWatched }: TopicV
     return () => {
       cancelled = true;
     };
-  }, [topic, grade]);
+  }, [topic, grade, subject]);
 
   const videos = [...(libraryVideo ? [libraryVideo] : []), ...handMade, ...(aiVideo ? [aiVideo] : [])];
 
@@ -75,10 +78,10 @@ export default function TopicVideos({ topic, grade, watched, onWatched }: TopicV
             }`}
           >
             <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-orange-50 text-2xl" aria-hidden="true">
-              {video.icon}
+              <EmojiText text={video.icon} />
             </span>
             <span className="min-w-0 flex-1">
-              <span className="block font-semibold text-slate-900">{video.title}</span>
+              <span className="block font-semibold text-slate-900"><EmojiText text={video.title} /></span>
               <span className="block text-xs text-slate-500">
                 About {minutes(video)} min{watched[video.id] ? " · ✅ Watched" : ""}
               </span>

@@ -665,7 +665,7 @@ async def youtube_explanation(request: YouTubeExplanationRequest) -> dict:
     if not youtube_service.is_configured():
         raise HTTPException(status_code=400, detail="YouTube search is not configured on this server.")
     try:
-        video = await youtube_service.find_kid_friendly_video(request.topic, request.grade)
+        video = await youtube_service.find_kid_friendly_video(request.topic, request.grade, request.subject)
     except Exception as exc:
         raise HTTPException(status_code=502, detail=f"YouTube search failed: {exc}")
 

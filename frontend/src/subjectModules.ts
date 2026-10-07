@@ -1,4 +1,5 @@
-import type { Subject } from "./components/SubjectSelect";
+import type { Subject } from "./subjects";
+import { SOCIAL_SYLLABUS } from "./socialStudiesTopics";
 
 export interface TopicModule {
   label: string;
@@ -316,30 +317,66 @@ const SCIENCE_BY_GRADE: Record<number, TopicModule[]> = {
   ],
 };
 
+// Grades 1–5 Social Studies (socialStudiesTopics.ts): each syllabus item is a
+// topic named "Chapter: Item", shown as "Item" under its chapter heading.
+const SOCIAL_BY_GRADE: Record<number, TopicModule[]> = Object.fromEntries(
+  Object.entries(SOCIAL_SYLLABUS).map(([grade, chapters]) => [
+    Number(grade),
+    chapters.flatMap(([chapter, items]) =>
+      section(chapter, items.map(([item, icon, description]) => m(item, icon, description, `${chapter}: ${item}`))),
+    ),
+  ]),
+);
+
+// The chapters most grades build on, used when no grade is chosen.
+const SOCIAL_MODULES: TopicModule[] = [
+  m("My Family", "👨‍👩‍👧‍👦", "Family members and relationships"),
+  m("Community Helpers", "🧑‍🚒", "People who help us"),
+  m("Transport and Communication", "🚌", "How we travel and send messages"),
+  m("Maps and Directions", "🧭", "Reading maps and finding directions"),
+  m("Our Earth", "🌍", "Land, water, continents and oceans"),
+  m("Government and Democracy", "🏛️", "How our country is run"),
+];
+
+const SOCIAL_ALL_TOPICS: TopicModule = {
+  label: "All Topics (Mixed Review)",
+  icon: "🌏",
+  description: "A mixed review covering every chapter above",
+  topic: "Mixed Review: Family, Community Helpers, Transport, Maps and Directions, Our Earth, India and Government",
+};
+
 export const GRADES = [1, 2, 3, 4, 5];
 
+const BY_GRADE: Record<Subject, Record<number, TopicModule[]>> = {
+  Mathematics: MATH_BY_GRADE,
+  Science: SCIENCE_BY_GRADE,
+  "Social Studies": SOCIAL_BY_GRADE,
+};
+const MODULES: Record<Subject, TopicModule[]> = { Mathematics: MATH_MODULES, Science: SCIENCE_MODULES, "Social Studies": SOCIAL_MODULES };
+const ALL_TOPICS: Record<Subject, TopicModule> = { Mathematics: MATH_ALL_TOPICS, Science: SCIENCE_ALL_TOPICS, "Social Studies": SOCIAL_ALL_TOPICS };
+
 export function getGradeTopicModules(subject: Subject, grade: number): TopicModule[] {
-  const table = subject === "Science" ? SCIENCE_BY_GRADE : MATH_BY_GRADE;
-  return table[grade] ?? getTopicModules(subject);
+  return BY_GRADE[subject][grade] ?? getTopicModules(subject);
 }
 
 export function getTopicModules(subject: Subject): TopicModule[] {
-  return subject === "Science" ? SCIENCE_MODULES : MATH_MODULES;
+  return MODULES[subject];
 }
 
 export function getAllTopicsModule(subject: Subject): TopicModule {
-  return subject === "Science" ? SCIENCE_ALL_TOPICS : MATH_ALL_TOPICS;
+  return ALL_TOPICS[subject];
 }
 
 // Which subject a finished test's topic belongs to. Custom typed-in topics
-// aren't in either list, so they count as Mathematics unless the test itself
+// aren't in any list, so they count as Mathematics unless the test itself
 // recorded its subject.
 export function subjectForTopic(topic: string): Subject {
-  if (topic === SCIENCE_ALL_TOPICS.topic || SCIENCE_MODULES.some((m) => m.topic === topic)) return "Science";
-  const isMath = Object.values(MATH_BY_GRADE).some((list) => list.some((m) => m.topic === topic));
-  if (!isMath && Object.values(SCIENCE_BY_GRADE).some((list) => list.some((m) => m.topic === topic))) {
-    return "Science";
+  for (const subject of ["Social Studies", "Science", "Mathematics"] as Subject[]) {
+    if (ALL_TOPICS[subject].topic === topic || MODULES[subject].some((m) => m.topic === topic)) return subject;
   }
+  if (Object.values(MATH_BY_GRADE).some((list) => list.some((m) => m.topic === topic))) return "Mathematics";
+  if (Object.values(SCIENCE_BY_GRADE).some((list) => list.some((m) => m.topic === topic))) return "Science";
+  if (Object.values(SOCIAL_BY_GRADE).some((list) => list.some((m) => m.topic === topic))) return "Social Studies";
   return "Mathematics";
 }
 
@@ -347,5 +384,6 @@ export function subjectForTopic(topic: string): Subject {
 export function displayTopic(topic: string): string {
   if (topic === MATH_ALL_TOPICS.topic) return "Mixed Review (Maths)";
   if (topic === SCIENCE_ALL_TOPICS.topic) return "Mixed Review (Science)";
+  if (topic === SOCIAL_ALL_TOPICS.topic) return "Mixed Review (Social Studies)";
   return topic;
 }
