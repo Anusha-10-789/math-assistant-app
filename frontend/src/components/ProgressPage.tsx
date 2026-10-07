@@ -250,7 +250,7 @@ export default function ProgressPage({ history, watched, onBack, onPractice, onW
             </button>
           )}
           <button type="button" onClick={onBack} className="rounded-lg bg-indigo-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-indigo-700">
-            🏠 Back to Home
+            🏠 Back to Learn
           </button>
         </div>
       </div>

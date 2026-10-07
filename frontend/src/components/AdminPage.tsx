@@ -656,7 +656,7 @@ export default function AdminPage({ onBack, onContentChanged }: AdminPageProps) 
           <p className="text-sm text-slate-500">Create lessons, assign tests to students and manage the topics they see.</p>
         </div>
         <button type="button" onClick={onBack} className="shrink-0 whitespace-nowrap rounded-lg bg-indigo-600 px-4 py-2 text-sm font-semibold text-white hover:bg-indigo-700">
-          🏠 <span className="hidden sm:inline">Back to </span>Home
+          🏠 <span className="hidden sm:inline">Back to </span>Learn
         </button>
       </div>
 

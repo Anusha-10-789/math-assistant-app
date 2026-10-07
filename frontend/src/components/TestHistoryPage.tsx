@@ -105,7 +105,7 @@ export default function TestHistoryPage({ history, onBack, onClear, onDownload, 
           onClick={onBack}
           className="shrink-0 whitespace-nowrap rounded-lg bg-indigo-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-indigo-700"
         >
-          🏠 <span className="hidden sm:inline">Back to </span>Home
+          🏠 <span className="hidden sm:inline">Back to </span>Learn
         </button>
       </div>
 

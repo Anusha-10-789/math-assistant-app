@@ -92,7 +92,7 @@ export default function TestSummary({
             onClick={onHome}
             className="rounded-lg bg-emerald-600 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-emerald-700"
           >
-            🏠 Back to Home
+            🏠 Back to Learn
           </button>
           <button
             type="button"

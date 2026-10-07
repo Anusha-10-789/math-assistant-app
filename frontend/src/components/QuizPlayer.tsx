@@ -195,7 +195,7 @@ export default function QuizPlayer({
         }}
         className="mb-3 text-sm font-medium text-indigo-600 hover:underline"
       >
-        🏠 Back to Home
+        🏠 Back to Learn
       </button>
 
       <div className="mb-3 flex items-center justify-between gap-3 text-sm font-bold text-slate-500">

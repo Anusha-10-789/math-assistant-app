@@ -105,7 +105,7 @@ export default function ProfilePage({ username, onBack, onLogout, isTeacher = fa
             onClick={onBack}
             className="rounded-lg bg-indigo-600 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-indigo-700"
           >
-            🏠 Back to Home
+            🏠 Back to Learn
           </button>
           <button
             type="button"
