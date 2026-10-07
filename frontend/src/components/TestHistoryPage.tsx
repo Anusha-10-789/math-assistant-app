@@ -1,4 +1,5 @@
 import { useState } from "react";
+import type { MyAssignment } from "../api";
 import { displayTopic } from "../subjectModules";
 import type { CompletedTest } from "../testHistory";
 
@@ -9,6 +10,57 @@ interface TestHistoryPageProps {
   onBack: () => void;
   onClear: () => void;
   onDownload: (test: CompletedTest, format: ReportFormat) => Promise<void>;
+  assignments: MyAssignment[];
+  onStartAssignment: (assignment: MyAssignment) => void;
+}
+
+function dueLabel(due: string): { text: string; late: boolean } {
+  if (!due) return { text: "", late: false };
+  const today = new Date().toISOString().slice(0, 10);
+  const date = new Date(`${due}T00:00:00`).toLocaleDateString(undefined, { day: "numeric", month: "short" });
+  return { text: due < today ? `Was due ${date}` : due === today ? "Due today" : `Due ${date}`, late: due < today };
+}
+
+// Tests the teacher assigned: to-do ones first with Start, then finished ones with the score.
+function AssignedTests({ assignments, onStart }: { assignments: MyAssignment[]; onStart: (a: MyAssignment) => void }) {
+  return (
+    <section className="mb-6">
+      <h3 className="mb-3 text-lg font-semibold">📋 Assigned to you</h3>
+      <ul className="space-y-2">
+        {assignments.map((a) => {
+          const due = dueLabel(a.due);
+          return (
+            <li
+              key={a.id}
+              className={`flex flex-col gap-3 rounded-2xl border p-4 sm:flex-row sm:items-center ${a.result ? "border-slate-200 bg-slate-50" : "border-indigo-200 bg-indigo-50/60"}`}
+            >
+              <div className="min-w-0 flex-1">
+                <p className="font-display text-lg font-semibold text-slate-900">{a.topic}</p>
+                <p className="text-xs font-semibold text-slate-500">
+                  {a.subject === "Science" ? "Science" : "Maths"} · Grade {a.grade} · {a.num_questions} questions
+                  {due.text && <span className={due.late && !a.result ? " font-bold text-rose-600" : ""}> · {due.text}</span>}
+                </p>
+                {a.note && <p className="mt-1 text-sm text-slate-600">“{a.note}”</p>}
+              </div>
+              {a.result ? (
+                <span className="self-start rounded-full bg-emerald-100 px-3 py-1 text-sm font-bold text-emerald-800 sm:self-center">
+                  ✓ Done · {a.result.score}/{a.result.total}
+                </span>
+              ) : (
+                <button
+                  type="button"
+                  onClick={() => onStart(a)}
+                  className="rounded-xl bg-indigo-600 px-5 py-2.5 text-sm font-bold text-white shadow-md shadow-indigo-300/50 hover:bg-indigo-700"
+                >
+                  ▶ Start test
+                </button>
+              )}
+            </li>
+          );
+        })}
+      </ul>
+    </section>
+  );
 }
 
 const OPTION_LETTERS = ["A", "B", "C", "D"] as const;
@@ -23,7 +75,7 @@ function scoreClass(percent: number): string {
   return "bg-rose-100 text-rose-800";
 }
 
-export default function TestHistoryPage({ history, onBack, onClear, onDownload }: TestHistoryPageProps) {
+export default function TestHistoryPage({ history, onBack, onClear, onDownload, assignments, onStartAssignment }: TestHistoryPageProps) {
   const [expandedId, setExpandedId] = useState<string | null>(null);
   // Which download is in progress ("<test id>:pdf"), and a failed one's message.
   const [downloading, setDownloading] = useState<string | null>(null);
@@ -56,6 +108,8 @@ export default function TestHistoryPage({ history, onBack, onClear, onDownload }
           🏠 <span className="hidden sm:inline">Back to </span>Home
         </button>
       </div>
+
+      {assignments.length > 0 && <AssignedTests assignments={assignments} onStart={onStartAssignment} />}
 
       {history.length === 0 ? (
         <p className="text-sm text-slate-500">

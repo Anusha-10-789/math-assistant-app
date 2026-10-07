@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import LogoMark from "./components/LogoMark";
+import AdminPage from "./components/AdminPage";
 import ReadingPoster from "./components/ReadingPoster";
 import MathBackdrop from "./components/MathBackdrop";
 import SolarSystemBackdrop from "./components/SolarSystemBackdrop";
@@ -33,6 +34,11 @@ import {
   generateLesson,
   UnauthorizedError,
   type YouTubeExplanation,
+  getMe,
+  getMyAssignments,
+  getTeacherContent,
+  submitAssignmentResult,
+  type MyAssignment,
 } from "./api";
 import { clearStoredCredentials, getStoredCredentials } from "./auth";
 import { hasConceptVideos } from "./conceptVideos";
@@ -41,6 +47,7 @@ import { recordCompletedLesson } from "./profileStorage";
 import { clearTestHistory, getTestHistory, recordCompletedTest, type CompletedTest } from "./testHistory";
 import { getProfileInfo } from "./profileInfo";
 import { weakTopics, type TopicProgress } from "./progress";
+import { buildTeacherTest, findTeacherLesson, setTeacherContent } from "./teacherContent";
 import { displayTopic } from "./subjectModules";
 import { hasTopicIntro } from "./topicIntros";
 import type { LessonContent } from "./types";
@@ -48,7 +55,7 @@ import { getWatchedVideos, markVideoWatched } from "./videoProgress";
 import { scheduleProgressSave, syncProgress } from "./progressSync";
 
 type Stage = "subject" | "topic" | "topic-intro" | "grade" | "lecture" | "test" | "summary";
-type View = "app" | "profile" | "history" | "progress" | "videos";
+type View = "app" | "profile" | "history" | "progress" | "videos" | "admin";
 
 export default function App() {
   const [resetToken, setResetToken] = useState(
@@ -82,6 +89,11 @@ export default function App() {
   const [videosGrade, setVideosGrade] = useState<number | undefined>(undefined);
 
   const lessonStartRef = useRef<number | null>(null);
+  const [isAdmin, setIsAdmin] = useState(false);
+  // Bumped when the teacher's content loads, so topic lists re-render.
+  const [, setContentVersion] = useState(0);
+  const [myAssignments, setMyAssignments] = useState<MyAssignment[]>([]);
+  const assignmentRef = useRef<{ id: string; topic: string; grade: number } | null>(null);
   // Science / typed-in topics come from Gemini, which takes a while — so the
   // request starts while the student is still on the grade screen, and Start
   // usually finds it already done.
@@ -93,13 +105,13 @@ export default function App() {
       .flatMap((test) => test.mcqs);
   }
 
-  function requestAiLesson(topicArg: string, gradeArg: number, numQuestionsArg: number) {
-    const key = `${subject}|${topicArg}|${gradeArg}|${numQuestionsArg}`;
+  function requestAiLesson(topicArg: string, gradeArg: number, numQuestionsArg: number, subjectArg: Subject = subject) {
+    const key = `${subjectArg}|${topicArg}|${gradeArg}|${numQuestionsArg}`;
     if (prefetchRef.current?.key === key) return prefetchRef.current.promise;
     const avoid = pastQuestions(topicArg, gradeArg)
       .map((mcq) => mcq.question)
       .slice(-60);
-    const promise = generateLesson(topicArg, gradeArg, numQuestionsArg, subject, avoid);
+    const promise = generateLesson(topicArg, gradeArg, numQuestionsArg, subjectArg, avoid);
     promise.catch(() => {
       if (prefetchRef.current?.promise === promise) prefetchRef.current = null;
     });
@@ -131,6 +143,40 @@ export default function App() {
     };
   }, [needsLogin]);
 
+  // Admin status, the teacher's lessons and removed topics, and this
+  // student's assigned tests. Re-run after an admin change or a finished test.
+  function refreshTeacherData() {
+    getMe()
+      .then((me) => setIsAdmin(me.is_admin))
+      .catch(() => setIsAdmin(false));
+    getTeacherContent()
+      .then((content) => {
+        setTeacherContent(content);
+        setContentVersion((v) => v + 1);
+      })
+      .catch(() => {});
+    getMyAssignments()
+      .then((data) => setMyAssignments(data.assignments))
+      .catch(() => {});
+  }
+
+  useEffect(() => {
+    if (!needsLogin) refreshTeacherData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [needsLogin]);
+
+  // An assigned test: start it straight away and remember which assignment
+  // it is, so the score is sent to the teacher when it's finished.
+  function handleStartAssignment(assignment: MyAssignment) {
+    assignmentRef.current = { id: assignment.id, topic: assignment.topic, grade: assignment.grade };
+    setSubject(assignment.subject);
+    setTopic(assignment.topic);
+    setGrade(assignment.grade);
+    setNumQuestions(assignment.num_questions);
+    setView("app");
+    handleGenerate(assignment.topic, assignment.grade, assignment.num_questions, assignment.subject);
+  }
+
   function handleVideoWatched(videoId: string) {
     setWatchedVideos(markVideoWatched(videoId));
     scheduleProgressSave();
@@ -158,7 +204,7 @@ export default function App() {
     setError(message);
   }
 
-  async function handleGenerate(topicArg: string, gradeArg: number, numQuestionsArg: number) {
+  async function handleGenerate(topicArg: string, gradeArg: number, numQuestionsArg: number, subjectArg: Subject = subject) {
     setError("");
 
     if (!topicArg.trim()) {
@@ -169,6 +215,13 @@ export default function App() {
     setQuizResult(null);
     const trimmed = topicArg.trim();
 
+    // A teacher's own lesson: a test from their questions, no waiting.
+    const teacherLesson = findTeacherLesson(trimmed, undefined, subjectArg);
+    if (teacherLesson) {
+      startLesson(buildTeacherTest(teacherLesson, numQuestionsArg));
+      return;
+    }
+
     // Maths modules are built instantly in the browser — no waiting at all.
     if (isLocalMathTopic(trimmed)) {
       const avoid = pastQuestions(trimmed, gradeArg).map((mcq) => questionKey(mcq.topic, mcq.question));
@@ -178,7 +231,7 @@ export default function App() {
 
     setLoading(true);
     try {
-      startLesson(await requestAiLesson(trimmed, gradeArg, numQuestionsArg));
+      startLesson(await requestAiLesson(trimmed, gradeArg, numQuestionsArg, subjectArg));
       prefetchRef.current = null;
     } catch (err) {
       if (err instanceof UnauthorizedError) {
@@ -194,7 +247,7 @@ export default function App() {
   function handleModuleSelect(moduleTopic: string) {
     setTopic(moduleTopic);
     setError("");
-    setStage(hasTopicIntro(moduleTopic) ? "topic-intro" : "grade");
+    setStage(hasTopicIntro(moduleTopic) && !findTeacherLesson(moduleTopic, grade, subject) ? "topic-intro" : "grade");
   }
 
   function handleTopicNext() {
@@ -203,10 +256,11 @@ export default function App() {
       return;
     }
     setError("");
-    setStage(hasTopicIntro(topic) ? "topic-intro" : "grade");
+    setStage(hasTopicIntro(topic) && !findTeacherLesson(topic.trim(), undefined, subject) ? "topic-intro" : "grade");
   }
 
   function handleGenerateClick() {
+    assignmentRef.current = null;
     handleGenerate(topic, grade, numQuestions);
   }
 
@@ -231,7 +285,15 @@ export default function App() {
         }),
       );
       scheduleProgressSave();
+      const assignment = assignmentRef.current;
+      if (assignment && assignment.topic === lesson.topic && assignment.grade === lesson.grade) {
+        submitAssignmentResult(assignment.id, result.score, result.total)
+          .then(() => getMyAssignments())
+          .then((data) => setMyAssignments(data.assignments))
+          .catch(() => {});
+      }
     }
+    assignmentRef.current = null;
     setStage("summary");
   }
 
@@ -435,12 +497,14 @@ export default function App() {
     );
   }
 
-  const navItems: Array<{ view: View; icon: string; label: string; short: string }> = [
+  const pendingAssignments = myAssignments.filter((a) => !a.result).length;
+  const navItems: Array<{ view: View; icon: string; label: string; short: string; badge?: number }> = [
     { view: "app", icon: "🏠", label: "Learn", short: "Learn" },
     { view: "progress", icon: "📊", label: "My Progress", short: "Progress" },
     { view: "videos", icon: "🎬", label: "Concept Videos", short: "Videos" },
-    { view: "history", icon: "📝", label: "My Tests", short: "Tests" },
+    { view: "history", icon: "📝", label: "My Tests", short: "Tests", badge: pendingAssignments },
     { view: "profile", icon: "👤", label: "Profile", short: "Me" },
+    ...(isAdmin ? [{ view: "admin" as View, icon: "🛠️", label: "Admin", short: "Admin" }] : []),
   ];
   // The profile name, or a friendly first name from the login ("anusha.k@…" → "Anusha").
   const loginName = username.includes("@") ? username.split("@")[0].split(/[._\-+\d]/)[0] : "";
@@ -495,6 +559,11 @@ export default function App() {
                   {item.icon}
                 </span>
                 {item.label}
+                {!!item.badge && (
+                  <span className="ml-auto rounded-full bg-rose-500 px-2 py-0.5 text-xs font-bold text-white" aria-label={`${item.badge} to do`}>
+                    {item.badge}
+                  </span>
+                )}
               </button>
             );
           })}
@@ -523,11 +592,15 @@ export default function App() {
       <main className="pb-28 lg:pb-12 lg:pl-64 print:p-0">
       <div className="mx-auto max-w-4xl px-4 py-6 sm:px-6 lg:py-10 xl:ml-10 xl:mr-0 xl:max-w-3xl 2xl:mx-auto 2xl:max-w-4xl">
 
-        {view === "profile" ? (
+        {view === "admin" && isAdmin ? (
+          <AdminPage onBack={goHome} onContentChanged={refreshTeacherData} />
+        ) : view === "profile" ? (
           <ProfilePage username={username} onBack={goHome} onLogout={handleLogout} />
         ) : view === "history" ? (
           <TestHistoryPage
             history={testHistory}
+            assignments={myAssignments}
+            onStartAssignment={handleStartAssignment}
             onDownload={handleDownloadPastTest}
             onBack={goHome}
             onClear={() => {
@@ -607,7 +680,14 @@ export default function App() {
               />
             )}
 
-            {stage === "grade" && topic.trim() && !topic.startsWith("Mixed Review") && (
+            {stage === "grade" && findTeacherLesson(topic.trim(), undefined, subject)?.notes && (
+              <section className="rounded-3xl bg-white p-5 shadow-lg ring-1 ring-slate-200/70 sm:p-6">
+                <h3 className="mb-2 text-lg font-semibold">📖 Notes from your teacher</h3>
+                <p className="whitespace-pre-line text-base leading-relaxed text-slate-700">{findTeacherLesson(topic.trim(), undefined, subject)?.notes}</p>
+              </section>
+            )}
+
+            {stage === "grade" && topic.trim() && !topic.startsWith("Mixed Review") && !findTeacherLesson(topic.trim(), undefined, subject) && (
               <TopicVideos key={`${topic}|${grade}`} topic={topic.trim()} grade={grade} watched={watchedVideos} onWatched={handleVideoWatched} />
             )}
 
@@ -678,7 +758,8 @@ export default function App() {
 
       {/* Phone and tablet: bottom tab bar */}
       <nav
-        className="fixed inset-x-0 bottom-0 z-20 grid grid-cols-5 border-t border-slate-200/70 bg-white/90 px-1 pb-[max(0.4rem,env(safe-area-inset-bottom))] pt-1.5 backdrop-blur-xl lg:hidden print:hidden"
+        style={{ gridTemplateColumns: `repeat(${navItems.length}, minmax(0, 1fr))` }}
+        className="fixed inset-x-0 bottom-0 z-20 grid border-t border-slate-200/70 bg-white/90 px-1 pb-[max(0.4rem,env(safe-area-inset-bottom))] pt-1.5 backdrop-blur-xl lg:hidden print:hidden"
         aria-label="Main"
       >
         {navItems.map((item) => {
@@ -693,10 +774,13 @@ export default function App() {
               className={`flex flex-col items-center gap-0.5 rounded-xl py-1 text-[11px] font-bold ${active ? "text-indigo-700" : "text-slate-500"}`}
             >
               <span
-                className={`flex h-8 w-12 items-center justify-center rounded-full text-lg leading-none ${active ? "bg-indigo-100" : ""}`}
+                className={`relative flex h-8 w-12 items-center justify-center rounded-full text-lg leading-none ${active ? "bg-indigo-100" : ""}`}
                 aria-hidden="true"
               >
                 {item.icon}
+                {!!item.badge && (
+                  <span className="absolute -right-0.5 -top-1 rounded-full bg-rose-500 px-1.5 text-[10px] font-bold leading-4 text-white">{item.badge}</span>
+                )}
               </span>
               {item.short}
             </button>

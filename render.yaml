@@ -27,6 +27,10 @@ services:
       # DATABASE_URL when both are set.
       - key: FIREBASE_SERVICE_ACCOUNT
         sync: false
+      # Comma-separated emails (or usernames) of accounts that can open the
+      # Admin portal, in addition to the ADMIN_USERNAME login above.
+      - key: ADMIN_EMAILS
+        sync: false
       # CORS_ORIGINS and FRONTEND_URL both need the frontend's actual
       # https://...onrender.com URL, which only exists after the frontend
       # service below is first created — fill these in afterwards, then

@@ -14,6 +14,7 @@ from google.auth.transport import requests as google_requests
 from google.genai import errors as genai_errors
 from google.oauth2 import id_token as google_id_token
 
+import admin_api
 import concept_video_service
 import email_service
 import kv_store
@@ -93,6 +94,11 @@ app.add_middleware(
 
 def _safe_filename_part(text: str) -> str:
     return re.sub(r"[^A-Za-z0-9]+", "_", text).strip("_") or "Topic"
+
+
+# Admin portal (teacher lessons, test assignments, hidden topics) and the
+# student endpoints that read them — see admin_api.py.
+app.include_router(admin_api.router)
 
 
 @app.get("/health")

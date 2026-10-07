@@ -587,3 +587,104 @@ export async function saveProgress(progress: SavedProgress): Promise<void> {
   });
   if (!response.ok) throw new Error(await extractErrorMessage(response, "Couldn't save your progress."));
 }
+
+// ---------- Admin portal and teacher content (backend/admin_api.py) ----------
+
+export interface TeacherQuestion {
+  question: string;
+  options: [string, string, string, string];
+  answer: "A" | "B" | "C" | "D";
+  explanation: string;
+}
+
+export interface TeacherLessonInput {
+  subject: "Mathematics" | "Science";
+  grade: number;
+  title: string;
+  description: string;
+  notes: string;
+  icon: string;
+  published: boolean;
+  questions: TeacherQuestion[];
+}
+
+export interface TeacherLesson extends TeacherLessonInput {
+  id: string;
+  created_at: number;
+  updated_at: number;
+}
+
+export interface AssignmentInput {
+  subject: "Mathematics" | "Science";
+  grade: number;
+  topic: string;
+  lesson_id: string;
+  num_questions: number;
+  students: string[];
+  due: string;
+  note: string;
+}
+
+export interface AssignmentResult {
+  score: number;
+  total: number;
+  completed_at: number;
+}
+
+export interface Assignment extends AssignmentInput {
+  id: string;
+  created_at: number;
+  results: Record<string, AssignmentResult>;
+}
+
+export interface MyAssignment extends Omit<AssignmentInput, "students"> {
+  id: string;
+  created_at: number;
+  result: AssignmentResult | null;
+}
+
+export interface StudentAccount {
+  username: string;
+  name: string;
+  email: string;
+  phone: string;
+}
+
+async function authedJson<T>(method: string, path: string, fallbackError: string, body?: unknown): Promise<T> {
+  const response = await fetch(`${API_BASE_URL}/${path}`, {
+    method,
+    headers: { ...(body === undefined ? {} : { "Content-Type": "application/json" }), ...authHeaders() },
+    body: body === undefined ? undefined : JSON.stringify(body),
+  });
+  if (response.status === 401) throw new UnauthorizedError("Your session expired. Please log in again.");
+  if (!response.ok) throw new Error(await extractErrorMessage(response, fallbackError));
+  return response.json();
+}
+
+export const getMe = () => authedJson<{ username: string; is_admin: boolean }>("GET", "me", "Couldn't load your account.");
+
+export const getTeacherContent = () =>
+  authedJson<{ lessons: TeacherLesson[]; hidden_topics: string[] }>("GET", "content", "Couldn't load lessons from your teacher.");
+
+export const adminListLessons = () => authedJson<{ lessons: TeacherLesson[] }>("GET", "admin/lessons", "Couldn't load lessons.");
+export const adminCreateLesson = (lesson: TeacherLessonInput) =>
+  authedJson<{ lesson: TeacherLesson }>("POST", "admin/lessons", "Couldn't save the lesson.", lesson);
+export const adminUpdateLesson = (id: string, lesson: TeacherLessonInput) =>
+  authedJson<{ lesson: TeacherLesson }>("PUT", `admin/lessons/${id}`, "Couldn't save the lesson.", lesson);
+export const adminDeleteLesson = (id: string) =>
+  authedJson<{ assignments_removed: number }>("DELETE", `admin/lessons/${id}`, "Couldn't delete the lesson.");
+export const adminDraftLesson = (draft: { subject: string; grade: number; title: string; num_questions: number }) =>
+  authedJson<{ notes: string; questions: TeacherQuestion[] }>("POST", "admin/lessons/draft", "Couldn't write a draft.", draft);
+
+export const adminSetHiddenTopics = (topics: string[]) =>
+  authedJson<{ hidden_topics: string[] }>("PUT", "admin/hidden-topics", "Couldn't update the topics.", { topics });
+
+export const adminListStudents = () => authedJson<{ students: StudentAccount[] }>("GET", "admin/students", "Couldn't load students.");
+export const adminListAssignments = () => authedJson<{ assignments: Assignment[] }>("GET", "admin/assignments", "Couldn't load assigned tests.");
+export const adminCreateAssignment = (assignment: AssignmentInput) =>
+  authedJson<{ assignment: Assignment }>("POST", "admin/assignments", "Couldn't assign the test.", assignment);
+export const adminDeleteAssignment = (id: string) => authedJson("DELETE", `admin/assignments/${id}`, "Couldn't remove the test.");
+
+export const getMyAssignments = () => authedJson<{ assignments: MyAssignment[] }>("GET", "my-assignments", "Couldn't load your assigned tests.");
+export const submitAssignmentResult = (id: string, score: number, total: number) =>
+  authedJson("POST", `my-assignments/${id}/result`, "Couldn't save your result.", { score, total });

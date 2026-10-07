@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import { GRADES, getAllTopicsModule, getGradeTopicModules } from "../subjectModules";
+import { isTopicHidden, teacherLessonsFor, teacherTopicModule } from "../teacherContent";
 import type { Subject } from "./SubjectSelect";
 
 interface TopicSelectProps {
@@ -26,7 +27,16 @@ export default function TopicSelect({
   onNext,
   onBack,
 }: TopicSelectProps) {
-  const modules = getGradeTopicModules(subject, grade);
+  // The teacher's lessons first, then the syllabus topics the admin hasn't removed.
+  const teacherModules = teacherLessonsFor(subject, grade).map(teacherTopicModule);
+  const modules = [
+    ...teacherModules,
+    ...getGradeTopicModules(subject, grade)
+      .filter((m) => !isTopicHidden(subject, grade, m.topic))
+      // Maths topics have no sections; give them a heading so they aren't
+      // read as part of the teacher's section above.
+      .map((m) => (teacherModules.length && !m.group ? { ...m, group: "📚 Syllabus topics" } : m)),
+  ];
   const allTopicsModule = getAllTopicsModule(subject);
   const isScience = subject === "Science";
 
