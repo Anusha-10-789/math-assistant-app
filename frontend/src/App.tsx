@@ -34,7 +34,6 @@ import {
   generateLesson,
   UnauthorizedError,
   type YouTubeExplanation,
-  getMe,
   getMyAssignments,
   getTeacherContent,
   submitAssignmentResult,
@@ -89,7 +88,6 @@ export default function App() {
   const [videosGrade, setVideosGrade] = useState<number | undefined>(undefined);
 
   const lessonStartRef = useRef<number | null>(null);
-  const [isAdmin, setIsAdmin] = useState(false);
   // Bumped when the teacher's content loads, so topic lists re-render.
   const [, setContentVersion] = useState(0);
   const [myAssignments, setMyAssignments] = useState<MyAssignment[]>([]);
@@ -143,12 +141,9 @@ export default function App() {
     };
   }, [needsLogin]);
 
-  // Admin status, the teacher's lessons and removed topics, and this
-  // student's assigned tests. Re-run after an admin change or a finished test.
+  // The teacher's lessons and removed topics, and this student's assigned
+  // tests. Re-run after an admin change or a finished test.
   function refreshTeacherData() {
-    getMe()
-      .then((me) => setIsAdmin(me.is_admin))
-      .catch(() => setIsAdmin(false));
     getTeacherContent()
       .then((content) => {
         setTeacherContent(content);
@@ -499,16 +494,25 @@ export default function App() {
     );
   }
 
-  const adminMode = isAdmin && getStoredRole() === "admin";
+  // Teacher accounts only log in as Admin; they get the Admin portal instead
+  // of the student pages (My Progress, My Tests). The server still checks
+  // admin rights on every admin request.
+  const adminMode = getStoredRole() === "admin";
   const pendingAssignments = myAssignments.filter((a) => !a.result).length;
-  const navItems: Array<{ view: View; icon: string; label: string; short: string; badge?: number }> = [
-    { view: "app", icon: "🏠", label: "Learn", short: "Learn" },
-    { view: "progress", icon: "📊", label: "My Progress", short: "Progress" },
-    { view: "videos", icon: "🎬", label: "Concept Videos", short: "Videos" },
-    { view: "history", icon: "📝", label: "My Tests", short: "Tests", badge: pendingAssignments },
-    { view: "profile", icon: "👤", label: "Profile", short: "Me" },
-    ...(adminMode ? [{ view: "admin" as View, icon: "🛠️", label: "Admin", short: "Admin" }] : []),
-  ];
+  const navItems: Array<{ view: View; icon: string; label: string; short: string; badge?: number }> = adminMode
+    ? [
+        { view: "admin", icon: "🛠️", label: "Admin", short: "Admin" },
+        { view: "app", icon: "🏠", label: "Learn", short: "Learn" },
+        { view: "videos", icon: "🎬", label: "Concept Videos", short: "Videos" },
+        { view: "profile", icon: "👤", label: "Profile", short: "Me" },
+      ]
+    : [
+        { view: "app", icon: "🏠", label: "Learn", short: "Learn" },
+        { view: "progress", icon: "📊", label: "My Progress", short: "Progress" },
+        { view: "videos", icon: "🎬", label: "Concept Videos", short: "Videos" },
+        { view: "history", icon: "📝", label: "My Tests", short: "Tests", badge: pendingAssignments },
+        { view: "profile", icon: "👤", label: "Profile", short: "Me" },
+      ];
   // The profile name, or a friendly first name from the login ("anusha.k@…" → "Anusha").
   const loginName = (username.includes("@") ? username.split("@")[0] : /^\+?\d+$/.test(username) ? "" : username).split(/[._\-+\d]/)[0];
   const weak = weakTopics(testHistory);
@@ -572,10 +576,19 @@ export default function App() {
           })}
         </nav>
         <div className="rounded-2xl bg-gradient-to-br from-amber-100 to-orange-100 p-4">
-          <p className="font-display text-base font-semibold text-amber-900">Keep it up, {displayName}! 🌟</p>
-          <p className="mt-1 text-xs font-semibold text-amber-800/80">
-            {testHistory.length ? `${testHistory.length} ${testHistory.length === 1 ? "test" : "tests"} done so far` : "Take your first test today"}
-          </p>
+          {adminMode ? (
+            <>
+              <p className="font-display text-base font-semibold text-amber-900">Hello, {displayName}! 🧑‍🏫</p>
+              <p className="mt-1 text-xs font-semibold text-amber-800/80">Teacher / admin account</p>
+            </>
+          ) : (
+            <>
+              <p className="font-display text-base font-semibold text-amber-900">Keep it up, {displayName}! 🌟</p>
+              <p className="mt-1 text-xs font-semibold text-amber-800/80">
+                {testHistory.length ? `${testHistory.length} ${testHistory.length === 1 ? "test" : "tests"} done so far` : "Take your first test today"}
+              </p>
+            </>
+          )}
         </div>
       </aside>
 
