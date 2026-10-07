@@ -154,8 +154,8 @@ export default function LoginGate({ onLogin }: LoginGateProps) {
     setNotice(`We've sent a 6-digit code to ${sentTo}. It expires in 10 minutes.`);
   }
 
-  async function finishLogin(credentials: Credentials) {
-    setStoredCredentials(credentials, rememberMe);
+  async function finishLogin(credentials: Credentials, typed = credentials.username) {
+    setStoredCredentials(credentials, rememberMe, typed);
     if (role === "admin") {
       let isAdmin = false;
       try {
@@ -174,7 +174,7 @@ export default function LoginGate({ onLogin }: LoginGateProps) {
 
   async function handleGoogleCredential(idToken: string) {
     await run(async () => {
-      await finishLogin(await googleAuth(idToken));
+      await finishLogin(await googleAuth(idToken, role));
     }, "Google sign-in failed.");
   }
 
@@ -189,12 +189,12 @@ export default function LoginGate({ onLogin }: LoginGateProps) {
 
     if (loginMethod === "otp") {
       if (!otpSentTo) {
-        run(async () => codeSentNotice(await sendOtp("login", loginName)), "Failed to send the code.");
+        run(async () => codeSentNotice(await sendOtp("login", loginName, "", role)), "Failed to send the code.");
         return;
       }
       if (!checkCode()) return;
       run(async () => {
-        await finishLogin(await loginWithOtp(loginName, otpCode.trim()));
+        await finishLogin(await loginWithOtp(loginName, otpCode.trim(), role), loginName);
       }, "That code didn't work.");
       return;
     }
@@ -204,8 +204,8 @@ export default function LoginGate({ onLogin }: LoginGateProps) {
       return;
     }
     run(async () => {
-      await login(loginName, password);
-      await finishLogin({ username: loginName, password });
+      const accountKey = await login(loginName, password, role);
+      await finishLogin({ username: accountKey, password }, loginName);
     }, "Incorrect email, mobile number or password.");
   }
 
@@ -213,8 +213,8 @@ export default function LoginGate({ onLogin }: LoginGateProps) {
 
   async function createAccount(channel: OtpChannel | "", code: string) {
     await signup({ email: email.trim(), phone, password, securityQuestion, securityAnswer, otpChannel: channel, otpCode: code, role, adminCode });
-    await login(email.trim(), password);
-    await finishLogin({ username: email.trim(), password });
+    const accountKey = await login(email.trim(), password, role);
+    await finishLogin({ username: accountKey, password }, email.trim());
   }
 
   function handleSignupSubmit() {
@@ -240,7 +240,7 @@ export default function LoginGate({ onLogin }: LoginGateProps) {
     }
     run(async () => {
       if (role === "admin") await checkAdminCode(adminCode);
-      const sentTo = await sendOtp("signup", verifyChannel === "sms" ? phone : email.trim());
+      const sentTo = await sendOtp("signup", verifyChannel === "sms" ? phone : email.trim(), "", role);
       // Not switchMode — the details just typed must survive for the final step.
       setMode("signup-verify");
       codeSentNotice(sentTo);
@@ -260,7 +260,7 @@ export default function LoginGate({ onLogin }: LoginGateProps) {
       return;
     }
     run(async () => {
-      const options = await getRecoveryOptions(identifier.trim());
+      const options = await getRecoveryOptions(identifier.trim(), role);
       setRecovery(options);
       const count = [options.securityQuestion, options.emailAvailable, options.smsAvailable].filter(Boolean).length;
       if (count === 0) {
@@ -278,7 +278,7 @@ export default function LoginGate({ onLogin }: LoginGateProps) {
   }
 
   async function startResetCode(channel: OtpChannel) {
-    const sentTo = await sendOtp("reset", identifier.trim(), channel);
+    const sentTo = await sendOtp("reset", identifier.trim(), channel, role);
     setResetChannel(channel);
     switchMode("forgot-code");
     codeSentNotice(sentTo);
@@ -297,7 +297,7 @@ export default function LoginGate({ onLogin }: LoginGateProps) {
     }
     if (!checkNewPassword()) return;
     run(async () => {
-      await resetPasswordWithSecurityAnswer(identifier.trim(), securityAnswer, password);
+      await resetPasswordWithSecurityAnswer(identifier.trim(), securityAnswer, password, role);
       finishReset();
     }, "Failed to reset the password.");
   }
@@ -305,7 +305,7 @@ export default function LoginGate({ onLogin }: LoginGateProps) {
   function handleResetCodeSubmit() {
     if (!checkCode() || !checkNewPassword()) return;
     run(async () => {
-      await resetPasswordWithCode(identifier.trim(), resetChannel, otpCode.trim(), password);
+      await resetPasswordWithCode(identifier.trim(), resetChannel, otpCode.trim(), password, role);
       finishReset();
     }, "Failed to reset the password.");
   }
@@ -317,7 +317,7 @@ export default function LoginGate({ onLogin }: LoginGateProps) {
         : mode === "forgot-code"
           ? (["reset", identifier.trim(), resetChannel] as const)
           : (["login", identifier.trim(), ""] as const);
-    run(async () => codeSentNotice(await sendOtp(purpose, destination, channel)), "Failed to send the code.");
+    run(async () => codeSentNotice(await sendOtp(purpose, destination, channel, role)), "Failed to send the code.");
   }
 
   function handleSubmit(e: React.FormEvent) {
@@ -444,6 +444,12 @@ export default function LoginGate({ onLogin }: LoginGateProps) {
         <h1 className="mb-5 text-2xl font-semibold">
           {mode === "login" ? (role === "admin" ? "Welcome, teacher! 👋" : "Welcome! Let's log in 👋") : TITLES[mode]}
         </h1>
+
+        {mode.startsWith("forgot") && (
+          <p className="mb-4 rounded-xl bg-indigo-50 px-3 py-2 text-sm font-semibold text-indigo-800">
+            {role === "admin" ? "🧑‍🏫 For your teacher (admin) account" : "🎒 For your student account"}
+          </p>
+        )}
 
         {(mode === "login" || mode === "signup") && (
           <div className="mb-5">

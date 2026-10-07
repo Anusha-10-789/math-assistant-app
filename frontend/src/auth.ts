@@ -55,7 +55,9 @@ export function getStoredCredentials(): Credentials | null {
   );
 }
 
-export function setStoredCredentials(credentials: Credentials, remember = getRememberMe()): void {
+// `typed` is what the person entered (email or mobile), remembered to fill the
+// login form next time; the credentials hold the account key.
+export function setStoredCredentials(credentials: Credentials, remember = getRememberMe(), typed = credentials.username): void {
   const raw = JSON.stringify(credentials);
   if (remember) {
     write(localStorage, STORAGE_KEY, raw);
@@ -65,7 +67,7 @@ export function setStoredCredentials(credentials: Credentials, remember = getRem
     remove(localStorage, STORAGE_KEY);
   }
   write(localStorage, REMEMBER_ME_KEY, remember ? "true" : "false");
-  write(localStorage, REMEMBERED_USERNAME_KEY, credentials.username);
+  write(localStorage, REMEMBERED_USERNAME_KEY, typed);
 }
 
 export function clearStoredCredentials(): void {

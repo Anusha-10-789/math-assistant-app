@@ -37,10 +37,6 @@ _lock = threading.Lock()
 
 # ---------- who is who ----------
 
-def _admin_emails() -> set[str]:
-    return {e.strip().lower() for e in os.environ.get("ADMIN_EMAILS", "").split(",") if e.strip()}
-
-
 def _canonical(identifier: str) -> str:
     """The account's username key (what assignments and results use), whether
     the student logged in with their username, email or mobile number."""
@@ -56,10 +52,7 @@ def is_admin(identifier: str) -> bool:
     user = user_store.find_user(identifier)
     if not user:
         return False
-    if user.get("role") == "admin":
-        return True
-    admins = _admin_emails()
-    return user.get("email", "").strip().lower() in admins or user["username"].strip().lower() in admins
+    return user_store.account_role(user) == "admin"
 
 
 def require_admin(identifier: str = Depends(current_login)) -> str:
@@ -278,9 +271,11 @@ async def list_students(_: str = Depends(require_admin)) -> dict:
     def load():
         with user_store._lock:
             users = user_store._load()
+        # Teachers have their own accounts and aren't assigned tests.
         return [
             {"username": key, "name": u.get("username", key), "email": u.get("email", ""), "phone": u.get("phone", "")}
             for key, u in sorted(users.items())
+            if user_store.account_role(u) == "student"
         ]
 
     return {"students": await asyncio.to_thread(load)}

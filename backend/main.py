@@ -63,6 +63,8 @@ from user_store import (
     create_password_reset_token,
     create_session_token,
     create_user,
+    NoTeacherAccount,
+    find_account_key,
     find_user,
     get_recovery_options,
     normalize_phone,
@@ -71,6 +73,7 @@ from user_store import (
     set_password,
     set_security_question,
     upsert_google_user,
+    verify_user_login,
 )
 import user_store
 import youtube_service
@@ -109,11 +112,26 @@ async def health() -> dict:
     return {"status": "ok", "account_storage": user_store.storage_kind()}
 
 
+def _role(value: str) -> str:
+    if value not in ("student", "admin"):
+        raise HTTPException(status_code=400, detail="Please choose Student or Admin.")
+    return value
+
+
 @app.post("/login", dependencies=[Depends(rate_limit)])
 async def login(request: LoginRequest) -> dict:
-    if not check_login(request.username, request.password):
+    """Logs in to the student account or the teacher account for this email /
+    mobile, as chosen, and returns that account's key. The app sends the key
+    from then on, so a shared email always means the right account."""
+    role = _role(request.role)
+    identifier = request.username.strip()
+    builtin_user = os.environ.get("ADMIN_USERNAME", "").strip()
+    builtin_password = os.environ.get("ADMIN_PASSWORD", "").strip()
+    if role == "admin" and builtin_user and builtin_password and identifier == builtin_user and request.password == builtin_password:
+        return {"success": True, "username": builtin_user}
+    if not verify_user_login(identifier, request.password, role):
         raise HTTPException(status_code=401, detail="Incorrect username or password.")
-    return {"success": True}
+    return {"success": True, "username": find_account_key(identifier, role)}
 
 
 @app.get("/auth/google/config")
@@ -143,7 +161,10 @@ async def auth_google(request: GoogleAuthRequest) -> dict:
     if not email:
         raise HTTPException(status_code=401, detail="Google did not provide an email address.")
 
-    username, password = upsert_google_user(email)
+    try:
+        username, password = upsert_google_user(email, _role(request.role))
+    except NoTeacherAccount as exc:
+        raise HTTPException(status_code=401, detail=str(exc))
     return {"username": username, "password": password}
 
 
@@ -161,7 +182,7 @@ def _is_phone(value: str) -> bool:
     return "@" not in value and 10 <= len(normalize_phone(value).lstrip("+")) <= 15
 
 
-def _otp_address(purpose: str, destination: str, channel: str = "") -> str:
+def _otp_address(purpose: str, destination: str, channel: str = "", role: str = "student") -> str:
     """Works out where a code goes. Signing up: the new email/mobile itself
     (which must not be registered yet). Logging in / resetting: the matching
     account's email or mobile - the one typed in, or the chosen `channel`."""
@@ -169,11 +190,11 @@ def _otp_address(purpose: str, destination: str, channel: str = "") -> str:
     if purpose == "signup":
         if not (_is_email(destination) or _is_phone(destination)):
             raise HTTPException(status_code=400, detail="Please enter a valid email address or mobile number.")
-        if find_user(destination):
+        if find_user(destination, role):
             raise HTTPException(status_code=400, detail=ALREADY_REGISTERED_DETAIL)
         return destination if _is_email(destination) else normalize_phone(destination)
 
-    user = find_user(destination)
+    user = find_user(destination, role)
     if not user:
         raise HTTPException(status_code=400, detail=NO_ACCOUNT_DETAIL)
     if not channel:
@@ -193,7 +214,7 @@ async def otp_config() -> dict:
 async def otp_send(request: OtpSendRequest) -> dict:
     if request.purpose not in otp_service.PURPOSE_TEXT:
         raise HTTPException(status_code=400, detail="Unknown code purpose.")
-    address = _otp_address(request.purpose, request.destination, request.channel)
+    address = _otp_address(request.purpose, request.destination, request.channel, _role(request.role))
     channel = otp_service.channel_for(address)
     if not (otp_service.email_available() if channel == "email" else otp_service.sms_available()):
         raise HTTPException(
@@ -216,14 +237,15 @@ async def otp_send(request: OtpSendRequest) -> dict:
 
 @app.post("/login/otp", dependencies=[Depends(rate_limit)])
 async def login_with_otp(request: OtpLoginRequest) -> dict:
-    address = _otp_address("login", request.identifier)
+    role = _role(request.role)
+    address = _otp_address("login", request.identifier, role=role)
     if not otp_service.verify("login", address, request.code):
         raise HTTPException(status_code=401, detail=OTP_WRONG_DETAIL)
-    token = create_session_token(request.identifier)
+    token = create_session_token(request.identifier, role)
     if not token:
         raise HTTPException(status_code=400, detail=NO_ACCOUNT_DETAIL)
     # The token stands in for the password on every later request.
-    return {"username": request.identifier.strip(), "password": token}
+    return {"username": find_account_key(request.identifier, role), "password": token}
 
 
 def _validate_security_question(question: str, answer: str) -> None:
@@ -251,7 +273,7 @@ async def signup(request: SignupRequest) -> dict:
         raise HTTPException(status_code=400, detail="Please choose Student or Teacher (Admin).")
     if request.role == "admin":
         admin_api.check_admin_code(request.admin_code)
-    if find_user(email) or find_user(phone):
+    if find_user(email, request.role) or find_user(phone, request.role):
         raise HTTPException(status_code=400, detail=ALREADY_REGISTERED_DETAIL)
 
     # When the server can send codes, the new email or mobile must be proven
@@ -279,7 +301,7 @@ async def signup(request: SignupRequest) -> dict:
 
 @app.post("/forgot-password/options", dependencies=[Depends(rate_limit)])
 async def forgot_password_options(request: ForgotPasswordRequest) -> dict:
-    options = get_recovery_options(request.identifier)
+    options = get_recovery_options(request.identifier, _role(request.role))
     if not options:
         raise HTTPException(status_code=400, detail=NO_ACCOUNT_DETAIL)
     return {
@@ -296,7 +318,7 @@ async def forgot_password_security_answer(request: SecurityAnswerResetRequest) -
     password_error = validate_password_strength(request.new_password)
     if password_error:
         raise HTTPException(status_code=400, detail=password_error)
-    if not reset_password_with_security_answer(request.identifier, request.answer, request.new_password):
+    if not reset_password_with_security_answer(request.identifier, request.answer, request.new_password, _role(request.role)):
         raise HTTPException(status_code=400, detail="That answer doesn't match. Please try again.")
     return {"success": True}
 
@@ -306,10 +328,11 @@ async def forgot_password_verify_code(request: CodeResetRequest) -> dict:
     password_error = validate_password_strength(request.new_password)
     if password_error:
         raise HTTPException(status_code=400, detail=password_error)
-    address = _otp_address("reset", request.identifier, request.channel)
+    role = _role(request.role)
+    address = _otp_address("reset", request.identifier, request.channel, role)
     if not otp_service.verify("reset", address, request.code):
         raise HTTPException(status_code=400, detail=OTP_WRONG_DETAIL)
-    set_password(request.identifier, request.new_password)
+    set_password(request.identifier, request.new_password, role)
     return {"success": True}
 
 
@@ -334,7 +357,7 @@ async def set_own_security_question(
 
 @app.post("/forgot-password", dependencies=[Depends(rate_limit)])
 async def forgot_password(request: ForgotPasswordRequest) -> dict:
-    result = create_password_reset_token(request.identifier)
+    result = create_password_reset_token(request.identifier, _role(request.role))
     if not result:
         raise HTTPException(
             status_code=400,

@@ -510,7 +510,7 @@ export default function App() {
     ...(adminMode ? [{ view: "admin" as View, icon: "🛠️", label: "Admin", short: "Admin" }] : []),
   ];
   // The profile name, or a friendly first name from the login ("anusha.k@…" → "Anusha").
-  const loginName = username.includes("@") ? username.split("@")[0].split(/[._\-+\d]/)[0] : "";
+  const loginName = (username.includes("@") ? username.split("@")[0] : /^\+?\d+$/.test(username) ? "" : username).split(/[._\-+\d]/)[0];
   const weak = weakTopics(testHistory);
   const displayName =
     getProfileInfo().name.trim().split(/\s+/)[0] || (loginName ? loginName.charAt(0).toUpperCase() + loginName.slice(1) : "there");

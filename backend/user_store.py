@@ -169,6 +169,9 @@ def create_user(
     with _lock:
         users = _load()
         for existing in users.values():
+            # A teacher and a student account may share an email or mobile.
+            if account_role(existing) != ("admin" if role == "admin" else "student"):
+                continue
             if existing["email"].lower() == email_key:
                 raise UserExistsError("That email is already registered. Please log in instead.")
             if phone and _phones_match(existing.get("phone", ""), phone):
@@ -196,31 +199,68 @@ def create_user(
         return user["username"]
 
 
-def _find_in(users: dict, identifier: str) -> Optional[dict]:
-    """Matches a username, an email address or a mobile number."""
+# Teacher (admin) accounts and student accounts are separate: the same email
+# or mobile number can have one of each, each with its own password. An
+# account is a teacher's if it was created as one, or its email/username is
+# listed in ADMIN_EMAILS.
+def _admin_emails() -> set[str]:
+    return {e.strip().lower() for e in os.environ.get("ADMIN_EMAILS", "").split(",") if e.strip()}
+
+
+def account_role(user: dict) -> str:
+    if user.get("role") == "admin":
+        return "admin"
+    admins = _admin_emails()
+    if user.get("email", "").strip().lower() in admins or user.get("username", "").strip().lower() in admins:
+        return "admin"
+    return "student"
+
+
+def _find_account(users: dict, identifier: str, role: Optional[str] = None) -> Optional[tuple[str, dict]]:
+    """Matches a username, an email address or a mobile number, returning
+    (account key, account). With `role`, only accounts of that kind match;
+    without one, a student account is preferred when an email has both."""
     identifier_key = identifier.strip().lower()
     if not identifier_key:
         return None
+    fits = lambda user: role is None or account_role(user) == role  # noqa: E731
     if identifier_key in users:
-        return users[identifier_key]
-    for user in users.values():
-        if user["email"].strip().lower() == identifier_key:
-            return user
+        user = users[identifier_key]
+        return (identifier_key, user) if fits(user) else None
+    # Students first, so an old email-only login still finds the student account.
+    candidates = sorted(users.items(), key=lambda item: account_role(item[1]) == "admin")
+    for key, user in candidates:
+        if fits(user) and user["email"].strip().lower() == identifier_key:
+            return key, user
     if "@" not in identifier_key and sum(ch.isdigit() for ch in identifier_key) >= 10:
-        for user in users.values():
-            if _phones_match(user.get("phone", ""), identifier_key):
-                return user
+        for key, user in candidates:
+            if fits(user) and _phones_match(user.get("phone", ""), identifier_key):
+                return key, user
     return None
 
 
-def find_user(identifier: str) -> Optional[dict]:
+def _find_in(users: dict, identifier: str, role: Optional[str] = None) -> Optional[dict]:
+    found = _find_account(users, identifier, role)
+    return found[1] if found else None
+
+
+def find_user(identifier: str, role: Optional[str] = None) -> Optional[dict]:
     with _lock:
         users = _load()
-    return _find_in(users, identifier)
+    return _find_in(users, identifier, role)
 
 
-def verify_user_login(identifier: str, password: str) -> bool:
-    user = find_user(identifier)
+def find_account_key(identifier: str, role: Optional[str] = None) -> Optional[str]:
+    """The account's unique key, which the app sends with every request after
+    logging in, so a shared email always means the right account."""
+    with _lock:
+        users = _load()
+    found = _find_account(users, identifier, role)
+    return found[0] if found else None
+
+
+def verify_user_login(identifier: str, password: str, role: Optional[str] = None) -> bool:
+    user = find_user(identifier, role)
     if not user:
         return False
     if password.startswith(SESSION_TOKEN_PREFIX):
@@ -245,41 +285,41 @@ def _derive_username_from_email(email: str, existing_keys: set) -> str:
     return candidate
 
 
-def upsert_google_user(email: str) -> tuple[str, str]:
-    """Find or create a local account for a Google-authenticated email, issue
-    a freshly generated random password for it, and return (username, password).
-    That password is never seen or typed by the user — it's only used
-    internally as the credential pair the frontend stores after Google
-    sign-in, so the existing username/password-based auth on every other
-    request keeps working unchanged for Google-signed-in users too.
-    """
+class NoTeacherAccount(Exception):
+    pass
+
+
+def upsert_google_user(email: str, role: str = "student") -> tuple[str, str]:
+    """Find (or, for students, create) the account for a Google-verified
+    email, and return (account key, session token). The token stands in for a
+    password on later requests, like after a one-time-code login, so the
+    account's own password is left unchanged. Teacher accounts are never
+    created here — they need the admin sign-up code."""
     email_key = email.strip().lower()
-    new_password = secrets.token_urlsafe(24)
+    token = SESSION_TOKEN_PREFIX + secrets.token_urlsafe(32)
+    now = time.time()
 
     with _lock:
         users = _load()
-
-        matched_key = None
-        for key, user in users.items():
-            if user["email"].strip().lower() == email_key:
-                matched_key = key
-                break
-
-        if matched_key is None:
-            matched_key = _derive_username_from_email(email, set(users.keys()))
-            users[matched_key] = {
-                "username": matched_key,
-                "email": email.strip(),
-                "password_hash": hash_password(new_password),
-            }
+        found = _find_account(users, email_key, role)
+        if found:
+            key, user = found
+        elif role == "admin":
+            raise NoTeacherAccount("There's no teacher account for this Google email. Choose Student, or create a teacher account first.")
         else:
-            users[matched_key]["password_hash"] = hash_password(new_password)
+            key = _derive_username_from_email(email, set(users.keys()))
+            # Random password: this account signs in with Google until a
+            # password is set through "Forgot password?".
+            user = users[key] = {"username": key, "email": email.strip(), "password_hash": hash_password(secrets.token_urlsafe(24))}
 
+        sessions = [t for t in user.get("session_tokens", []) if t["expires_at"] > now]
+        sessions.append({"hash": _sha256(token), "expires_at": now + SESSION_TOKEN_TTL_SECONDS})
+        user["session_tokens"] = sessions[-MAX_SESSION_TOKENS:]
         _save(users)
-        return users[matched_key]["username"], new_password
+        return key, token
 
 
-def create_password_reset_token(identifier: str) -> Optional[tuple[str, dict, str]]:
+def create_password_reset_token(identifier: str, role: Optional[str] = None) -> Optional[tuple[str, dict, str]]:
     """Looks up an account by email, phone number or username, then issues a
     fresh single-use, time-limited reset token stored on that user's record.
     Returns (token, user, channel) where channel is "sms" when the account was
@@ -289,16 +329,11 @@ def create_password_reset_token(identifier: str) -> Optional[tuple[str, dict, st
 
     with _lock:
         users = _load()
-        channel = "email"
-        user = next((u for u in users.values() if u["email"].strip().lower() == identifier_key), None)
-        if not user and "@" not in identifier_key:
-            user = next((u for u in users.values() if _phones_match(u.get("phone", ""), identifier_key)), None)
-            if user:
-                channel = "sms"
-        if not user:
-            user = users.get(identifier_key)
+        user = _find_in(users, identifier_key, role)
         if not user:
             return None
+        matched_by_phone = "@" not in identifier_key and identifier_key not in users and _phones_match(user.get("phone", ""), identifier_key)
+        channel = "sms" if matched_by_phone else "email"
 
         token = secrets.token_urlsafe(32)
         user["reset_token"] = token
@@ -307,10 +342,10 @@ def create_password_reset_token(identifier: str) -> Optional[tuple[str, dict, st
         return token, user, channel
 
 
-def get_recovery_options(identifier: str) -> Optional[dict]:
+def get_recovery_options(identifier: str, role: Optional[str] = None) -> Optional[dict]:
     """What the "Forgot password?" screen can offer this account: its
     security question (if one was set) and a masked email to send a code to."""
-    user = find_user(identifier)
+    user = find_user(identifier, role)
     if not user:
         return None
     return {
@@ -320,10 +355,10 @@ def get_recovery_options(identifier: str) -> Optional[dict]:
     }
 
 
-def reset_password_with_security_answer(identifier: str, answer: str, new_password: str) -> bool:
+def reset_password_with_security_answer(identifier: str, answer: str, new_password: str, role: Optional[str] = None) -> bool:
     with _lock:
         users = _load()
-        user = _find_in(users, identifier)
+        user = _find_in(users, identifier, role)
         if not user or not user.get("security_answer_hash"):
             return False
         if not verify_password(_normalize_answer(answer), user["security_answer_hash"]):
@@ -335,10 +370,10 @@ def reset_password_with_security_answer(identifier: str, answer: str, new_passwo
         return True
 
 
-def set_security_question(identifier: str, question: str, answer: str) -> bool:
+def set_security_question(identifier: str, question: str, answer: str, role: Optional[str] = None) -> bool:
     with _lock:
         users = _load()
-        user = _find_in(users, identifier)
+        user = _find_in(users, identifier, role)
         if not user:
             return False
         user["security_question"] = question.strip()
@@ -347,11 +382,11 @@ def set_security_question(identifier: str, question: str, answer: str) -> bool:
         return True
 
 
-def set_password(identifier: str, new_password: str) -> bool:
+def set_password(identifier: str, new_password: str, role: Optional[str] = None) -> bool:
     """Used after a one-time code has proved the student owns the account."""
     with _lock:
         users = _load()
-        user = _find_in(users, identifier)
+        user = _find_in(users, identifier, role)
         if not user:
             return False
         user["password_hash"] = hash_password(new_password)
@@ -361,7 +396,7 @@ def set_password(identifier: str, new_password: str) -> bool:
         return True
 
 
-def create_session_token(identifier: str) -> Optional[str]:
+def create_session_token(identifier: str, role: Optional[str] = None) -> Optional[str]:
     """After logging in with a one-time code there's no password to send on
     every request, so the student gets a long random token instead, used in
     the password's place. Only its SHA-256 is stored."""
@@ -369,7 +404,7 @@ def create_session_token(identifier: str) -> Optional[str]:
     now = time.time()
     with _lock:
         users = _load()
-        user = _find_in(users, identifier)
+        user = _find_in(users, identifier, role)
         if not user:
             return None
         sessions = [t for t in user.get("session_tokens", []) if t["expires_at"] > now]

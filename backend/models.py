@@ -16,6 +16,9 @@ class GenerateRequest(BaseModel):
 class LoginRequest(BaseModel):
     username: str  # email, mobile number or username
     password: str
+    # "student" or "admin": teacher and student accounts are separate, even
+    # with the same email or mobile number.
+    role: str = "student"
 
 
 class SignupRequest(BaseModel):
@@ -37,21 +40,25 @@ class OtpSendRequest(BaseModel):
     purpose: str  # "signup", "login" or "reset"
     destination: str  # email or mobile number (signup/login/reset), or username (login/reset)
     channel: str = ""  # "email"/"sms" for reset, to pick where the code goes
+    role: str = "student"
 
 
 class OtpLoginRequest(BaseModel):
     identifier: str
     code: str
+    role: str = "student"
 
 
 class ForgotPasswordRequest(BaseModel):
     identifier: str  # email, phone number or username
+    role: str = "student"
 
 
 class SecurityAnswerResetRequest(BaseModel):
     identifier: str
     answer: str
     new_password: str
+    role: str = "student"
 
 
 class CodeResetRequest(BaseModel):
@@ -59,6 +66,7 @@ class CodeResetRequest(BaseModel):
     channel: str  # "email" or "sms" — where the code was sent
     code: str
     new_password: str
+    role: str = "student"
 
 
 class SecurityQuestionRequest(BaseModel):
@@ -73,6 +81,7 @@ class ResetPasswordRequest(BaseModel):
 
 class GoogleAuthRequest(BaseModel):
     id_token: str
+    role: str = "student"
 
 
 class VisualAid(BaseModel):

@@ -46,16 +46,23 @@ async function extractErrorMessage(response: Response, fallback: string): Promis
   return body?.detail ?? fallback;
 }
 
-export async function login(username: string, password: string): Promise<void> {
+// Teacher (admin) and student accounts are separate, even with the same email.
+export type AccountRole = "student" | "admin";
+
+// Logs in to the chosen kind of account and returns its key, which the app
+// stores and sends from then on (so a shared email means the right account).
+export async function login(username: string, password: string, role: AccountRole = "student"): Promise<string> {
   const response = await fetch(`${API_BASE_URL}/login`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ username, password }),
+    body: JSON.stringify({ username, password, role }),
   });
 
   if (!response.ok) {
     throw new Error(await extractErrorMessage(response, "Incorrect username or password."));
   }
+  const data = await response.json();
+  return data.username || username;
 }
 
 export async function getGoogleAuthConfig(): Promise<{ configured: boolean; clientId: string }> {
@@ -69,11 +76,11 @@ export async function getGoogleAuthConfig(): Promise<{ configured: boolean; clie
   }
 }
 
-export async function googleAuth(idToken: string): Promise<{ username: string; password: string }> {
+export async function googleAuth(idToken: string, role: AccountRole = "student"): Promise<{ username: string; password: string }> {
   const response = await fetch(`${API_BASE_URL}/auth/google`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ id_token: idToken }),
+    body: JSON.stringify({ id_token: idToken, role }),
   });
 
   if (!response.ok) {
@@ -164,17 +171,22 @@ export async function getOtpConfig(): Promise<{ email: boolean; sms: boolean }> 
 }
 
 // Sends a one-time code. Returns where it went (masked, e.g. "ki*@gmail.com").
-export async function sendOtp(purpose: OtpPurpose, destination: string, channel: OtpChannel | "" = ""): Promise<string> {
+export async function sendOtp(
+  purpose: OtpPurpose,
+  destination: string,
+  channel: OtpChannel | "" = "",
+  role: AccountRole = "student",
+): Promise<string> {
   const data = await postJson<{ sent_to: string }>(
     "otp/send",
-    { purpose, destination, channel },
+    { purpose, destination, channel, role },
     "Failed to send the code.",
   );
   return data.sent_to ?? "";
 }
 
-export async function loginWithOtp(identifier: string, code: string): Promise<{ username: string; password: string }> {
-  return postJson("login/otp", { identifier, code }, "That code didn't work.");
+export async function loginWithOtp(identifier: string, code: string, role: AccountRole = "student"): Promise<{ username: string; password: string }> {
+  return postJson("login/otp", { identifier, code, role }, "That code didn't work.");
 }
 
 export interface RecoveryOptions {
@@ -185,14 +197,14 @@ export interface RecoveryOptions {
   maskedPhone: string;
 }
 
-export async function getRecoveryOptions(identifier: string): Promise<RecoveryOptions> {
+export async function getRecoveryOptions(identifier: string, role: AccountRole = "student"): Promise<RecoveryOptions> {
   const data = await postJson<{
     security_question: string;
     email_available: boolean;
     masked_email: string;
     sms_available: boolean;
     masked_phone: string;
-  }>("forgot-password/options", { identifier }, "Couldn't find that account.");
+  }>("forgot-password/options", { identifier, role }, "Couldn't find that account.");
   return {
     securityQuestion: data.security_question ?? "",
     emailAvailable: Boolean(data.email_available),
@@ -206,10 +218,11 @@ export async function resetPasswordWithSecurityAnswer(
   identifier: string,
   answer: string,
   newPassword: string,
+  role: AccountRole = "student",
 ): Promise<void> {
   await postJson(
     "forgot-password/security-answer",
-    { identifier, answer, new_password: newPassword },
+    { identifier, answer, new_password: newPassword, role },
     "Failed to reset the password.",
   );
 }
@@ -219,10 +232,11 @@ export async function resetPasswordWithCode(
   channel: OtpChannel,
   code: string,
   newPassword: string,
+  role: AccountRole = "student",
 ): Promise<void> {
   await postJson(
     "forgot-password/verify-code",
-    { identifier, channel, code, new_password: newPassword },
+    { identifier, channel, code, new_password: newPassword, role },
     "Failed to reset the password.",
   );
 }
@@ -295,11 +309,11 @@ export async function fetchTopicIntroSlides(topic: string, grade: number): Promi
   return request;
 }
 
-export async function requestPasswordReset(identifier: string): Promise<"email" | "sms"> {
+export async function requestPasswordReset(identifier: string, role: AccountRole = "student"): Promise<"email" | "sms"> {
   const response = await fetch(`${API_BASE_URL}/forgot-password`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ identifier }),
+    body: JSON.stringify({ identifier, role }),
   });
 
   if (!response.ok) {
