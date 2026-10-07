@@ -7,6 +7,8 @@ interface ProfilePageProps {
   username: string;
   onBack: () => void;
   onLogout: () => void;
+  // Teacher (admin) accounts have no parent contact details.
+  isTeacher?: boolean;
 }
 
 const FIELDS: Array<{ key: keyof ProfileInfo; label: string; type: string; placeholder: string }> = [
@@ -18,9 +20,11 @@ const FIELDS: Array<{ key: keyof ProfileInfo; label: string; type: string; place
   { key: "parentEmail", label: "Parent's email address", type: "email", placeholder: "parent@example.com" },
 ];
 
+const PARENT_FIELD_KEYS: Array<keyof ProfileInfo> = ["parentPhone", "parentEmail"];
 const EMAIL_FIELD_KEYS: Array<keyof ProfileInfo> = ["email", "parentEmail"];
 
-export default function ProfilePage({ username, onBack, onLogout }: ProfilePageProps) {
+export default function ProfilePage({ username, onBack, onLogout, isTeacher = false }: ProfilePageProps) {
+  const fields = isTeacher ? FIELDS.filter((field) => !PARENT_FIELD_KEYS.includes(field.key)) : FIELDS;
   const [stats, setStats] = useState(getProfileStats());
   const [info, setInfo] = useState(getProfileInfo());
   const [draft, setDraft] = useState<ProfileInfo>(info);
@@ -38,7 +42,7 @@ export default function ProfilePage({ username, onBack, onLogout }: ProfilePageP
   }
 
   function handleSave() {
-    for (const key of EMAIL_FIELD_KEYS) {
+    for (const key of EMAIL_FIELD_KEYS.filter((k) => fields.some((field) => field.key === k))) {
       const value = draft[key].trim();
       if (value && !value.includes("@")) {
         const label = FIELDS.find((field) => field.key === key)?.label ?? "email address";
@@ -68,7 +72,7 @@ export default function ProfilePage({ username, onBack, onLogout }: ProfilePageP
       <div className="rounded-3xl bg-white ring-1 ring-slate-200/70 p-6 shadow-lg">
         <div className="mb-6 flex items-center gap-4">
           <div className="flex h-14 w-14 items-center justify-center rounded-full bg-indigo-100 text-2xl">
-            🧑‍🎓
+            {isTeacher ? "🧑‍🏫" : "🧑‍🎓"}
           </div>
           <div>
             <p className="text-lg font-bold text-slate-900">{info.name || username}</p>
@@ -136,7 +140,7 @@ export default function ProfilePage({ username, onBack, onLogout }: ProfilePageP
 
         {isEditing ? (
           <div className="space-y-4">
-            {FIELDS.map((field) => (
+            {fields.map((field) => (
               <div key={field.key}>
                 <label
                   htmlFor={`profile-${field.key}`}
@@ -176,11 +180,11 @@ export default function ProfilePage({ username, onBack, onLogout }: ProfilePageP
           </div>
         ) : (
           <dl className="space-y-3 text-sm">
-            {FIELDS.map((field, index) => (
+            {fields.map((field, index) => (
               <div
                 key={field.key}
                 className={`flex justify-between ${
-                  index < FIELDS.length - 1 ? "border-b border-slate-100 pb-2" : ""
+                  index < fields.length - 1 ? "border-b border-slate-100 pb-2" : ""
                 }`}
               >
                 <dt className="font-medium text-slate-500">{field.label}</dt>

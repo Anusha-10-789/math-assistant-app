@@ -611,7 +611,7 @@ export default function App() {
         {view === "admin" && adminMode ? (
           <AdminPage onBack={goHome} onContentChanged={refreshTeacherData} />
         ) : view === "profile" ? (
-          <ProfilePage username={username} onBack={goHome} onLogout={handleLogout} />
+          <ProfilePage username={username} onBack={goHome} onLogout={handleLogout} isTeacher={adminMode} />
         ) : view === "history" ? (
           <TestHistoryPage
             history={testHistory}
