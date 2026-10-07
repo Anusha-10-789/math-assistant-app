@@ -168,14 +168,13 @@ def create_user(
 
     with _lock:
         users = _load()
+        # Students and teachers always use different emails and mobile
+        # numbers: each one belongs to a single account.
         for existing in users.values():
-            # A teacher and a student account may share an email or mobile.
-            if account_role(existing) != ("admin" if role == "admin" else "student"):
-                continue
-            if existing["email"].lower() == email_key:
-                raise UserExistsError("That email is already registered. Please log in instead.")
-            if phone and _phones_match(existing.get("phone", ""), phone):
-                raise UserExistsError("That mobile number is already registered. Please log in instead.")
+            same_email = existing["email"].lower() == email_key
+            same_phone = bool(phone) and _phones_match(existing.get("phone", ""), phone)
+            if same_email or same_phone:
+                raise UserExistsError(registered_message(existing, "email" if same_email else "mobile number", role))
 
         username_key = username.strip().lower()
         if username_key and username_key in users:
@@ -199,10 +198,10 @@ def create_user(
         return user["username"]
 
 
-# Teacher (admin) accounts and student accounts are separate: the same email
-# or mobile number can have one of each, each with its own password. An
-# account is a teacher's if it was created as one, or its email/username is
-# listed in ADMIN_EMAILS.
+# Teacher (admin) accounts and student accounts are separate, with their own
+# email, mobile number and password; a student account only logs in as a
+# student and a teacher account only as admin. An account is a teacher's if it
+# was created as one, or its email/username is listed in ADMIN_EMAILS.
 def _admin_emails() -> set[str]:
     return {e.strip().lower() for e in os.environ.get("ADMIN_EMAILS", "").split(",") if e.strip()}
 
@@ -214,6 +213,15 @@ def account_role(user: dict) -> str:
     if user.get("email", "").strip().lower() in admins or user.get("username", "").strip().lower() in admins:
         return "admin"
     return "student"
+
+
+def registered_message(existing: dict, what: str, role: str) -> str:
+    """Why a sign-up can't use this email / mobile number."""
+    if account_role(existing) == ("admin" if role == "admin" else "student"):
+        return f"That {what} is already registered. Please log in instead."
+    if role == "admin":
+        return f"That {what} belongs to a student account. Teachers need their own {what} and password."
+    return f"That {what} belongs to a teacher account. Students need their own {what} and password."
 
 
 def _find_account(users: dict, identifier: str, role: Optional[str] = None) -> Optional[tuple[str, dict]]:

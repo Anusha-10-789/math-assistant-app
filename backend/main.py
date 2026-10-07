@@ -68,6 +68,7 @@ from user_store import (
     find_user,
     get_recovery_options,
     normalize_phone,
+    registered_message,
     reset_password_with_security_answer,
     reset_password_with_token,
     set_password,
@@ -190,8 +191,10 @@ def _otp_address(purpose: str, destination: str, channel: str = "", role: str = 
     if purpose == "signup":
         if not (_is_email(destination) or _is_phone(destination)):
             raise HTTPException(status_code=400, detail="Please enter a valid email address or mobile number.")
-        if find_user(destination, role):
-            raise HTTPException(status_code=400, detail=ALREADY_REGISTERED_DETAIL)
+        existing = find_user(destination)
+        if existing:
+            what = "email" if _is_email(destination) else "mobile number"
+            raise HTTPException(status_code=400, detail=registered_message(existing, what, role))
         return destination if _is_email(destination) else normalize_phone(destination)
 
     user = find_user(destination, role)
@@ -273,8 +276,10 @@ async def signup(request: SignupRequest) -> dict:
         raise HTTPException(status_code=400, detail="Please choose Student or Teacher (Admin).")
     if request.role == "admin":
         admin_api.check_admin_code(request.admin_code)
-    if find_user(email, request.role) or find_user(phone, request.role):
-        raise HTTPException(status_code=400, detail=ALREADY_REGISTERED_DETAIL)
+    for value, what in ((email, "email"), (phone, "mobile number")):
+        existing = find_user(value)
+        if existing:
+            raise HTTPException(status_code=400, detail=registered_message(existing, what, request.role))
 
     # When the server can send codes, the new email or mobile must be proven
     # with one before the account is created.

@@ -569,6 +569,9 @@ export default function LoginGate({ onLogin }: LoginGateProps) {
                     placeholder="Code from your school or the site admin"
                     className={INPUT_CLASS}
                   />
+                  <p className="-mt-2 mb-4 text-xs text-slate-500">
+                    Use a different email, mobile number and password from any student account.
+                  </p>
                 </>
               ) : (
                 <p className="mb-4 rounded-xl bg-amber-50 px-3 py-2 text-sm text-amber-800">
