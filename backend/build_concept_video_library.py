@@ -30,7 +30,7 @@ CONCURRENCY = 4
 
 
 # Must match the file names in frontend/src/subjects.ts.
-SUBJECT_FILES = {"Mathematics": "maths", "Science": "science", "Social Studies": "social", "English": "english"}
+SUBJECT_FILES = {"Mathematics": "maths", "Science": "science", "Social Studies": "social", "English": "english", "General Knowledge": "gk"}
 
 
 def _file_for(subject: str, grade: int) -> str:
@@ -71,7 +71,7 @@ async def main(topics_path: str) -> None:
             try:
                 # Social Studies names carry their chapter ("Community Helpers:
                 # Doctor"), which tells the AI the context.
-                about = t["topic"] if t["subject"] in ("Social Studies", "English") else t["label"]
+                about = t["topic"] if t["subject"] in ("Social Studies", "English", "General Knowledge") else t["label"]
                 video = await concept_video_service.get_concept_video(about, t["grade"], t["subject"])
             except Exception as exc:  # keep going; report at the end
                 failed.append((t, exc))

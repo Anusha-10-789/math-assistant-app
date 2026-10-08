@@ -4,6 +4,7 @@ import AdminPage from "./components/AdminPage";
 import ReadingPoster from "./components/ReadingPoster";
 import MathBackdrop from "./components/MathBackdrop";
 import SolarSystemBackdrop from "./components/SolarSystemBackdrop";
+import QuizShowBackdrop from "./components/QuizShowBackdrop";
 import StorybookBackdrop from "./components/StorybookBackdrop";
 import WorldBackdrop from "./components/WorldBackdrop";
 import DownloadButtons from "./components/DownloadButtons";
@@ -539,7 +540,7 @@ export default function App() {
 
   // Inside the lessons the background matches the subject: a solar system
   // for Science, a maths chalkboard for Maths, a world map for Social Studies, a storybook
-  // library for English.
+  // library for English, a quiz-show stage for General Knowledge.
   const inLesson = view === "app" && stage !== "subject";
 
   return (
@@ -552,6 +553,8 @@ export default function App() {
         <WorldBackdrop />
       ) : subject === "English" ? (
         <StorybookBackdrop />
+      ) : subject === "General Knowledge" ? (
+        <QuizShowBackdrop />
       ) : (
         <MathBackdrop />
       )}

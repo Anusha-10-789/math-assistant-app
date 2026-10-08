@@ -35,6 +35,13 @@ const SUBJECTS: Array<{ subject: Subject; icon: string; tagline: string; art: st
     art: ["🔤", "✏️", "💬"],
     className: "from-violet-500 via-purple-500 to-fuchsia-500 shadow-purple-300/60",
   },
+  {
+    subject: "General Knowledge",
+    icon: "💡",
+    tagline: "India, the world, famous people, sports and more",
+    art: ["🏆", "🌍", "❓"],
+    className: "from-sky-500 via-blue-600 to-indigo-600 shadow-blue-300/60",
+  },
 ];
 
 export default function SubjectSelect({ onSelectSubject }: SubjectSelectProps) {
@@ -48,7 +55,9 @@ export default function SubjectSelect({ onSelectSubject }: SubjectSelectProps) {
               key={item.subject}
               type="button"
               onClick={() => onSelectSubject(item.subject)}
-              className={`group relative overflow-hidden rounded-3xl bg-gradient-to-br p-6 text-left text-white shadow-lg transition hover:-translate-y-1 hover:shadow-xl ${item.className}`}
+              className={`group relative overflow-hidden rounded-3xl bg-gradient-to-br p-6 text-left text-white shadow-lg transition hover:-translate-y-1 hover:shadow-xl ${item.className} ${
+                SUBJECTS.length % 2 === 1 && item === SUBJECTS[SUBJECTS.length - 1] ? "sm:col-span-2" : ""
+              }`}
             >
               <span className="pointer-events-none absolute -right-4 -top-4 flex gap-1 text-5xl opacity-25 transition group-hover:rotate-6" aria-hidden="true">
                 {item.art.map((emoji) => (

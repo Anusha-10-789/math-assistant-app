@@ -1,5 +1,6 @@
 import type { Subject } from "./subjects";
 import { ENGLISH_SYLLABUS } from "./englishTopics";
+import { GK_SYLLABUS } from "./gkTopics";
 import { SOCIAL_SYLLABUS, type SocialChapter } from "./socialStudiesTopics";
 
 export interface TopicModule {
@@ -343,6 +344,25 @@ const ENGLISH_MODULES: TopicModule[] = [
   m("Speaking and Listening", "💬", "Talking and listening well"),
 ];
 
+// General Knowledge (gkTopics.ts), built the same way.
+const GK_BY_GRADE = fromSyllabus(GK_SYLLABUS);
+
+const GK_MODULES: TopicModule[] = [
+  m("India", "🗺️", "States, capitals and symbols"),
+  m("Famous People", "🌟", "People who made history"),
+  m("Animals and Nature", "🐯", "Amazing facts about nature"),
+  m("Science and Technology", "🔬", "Inventions and discoveries"),
+  m("Sports", "🏅", "Games, players and events"),
+  m("World", "🌍", "Countries, landmarks and oceans"),
+];
+
+const GK_ALL_TOPICS: TopicModule = {
+  label: "All Topics (Mixed Review)",
+  icon: "💡",
+  description: "A mixed quiz covering every chapter above",
+  topic: "Mixed Review: India, Famous People, Animals and Birds, Science Around Us, Sports, and Geography",
+};
+
 const ENGLISH_ALL_TOPICS: TopicModule = {
   label: "All Topics (Mixed Review)",
   icon: "📚",
@@ -374,18 +394,21 @@ const BY_GRADE: Record<Subject, Record<number, TopicModule[]>> = {
   Science: SCIENCE_BY_GRADE,
   "Social Studies": SOCIAL_BY_GRADE,
   English: ENGLISH_BY_GRADE,
+  "General Knowledge": GK_BY_GRADE,
 };
 const MODULES: Record<Subject, TopicModule[]> = {
   Mathematics: MATH_MODULES,
   Science: SCIENCE_MODULES,
   "Social Studies": SOCIAL_MODULES,
   English: ENGLISH_MODULES,
+  "General Knowledge": GK_MODULES,
 };
 const ALL_TOPICS: Record<Subject, TopicModule> = {
   Mathematics: MATH_ALL_TOPICS,
   Science: SCIENCE_ALL_TOPICS,
   "Social Studies": SOCIAL_ALL_TOPICS,
   English: ENGLISH_ALL_TOPICS,
+  "General Knowledge": GK_ALL_TOPICS,
 };
 
 export function getGradeTopicModules(subject: Subject, grade: number): TopicModule[] {
@@ -404,13 +427,14 @@ export function getAllTopicsModule(subject: Subject): TopicModule {
 // aren't in any list, so they count as Mathematics unless the test itself
 // recorded its subject.
 export function subjectForTopic(topic: string): Subject {
-  for (const subject of ["English", "Social Studies", "Science", "Mathematics"] as Subject[]) {
+  for (const subject of ["General Knowledge", "English", "Social Studies", "Science", "Mathematics"] as Subject[]) {
     if (ALL_TOPICS[subject].topic === topic || MODULES[subject].some((m) => m.topic === topic)) return subject;
   }
   if (Object.values(MATH_BY_GRADE).some((list) => list.some((m) => m.topic === topic))) return "Mathematics";
   if (Object.values(SCIENCE_BY_GRADE).some((list) => list.some((m) => m.topic === topic))) return "Science";
   if (Object.values(SOCIAL_BY_GRADE).some((list) => list.some((m) => m.topic === topic))) return "Social Studies";
   if (Object.values(ENGLISH_BY_GRADE).some((list) => list.some((m) => m.topic === topic))) return "English";
+  if (Object.values(GK_BY_GRADE).some((list) => list.some((m) => m.topic === topic))) return "General Knowledge";
   return "Mathematics";
 }
 
@@ -420,5 +444,6 @@ export function displayTopic(topic: string): string {
   if (topic === SCIENCE_ALL_TOPICS.topic) return "Mixed Review (Science)";
   if (topic === SOCIAL_ALL_TOPICS.topic) return "Mixed Review (Social Studies)";
   if (topic === ENGLISH_ALL_TOPICS.topic) return "Mixed Review (English)";
+  if (topic === GK_ALL_TOPICS.topic) return "Mixed Review (GK)";
   return topic;
 }

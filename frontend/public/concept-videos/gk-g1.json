@@ -1,0 +1,8169 @@
+{
+ "Myself and Family: Body Parts": {
+  "id": "lib-general-knowledge-g1-myself-and-family-body-parts",
+  "topic": "Myself and Family: Body Parts",
+  "title": "My Amazing Body Parts",
+  "icon": "👤",
+  "scenes": [
+   {
+    "title": "The Wonder of You",
+    "narration": [
+     "Have you ever wondered how you run, jump, and play all day long?",
+     "Your body is like a super machine made of many special parts.",
+     "Let us explore what your body can do!"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏃",
+        "🤸"
+       ],
+       "motion": "pulse",
+       "caption": "Amazing body"
+      },
+      {
+       "items": [
+        "⚙️",
+        "🧒"
+       ],
+       "motion": "grow",
+       "caption": "Body machine"
+      },
+      {
+       "items": [
+        "🔍",
+        "✨"
+       ],
+       "motion": "rise",
+       "caption": "Time to learn"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Parts We Use",
+    "narration": [
+     "We use our eyes to see the bright sun and colorful flowers.",
+     "Our ears help us hear the chirping birds in the park.",
+     "We use our nose to smell delicious hot rotis at home.",
+     "Our hands help us hold a pencil or eat tasty snacks."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👁️",
+        "☀️",
+        "🌻"
+       ],
+       "motion": "pulse",
+       "caption": "Eyes see"
+      },
+      {
+       "items": [
+        "👂",
+        "🐦"
+       ],
+       "motion": "pulse",
+       "caption": "Ears hear"
+      },
+      {
+       "items": [
+        "👃",
+        "🫓"
+       ],
+       "motion": "pulse",
+       "caption": "Nose smells"
+      },
+      {
+       "items": [
+        "🖐️",
+        "✏️",
+        "🍎"
+       ],
+       "motion": "pulse",
+       "caption": "Hands hold"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Working Together",
+    "narration": [
+     "Let us see how these parts work to eat a mango.",
+     "First, your eyes see the yellow mango on the table.",
+     "Next, your hands pick it up to take a bite.",
+     "Finally, your mouth tastes how sweet and yummy it is!"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🥭"
+       ],
+       "motion": "chain",
+       "caption": "Eating mango"
+      },
+      {
+       "items": [
+        "👁️",
+        "🥭"
+       ],
+       "motion": "chain",
+       "caption": "Looking"
+      },
+      {
+       "items": [
+        "🖐️",
+        "🥭"
+       ],
+       "motion": "chain",
+       "caption": "Picking up"
+      },
+      {
+       "items": [
+        "👄",
+        "😋"
+       ],
+       "motion": "chain",
+       "caption": "Tasting"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Keep Your Body Healthy",
+    "narration": [
+     "Every part of your body is important and works together.",
+     "Eat healthy food and stay clean to keep them strong.",
+     "Think about it: which body part helps you give your friend a big hug?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🤝",
+        "🧒"
+       ],
+       "motion": "rise",
+       "caption": "Working together"
+      },
+      {
+       "items": [
+        "🥦",
+        "🧼"
+       ],
+       "motion": "grow",
+       "caption": "Healthy habits"
+      },
+      {
+       "items": [
+        "🫂"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Myself and Family: My Name, Age and Birthday": {
+  "id": "lib-general-knowledge-g1-myself-and-family-my-name-age-and-birthday",
+  "topic": "Myself and Family: My Name, Age and Birthday",
+  "title": "Who Are You Today?",
+  "icon": "🎈",
+  "scenes": [
+   {
+    "title": "Meeting A New Friend",
+    "narration": [
+     "Hello! Do you know how to tell people who you are?",
+     "We all have a special name that our family gave us.",
+     "My name is Rohan. What is your name?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👋",
+        "😊"
+       ],
+       "motion": "pulse",
+       "caption": "Say Hello"
+      },
+      {
+       "items": [
+        "🏷️",
+        "🧒",
+        "👧"
+       ],
+       "motion": "float",
+       "caption": "Your Name"
+      },
+      {
+       "items": [
+        "🙋‍♂️",
+        "💬"
+       ],
+       "motion": "push",
+       "caption": "Introduce Yourself"
+      }
+     ]
+    }
+   },
+   {
+    "title": "How Old Are You",
+    "narration": [
+     "Every year, we grow a little bit taller and stronger.",
+     "We count our years to know how old we are.",
+     "I am six years old. How many candles are on your cake?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📏",
+        "📈"
+       ],
+       "motion": "grow",
+       "caption": "Growing Up"
+      },
+      {
+       "items": [
+        "5",
+        "🎂"
+       ],
+       "motion": "chain",
+       "caption": "Counting Years"
+      },
+      {
+       "items": [
+        "6",
+        "🕯️"
+       ],
+       "motion": "pulse",
+       "caption": "My Age"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Your Special Day",
+    "narration": [
+     "Do you know the date you were born on?",
+     "That is your birthday, the best day of the year!",
+     "My birthday is in May. When is your birthday?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📅",
+        "📆"
+       ],
+       "motion": "float",
+       "caption": "The Date"
+      },
+      {
+       "items": [
+        "🎈",
+        "🎊",
+        "🎁"
+       ],
+       "motion": "rise",
+       "caption": "Birthday Fun"
+      },
+      {
+       "items": [
+        "🗓️",
+        "🎂"
+       ],
+       "motion": "chain",
+       "caption": "Birthday Month"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Remembering Your Details",
+    "narration": [
+     "You have a name, an age, and a birthday.",
+     "These things make you very special and unique.",
+     "Think about it: Can you say your name, age, and birthday out loud?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏷️",
+        "6",
+        "📅"
+       ],
+       "motion": "pulse",
+       "caption": "Your Details"
+      },
+      {
+       "items": [
+        "🌟",
+        "💖"
+       ],
+       "motion": "float",
+       "caption": "You Are Unique"
+      },
+      {
+       "items": [
+        "🤔",
+        "🗣️"
+       ],
+       "motion": "push",
+       "caption": "Your Turn"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Myself and Family: Family Members": {
+  "id": "lib-general-knowledge-g1-myself-and-family-family-members",
+  "topic": "Myself and Family: Family Members",
+  "title": "My Wonderful Family",
+  "icon": "🏠",
+  "scenes": [
+   {
+    "title": "Who Is In Your Family",
+    "narration": [
+     "Do you know who lives in your house with you?",
+     "A family is a group of people who love and care for each other.",
+     "Some families are small, and some families are very big!"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏠",
+        "👧"
+       ],
+       "motion": "pulse",
+       "caption": "Your home"
+      },
+      {
+       "items": [
+        "❤️",
+        "👨‍👩‍👧‍👦"
+       ],
+       "motion": "float",
+       "caption": "Loving family"
+      },
+      {
+       "items": [
+        "👫",
+        "👨‍👩‍👧‍👦"
+       ],
+       "motion": "grow",
+       "caption": "Family sizes"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Meet The Family Members",
+    "narration": [
+     "Your father and mother are your parents.",
+     "Your brothers and sisters are your siblings.",
+     "Grandparents are your parents' mother and father.",
+     "Uncles and aunts are also part of our family tree."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👨",
+        "👩"
+       ],
+       "motion": "chain",
+       "caption": "Parents"
+      },
+      {
+       "items": [
+        "👦",
+        "👧"
+       ],
+       "motion": "chain",
+       "caption": "Siblings"
+      },
+      {
+       "items": [
+        "👵",
+        "👴"
+       ],
+       "motion": "chain",
+       "caption": "Grandparents"
+      },
+      {
+       "items": [
+        "👨‍💼",
+        "👩‍💼"
+       ],
+       "motion": "chain",
+       "caption": "Extended family"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Day With Family",
+    "narration": [
+     "Imagine it is Sunday morning at home in Delhi.",
+     "Grandpa reads the newspaper while you play with your sister.",
+     "Mom and Dad cook a yummy breakfast together."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "☀️",
+        "🇮🇳"
+       ],
+       "motion": "float",
+       "caption": "Sunday morning"
+      },
+      {
+       "items": [
+        "📰",
+        "👧",
+        "👦"
+       ],
+       "motion": "rise",
+       "caption": "Family fun"
+      },
+      {
+       "items": [
+        "🍳",
+        "👨",
+        "👩"
+       ],
+       "motion": "push",
+       "caption": "Cooking together"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Why Families Are Special",
+    "narration": [
+     "Families help us learn, play, and grow every single day.",
+     "We share chores and keep our home happy.",
+     "Can you name three people who live in your house today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📚",
+        "⚽",
+        "🌱"
+       ],
+       "motion": "grow",
+       "caption": "Learning together"
+      },
+      {
+       "items": [
+        "🧹",
+        "🏡",
+        "😊"
+       ],
+       "motion": "pull",
+       "caption": "Sharing work"
+      },
+      {
+       "items": [
+        "🤔",
+        "🏠"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Myself and Family: Good Habits": {
+  "id": "lib-general-knowledge-g1-myself-and-family-good-habits",
+  "topic": "Myself and Family: Good Habits",
+  "title": "My Healthy Daily Habits",
+  "icon": "🌟",
+  "scenes": [
+   {
+    "title": "The Morning Routine Hook",
+    "narration": [
+     "Do you ever wonder why we brush our teeth every single morning?",
+     "Good habits help our bodies stay strong and happy all day long.",
+     "Let us learn how simple habits keep us feeling great."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🪥",
+        "🦷"
+       ],
+       "motion": "pulse",
+       "caption": "Morning mystery"
+      },
+      {
+       "items": [
+        "💪",
+        "😊"
+       ],
+       "motion": "grow",
+       "caption": "Staying strong"
+      },
+      {
+       "items": [
+        "☀️",
+        "✨"
+       ],
+       "motion": "rise",
+       "caption": "Healthy habits"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Learning Good Habits",
+    "narration": [
+     "First, we wash our hands with soap before every meal.",
+     "This keeps tiny germs away so we do not get sick.",
+     "Next, we eat fresh fruits and vegetables to grow tall.",
+     "Drinking plenty of clean water is very important for us too."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🧼",
+        "🤲",
+        "💧"
+       ],
+       "motion": "chain",
+       "caption": "Hand washing"
+      },
+      {
+       "items": [
+        "🦠",
+        "🚫"
+       ],
+       "motion": "push",
+       "caption": "Germs away"
+      },
+      {
+       "items": [
+        "🍎",
+        "🥦",
+        "🥕"
+       ],
+       "motion": "grow",
+       "caption": "Eat healthy"
+      },
+      {
+       "items": [
+        "💧",
+        "🥛"
+       ],
+       "motion": "float",
+       "caption": "Drink water"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Day With Rohan",
+    "narration": [
+     "Rohan wakes up and tidies his bed to start his day.",
+     "He helps his mother set the table for breakfast in the kitchen.",
+     "After playing outside, Rohan always puts his toys back in the box.",
+     "At night, he brushes his teeth again before going to sleep."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🛏️",
+        "☀️"
+       ],
+       "motion": "push",
+       "caption": "Tidy bed"
+      },
+      {
+       "items": [
+        "🥣",
+        "🍽️"
+       ],
+       "motion": "chain",
+       "caption": "Helping out"
+      },
+      {
+       "items": [
+        "⚽",
+        "📦"
+       ],
+       "motion": "pull",
+       "caption": "Organized play"
+      },
+      {
+       "items": [
+        "🪥",
+        "🦷",
+        "🌙"
+       ],
+       "motion": "fall",
+       "caption": "Night routine"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Reflect",
+    "narration": [
+     "Good habits like washing hands and tidying up keep us healthy.",
+     "Helping family members makes our home a happy place to be.",
+     "What is one good habit you can start doing today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🧼",
+        "🧹"
+       ],
+       "motion": "pulse",
+       "caption": "Summary"
+      },
+      {
+       "items": [
+        "🏠",
+        "❤️"
+       ],
+       "motion": "grow",
+       "caption": "Family love"
+      },
+      {
+       "items": [
+        "🤔",
+        "💭"
+       ],
+       "motion": "float",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Animals: Wild Animals": {
+  "id": "lib-general-knowledge-g1-animals-wild-animals",
+  "topic": "Animals: Wild Animals",
+  "title": "Amazing Wild Animals of India",
+  "icon": "🦁",
+  "scenes": [
+   {
+    "title": "Where do wild animals live?",
+    "narration": [
+     "Have you seen a tiger or an elephant in your house?",
+     "No, because wild animals live freely in nature.",
+     "They find their own food and make their own homes."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏠",
+        "❌",
+        "🐅",
+        "🐘"
+       ],
+       "motion": "pulse",
+       "caption": "Wild animals"
+      },
+      {
+       "items": [
+        "🌳",
+        "🏞️"
+       ],
+       "motion": "float",
+       "caption": "Nature's home"
+      },
+      {
+       "items": [
+        "🍎",
+        "🌿",
+        "🛖"
+       ],
+       "motion": "grow",
+       "caption": "Self sufficient"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Meeting the wild friends",
+    "narration": [
+     "The Bengal Tiger is strong and loves to hunt.",
+     "An Indian Elephant is very big and eats green leaves.",
+     "Monkeys jump high and eat yummy fruit in trees.",
+     "Peacocks show off their beautiful feathers when it rains."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🐅"
+       ],
+       "motion": "push",
+       "caption": "Bengal Tiger"
+      },
+      {
+       "items": [
+        "🐘",
+        "🍃"
+       ],
+       "motion": "grow",
+       "caption": "Indian Elephant"
+      },
+      {
+       "items": [
+        "🐒",
+        "🍌"
+       ],
+       "motion": "rise",
+       "caption": "Playful monkeys"
+      },
+      {
+       "items": [
+        "🦚",
+        "🌧️"
+       ],
+       "motion": "float",
+       "caption": "National bird"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Observing the Tiger",
+    "narration": [
+     "Let us look at the tiger living in a forest.",
+     "The tiger uses its stripes to hide in tall grass.",
+     "It drinks water from a cool forest stream."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🐅",
+        "🌲"
+       ],
+       "motion": "chain",
+       "caption": "In the forest"
+      },
+      {
+       "items": [
+        "🐅",
+        "🌾"
+       ],
+       "motion": "push",
+       "caption": "Camouflage"
+      },
+      {
+       "items": [
+        "💧",
+        "🏞️"
+       ],
+       "motion": "fall",
+       "caption": "Drinking water"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Remembering our wild world",
+    "narration": [
+     "Wild animals need forests and water to stay safe.",
+     "We must always respect them from far away.",
+     "Think about it, which wild animal is your favorite?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌳",
+        "💧",
+        "🛡️"
+       ],
+       "motion": "chain",
+       "caption": "Nature needs protection"
+      },
+      {
+       "items": [
+        "👀",
+        "🚫"
+       ],
+       "motion": "pulse",
+       "caption": "Stay safe"
+      },
+      {
+       "items": [
+        "🤔",
+        "🦁",
+        "🐒"
+       ],
+       "motion": "float",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Myself and Family: Healthy Habits": {
+  "id": "lib-general-knowledge-g1-myself-and-family-healthy-habits",
+  "topic": "Myself and Family: Healthy Habits",
+  "title": "Growing Up Strong and Healthy",
+  "icon": "🍎",
+  "scenes": [
+   {
+    "title": "Start Your Healthy Day",
+    "narration": [
+     "Do you ever wonder why your body feels so energetic after a good night's sleep?",
+     "Taking care of ourselves helps us grow tall and play with our friends.",
+     "Let us learn how simple daily habits make us feel like superheroes."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🛌",
+        "☀️"
+       ],
+       "motion": "rise",
+       "caption": "Morning Energy"
+      },
+      {
+       "items": [
+        "🏃",
+        "🌳"
+       ],
+       "motion": "grow",
+       "caption": "Stay Active"
+      },
+      {
+       "items": [
+        "🦸",
+        "🌟"
+       ],
+       "motion": "pulse",
+       "caption": "Healthy Habits"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Keeping Our Bodies Clean",
+    "narration": [
+     "First, we must wash our hands with soap before eating our meals.",
+     "Brushing your teeth twice a day keeps those tiny cavities away.",
+     "Taking a daily bath keeps our skin clean and feeling fresh."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🧼",
+        "🤲"
+       ],
+       "motion": "push",
+       "caption": "Wash Hands"
+      },
+      {
+       "items": [
+        "🪥",
+        "🦷"
+       ],
+       "motion": "chain",
+       "caption": "Brush Teeth"
+      },
+      {
+       "items": [
+        "🚿",
+        "🛁"
+       ],
+       "motion": "fall",
+       "caption": "Daily Bath"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Fueling Up with Food",
+    "narration": [
+     "Imagine you are eating a yummy lunch of dal, rice, and fresh vegetables.",
+     "These healthy foods give your body the strength to run and jump.",
+     "Always remember to drink plenty of clean water throughout the day."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍛",
+        "🥗"
+       ],
+       "motion": "float",
+       "caption": "Balanced Diet"
+      },
+      {
+       "items": [
+        "🥕",
+        "🍎"
+       ],
+       "motion": "grow",
+       "caption": "Energy Food"
+      },
+      {
+       "items": [
+        "💧",
+        "🥛"
+       ],
+       "motion": "push",
+       "caption": "Drink Water"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Reflect",
+    "narration": [
+     "Cleanliness and healthy food are the secrets to a happy body.",
+     "Resting well gives our muscles time to recover and grow.",
+     "Think about it: What is one healthy habit you will start today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🧼",
+        "🍎",
+        "🏃"
+       ],
+       "motion": "pulse",
+       "caption": "Key Habits"
+      },
+      {
+       "items": [
+        "😴",
+        "🌙"
+       ],
+       "motion": "float",
+       "caption": "Rest Well"
+      },
+      {
+       "items": [
+        "🤔",
+        "💡"
+       ],
+       "motion": "rise",
+       "caption": "Your Turn"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Animals: Domestic Animals": {
+  "id": "lib-general-knowledge-g1-animals-domestic-animals",
+  "topic": "Animals: Domestic Animals",
+  "title": "Meeting Our Animal Friends",
+  "icon": "🐄",
+  "scenes": [
+   {
+    "title": "Meet Your Animal Neighbors",
+    "narration": [
+     "Do you see animals near your home or at a farm?",
+     "Some animals live with us or on farms.",
+     "We call these special friends domestic animals."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏠",
+        "🐄",
+        "🐕"
+       ],
+       "motion": "float",
+       "caption": "Animal friends"
+      },
+      {
+       "items": [
+        "🏡",
+        "🚜"
+       ],
+       "motion": "pulse",
+       "caption": "Domestic animals"
+      },
+      {
+       "items": [
+        "❤️",
+        "🐾"
+       ],
+       "motion": "grow",
+       "caption": "Kind friends"
+      }
+     ]
+    }
+   },
+   {
+    "title": "How They Help Us",
+    "narration": [
+     "A cow gives us healthy milk every day.",
+     "A dog helps guard our home and stays loyal.",
+     "A hen provides eggs for our yummy breakfast."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🐄",
+        "🥛"
+       ],
+       "motion": "push",
+       "caption": "Cow milk"
+      },
+      {
+       "items": [
+        "🐕",
+        "🏠"
+       ],
+       "motion": "pulse",
+       "caption": "Dog guard"
+      },
+      {
+       "items": [
+        "🐔",
+        "🥚"
+       ],
+       "motion": "rise",
+       "caption": "Fresh eggs"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Caring For Our Friends",
+    "narration": [
+     "Just like us, these animals need water to drink.",
+     "They also need yummy food and a cozy home.",
+     "We must be gentle and kind when we pet them."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "💧",
+        "🥣"
+       ],
+       "motion": "fall",
+       "caption": "Clean water"
+      },
+      {
+       "items": [
+        "🌾",
+        "🏠"
+       ],
+       "motion": "grow",
+       "caption": "Healthy food"
+      },
+      {
+       "items": [
+        "✋",
+        "🐈"
+       ],
+       "motion": "pull",
+       "caption": "Be gentle"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Time To Remember",
+    "narration": [
+     "Domestic animals live near people and help us.",
+     "Always remember to be kind to every animal.",
+     "Think about it: what is your favorite domestic animal?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🐄",
+        "🐕",
+        "🐔"
+       ],
+       "motion": "chain",
+       "caption": "Living together"
+      },
+      {
+       "items": [
+        "❤️",
+        "🤝"
+       ],
+       "motion": "pulse",
+       "caption": "Show kindness"
+      },
+      {
+       "items": [
+        "🤔",
+        "❓"
+       ],
+       "motion": "float",
+       "caption": "Ask yourself"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Animals: Birds": {
+  "id": "lib-general-knowledge-g1-animals-birds",
+  "topic": "Animals: Birds",
+  "title": "Amazing Birds All Around Us",
+  "icon": "🐦",
+  "scenes": [
+   {
+    "title": "What Makes A Bird",
+    "narration": [
+     "Have you seen a sparrow in your garden chirping happily?",
+     "Birds are special animals that are covered in soft feathers.",
+     "They have two legs and two wings to help them fly."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🐦"
+       ],
+       "motion": "pulse",
+       "caption": "Little sparrow"
+      },
+      {
+       "items": [
+        "🪶"
+       ],
+       "motion": "float",
+       "caption": "Soft feathers"
+      },
+      {
+       "items": [
+        "🦵",
+        "🦵",
+        "🪽",
+        "🪽"
+       ],
+       "motion": "chain",
+       "caption": "Wings and legs"
+      }
+     ]
+    }
+   },
+   {
+    "title": "How Birds Eat",
+    "narration": [
+     "Birds do not have teeth like we do.",
+     "Instead, they have a hard beak to pick up food.",
+     "A parrot uses its strong beak to crack open nuts.",
+     "Different birds have beaks shaped for the food they eat."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🦷",
+        "❌"
+       ],
+       "motion": "push",
+       "caption": "No teeth"
+      },
+      {
+       "items": [
+        "🐤",
+        "🪲"
+       ],
+       "motion": "pull",
+       "caption": "Hard beak"
+      },
+      {
+       "items": [
+        "🦜",
+        "🥜"
+       ],
+       "motion": "pulse",
+       "caption": "Strong beak"
+      },
+      {
+       "items": [
+        "🐦",
+        "🦆",
+        "🦅"
+       ],
+       "motion": "chain",
+       "caption": "Beak shapes"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Where Birds Live",
+    "narration": [
+     "Birds build cozy nests to keep their eggs safe.",
+     "They use twigs, grass, and mud to make their homes.",
+     "Many birds like the crow build nests high in trees."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏠",
+        "🥚"
+       ],
+       "motion": "grow",
+       "caption": "Bird nest"
+      },
+      {
+       "items": [
+        "🌿",
+        "🪵",
+        "🧱"
+       ],
+       "motion": "chain",
+       "caption": "Building materials"
+      },
+      {
+       "items": [
+        "🐦‍⬛",
+        "🌳"
+       ],
+       "motion": "rise",
+       "caption": "High nest"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap And Think",
+    "narration": [
+     "Remember, birds have feathers, wings, and beaks.",
+     "They live in nests and use beaks to eat.",
+     "Think about it: If you were a bird, where would you build your nest?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🪶",
+        "🪽",
+        "🐤"
+       ],
+       "motion": "pulse",
+       "caption": "Bird parts"
+      },
+      {
+       "items": [
+        "🏠",
+        "🪱"
+       ],
+       "motion": "float",
+       "caption": "Bird life"
+      },
+      {
+       "items": [
+        "🤔",
+        "🌳"
+       ],
+       "motion": "fall",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Animals: Animal Sounds": {
+  "id": "lib-general-knowledge-g1-animals-animal-sounds",
+  "topic": "Animals: Animal Sounds",
+  "title": "What Sounds Do Animals Make?",
+  "icon": "🦁",
+  "scenes": [
+   {
+    "title": "Listening to the Animal World",
+    "narration": [
+     "Have you ever heard a dog bark at the park?",
+     "Animals make many different sounds to talk to their friends.",
+     "Do you know what sounds other animals make?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🐕"
+       ],
+       "motion": "pulse",
+       "caption": "Dog barks"
+      },
+      {
+       "items": [
+        "🐶",
+        "🐱",
+        "🐦"
+       ],
+       "motion": "float",
+       "caption": "Animal talk"
+      },
+      {
+       "items": [
+        "❓"
+       ],
+       "motion": "pulse",
+       "caption": "Guessing sounds"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Learning the Sounds",
+    "narration": [
+     "A cat says meow when it wants a treat.",
+     "A cow says moo while eating grass in a field.",
+     "A bird chirps loudly in the morning sun.",
+     "And a lion roars to show its strength."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🐈"
+       ],
+       "motion": "grow",
+       "caption": "Cat meows"
+      },
+      {
+       "items": [
+        "🐄"
+       ],
+       "motion": "chain",
+       "caption": "Cow moos"
+      },
+      {
+       "items": [
+        "🐦"
+       ],
+       "motion": "rise",
+       "caption": "Bird chirps"
+      },
+      {
+       "items": [
+        "🦁"
+       ],
+       "motion": "push",
+       "caption": "Lion roars"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Let's Practice Together",
+    "narration": [
+     "Imagine you see a duck swimming in a pond.",
+     "When a duck is happy, it says quack.",
+     "Can you try to quack just like a duck?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🦆",
+        "💧"
+       ],
+       "motion": "float",
+       "caption": "Duck swimming"
+      },
+      {
+       "items": [
+        "🦆"
+       ],
+       "motion": "pulse",
+       "caption": "Duck quacks"
+      },
+      {
+       "items": [
+        "🦆",
+        "🗣️"
+       ],
+       "motion": "push",
+       "caption": "Your turn"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Quick Animal Sound Recap",
+    "narration": [
+     "Dogs bark, cats meow, and cows moo.",
+     "Every animal has its own special way to speak.",
+     "Think about it: what sound does your favorite animal make?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🐕",
+        "🐈",
+        "🐄"
+       ],
+       "motion": "chain",
+       "caption": "Sound list"
+      },
+      {
+       "items": [
+        "🌍",
+        "🦁",
+        "🐦"
+       ],
+       "motion": "float",
+       "caption": "Animal variety"
+      },
+      {
+       "items": [
+        "🤔",
+        "🐾"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Animals: Insects": {
+  "id": "lib-general-knowledge-g1-animals-insects",
+  "topic": "Animals: Insects",
+  "title": "Amazing Tiny Insects",
+  "icon": "🐞",
+  "scenes": [
+   {
+    "title": "Spotting Tiny Friends",
+    "narration": [
+     "Have you seen tiny creatures in your garden?",
+     "Those little crawlers are called insects.",
+     "Look closely at their small bodies today."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌻",
+        "🐜"
+       ],
+       "motion": "pulse",
+       "caption": "Garden friends"
+      },
+      {
+       "items": [
+        "🐞",
+        "🦋"
+       ],
+       "motion": "float",
+       "caption": "Meet insects"
+      },
+      {
+       "items": [
+        "🔍",
+        "🐜"
+       ],
+       "motion": "pull",
+       "caption": "Look closer"
+      }
+     ]
+    }
+   },
+   {
+    "title": "What Makes an Insect",
+    "narration": [
+     "All insects have six tiny legs.",
+     "They have three main body parts.",
+     "Many insects also have beautiful wings."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+       ],
+       "motion": "chain",
+       "caption": "Six legs"
+      },
+      {
+       "items": [
+        "⚪",
+        "⚪",
+        "⚪"
+       ],
+       "motion": "chain",
+       "caption": "Three parts"
+      },
+      {
+       "items": [
+        "🦋"
+       ],
+       "motion": "rise",
+       "caption": "Wings"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Busy Honey Bee",
+    "narration": [
+     "Let us look at a honey bee.",
+     "It lands on a flower to drink.",
+     "It uses its six legs to hold on."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🐝",
+        "🌸"
+       ],
+       "motion": "float",
+       "caption": "Honey bee"
+      },
+      {
+       "items": [
+        "🐝",
+        "🌼"
+       ],
+       "motion": "fall",
+       "caption": "Feeding"
+      },
+      {
+       "items": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+       ],
+       "motion": "push",
+       "caption": "Six legs"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Explore",
+    "narration": [
+     "Insects have six legs and three parts.",
+     "They are important helpers in nature.",
+     "Can you count legs on a bug today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🐜",
+        "6",
+        "3"
+       ],
+       "motion": "pulse",
+       "caption": "Key facts"
+      },
+      {
+       "items": [
+        "🌍",
+        "🌸"
+       ],
+       "motion": "grow",
+       "caption": "Nature helpers"
+      },
+      {
+       "items": [
+        "🐞",
+        "🔢"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Animals: Animal Homes": {
+  "id": "lib-general-knowledge-g1-animals-animal-homes",
+  "topic": "Animals: Animal Homes",
+  "title": "Where Do Animals Live?",
+  "icon": "🏠",
+  "scenes": [
+   {
+    "title": "Finding Animals at Home",
+    "narration": [
+     "Have you ever seen a bird flying to a tree or a squirrel running to a hole?",
+     "Just like you have a cozy house, every animal needs a special place to live.",
+     "Why do you think animals choose certain places to build their homes?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🐦",
+        "🌳",
+        "🐿️"
+       ],
+       "motion": "pulse",
+       "caption": "Watching animals"
+      },
+      {
+       "items": [
+        "🏠",
+        "🧒"
+       ],
+       "motion": "float",
+       "caption": "Animal homes"
+      },
+      {
+       "items": [
+        "❓",
+        "🐾"
+       ],
+       "motion": "pulse",
+       "caption": "Curious question"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Why They Need Homes",
+    "narration": [
+     "Animals need homes to stay safe from the hot sun and the cold rain.",
+     "Homes are also perfect places to hide from bigger, hungry animals.",
+     "Some animals even use their homes to raise their tiny babies."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "☀️",
+        "🌧️",
+        "🛡️"
+       ],
+       "motion": "fall",
+       "caption": "Staying safe"
+      },
+      {
+       "items": [
+        "🦊",
+        "🐰",
+        "🕳️"
+       ],
+       "motion": "push",
+       "caption": "Hiding place"
+      },
+      {
+       "items": [
+        "🐣",
+        "🥚",
+        "🏠"
+       ],
+       "motion": "grow",
+       "caption": "Raising babies"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Examples in Nature",
+    "narration": [
+     "A busy bird collects little twigs to build a strong nest high in a tree.",
+     "A rabbit digs a deep burrow in the ground to sleep and stay cool.",
+     "A honeybee makes a sticky, sweet beehive to store food for the winter."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🐦",
+        "🌿",
+        "🌳"
+       ],
+       "motion": "chain",
+       "caption": "Bird nest"
+      },
+      {
+       "items": [
+        "🐰",
+        "🕳️",
+        "🌍"
+       ],
+       "motion": "pull",
+       "caption": "Rabbit burrow"
+      },
+      {
+       "items": [
+        "🐝",
+        "🍯",
+        "🏠"
+       ],
+       "motion": "grow",
+       "caption": "Honeybee hive"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Thinking",
+    "narration": [
+     "Animals live in homes to stay safe, warm, and protected.",
+     "From nests to burrows, every animal has a home that fits its needs.",
+     "Think about it: What kind of home would you build if you were an animal?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏡",
+        "🛡️",
+        "🌡️"
+       ],
+       "motion": "pulse",
+       "caption": "Home importance"
+      },
+      {
+       "items": [
+        "🌳",
+        "🕳️",
+        "🐾"
+       ],
+       "motion": "float",
+       "caption": "Different homes"
+      },
+      {
+       "items": [
+        "🤔",
+        "💭"
+       ],
+       "motion": "rise",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Animals: Sea Animals": {
+  "id": "lib-general-knowledge-g1-animals-sea-animals",
+  "topic": "Animals: Sea Animals",
+  "title": "Amazing Animals Under the Sea",
+  "icon": "🌊",
+  "scenes": [
+   {
+    "title": "The Big Blue Ocean",
+    "narration": [
+     "Have you ever visited a beach and wondered what lives deep under the waves?",
+     "The ocean is like a giant home for many special animals.",
+     "Let us dive down to meet some of these underwater friends."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏖️",
+        "🌊"
+       ],
+       "motion": "float",
+       "caption": "Deep ocean"
+      },
+      {
+       "items": [
+        "🐟",
+        "🦀",
+        "🐙"
+       ],
+       "motion": "pulse",
+       "caption": "Ocean home"
+      },
+      {
+       "items": [
+        "🤿",
+        "🐠"
+       ],
+       "motion": "fall",
+       "caption": "Diving down"
+      }
+     ]
+    }
+   },
+   {
+    "title": "How They Swim",
+    "narration": [
+     "Fish have fins that help them swim smoothly through the water.",
+     "An octopus uses its eight wiggly arms to move and grab things.",
+     "Some animals, like crabs, have hard shells to keep them safe.",
+     "Sea creatures have bodies designed to live only in the water."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🐟"
+       ],
+       "motion": "push",
+       "caption": "Fish fins"
+      },
+      {
+       "items": [
+        "🐙"
+       ],
+       "motion": "chain",
+       "caption": "Octopus arms"
+      },
+      {
+       "items": [
+        "🦀"
+       ],
+       "motion": "rise",
+       "caption": "Hard shells"
+      },
+      {
+       "items": [
+        "🌊",
+        "🐠"
+       ],
+       "motion": "float",
+       "caption": "Water life"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Meet the Sea Turtle",
+    "narration": [
+     "Look at the sea turtle gliding slowly near the coral reef.",
+     "Its flippers work just like paddles to help it swim far.",
+     "The turtle breathes air, so it swims up to the surface sometimes."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🐢",
+        "🪸"
+       ],
+       "motion": "float",
+       "caption": "Sea turtle"
+      },
+      {
+       "items": [
+        "🐢",
+        "🛶"
+       ],
+       "motion": "push",
+       "caption": "Using flippers"
+      },
+      {
+       "items": [
+        "🐢",
+        "💨",
+        "☀️"
+       ],
+       "motion": "rise",
+       "caption": "Breathing air"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Explore",
+    "narration": [
+     "Fish have fins, octopuses have arms, and turtles have flippers.",
+     "All these animals have special ways to move and stay safe.",
+     "If you could be a sea animal, which one would you choose?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🐟",
+        "🐙",
+        "🐢"
+       ],
+       "motion": "pulse",
+       "caption": "Many shapes"
+      },
+      {
+       "items": [
+        "🌟",
+        "🌊"
+       ],
+       "motion": "grow",
+       "caption": "Special traits"
+      },
+      {
+       "items": [
+        "🤔",
+        "🐠"
+       ],
+       "motion": "float",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Plants and Nature: Flowers": {
+  "id": "lib-general-knowledge-g1-plants-and-nature-flowers",
+  "topic": "Plants and Nature: Flowers",
+  "title": "The Magic of Beautiful Flowers",
+  "icon": "🌸",
+  "scenes": [
+   {
+    "title": "Why do flowers grow?",
+    "narration": [
+     "Have you seen the colorful flowers in your garden?",
+     "Flowers are the beautiful parts of a plant.",
+     "Why do you think plants grow these bright flowers?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌻",
+        "🌷",
+        "🌹"
+       ],
+       "motion": "pulse",
+       "caption": "Colorful garden"
+      },
+      {
+       "items": [
+        "🌱",
+        "🌸"
+       ],
+       "motion": "grow",
+       "caption": "Plant parts"
+      },
+      {
+       "items": [
+        "🤔",
+        "🌼"
+       ],
+       "motion": "float",
+       "caption": "Big question"
+      }
+     ]
+    }
+   },
+   {
+    "title": "How flowers help plants",
+    "narration": [
+     "Flowers make seeds so new plants can grow.",
+     "They use bright colors to call bees and butterflies.",
+     "Insects carry dust called pollen between flowers.",
+     "This helps the plant make fruits and seeds."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌸",
+        "➡️",
+        "🌱"
+       ],
+       "motion": "chain",
+       "caption": "Making seeds"
+      },
+      {
+       "items": [
+        "🐝",
+        "🦋",
+        "🌸"
+       ],
+       "motion": "push",
+       "caption": "Calling insects"
+      },
+      {
+       "items": [
+        "🐝",
+        "✨",
+        "🌸"
+       ],
+       "motion": "float",
+       "caption": "Pollen travel"
+      },
+      {
+       "items": [
+        "🍎",
+        "🌻",
+        "🌰"
+       ],
+       "motion": "grow",
+       "caption": "Fruit growth"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Example: The Marigold",
+    "narration": [
+     "Let us look at a yellow marigold flower.",
+     "It opens wide to catch the warm sunlight.",
+     "A busy bee lands to drink sweet nectar.",
+     "The bee helps the marigold make tiny seeds."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌼"
+       ],
+       "motion": "pulse",
+       "caption": "Marigold flower"
+      },
+      {
+       "items": [
+        "☀️",
+        "🌼"
+       ],
+       "motion": "rise",
+       "caption": "Sunlight"
+      },
+      {
+       "items": [
+        "🐝",
+        "🌼",
+        "🍯"
+       ],
+       "motion": "push",
+       "caption": "Bee landing"
+      },
+      {
+       "items": [
+        "🌼",
+        "➡️",
+        "🌰"
+       ],
+       "motion": "chain",
+       "caption": "Seed creation"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Remembering our flowers",
+    "narration": [
+     "Flowers are beautiful and help plants make seeds.",
+     "Bees and butterflies love visiting colorful petals.",
+     "Think about it: what is your favorite flower?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌸",
+        "🌱",
+        "✨"
+       ],
+       "motion": "pulse",
+       "caption": "Flower purpose"
+      },
+      {
+       "items": [
+        "🐝",
+        "🦋",
+        "🌸"
+       ],
+       "motion": "float",
+       "caption": "Nature friends"
+      },
+      {
+       "items": [
+        "🤔",
+        "🌺"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Plants and Nature: Common Plants": {
+  "id": "lib-general-knowledge-g1-plants-and-nature-common-plants",
+  "topic": "Plants and Nature: Common Plants",
+  "title": "Meet Our Green Plant Friends",
+  "icon": "🌿",
+  "scenes": [
+   {
+    "title": "Plants In Our Garden",
+    "narration": [
+     "Have you noticed the green plants in your garden or a local park?",
+     "Why do some plants grow tall while others stay very small?",
+     "Let us explore how these amazing living things grow."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌳",
+        "🌻",
+        "🌿"
+       ],
+       "motion": "pulse",
+       "caption": "Green plants"
+      },
+      {
+       "items": [
+        "🌳",
+        "🌷"
+       ],
+       "motion": "grow",
+       "caption": "Different sizes"
+      },
+      {
+       "items": [
+        "🌱",
+        "☀️",
+        "💧"
+       ],
+       "motion": "grow",
+       "caption": "How plants grow"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Parts Of A Plant",
+    "narration": [
+     "Plants have roots hidden deep in the soil to drink water.",
+     "The stem stands tall like a strong pillar for the plant.",
+     "Bright green leaves soak up the warm sunlight all day.",
+     "Beautiful flowers bloom to make the world look colourful."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🪱",
+        "💧"
+       ],
+       "motion": "pull",
+       "caption": "Plant roots"
+      },
+      {
+       "items": [
+        "🎋"
+       ],
+       "motion": "rise",
+       "caption": "Strong stem"
+      },
+      {
+       "items": [
+        "🍃",
+        "☀️"
+       ],
+       "motion": "float",
+       "caption": "Green leaves"
+      },
+      {
+       "items": [
+        "🌺",
+        "🌼"
+       ],
+       "motion": "grow",
+       "caption": "Bright flowers"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Mango Tree Example",
+    "narration": [
+     "Think of a mango tree starting as a tiny little seed.",
+     "With rain and sun, it grows a thick trunk.",
+     "Soon, yummy yellow mangoes grow for us to eat."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🥭",
+        "🌱"
+       ],
+       "motion": "grow",
+       "caption": "Small seed"
+      },
+      {
+       "items": [
+        "🌳",
+        "🌧️",
+        "☀️"
+       ],
+       "motion": "rise",
+       "caption": "Growing tree"
+      },
+      {
+       "items": [
+        "🥭"
+       ],
+       "motion": "pulse",
+       "caption": "Sweet fruit"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap And Think",
+    "narration": [
+     "Plants need water, soil, and sunlight to stay healthy.",
+     "Roots, stems, leaves, and flowers make up every plant.",
+     "Can you find a plant today and count its leaves?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "💧",
+        "🌱",
+        "☀️"
+       ],
+       "motion": "chain",
+       "caption": "Plant needs"
+      },
+      {
+       "items": [
+        "🪱",
+        "🎋",
+        "🍃",
+        "🌺"
+       ],
+       "motion": "pulse",
+       "caption": "Plant parts"
+      },
+      {
+       "items": [
+        "🔍",
+        "🍃"
+       ],
+       "motion": "float",
+       "caption": "Count leaves"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Animals: Baby Animals": {
+  "id": "lib-general-knowledge-g1-animals-baby-animals",
+  "topic": "Animals: Baby Animals",
+  "title": "Names of Baby Animals",
+  "icon": "🐣",
+  "scenes": [
+   {
+    "title": "Meet the Animal Babies",
+    "narration": [
+     "Have you ever seen a tiny puppy playing in your park?",
+     "Animals have babies just like humans do.",
+     "Do you know what we call a baby dog?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🐶"
+       ],
+       "motion": "pulse",
+       "caption": "Cute puppy"
+      },
+      {
+       "items": [
+        "🐶",
+        "👩‍👦"
+       ],
+       "motion": "grow",
+       "caption": "Family life"
+      },
+      {
+       "items": [
+        "❓",
+        "🐶"
+       ],
+       "motion": "float",
+       "caption": "Guessing game"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Learning the Special Names",
+    "narration": [
+     "A baby dog is called a puppy.",
+     "A baby cat is called a kitten.",
+     "A baby cow is called a calf.",
+     "A baby duck is called a duckling."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🐶"
+       ],
+       "motion": "pulse",
+       "caption": "Puppy"
+      },
+      {
+       "items": [
+        "🐱"
+       ],
+       "motion": "pulse",
+       "caption": "Kitten"
+      },
+      {
+       "items": [
+        "🐮"
+       ],
+       "motion": "pulse",
+       "caption": "Calf"
+      },
+      {
+       "items": [
+        "🦆"
+       ],
+       "motion": "pulse",
+       "caption": "Duckling"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Seeing Them on the Farm",
+    "narration": [
+     "Let's visit a farm in Punjab.",
+     "Look, the mama hen has fluffy chicks following her.",
+     "See the sheep? Her baby is called a lamb."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🚜",
+        "🌾"
+       ],
+       "motion": "chain",
+       "caption": "Visit farm"
+      },
+      {
+       "items": [
+        "🐔",
+        "🐣"
+       ],
+       "motion": "push",
+       "caption": "Hen and chicks"
+      },
+      {
+       "items": [
+        "🐑"
+       ],
+       "motion": "grow",
+       "caption": "Sheep and lamb"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Quick Review",
+    "narration": [
+     "Puppy, kitten, calf, and lamb are all special names.",
+     "Every baby animal has a name that matches its family.",
+     "Can you name a baby animal you saw today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🐶",
+        "🐱",
+        "🐮",
+        "🐑"
+       ],
+       "motion": "chain",
+       "caption": "Baby names"
+      },
+      {
+       "items": [
+        "👪",
+        "🐾"
+       ],
+       "motion": "float",
+       "caption": "Family match"
+      },
+      {
+       "items": [
+        "❓",
+        "🐾"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Plants and Nature: Fruits": {
+  "id": "lib-general-knowledge-g1-plants-and-nature-fruits",
+  "topic": "Plants and Nature: Fruits",
+  "title": "Where Do Fruits Come From?",
+  "icon": "🍎",
+  "scenes": [
+   {
+    "title": "Finding Fruit in Nature",
+    "narration": [
+     "Have you ever wondered where the yummy mangoes in our fruit bowl come from?",
+     "They grow on big, green trees outside in the garden or on a farm.",
+     "Nature works like magic to turn tiny flowers into the snacks we love."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🥭",
+        "🏠"
+       ],
+       "motion": "pulse",
+       "caption": "Fruit bowl"
+      },
+      {
+       "items": [
+        "🌳",
+        "🥭"
+       ],
+       "motion": "grow",
+       "caption": "Growing trees"
+      },
+      {
+       "items": [
+        "🌸",
+        "✨",
+        "🍎"
+       ],
+       "motion": "chain",
+       "caption": "Nature's magic"
+      }
+     ]
+    }
+   },
+   {
+    "title": "How Fruits Grow",
+    "narration": [
+     "First, a plant grows a pretty flower to catch the bright sunlight.",
+     "Bees visit the flower to help it get ready for the next step.",
+     "The flower petals fall off, and a tiny fruit starts to appear.",
+     "The plant feeds the fruit water and food to help it grow big."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "☀️",
+        "🌻"
+       ],
+       "motion": "rise",
+       "caption": "Sunlight"
+      },
+      {
+       "items": [
+        "🐝",
+        "🌸"
+       ],
+       "motion": "push",
+       "caption": "Busy bees"
+      },
+      {
+       "items": [
+        "🌸",
+        "📉",
+        "🍎"
+       ],
+       "motion": "fall",
+       "caption": "Tiny fruit"
+      },
+      {
+       "items": [
+        "💧",
+        "🌳",
+        "🍎"
+       ],
+       "motion": "grow",
+       "caption": "Growing big"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Example: The Mango Journey",
+    "narration": [
+     "Look at a mango tree in India during the warm summer months.",
+     "Little green mangoes grow and hide under the wide, green leaves.",
+     "Soon, they turn yellow and juicy, ready for us to pick and eat."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "☀️",
+        "🌳"
+       ],
+       "motion": "float",
+       "caption": "Mango tree"
+      },
+      {
+       "items": [
+        "🥭",
+        "🍃"
+       ],
+       "motion": "pulse",
+       "caption": "Green mango"
+      },
+      {
+       "items": [
+        "🥭",
+        "😋"
+       ],
+       "motion": "pull",
+       "caption": "Ripe mango"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Think",
+    "narration": [
+     "So remember, fruits start as flowers before turning into the tasty food we eat.",
+     "They need sunlight, water, and help from bees to finish their journey.",
+     "Think about it, can you find a fruit growing on a plant today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌸",
+        "➡️",
+        "🍎"
+       ],
+       "motion": "chain",
+       "caption": "Flower to fruit"
+      },
+      {
+       "items": [
+        "☀️",
+        "💧",
+        "🐝"
+       ],
+       "motion": "push",
+       "caption": "Nature's helpers"
+      },
+      {
+       "items": [
+        "🍎",
+        "🤔"
+       ],
+       "motion": "pulse",
+       "caption": "Go explore"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Plants and Nature: Vegetables": {
+  "id": "lib-general-knowledge-g1-plants-and-nature-vegetables",
+  "topic": "Plants and Nature: Vegetables",
+  "title": "Where Do Our Vegetables Come From?",
+  "icon": "🥕",
+  "scenes": [
+   {
+    "title": "Finding Vegetables in the Kitchen",
+    "narration": [
+     "Have you ever wondered where the carrots in your lunchbox come from?",
+     "They do not grow in the kitchen cupboard, but in the soil!",
+     "Let us go on a journey to a vegetable garden."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🥕",
+        "🍱"
+       ],
+       "motion": "pulse",
+       "caption": "Yummy carrots"
+      },
+      {
+       "items": [
+        "🏠",
+        "🥣",
+        "🚫"
+       ],
+       "motion": "float",
+       "caption": "Kitchen mystery"
+      },
+      {
+       "items": [
+        "🌱",
+        "🚜"
+       ],
+       "motion": "chain",
+       "caption": "Garden visit"
+      }
+     ]
+    }
+   },
+   {
+    "title": "How Vegetables Grow",
+    "narration": [
+     "First, a tiny seed is planted deep in the dark soil.",
+     "The sun gives the plant light and warmth to help it wake up.",
+     "Rainwater travels through the soil to give the plant a big drink.",
+     "Soon, tiny green leaves pop up to say hello to the world."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌱"
+       ],
+       "motion": "grow",
+       "caption": "Planting seeds"
+      },
+      {
+       "items": [
+        "☀️"
+       ],
+       "motion": "rise",
+       "caption": "Warm sunshine"
+      },
+      {
+       "items": [
+        "🌧️",
+        "💧"
+       ],
+       "motion": "fall",
+       "caption": "Watering plants"
+      },
+      {
+       "items": [
+        "🌿"
+       ],
+       "motion": "grow",
+       "caption": "New leaves"
+      }
+     ]
+    }
+   },
+   {
+    "title": "From Garden to Plate",
+    "narration": [
+     "A farmer in India works hard to look after the crops.",
+     "When the vegetable is big and strong, it is time to harvest.",
+     "We buy them at the market to make a healthy vegetable curry.",
+     "Eating fresh vegetables helps our bodies grow strong and healthy."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👨‍🌾",
+        "🇮🇳"
+       ],
+       "motion": "push",
+       "caption": "Hard work"
+      },
+      {
+       "items": [
+        "🥕",
+        "🥔",
+        "🍆"
+       ],
+       "motion": "pull",
+       "caption": "Harvest time"
+      },
+      {
+       "items": [
+        "🛒",
+        "🍛"
+       ],
+       "motion": "chain",
+       "caption": "Buying food"
+      },
+      {
+       "items": [
+        "💪",
+        "🥗"
+       ],
+       "motion": "pulse",
+       "caption": "Healthy eating"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Remembering Our Garden Friends",
+    "narration": [
+     "Vegetables need sun, water, and soil to grow into yummy food.",
+     "Farmers help bring these veggies from the garden to our home.",
+     "Think about it: which vegetable is your favorite to eat?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "☀️",
+        "💧",
+        "🌱"
+       ],
+       "motion": "float",
+       "caption": "Plant needs"
+      },
+      {
+       "items": [
+        "👨‍🌾",
+        "🏡"
+       ],
+       "motion": "chain",
+       "caption": "Farm journey"
+      },
+      {
+       "items": [
+        "🤔",
+        "🥦",
+        "🍅"
+       ],
+       "motion": "pulse",
+       "caption": "Your favorite"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Plants and Nature: Weather": {
+  "id": "lib-general-knowledge-g1-plants-and-nature-weather",
+  "topic": "Plants and Nature: Weather",
+  "title": "Why Does It Rain?",
+  "icon": "🌧️",
+  "scenes": [
+   {
+    "title": "The Rainy Day Mystery",
+    "narration": [
+     "Have you ever looked at a rainy day and wondered where the water comes from?",
+     "It starts with the warm sun shining down on our big oceans and rivers.",
+     "The heat turns water into tiny invisible bubbles that float way up high."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌧️",
+        "🏠"
+       ],
+       "motion": "fall",
+       "caption": "Watching rain"
+      },
+      {
+       "items": [
+        "☀️",
+        "🌊"
+       ],
+       "motion": "rise",
+       "caption": "Sunlight warming"
+      },
+      {
+       "items": [
+        "💧",
+        "⬆️"
+       ],
+       "motion": "rise",
+       "caption": "Water vapor"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Building Big Clouds",
+    "narration": [
+     "High in the sky, those tiny bubbles get cold and bunch together.",
+     "They join up to become big, fluffy, grey clouds that we see above.",
+     "When the cloud gets too heavy, it cannot hold the water anymore."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "☁️",
+        "❄️"
+       ],
+       "motion": "pulse",
+       "caption": "Cooling down"
+      },
+      {
+       "items": [
+        "☁️",
+        "☁️"
+       ],
+       "motion": "grow",
+       "caption": "Forming clouds"
+      },
+      {
+       "items": [
+        "☁️",
+        "💧"
+       ],
+       "motion": "push",
+       "caption": "Cloud getting heavy"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Rain Falls Down",
+    "narration": [
+     "Think of a watering can in your garden pouring water on your plants.",
+     "The water drops fall from the cloud down to the earth below.",
+     "The thirsty trees and flowers drink the cool water to help them grow."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🪴",
+        "🚿"
+       ],
+       "motion": "fall",
+       "caption": "Garden watering"
+      },
+      {
+       "items": [
+        "💧",
+        "🌍"
+       ],
+       "motion": "fall",
+       "caption": "Rain drops"
+      },
+      {
+       "items": [
+        "🌳",
+        "🌻",
+        "💧"
+       ],
+       "motion": "grow",
+       "caption": "Plants drinking"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Nature Keeps Going",
+    "narration": [
+     "The water flows back into rivers and the cycle starts all over again.",
+     "Sun warms the water, clouds form, and then it rains down again.",
+     "Think about it, what do you like to do on a rainy day?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌊",
+        "🔄"
+       ],
+       "motion": "chain",
+       "caption": "Water cycle"
+      },
+      {
+       "items": [
+        "☀️",
+        "☁️",
+        "🌧️"
+       ],
+       "motion": "chain",
+       "caption": "Steps of rain"
+      },
+      {
+       "items": [
+        "🤔",
+        "🏠"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Plants and Nature: Seasons": {
+  "id": "lib-general-knowledge-g1-plants-and-nature-seasons",
+  "topic": "Plants and Nature: Seasons",
+  "title": "Why Does The Weather Change",
+  "icon": "🌻",
+  "scenes": [
+   {
+    "title": "The Changing Garden",
+    "narration": [
+     "Do you notice how leaves change color in the park near your house?",
+     "Sometimes it is very hot and sometimes it is cold.",
+     "Why does nature change its clothes throughout the year?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌳",
+        "🍃"
+       ],
+       "motion": "pulse",
+       "caption": "Changing leaves"
+      },
+      {
+       "items": [
+        "☀️",
+        "🥶"
+       ],
+       "motion": "float",
+       "caption": "Hot and cold"
+      },
+      {
+       "items": [
+        "❓",
+        "🌍"
+       ],
+       "motion": "float",
+       "caption": "Why seasons change"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Understanding The Seasons",
+    "narration": [
+     "Earth travels around the giant sun in a big circle.",
+     "This journey takes a whole year to finish.",
+     "As we move, different parts of Earth get more sunlight."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌍",
+        "☀️"
+       ],
+       "motion": "chain",
+       "caption": "Earth orbits sun"
+      },
+      {
+       "items": [
+        "🗓️"
+       ],
+       "motion": "chain",
+       "caption": "One year trip"
+      },
+      {
+       "items": [
+        "☀️",
+        "🌍"
+       ],
+       "motion": "push",
+       "caption": "Sunlight levels"
+      }
+     ]
+    }
+   },
+   {
+    "title": "India's Beautiful Seasons",
+    "narration": [
+     "In India, we have the hot summer with yummy mangoes.",
+     "Then comes the monsoon when rain helps our crops grow.",
+     "Finally, the cool winter arrives for sweaters and tea."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🥭",
+        "☀️"
+       ],
+       "motion": "grow",
+       "caption": "Summer time"
+      },
+      {
+       "items": [
+        "🌧️",
+        "🌾"
+       ],
+       "motion": "fall",
+       "caption": "Monsoon rain"
+      },
+      {
+       "items": [
+        "☕",
+        "🧥"
+       ],
+       "motion": "float",
+       "caption": "Winter chill"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Remembering The Patterns",
+    "narration": [
+     "Seasons happen because Earth moves around the sun.",
+     "They repeat every year in a special order.",
+     "Which season is your favorite and why do you like it?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌍",
+        "☀️"
+       ],
+       "motion": "chain",
+       "caption": "Earth's orbit"
+      },
+      {
+       "items": [
+        "🔄"
+       ],
+       "motion": "chain",
+       "caption": "Repeating cycle"
+      },
+      {
+       "items": [
+        "💭"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Plants and Nature: Trees": {
+  "id": "lib-general-knowledge-g1-plants-and-nature-trees",
+  "topic": "Plants and Nature: Trees",
+  "title": "Why Do Trees Matter?",
+  "icon": "🌳",
+  "scenes": [
+   {
+    "title": "Looking at Our Trees",
+    "narration": [
+     "Have you ever sat under a big shady tree in a park?",
+     "Trees are like giant friends that live outside your house.",
+     "But why are trees so important to us?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌳",
+        "🧒"
+       ],
+       "motion": "float",
+       "caption": "Shady tree"
+      },
+      {
+       "items": [
+        "🏡",
+        "🌳"
+       ],
+       "motion": "pulse",
+       "caption": "Giant friends"
+      },
+      {
+       "items": [
+        "❓",
+        "🌳"
+       ],
+       "motion": "pulse",
+       "caption": "The mystery"
+      }
+     ]
+    }
+   },
+   {
+    "title": "How Trees Grow Big",
+    "narration": [
+     "Trees start as tiny seeds in the ground.",
+     "They drink water from the soil using their roots.",
+     "Then they use sunlight to make their own food."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌱",
+        "🌍"
+       ],
+       "motion": "grow",
+       "caption": "Tiny seeds"
+      },
+      {
+       "items": [
+        "💧",
+        "🪱"
+       ],
+       "motion": "pull",
+       "caption": "Drinking water"
+      },
+      {
+       "items": [
+        "☀️",
+        "🌿"
+       ],
+       "motion": "rise",
+       "caption": "Making food"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Trees Give Us Gifts",
+    "narration": [
+     "Look at this mango tree in a garden.",
+     "It gives us sweet fruit to eat for lunch.",
+     "Its leaves give us fresh air to breathe.",
+     "Birds build little nests in the branches."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🥭",
+        "🌳"
+       ],
+       "motion": "chain",
+       "caption": "Mango tree"
+      },
+      {
+       "items": [
+        "😋",
+        "🥭"
+       ],
+       "motion": "pulse",
+       "caption": "Tasty fruit"
+      },
+      {
+       "items": [
+        "🍃",
+        "💨"
+       ],
+       "motion": "push",
+       "caption": "Fresh air"
+      },
+      {
+       "items": [
+        "🐦",
+        "🏠"
+       ],
+       "motion": "grow",
+       "caption": "Bird homes"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Taking Care of Trees",
+    "narration": [
+     "Trees give us fruit, air, and shade.",
+     "We should always protect them and never hurt them.",
+     "If you could plant one tree today, what would it be?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🥭",
+        "💨",
+        "🌳"
+       ],
+       "motion": "chain",
+       "caption": "Tree gifts"
+      },
+      {
+       "items": [
+        "🤝",
+        "🌳"
+       ],
+       "motion": "pulse",
+       "caption": "Be kind"
+      },
+      {
+       "items": [
+        "🌱",
+        "❓"
+       ],
+       "motion": "rise",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Colours, Shapes and Numbers: Counting": {
+  "id": "lib-general-knowledge-g1-colours-shapes-and-numbers-counting",
+  "topic": "Colours, Shapes and Numbers: Counting",
+  "title": "Fun With Shapes and Numbers",
+  "icon": "🎨",
+  "scenes": [
+   {
+    "title": "Finding Shapes At Home",
+    "narration": [
+     "Have you ever looked closely at the toys in your toy box?",
+     "Everything around us is made of special shapes.",
+     "Can you spot a circle on your breakfast plate?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🧸",
+        "🧩",
+        "📦"
+       ],
+       "motion": "pulse",
+       "caption": "Look around"
+      },
+      {
+       "items": [
+        "⭕",
+        "🟦",
+        "🔺"
+       ],
+       "motion": "float",
+       "caption": "Basic shapes"
+      },
+      {
+       "items": [
+        "🍽️",
+        "⭕"
+       ],
+       "motion": "push",
+       "caption": "Circle plate"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Counting Our Colorful World",
+    "narration": [
+     "Let us count the colorful marbles in this jar.",
+     "One red marble, two blue, and three yellow ones.",
+     "Numbers help us know exactly how many things we have."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🫙",
+        "🔴",
+        "🔵",
+        "🟡"
+       ],
+       "motion": "chain",
+       "caption": "Counting marbles"
+      },
+      {
+       "items": [
+        "1",
+        "🔴",
+        "2",
+        "🔵",
+        "3",
+        "🟡"
+       ],
+       "motion": "chain",
+       "caption": "Count by color"
+      },
+      {
+       "items": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+       ],
+       "motion": "grow",
+       "caption": "Numbers help"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Sorting Shapes and Colors",
+    "narration": [
+     "Imagine you have five bright red square blocks.",
+     "If you add one more, you now have six red squares.",
+     "Sorting by color and shape makes counting very easy."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "5",
+        "🟥",
+        "🟥",
+        "🟥",
+        "🟥",
+        "🟥"
+       ],
+       "motion": "chain",
+       "caption": "Five squares"
+      },
+      {
+       "items": [
+        "5",
+        "+",
+        "1",
+        "=",
+        "6",
+        "🟥"
+       ],
+       "motion": "grow",
+       "caption": "Adding one"
+      },
+      {
+       "items": [
+        "🟦",
+        "🟦",
+        "🟥",
+        "🟥"
+       ],
+       "motion": "push",
+       "caption": "Sorting helps"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Try It",
+    "narration": [
+     "We learned that shapes are everywhere and numbers help us count.",
+     "Sorting things by their color makes it fun to count.",
+     "Think about it: how many round wheels can you find on a bicycle?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "⭕",
+        "🟦",
+        "1",
+        "2",
+        "3"
+       ],
+       "motion": "float",
+       "caption": "Quick recap"
+      },
+      {
+       "items": [
+        "🎨",
+        "🔢"
+       ],
+       "motion": "pulse",
+       "caption": "Sorting is fun"
+      },
+      {
+       "items": [
+        "🚲",
+        "⭕",
+        "⭕"
+       ],
+       "motion": "rise",
+       "caption": "Bicycle wheels"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Colours, Shapes and Numbers: Basic Colours": {
+  "id": "lib-general-knowledge-g1-colours-shapes-and-numbers-basic-colours",
+  "topic": "Colours, Shapes and Numbers: Basic Colours",
+  "title": "The Magic of Bright Colours",
+  "icon": "🎨",
+  "scenes": [
+   {
+    "title": "Look Around At Colours",
+    "narration": [
+     "Have you ever wondered why the world looks so bright and colorful?",
+     "Let's explore the beautiful colours we see every single day.",
+     "From the red of a rose to the blue of the sky."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌈",
+        "🍎",
+        "🌳"
+       ],
+       "motion": "pulse",
+       "caption": "Colorful world"
+      },
+      {
+       "items": [
+        "🌻",
+        "🦋",
+        "🎨"
+       ],
+       "motion": "float",
+       "caption": "Everyday magic"
+      },
+      {
+       "items": [
+        "🌹",
+        "☁️",
+        "🔵"
+       ],
+       "motion": "rise",
+       "caption": "Nature's palette"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Learning Three Main Colours",
+    "narration": [
+     "Red is a warm, bright colour like a juicy apple.",
+     "Yellow is as bright and happy as a shining sun.",
+     "Blue is the cool, calm colour of the deep ocean."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍎",
+        "🔴"
+       ],
+       "motion": "grow",
+       "caption": "Red colour"
+      },
+      {
+       "items": [
+        "☀️",
+        "🌻",
+        "🟡"
+       ],
+       "motion": "rise",
+       "caption": "Yellow colour"
+      },
+      {
+       "items": [
+        "🌊",
+        "🔵"
+       ],
+       "motion": "fall",
+       "caption": "Blue colour"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Spotting Colours In India",
+    "narration": [
+     "Look at our national flag, the Tiranga, fluttering high.",
+     "Saffron at the top stands for strength and courage.",
+     "White in the middle shows us peace and truth.",
+     "Green at the bottom shows our land is full of life."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳"
+       ],
+       "motion": "float",
+       "caption": "Indian flag"
+      },
+      {
+       "items": [
+        "🟠"
+       ],
+       "motion": "pulse",
+       "caption": "Saffron stripe"
+      },
+      {
+       "items": [
+        "⚪"
+       ],
+       "motion": "float",
+       "caption": "White stripe"
+      },
+      {
+       "items": [
+        "🟢"
+       ],
+       "motion": "grow",
+       "caption": "Green stripe"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap And Think",
+    "narration": [
+     "We learned about red, yellow, and blue today.",
+     "Colours help us name everything we see around us.",
+     "Think about it: what is your very favourite colour and why?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🔴",
+        "🟡",
+        "🔵"
+       ],
+       "motion": "chain",
+       "caption": "Three colours"
+      },
+      {
+       "items": [
+        "🎨",
+        "👀"
+       ],
+       "motion": "pulse",
+       "caption": "Naming things"
+      },
+      {
+       "items": [
+        "🤔",
+        "💭"
+       ],
+       "motion": "float",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Colours, Shapes and Numbers: Shapes": {
+  "id": "lib-general-knowledge-g1-colours-shapes-and-numbers-shapes",
+  "topic": "Colours, Shapes and Numbers: Shapes",
+  "title": "Exploring Shapes Around Us",
+  "icon": "🎨",
+  "scenes": [
+   {
+    "title": "Shapes in Your Room",
+    "narration": [
+     "Look around your room, what shapes can you spot today?",
+     "Everything you see is made of simple shapes put together.",
+     "Let us learn about three special shapes we see everywhere."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏠",
+        "🪟",
+        "🧸"
+       ],
+       "motion": "pulse",
+       "caption": "Spotting shapes"
+      },
+      {
+       "items": [
+        "🧩"
+       ],
+       "motion": "float",
+       "caption": "Building blocks"
+      },
+      {
+       "items": [
+        "1",
+        "2",
+        "3"
+       ],
+       "motion": "chain",
+       "caption": "Three shapes"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Learning Our Shapes",
+    "narration": [
+     "A circle is round like a yummy roti on your plate.",
+     "A square has four sides that are all the same length.",
+     "A triangle has three pointy corners and three straight sides."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "⚪",
+        "🫓"
+       ],
+       "motion": "float",
+       "caption": "The circle"
+      },
+      {
+       "items": [
+        "⬜"
+       ],
+       "motion": "push",
+       "caption": "The square"
+      },
+      {
+       "items": [
+        "🔺"
+       ],
+       "motion": "rise",
+       "caption": "The triangle"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Shapes in Real Life",
+    "narration": [
+     "Look at a wall clock, it is usually a perfect circle.",
+     "Your school book is a rectangle, like a square stretched out.",
+     "A slice of delicious cheese pizza is shaped like a triangle."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "⏰"
+       ],
+       "motion": "pulse",
+       "caption": "Circle clock"
+      },
+      {
+       "items": [
+        "📖"
+       ],
+       "motion": "push",
+       "caption": "Book rectangle"
+      },
+      {
+       "items": [
+        "🍕"
+       ],
+       "motion": "grow",
+       "caption": "Pizza triangle"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Think",
+    "narration": [
+     "We learned about circles, squares, and triangles today.",
+     "Shapes help us draw, build, and understand our world.",
+     "Think about it: can you find a triangle shape outside today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "⚪",
+        "⬜",
+        "🔺"
+       ],
+       "motion": "chain",
+       "caption": "Summary"
+      },
+      {
+       "items": [
+        "🎨",
+        "🏗️"
+       ],
+       "motion": "float",
+       "caption": "Why shapes matter"
+      },
+      {
+       "items": [
+        "🤔",
+        "🌳"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Colours, Shapes and Numbers: Ordinal Numbers": {
+  "id": "lib-general-knowledge-g1-colours-shapes-and-numbers-ordinal-numbers",
+  "topic": "Colours, Shapes and Numbers: Ordinal Numbers",
+  "title": "Learning Our Ordinal Numbers",
+  "icon": "🥇",
+  "scenes": [
+   {
+    "title": "The Big School Race",
+    "narration": [
+     "Look at these friends running in a race at the park.",
+     "Have you ever wondered who arrived first or second?",
+     "Today we learn how to name the order of things."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏃",
+        "🏃",
+        "🏃"
+       ],
+       "motion": "pulse",
+       "caption": "The race"
+      },
+      {
+       "items": [
+        "❓"
+       ],
+       "motion": "float",
+       "caption": "Ordinal wonder"
+      },
+      {
+       "items": [
+        "1️⃣",
+        "2️⃣",
+        "3️⃣"
+       ],
+       "motion": "chain",
+       "caption": "Learning order"
+      }
+     ]
+    }
+   },
+   {
+    "title": "First, Second, and Third",
+    "narration": [
+     "The person at the front is in first place.",
+     "The next person is in second place.",
+     "The third person is in third place.",
+     "We use these special names to show the order."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🥇",
+        "🏃"
+       ],
+       "motion": "push",
+       "caption": "First place"
+      },
+      {
+       "items": [
+        "🥈",
+        "🏃"
+       ],
+       "motion": "push",
+       "caption": "Second place"
+      },
+      {
+       "items": [
+        "🥉",
+        "🏃"
+       ],
+       "motion": "push",
+       "caption": "Third place"
+      },
+      {
+       "items": [
+        "1st",
+        "2nd",
+        "3rd"
+       ],
+       "motion": "float",
+       "caption": "Ordinal names"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Colorful Lineup",
+    "narration": [
+     "Let us line up three colorful balloons.",
+     "The red balloon is first in line.",
+     "The blue balloon is second.",
+     "The green balloon is third."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🎈",
+        "🎈",
+        "🎈"
+       ],
+       "motion": "grow",
+       "caption": "Three balloons"
+      },
+      {
+       "items": [
+        "🔴",
+        "1️⃣"
+       ],
+       "motion": "pulse",
+       "caption": "Red is first"
+      },
+      {
+       "items": [
+        "🔵",
+        "2️⃣"
+       ],
+       "motion": "pulse",
+       "caption": "Blue is second"
+      },
+      {
+       "items": [
+        "🟢",
+        "3️⃣"
+       ],
+       "motion": "pulse",
+       "caption": "Green is third"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Quick Recap",
+    "narration": [
+     "Ordinal numbers tell us the position in a line.",
+     "We use first, second, and third to order things.",
+     "Think about it: who is first in your family line?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "1️⃣",
+        "2️⃣",
+        "3️⃣"
+       ],
+       "motion": "chain",
+       "caption": "Ordinal meaning"
+      },
+      {
+       "items": [
+        "🥇",
+        "🥈",
+        "🥉"
+       ],
+       "motion": "float",
+       "caption": "Ordinal words"
+      },
+      {
+       "items": [
+        "👪"
+       ],
+       "motion": "rise",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "My Surroundings: Home": {
+  "id": "lib-general-knowledge-g1-my-surroundings-home",
+  "topic": "My Surroundings: Home",
+  "title": "Keeping Our Home Happy",
+  "icon": "🏠",
+  "scenes": [
+   {
+    "title": "Welcome Home",
+    "narration": [
+     "Look around your room at home.",
+     "Do you like a clean space?",
+     "Why is keeping it tidy important?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🛏️",
+        "🧸"
+       ],
+       "motion": "float",
+       "caption": "My room"
+      },
+      {
+       "items": [
+        "🧹",
+        "✨"
+       ],
+       "motion": "pulse",
+       "caption": "Clean space"
+      },
+      {
+       "items": [
+        "🤔",
+        "🏠"
+       ],
+       "motion": "rise",
+       "caption": "The mystery"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Idea of Tidying",
+    "narration": [
+     "A home has a special place for everything.",
+     "When items are put back, we find them easily.",
+     "A clean room is safer for everyone."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📚",
+        "🧺"
+       ],
+       "motion": "chain",
+       "caption": "Special places"
+      },
+      {
+       "items": [
+        "🧩",
+        "📦"
+       ],
+       "motion": "push",
+       "caption": "Easy access"
+      },
+      {
+       "items": [
+        "🛡️",
+        "👣"
+       ],
+       "motion": "grow",
+       "caption": "Safe home"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Example: Cleaning Up",
+    "narration": [
+     "First, pick up your school bag.",
+     "Second, put your books on the shelf.",
+     "Third, place your toys in the box.",
+     "See? Now the floor is clear!"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🎒"
+       ],
+       "motion": "pull",
+       "caption": "Pick up"
+      },
+      {
+       "items": [
+        "📚"
+       ],
+       "motion": "chain",
+       "caption": "Organize books"
+      },
+      {
+       "items": [
+        "🧸",
+        "📦"
+       ],
+       "motion": "chain",
+       "caption": "Toy box"
+      },
+      {
+       "items": [
+        "✨",
+        "🧹"
+       ],
+       "motion": "pulse",
+       "caption": "Clear floor"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Think",
+    "narration": [
+     "Everything has its own home.",
+     "Putting things away makes us happy.",
+     "What will you tidy up today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏠",
+        "🧩"
+       ],
+       "motion": "float",
+       "caption": "Proper place"
+      },
+      {
+       "items": [
+        "😊",
+        "✨"
+       ],
+       "motion": "grow",
+       "caption": "Happy home"
+      },
+      {
+       "items": [
+        "🤔",
+        "🧹"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "My Surroundings: School": {
+  "id": "lib-general-knowledge-g1-my-surroundings-school",
+  "topic": "My Surroundings: School",
+  "title": "Exploring Our School",
+  "icon": "🏫",
+  "scenes": [
+   {
+    "title": "Welcome to School",
+    "narration": [
+     "Do you know what makes our school special?",
+     "It is a place where we learn and play together.",
+     "Look around, what do you see in your classroom?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏫",
+        "🎒"
+       ],
+       "motion": "pulse",
+       "caption": "Our school"
+      },
+      {
+       "items": [
+        "📚",
+        "⚽"
+       ],
+       "motion": "grow",
+       "caption": "Learning fun"
+      },
+      {
+       "items": [
+        "✏️",
+        "📝",
+        "🪑"
+       ],
+       "motion": "float",
+       "caption": "My room"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Important People and Places",
+    "narration": [
+     "Our teacher helps us learn new things every day.",
+     "The library is full of books for us to read.",
+     "We run and play with friends in the playground."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👩‍🏫",
+        "🙋"
+       ],
+       "motion": "chain",
+       "caption": "My teacher"
+      },
+      {
+       "items": [
+        "📖",
+        "📚"
+       ],
+       "motion": "grow",
+       "caption": "Library"
+      },
+      {
+       "items": [
+        "🏃",
+        "🤸"
+       ],
+       "motion": "push",
+       "caption": "Playground"
+      }
+     ]
+    }
+   },
+   {
+    "title": "My School Day",
+    "narration": [
+     "First, we reach school and hang our bags.",
+     "Next, we sit quietly and listen to the lesson.",
+     "Then, we eat our healthy lunch with friends.",
+     "Finally, we pack our bags to go home."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🎒",
+        "🪝"
+       ],
+       "motion": "chain",
+       "caption": "Arriving"
+      },
+      {
+       "items": [
+        "👂",
+        "👩‍🏫"
+       ],
+       "motion": "float",
+       "caption": "Listening"
+      },
+      {
+       "items": [
+        "🍱",
+        "🍎"
+       ],
+       "motion": "chain",
+       "caption": "Lunch time"
+      },
+      {
+       "items": [
+        "🎒",
+        "🚪"
+       ],
+       "motion": "pull",
+       "caption": "Going home"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Remembering Our Day",
+    "narration": [
+     "School has many rooms and helpful people.",
+     "We learn, play, and make friends here.",
+     "Can you name your favorite spot in school?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏫",
+        "🤝"
+       ],
+       "motion": "pulse",
+       "caption": "Key points"
+      },
+      {
+       "items": [
+        "🌟",
+        "👫"
+       ],
+       "motion": "grow",
+       "caption": "Our fun"
+      },
+      {
+       "items": [
+        "🤔",
+        "🏫"
+       ],
+       "motion": "float",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "My Surroundings: Neighbourhood": {
+  "id": "lib-general-knowledge-g1-my-surroundings-neighbourhood",
+  "topic": "My Surroundings: Neighbourhood",
+  "title": "Exploring Our Wonderful Neighbourhood",
+  "icon": "🏡",
+  "scenes": [
+   {
+    "title": "What is a Neighbourhood",
+    "narration": [
+     "Look outside your window at home. What do you see nearby?",
+     "The houses and shops near your home are called your neighbourhood.",
+     "Do you know why we need a neighbourhood?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏠",
+        "🌳",
+        "🚲"
+       ],
+       "motion": "float",
+       "caption": "Look outside"
+      },
+      {
+       "items": [
+        "🏘️",
+        "🏠",
+        "🏪"
+       ],
+       "motion": "pulse",
+       "caption": "My neighbourhood"
+      },
+      {
+       "items": [
+        "🤔",
+        "❓"
+       ],
+       "motion": "pulse",
+       "caption": "The big question"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Important Places Nearby",
+    "narration": [
+     "We go to a park to play with our friends.",
+     "We visit the market to buy fresh vegetables and milk.",
+     "If we feel sick, we go to see a doctor at the clinic.",
+     "When we want to learn new things, we go to school."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🛝",
+        "🌳",
+        "🏃"
+       ],
+       "motion": "grow",
+       "caption": "The park"
+      },
+      {
+       "items": [
+        "🍎",
+        "🥛",
+        "🛒"
+       ],
+       "motion": "chain",
+       "caption": "The market"
+      },
+      {
+       "items": [
+        "🏥",
+        "🩺"
+       ],
+       "motion": "push",
+       "caption": "The clinic"
+      },
+      {
+       "items": [
+        "🏫",
+        "📚",
+        "✏️"
+       ],
+       "motion": "rise",
+       "caption": "The school"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Friendly Example",
+    "narration": [
+     "Meet Rohan who lives in a busy neighbourhood in Delhi.",
+     "Rohan walks to the post office to send a letter.",
+     "Then he stops at the bank to help his mother.",
+     "He sees his friendly neighbour waving hello to him."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "🇮🇳"
+       ],
+       "motion": "float",
+       "caption": "Meet Rohan"
+      },
+      {
+       "items": [
+        "📮",
+        "✉️",
+        "🚶"
+       ],
+       "motion": "chain",
+       "caption": "Post office"
+      },
+      {
+       "items": [
+        "🏦",
+        "🪙",
+        "🤝"
+       ],
+       "motion": "chain",
+       "caption": "The bank"
+      },
+      {
+       "items": [
+        "👋",
+        "🏡"
+       ],
+       "motion": "pulse",
+       "caption": "Being friendly"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Thinking",
+    "narration": [
+     "Our neighbourhood has shops, schools, and parks for us.",
+     "Being kind to our neighbours makes our area a happy place.",
+     "Think about it: What is your favourite place in your neighbourhood?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏪",
+        "🏫",
+        "🛝"
+       ],
+       "motion": "float",
+       "caption": "Many places"
+      },
+      {
+       "items": [
+        "😊",
+        "🤝",
+        "🏘️"
+       ],
+       "motion": "grow",
+       "caption": "Be kind"
+      },
+      {
+       "items": [
+        "💭",
+        "📍"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Colours, Shapes and Numbers: Patterns": {
+  "id": "lib-general-knowledge-g1-colours-shapes-and-numbers-patterns",
+  "topic": "Colours, Shapes and Numbers: Patterns",
+  "title": "Finding Patterns All Around Us",
+  "icon": "🧩",
+  "scenes": [
+   {
+    "title": "What is a pattern?",
+    "narration": [
+     "Have you ever noticed how your school uniform has stripes?",
+     "A pattern is something that repeats in a special order.",
+     "Look around your room, what do you see that repeats?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👕"
+       ],
+       "motion": "pulse",
+       "caption": "Striped shirt"
+      },
+      {
+       "items": [
+        "🔴",
+        "🔵",
+        "🔴",
+        "🔵"
+       ],
+       "motion": "chain",
+       "caption": "Repeating order"
+      },
+      {
+       "items": [
+        "🔍"
+       ],
+       "motion": "float",
+       "caption": "Look closer"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Shapes and Colours",
+    "narration": [
+     "Patterns use colours and shapes to make things look pretty.",
+     "See this sequence: circle, square, circle, square.",
+     "We can change the colour too, like green, red, green, red."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🔺",
+        "🟡",
+        "🔺",
+        "🟡"
+       ],
+       "motion": "grow",
+       "caption": "Shape pattern"
+      },
+      {
+       "items": [
+        "⭕",
+        "⬜",
+        "⭕",
+        "⬜"
+       ],
+       "motion": "chain",
+       "caption": "Circle square"
+      },
+      {
+       "items": [
+        "🟢",
+        "🔴",
+        "🟢",
+        "🔴"
+       ],
+       "motion": "pulse",
+       "caption": "Colour pattern"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Patterns with Numbers",
+    "narration": [
+     "Numbers can make patterns too, just like beads on a string.",
+     "If we have one rupee, then two rupees, what comes next?",
+     "It is one again! We just keep repeating the same numbers."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "1",
+        "2",
+        "1",
+        "2"
+       ],
+       "motion": "chain",
+       "caption": "Number sequence"
+      },
+      {
+       "items": [
+        "1₹",
+        "2₹",
+        "1₹",
+        "2₹"
+       ],
+       "motion": "push",
+       "caption": "Money pattern"
+      },
+      {
+       "items": [
+        "1"
+       ],
+       "motion": "rise",
+       "caption": "Repeating one"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Try It",
+    "narration": [
+     "Patterns repeat shapes, colours, or numbers in a line.",
+     "You can find patterns on your clothes, in nature, and in math.",
+     "Think about it: can you create a pattern using two toys?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🎨",
+        "🔢",
+        "🧩"
+       ],
+       "motion": "chain",
+       "caption": "Pattern summary"
+      },
+      {
+       "items": [
+        "👕",
+        "🌸",
+        "🔢"
+       ],
+       "motion": "float",
+       "caption": "Everywhere"
+      },
+      {
+       "items": [
+        "🧸",
+        "🚗"
+       ],
+       "motion": "pulse",
+       "caption": "Your turn"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "My Surroundings: Places Around Us": {
+  "id": "lib-general-knowledge-g1-my-surroundings-places-around-us",
+  "topic": "My Surroundings: Places Around Us",
+  "title": "Places In Our Neighborhood",
+  "icon": "🏘️",
+  "scenes": [
+   {
+    "title": "What is a Neighborhood?",
+    "narration": [
+     "Look outside your window at the houses, shops, and trees near your home.",
+     "These places make up your neighborhood, where you live and play.",
+     "Have you ever wondered why we need these different places?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏠",
+        "🌳",
+        "🏢"
+       ],
+       "motion": "float",
+       "caption": "Our surroundings"
+      },
+      {
+       "items": [
+        "🏘️",
+        "🧒",
+        "👧"
+       ],
+       "motion": "pulse",
+       "caption": "My neighborhood"
+      },
+      {
+       "items": [
+        "🤔"
+       ],
+       "motion": "pulse",
+       "caption": "Curious question"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Important Places We Visit",
+    "narration": [
+     "When you are sick, you visit a doctor at the clinic.",
+     "We go to the market to buy fresh milk and vegetables.",
+     "The post office helps us send letters to our friends far away.",
+     "Police stations keep our neighborhood safe for everyone."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏥",
+        "🩺"
+       ],
+       "motion": "chain",
+       "caption": "Health clinic"
+      },
+      {
+       "items": [
+        "🛒",
+        "🥛",
+        "🥦"
+       ],
+       "motion": "chain",
+       "caption": "Local market"
+      },
+      {
+       "items": [
+        "📮",
+        "✉️"
+       ],
+       "motion": "chain",
+       "caption": "Post office"
+      },
+      {
+       "items": [
+        "👮",
+        "🚓"
+       ],
+       "motion": "chain",
+       "caption": "Police help"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Trip to the Park",
+    "narration": [
+     "Let us visit the park near your house in Delhi.",
+     "First, you walk through the green gate.",
+     "Next, you play on the swings with your friends.",
+     "Finally, you rest on a bench under a shady tree."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌳",
+        "🛝"
+       ],
+       "motion": "grow",
+       "caption": "Public park"
+      },
+      {
+       "items": [
+        "🚪",
+        "🌿"
+       ],
+       "motion": "push",
+       "caption": "The gate"
+      },
+      {
+       "items": [
+        "🛝",
+        "🏃"
+       ],
+       "motion": "rise",
+       "caption": "Playing together"
+      },
+      {
+       "items": [
+        "🪑",
+        "🌳"
+       ],
+       "motion": "float",
+       "caption": "Taking rest"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Explore",
+    "narration": [
+     "We visit many places like schools, clinics, and parks every day.",
+     "These places help us stay healthy, safe, and happy together.",
+     "Think about it: which place in your neighborhood is your favorite?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏫",
+        "🏥",
+        "🌳"
+       ],
+       "motion": "pulse",
+       "caption": "Many places"
+      },
+      {
+       "items": [
+        "❤️",
+        "😊"
+       ],
+       "motion": "pulse",
+       "caption": "Living together"
+      },
+      {
+       "items": [
+        "🤔",
+        "📍"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "My Surroundings: Community Helpers": {
+  "id": "lib-general-knowledge-g1-my-surroundings-community-helpers",
+  "topic": "My Surroundings: Community Helpers",
+  "title": "Our Helpful Community Friends",
+  "icon": "🤝",
+  "scenes": [
+   {
+    "title": "Who Helps Us Every Day?",
+    "narration": [
+     "Have you noticed the people who make our neighborhood a better place to live?",
+     "Look around your street! Who are the friendly faces helping you today?",
+     "These people are our community helpers and they do very important jobs."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏠",
+        "🌳",
+        "🏃"
+       ],
+       "motion": "float",
+       "caption": "Our neighbors"
+      },
+      {
+       "items": [
+        "🔍",
+        "🏘️"
+       ],
+       "motion": "pulse",
+       "caption": "Look around"
+      },
+      {
+       "items": [
+        "🤝",
+        "✨"
+       ],
+       "motion": "rise",
+       "caption": "Community helpers"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Meet The People Helping Us",
+    "narration": [
+     "A doctor helps us when we feel sick and gives us medicine.",
+     "A teacher helps us learn to read, write, and count at school.",
+     "A police officer keeps our streets safe and helps people find their way.",
+     "A farmer works hard to grow the yummy vegetables we eat for dinner."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🩺",
+        "👩‍⚕️"
+       ],
+       "motion": "chain",
+       "caption": "The doctor"
+      },
+      {
+       "items": [
+        "📚",
+        "🍎",
+        "🏫"
+       ],
+       "motion": "grow",
+       "caption": "The teacher"
+      },
+      {
+       "items": [
+        "👮",
+        "🚦"
+       ],
+       "motion": "push",
+       "caption": "The police"
+      },
+      {
+       "items": [
+        "🌾",
+        "🚜",
+        "🥕"
+       ],
+       "motion": "pull",
+       "caption": "The farmer"
+      }
+     ]
+    }
+   },
+   {
+    "title": "How They Work Together",
+    "narration": [
+     "Imagine you are hungry. The farmer grows the rice in the field.",
+     "Then, the shopkeeper brings the rice to the market for your family.",
+     "Finally, your parents buy it with rupees to cook a delicious meal."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌾",
+        "🍚"
+       ],
+       "motion": "chain",
+       "caption": "Growing food"
+      },
+      {
+       "items": [
+        "🛍️",
+        "🍚"
+       ],
+       "motion": "chain",
+       "caption": "The market"
+      },
+      {
+       "items": [
+        "💰",
+        "🥘"
+       ],
+       "motion": "chain",
+       "caption": "Buying food"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap And Think",
+    "narration": [
+     "Our community helpers keep us healthy, safe, and well-fed every day.",
+     "We should always say thank you to these kind people.",
+     "Think about it: Who is a community helper you see near your home?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏥",
+        "🛡️",
+        "🍎"
+       ],
+       "motion": "pulse",
+       "caption": "They help us"
+      },
+      {
+       "items": [
+        "🙏",
+        "😊"
+       ],
+       "motion": "float",
+       "caption": "Say thank you"
+      },
+      {
+       "items": [
+        "🏠",
+        "🤔"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Transport and Communication: Road Transport": {
+  "id": "lib-general-knowledge-g1-transport-and-communication-road-transport",
+  "topic": "Transport and Communication: Road Transport",
+  "title": "How We Travel By Road",
+  "icon": "🚗",
+  "scenes": [
+   {
+    "title": "Watching Cars Go By",
+    "narration": [
+     "Have you ever stood by the road and watched the busy cars zoom past?",
+     "Many vehicles use our roads to move people and things from place to place.",
+     "Have you wondered how all these vehicles know how to stay safe?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏠",
+        "🛣️",
+        "🚗"
+       ],
+       "motion": "pulse",
+       "caption": "Watching traffic"
+      },
+      {
+       "items": [
+        "🚌",
+        "🚚",
+        "🚲"
+       ],
+       "motion": "chain",
+       "caption": "Moving around"
+      },
+      {
+       "items": [
+        "🚦",
+        "🤔"
+       ],
+       "motion": "pulse",
+       "caption": "Staying safe"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Rules of the Road",
+    "narration": [
+     "Traffic lights help us stay safe with three colors: Red, Yellow, and Green.",
+     "Red means stop, so all the cars wait for the road to be clear.",
+     "Yellow means wait, and Green means it is time to go safely."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🔴",
+        "🟡",
+        "🟢"
+       ],
+       "motion": "pulse",
+       "caption": "Traffic lights"
+      },
+      {
+       "items": [
+        "🛑",
+        "🚗"
+       ],
+       "motion": "fall",
+       "caption": "Red light"
+      },
+      {
+       "items": [
+        "🟡",
+        "🟢",
+        "🚗"
+       ],
+       "motion": "rise",
+       "caption": "Go safely"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Trip to School",
+    "narration": [
+     "Rohan takes the school bus every morning to reach his classroom on time.",
+     "The bus driver follows the road signs to keep all the children safe.",
+     "Other people use autos, bicycles, or walk on the footpath to travel."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "🚌",
+        "🏫"
+       ],
+       "motion": "chain",
+       "caption": "School bus"
+      },
+      {
+       "items": [
+        "👨‍✈️",
+        "🛣️",
+        "🛑"
+       ],
+       "motion": "push",
+       "caption": "Following signs"
+      },
+      {
+       "items": [
+        "🛺",
+        "🚲",
+        "🚶"
+       ],
+       "motion": "float",
+       "caption": "Different ways"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Remembering Road Safety",
+    "narration": [
+     "Road transport uses buses, cars, and bikes to move us around the city.",
+     "Always follow the traffic lights and look both ways before crossing the road.",
+     "Think about it: what is your favorite way to travel to the park?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🚗",
+        "🚌",
+        "🚲"
+       ],
+       "motion": "chain",
+       "caption": "Road transport"
+      },
+      {
+       "items": [
+        "🚦",
+        "👀",
+        "🚶"
+       ],
+       "motion": "pulse",
+       "caption": "Be careful"
+      },
+      {
+       "items": [
+        "🌳",
+        "🤔",
+        "🚲"
+       ],
+       "motion": "grow",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Transport and Communication: Railways": {
+  "id": "lib-general-knowledge-g1-transport-and-communication-railways",
+  "topic": "Transport and Communication: Railways",
+  "title": "Riding the Indian Railways",
+  "icon": "🚂",
+  "scenes": [
+   {
+    "title": "The Big Iron Train",
+    "narration": [
+     "Have you ever seen a very long train at the station?",
+     "Trains carry many people across our big country, India.",
+     "Do you know how these trains move so fast?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🚂",
+        "🚉"
+       ],
+       "motion": "pulse",
+       "caption": "Train station"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "👨‍👩‍👧‍👦"
+       ],
+       "motion": "float",
+       "caption": "Traveling together"
+      },
+      {
+       "items": [
+        "❓",
+        "💨"
+       ],
+       "motion": "rise",
+       "caption": "How it moves"
+      }
+     ]
+    }
+   },
+   {
+    "title": "How Trains Work",
+    "narration": [
+     "Trains travel on special metal tracks.",
+     "A big engine pulls all the heavy carriages behind it.",
+     "The driver sits in the front to steer the train."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🛤️"
+       ],
+       "motion": "chain",
+       "caption": "Metal tracks"
+      },
+      {
+       "items": [
+        "🚂",
+        "🚃",
+        "🚃"
+       ],
+       "motion": "pull",
+       "caption": "The engine"
+      },
+      {
+       "items": [
+        "👨‍✈️",
+        "🎛️"
+       ],
+       "motion": "push",
+       "caption": "The driver"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Trip to Delhi",
+    "narration": [
+     "Imagine we are going from Mumbai to Delhi.",
+     "We buy our tickets at the counter with rupees.",
+     "We sit in our seats and watch the trees go by.",
+     "Soon, we arrive at the platform in Delhi."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏙️",
+        "➡️",
+        "🏢"
+       ],
+       "motion": "chain",
+       "caption": "Long trip"
+      },
+      {
+       "items": [
+        "🎟️",
+        "₹"
+       ],
+       "motion": "push",
+       "caption": "Train ticket"
+      },
+      {
+       "items": [
+        "💺",
+        "🌳",
+        "💨"
+       ],
+       "motion": "float",
+       "caption": "Looking outside"
+      },
+      {
+       "items": [
+        "🚉",
+        "🎉"
+       ],
+       "motion": "grow",
+       "caption": "Arriving safely"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Trains are Great",
+    "narration": [
+     "Trains are a fast way to travel long distances.",
+     "They help us visit our friends and family easily.",
+     "Think about it: where would you like to travel by train?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🚄",
+        "🌍"
+       ],
+       "motion": "pulse",
+       "caption": "Fast travel"
+      },
+      {
+       "items": [
+        "🤝",
+        "🏠"
+       ],
+       "motion": "float",
+       "caption": "Connecting people"
+      },
+      {
+       "items": [
+        "🚂",
+        "🗺️",
+        "🤔"
+       ],
+       "motion": "rise",
+       "caption": "Your turn"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Transport and Communication: Telephone": {
+  "id": "lib-general-knowledge-g1-transport-and-communication-telephone",
+  "topic": "Transport and Communication: Telephone",
+  "title": "How Telephones Connect Us",
+  "icon": "📞",
+  "scenes": [
+   {
+    "title": "The Magic of Talking",
+    "narration": [
+     "Have you ever talked to your friend who lives far away?",
+     "We use a telephone to hear their voice clearly.",
+     "It is like magic, but it is actually science!"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "🏠"
+       ],
+       "motion": "pulse",
+       "caption": "Talking far away"
+      },
+      {
+       "items": [
+        "📞"
+       ],
+       "motion": "float",
+       "caption": "The telephone"
+      },
+      {
+       "items": [
+        "✨",
+        "🔬"
+       ],
+       "motion": "grow",
+       "caption": "Cool science"
+      }
+     ]
+    }
+   },
+   {
+    "title": "How Sound Travels",
+    "narration": [
+     "When you speak, your voice turns into tiny signals.",
+     "These signals travel very fast through wires or air.",
+     "The other phone turns those signals back into sound."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🗣️",
+        "⚡"
+       ],
+       "motion": "push",
+       "caption": "Voice signals"
+      },
+      {
+       "items": [
+        "➰",
+        "📡"
+       ],
+       "motion": "chain",
+       "caption": "Fast travel"
+      },
+      {
+       "items": [
+        "📱",
+        "👂"
+       ],
+       "motion": "pulse",
+       "caption": "Hearing sound"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Calling Grandma in Delhi",
+    "narration": [
+     "Imagine you are in Mumbai calling your Grandma in Delhi.",
+     "You press the buttons to dial her special number.",
+     "Soon, your voice reaches her phone instantly."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📍",
+        "📍"
+       ],
+       "motion": "chain",
+       "caption": "Long distance"
+      },
+      {
+       "items": [
+        "1",
+        "2",
+        "3"
+       ],
+       "motion": "push",
+       "caption": "Dialing numbers"
+      },
+      {
+       "items": [
+        "📞",
+        "👵"
+       ],
+       "motion": "rise",
+       "caption": "Connection made"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Remembering Our Lesson",
+    "narration": [
+     "Telephones change our voices into fast signals.",
+     "They help us talk to anyone, anywhere, anytime.",
+     "Think about it: who would you call if you could talk to anyone today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🗣️",
+        "⚡"
+       ],
+       "motion": "pulse",
+       "caption": "Voice signals"
+      },
+      {
+       "items": [
+        "🌍",
+        "🤝"
+       ],
+       "motion": "float",
+       "caption": "Staying connected"
+      },
+      {
+       "items": [
+        "🤔",
+        "☎️"
+       ],
+       "motion": "grow",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Transport and Communication: Water Transport": {
+  "id": "lib-general-knowledge-g1-transport-and-communication-water-transport",
+  "topic": "Transport and Communication: Water Transport",
+  "title": "Traveling Across the Water",
+  "icon": "🚢",
+  "scenes": [
+   {
+    "title": "The Big Blue Question",
+    "narration": [
+     "Have you ever seen a big boat floating on a river?",
+     "We use boats to cross water where there are no roads.",
+     "How do these heavy boats stay on top of the water?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🚢",
+        "🌊"
+       ],
+       "motion": "float",
+       "caption": "Floating boats"
+      },
+      {
+       "items": [
+        "🛶",
+        "🏞️"
+       ],
+       "motion": "float",
+       "caption": "Water travel"
+      },
+      {
+       "items": [
+        "❓",
+        "⛴️"
+       ],
+       "motion": "pulse",
+       "caption": "Floating secret"
+      }
+     ]
+    }
+   },
+   {
+    "title": "How Boats Move",
+    "narration": [
+     "Boats have special shapes that help them sit on top of water.",
+     "Some boats use oars to push the water away.",
+     "Big ships use strong engines to zoom across the sea.",
+     "The water pushes the boat up, which keeps it floating."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "⛵"
+       ],
+       "motion": "rise",
+       "caption": "Boat shape"
+      },
+      {
+       "items": [
+        "🚣"
+       ],
+       "motion": "push",
+       "caption": "Using oars"
+      },
+      {
+       "items": [
+        "🛳️",
+        "⚙️"
+       ],
+       "motion": "chain",
+       "caption": "Ship engines"
+      },
+      {
+       "items": [
+        "🌊",
+        "🚢"
+       ],
+       "motion": "rise",
+       "caption": "Water force"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Boats in India",
+    "narration": [
+     "In Kerala, people use long, thin boats called snake boats.",
+     "These boats race very fast during festivals.",
+     "We also have big ferries that carry cars and people.",
+     "These ferries help us travel between islands easily."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🛶",
+        "🇮🇳"
+       ],
+       "motion": "chain",
+       "caption": "Snake boats"
+      },
+      {
+       "items": [
+        "🏁",
+        "🛶"
+       ],
+       "motion": "push",
+       "caption": "Boat racing"
+      },
+      {
+       "items": [
+        "⛴️",
+        "🚗"
+       ],
+       "motion": "chain",
+       "caption": "Large ferries"
+      },
+      {
+       "items": [
+        "🏝️",
+        "⛴️"
+       ],
+       "motion": "float",
+       "caption": "Island travel"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Remember and Explore",
+    "narration": [
+     "Boats help us cross rivers, lakes, and the deep sea.",
+     "They move by using oars, sails, or powerful engines.",
+     "Think about it: If you built a boat, what would you carry on it?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🛶",
+        "🚢",
+        "🌊"
+       ],
+       "motion": "float",
+       "caption": "Water transport"
+      },
+      {
+       "items": [
+        "🚣",
+        "⛵",
+        "⚙️"
+       ],
+       "motion": "chain",
+       "caption": "Moving parts"
+      },
+      {
+       "items": [
+        "🤔",
+        "🛶",
+        "📦"
+       ],
+       "motion": "pulse",
+       "caption": "Your turn"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Transport and Communication: Internet": {
+  "id": "lib-general-knowledge-g1-transport-and-communication-internet",
+  "topic": "Transport and Communication: Internet",
+  "title": "How Does The Internet Work?",
+  "icon": "🌐",
+  "scenes": [
+   {
+    "title": "The Magic Screen",
+    "narration": [
+     "Have you ever wondered how your favorite cartoon appears on a tablet?",
+     "It happens because of a giant invisible web called the internet.",
+     "The internet connects computers all over the world together."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📱",
+        "📺"
+       ],
+       "motion": "pulse",
+       "caption": "Magic screens"
+      },
+      {
+       "items": [
+        "🌐",
+        "🕸️"
+       ],
+       "motion": "grow",
+       "caption": "The Internet"
+      },
+      {
+       "items": [
+        "💻",
+        "🌍",
+        "💻"
+       ],
+       "motion": "chain",
+       "caption": "Connecting worlds"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Sending Secret Messages",
+    "narration": [
+     "When you click a video, your computer sends a tiny digital message.",
+     "This message travels through long cables hidden deep under the ocean.",
+     "The message zooms to a big computer called a server.",
+     "The server sends the video right back to your home."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🖱️",
+        "📩"
+       ],
+       "motion": "push",
+       "caption": "Sending data"
+      },
+      {
+       "items": [
+        "🌊",
+        "🔌"
+       ],
+       "motion": "float",
+       "caption": "Undersea cables"
+      },
+      {
+       "items": [
+        "🏢",
+        "💻"
+       ],
+       "motion": "rise",
+       "caption": "The server"
+      },
+      {
+       "items": [
+        "📦",
+        "🏠"
+       ],
+       "motion": "fall",
+       "caption": "Getting data"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Real Life Example",
+    "narration": [
+     "Imagine you are sending a photo of a yummy Dosa to a friend.",
+     "Your device breaks the photo into tiny pieces of light.",
+     "The pieces travel through wires at lightning speed.",
+     "Your friend's phone puts the pieces back together perfectly."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📸",
+        "🍛"
+       ],
+       "motion": "pulse",
+       "caption": "Sharing photos"
+      },
+      {
+       "items": [
+        "🧩",
+        "✨"
+       ],
+       "motion": "chain",
+       "caption": "Breaking pieces"
+      },
+      {
+       "items": [
+        "⚡",
+        "〰️"
+       ],
+       "motion": "push",
+       "caption": "Fast travel"
+      },
+      {
+       "items": [
+        "📱",
+        "🍛"
+       ],
+       "motion": "grow",
+       "caption": "Picture finished"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Time To Remember",
+    "narration": [
+     "The internet is a network that connects computers everywhere.",
+     "Information travels in tiny pieces through cables under the sea.",
+     "Think about it: who is the person you want to video call today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌐",
+        "💻"
+       ],
+       "motion": "pulse",
+       "caption": "What it is"
+      },
+      {
+       "items": [
+        "🌊",
+        "🔌",
+        "📩"
+       ],
+       "motion": "chain",
+       "caption": "How it moves"
+      },
+      {
+       "items": [
+        "📞",
+        "😊"
+       ],
+       "motion": "float",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Transport and Communication: Air Transport": {
+  "id": "lib-general-knowledge-g1-transport-and-communication-air-transport",
+  "topic": "Transport and Communication: Air Transport",
+  "title": "Flying High In The Sky",
+  "icon": "✈️",
+  "scenes": [
+   {
+    "title": "The Big Metal Bird",
+    "narration": [
+     "Have you ever seen a giant bird flying high above your house?",
+     "That is not a bird, it is an airplane!",
+     "How does it travel so fast across the whole world?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏠",
+        "☁️",
+        "✈️"
+       ],
+       "motion": "float",
+       "caption": "Giant bird"
+      },
+      {
+       "items": [
+        "✈️"
+       ],
+       "motion": "pulse",
+       "caption": "It is airplane"
+      },
+      {
+       "items": [
+        "🌍",
+        "✈️"
+       ],
+       "motion": "push",
+       "caption": "Traveling fast"
+      }
+     ]
+    }
+   },
+   {
+    "title": "How Planes Fly",
+    "narration": [
+     "Airplanes use big engines to push themselves through the air.",
+     "They need long flat paths on the ground called runways.",
+     "The pilot sits in the front to steer the plane safely.",
+     "Wings help the plane lift up and stay in the sky."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "⚙️",
+        "✈️"
+       ],
+       "motion": "push",
+       "caption": "Strong engines"
+      },
+      {
+       "items": [
+        "🛣️",
+        "✈️"
+       ],
+       "motion": "chain",
+       "caption": "Long runway"
+      },
+      {
+       "items": [
+        "👨‍✈️",
+        "✈️"
+       ],
+       "motion": "float",
+       "caption": "The pilot"
+      },
+      {
+       "items": [
+        "✈️",
+        "☁️"
+       ],
+       "motion": "rise",
+       "caption": "Flying wings"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Taking a Trip",
+    "narration": [
+     "Imagine you are flying from Delhi to Mumbai.",
+     "You go to the airport and show your ticket.",
+     "The plane climbs high above the fluffy white clouds.",
+     "Soon, you land and arrive at your destination."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "📍",
+        "📍"
+       ],
+       "motion": "chain",
+       "caption": "Long trip"
+      },
+      {
+       "items": [
+        "🎟️",
+        "🏢"
+       ],
+       "motion": "push",
+       "caption": "Airport visit"
+      },
+      {
+       "items": [
+        "✈️",
+        "☁️"
+       ],
+       "motion": "rise",
+       "caption": "Above clouds"
+      },
+      {
+       "items": [
+        "🛬",
+        "📍"
+       ],
+       "motion": "fall",
+       "caption": "Safe landing"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Summary of Air Travel",
+    "narration": [
+     "Airplanes are the fastest way to travel far away.",
+     "They use engines, wings, and pilots to fly.",
+     "Think about it: Where would you fly if you had a magic plane?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "✈️",
+        "⏱️"
+       ],
+       "motion": "pulse",
+       "caption": "Fast travel"
+      },
+      {
+       "items": [
+        "⚙️",
+        "✈️",
+        "👨‍✈️"
+       ],
+       "motion": "chain",
+       "caption": "How it works"
+      },
+      {
+       "items": [
+        "✈️",
+        "🤔"
+       ],
+       "motion": "float",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "India: National Flag": {
+  "id": "lib-general-knowledge-g1-india-national-flag",
+  "topic": "India: National Flag",
+  "title": "Our Beautiful National Flag",
+  "icon": "🇮🇳",
+  "scenes": [
+   {
+    "title": "A Special Flag",
+    "narration": [
+     "Have you seen our flag flying high at school?",
+     "It is called the Tiranga because it has three colors.",
+     "Let us learn what these colors mean for India."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "🏫"
+       ],
+       "motion": "pulse",
+       "caption": "Our Flag"
+      },
+      {
+       "items": [
+        "🟠",
+        "⚪",
+        "🟢"
+       ],
+       "motion": "chain",
+       "caption": "Three Colors"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🔍"
+       ],
+       "motion": "rise",
+       "caption": "Learning Together"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Three Colors",
+    "narration": [
+     "The top stripe is saffron for strength and courage.",
+     "The middle white stripe stands for peace and truth.",
+     "The bottom green stripe shows our land is fertile."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🟠"
+       ],
+       "motion": "rise",
+       "caption": "Saffron Stripe"
+      },
+      {
+       "items": [
+        "⚪"
+       ],
+       "motion": "float",
+       "caption": "White Stripe"
+      },
+      {
+       "items": [
+        "🟢",
+        "🌱"
+       ],
+       "motion": "grow",
+       "caption": "Green Stripe"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Wheel of Peace",
+    "narration": [
+     "Look at the center of the white stripe.",
+     "That is the Ashoka Chakra with twenty-four spokes.",
+     "It is blue and reminds us to always keep moving."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "⚪",
+        "🔵"
+       ],
+       "motion": "pulse",
+       "caption": "Center Circle"
+      },
+      {
+       "items": [
+        "🎡"
+       ],
+       "motion": "push",
+       "caption": "Ashoka Chakra"
+      },
+      {
+       "items": [
+        "🔵",
+        "🏃"
+       ],
+       "motion": "chain",
+       "caption": "Keep Moving"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Respecting Our Flag",
+    "narration": [
+     "Our flag has saffron, white, green, and a blue wheel.",
+     "We always treat our flag with great respect.",
+     "Think about it: how do you feel when you see the flag?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🟠",
+        "⚪",
+        "🟢",
+        "🔵"
+       ],
+       "motion": "chain",
+       "caption": "Recap Colors"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "❤️"
+       ],
+       "motion": "pulse",
+       "caption": "Show Respect"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🤔"
+       ],
+       "motion": "float",
+       "caption": "Think About It"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "India: Name of Our Country": {
+  "id": "lib-general-knowledge-g1-india-name-of-our-country",
+  "topic": "India: Name of Our Country",
+  "title": "What is Our Country's Name?",
+  "icon": "🇮🇳",
+  "scenes": [
+   {
+    "title": "A Big Beautiful Map",
+    "narration": [
+     "Have you ever looked at a map of the world?",
+     "Do you see this colorful shape that looks like a triangle?",
+     "That is our home, but do you know its special name?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌍",
+        "🗺️"
+       ],
+       "motion": "float",
+       "caption": "World map"
+      },
+      {
+       "items": [
+        "🇮🇳"
+       ],
+       "motion": "pulse",
+       "caption": "India shape"
+      },
+      {
+       "items": [
+        "🏠",
+        "🤔"
+       ],
+       "motion": "push",
+       "caption": "Our home"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Two Names for India",
+    "narration": [
+     "Our country has two main names that we use often.",
+     "The first name is India, which is used all over the world.",
+     "The second name is Bharat, which is a very old and respected name.",
+     "Both names mean the same wonderful land where we live."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "2",
+        "🇮🇳"
+       ],
+       "motion": "chain",
+       "caption": "Two names"
+      },
+      {
+       "items": [
+        "I",
+        "n",
+        "d",
+        "i",
+        "a"
+       ],
+       "motion": "rise",
+       "caption": "India"
+      },
+      {
+       "items": [
+        "B",
+        "h",
+        "a",
+        "r",
+        "a",
+        "t"
+       ],
+       "motion": "rise",
+       "caption": "Bharat"
+      },
+      {
+       "items": [
+        "❤️",
+        "🇮🇳"
+       ],
+       "motion": "grow",
+       "caption": "Same land"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Proud to be Indian",
+    "narration": [
+     "Think of our national flag flying high in the sky.",
+     "People from Kashmir to Kanyakumari call this land home.",
+     "We all say with pride, I am an Indian."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "☁️"
+       ],
+       "motion": "rise",
+       "caption": "Tiranga"
+      },
+      {
+       "items": [
+        "🏔️",
+        "🌊"
+       ],
+       "motion": "fall",
+       "caption": "North to South"
+      },
+      {
+       "items": [
+        "🙋",
+        "🙋‍♀️"
+       ],
+       "motion": "push",
+       "caption": "Proud Indian"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Think",
+    "narration": [
+     "So remember, our country is called India and also Bharat.",
+     "It is a big, beautiful place for all of us.",
+     "Think about it, what do you love most about living in our country?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "🤝"
+       ],
+       "motion": "chain",
+       "caption": "Recap names"
+      },
+      {
+       "items": [
+        "🌏",
+        "✨"
+       ],
+       "motion": "grow",
+       "caption": "Beautiful India"
+      },
+      {
+       "items": [
+        "💭",
+        "🇮🇳"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "India: National Bird": {
+  "id": "lib-general-knowledge-g1-india-national-bird",
+  "topic": "India: National Bird",
+  "title": "Meet India's Beautiful National Bird",
+  "icon": "🦚",
+  "scenes": [
+   {
+    "title": "A Flash of Blue",
+    "narration": [
+     "Have you ever seen a bird with long, colourful tail feathers in a garden?",
+     "That is the peacock, a bird that loves to dance when it rains.",
+     "Did you know the peacock is the special national bird of India?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌳",
+        "🐦"
+       ],
+       "motion": "float",
+       "caption": "Garden bird"
+      },
+      {
+       "items": [
+        "🌧️",
+        "🦚"
+       ],
+       "motion": "fall",
+       "caption": "Dancing peacock"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🦚"
+       ],
+       "motion": "pulse",
+       "caption": "National bird"
+      }
+     ]
+    }
+   },
+   {
+    "title": "What Makes a Peacock Special",
+    "narration": [
+     "The male peacock has bright blue and green feathers that look like shimmering jewels.",
+     "He can spread his feathers wide to show off a giant, beautiful fan.",
+     "The female bird is called a peahen, and she has soft brown feathers."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🔵",
+        "🟢",
+        "✨"
+       ],
+       "motion": "grow",
+       "caption": "Bright feathers"
+      },
+      {
+       "items": [
+        "🦚"
+       ],
+       "motion": "rise",
+       "caption": "Spread feathers"
+      },
+      {
+       "items": [
+        "🐦"
+       ],
+       "motion": "float",
+       "caption": "The peahen"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Seeing a Peacock",
+    "narration": [
+     "Peacocks love to live in forests and near villages across India.",
+     "In the morning, they walk on the ground to look for tasty seeds and snacks.",
+     "When they hear thunder, they call out and dance in the rain."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌲",
+        "🏠",
+        "🇮🇳"
+       ],
+       "motion": "chain",
+       "caption": "Forest homes"
+      },
+      {
+       "items": [
+        "🌾",
+        "🦚"
+       ],
+       "motion": "push",
+       "caption": "Finding food"
+      },
+      {
+       "items": [
+        "⛈️",
+        "🎶"
+       ],
+       "motion": "pulse",
+       "caption": "Rain dance"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Let's Remember",
+    "narration": [
+     "The peacock is our national bird because it is graceful and bold.",
+     "We protect them so they can keep our forests beautiful.",
+     "Think about it: If you were a peacock, what would you do when the rain starts?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🦚",
+        "🇮🇳"
+       ],
+       "motion": "rise",
+       "caption": "Proud bird"
+      },
+      {
+       "items": [
+        "🌳",
+        "💚"
+       ],
+       "motion": "grow",
+       "caption": "Keep safe"
+      },
+      {
+       "items": [
+        "🌧️",
+        "🦚"
+       ],
+       "motion": "float",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "India: National Animal": {
+  "id": "lib-general-knowledge-g1-india-national-animal",
+  "topic": "India: National Animal",
+  "title": "Meet India's National Animal",
+  "icon": "🐅",
+  "scenes": [
+   {
+    "title": "Spotting the Big Cat",
+    "narration": [
+     "Have you seen a big cat with orange fur and black stripes?",
+     "That is the Royal Bengal Tiger, India's national animal.",
+     "Do you know why we chose this amazing animal?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🐅"
+       ],
+       "motion": "pulse",
+       "caption": "Big cat"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🐅"
+       ],
+       "motion": "float",
+       "caption": "National animal"
+      },
+      {
+       "items": [
+        "🤔"
+       ],
+       "motion": "rise",
+       "caption": "Curious question"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Why the Tiger Rules",
+    "narration": [
+     "The tiger stands for strength, courage, and power.",
+     "It is a very fast and clever hunter in the jungle.",
+     "Tigers live in the deep forests all across India."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "💪",
+        "🦁"
+       ],
+       "motion": "grow",
+       "caption": "Strength"
+      },
+      {
+       "items": [
+        "🌲",
+        "🐆"
+       ],
+       "motion": "push",
+       "caption": "Clever hunter"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🌳"
+       ],
+       "motion": "float",
+       "caption": "Forest home"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Tiger Features",
+    "narration": [
+     "Every tiger has its own special pattern of black stripes.",
+     "Just like your fingerprints, no two tigers are the same.",
+     "They use their stripes to hide in the tall grass."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🐅",
+        "➖"
+       ],
+       "motion": "chain",
+       "caption": "Unique stripes"
+      },
+      {
+       "items": [
+        "🖐️"
+       ],
+       "motion": "pulse",
+       "caption": "Different patterns"
+      },
+      {
+       "items": [
+        "🌾",
+        "🐅"
+       ],
+       "motion": "fall",
+       "caption": "Camouflage"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Keeping Tigers Safe",
+    "narration": [
+     "We must protect our tigers and their forest homes.",
+     "They are a special part of India's natural beauty.",
+     "If you could visit a forest, would you look for a tiger?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌳",
+        "❤️",
+        "🐅"
+       ],
+       "motion": "grow",
+       "caption": "Protect tigers"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "✨"
+       ],
+       "motion": "float",
+       "caption": "Natural beauty"
+      },
+      {
+       "items": [
+        "🧐"
+       ],
+       "motion": "rise",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Important Days: Independence Day": {
+  "id": "lib-general-knowledge-g1-important-days-independence-day",
+  "topic": "Important Days: Independence Day",
+  "title": "Celebrating India's Independence Day",
+  "icon": "🇮🇳",
+  "scenes": [
+   {
+    "title": "The Big Celebration",
+    "narration": [
+     "Have you seen flags waving on houses every August 15th?",
+     "That is because it is India's special birthday!",
+     "Do you know why we celebrate this day?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "🏠"
+       ],
+       "motion": "pulse",
+       "caption": "Waving flags"
+      },
+      {
+       "items": [
+        "🎂",
+        "🇮🇳"
+       ],
+       "motion": "grow",
+       "caption": "India's birthday"
+      },
+      {
+       "items": [
+        "🤔",
+        "🇮🇳"
+       ],
+       "motion": "float",
+       "caption": "The big question"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Learning Our History",
+    "narration": [
+     "Long ago, India was ruled by the British.",
+     "Many brave leaders fought hard for our freedom.",
+     "On August 15, 1947, India became a free country."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "💂"
+       ],
+       "motion": "push",
+       "caption": "Long ago"
+      },
+      {
+       "items": [
+        "🧑‍🤝‍🧑",
+        "🇮🇳"
+       ],
+       "motion": "chain",
+       "caption": "Brave leaders"
+      },
+      {
+       "items": [
+        "🗓️",
+        "🇮🇳"
+       ],
+       "motion": "rise",
+       "caption": "Freedom day"
+      }
+     ]
+    }
+   },
+   {
+    "title": "How We Celebrate",
+    "narration": [
+     "The Prime Minister hoists the flag at the Red Fort.",
+     "We sing our beautiful national anthem together.",
+     "Children fly colorful kites in the bright blue sky."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏛️",
+        "🇮🇳"
+       ],
+       "motion": "rise",
+       "caption": "Flag hoisting"
+      },
+      {
+       "items": [
+        "🎤",
+        "🎶"
+       ],
+       "motion": "float",
+       "caption": "National anthem"
+      },
+      {
+       "items": [
+        "🪁",
+        "🌤️"
+       ],
+       "motion": "fall",
+       "caption": "Flying kites"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Remembering Our Freedom",
+    "narration": [
+     "We celebrate freedom every August 15th.",
+     "It reminds us to love our country always.",
+     "How will you celebrate Independence Day this year?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "🗓️"
+       ],
+       "motion": "pulse",
+       "caption": "Annual holiday"
+      },
+      {
+       "items": [
+        "❤️",
+        "🇮🇳"
+       ],
+       "motion": "grow",
+       "caption": "Love India"
+      },
+      {
+       "items": [
+        "🤔",
+        "🇮🇳"
+       ],
+       "motion": "float",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "India: National Flower": {
+  "id": "lib-general-knowledge-g1-india-national-flower",
+  "topic": "India: National Flower",
+  "title": "India's Beautiful National Flower",
+  "icon": "🪷",
+  "scenes": [
+   {
+    "title": "Have you seen this flower?",
+    "narration": [
+     "Have you seen a pretty pink flower floating on a pond?",
+     "It is called a lotus, and it is very special to India.",
+     "Do you know why we call it our national flower?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🪷",
+        "💧"
+       ],
+       "motion": "float",
+       "caption": "Pretty flower"
+      },
+      {
+       "items": [
+        "🪷",
+        "🇮🇳"
+       ],
+       "motion": "pulse",
+       "caption": "Lotus flower"
+      },
+      {
+       "items": [
+        "❓",
+        "🪷"
+       ],
+       "motion": "pulse",
+       "caption": "National symbol"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Learning about the lotus",
+    "narration": [
+     "The lotus grows in mud at the bottom of ponds.",
+     "Its long stem pushes up through the water.",
+     "Then, a big, beautiful flower blooms in the sun.",
+     "Even in muddy water, it stays clean and lovely."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "泥",
+        "🪷"
+       ],
+       "motion": "grow",
+       "caption": "Muddy roots"
+      },
+      {
+       "items": [
+        "💧",
+        "🌿"
+       ],
+       "motion": "push",
+       "caption": "Long stem"
+      },
+      {
+       "items": [
+        "🪷",
+        "☀️"
+       ],
+       "motion": "rise",
+       "caption": "Blooming flower"
+      },
+      {
+       "items": [
+        "🪷",
+        "✨"
+       ],
+       "motion": "float",
+       "caption": "Always clean"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Why it is special",
+    "narration": [
+     "Think of a pond in a park near your house.",
+     "If you see a lotus, remember it stands for beauty.",
+     "It also stands for staying good even when things are tough."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌳",
+        "🏞️"
+       ],
+       "motion": "float",
+       "caption": "City park"
+      },
+      {
+       "items": [
+        "🪷",
+        "😊"
+       ],
+       "motion": "pulse",
+       "caption": "Standing for beauty"
+      },
+      {
+       "items": [
+        "🪷",
+        "💪"
+       ],
+       "motion": "pulse",
+       "caption": "Staying good"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Time to remember",
+    "narration": [
+     "The lotus is India's national flower.",
+     "It grows in water and stays clean and bright.",
+     "Can you draw a beautiful lotus flower today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "🪷"
+       ],
+       "motion": "pulse",
+       "caption": "National flower"
+      },
+      {
+       "items": [
+        "💧",
+        "🪷"
+       ],
+       "motion": "float",
+       "caption": "Bright lotus"
+      },
+      {
+       "items": [
+        "🎨",
+        "🪷"
+       ],
+       "motion": "chain",
+       "caption": "Draw one"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "India: National Anthem": {
+  "id": "lib-general-knowledge-g1-india-national-anthem",
+  "topic": "India: National Anthem",
+  "title": "Our Beautiful National Anthem",
+  "icon": "🇮🇳",
+  "scenes": [
+   {
+    "title": "Hearing the Anthem",
+    "narration": [
+     "Have you heard this music at your school assembly?",
+     "It is our national anthem called Jana Gana Mana.",
+     "We stand up straight to show our love for India."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏫",
+        "📢"
+       ],
+       "motion": "pulse",
+       "caption": "School Assembly"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🎶"
+       ],
+       "motion": "float",
+       "caption": "National Anthem"
+      },
+      {
+       "items": [
+        "🧍",
+        "❤️"
+       ],
+       "motion": "rise",
+       "caption": "Stand Proud"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Learning About It",
+    "narration": [
+     "Rabindranath Tagore wrote these special words long ago.",
+     "The song talks about our mountains and rivers.",
+     "It celebrates all the people living in our country."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "✍️",
+        "📜"
+       ],
+       "motion": "chain",
+       "caption": "The Poet"
+      },
+      {
+       "items": [
+        "🏔️",
+        "🌊"
+       ],
+       "motion": "grow",
+       "caption": "Beautiful Land"
+      },
+      {
+       "items": [
+        "👫",
+        "🌏"
+       ],
+       "motion": "float",
+       "caption": "Our People"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Showing Respect",
+    "narration": [
+     "We stay very quiet when the music plays.",
+     "We do not talk or move around.",
+     "This tells everyone we respect our flag and land."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🤫",
+        "🔇"
+       ],
+       "motion": "pull",
+       "caption": "Stay Quiet"
+      },
+      {
+       "items": [
+        "🚫",
+        "🏃"
+       ],
+       "motion": "push",
+       "caption": "Stay Still"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🫡"
+       ],
+       "motion": "rise",
+       "caption": "Show Respect"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Time to Remember",
+    "narration": [
+     "Jana Gana Mana makes us feel like one big family.",
+     "It is a song that belongs to every Indian.",
+     "Can you name one place where you hear our anthem?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏠",
+        "❤️"
+       ],
+       "motion": "grow",
+       "caption": "One Family"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "✨"
+       ],
+       "motion": "float",
+       "caption": "Our Song"
+      },
+      {
+       "items": [
+        "🤔",
+        "🏫"
+       ],
+       "motion": "pulse",
+       "caption": "Think About It"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "India: National Fruit": {
+  "id": "lib-general-knowledge-g1-india-national-fruit",
+  "topic": "India: National Fruit",
+  "title": "India's King of Fruits",
+  "icon": "🥭",
+  "scenes": [
+   {
+    "title": "The Sweet Summer Surprise",
+    "narration": [
+     "Have you ever eaten a juicy, yellow fruit during the hot summer break?",
+     "It tastes so sweet and smells delicious when you walk through the market.",
+     "Do you know that this special fruit is the national fruit of India?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🥭",
+        "☀️"
+       ],
+       "motion": "pulse",
+       "caption": "Summer Treat"
+      },
+      {
+       "items": [
+        "🛒",
+        "🥭"
+       ],
+       "motion": "float",
+       "caption": "Sweet Scent"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🥭"
+       ],
+       "motion": "pulse",
+       "caption": "National Fruit"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Why the Mango is King",
+    "narration": [
+     "The mango is called the King of Fruits because it is loved by everyone.",
+     "It grows on big, shady trees in many parts of our country.",
+     "Farmers work hard to bring these tasty fruits to our homes.",
+     "They need lots of warm sun and rain to grow big and juicy."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👑",
+        "🥭"
+       ],
+       "motion": "grow",
+       "caption": "King of Fruits"
+      },
+      {
+       "items": [
+        "🌳",
+        "🥭"
+       ],
+       "motion": "grow",
+       "caption": "Mango Tree"
+      },
+      {
+       "items": [
+        "👨‍🌾",
+        "🥭"
+       ],
+       "motion": "push",
+       "caption": "Hard Work"
+      },
+      {
+       "items": [
+        "☀️",
+        "🌧️",
+        "🥭"
+       ],
+       "motion": "rise",
+       "caption": "Sun and Rain"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Tasty Indian Treat",
+    "narration": [
+     "Think of a delicious glass of cool mango lassi on a hot day.",
+     "Or sweet mango pulp served with hot, fluffy puris at lunch.",
+     "India grows many kinds of mangoes, like the sweet Alphonso from Maharashtra."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🥛",
+        "🥭"
+       ],
+       "motion": "float",
+       "caption": "Mango Lassi"
+      },
+      {
+       "items": [
+        "🥭",
+        "🍛"
+       ],
+       "motion": "chain",
+       "caption": "Yummy Meal"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🥭"
+       ],
+       "motion": "pulse",
+       "caption": "Many Varieties"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Fun Question",
+    "narration": [
+     "So, the mango is our national fruit and it loves the summer sun.",
+     "It grows on trees and makes our summers very tasty and sweet.",
+     "Think about it: What is your favorite way to eat a mango?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🥭",
+        "🇮🇳",
+        "☀️"
+       ],
+       "motion": "chain",
+       "caption": "Key Points"
+      },
+      {
+       "items": [
+        "🌳",
+        "🥭",
+        "😋"
+       ],
+       "motion": "float",
+       "caption": "Sweet Summer"
+      },
+      {
+       "items": [
+        "🤔",
+        "🥭"
+       ],
+       "motion": "pulse",
+       "caption": "Think About It"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Important Days: Gandhi Jayanti": {
+  "id": "lib-general-knowledge-g1-important-days-gandhi-jayanti",
+  "topic": "Important Days: Gandhi Jayanti",
+  "title": "Why We Celebrate Gandhi Jayanti",
+  "icon": "🕊️",
+  "scenes": [
+   {
+    "title": "A Special October Morning",
+    "narration": [
+     "Have you seen our schools closed on October second?",
+     "It is a national holiday called Gandhi Jayanti.",
+     "Do you know who we are remembering today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏫",
+        "🗓️",
+        "2"
+       ],
+       "motion": "pulse",
+       "caption": "October Holiday"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🎈"
+       ],
+       "motion": "rise",
+       "caption": "National Day"
+      },
+      {
+       "items": [
+        "🤔",
+        "👴"
+       ],
+       "motion": "float",
+       "caption": "Who is he?"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Father of Our Nation",
+    "narration": [
+     "We celebrate Mahatma Gandhi, the father of our nation.",
+     "He was a very kind and brave leader.",
+     "He taught everyone to follow the path of truth.",
+     "He believed in peace and non-violence."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👓",
+        "👴"
+       ],
+       "motion": "pulse",
+       "caption": "Mahatma Gandhi"
+      },
+      {
+       "items": [
+        "❤️",
+        "✊"
+       ],
+       "motion": "grow",
+       "caption": "Kind Leader"
+      },
+      {
+       "items": [
+        "✨",
+        "🚶"
+       ],
+       "motion": "chain",
+       "caption": "Always Truthful"
+      },
+      {
+       "items": [
+        "🕊️",
+        "☮️"
+       ],
+       "motion": "float",
+       "caption": "Peaceful Path"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Learning From His Life",
+    "narration": [
+     "Gandhi ji loved wearing simple homespun cloth called Khadi.",
+     "He walked long distances to help his people.",
+     "He always kept his surroundings very clean."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🧵",
+        "👕"
+       ],
+       "motion": "chain",
+       "caption": "Simple Clothes"
+      },
+      {
+       "items": [
+        "👣",
+        "🇮🇳"
+       ],
+       "motion": "push",
+       "caption": "Helping Others"
+      },
+      {
+       "items": [
+        "🧹",
+        "✨"
+       ],
+       "motion": "pull",
+       "caption": "Keeping Clean"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Remembering His Great Lessons",
+    "narration": [
+     "We honor him by being kind and helpful.",
+     "We also help clean our neighborhoods today.",
+     "Think about it: how can you be helpful today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🤝",
+        "😊"
+       ],
+       "motion": "grow",
+       "caption": "Be Kind"
+      },
+      {
+       "items": [
+        "🗑️",
+        "🏡"
+       ],
+       "motion": "push",
+       "caption": "Clean India"
+      },
+      {
+       "items": [
+        "💭",
+        "🧒"
+       ],
+       "motion": "pulse",
+       "caption": "Your Turn"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Important Days: Teachers' Day": {
+  "id": "lib-general-knowledge-g1-important-days-teachers-day",
+  "topic": "Important Days: Teachers' Day",
+  "title": "Why We Celebrate Teachers Day",
+  "icon": "🍎",
+  "scenes": [
+   {
+    "title": "A Special Day at School",
+    "narration": [
+     "Have you seen your teacher smiling extra wide on September fifth?",
+     "That is because it is Teachers Day in India!",
+     "Do you know why we celebrate this day every year?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👩‍🏫",
+        "🏫",
+        "📅"
+       ],
+       "motion": "pulse",
+       "caption": "Special Day"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🍎"
+       ],
+       "motion": "rise",
+       "caption": "Teachers Day"
+      },
+      {
+       "items": [
+        "🤔",
+        "💭"
+       ],
+       "motion": "float",
+       "caption": "The Question"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Who Was Dr. Radhakrishnan",
+    "narration": [
+     "We celebrate to honor a very wise teacher named Dr. Sarvepalli Radhakrishnan.",
+     "He was a great scholar and the second President of India.",
+     "He believed that teachers are the most important people in our country."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👨‍🏫",
+        "📚"
+       ],
+       "motion": "chain",
+       "caption": "Great Teacher"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🏛️"
+       ],
+       "motion": "rise",
+       "caption": "President"
+      },
+      {
+       "items": [
+        "🏫",
+        "✨"
+       ],
+       "motion": "grow",
+       "caption": "Important Role"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Celebrating Our Teachers",
+    "narration": [
+     "On this day, students often give cards or flowers to say thank you.",
+     "Some students even perform dances or sing songs for their teachers.",
+     "It is a time to show how much we appreciate their help."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "💌",
+        "🌹"
+       ],
+       "motion": "push",
+       "caption": "Giving Thanks"
+      },
+      {
+       "items": [
+        "💃",
+        "🎤"
+       ],
+       "motion": "grow",
+       "caption": "Performance"
+      },
+      {
+       "items": [
+        "❤️",
+        "👩‍🏫"
+       ],
+       "motion": "pulse",
+       "caption": "Appreciation"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Remembering the Lesson",
+    "narration": [
+     "Teachers Day honors Dr. Radhakrishnan and all our wonderful teachers.",
+     "It is a day to say thank you for all the things we learn.",
+     "What kind thing will you do for your teacher this year?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👨‍🏫",
+        "👩‍🏫"
+       ],
+       "motion": "chain",
+       "caption": "Key Point"
+      },
+      {
+       "items": [
+        "📖",
+        "✏️"
+       ],
+       "motion": "rise",
+       "caption": "Gratitude"
+      },
+      {
+       "items": [
+        "🤔",
+        "🎁"
+       ],
+       "motion": "float",
+       "caption": "Think About It"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Important Days: Children's Day": {
+  "id": "lib-general-knowledge-g1-important-days-children-s-day",
+  "topic": "Important Days: Children's Day",
+  "title": "Why We Celebrate Children's Day",
+  "icon": "🎈",
+  "scenes": [
+   {
+    "title": "A Special Day at School",
+    "narration": [
+     "Have you noticed your teachers acting extra silly and fun at school today?",
+     "It is because today is a very special celebration called Children's Day!",
+     "Do you know why we have this day just for kids like you?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏫",
+        "👩‍🏫",
+        "🤡"
+       ],
+       "motion": "pulse",
+       "caption": "Fun School Day"
+      },
+      {
+       "items": [
+        "🎉",
+        "🎈",
+        "👧",
+        "👦"
+       ],
+       "motion": "rise",
+       "caption": "Children's Day"
+      },
+      {
+       "items": [
+        "❓",
+        "🧒"
+       ],
+       "motion": "float",
+       "caption": "The Big Question"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Remembering Chacha Nehru",
+    "narration": [
+     "Long ago, India had a leader named Pandit Jawaharlal Nehru.",
+     "He loved children very much and was fondly called Chacha Nehru.",
+     "His birthday is on November 14th, which we celebrate as Children's Day."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "👨‍💼"
+       ],
+       "motion": "chain",
+       "caption": "Pandit Nehru"
+      },
+      {
+       "items": [
+        "❤️",
+        "🧒",
+        "👨‍👧"
+       ],
+       "motion": "grow",
+       "caption": "He Loved Children"
+      },
+      {
+       "items": [
+        "📅",
+        "14",
+        "🎂"
+       ],
+       "motion": "chain",
+       "caption": "November 14th"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Celebrating With Love",
+    "narration": [
+     "On this day, we remember that every child is precious and important.",
+     "Schools often hold games, dances, and fun programs for everyone.",
+     "It is a day to celebrate your happiness, your dreams, and your future."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌟",
+        "🧒",
+        "💖"
+       ],
+       "motion": "pulse",
+       "caption": "You Are Special"
+      },
+      {
+       "items": [
+        "💃",
+        "⚽",
+        "🎵"
+       ],
+       "motion": "push",
+       "caption": "Fun Games"
+      },
+      {
+       "items": [
+        "🚀",
+        "🌈",
+        "🎈"
+       ],
+       "motion": "rise",
+       "caption": "Dream Big"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Think",
+    "narration": [
+     "Children's Day is on November 14th to honor Chacha Nehru's love.",
+     "We celebrate the joy and wonder that you bring to the world.",
+     "Think about it: What is one thing you love to do that makes you happy?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📅",
+        "14",
+        "❤️"
+       ],
+       "motion": "chain",
+       "caption": "Key Facts"
+      },
+      {
+       "items": [
+        "🌍",
+        "🧒",
+        "✨"
+       ],
+       "motion": "float",
+       "caption": "Joyful Children"
+      },
+      {
+       "items": [
+        "🤔",
+        "🎨",
+        "⚽"
+       ],
+       "motion": "pulse",
+       "caption": "Think About It"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Important Days: Republic Day": {
+  "id": "lib-general-knowledge-g1-important-days-republic-day",
+  "topic": "Important Days: Republic Day",
+  "title": "Why We Celebrate Republic Day",
+  "icon": "🇮🇳",
+  "scenes": [
+   {
+    "title": "A Special Day at School",
+    "narration": [
+     "Have you seen flags flying high at school in January?",
+     "That is because we celebrate Republic Day on January 26th.",
+     "Do you wonder why this day is so special for India?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "🏫"
+       ],
+       "motion": "rise",
+       "caption": "Flag hoisting"
+      },
+      {
+       "items": [
+        "🗓️",
+        "26"
+       ],
+       "motion": "pulse",
+       "caption": "January 26th"
+      },
+      {
+       "items": [
+        "🤔",
+        "🇮🇳"
+       ],
+       "motion": "float",
+       "caption": "Our country"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Rule Book of India",
+    "narration": [
+     "A long time ago, India made a big book of rules.",
+     "These rules help everyone in our country live together happily.",
+     "This special book is called the Constitution of India.",
+     "It started on January 26th, 1950."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📖"
+       ],
+       "motion": "grow",
+       "caption": "The Constitution"
+      },
+      {
+       "items": [
+        "🤝",
+        "🇮🇳"
+       ],
+       "motion": "chain",
+       "caption": "Fair rules"
+      },
+      {
+       "items": [
+        "📜"
+       ],
+       "motion": "pulse",
+       "caption": "Constitution"
+      },
+      {
+       "items": [
+        "1",
+        "9",
+        "5",
+        "0"
+       ],
+       "motion": "rise",
+       "caption": "Year 1950"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Celebrating With a Parade",
+    "narration": [
+     "In Delhi, we have a very grand parade.",
+     "Soldiers march proudly down the road.",
+     "Colorful floats show different states from all over India.",
+     "The President of India salutes the flag."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "💂",
+        "🥁",
+        "🇮🇳"
+       ],
+       "motion": "push",
+       "caption": "The Parade"
+      },
+      {
+       "items": [
+        "💂",
+        "💂"
+       ],
+       "motion": "push",
+       "caption": "Soldiers marching"
+      },
+      {
+       "items": [
+        "🚚",
+        "🌸"
+       ],
+       "motion": "float",
+       "caption": "State floats"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🎩"
+       ],
+       "motion": "pulse",
+       "caption": "Saluting flag"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Celebrating Together",
+    "narration": [
+     "Republic Day reminds us that we are all one big family.",
+     "We feel proud and happy to be Indians.",
+     "Think about it, how will you celebrate with your friends this year?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌍",
+        "🇮🇳"
+       ],
+       "motion": "grow",
+       "caption": "One family"
+      },
+      {
+       "items": [
+        "😊",
+        "🇮🇳"
+       ],
+       "motion": "rise",
+       "caption": "Feel proud"
+      },
+      {
+       "items": [
+        "🎈",
+        "👭"
+       ],
+       "motion": "float",
+       "caption": "Celebration time"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Important Days: World Environment Day": {
+  "id": "lib-general-knowledge-g1-important-days-world-environment-day",
+  "topic": "Important Days: World Environment Day",
+  "title": "Saving Our Beautiful Planet",
+  "icon": "🌍",
+  "scenes": [
+   {
+    "title": "Looking at Nature",
+    "narration": [
+     "Look outside at the green trees and blue sky.",
+     "Have you ever wondered how we keep our Earth happy?",
+     "There is a special day just for our planet."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌳",
+        "☀️",
+        "☁️"
+       ],
+       "motion": "float",
+       "caption": "Beautiful nature"
+      },
+      {
+       "items": [
+        "🌍",
+        "🤔"
+       ],
+       "motion": "pulse",
+       "caption": "Happy Earth"
+      },
+      {
+       "items": [
+        "📅",
+        "⭐"
+       ],
+       "motion": "rise",
+       "caption": "Special day"
+      }
+     ]
+    }
+   },
+   {
+    "title": "What is Environment Day?",
+    "narration": [
+     "It is called World Environment Day.",
+     "We celebrate it every year on June 5th.",
+     "It reminds us to take care of our home.",
+     "The environment is everything around us like air and water."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌍",
+        "🌿"
+       ],
+       "motion": "grow",
+       "caption": "Environment Day"
+      },
+      {
+       "items": [
+        "6",
+        "5",
+        "📅"
+       ],
+       "motion": "chain",
+       "caption": "June 5th"
+      },
+      {
+       "items": [
+        "🏠",
+        "💙"
+       ],
+       "motion": "pulse",
+       "caption": "Our home"
+      },
+      {
+       "items": [
+        "🌬️",
+        "💧",
+        "🌳"
+       ],
+       "motion": "float",
+       "caption": "All around"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Doing Our Part",
+    "narration": [
+     "Rohan plants a small sapling in his garden.",
+     "He waters it carefully with his little can.",
+     "He also picks up litter to keep the park clean.",
+     "Small acts make the Earth very happy."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "🌱",
+        "🏡"
+       ],
+       "motion": "grow",
+       "caption": "Planting trees"
+      },
+      {
+       "items": [
+        "💧",
+        "🚿"
+       ],
+       "motion": "push",
+       "caption": "Watering plants"
+      },
+      {
+       "items": [
+        "🗑️",
+        "🧹"
+       ],
+       "motion": "pull",
+       "caption": "Keep clean"
+      },
+      {
+       "items": [
+        "😊",
+        "🌍"
+       ],
+       "motion": "rise",
+       "caption": "Small acts"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Time to Recap",
+    "narration": [
+     "World Environment Day is on June 5th.",
+     "We help nature by planting trees and not littering.",
+     "Think about it: What will you plant today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📅",
+        "6",
+        "5"
+       ],
+       "motion": "pulse",
+       "caption": "Key date"
+      },
+      {
+       "items": [
+        "🌳",
+        "🚫",
+        "🗑️"
+       ],
+       "motion": "chain",
+       "caption": "Help nature"
+      },
+      {
+       "items": [
+        "🌱",
+        "🤔"
+       ],
+       "motion": "grow",
+       "caption": "Your turn"
+      }
+     ]
+    }
+   }
+  ]
+ }
+}

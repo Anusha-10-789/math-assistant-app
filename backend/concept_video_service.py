@@ -44,6 +44,8 @@ Rules:
      map or event in India the child can picture; for English, real words and sentences the child can read,
      e.g. "cat", "a apple ✗ / an apple ✓").
   4. Recap: sum up the key points in two or three beats, then end with a short "Think about it" question for the child.
+- General Knowledge: only well-established facts. Anything that changes over time (office holders, latest
+  winners, records, recent events) is stated with its year, never as "the current" or "the latest".
 - Use Indian names, places, food and money (rupees) where it helps. Facts about India (symbols, states,
   rivers, history, government) must be exactly right, and every community and religion treated with respect.
 - "say": simple words a child of that grade understands, under 20 words, friendly and encouraging. No markdown.

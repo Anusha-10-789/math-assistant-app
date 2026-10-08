@@ -1,0 +1,5969 @@
+{
+ "India: National Symbols": {
+  "id": "lib-general-knowledge-g2-india-national-symbols",
+  "topic": "India: National Symbols",
+  "title": "Our Proud National Symbols",
+  "icon": "🇮🇳",
+  "scenes": [
+   {
+    "title": "A Look Around India",
+    "narration": [
+     "Have you noticed the beautiful peacock dancing in the park?",
+     "India has special symbols that make our country unique.",
+     "Do you know why we chose these specific ones?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🦚",
+        "🌳"
+       ],
+       "motion": "grow",
+       "caption": "National Bird"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "✨"
+       ],
+       "motion": "pulse",
+       "caption": "Our Symbols"
+      },
+      {
+       "items": [
+        "🤔",
+        "💭"
+       ],
+       "motion": "float",
+       "caption": "Curious Minds"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Learning Our National Icons",
+    "narration": [
+     "Our national flower is the lovely pink lotus.",
+     "The Bengal Tiger is our strong national animal.",
+     "The majestic Banyan tree is our national tree.",
+     "These represent the nature of our vast land."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🪷"
+       ],
+       "motion": "grow",
+       "caption": "National Flower"
+      },
+      {
+       "items": [
+        "🐅"
+       ],
+       "motion": "push",
+       "caption": "National Animal"
+      },
+      {
+       "items": [
+        "🌳"
+       ],
+       "motion": "grow",
+       "caption": "National Tree"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🌍"
+       ],
+       "motion": "chain",
+       "caption": "Nature's Pride"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Mango and The River",
+    "narration": [
+     "Think of a yummy, sweet yellow mango in summer.",
+     "It is our favorite fruit from the orchard.",
+     "Then there is the long and holy River Ganga.",
+     "It flows from the Himalayas to the sea."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🥭"
+       ],
+       "motion": "rise",
+       "caption": "National Fruit"
+      },
+      {
+       "items": [
+        "🧺",
+        "🥭"
+       ],
+       "motion": "chain",
+       "caption": "Sweet Mango"
+      },
+      {
+       "items": [
+        "🌊",
+        "🏞️"
+       ],
+       "motion": "fall",
+       "caption": "National River"
+      },
+      {
+       "items": [
+        "🏔️",
+        "🌊"
+       ],
+       "motion": "fall",
+       "caption": "Ganga Journey"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Remembering Our Symbols",
+    "narration": [
+     "We have symbols for our birds, trees, and rivers.",
+     "These help us remember the beauty of India.",
+     "Think about it: which national symbol is your favorite?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🦚",
+        "🌳",
+        "🌊"
+       ],
+       "motion": "chain",
+       "caption": "Recap Symbols"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "❤️"
+       ],
+       "motion": "pulse",
+       "caption": "Love India"
+      },
+      {
+       "items": [
+        "🤔",
+        "✨"
+       ],
+       "motion": "float",
+       "caption": "Your Favorite"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "India: Indian Currency": {
+  "id": "lib-general-knowledge-g2-india-indian-currency",
+  "topic": "India: Indian Currency",
+  "title": "Learning About Indian Money",
+  "icon": "💰",
+  "scenes": [
+   {
+    "title": "The Hook",
+    "narration": [
+     "Have you ever bought a yummy samosa at the school canteen?",
+     "You give the shopkeeper a coin or a paper note.",
+     "Do you know what that money is actually called?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🥟",
+        "🏫"
+       ],
+       "motion": "pulse",
+       "caption": "School canteen"
+      },
+      {
+       "items": [
+        "🪙",
+        "💵"
+       ],
+       "motion": "push",
+       "caption": "Giving money"
+      },
+      {
+       "items": [
+        "🤔"
+       ],
+       "motion": "float",
+       "caption": "What is it?"
+      }
+     ]
+    }
+   },
+   {
+    "title": "What is Currency",
+    "narration": [
+     "In India, our money is called the Indian Rupee.",
+     "We use coins made of metal for smaller amounts.",
+     "We use paper notes for larger amounts of money.",
+     "The symbol for the rupee looks like this."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "₹"
+       ],
+       "motion": "rise",
+       "caption": "Indian Rupee"
+      },
+      {
+       "items": [
+        "🪙",
+        "🪙"
+       ],
+       "motion": "chain",
+       "caption": "Metal coins"
+      },
+      {
+       "items": [
+        "💵",
+        "💵"
+       ],
+       "motion": "chain",
+       "caption": "Paper notes"
+      },
+      {
+       "items": [
+        "₹"
+       ],
+       "motion": "pulse",
+       "caption": "Rupee symbol"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Example of Buying",
+    "narration": [
+     "Imagine you want to buy a pencil for five rupees.",
+     "You can give one five-rupee coin to the seller.",
+     "Or you could give five one-rupee coins.",
+     "Both add up to the same total value."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "✏️",
+        "₹5"
+       ],
+       "motion": "push",
+       "caption": "Buying pencil"
+      },
+      {
+       "items": [
+        "🪙"
+       ],
+       "motion": "push",
+       "caption": "Five rupees"
+      },
+      {
+       "items": [
+        "🪙",
+        "🪙",
+        "🪙",
+        "🪙",
+        "🪙"
+       ],
+       "motion": "push",
+       "caption": "Five coins"
+      },
+      {
+       "items": [
+        "🟰"
+       ],
+       "motion": "pulse",
+       "caption": "Same value"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Think",
+    "narration": [
+     "Indian money is called the rupee and comes in coins and notes.",
+     "We use it to trade for things we need or want.",
+     "Think about it: Why do you think money is better than trading toys?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "₹",
+        "🪙",
+        "💵"
+       ],
+       "motion": "float",
+       "caption": "Money types"
+      },
+      {
+       "items": [
+        "🛒"
+       ],
+       "motion": "chain",
+       "caption": "Trading money"
+      },
+      {
+       "items": [
+        "🧸",
+        "🤔"
+       ],
+       "motion": "float",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "India: Capitals": {
+  "id": "lib-general-knowledge-g2-india-capitals",
+  "topic": "India: Capitals",
+  "title": "Exploring India's Capital Cities",
+  "icon": "🇮🇳",
+  "scenes": [
+   {
+    "title": "The Big Map of India",
+    "narration": [
+     "Have you ever looked at a big map of India in your classroom?",
+     "India has many states, and each state has its own special home city.",
+     "These main cities are called capital cities. Do you know why they are important?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "🗺️"
+       ],
+       "motion": "pulse",
+       "caption": "India Map"
+      },
+      {
+       "items": [
+        "🏠",
+        "📍"
+       ],
+       "motion": "float",
+       "caption": "State Homes"
+      },
+      {
+       "items": [
+        "❓",
+        "🏙️"
+       ],
+       "motion": "rise",
+       "caption": "What is Capital"
+      }
+     ]
+    }
+   },
+   {
+    "title": "What Makes a Capital?",
+    "narration": [
+     "A capital city is where the government works to help the people.",
+     "It is like the heart of the state where big decisions are made.",
+     "Every state in India has one capital city to lead the way."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏢",
+        "🏛️"
+       ],
+       "motion": "push",
+       "caption": "Government Office"
+      },
+      {
+       "items": [
+        "❤️",
+        "✨"
+       ],
+       "motion": "pulse",
+       "caption": "Heart of State"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🌟"
+       ],
+       "motion": "chain",
+       "caption": "Leading the Way"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Seeing Capitals in Action",
+    "narration": [
+     "Think of Maharashtra, a big state. Mumbai is its busy capital city.",
+     "Think of Karnataka. Bengaluru is its capital, famous for many trees.",
+     "New Delhi is our national capital, where the whole country comes together."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "🌊"
+       ],
+       "motion": "float",
+       "caption": "Mumbai City"
+      },
+      {
+       "items": [
+        "🌳",
+        "🏢"
+       ],
+       "motion": "grow",
+       "caption": "Bengaluru City"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🏛️"
+       ],
+       "motion": "rise",
+       "caption": "New Delhi"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Think",
+    "narration": [
+     "Capitals are important cities where leaders work for their states.",
+     "India has many states, and each one has its own special capital.",
+     "Can you find out the name of the capital city of your own state?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "✅",
+        "📍"
+       ],
+       "motion": "chain",
+       "caption": "Key Point"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🗺️"
+       ],
+       "motion": "float",
+       "caption": "Many Capitals"
+      },
+      {
+       "items": [
+        "🔍",
+        "🏠"
+       ],
+       "motion": "push",
+       "caption": "Think About It"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "India: Major Cities": {
+  "id": "lib-general-knowledge-g2-india-major-cities",
+  "topic": "India: Major Cities",
+  "title": "Exploring Big Cities in India",
+  "icon": "🇮🇳",
+  "scenes": [
+   {
+    "title": "Have you seen big cities?",
+    "narration": [
+     "Have you ever traveled to a place with tall buildings and many cars?",
+     "India has many big cities, each with its own special story.",
+     "Let us learn about some famous cities in our country today!"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏙️",
+        "🚗"
+       ],
+       "motion": "pulse",
+       "caption": "Busy cities"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "📍"
+       ],
+       "motion": "float",
+       "caption": "India's cities"
+      },
+      {
+       "items": [
+        "🗺️",
+        "🏫"
+       ],
+       "motion": "chain",
+       "caption": "Learning journey"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Discovering Major Cities",
+    "narration": [
+     "New Delhi is our capital city with the beautiful India Gate.",
+     "Mumbai is a busy city near the sea, famous for big movies.",
+     "Kolkata is known for its grand bridges and yummy sweets.",
+     "Chennai is a sunny city in the south near the beach."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏛️",
+        "🇮🇳"
+       ],
+       "motion": "rise",
+       "caption": "New Delhi"
+      },
+      {
+       "items": [
+        "🌊",
+        "🎬"
+       ],
+       "motion": "push",
+       "caption": "Mumbai"
+      },
+      {
+       "items": [
+        "🌉",
+        "🍬"
+       ],
+       "motion": "grow",
+       "caption": "Kolkata"
+      },
+      {
+       "items": [
+        "☀️",
+        "🏖️"
+       ],
+       "motion": "float",
+       "caption": "Chennai"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Look at New Delhi",
+    "narration": [
+     "Imagine we are visiting New Delhi right now.",
+     "We see the wide roads and the flag flying high.",
+     "The government works here to help all of India."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📍",
+        "🎒"
+       ],
+       "motion": "chain",
+       "caption": "Visiting Delhi"
+      },
+      {
+       "items": [
+        "🛣️",
+        "🚩"
+       ],
+       "motion": "rise",
+       "caption": "Wide roads"
+      },
+      {
+       "items": [
+        "🏛️",
+        "🤝"
+       ],
+       "motion": "push",
+       "caption": "Government center"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Think",
+    "narration": [
+     "India has many cities like Delhi, Mumbai, Kolkata, and Chennai.",
+     "Every city is different and full of life.",
+     "Which big city would you like to visit one day?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "🏙️"
+       ],
+       "motion": "pulse",
+       "caption": "Summary"
+      },
+      {
+       "items": [
+        "✨",
+        "🏘️"
+       ],
+       "motion": "grow",
+       "caption": "Diverse cities"
+      },
+      {
+       "items": [
+        "🤔",
+        "✈️"
+       ],
+       "motion": "float",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "India: Famous Places": {
+  "id": "lib-general-knowledge-g2-india-famous-places",
+  "topic": "India: Famous Places",
+  "title": "Exploring Famous Places in India",
+  "icon": "🇮🇳",
+  "scenes": [
+   {
+    "title": "A World of Wonders",
+    "narration": [
+     "Have you ever seen a building that looks like a giant white marble palace?",
+     "India is full of amazing places that tell stories from long ago.",
+     "Let us travel across India to find some very special spots."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🕌"
+       ],
+       "motion": "pulse",
+       "caption": "Famous Buildings"
+      },
+      {
+       "items": [
+        "🗺️",
+        "🇮🇳"
+       ],
+       "motion": "float",
+       "caption": "Our Country"
+      },
+      {
+       "items": [
+        "🚆",
+        "🎒"
+       ],
+       "motion": "push",
+       "caption": "Let's Explore"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Learning About Landmarks",
+    "narration": [
+     "First, we go to Agra to see the beautiful Taj Mahal.",
+     "It is made of shiny white marble that glows under the moon.",
+     "Next, we visit Delhi to see the tall Qutub Minar.",
+     "It is a very old and very tall stone tower."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🕌"
+       ],
+       "motion": "rise",
+       "caption": "Taj Mahal"
+      },
+      {
+       "items": [
+        "✨",
+        "⚪"
+       ],
+       "motion": "float",
+       "caption": "White Marble"
+      },
+      {
+       "items": [
+        "🗼"
+       ],
+       "motion": "grow",
+       "caption": "Qutub Minar"
+      },
+      {
+       "items": [
+        "🧱",
+        "⬆️"
+       ],
+       "motion": "rise",
+       "caption": "Stone Tower"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Seeing More Gems",
+    "narration": [
+     "Now we go to Jaipur to see the Hawa Mahal.",
+     "It is a pink palace with hundreds of tiny windows.",
+     "Finally, we visit the Gateway of India in Mumbai.",
+     "It stands right by the big blue sea."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏰"
+       ],
+       "motion": "pulse",
+       "caption": "Hawa Mahal"
+      },
+      {
+       "items": [
+        "💗",
+        "🪟"
+       ],
+       "motion": "float",
+       "caption": "Pink Palace"
+      },
+      {
+       "items": [
+        "🏛️",
+        "🌊"
+       ],
+       "motion": "push",
+       "caption": "Gateway of India"
+      },
+      {
+       "items": [
+        "🌊",
+        "🚢"
+       ],
+       "motion": "float",
+       "caption": "By Sea"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Remembering Our Travels",
+    "narration": [
+     "We saw the Taj Mahal, Qutub Minar, Hawa Mahal, and Gateway of India.",
+     "These places help us remember the rich history of India.",
+     "Which of these famous places would you like to visit first?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🕌",
+        "🗼",
+        "🏰",
+        "🏛️"
+       ],
+       "motion": "chain",
+       "caption": "Key Landmarks"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "📚"
+       ],
+       "motion": "pulse",
+       "caption": "Our History"
+      },
+      {
+       "items": [
+        "🤔",
+        "🗺️"
+       ],
+       "motion": "float",
+       "caption": "Think About It"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Famous People: Jawaharlal Nehru": {
+  "id": "lib-general-knowledge-g2-famous-people-jawaharlal-nehru",
+  "topic": "Famous People: Jawaharlal Nehru",
+  "title": "Learning About Pandit Jawaharlal Nehru",
+  "icon": "🇮🇳",
+  "scenes": [
+   {
+    "title": "Who was Nehru?",
+    "narration": [
+     "Have you seen a rose pinned to a person's jacket in old photos?",
+     "That is Pandit Jawaharlal Nehru, our country's first Prime Minister.",
+     "He was a very important leader who helped India become free."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌹",
+        "🧥",
+        "📸"
+       ],
+       "motion": "pulse",
+       "caption": "Red Rose"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "👔"
+       ],
+       "motion": "rise",
+       "caption": "First PM"
+      },
+      {
+       "items": [
+        "🕊️",
+        "🇮🇳"
+       ],
+       "motion": "float",
+       "caption": "Freedom Fighter"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Friend to Children",
+    "narration": [
+     "Pandit Nehru loved children very much and called them the future.",
+     "He felt children were like little buds in a garden.",
+     "Because he loved kids, we celebrate his birthday as Children's Day.",
+     "Every year on November 14th, we remember his big smile."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🧒",
+        "👧",
+        "❤️"
+       ],
+       "motion": "grow",
+       "caption": "Loves Children"
+      },
+      {
+       "items": [
+        "🌻",
+        "🌱"
+       ],
+       "motion": "grow",
+       "caption": "Little Buds"
+      },
+      {
+       "items": [
+        "🎈",
+        "🎁",
+        "🎂"
+       ],
+       "motion": "chain",
+       "caption": "Children's Day"
+      },
+      {
+       "items": [
+        "🗓️",
+        "14",
+        "😊"
+       ],
+       "motion": "pulse",
+       "caption": "14 November"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Working for India",
+    "narration": [
+     "He worked hard to build schools and big factories in India.",
+     "He wanted every child in India to go to school.",
+     "He also helped create big dams to give water to farmers."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏫",
+        "🏭"
+       ],
+       "motion": "push",
+       "caption": "Building India"
+      },
+      {
+       "items": [
+        "📚",
+        "🎒"
+       ],
+       "motion": "chain",
+       "caption": "Education First"
+      },
+      {
+       "items": [
+        "💧",
+        "🚜"
+       ],
+       "motion": "push",
+       "caption": "Helping Farmers"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Remembering Our Leader",
+    "narration": [
+     "Pandit Nehru was a brave leader who loved India dearly.",
+     "We remember him today for his kindness and his work.",
+     "Think about it: Why do you think he loved children so much?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "❤️"
+       ],
+       "motion": "float",
+       "caption": "Great Leader"
+      },
+      {
+       "items": [
+        "✨",
+        "🙏"
+       ],
+       "motion": "pulse",
+       "caption": "Kindness"
+      },
+      {
+       "items": [
+        "🤔",
+        "💭"
+       ],
+       "motion": "float",
+       "caption": "Think About It"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Animals and Birds: Endangered Animals": {
+  "id": "lib-general-knowledge-g2-animals-and-birds-endangered-animals",
+  "topic": "Animals and Birds: Endangered Animals",
+  "title": "Saving Our Special Friends",
+  "icon": "🐘",
+  "scenes": [
+   {
+    "title": "Meet the Rare Animals",
+    "narration": [
+     "Have you seen a tiger at the zoo or in a picture book?",
+     "Some animals are becoming very rare and hard to find.",
+     "We call these endangered animals because they need our help."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🐅"
+       ],
+       "motion": "pulse",
+       "caption": "Royal Bengal Tiger"
+      },
+      {
+       "items": [
+        "🔍",
+        "🐅"
+       ],
+       "motion": "float",
+       "caption": "Rare animals"
+      },
+      {
+       "items": [
+        "🆘",
+        "🐘",
+        "🐼"
+       ],
+       "motion": "pulse",
+       "caption": "Endangered species"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Why They Need Help",
+    "narration": [
+     "Animals need forests to live, eat, and play safely.",
+     "Sometimes, people cut down too many trees for buildings.",
+     "When homes disappear, animals have nowhere left to go.",
+     "Pollution also makes it very hard for them to stay healthy."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌲",
+        "🐒",
+        "🐦"
+       ],
+       "motion": "grow",
+       "caption": "Animal homes"
+      },
+      {
+       "items": [
+        "🪓",
+        "🌲"
+       ],
+       "motion": "fall",
+       "caption": "Losing trees"
+      },
+      {
+       "items": [
+        "🏠",
+        "❌",
+        "🐘"
+       ],
+       "motion": "fall",
+       "caption": "Habitat loss"
+      },
+      {
+       "items": [
+        "🏭",
+        "☁️"
+       ],
+       "motion": "push",
+       "caption": "Pollution"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Great Indian Rhino",
+    "narration": [
+     "Let us look at the One-Horned Rhino in Assam.",
+     "They love to splash in the grassy wetlands.",
+     "In the past, their homes were taken away by people.",
+     "Now, parks protect them so they can grow their families."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "🦏"
+       ],
+       "motion": "chain",
+       "caption": "Indian Rhino"
+      },
+      {
+       "items": [
+        "🌾",
+        "💧",
+        "🦏"
+       ],
+       "motion": "float",
+       "caption": "Wetland home"
+      },
+      {
+       "items": [
+        "🚜",
+        "🌾"
+       ],
+       "motion": "push",
+       "caption": "Home danger"
+      },
+      {
+       "items": [
+        "🛡️",
+        "🦏",
+        "👶"
+       ],
+       "motion": "grow",
+       "caption": "Safe parks"
+      }
+     ]
+    }
+   },
+   {
+    "title": "How You Can Help",
+    "narration": [
+     "We can protect animals by keeping our forests green.",
+     "Always remember to keep our environment clean and plastic-free.",
+     "Think about it: what is one way you can help animals today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌳",
+        "💚"
+       ],
+       "motion": "grow",
+       "caption": "Save trees"
+      },
+      {
+       "items": [
+        "♻️",
+        "🚮"
+       ],
+       "motion": "push",
+       "caption": "Clean earth"
+      },
+      {
+       "items": [
+        "💭",
+        "🐘",
+        "🦜"
+       ],
+       "motion": "pulse",
+       "caption": "Your turn"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Famous People: APJ Abdul Kalam": {
+  "id": "lib-general-knowledge-g2-famous-people-apj-abdul-kalam",
+  "topic": "Famous People: APJ Abdul Kalam",
+  "title": "The Missile Man of India",
+  "icon": "🚀",
+  "scenes": [
+   {
+    "title": "A Great Indian Hero",
+    "narration": [
+     "Have you ever looked at a rocket zoom into the sky?",
+     "A special man named APJ Abdul Kalam helped build these rockets.",
+     "He was a very famous scientist from India."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🚀",
+        "☁️"
+       ],
+       "motion": "rise",
+       "caption": "Rocket launch"
+      },
+      {
+       "items": [
+        "👨🏾‍🔬"
+       ],
+       "motion": "pulse",
+       "caption": "Abdul Kalam"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🔬"
+       ],
+       "motion": "float",
+       "caption": "Indian Scientist"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Learning and Working Hard",
+    "narration": [
+     "Abdul Kalam was born in Rameswaram by the sea.",
+     "As a boy, he worked hard to deliver newspapers.",
+     "He loved books and studying about science.",
+     "He worked for many years to help India build technology."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌊",
+        "🏠"
+       ],
+       "motion": "float",
+       "caption": "His home"
+      },
+      {
+       "items": [
+        "📰",
+        "🚲"
+       ],
+       "motion": "chain",
+       "caption": "Working hard"
+      },
+      {
+       "items": [
+        "📚",
+        "📖"
+       ],
+       "motion": "grow",
+       "caption": "Education"
+      },
+      {
+       "items": [
+        "⚙️",
+        "🇮🇳"
+       ],
+       "motion": "push",
+       "caption": "Building rockets"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The People's President",
+    "narration": [
+     "In 2002, he became the 11th President of India.",
+     "He loved talking to students in schools.",
+     "He told children to dream big and work hard."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏛️",
+        "🇮🇳"
+       ],
+       "motion": "pulse",
+       "caption": "President"
+      },
+      {
+       "items": [
+        "👨🏾‍🏫",
+        "👧🏾",
+        "👦🏾"
+       ],
+       "motion": "float",
+       "caption": "Loving children"
+      },
+      {
+       "items": [
+        "💭",
+        "⭐"
+       ],
+       "motion": "rise",
+       "caption": "Big dreams"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Remembering His Great Lessons",
+    "narration": [
+     "Abdul Kalam taught us to be brave and kind.",
+     "He is remembered as the Missile Man of India.",
+     "Think about it: what is one big dream you have for your future?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "❤️",
+        "🛡️"
+       ],
+       "motion": "pulse",
+       "caption": "Be kind"
+      },
+      {
+       "items": [
+        "🚀",
+        "🇮🇳"
+       ],
+       "motion": "float",
+       "caption": "Missile Man"
+      },
+      {
+       "items": [
+        "💭",
+        "✨"
+       ],
+       "motion": "grow",
+       "caption": "Your dream"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Famous People: Subhas Chandra Bose": {
+  "id": "lib-general-knowledge-g2-famous-people-subhas-chandra-bose",
+  "topic": "Famous People: Subhas Chandra Bose",
+  "title": "The Brave Netaji Subhas Chandra",
+  "icon": "🇮🇳",
+  "scenes": [
+   {
+    "title": "A Hero For India",
+    "narration": [
+     "Have you seen a statue of a brave man in a military uniform?",
+     "That is Netaji Subhas Chandra Bose, a great freedom fighter.",
+     "He wanted India to be free from British rule."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "💂"
+       ],
+       "motion": "pulse",
+       "caption": "Brave leader"
+      },
+      {
+       "items": [
+        "🇮🇳"
+       ],
+       "motion": "float",
+       "caption": "Subhas Chandra Bose"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "⛓️",
+        "🔓"
+       ],
+       "motion": "pull",
+       "caption": "Freedom fighter"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Leading The Way",
+    "narration": [
+     "Netaji was born in Cuttack, Odisha, in the year 1897.",
+     "He believed that India needed a strong army to get freedom.",
+     "He formed the Azad Hind Fauj to fight for our country."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏠",
+        "📍"
+       ],
+       "motion": "grow",
+       "caption": "Born in Odisha"
+      },
+      {
+       "items": [
+        "💂",
+        "🇮🇳"
+       ],
+       "motion": "rise",
+       "caption": "Strong army"
+      },
+      {
+       "items": [
+        "💂",
+        "🚩",
+        "🇮🇳"
+       ],
+       "motion": "chain",
+       "caption": "Azad Hind Fauj"
+      }
+     ]
+    }
+   },
+   {
+    "title": "His Powerful Words",
+    "narration": [
+     "Netaji loved his country very much and worked very hard.",
+     "He gave us a famous slogan: Give me blood, and I will give you freedom.",
+     "This encouraged thousands of Indians to join the struggle."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "❤️",
+        "🇮🇳"
+       ],
+       "motion": "pulse",
+       "caption": "Deep love"
+      },
+      {
+       "items": [
+        "🗣️",
+        "🩸",
+        "🇮🇳"
+       ],
+       "motion": "push",
+       "caption": "Famous slogan"
+      },
+      {
+       "items": [
+        "👥",
+        "🇮🇳"
+       ],
+       "motion": "rise",
+       "caption": "Bravery"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Remembering Our Hero",
+    "narration": [
+     "Netaji reminds us that we must always love and protect India.",
+     "We celebrate his birthday on January 23rd every year.",
+     "Think about it: What is one brave thing you can do for your school?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "🛡️"
+       ],
+       "motion": "float",
+       "caption": "Love India"
+      },
+      {
+       "items": [
+        "📅",
+        "🎂",
+        "🇮🇳"
+       ],
+       "motion": "pulse",
+       "caption": "His birthday"
+      },
+      {
+       "items": [
+        "🏫",
+        "💭"
+       ],
+       "motion": "float",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Famous People: Rani Lakshmibai": {
+  "id": "lib-general-knowledge-g2-famous-people-rani-lakshmibai",
+  "topic": "Famous People: Rani Lakshmibai",
+  "title": "The Brave Rani Lakshmibai",
+  "icon": "👑",
+  "scenes": [
+   {
+    "title": "The Courageous Queen",
+    "narration": [
+     "Have you ever seen a statue of a queen on a horse?",
+     "This is Rani Lakshmibai, a famous hero from our history.",
+     "She lived in the city of Jhansi a long time ago."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👑",
+        "🐎"
+       ],
+       "motion": "pulse",
+       "caption": "Brave Queen"
+      },
+      {
+       "items": [
+        "🇮🇳"
+       ],
+       "motion": "pulse",
+       "caption": "Indian Hero"
+      },
+      {
+       "items": [
+        "🏰"
+       ],
+       "motion": "float",
+       "caption": "Jhansi City"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Life of Bravery",
+    "narration": [
+     "As a girl, she learned to ride horses and use swords.",
+     "She was very strong and loved her people very much.",
+     "She became the queen and ruled Jhansi with kindness.",
+     "She worked hard to protect her home from invaders."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🐎",
+        "⚔️"
+       ],
+       "motion": "grow",
+       "caption": "Learning Skills"
+      },
+      {
+       "items": [
+        "💪",
+        "❤️"
+       ],
+       "motion": "grow",
+       "caption": "Strong Spirit"
+      },
+      {
+       "items": [
+        "👑",
+        "🏰"
+       ],
+       "motion": "float",
+       "caption": "The Queen"
+      },
+      {
+       "items": [
+        "🛡️",
+        "🏰"
+       ],
+       "motion": "push",
+       "caption": "Protecting Home"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Fighting for Freedom",
+    "narration": [
+     "In 1857, she fought bravely against the British army.",
+     "She led her soldiers into the field with great courage.",
+     "Even when things were hard, she never gave up."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "⚔️",
+        "🐎"
+       ],
+       "motion": "push",
+       "caption": "The Battle"
+      },
+      {
+       "items": [
+        "🛡️",
+        "⚔️"
+       ],
+       "motion": "chain",
+       "caption": "Leading Soldiers"
+      },
+      {
+       "items": [
+        "✨",
+        "🛡️"
+       ],
+       "motion": "pulse",
+       "caption": "Never Giving Up"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Shining Legacy",
+    "narration": [
+     "We remember her today as a symbol of Indian bravery.",
+     "Her story teaches us to be strong and stand for what is right.",
+     "Think about it: what is one way you can be brave today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "👑"
+       ],
+       "motion": "pulse",
+       "caption": "Our Hero"
+      },
+      {
+       "items": [
+        "📖",
+        "🌟"
+       ],
+       "motion": "grow",
+       "caption": "Learning Bravery"
+      },
+      {
+       "items": [
+        "🤔",
+        "💡"
+       ],
+       "motion": "float",
+       "caption": "Think About It"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Animals and Birds: Interesting Animal Facts": {
+  "id": "lib-general-knowledge-g2-animals-and-birds-interesting-animal-facts",
+  "topic": "Animals and Birds: Interesting Animal Facts",
+  "title": "Amazing Animal Wonders",
+  "icon": "🦁",
+  "scenes": [
+   {
+    "title": "Do Animals Have Superpowers",
+    "narration": [
+     "Have you ever wondered why your pet dog has such a wet nose?",
+     "Animals have amazing senses that help them live in the wild.",
+     "Let us explore how animals see, hear, and move differently."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🐶"
+       ],
+       "motion": "pulse",
+       "caption": "Curious Nose"
+      },
+      {
+       "items": [
+        "🐘",
+        "🦉",
+        "🐒"
+       ],
+       "motion": "float",
+       "caption": "Wild Senses"
+      },
+      {
+       "items": [
+        "🐾",
+        "👂",
+        "👀"
+       ],
+       "motion": "chain",
+       "caption": "Animal Skills"
+      }
+     ]
+    }
+   },
+   {
+    "title": "How Animals See and Hear",
+    "narration": [
+     "Owls are like night hunters with super big eyes for darkness.",
+     "Elephants use their giant ears to hear sounds from far away.",
+     "Cats have special whiskers to feel their way in the dark."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🦉"
+       ],
+       "motion": "float",
+       "caption": "Night Vision"
+      },
+      {
+       "items": [
+        "🐘"
+       ],
+       "motion": "pulse",
+       "caption": "Big Ears"
+      },
+      {
+       "items": [
+        "🐱"
+       ],
+       "motion": "push",
+       "caption": "Sensory Whiskers"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Cheetah's Fast Run",
+    "narration": [
+     "Look at the cheetah, the fastest land animal in the world.",
+     "It uses its long tail to balance while making sharp turns.",
+     "Strong claws act like running shoes to grip the ground tight."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🐆"
+       ],
+       "motion": "rise",
+       "caption": "Fast Cheetah"
+      },
+      {
+       "items": [
+        "🐆"
+       ],
+       "motion": "push",
+       "caption": "Tail Balance"
+      },
+      {
+       "items": [
+        "🐾"
+       ],
+       "motion": "pull",
+       "caption": "Strong Claws"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Think",
+    "narration": [
+     "Animals use senses and body parts to survive and move.",
+     "From big ears to fast legs, every animal is special.",
+     "If you could have one animal superpower, what would it be?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🦁",
+        "🦅",
+        "🐟"
+       ],
+       "motion": "chain",
+       "caption": "Animal Survival"
+      },
+      {
+       "items": [
+        "⭐"
+       ],
+       "motion": "pulse",
+       "caption": "Special Traits"
+      },
+      {
+       "items": [
+        "🤔"
+       ],
+       "motion": "float",
+       "caption": "Think About It"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Animals and Birds: National Animals of Countries": {
+  "id": "lib-general-knowledge-g2-animals-and-birds-national-animals-of-countries",
+  "topic": "Animals and Birds: National Animals of Countries",
+  "title": "Meet The World's National Animals",
+  "icon": "🦁",
+  "scenes": [
+   {
+    "title": "Animals Around The World",
+    "narration": [
+     "Have you seen our beautiful national animal, the Royal Bengal Tiger?",
+     "Many countries choose special animals to represent them.",
+     "Do you wonder which animal represents other countries far away?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🐅"
+       ],
+       "motion": "pulse",
+       "caption": "Royal Tiger"
+      },
+      {
+       "items": [
+        "🌍",
+        "🦁",
+        "🐅",
+        "🦘"
+       ],
+       "motion": "float",
+       "caption": "Special Animals"
+      },
+      {
+       "items": [
+        "🤔",
+        "✈️"
+       ],
+       "motion": "rise",
+       "caption": "Curious Minds"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Why Pick An Animal",
+    "narration": [
+     "Countries pick animals that show strength or are found in their lands.",
+     "The tiger is strong and bold, just like our great country India.",
+     "Some animals are famous because they live only in that place."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "💪",
+        "⛰️",
+        "🌿"
+       ],
+       "motion": "grow",
+       "caption": "Choosing Animals"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🐅"
+       ],
+       "motion": "push",
+       "caption": "Indian Tiger"
+      },
+      {
+       "items": [
+        "🌏",
+        "🐨"
+       ],
+       "motion": "float",
+       "caption": "Unique Animals"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Animals From Other Lands",
+    "narration": [
+     "In the United States, the Bald Eagle flies high in the sky.",
+     "Australia loves the Kangaroo because it always moves forward.",
+     "Japan respects the Green Pheasant, a bird with beautiful, bright feathers."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇺🇸",
+        "🦅"
+       ],
+       "motion": "rise",
+       "caption": "Bald Eagle"
+      },
+      {
+       "items": [
+        "🇦🇺",
+        "🦘"
+       ],
+       "motion": "push",
+       "caption": "Strong Kangaroo"
+      },
+      {
+       "items": [
+        "🇯🇵",
+        "🐦"
+       ],
+       "motion": "float",
+       "caption": "Green Pheasant"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap And Think",
+    "narration": [
+     "We learned that national animals make countries feel proud and special.",
+     "Each animal tells a story about the land it calls home.",
+     "If you could pick any animal to represent your school, which one would it be?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "🇺🇸",
+        "🇦🇺",
+        "🇯🇵"
+       ],
+       "motion": "chain",
+       "caption": "National Pride"
+      },
+      {
+       "items": [
+        "📖",
+        "🐾"
+       ],
+       "motion": "pulse",
+       "caption": "Animal Stories"
+      },
+      {
+       "items": [
+        "🏫",
+        "❓"
+       ],
+       "motion": "float",
+       "caption": "Think About It"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Science Around Us: Human Body": {
+  "id": "lib-general-knowledge-g2-science-around-us-human-body",
+  "topic": "Science Around Us: Human Body",
+  "title": "Your Amazing Human Body",
+  "icon": "🏃",
+  "scenes": [
+   {
+    "title": "The Body's Magic Parts",
+    "narration": [
+     "Have you ever wondered how you run, jump, and play all day long?",
+     "Your body is like a super machine made of many clever parts.",
+     "Today, let us look at the amazing things happening inside you."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏃",
+        "🤸",
+        "⚽"
+       ],
+       "motion": "pulse",
+       "caption": "Active body"
+      },
+      {
+       "items": [
+        "🤖",
+        "⚙️"
+       ],
+       "motion": "chain",
+       "caption": "Body machine"
+      },
+      {
+       "items": [
+        "🔍",
+        "❤️",
+        "🧠"
+       ],
+       "motion": "float",
+       "caption": "Looking inside"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Bones and Muscles Work",
+    "narration": [
+     "Your bones are the strong frame that keeps you standing tall.",
+     "Muscles are like stretchy bands that pull your bones to move.",
+     "Together, bones and muscles help you kick a ball or wave hello."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🦴"
+       ],
+       "motion": "rise",
+       "caption": "Skeleton"
+      },
+      {
+       "items": [
+        "💪"
+       ],
+       "motion": "pull",
+       "caption": "Muscles move"
+      },
+      {
+       "items": [
+        "⚽",
+        "👋"
+       ],
+       "motion": "chain",
+       "caption": "Working together"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Boss and The Pump",
+    "narration": [
+     "Your brain is the boss that tells your body what to do.",
+     "Your heart is a strong pump that sends blood everywhere.",
+     "Imagine your heart beating like a drum during a game of tag."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🧠"
+       ],
+       "motion": "pulse",
+       "caption": "The Brain"
+      },
+      {
+       "items": [
+        "❤️",
+        "🩸"
+       ],
+       "motion": "push",
+       "caption": "The Heart"
+      },
+      {
+       "items": [
+        "🥁",
+        "🏃"
+       ],
+       "motion": "pulse",
+       "caption": "Heartbeat"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Stay Healthy and Strong",
+    "narration": [
+     "Eat healthy food like dal, roti, and fruits to grow strong.",
+     "Your body needs rest, water, and exercise every single day.",
+     "Think about it: which part of your body helps you smell a flower?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍲",
+        "🍎"
+       ],
+       "motion": "grow",
+       "caption": "Healthy food"
+      },
+      {
+       "items": [
+        "💧",
+        "😴",
+        "🏃"
+       ],
+       "motion": "float",
+       "caption": "Stay healthy"
+      },
+      {
+       "items": [
+        "👃",
+        "🌸"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Animals and Birds: Animal Habitats": {
+  "id": "lib-general-knowledge-g2-animals-and-birds-animal-habitats",
+  "topic": "Animals and Birds: Animal Habitats",
+  "title": "Where Do Animals Live?",
+  "icon": "🏡",
+  "scenes": [
+   {
+    "title": "Where Do Animals Stay",
+    "narration": [
+     "Have you ever wondered where your pet dog or a wild tiger sleeps at night?",
+     "Just like you have a house, every animal needs a special place to live.",
+     "This special home is called a habitat."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🐶",
+        "🐯",
+        "🏠"
+       ],
+       "motion": "pulse",
+       "caption": "Animal homes"
+      },
+      {
+       "items": [
+        "🧒",
+        "🏠",
+        "🐘"
+       ],
+       "motion": "float",
+       "caption": "Everywhere homes"
+      },
+      {
+       "items": [
+        "🌳",
+        "🌊",
+        "🏔️"
+       ],
+       "motion": "grow",
+       "caption": "The habitat"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Different Types Of Homes",
+    "narration": [
+     "Some animals live in forests where there are many tall trees.",
+     "Others live in the water like rivers, lakes, or the big blue ocean.",
+     "Some even live in dry, hot deserts or very cold snowy mountains."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🐒",
+        "🌳",
+        "🦜"
+       ],
+       "motion": "chain",
+       "caption": "Forest life"
+      },
+      {
+       "items": [
+        "🐟",
+        "🌊",
+        "🦀"
+       ],
+       "motion": "float",
+       "caption": "Water homes"
+      },
+      {
+       "items": [
+        "🐪",
+        "🌵",
+        "❄️"
+       ],
+       "motion": "chain",
+       "caption": "Extreme homes"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Example: The Bengal Tiger",
+    "narration": [
+     "Let us look at the Royal Bengal Tiger of India.",
+     "It loves living in the thick mangrove forests of the Sundarbans.",
+     "The forest gives the tiger food, water, and shade to rest."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🐅",
+        "🇮🇳"
+       ],
+       "motion": "pulse",
+       "caption": "Bengal Tiger"
+      },
+      {
+       "items": [
+        "🌳",
+        "🐅",
+        "🌿"
+       ],
+       "motion": "grow",
+       "caption": "Mangrove forest"
+      },
+      {
+       "items": [
+        "🥩",
+        "💧",
+        "🌳"
+       ],
+       "motion": "push",
+       "caption": "Needs met"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap And Think",
+    "narration": [
+     "A habitat gives animals food, water, and a safe place to stay.",
+     "Animals are perfectly suited to live in their own homes.",
+     "Think about it: could a fish live happily in a dry desert?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍎",
+        "💧",
+        "🏠"
+       ],
+       "motion": "chain",
+       "caption": "Habitat essentials"
+      },
+      {
+       "items": [
+        "🐦",
+        "🐢",
+        "🦁"
+       ],
+       "motion": "float",
+       "caption": "Well suited"
+      },
+      {
+       "items": [
+        "🐟",
+        "🌵",
+        "❓"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Science Around Us: Five Senses": {
+  "id": "lib-general-knowledge-g2-science-around-us-five-senses",
+  "topic": "Science Around Us: Five Senses",
+  "title": "Exploring Our Five Senses",
+  "icon": "🖐️",
+  "scenes": [
+   {
+    "title": "The World Around Us",
+    "narration": [
+     "Have you ever wondered how we know the world around us?",
+     "We use our five amazing senses every single day.",
+     "These senses act like messengers to our brain."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🧒",
+        "🌳",
+        "🍎"
+       ],
+       "motion": "float",
+       "caption": "Curious Minds"
+      },
+      {
+       "items": [
+        "👁️",
+        "👂",
+        "👃",
+        "👅",
+        "🖐️"
+       ],
+       "motion": "pulse",
+       "caption": "Five Senses"
+      },
+      {
+       "items": [
+        "🧠",
+        "✉️"
+       ],
+       "motion": "chain",
+       "caption": "Brain Messengers"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Using Our Senses",
+    "narration": [
+     "Our eyes help us see bright colors and shapes.",
+     "Our ears listen to sounds like birds chirping.",
+     "Our nose smells sweet flowers in the garden.",
+     "Our tongue tastes yummy snacks like spicy chaat.",
+     "Our skin helps us feel if things are soft."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👁️",
+        "🌈"
+       ],
+       "motion": "pulse",
+       "caption": "Sight"
+      },
+      {
+       "items": [
+        "👂",
+        "🐦"
+       ],
+       "motion": "pulse",
+       "caption": "Hearing"
+      },
+      {
+       "items": [
+        "👃",
+        "🌻"
+       ],
+       "motion": "pulse",
+       "caption": "Smell"
+      },
+      {
+       "items": [
+        "👅",
+        "🥘"
+       ],
+       "motion": "pulse",
+       "caption": "Taste"
+      },
+      {
+       "items": [
+        "🖐️",
+        "🧸"
+       ],
+       "motion": "pulse",
+       "caption": "Touch"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Day at the Park",
+    "narration": [
+     "Imagine we are eating a juicy mango in a park.",
+     "We see the yellow color and smell the sweet scent.",
+     "We feel the smooth skin and taste the sweet juice.",
+     "We hear the park breeze rustling the leaves nearby."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🥭",
+        "🌳"
+       ],
+       "motion": "chain",
+       "caption": "Eating Mango"
+      },
+      {
+       "items": [
+        "👁️",
+        "👃",
+        "🥭"
+       ],
+       "motion": "chain",
+       "caption": "See and Smell"
+      },
+      {
+       "items": [
+        "🖐️",
+        "👅",
+        "🥭"
+       ],
+       "motion": "chain",
+       "caption": "Touch and Taste"
+      },
+      {
+       "items": [
+        "👂",
+        "🍃"
+       ],
+       "motion": "chain",
+       "caption": "Hear Wind"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Think",
+    "narration": [
+     "We see, hear, smell, taste, and touch.",
+     "These senses help us explore everything we do.",
+     "Think about it, which sense do you use the most?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👁️",
+        "👂",
+        "👃",
+        "👅",
+        "🖐️"
+       ],
+       "motion": "rise",
+       "caption": "Five Senses"
+      },
+      {
+       "items": [
+        "🌍",
+        "✨"
+       ],
+       "motion": "rise",
+       "caption": "Exploring Life"
+      },
+      {
+       "items": [
+        "🤔"
+       ],
+       "motion": "pulse",
+       "caption": "Think About It"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Science Around Us: Air": {
+  "id": "lib-general-knowledge-g2-science-around-us-air",
+  "topic": "Science Around Us: Air",
+  "title": "Air Is Everywhere",
+  "icon": "🎈",
+  "scenes": [
+   {
+    "title": "Is Air Actually Real",
+    "narration": [
+     "Have you ever wondered what is inside your empty water bottle?",
+     "It is not really empty because air is hiding inside it.",
+     "We cannot see air, but we can feel it move around us."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🧴"
+       ],
+       "motion": "float",
+       "caption": "Empty bottle"
+      },
+      {
+       "items": [
+        "🌬️"
+       ],
+       "motion": "pulse",
+       "caption": "Invisible air"
+      },
+      {
+       "items": [
+        "🍃"
+       ],
+       "motion": "push",
+       "caption": "Feeling air"
+      }
+     ]
+    }
+   },
+   {
+    "title": "What Makes Up Air",
+    "narration": [
+     "Air is a mix of different invisible gases.",
+     "Plants and humans need air to stay alive.",
+     "Oxygen is the part of air that we breathe in.",
+     "Air also takes up space and has weight."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "💨"
+       ],
+       "motion": "chain",
+       "caption": "Invisible gases"
+      },
+      {
+       "items": [
+        "🌳",
+        "🧒"
+       ],
+       "motion": "grow",
+       "caption": "Living needs"
+      },
+      {
+       "items": [
+        "🫁"
+       ],
+       "motion": "pulse",
+       "caption": "Breathing oxygen"
+      },
+      {
+       "items": [
+        "⚖️"
+       ],
+       "motion": "push",
+       "caption": "Weight of air"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Air In Daily Life",
+    "narration": [
+     "When you blow up a balloon, you are filling it with air.",
+     "Moving air is called wind, like a breeze in a park.",
+     "Air helps kites fly high in the blue sky."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🎈"
+       ],
+       "motion": "grow",
+       "caption": "Balloon air"
+      },
+      {
+       "items": [
+        "🌳",
+        "💨"
+       ],
+       "motion": "push",
+       "caption": "Moving wind"
+      },
+      {
+       "items": [
+        "🪁"
+       ],
+       "motion": "rise",
+       "caption": "Flying kites"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Remembering Our Air",
+    "narration": [
+     "Air is all around us even if we cannot see it.",
+     "It is essential for every living thing on Earth.",
+     "Think about it: how would you feel if you could see the air?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌍"
+       ],
+       "motion": "float",
+       "caption": "All around"
+      },
+      {
+       "items": [
+        "🐾",
+        "🌻"
+       ],
+       "motion": "chain",
+       "caption": "Essential air"
+      },
+      {
+       "items": [
+        "🤔"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Science Around Us: Solar System": {
+  "id": "lib-general-knowledge-g2-science-around-us-solar-system",
+  "topic": "Science Around Us: Solar System",
+  "title": "Our Amazing Solar System",
+  "icon": "☀️",
+  "scenes": [
+   {
+    "title": "Looking at the Night Sky",
+    "narration": [
+     "Have you ever looked at the night sky and wondered what all those twinkling lights are?",
+     "The bright ball in the center is our Sun.",
+     "Everything moving around the Sun is called our solar system."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌃",
+        "✨"
+       ],
+       "motion": "pulse",
+       "caption": "Night sky"
+      },
+      {
+       "items": [
+        "☀️"
+       ],
+       "motion": "pulse",
+       "caption": "The Sun"
+      },
+      {
+       "items": [
+        "☀️",
+        "🪐"
+       ],
+       "motion": "float",
+       "caption": "Solar system"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Planets and the Sun",
+    "narration": [
+     "The Sun is a giant, glowing star made of hot gas.",
+     "There are eight planets that travel around the Sun in a path.",
+     "Each planet has its own special size and color."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "☀️"
+       ],
+       "motion": "grow",
+       "caption": "The star"
+      },
+      {
+       "items": [
+        "🪐",
+        "☀️"
+       ],
+       "motion": "chain",
+       "caption": "Eight planets"
+      },
+      {
+       "items": [
+        "🔴",
+        "🔵",
+        "🟡"
+       ],
+       "motion": "float",
+       "caption": "Different planets"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Living on Planet Earth",
+    "narration": [
+     "Earth is our home, the third planet from the Sun.",
+     "It is the only planet we know that has life, like plants and animals.",
+     "Earth spins around like a top, giving us day and night."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌍",
+        "3️⃣"
+       ],
+       "motion": "push",
+       "caption": "Planet Earth"
+      },
+      {
+       "items": [
+        "🌳",
+        "🐘",
+        "🌍"
+       ],
+       "motion": "grow",
+       "caption": "Life on Earth"
+      },
+      {
+       "items": [
+        "🌍",
+        "☀️",
+        "🌙"
+       ],
+       "motion": "rise",
+       "caption": "Day and night"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Think",
+    "narration": [
+     "The Sun is the center, and eight planets orbit around it.",
+     "Earth is our beautiful home in this big space neighborhood.",
+     "Think about it: if you could visit another planet, which one would you choose?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "☀️",
+        "🪐"
+       ],
+       "motion": "chain",
+       "caption": "Main points"
+      },
+      {
+       "items": [
+        "🌍"
+       ],
+       "motion": "pulse",
+       "caption": "Our home"
+      },
+      {
+       "items": [
+        "🚀",
+        "🪐"
+       ],
+       "motion": "float",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Science Around Us: Water": {
+  "id": "lib-general-knowledge-g2-science-around-us-water",
+  "topic": "Science Around Us: Water",
+  "title": "Where Does Water Go?",
+  "icon": "💧",
+  "scenes": [
+   {
+    "title": "Water in Our Daily Life",
+    "narration": [
+     "Have you ever wondered where your glass of water comes from?",
+     "Or where the puddle on the road goes after it rains?",
+     "Today, we will learn about the magical water cycle!"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🥛"
+       ],
+       "motion": "float",
+       "caption": "Drinking water"
+      },
+      {
+       "items": [
+        "🌧️",
+        "🛣️"
+       ],
+       "motion": "fall",
+       "caption": "Rain puddles"
+      },
+      {
+       "items": [
+        "💧",
+        "☀️",
+        "☁️"
+       ],
+       "motion": "pulse",
+       "caption": "Water cycle"
+      }
+     ]
+    }
+   },
+   {
+    "title": "How Water Moves",
+    "narration": [
+     "First, the sun warms up water in our rivers and lakes.",
+     "The water turns into invisible steam and rises up high.",
+     "Up there, it cools down and turns into fluffy clouds.",
+     "When clouds get heavy, water falls back as rain or snow."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "☀️",
+        "🏞️"
+       ],
+       "motion": "rise",
+       "caption": "Warming water"
+      },
+      {
+       "items": [
+        "☁️",
+        "💨"
+       ],
+       "motion": "rise",
+       "caption": "Evaporation"
+      },
+      {
+       "items": [
+        "☁️",
+        "☁️"
+       ],
+       "motion": "float",
+       "caption": "Cloud formation"
+      },
+      {
+       "items": [
+        "🌧️"
+       ],
+       "motion": "fall",
+       "caption": "Precipitation"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Following the Rain",
+    "narration": [
+     "Imagine rain falling on a green mountain in India.",
+     "The water flows down into a sparkling blue river.",
+     "Finally, the river carries that water all the way to the sea."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "⛰️",
+        "🌧️"
+       ],
+       "motion": "fall",
+       "caption": "Mountain rain"
+      },
+      {
+       "items": [
+        "🏞️"
+       ],
+       "motion": "chain",
+       "caption": "Flowing river"
+      },
+      {
+       "items": [
+        "🌊"
+       ],
+       "motion": "chain",
+       "caption": "Reaching sea"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Think",
+    "narration": [
+     "Water rises, turns into clouds, and falls as rain.",
+     "This cycle keeps our plants, animals, and us healthy.",
+     "Think about it: how can you save water at home today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "☀️",
+        "☁️",
+        "🌧️"
+       ],
+       "motion": "chain",
+       "caption": "Water cycle"
+      },
+      {
+       "items": [
+        "🌱",
+        "🐘",
+        "🧒"
+       ],
+       "motion": "grow",
+       "caption": "Nature's gift"
+      },
+      {
+       "items": [
+        "🚰",
+        "🚫"
+       ],
+       "motion": "pulse",
+       "caption": "Save water"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Science Around Us: Light": {
+  "id": "lib-general-knowledge-g2-science-around-us-light",
+  "topic": "Science Around Us: Light",
+  "title": "How We See Light",
+  "icon": "☀️",
+  "scenes": [
+   {
+    "title": "The Magic of Light",
+    "narration": [
+     "Have you ever wondered why you can see your toys when the sun is up?",
+     "It is because light travels from a source and hits the things around us.",
+     "Without light, our world would be pitch black, even if our eyes were open!"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🧸",
+        "☀️"
+       ],
+       "motion": "pulse",
+       "caption": "Bright morning"
+      },
+      {
+       "items": [
+        "☀️",
+        "➡️",
+        "📦"
+       ],
+       "motion": "push",
+       "caption": "Light travels"
+      },
+      {
+       "items": [
+        "🌑",
+        "👁️"
+       ],
+       "motion": "float",
+       "caption": "Darkness"
+      }
+     ]
+    }
+   },
+   {
+    "title": "How Light Works",
+    "narration": [
+     "Light acts like a messenger that carries pictures to our eyes.",
+     "The sun is our biggest light source, but we also use bulbs at home.",
+     "Light travels in a straight line, which we call a light ray.",
+     "When light hits an object, it bounces off and zooms into our eyes."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "☀️",
+        "✉️",
+        "👁️"
+       ],
+       "motion": "chain",
+       "caption": "Light messenger"
+      },
+      {
+       "items": [
+        "☀️",
+        "💡"
+       ],
+       "motion": "rise",
+       "caption": "Light sources"
+      },
+      {
+       "items": [
+        "📏",
+        "➡️"
+       ],
+       "motion": "push",
+       "caption": "Straight line"
+      },
+      {
+       "items": [
+        "🎾",
+        "👁️"
+       ],
+       "motion": "fall",
+       "caption": "Bouncing light"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Seeing a Red Apple",
+    "narration": [
+     "Let us look at a shiny red apple on your kitchen table.",
+     "Sunlight hits the apple and all colors get soaked up, except for red.",
+     "The red light bounces off the apple skin and lands right in your eyes.",
+     "Your brain then tells you that the apple is round and bright red."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍎",
+        "🏠"
+       ],
+       "motion": "float",
+       "caption": "Red apple"
+      },
+      {
+       "items": [
+        "☀️",
+        "🍎"
+       ],
+       "motion": "grow",
+       "caption": "Absorbing light"
+      },
+      {
+       "items": [
+        "🍎",
+        "➡️",
+        "👁️"
+       ],
+       "motion": "push",
+       "caption": "Seeing red"
+      },
+      {
+       "items": [
+        "🧠",
+        "🍎"
+       ],
+       "motion": "pulse",
+       "caption": "Brain power"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Light Recap",
+    "narration": [
+     "Light comes from sources like the sun and bounces off everything we see.",
+     "Our eyes catch these light rays to help us see the world clearly.",
+     "Think about it: what happens when you turn off all the lights at night?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "☀️",
+        "📦",
+        "👁️"
+       ],
+       "motion": "chain",
+       "caption": "Quick recap"
+      },
+      {
+       "items": [
+        "👁️",
+        "✨"
+       ],
+       "motion": "float",
+       "caption": "Eyes working"
+      },
+      {
+       "items": [
+        "💡",
+        "❌"
+       ],
+       "motion": "fall",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Science Around Us: Sound": {
+  "id": "lib-general-knowledge-g2-science-around-us-sound",
+  "topic": "Science Around Us: Sound",
+  "title": "How Do We Hear Sounds?",
+  "icon": "🔊",
+  "scenes": [
+   {
+    "title": "The World Is Noisy",
+    "narration": [
+     "Have you ever wondered how the chirping bird reaches your ears?",
+     "Sounds are everywhere, from school bells to your friend laughing.",
+     "But how does that sound actually travel to you?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🐦"
+       ],
+       "motion": "float",
+       "caption": "Listening closely"
+      },
+      {
+       "items": [
+        "🔔",
+        "👧",
+        "👦"
+       ],
+       "motion": "pulse",
+       "caption": "Sound everywhere"
+      },
+      {
+       "items": [
+        "❓"
+       ],
+       "motion": "pulse",
+       "caption": "A mystery"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Secret Of Vibrations",
+    "narration": [
+     "Sound is made when something moves back and forth very fast.",
+     "This back and forth movement is called a vibration.",
+     "Think of it like a wiggle that travels through the air.",
+     "These invisible wiggles bump into each other like a line of dominoes."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📏"
+       ],
+       "motion": "push",
+       "caption": "Vibration starts"
+      },
+      {
+       "items": [
+        "〰️"
+       ],
+       "motion": "pulse",
+       "caption": "What is vibration"
+      },
+      {
+       "items": [
+        "💨"
+       ],
+       "motion": "chain",
+       "caption": "Traveling wiggle"
+      },
+      {
+       "items": [
+        "🧱"
+       ],
+       "motion": "push",
+       "caption": "Bumping air"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Musical Example",
+    "narration": [
+     "Imagine you are plucking a string on a Sitar in your music room.",
+     "The string vibrates quickly and pushes the air around it.",
+     "The air carries the wiggle until it reaches your ear."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🪕"
+       ],
+       "motion": "pulse",
+       "caption": "Plucking Sitar"
+      },
+      {
+       "items": [
+        "〰️"
+       ],
+       "motion": "push",
+       "caption": "String pushes air"
+      },
+      {
+       "items": [
+        "👂"
+       ],
+       "motion": "chain",
+       "caption": "Reaching ear"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Sound Recap",
+    "narration": [
+     "Sound starts with a vibration moving back and forth.",
+     "It travels through the air to reach our ears.",
+     "Think about it: can you feel your throat vibrate when you hum a song?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "〰️"
+       ],
+       "motion": "pulse",
+       "caption": "Vibration first"
+      },
+      {
+       "items": [
+        "💨",
+        "👂"
+       ],
+       "motion": "chain",
+       "caption": "Traveling sound"
+      },
+      {
+       "items": [
+        "🗣️"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Sports: Famous Indian Sportspersons": {
+  "id": "lib-general-knowledge-g2-sports-famous-indian-sportspersons",
+  "topic": "Sports: Famous Indian Sportspersons",
+  "title": "India's Amazing Sports Stars",
+  "icon": "🏅",
+  "scenes": [
+   {
+    "title": "Do you love playing games",
+    "narration": [
+     "Have you ever played cricket or badminton at school?",
+     "Many people in India love sports very much.",
+     "Do you know who our famous sports heroes are?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏏",
+        "🏸"
+       ],
+       "motion": "pulse",
+       "caption": "School games"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🏟️"
+       ],
+       "motion": "float",
+       "caption": "Loving sports"
+      },
+      {
+       "items": [
+        "❓",
+        "🌟"
+       ],
+       "motion": "pulse",
+       "caption": "Sports heroes"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Learning about our champions",
+    "narration": [
+     "A champion is someone who practices very hard.",
+     "They play games to represent our country, India.",
+     "These players show us that we can be anything."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏃",
+        "💪"
+       ],
+       "motion": "grow",
+       "caption": "Hard practice"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🥇"
+       ],
+       "motion": "chain",
+       "caption": "Representing India"
+      },
+      {
+       "items": [
+        "✨",
+        "🧒"
+       ],
+       "motion": "rise",
+       "caption": "Dream big"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Meeting two Indian legends",
+    "narration": [
+     "Sachin Tendulkar is a famous cricket legend.",
+     "He hit many runs for India with his bat.",
+     "P.V. Sindhu is a star at playing badminton.",
+     "She moves very fast to win medals."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏏"
+       ],
+       "motion": "chain",
+       "caption": "Cricket hero"
+      },
+      {
+       "items": [
+        "🏏",
+        "🔥"
+       ],
+       "motion": "push",
+       "caption": "Hitting runs"
+      },
+      {
+       "items": [
+        "🏸"
+       ],
+       "motion": "chain",
+       "caption": "Badminton star"
+      },
+      {
+       "items": [
+        "🏸",
+        "🥇"
+       ],
+       "motion": "fall",
+       "caption": "Winning medals"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and think",
+    "narration": [
+     "India has many great sports stars.",
+     "They practice hard to make us proud.",
+     "Which sport do you want to play today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "🌟"
+       ],
+       "motion": "pulse",
+       "caption": "Sports legends"
+      },
+      {
+       "items": [
+        "💪",
+        "🇮🇳"
+       ],
+       "motion": "rise",
+       "caption": "Making us proud"
+      },
+      {
+       "items": [
+        "⚽",
+        "🏸",
+        "🏏"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Sports: Sports Equipment": {
+  "id": "lib-general-knowledge-g2-sports-sports-equipment",
+  "topic": "Sports: Sports Equipment",
+  "title": "Gear Up For The Game",
+  "icon": "⚽",
+  "scenes": [
+   {
+    "title": "The Big Game Hook",
+    "narration": [
+     "Have you ever wondered why we use different things for different sports?",
+     "At the park, you see kids using bats, balls, and even rackets.",
+     "Each game needs special tools to help us play our very best."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏏",
+        "🏸",
+        "⚽",
+        "🏀"
+       ],
+       "motion": "pulse",
+       "caption": "Different sports"
+      },
+      {
+       "items": [
+        "👦",
+        "🏏",
+        "👧",
+        "🏸"
+       ],
+       "motion": "float",
+       "caption": "Park fun"
+      },
+      {
+       "items": [
+        "🏆",
+        "🧤",
+        "👟"
+       ],
+       "motion": "chain",
+       "caption": "Special tools"
+      }
+     ]
+    }
+   },
+   {
+    "title": "How Tools Help Us",
+    "narration": [
+     "Some tools help us hit a ball far away, like a cricket bat.",
+     "Some help us move quickly and safely, like our sturdy sports shoes.",
+     "Others protect our bodies, like the helmets used in cycling.",
+     "Using the right gear makes every game more fun and safe."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏏",
+        "🏏"
+       ],
+       "motion": "push",
+       "caption": "Cricket bat"
+      },
+      {
+       "items": [
+        "👟",
+        "👟"
+       ],
+       "motion": "grow",
+       "caption": "Sports shoes"
+      },
+      {
+       "items": [
+        "🚲",
+        "🪖"
+       ],
+       "motion": "rise",
+       "caption": "Safety gear"
+      },
+      {
+       "items": [
+        "✅",
+        "🛡️"
+       ],
+       "motion": "pulse",
+       "caption": "Stay safe"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Example: Playing Cricket",
+    "narration": [
+     "Let us look at a game of cricket in the school field.",
+     "The batter holds a wooden bat to hit the hard ball.",
+     "The wicketkeeper wears big gloves to catch the ball safely.",
+     "Both players use their gear to play fairly and well."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏫",
+        "🏏",
+        "🏟️"
+       ],
+       "motion": "float",
+       "caption": "School cricket"
+      },
+      {
+       "items": [
+        "🏏",
+        "⚾"
+       ],
+       "motion": "push",
+       "caption": "Hitting ball"
+      },
+      {
+       "items": [
+        "🧤",
+        "⚾"
+       ],
+       "motion": "pull",
+       "caption": "Catching gear"
+      },
+      {
+       "items": [
+        "🏏",
+        "🧤",
+        "🤝"
+       ],
+       "motion": "chain",
+       "caption": "Playing fair"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap And Think",
+    "narration": [
+     "Remember, we use different gear for different sports to play well.",
+     "Equipment also keeps us safe while we are running and playing.",
+     "Think about it: What gear would you need to play your favorite game?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "⚽",
+        "🏸",
+        "🏏"
+       ],
+       "motion": "pulse",
+       "caption": "Different needs"
+      },
+      {
+       "items": [
+        "🛡️",
+        "👟"
+       ],
+       "motion": "grow",
+       "caption": "Safety first"
+      },
+      {
+       "items": [
+        "🤔",
+        "💭"
+       ],
+       "motion": "rise",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Sports: Popular Sports": {
+  "id": "lib-general-knowledge-g2-sports-popular-sports",
+  "topic": "Sports: Popular Sports",
+  "title": "Fun With Indian Sports",
+  "icon": "🏏",
+  "scenes": [
+   {
+    "title": "What Do You Like Playing?",
+    "narration": [
+     "Do you love running fast or hitting a ball in the park?",
+     "Sports are games that keep our bodies strong and healthy.",
+     "Let us explore some famous sports played right here in India."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏃",
+        "⚽"
+       ],
+       "motion": "pulse",
+       "caption": "Active play"
+      },
+      {
+       "items": [
+        "💪",
+        "🍎"
+       ],
+       "motion": "grow",
+       "caption": "Stay healthy"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🏆"
+       ],
+       "motion": "float",
+       "caption": "Indian sports"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Learning About Famous Sports",
+    "narration": [
+     "Cricket is a favorite game where players use a bat and ball.",
+     "Football is played by kicking a ball into a big net goal.",
+     "Badminton uses a light racket to hit a shuttlecock over a net.",
+     "Kabaddi is an exciting traditional game from our own country."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏏"
+       ],
+       "motion": "push",
+       "caption": "Cricket game"
+      },
+      {
+       "items": [
+        "⚽",
+        "🥅"
+       ],
+       "motion": "push",
+       "caption": "Football goal"
+      },
+      {
+       "items": [
+        "🏸"
+       ],
+       "motion": "pulse",
+       "caption": "Badminton match"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🏃"
+       ],
+       "motion": "chain",
+       "caption": "Kabaddi fun"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Let's Play Cricket Together",
+    "narration": [
+     "First, the bowler runs up and throws the ball towards the stumps.",
+     "The batsman uses the wooden bat to hit the ball far away.",
+     "Then, the batsman runs between the wickets to score many runs."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏏",
+        "🎯"
+       ],
+       "motion": "push",
+       "caption": "Bowling ball"
+      },
+      {
+       "items": [
+        "🏏",
+        "💨"
+       ],
+       "motion": "push",
+       "caption": "Batting hit"
+      },
+      {
+       "items": [
+        "🏏",
+        "🏃"
+       ],
+       "motion": "chain",
+       "caption": "Scoring runs"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap And Think",
+    "narration": [
+     "We learned that sports keep us fit and happy every day.",
+     "Cricket, football, and kabaddi are popular games in India.",
+     "Which sport do you want to play with your friends today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "😊",
+        "💪"
+       ],
+       "motion": "grow",
+       "caption": "Stay active"
+      },
+      {
+       "items": [
+        "🏏",
+        "⚽",
+        "🇮🇳"
+       ],
+       "motion": "float",
+       "caption": "Popular games"
+      },
+      {
+       "items": [
+        "🙋",
+        "⚽"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Sports: Major Sports Events": {
+  "id": "lib-general-knowledge-g2-sports-major-sports-events",
+  "topic": "Sports: Major Sports Events",
+  "title": "Fun World of Big Sports",
+  "icon": "🏆",
+  "scenes": [
+   {
+    "title": "Watching Sports Together",
+    "narration": [
+     "Do you love watching games on TV with your family?",
+     "Sometimes, the whole world watches the same big match!",
+     "These are called major sports events."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📺",
+        "👨‍👩‍👧‍👦"
+       ],
+       "motion": "pulse",
+       "caption": "Watching games"
+      },
+      {
+       "items": [
+        "🌍",
+        "👀"
+       ],
+       "motion": "float",
+       "caption": "World watching"
+      },
+      {
+       "items": [
+        "🏅",
+        "🏟️"
+       ],
+       "motion": "rise",
+       "caption": "Major events"
+      }
+     ]
+    }
+   },
+   {
+    "title": "What Makes Them Special",
+    "narration": [
+     "The Olympic Games happen every four years.",
+     "Athletes from many different countries come to compete.",
+     "They try their best to win a shiny gold medal."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏃",
+        "🏊",
+        "🤸"
+       ],
+       "motion": "chain",
+       "caption": "Olympics"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🇯🇵",
+        "🇧🇷"
+       ],
+       "motion": "float",
+       "caption": "Many countries"
+      },
+      {
+       "items": [
+        "🥇"
+       ],
+       "motion": "rise",
+       "caption": "Gold medal"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Cricket World Cup",
+    "narration": [
+     "In India, the Cricket World Cup is very popular.",
+     "Teams play hard to score many runs.",
+     "The team with the most runs wins the big trophy."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏏",
+        "🇮🇳"
+       ],
+       "motion": "push",
+       "caption": "Cricket love"
+      },
+      {
+       "items": [
+        "🏏",
+        "🏃"
+       ],
+       "motion": "chain",
+       "caption": "Scoring runs"
+      },
+      {
+       "items": [
+        "🏆"
+       ],
+       "motion": "grow",
+       "caption": "Winning trophy"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Remembering the Fun",
+    "narration": [
+     "Big games bring the world together in peace.",
+     "Athletes practice every day to do their very best.",
+     "Which sport would you like to play in a big event?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🤝",
+        "🌍"
+       ],
+       "motion": "float",
+       "caption": "Being together"
+      },
+      {
+       "items": [
+        "👟",
+        "🏋️"
+       ],
+       "motion": "grow",
+       "caption": "Hard work"
+      },
+      {
+       "items": [
+        "🤔",
+        "⚽",
+        "🏸"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Geography: Oceans": {
+  "id": "lib-general-knowledge-g2-geography-oceans",
+  "topic": "Geography: Oceans",
+  "title": "Our Big Blue Oceans",
+  "icon": "🌊",
+  "scenes": [
+   {
+    "title": "The Big Blue Hook",
+    "narration": [
+     "Have you ever wondered how much of our Earth is covered in water?",
+     "Look at a globe; it is mostly blue!",
+     "That blue part is made of giant oceans."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌍"
+       ],
+       "motion": "pulse",
+       "caption": "Earth's water"
+      },
+      {
+       "items": [
+        "🌐"
+       ],
+       "motion": "float",
+       "caption": "Mostly blue"
+      },
+      {
+       "items": [
+        "🌊"
+       ],
+       "motion": "rise",
+       "caption": "Giant oceans"
+      }
+     ]
+    }
+   },
+   {
+    "title": "What Are Oceans",
+    "narration": [
+     "An ocean is a huge body of very salty water.",
+     "There are five big oceans on our planet.",
+     "They hold almost all the water on Earth.",
+     "They connect all the different countries together."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🧂",
+        "💧"
+       ],
+       "motion": "chain",
+       "caption": "Salty water"
+      },
+      {
+       "items": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+       ],
+       "motion": "chain",
+       "caption": "Five oceans"
+      },
+      {
+       "items": [
+        "🌊",
+        "🌍"
+       ],
+       "motion": "pulse",
+       "caption": "Lots of water"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🌏",
+        "🗺️"
+       ],
+       "motion": "float",
+       "caption": "Connecting worlds"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Meet The Indian Ocean",
+    "narration": [
+     "India has its very own ocean right to the south.",
+     "It is named the Indian Ocean.",
+     "Many fish and sea turtles live in its warm waters.",
+     "Large ships travel across it to bring us goods."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "⬇️"
+       ],
+       "motion": "push",
+       "caption": "Indian Ocean"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🌊"
+       ],
+       "motion": "pulse",
+       "caption": "Named Indian"
+      },
+      {
+       "items": [
+        "🐟",
+        "🐢",
+        "🌊"
+       ],
+       "motion": "grow",
+       "caption": "Sea life"
+      },
+      {
+       "items": [
+        "🚢",
+        "📦"
+       ],
+       "motion": "chain",
+       "caption": "Big ships"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Think",
+    "narration": [
+     "Oceans are giant, salty, and cover most of Earth.",
+     "We must keep our oceans clean for the animals.",
+     "Think about it: can you name one animal that lives in the ocean?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌍",
+        "🌊"
+       ],
+       "motion": "pulse",
+       "caption": "Earth's oceans"
+      },
+      {
+       "items": [
+        "♻️",
+        "🐢",
+        "🌊"
+       ],
+       "motion": "float",
+       "caption": "Keep clean"
+      },
+      {
+       "items": [
+        "❓",
+        "🐳"
+       ],
+       "motion": "pulse",
+       "caption": "Question time"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Geography: Continents": {
+  "id": "lib-general-knowledge-g2-geography-continents",
+  "topic": "Geography: Continents",
+  "title": "Our Seven Big Continents",
+  "icon": "🌍",
+  "scenes": [
+   {
+    "title": "The Big Wide World",
+    "narration": [
+     "Look at a globe or a map in your classroom.",
+     "Did you know that all the land is divided into seven giant pieces?",
+     "These giant pieces of land are called continents."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌎"
+       ],
+       "motion": "float",
+       "caption": "The Earth"
+      },
+      {
+       "items": [
+        "🗺️"
+       ],
+       "motion": "pulse",
+       "caption": "Seven pieces"
+      },
+      {
+       "items": [
+        "📍"
+       ],
+       "motion": "grow",
+       "caption": "What are continents"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Learning The Seven Continents",
+    "narration": [
+     "Asia is the biggest one where we live in India.",
+     "Africa is famous for wild lions and vast deserts.",
+     "North America and South America are two separate, beautiful continents.",
+     "Antarctica is the very cold continent at the bottom of the globe.",
+     "Europe and Australia are the final two to complete our set."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳"
+       ],
+       "motion": "rise",
+       "caption": "Asia"
+      },
+      {
+       "items": [
+        "🦁",
+        "🏜️"
+       ],
+       "motion": "chain",
+       "caption": "Africa"
+      },
+      {
+       "items": [
+        "🌎",
+        "🌎"
+       ],
+       "motion": "chain",
+       "caption": "The Americas"
+      },
+      {
+       "items": [
+        "❄️",
+        "🐧"
+       ],
+       "motion": "fall",
+       "caption": "Antarctica"
+      },
+      {
+       "items": [
+        "🏰",
+        "🦘"
+       ],
+       "motion": "chain",
+       "caption": "Europe Australia"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Trip Around India",
+    "narration": [
+     "Imagine you are in India, which is part of Asia.",
+     "If you flew a plane west, you would reach Europe.",
+     "If you flew a plane far south, you would reach cold Antarctica."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳"
+       ],
+       "motion": "pulse",
+       "caption": "Our home"
+      },
+      {
+       "items": [
+        "✈️",
+        "🏰"
+       ],
+       "motion": "push",
+       "caption": "Flying west"
+      },
+      {
+       "items": [
+        "✈️",
+        "❄️"
+       ],
+       "motion": "push",
+       "caption": "Flying south"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Explore",
+    "narration": [
+     "Remember, there are seven continents on our planet.",
+     "They are huge landmasses surrounded by deep blue oceans.",
+     "Think about it: which continent would you like to visit first?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+       ],
+       "motion": "chain",
+       "caption": "Seven continents"
+      },
+      {
+       "items": [
+        "🌊",
+        "🌍"
+       ],
+       "motion": "float",
+       "caption": "Land and water"
+      },
+      {
+       "items": [
+        "🤔",
+        "✈️"
+       ],
+       "motion": "pulse",
+       "caption": "Your choice"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Geography: Mountains": {
+  "id": "lib-general-knowledge-g2-geography-mountains",
+  "topic": "Geography: Mountains",
+  "title": "Amazing Mountains of India",
+  "icon": "⛰️",
+  "scenes": [
+   {
+    "title": "What is a mountain?",
+    "narration": [
+     "Have you ever climbed a very tall hill that touches the clouds?",
+     "A mountain is a huge piece of land that reaches high up.",
+     "They are much taller and steeper than the hills near your home."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "⛰️",
+        "☁️"
+       ],
+       "motion": "rise",
+       "caption": "Tall land"
+      },
+      {
+       "items": [
+        "⛰️"
+       ],
+       "motion": "grow",
+       "caption": "High peak"
+      },
+      {
+       "items": [
+        "⛰️",
+        "🏠"
+       ],
+       "motion": "pulse",
+       "caption": "Very tall"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Mighty Himalayas",
+    "narration": [
+     "In the north of India, we have the great Himalayan mountains.",
+     "These mountains are covered in thick, white snow all year long.",
+     "The air gets very cold the higher up you climb.",
+     "Many big rivers like the Ganga start from these snowy peaks."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "🗺️",
+        "⛰️"
+       ],
+       "motion": "chain",
+       "caption": "Himalayan range"
+      },
+      {
+       "items": [
+        "❄️",
+        "⛰️"
+       ],
+       "motion": "fall",
+       "caption": "Snowy tops"
+      },
+      {
+       "items": [
+        "🌡️",
+        "📉"
+       ],
+       "motion": "fall",
+       "caption": "Cold air"
+      },
+      {
+       "items": [
+        "⛰️",
+        "💧",
+        "🌊"
+       ],
+       "motion": "push",
+       "caption": "River source"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Life in the Mountains",
+    "narration": [
+     "People living in mountains build houses on the slopes.",
+     "They wear warm woolen sweaters and jackets to stay cozy.",
+     "Animals like the furry yak live comfortably in these cold mountains."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏠",
+        "⛰️"
+       ],
+       "motion": "float",
+       "caption": "Mountain homes"
+      },
+      {
+       "items": [
+        "🧥",
+        "🧶"
+       ],
+       "motion": "pulse",
+       "caption": "Warm clothes"
+      },
+      {
+       "items": [
+        "🐂"
+       ],
+       "motion": "float",
+       "caption": "Mountain animals"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Think",
+    "narration": [
+     "Mountains are super tall landforms that are often covered in snow.",
+     "They are the source of our fresh water rivers in India.",
+     "Think about it, would you like to build a house on a mountain?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "⛰️",
+        "❄️"
+       ],
+       "motion": "pulse",
+       "caption": "Quick review"
+      },
+      {
+       "items": [
+        "💧",
+        "🇮🇳"
+       ],
+       "motion": "chain",
+       "caption": "Water source"
+      },
+      {
+       "items": [
+        "🤔",
+        "⛰️"
+       ],
+       "motion": "push",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Festivals and Culture: Traditional Dances": {
+  "id": "lib-general-knowledge-g2-festivals-and-culture-traditional-dances",
+  "topic": "Festivals and Culture: Traditional Dances",
+  "title": "Let's Dance Across India",
+  "icon": "💃",
+  "scenes": [
+   {
+    "title": "Why Do People Dance",
+    "narration": [
+     "Have you ever danced at a wedding or a school party?",
+     "In India, we have many special dances for festivals.",
+     "Do you know why we dance for these celebrations?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "💃",
+        "🎶"
+       ],
+       "motion": "pulse",
+       "caption": "Happy Dancing"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🎉"
+       ],
+       "motion": "float",
+       "caption": "Festive India"
+      },
+      {
+       "items": [
+        "❓",
+        "🤔"
+       ],
+       "motion": "pulse",
+       "caption": "The Big Question"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Learning Traditional Steps",
+    "narration": [
+     "Traditional dances tell stories about our history and nature.",
+     "Dancers wear bright clothes and shiny jewelry.",
+     "Music with drums and bells keeps the rhythm.",
+     "Every move has a meaning, like showing a flower."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📖",
+        "🌳"
+       ],
+       "motion": "chain",
+       "caption": "Telling Stories"
+      },
+      {
+       "items": [
+        "👗",
+        "💎"
+       ],
+       "motion": "grow",
+       "caption": "Bright Costumes"
+      },
+      {
+       "items": [
+        "🥁",
+        "🔔"
+       ],
+       "motion": "pulse",
+       "caption": "Rhythmic Music"
+      },
+      {
+       "items": [
+        "🌸",
+        "🤲"
+       ],
+       "motion": "rise",
+       "caption": "Meaningful Moves"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Bhangra Example",
+    "narration": [
+     "Let us look at Bhangra from Punjab.",
+     "Farmers dance it to celebrate the harvest season.",
+     "They jump high and wave their arms up.",
+     "The dhol drum makes everyone want to dance."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📍",
+        "🌾"
+       ],
+       "motion": "float",
+       "caption": "Punjab Bhangra"
+      },
+      {
+       "items": [
+        "👨‍🌾",
+        "🌾"
+       ],
+       "motion": "grow",
+       "caption": "Harvest Joy"
+      },
+      {
+       "items": [
+        "⬆️",
+        "🙌"
+       ],
+       "motion": "push",
+       "caption": "High Jumps"
+      },
+      {
+       "items": [
+        "🥁"
+       ],
+       "motion": "pulse",
+       "caption": "Dhol Beat"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Celebrating Our Culture",
+    "narration": [
+     "India has many dances like Garba, Kathak, and Bihu.",
+     "These dances bring families and friends together happily.",
+     "Think about it, what is your favorite way to move to music?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "💃",
+        "✨"
+       ],
+       "motion": "float",
+       "caption": "Many Styles"
+      },
+      {
+       "items": [
+        "🤝",
+        "💖"
+       ],
+       "motion": "grow",
+       "caption": "Coming Together"
+      },
+      {
+       "items": [
+        "💭",
+        "🎶"
+       ],
+       "motion": "pulse",
+       "caption": "Your Turn"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Geography: Deserts": {
+  "id": "lib-general-knowledge-g2-geography-deserts",
+  "topic": "Geography: Deserts",
+  "title": "What is a desert?",
+  "icon": "🌵",
+  "scenes": [
+   {
+    "title": "The Sandy Mystery",
+    "narration": [
+     "Have you ever seen a place with almost no plants and lots of sand?",
+     "That dry and sandy place is called a desert.",
+     "Why is it so dry there? Let us find out!"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "☀️",
+        "🏜️"
+       ],
+       "motion": "float",
+       "caption": "Hot sands"
+      },
+      {
+       "items": [
+        "🏜️"
+       ],
+       "motion": "pulse",
+       "caption": "A desert"
+      },
+      {
+       "items": [
+        "❓",
+        "☁️",
+        "🚫"
+       ],
+       "motion": "pull",
+       "caption": "Finding answers"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Why Deserts Are Dry",
+    "narration": [
+     "Deserts are places that get very little rain all year long.",
+     "Without rain, the ground becomes very dry and dusty.",
+     "Because there is no water, only special plants can grow here."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "☀️",
+        "🌵",
+        "🚫",
+        "🌧️"
+       ],
+       "motion": "fall",
+       "caption": "Little rain"
+      },
+      {
+       "items": [
+        "🏜️",
+        "🧱"
+       ],
+       "motion": "push",
+       "caption": "Dry ground"
+      },
+      {
+       "items": [
+        "🌵",
+        "💧",
+        "🚫"
+       ],
+       "motion": "grow",
+       "caption": "Special plants"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Life in the Thar",
+    "narration": [
+     "In India, we have the Thar Desert in Rajasthan.",
+     "Camels live here because they can walk on sand without sinking.",
+     "Cactus plants store water inside them to stay alive."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "🏜️",
+        "🐪"
+       ],
+       "motion": "chain",
+       "caption": "Thar Desert"
+      },
+      {
+       "items": [
+        "🐪",
+        "🦶",
+        "🏜️"
+       ],
+       "motion": "push",
+       "caption": "Strong camels"
+      },
+      {
+       "items": [
+        "🌵",
+        "💧"
+       ],
+       "motion": "grow",
+       "caption": "Storing water"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Remembering the Desert",
+    "narration": [
+     "Deserts are dry places with very little rain and special plants.",
+     "The Thar Desert is our very own sandy home in India.",
+     "Think about it: how would you stay cool in the hot desert sun?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏜️",
+        "🌵",
+        "🚫",
+        "🌧️"
+       ],
+       "motion": "pulse",
+       "caption": "Desert facts"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🏜️"
+       ],
+       "motion": "float",
+       "caption": "Our desert"
+      },
+      {
+       "items": [
+        "☀️",
+        "👒",
+        "🤔"
+       ],
+       "motion": "rise",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Festivals and Culture: Music": {
+  "id": "lib-general-knowledge-g2-festivals-and-culture-music",
+  "topic": "Festivals and Culture: Music",
+  "title": "The Magic of Indian Music",
+  "icon": "🎵",
+  "scenes": [
+   {
+    "title": "Music Is Everywhere",
+    "narration": [
+     "Have you ever tapped your feet to a catchy song?",
+     "Music is a special way we share our feelings.",
+     "Do you know how Indian music started long ago?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🥁",
+        "🪘"
+       ],
+       "motion": "pulse",
+       "caption": "Listen closely"
+      },
+      {
+       "items": [
+        "😊",
+        "🎶"
+       ],
+       "motion": "float",
+       "caption": "Happy sounds"
+      },
+      {
+       "items": [
+        "🕉️",
+        "📜"
+       ],
+       "motion": "chain",
+       "caption": "Ancient roots"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Two Main Styles",
+    "narration": [
+     "In the north, we have Hindustani music.",
+     "It uses instruments like the sitar and tabla.",
+     "In the south, we have Carnatic music.",
+     "It often focuses on beautiful singing called ragas."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "⬆️"
+       ],
+       "motion": "push",
+       "caption": "North style"
+      },
+      {
+       "items": [
+        "🪕",
+        "🥁"
+       ],
+       "motion": "pulse",
+       "caption": "Famous instruments"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "⬇️"
+       ],
+       "motion": "pull",
+       "caption": "South style"
+      },
+      {
+       "items": [
+        "🎤",
+        "🎼"
+       ],
+       "motion": "float",
+       "caption": "Sweet ragas"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Instruments in Action",
+    "narration": [
+     "Let us look at a sitar with its long neck.",
+     "Next, the tabla drums make a steady beat.",
+     "Finally, the flute makes a soft, airy sound.",
+     "Together, these create a wonderful, happy song."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🪕"
+       ],
+       "motion": "grow",
+       "caption": "Sitar string"
+      },
+      {
+       "items": [
+        "🥁",
+        "🥁"
+       ],
+       "motion": "pulse",
+       "caption": "Tabla rhythm"
+      },
+      {
+       "items": [
+        "🪈"
+       ],
+       "motion": "rise",
+       "caption": "Flute melody"
+      },
+      {
+       "items": [
+        "🎶",
+        "✨"
+       ],
+       "motion": "chain",
+       "caption": "Music harmony"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Explore",
+    "narration": [
+     "India has many musical styles and instruments.",
+     "Music helps us celebrate our culture together.",
+     "Think about it: what is your favorite musical instrument?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "🎵"
+       ],
+       "motion": "float",
+       "caption": "Musical India"
+      },
+      {
+       "items": [
+        "🤝",
+        "🎉"
+       ],
+       "motion": "grow",
+       "caption": "Sharing joy"
+      },
+      {
+       "items": [
+        "🤔",
+        "❓"
+       ],
+       "motion": "pulse",
+       "caption": "Think now"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Festivals and Culture: Languages": {
+  "id": "lib-general-knowledge-g2-festivals-and-culture-languages",
+  "topic": "Festivals and Culture: Languages",
+  "title": "So Many Ways To Speak",
+  "icon": "🗣️",
+  "scenes": [
+   {
+    "title": "Many Languages In India",
+    "narration": [
+     "Have you heard your friends speak different languages at school?",
+     "India is a big country with many different ways to talk.",
+     "Why do people speak so many different languages?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👧",
+        "👦",
+        "💬"
+       ],
+       "motion": "pulse",
+       "caption": "Many languages"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🗺️"
+       ],
+       "motion": "float",
+       "caption": "Big India"
+      },
+      {
+       "items": [
+        "🤔",
+        "💭"
+       ],
+       "motion": "rise",
+       "caption": "Curious question"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Learning New Words",
+    "narration": [
+     "Languages are like tools we use to share our feelings.",
+     "Some people speak Hindi, while others speak Bengali or Tamil.",
+     "Each language has its own special sounds and words.",
+     "It is like having a secret code for every state."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🛠️",
+        "❤️"
+       ],
+       "motion": "push",
+       "caption": "Sharing feelings"
+      },
+      {
+       "items": [
+        "📖",
+        "✍️"
+       ],
+       "motion": "chain",
+       "caption": "Different tongues"
+      },
+      {
+       "items": [
+        "🔊",
+        "🔤"
+       ],
+       "motion": "pulse",
+       "caption": "Unique sounds"
+      },
+      {
+       "items": [
+        "🔐",
+        "📍"
+       ],
+       "motion": "float",
+       "caption": "State codes"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Examples Of Greetings",
+    "narration": [
+     "In Hindi, we say Namaste to greet our elders.",
+     "In Punjabi, we say Sat Sri Akal to say hello.",
+     "In Marathi, we say Namaskar when we meet friends.",
+     "All these words mean we are being kind to others."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🙏",
+        "👵"
+       ],
+       "motion": "push",
+       "caption": "Namaste"
+      },
+      {
+       "items": [
+        "👋",
+        "👳"
+       ],
+       "motion": "push",
+       "caption": "Sat Sri Akal"
+      },
+      {
+       "items": [
+        "🤝",
+        "👨"
+       ],
+       "motion": "push",
+       "caption": "Namaskar"
+      },
+      {
+       "items": [
+        "✨",
+        "😊"
+       ],
+       "motion": "grow",
+       "caption": "Being kind"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap And Think",
+    "narration": [
+     "India has many languages that make our country special.",
+     "Learning a new word is a way to make new friends.",
+     "Which language do you want to learn to say hello in?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "🎨"
+       ],
+       "motion": "float",
+       "caption": "Special India"
+      },
+      {
+       "items": [
+        "🤝",
+        "📖"
+       ],
+       "motion": "grow",
+       "caption": "Make friends"
+      },
+      {
+       "items": [
+        "❓",
+        "🗣️"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Festivals and Culture: Indian Festivals": {
+  "id": "lib-general-knowledge-g2-festivals-and-culture-indian-festivals",
+  "topic": "Festivals and Culture: Indian Festivals",
+  "title": "Joyful Festivals of India",
+  "icon": "🪔",
+  "scenes": [
+   {
+    "title": "Why do we celebrate?",
+    "narration": [
+     "Have you noticed how we wear new clothes and share sweets during festivals?",
+     "India is a land of many colors and celebrations.",
+     "Do you know why we celebrate these special days together?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👗",
+        "🍬"
+       ],
+       "motion": "pulse",
+       "caption": "New clothes"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🎨"
+       ],
+       "motion": "float",
+       "caption": "Colorful India"
+      },
+      {
+       "items": [
+        "🤝",
+        "✨"
+       ],
+       "motion": "pulse",
+       "caption": "Celebrating together"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Light and Colors",
+    "narration": [
+     "Diwali is the festival of lights where we light small clay lamps.",
+     "Holi is the festival of colors where we play with bright powders.",
+     "These festivals bring families and friends closer in joy."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🪔"
+       ],
+       "motion": "grow",
+       "caption": "Diwali lights"
+      },
+      {
+       "items": [
+        "🎨",
+        "🌈"
+       ],
+       "motion": "rise",
+       "caption": "Holi colors"
+      },
+      {
+       "items": [
+        "👨‍👩‍👧‍👦",
+        "❤️"
+       ],
+       "motion": "chain",
+       "caption": "Family bonding"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Harvest and Joy",
+    "narration": [
+     "In Punjab, farmers celebrate Baisakhi when the wheat is ready.",
+     "They dance with drums to say thank you for the food.",
+     "Pongal in Tamil Nadu is another harvest festival with yummy rice."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌾",
+        "🚜"
+       ],
+       "motion": "grow",
+       "caption": "Baisakhi harvest"
+      },
+      {
+       "items": [
+        "🥁",
+        "💃"
+       ],
+       "motion": "push",
+       "caption": "Harvest dance"
+      },
+      {
+       "items": [
+        "🍚",
+        "🥣"
+       ],
+       "motion": "rise",
+       "caption": "Pongal rice"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Celebrating Together",
+    "narration": [
+     "Festivals teach us to share, care, and love one another.",
+     "All these festivals make our country beautiful and unique.",
+     "Think about it: What is your favorite festival and why do you love it?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🎁",
+        "💖"
+       ],
+       "motion": "chain",
+       "caption": "Sharing values"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🌟"
+       ],
+       "motion": "float",
+       "caption": "Unique India"
+      },
+      {
+       "items": [
+        "🤔",
+        "❓"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Geography: Rivers": {
+  "id": "lib-general-knowledge-g2-geography-rivers",
+  "topic": "Geography: Rivers",
+  "title": "How Rivers Flow To Sea",
+  "icon": "🌊",
+  "scenes": [
+   {
+    "title": "Where Rivers Begin",
+    "narration": [
+     "Have you ever wondered where the water in a river comes from?",
+     "High up in the mountains, the snow melts into tiny streams.",
+     "These tiny streams join together to form a big, flowing river."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏞️",
+        "❓"
+       ],
+       "motion": "pulse",
+       "caption": "Curious Water"
+      },
+      {
+       "items": [
+        "🏔️",
+        "❄️",
+        "💧"
+       ],
+       "motion": "rise",
+       "caption": "Mountain Snow"
+      },
+      {
+       "items": [
+        "💧",
+        "➕",
+        "💧",
+        "➡️",
+        "🌊"
+       ],
+       "motion": "chain",
+       "caption": "Forming Rivers"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Journey Downstream",
+    "narration": [
+     "The river travels a long way down the mountain slopes.",
+     "It passes through green forests and wide, flat fields.",
+     "Farmers use this fresh river water to grow their tasty crops."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌊",
+        "📉"
+       ],
+       "motion": "fall",
+       "caption": "Flowing Down"
+      },
+      {
+       "items": [
+        "🌲",
+        "🌾",
+        "🌊"
+       ],
+       "motion": "float",
+       "caption": "Through Land"
+      },
+      {
+       "items": [
+        "👨‍🌾",
+        "🌾",
+        "💧"
+       ],
+       "motion": "grow",
+       "caption": "Helping Farmers"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Example: River Ganga",
+    "narration": [
+     "Let us look at the holy River Ganga in India.",
+     "It starts in the snowy Himalayas at a place called Gangotri.",
+     "It flows across plains and finally reaches the deep blue sea."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "🌊"
+       ],
+       "motion": "pulse",
+       "caption": "River Ganga"
+      },
+      {
+       "items": [
+        "🏔️",
+        "🧊"
+       ],
+       "motion": "rise",
+       "caption": "Himalaya Start"
+      },
+      {
+       "items": [
+        "🌊",
+        "➡️",
+        "🏝️"
+       ],
+       "motion": "chain",
+       "caption": "Reaching Sea"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Rivers Are Amazing",
+    "narration": [
+     "Rivers start as melted snow and flow all the way to the sea.",
+     "They give water to people, animals, and all the thirsty plants.",
+     "Think about it: what would happen if our rivers stopped flowing?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "❄️",
+        "🌊",
+        "🏝️"
+       ],
+       "motion": "chain",
+       "caption": "Summary"
+      },
+      {
+       "items": [
+        "👩",
+        "🐄",
+        "🌻"
+       ],
+       "motion": "push",
+       "caption": "Providing Life"
+      },
+      {
+       "items": [
+        "🤔",
+        "🌊",
+        "❌"
+       ],
+       "motion": "pulse",
+       "caption": "Think About It"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Important Days: National and International Days": {
+  "id": "lib-general-knowledge-g2-important-days-national-and-international-days",
+  "topic": "Important Days: National and International Days",
+  "title": "Why Do We Celebrate Days?",
+  "icon": "📅",
+  "scenes": [
+   {
+    "title": "A Day to Remember",
+    "narration": [
+     "Have you ever noticed your birthday is a very special day for you?",
+     "Did you know that our country and the world also have special birthdays?",
+     "Why do we pick specific days to celebrate things like books or trees?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🎂",
+        "🎈"
+       ],
+       "motion": "pulse",
+       "caption": "Your Birthday"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🌍"
+       ],
+       "motion": "float",
+       "caption": "World Days"
+      },
+      {
+       "items": [
+        "❓",
+        "📚",
+        "🌳"
+       ],
+       "motion": "pulse",
+       "caption": "Why Celebrate?"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Learning the Why",
+    "narration": [
+     "Some days help us learn about our country's important history.",
+     "Other days remind us to take care of our beautiful Earth.",
+     "We celebrate these days to make sure we never forget what matters."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "📜"
+       ],
+       "motion": "chain",
+       "caption": "National Days"
+      },
+      {
+       "items": [
+        "🌍",
+        "🌱"
+       ],
+       "motion": "grow",
+       "caption": "Earth Care"
+      },
+      {
+       "items": [
+        "💡",
+        "❤️"
+       ],
+       "motion": "pulse",
+       "caption": "Remembering"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Special Days in India",
+    "narration": [
+     "In India, we celebrate Independence Day on August 15th every year.",
+     "We also celebrate Republic Day on January 26th to honor our laws.",
+     "Children's Day is on November 14th to celebrate all the kids in India."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "15",
+        "🗓️"
+       ],
+       "motion": "rise",
+       "caption": "Independence Day"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "26",
+        "📜"
+       ],
+       "motion": "rise",
+       "caption": "Republic Day"
+      },
+      {
+       "items": [
+        "👶",
+        "14",
+        "🎈"
+       ],
+       "motion": "grow",
+       "caption": "Children's Day"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Think",
+    "narration": [
+     "Special days teach us about our history and how to help the world.",
+     "Celebrating together makes us proud of who we are.",
+     "Think about it: which special day would you like to invent for your school?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📚",
+        "🌍"
+       ],
+       "motion": "chain",
+       "caption": "Key Lessons"
+      },
+      {
+       "items": [
+        "🤝",
+        "🇮🇳"
+       ],
+       "motion": "float",
+       "caption": "Unity"
+      },
+      {
+       "items": [
+        "🏫",
+        "✨"
+       ],
+       "motion": "pulse",
+       "caption": "Your Turn"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Festivals and Culture: Traditional Clothes and Food": {
+  "id": "lib-general-knowledge-g2-festivals-and-culture-traditional-clothes-and-food",
+  "topic": "Festivals and Culture: Traditional Clothes and Food",
+  "title": "Celebrating India's Colorful Traditions",
+  "icon": "🪔",
+  "scenes": [
+   {
+    "title": "What do we wear today?",
+    "narration": [
+     "Have you ever wondered why we wear special clothes during festivals like Diwali or Eid?",
+     "In India, every state has its own beautiful traditional outfit.",
+     "These clothes tell us about our history and where our families come from."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🪔",
+        "🌙",
+        "👗",
+        "👕"
+       ],
+       "motion": "pulse",
+       "caption": "Festival excitement"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "📍"
+       ],
+       "motion": "float",
+       "caption": "Regional diversity"
+      },
+      {
+       "items": [
+        "📜",
+        "🏠"
+       ],
+       "motion": "chain",
+       "caption": "Family history"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Exploring Different Traditional Styles",
+    "narration": [
+     "Many people in Punjab wear colourful bright turbans and comfy kurta-pyjamas.",
+     "In West Bengal, women often wear elegant sarees with a special red border.",
+     "South Indian festivals often feature crisp white mundus with golden borders."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👳",
+        "👕"
+       ],
+       "motion": "push",
+       "caption": "Punjab style"
+      },
+      {
+       "items": [
+        "🥻"
+       ],
+       "motion": "float",
+       "caption": "Saree elegance"
+      },
+      {
+       "items": [
+        "👗",
+        "✨"
+       ],
+       "motion": "push",
+       "caption": "Southern attire"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Delicious Foods and Feasts",
+    "narration": [
+     "Festivals are never complete without yummy traditional treats to eat together.",
+     "During Ganesh Chaturthi, we make sweet modaks that are steamed and delicious.",
+     "For Pongal in Tamil Nadu, people cook a special sweet rice dish in pots."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍲",
+        "😋"
+       ],
+       "motion": "grow",
+       "caption": "Festival feast"
+      },
+      {
+       "items": [
+        "🥟",
+        "🙏"
+       ],
+       "motion": "chain",
+       "caption": "Sweet modaks"
+      },
+      {
+       "items": [
+        "🍚",
+        "🥘"
+       ],
+       "motion": "rise",
+       "caption": "Pongal harvest"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Let's Remember Our Traditions",
+    "narration": [
+     "We wear traditional clothes to honor our culture and show our happiness.",
+     "Sharing special food with friends and family makes every celebration better.",
+     "Think about it: What is your favorite traditional outfit to wear at home?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👕",
+        "🥻",
+        "😊"
+       ],
+       "motion": "pulse",
+       "caption": "Honoring culture"
+      },
+      {
+       "items": [
+        "🍛",
+        "🤝"
+       ],
+       "motion": "chain",
+       "caption": "Sharing joy"
+      },
+      {
+       "items": [
+        "🤔",
+        "👗"
+       ],
+       "motion": "float",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Important Days: Why We Celebrate Them": {
+  "id": "lib-general-knowledge-g2-important-days-why-we-celebrate-them",
+  "topic": "Important Days: Why We Celebrate Them",
+  "title": "Why Do We Have Holidays?",
+  "icon": "📅",
+  "scenes": [
+   {
+    "title": "The Big Red Date",
+    "narration": [
+     "Have you ever seen a red date on your school calendar?",
+     "It is a special day when school is closed for everyone.",
+     "Why do we stop our work to celebrate these days?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📅",
+        "🔴"
+       ],
+       "motion": "pulse",
+       "caption": "Red dates"
+      },
+      {
+       "items": [
+        "🏠",
+        "🏫",
+        "🚫"
+       ],
+       "motion": "float",
+       "caption": "School holiday"
+      },
+      {
+       "items": [
+        "🤔",
+        "💭"
+       ],
+       "motion": "push",
+       "caption": "The big question"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Remembering Our Heroes",
+    "narration": [
+     "Some days celebrate amazing people who helped build our country.",
+     "On Independence Day, we remember how India became free in 1947.",
+     "Learning their stories teaches us how to be brave and kind."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "✨"
+       ],
+       "motion": "rise",
+       "caption": "National heroes"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🎈",
+        "🕊️"
+       ],
+       "motion": "rise",
+       "caption": "Independence Day"
+      },
+      {
+       "items": [
+        "📚",
+        "🌟"
+       ],
+       "motion": "grow",
+       "caption": "Learning lessons"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Celebrating Our Culture",
+    "narration": [
+     "Other days are for festivals that bring our families together.",
+     "Like Diwali, where we light diyas to celebrate light winning over darkness.",
+     "These days help us share love and delicious food with neighbors."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👨‍👩‍👧‍👦",
+        "🏮",
+        "🍬"
+       ],
+       "motion": "chain",
+       "caption": "Family time"
+      },
+      {
+       "items": [
+        "🪔",
+        "✨"
+       ],
+       "motion": "pulse",
+       "caption": "Diwali light"
+      },
+      {
+       "items": [
+        "🍱",
+        "🤝"
+       ],
+       "motion": "float",
+       "caption": "Sharing joy"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Day To Remember",
+    "narration": [
+     "Special days help us remember history and celebrate our shared traditions.",
+     "They remind us who we are and keep our stories alive.",
+     "If you could pick one new day to celebrate, what would it be?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📖",
+        "🎊"
+       ],
+       "motion": "chain",
+       "caption": "Remembering together"
+      },
+      {
+       "items": [
+        "❤️",
+        "🇮🇳"
+       ],
+       "motion": "pulse",
+       "caption": "Our identity"
+      },
+      {
+       "items": [
+        "🗓️",
+        "❓"
+       ],
+       "motion": "push",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ }
+}

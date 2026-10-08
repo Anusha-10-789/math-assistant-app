@@ -1,0 +1,311 @@
+{
+ "Indian GK: States and Capitals": {
+  "id": "lib-general-knowledge-g5-indian-gk-states-and-capitals",
+  "topic": "Indian GK: States and Capitals",
+  "title": "Exploring India's States and Capitals",
+  "icon": "🇮🇳",
+  "scenes": [
+   {
+    "title": "Where are we on the map",
+    "narration": [
+     "Have you ever looked at a map of India and wondered about all those colorful shapes?",
+     "India is a huge country divided into 28 states and 8 union territories.",
+     "Each state has its own special capital city to help manage things. Do you know yours?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🗺️"
+       ],
+       "motion": "pulse",
+       "caption": "India Map"
+      },
+      {
+       "items": [
+        "🇮🇳"
+       ],
+       "motion": "grow",
+       "caption": "States and Territories"
+      },
+      {
+       "items": [
+        "🏠",
+        "🏙️"
+       ],
+       "motion": "push",
+       "caption": "Capital Cities"
+      }
+     ]
+    }
+   },
+   {
+    "title": "What is a capital city",
+    "narration": [
+     "A capital is the main city where the state government works to run things smoothly.",
+     "Think of it like the principal's office at your school, where the big decisions happen.",
+     "The capital is usually where the Governor lives and where laws are made for the state."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏛️",
+        "💼"
+       ],
+       "motion": "chain",
+       "caption": "Government Hub"
+      },
+      {
+       "items": [
+        "🏫"
+       ],
+       "motion": "pull",
+       "caption": "Decision Making"
+      },
+      {
+       "items": [
+        "📜",
+        "🏢"
+       ],
+       "motion": "rise",
+       "caption": "Laws and Rules"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Let us see an example",
+    "narration": [
+     "Let us look at Maharashtra, a large state known for its busy cities and culture.",
+     "The capital city of Maharashtra is Mumbai, famous for its grand buildings and the sea.",
+     "From Mumbai, the state government looks after millions of people across the whole state."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "📍"
+       ],
+       "motion": "float",
+       "caption": "Maharashtra State"
+      },
+      {
+       "items": [
+        "🌊",
+        "🏙️"
+       ],
+       "motion": "grow",
+       "caption": "Mumbai City"
+      },
+      {
+       "items": [
+        "👥",
+        "📍"
+       ],
+       "motion": "push",
+       "caption": "State Management"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and think",
+    "narration": [
+     "Remember, India has 28 states, each with its own capital city for governance.",
+     "Capitals are key because they act as the administrative heart of each state.",
+     "Think about it: If you could build a new state, what would you name its capital?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "✅",
+        "🗺️"
+       ],
+       "motion": "chain",
+       "caption": "Quick Recap"
+      },
+      {
+       "items": [
+        "❤️",
+        "🏢"
+       ],
+       "motion": "pulse",
+       "caption": "Administrative Heart"
+      },
+      {
+       "items": [
+        "🤔",
+        "✍️"
+       ],
+       "motion": "float",
+       "caption": "Think About It"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Indian GK: Union Territories": {
+  "id": "lib-general-knowledge-g5-indian-gk-union-territories",
+  "topic": "Indian GK: Union Territories",
+  "title": "Exploring India's Union Territories",
+  "icon": "🇮🇳",
+  "scenes": [
+   {
+    "title": "Why are they different?",
+    "narration": [
+     "Have you noticed that some places in India are not states, but Union Territories?",
+     "These regions are special areas governed directly by the central government in New Delhi.",
+     "But why does India have these unique territories instead of making them all states?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "🗺️"
+       ],
+       "motion": "pulse",
+       "caption": "Indian Map"
+      },
+      {
+       "items": [
+        "🏛️",
+        "📍"
+       ],
+       "motion": "push",
+       "caption": "Central Government"
+      },
+      {
+       "items": [
+        "🤔",
+        "❓"
+       ],
+       "motion": "float",
+       "caption": "Curious Question"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Understanding the concept",
+    "narration": [
+     "States have their own elected governments, but Union Territories are managed by the President of India.",
+     "The President appoints an administrator or a Lieutenant Governor to look after these areas.",
+     "This helps maintain better control over small, strategic, or historically unique regions."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🗳️",
+        "🏢"
+       ],
+       "motion": "chain",
+       "caption": "Management"
+      },
+      {
+       "items": [
+        "🧑‍💼",
+        "📜"
+       ],
+       "motion": "rise",
+       "caption": "Administrator"
+      },
+      {
+       "items": [
+        "🛡️",
+        "🔑"
+       ],
+       "motion": "push",
+       "caption": "Purpose"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Examples of Territories",
+    "narration": [
+     "Take the capital, Delhi, which is a Union Territory with its own legislative assembly.",
+     "Then we have beautiful island groups like the Andaman and Nicobar Islands in the Bay of Bengal.",
+     "Another example is the coastal region of Puducherry, known for its unique French colonial history."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏙️",
+        "🇮🇳"
+       ],
+       "motion": "grow",
+       "caption": "Delhi"
+      },
+      {
+       "items": [
+        "🏝️",
+        "🌊"
+       ],
+       "motion": "float",
+       "caption": "Islands"
+      },
+      {
+       "items": [
+        "🏛️",
+        "🏖️"
+       ],
+       "motion": "chain",
+       "caption": "Puducherry"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Think",
+    "narration": [
+     "Union Territories are managed centrally to help with administration and special needs.",
+     "In 2024, India has eight Union Territories spread across our diverse country.",
+     "If you could visit any Union Territory, which one would you pick and why?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "✅",
+        "🇮🇳"
+       ],
+       "motion": "pulse",
+       "caption": "Quick Recap"
+      },
+      {
+       "items": [
+        "8",
+        "📍"
+       ],
+       "motion": "rise",
+       "caption": "Eight Territories"
+      },
+      {
+       "items": [
+        "✈️",
+        "🎒"
+       ],
+       "motion": "float",
+       "caption": "Think About It"
+      }
+     ]
+    }
+   }
+  ]
+ }
+}
