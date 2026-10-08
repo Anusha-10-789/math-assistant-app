@@ -1,5 +1,6 @@
 import type { Subject } from "./subjects";
-import { SOCIAL_SYLLABUS } from "./socialStudiesTopics";
+import { ENGLISH_SYLLABUS } from "./englishTopics";
+import { SOCIAL_SYLLABUS, type SocialChapter } from "./socialStudiesTopics";
 
 export interface TopicModule {
   label: string;
@@ -319,14 +320,35 @@ const SCIENCE_BY_GRADE: Record<number, TopicModule[]> = {
 
 // Grades 1–5 Social Studies (socialStudiesTopics.ts): each syllabus item is a
 // topic named "Chapter: Item", shown as "Item" under its chapter heading.
-const SOCIAL_BY_GRADE: Record<number, TopicModule[]> = Object.fromEntries(
-  Object.entries(SOCIAL_SYLLABUS).map(([grade, chapters]) => [
-    Number(grade),
-    chapters.flatMap(([chapter, items]) =>
-      section(chapter, items.map(([item, icon, description]) => m(item, icon, description, `${chapter}: ${item}`))),
-    ),
-  ]),
-);
+const fromSyllabus = (syllabus: Record<number, SocialChapter[]>): Record<number, TopicModule[]> =>
+  Object.fromEntries(
+    Object.entries(syllabus).map(([grade, chapters]) => [
+      Number(grade),
+      chapters.flatMap(([chapter, items]) =>
+        section(chapter, items.map(([item, icon, description]) => m(item, icon, description, `${chapter}: ${item}`))),
+      ),
+    ]),
+  );
+
+const SOCIAL_BY_GRADE = fromSyllabus(SOCIAL_SYLLABUS);
+// English (englishTopics.ts) is built the same way.
+const ENGLISH_BY_GRADE = fromSyllabus(ENGLISH_SYLLABUS);
+
+const ENGLISH_MODULES: TopicModule[] = [
+  m("Phonics", "🔤", "Letters and their sounds"),
+  m("Vocabulary", "📖", "New words and their meanings"),
+  m("Grammar", "🧩", "Nouns, verbs, tenses and more"),
+  m("Reading", "👀", "Stories, poems and passages"),
+  m("Writing", "✍️", "Sentences, paragraphs and letters"),
+  m("Speaking and Listening", "💬", "Talking and listening well"),
+];
+
+const ENGLISH_ALL_TOPICS: TopicModule = {
+  label: "All Topics (Mixed Review)",
+  icon: "📚",
+  description: "A mixed review covering every chapter above",
+  topic: "Mixed Review: Phonics, Vocabulary, Grammar, Reading, Writing, and Speaking and Listening",
+};
 
 // The chapters most grades build on, used when no grade is chosen.
 const SOCIAL_MODULES: TopicModule[] = [
@@ -351,9 +373,20 @@ const BY_GRADE: Record<Subject, Record<number, TopicModule[]>> = {
   Mathematics: MATH_BY_GRADE,
   Science: SCIENCE_BY_GRADE,
   "Social Studies": SOCIAL_BY_GRADE,
+  English: ENGLISH_BY_GRADE,
 };
-const MODULES: Record<Subject, TopicModule[]> = { Mathematics: MATH_MODULES, Science: SCIENCE_MODULES, "Social Studies": SOCIAL_MODULES };
-const ALL_TOPICS: Record<Subject, TopicModule> = { Mathematics: MATH_ALL_TOPICS, Science: SCIENCE_ALL_TOPICS, "Social Studies": SOCIAL_ALL_TOPICS };
+const MODULES: Record<Subject, TopicModule[]> = {
+  Mathematics: MATH_MODULES,
+  Science: SCIENCE_MODULES,
+  "Social Studies": SOCIAL_MODULES,
+  English: ENGLISH_MODULES,
+};
+const ALL_TOPICS: Record<Subject, TopicModule> = {
+  Mathematics: MATH_ALL_TOPICS,
+  Science: SCIENCE_ALL_TOPICS,
+  "Social Studies": SOCIAL_ALL_TOPICS,
+  English: ENGLISH_ALL_TOPICS,
+};
 
 export function getGradeTopicModules(subject: Subject, grade: number): TopicModule[] {
   return BY_GRADE[subject][grade] ?? getTopicModules(subject);
@@ -371,12 +404,13 @@ export function getAllTopicsModule(subject: Subject): TopicModule {
 // aren't in any list, so they count as Mathematics unless the test itself
 // recorded its subject.
 export function subjectForTopic(topic: string): Subject {
-  for (const subject of ["Social Studies", "Science", "Mathematics"] as Subject[]) {
+  for (const subject of ["English", "Social Studies", "Science", "Mathematics"] as Subject[]) {
     if (ALL_TOPICS[subject].topic === topic || MODULES[subject].some((m) => m.topic === topic)) return subject;
   }
   if (Object.values(MATH_BY_GRADE).some((list) => list.some((m) => m.topic === topic))) return "Mathematics";
   if (Object.values(SCIENCE_BY_GRADE).some((list) => list.some((m) => m.topic === topic))) return "Science";
   if (Object.values(SOCIAL_BY_GRADE).some((list) => list.some((m) => m.topic === topic))) return "Social Studies";
+  if (Object.values(ENGLISH_BY_GRADE).some((list) => list.some((m) => m.topic === topic))) return "English";
   return "Mathematics";
 }
 
@@ -385,5 +419,6 @@ export function displayTopic(topic: string): string {
   if (topic === MATH_ALL_TOPICS.topic) return "Mixed Review (Maths)";
   if (topic === SCIENCE_ALL_TOPICS.topic) return "Mixed Review (Science)";
   if (topic === SOCIAL_ALL_TOPICS.topic) return "Mixed Review (Social Studies)";
+  if (topic === ENGLISH_ALL_TOPICS.topic) return "Mixed Review (English)";
   return topic;
 }

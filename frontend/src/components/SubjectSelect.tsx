@@ -28,6 +28,13 @@ const SUBJECTS: Array<{ subject: Subject; icon: string; tagline: string; art: st
     art: ["🗺️", "🏛️", "🧭"],
     className: "from-amber-400 via-orange-500 to-red-500 shadow-orange-300/60",
   },
+  {
+    subject: "English",
+    icon: "📚",
+    tagline: "Phonics, words, grammar, reading and writing",
+    art: ["🔤", "✏️", "💬"],
+    className: "from-violet-500 via-purple-500 to-fuchsia-500 shadow-purple-300/60",
+  },
 ];
 
 export default function SubjectSelect({ onSelectSubject }: SubjectSelectProps) {
@@ -35,7 +42,7 @@ export default function SubjectSelect({ onSelectSubject }: SubjectSelectProps) {
     <div className="space-y-6">
       <section>
         <h1 className="mb-4 px-1 text-2xl font-semibold sm:text-3xl">Choose a subject</h1>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           {SUBJECTS.map((item) => (
             <button
               key={item.subject}

@@ -28,7 +28,7 @@ router = APIRouter()
 LESSONS_KEY = "admin:lessons"
 ASSIGNMENTS_KEY = "admin:assignments"
 HIDDEN_KEY = "admin:hidden-topics"
-SUBJECTS = {"Mathematics", "Science", "Social Studies"}
+SUBJECTS = {"Mathematics", "Science", "Social Studies", "English"}
 
 # One process serves the app, so a lock keeps read-modify-write updates of
 # these shared documents from overwriting each other.
@@ -110,7 +110,7 @@ class HiddenTopicsIn(BaseModel):
 
 def _check_subject(subject: str) -> None:
     if subject not in SUBJECTS:
-        raise HTTPException(status_code=400, detail="Subject must be Mathematics, Science or Social Studies.")
+        raise HTTPException(status_code=400, detail="Subject must be Mathematics, Science, Social Studies or English.")
 
 
 def _load(key: str, default):

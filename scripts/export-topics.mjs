@@ -12,7 +12,7 @@ new Function("module", "exports", "require", outputFiles[0].text)(mod, mod.expor
 const { GRADES, getGradeTopicModules } = mod.exports;
 
 const topics = [];
-for (const subject of ["Mathematics", "Science", "Social Studies"]) {
+for (const subject of ["Mathematics", "Science", "Social Studies", "English"]) {
   for (const grade of GRADES) {
     for (const m of getGradeTopicModules(subject, grade)) {
       topics.push({ subject, grade, topic: m.topic, label: m.label, group: m.group ?? null });

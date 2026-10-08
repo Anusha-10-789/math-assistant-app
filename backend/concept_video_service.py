@@ -41,13 +41,16 @@ Rules:
   2. The idea: explain the concept in small steps, one idea per beat, with the correct key words.
   3. Example: work through one concrete example step by step (for maths, real numbers and the working; for
      science, a real thing or process the child knows; for social studies, a real place, person, festival,
-     map or event in India the child can picture).
+     map or event in India the child can picture; for English, real words and sentences the child can read,
+     e.g. "cat", "a apple ✗ / an apple ✓").
   4. Recap: sum up the key points in two or three beats, then end with a short "Think about it" question for the child.
 - Use Indian names, places, food and money (rupees) where it helps. Facts about India (symbols, states,
   rivers, history, government) must be exactly right, and every community and religion treated with respect.
 - "say": simple words a child of that grade understands, under 20 words, friendly and encouraging. No markdown.
 - "items": 1 to {MAX_ITEMS} emoji that picture exactly what the sentence says. For maths you may use short tokens
-  such as "3", "+", "=", "½", "10 cm" alongside emoji. Never put words in items — show a river as 🏞️, not "river".
+  such as "3", "+", "=", "½", "10 cm" alongside emoji. For English you may use short letters, words or a very short
+  sentence (up to 4 words) in items, e.g. "Aa", "cat", "an apple", "She runs." — that is what the child is learning.
+  For every other subject never put words in items — show a river as 🏞️, not "river".
 - "motion": one of {", ".join(sorted(MOTIONS))} — pick the one that fits (fall for rain, rise for evaporation,
   grow for growth, push/pull for forces, chain for steps in order, pulse to highlight, float for calm scenes).
 - "caption": 1 to 3 words naming the idea in that beat.
@@ -61,13 +64,17 @@ class ConceptVideoError(Exception):
 # A plain word ("square", "river") isn't a picture; the player shows items as
 # big pictures, so only emoji and short maths tokens ("3", "+", "½") stay,
 # along with measurements such as "10 cm".
-def _picture_items(items) -> list[str]:
+def _picture_items(items, allow_words: bool = False) -> list[str]:
     kept = []
     for item in items or []:
         text = str(item).strip()
         if not text:
             continue
-        if re.fullmatch(r"\d+([.,]\d+)?\s?[A-Za-z]{1,3}", text) or not re.search(r"[A-Za-z]{3,}", text):
+        if allow_words:
+            # English: words are the content, but keep them short enough to show big.
+            if len(text) <= 24 and len(text.split()) <= 4:
+                kept.append(text)
+        elif re.fullmatch(r"\d+([.,]\d+)?\s?[A-Za-z]{1,3}", text) or not re.search(r"[A-Za-z]{3,}", text):
             kept.append(text)
     return kept[:MAX_ITEMS]
 
@@ -76,7 +83,7 @@ def _slug(text: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")[:50] or "topic"
 
 
-def _clean(raw: dict, topic: str, grade: int) -> dict:
+def _clean(raw: dict, topic: str, grade: int, subject: str = "") -> dict:
     """Validates Gemini's storyboard and converts it to the frontend's
     ConceptVideo shape; anything malformed is dropped rather than shown."""
     scenes = []
@@ -84,7 +91,7 @@ def _clean(raw: dict, topic: str, grade: int) -> dict:
         narration, frames = [], []
         for beat in (scene.get("beats") or [])[:MAX_BEATS]:
             say = str(beat.get("say", "")).strip()
-            items = _picture_items(beat.get("items"))
+            items = _picture_items(beat.get("items"), allow_words=subject == "English")
             if not say or not items:
                 continue
             motion = beat.get("motion") if beat.get("motion") in MOTIONS else "grow"
@@ -110,19 +117,19 @@ def _clean(raw: dict, topic: str, grade: int) -> dict:
     }
 
 
-async def get_concept_video(topic: str, grade: int) -> dict:
+async def get_concept_video(topic: str, grade: int, subject: str = "") -> dict:
     cache_key = f"concept-video:v{CACHE_VERSION}:{topic.strip().lower()}:g{grade}"
     cached = kv_store.get(cache_key)
     if cached:
         return cached
 
     client = gemini_service._get_client()
-    prompt = f"Topic: {topic}\nGrade: {grade}\nWrite the video storyboard JSON."
+    prompt = f"{'Subject: ' + subject + chr(10) if subject else ''}Topic: {topic}\nGrade: {grade}\nWrite the video storyboard JSON."
     last_error: Exception = ConceptVideoError("No response")
     for _ in range(gemini_service.MAX_PARSE_RETRIES + 1):
         response = await gemini_service._generate_with_retry(client, prompt, SYSTEM_PROMPT)
         try:
-            video = _clean(json.loads(response.text or ""), topic, grade)
+            video = _clean(json.loads(response.text or ""), topic, grade, subject)
             break
         except (json.JSONDecodeError, AttributeError, TypeError, ConceptVideoError) as exc:
             last_error = exc

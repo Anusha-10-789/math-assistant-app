@@ -31,7 +31,7 @@ _cache: dict[tuple[str, int], tuple[float, dict | None]] = {}
 
 # The subject word added to the search, so Science and Social Studies topics
 # don't come back as maths videos.
-SEARCH_WORD = {"Mathematics": "math", "Science": "science", "Social Studies": "social studies"}
+SEARCH_WORD = {"Mathematics": "math", "Science": "science", "Social Studies": "social studies", "English": "english grammar"}
 
 
 def _api_key() -> str:

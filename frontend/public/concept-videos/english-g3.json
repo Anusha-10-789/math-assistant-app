@@ -1,0 +1,8538 @@
+{
+ "Grammar: Pronouns": {
+  "id": "lib-english-g3-grammar-pronouns",
+  "topic": "Grammar: Pronouns",
+  "title": "Pronouns: Replacing Naming Words",
+  "icon": "👤",
+  "scenes": [
+   {
+    "title": "Meet Rohan and Friends",
+    "narration": [
+     "Look at Rohan eating a juicy mango in the park.",
+     "Rohan is happy because Rohan loves mangoes.",
+     "Saying Rohan again sounds a bit silly, doesn't it?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "🥭"
+       ],
+       "motion": "float",
+       "caption": "Rohan eats"
+      },
+      {
+       "items": [
+        "👦",
+        "😊"
+       ],
+       "motion": "pulse",
+       "caption": "Repeating names"
+      },
+      {
+       "items": [
+        "❓"
+       ],
+       "motion": "pulse",
+       "caption": "A better way"
+      }
+     ]
+    }
+   },
+   {
+    "title": "What are Pronouns?",
+    "narration": [
+     "A pronoun is a special word that replaces a noun.",
+     "Instead of Rohan, we can use the word He.",
+     "He is a pronoun, and it makes sentences flow better."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🔄",
+        "🔡"
+       ],
+       "motion": "chain",
+       "caption": "Replacing nouns"
+      },
+      {
+       "items": [
+        "👦",
+        "👉",
+        "He"
+       ],
+       "motion": "push",
+       "caption": "Using He"
+      },
+      {
+       "items": [
+        "✨",
+        "🔡"
+       ],
+       "motion": "rise",
+       "caption": "Flowing sentences"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Seeing Pronouns in Action",
+    "narration": [
+     "Priya has a red bag, so she carries it to school.",
+     "The dog is barking because it is hungry.",
+     "Rohan and Priya play, so they are best friends."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👧",
+        "🎒",
+        "she"
+       ],
+       "motion": "chain",
+       "caption": "Using She"
+      },
+      {
+       "items": [
+        "🐕",
+        "it"
+       ],
+       "motion": "pulse",
+       "caption": "Using It"
+      },
+      {
+       "items": [
+        "👦",
+        "👧",
+        "they"
+       ],
+       "motion": "push",
+       "caption": "Using They"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Quick Review",
+    "narration": [
+     "Use He for boys, She for girls, and It for objects.",
+     "Use They when you are talking about more than one person.",
+     "Think about it: What pronoun would you use for your teacher?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "👧",
+        "📦"
+       ],
+       "motion": "float",
+       "caption": "Pronoun rules"
+      },
+      {
+       "items": [
+        "👥",
+        "they"
+       ],
+       "motion": "rise",
+       "caption": "Using They"
+      },
+      {
+       "items": [
+        "👩‍🏫",
+        "❓"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Grammar: Nouns": {
+  "id": "lib-english-g3-grammar-nouns",
+  "topic": "Grammar: Nouns",
+  "title": "Nouns Are Naming Words",
+  "icon": "🏷️",
+  "scenes": [
+   {
+    "title": "Spotting Names Around You",
+    "narration": [
+     "Look around your room in Delhi, what do you see?",
+     "Every person, place, and thing has a special name.",
+     "These naming words are called nouns."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🛏️",
+        "🧸",
+        "📚"
+       ],
+       "motion": "pulse",
+       "caption": "Look around"
+      },
+      {
+       "items": [
+        "👦",
+        "🏠",
+        "⚽"
+       ],
+       "motion": "float",
+       "caption": "Naming words"
+      },
+      {
+       "items": [
+        "Noun",
+        "🏷️"
+       ],
+       "motion": "grow",
+       "caption": "What are nouns"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Types of Nouns",
+    "narration": [
+     "A noun can be a person like Aarav or a teacher.",
+     "It can be a place like a park or Mumbai.",
+     "It can even be a thing like a pen or a toy."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🧑‍🏫",
+        "👦"
+       ],
+       "motion": "chain",
+       "caption": "Person"
+      },
+      {
+       "items": [
+        "🌳",
+        "🏙️"
+       ],
+       "motion": "chain",
+       "caption": "Place"
+      },
+      {
+       "items": [
+        "🖊️",
+        "🧸"
+       ],
+       "motion": "chain",
+       "caption": "Thing"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Noun Hunt Example",
+    "narration": [
+     "Let us read this sentence together: Priya eats an apple.",
+     "Priya is the name of a girl, so it is a noun.",
+     "Apple is the name of a fruit, so it is also a noun."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "Priya",
+        "eats",
+        "apple"
+       ],
+       "motion": "pulse",
+       "caption": "Read sentence"
+      },
+      {
+       "items": [
+        "Priya",
+        "👧"
+       ],
+       "motion": "rise",
+       "caption": "Identify person"
+      },
+      {
+       "items": [
+        "🍎"
+       ],
+       "motion": "rise",
+       "caption": "Identify thing"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Quick Recap",
+    "narration": [
+     "Remember, nouns name people, places, and things.",
+     "They help us talk about everything in our world.",
+     "Can you find three nouns in your classroom right now?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👤",
+        "📍",
+        "📦"
+       ],
+       "motion": "float",
+       "caption": "Summary"
+      },
+      {
+       "items": [
+        "🌍",
+        "🗣️"
+       ],
+       "motion": "grow",
+       "caption": "Purpose"
+      },
+      {
+       "items": [
+        "❓",
+        "🏫"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Grammar: Articles": {
+  "id": "lib-english-g3-grammar-articles",
+  "topic": "Grammar: Articles",
+  "title": "A or An: The Mystery",
+  "icon": "🔡",
+  "scenes": [
+   {
+    "title": "Spotting Objects at Home",
+    "narration": [
+     "Look around your room at home. Do you see an apple or a book?",
+     "Why do we say an apple but a book? Let us find out.",
+     "The secret hides in the starting sound of the word."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍎",
+        "📖"
+       ],
+       "motion": "pulse",
+       "caption": "Identify items"
+      },
+      {
+       "items": [
+        "🍎",
+        "a",
+        "an"
+       ],
+       "motion": "float",
+       "caption": "The mystery"
+      },
+      {
+       "items": [
+        "👂",
+        "🔡"
+       ],
+       "motion": "push",
+       "caption": "Listen closely"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Vowel Team",
+    "narration": [
+     "Meet the vowels: A, E, I, O, and U.",
+     "If a word starts with a vowel sound, we use 'an'.",
+     "An orange and an umbrella start with these special sounds."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "Aa",
+        "Ee",
+        "Ii",
+        "Oo",
+        "Uu"
+       ],
+       "motion": "grow",
+       "caption": "The vowels"
+      },
+      {
+       "items": [
+        "an",
+        "🐘",
+        "🥚"
+       ],
+       "motion": "chain",
+       "caption": "Using an"
+      },
+      {
+       "items": [
+        "🍊",
+        "☂️"
+       ],
+       "motion": "rise",
+       "caption": "Vowel examples"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Consonant Rule",
+    "narration": [
+     "Other letters are consonants, like B, C, or D.",
+     "For words starting with a consonant, we use 'a'.",
+     "Like a ball or a car, we use 'a' here."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "Bb",
+        "Cc",
+        "Dd"
+       ],
+       "motion": "pulse",
+       "caption": "Consonants"
+      },
+      {
+       "items": [
+        "a",
+        "⚽",
+        "🚗"
+       ],
+       "motion": "chain",
+       "caption": "Using a"
+      },
+      {
+       "items": [
+        "a",
+        "⚽",
+        "🚗"
+       ],
+       "motion": "push",
+       "caption": "Consonant examples"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Quick Recap",
+    "narration": [
+     "Use 'an' before vowels and 'a' before consonants.",
+     "Practice makes perfect! Can you say an egg or a cat?",
+     "Think about it: would you say a ice cream or an ice cream?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "a",
+        "an",
+        "🔡"
+       ],
+       "motion": "float",
+       "caption": "Rule summary"
+      },
+      {
+       "items": [
+        "🥚",
+        "🐱"
+       ],
+       "motion": "pulse",
+       "caption": "Practice time"
+      },
+      {
+       "items": [
+        "🍦",
+        "?"
+       ],
+       "motion": "fall",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Grammar: Verbs": {
+  "id": "lib-english-g3-grammar-verbs",
+  "topic": "Grammar: Verbs",
+  "title": "Action Words Are Verbs",
+  "icon": "🏃",
+  "scenes": [
+   {
+    "title": "What Are You Doing?",
+    "narration": [
+     "Look at Rohan playing in the park today.",
+     "He runs, he kicks, and he jumps.",
+     "Do you know what these special words are called?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "⚽"
+       ],
+       "motion": "pulse",
+       "caption": "Rohan plays"
+      },
+      {
+       "items": [
+        "🏃",
+        "⚽",
+        "🤸"
+       ],
+       "motion": "push",
+       "caption": "Action words"
+      },
+      {
+       "items": [
+        "❓"
+       ],
+       "motion": "float",
+       "caption": "Find the verb"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Understanding Action Verbs",
+    "narration": [
+     "These words are called verbs, or action words.",
+     "A verb tells us what a person or thing does.",
+     "Without verbs, our sentences would have no life.",
+     "Every sentence needs at least one verb to be complete."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "v",
+        "e",
+        "r",
+        "b",
+        "s"
+       ],
+       "motion": "grow",
+       "caption": "Defining verbs"
+      },
+      {
+       "items": [
+        "👩‍🍳",
+        "🎨",
+        "📚"
+       ],
+       "motion": "chain",
+       "caption": "Doing words"
+      },
+      {
+       "items": [
+        "❌",
+        "💬"
+       ],
+       "motion": "fall",
+       "caption": "Sentence needs"
+      },
+      {
+       "items": [
+        "✅",
+        "📝"
+       ],
+       "motion": "rise",
+       "caption": "Complete sentence"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Spotting Verbs at Home",
+    "narration": [
+     "Let us look at Priya in her kitchen.",
+     "Priya eats a sweet mango.",
+     "She drinks a glass of cold milk.",
+     "She reads her storybook now."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👧",
+        "🏠"
+       ],
+       "motion": "float",
+       "caption": "Priya cooks"
+      },
+      {
+       "items": [
+        "eats",
+        "🥭"
+       ],
+       "motion": "pulse",
+       "caption": "Verb: eats"
+      },
+      {
+       "items": [
+        "drinks",
+        "🥛"
+       ],
+       "motion": "pulse",
+       "caption": "Verb: drinks"
+      },
+      {
+       "items": [
+        "reads",
+        "📖"
+       ],
+       "motion": "pulse",
+       "caption": "Verb: reads"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Quick Review",
+    "narration": [
+     "Verbs are words that show actions.",
+     "They tell us what someone is doing.",
+     "Think about it: what verbs can you find in your favorite book?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "✅"
+       ],
+       "motion": "pulse",
+       "caption": "Action words"
+      },
+      {
+       "items": [
+        "🏃",
+        "🏊",
+        "✍️"
+       ],
+       "motion": "chain",
+       "caption": "Showing action"
+      },
+      {
+       "items": [
+        "📖",
+        "❓"
+       ],
+       "motion": "float",
+       "caption": "Your turn"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Grammar: Adjectives": {
+  "id": "lib-english-g3-grammar-adjectives",
+  "topic": "Grammar: Adjectives",
+  "title": "Adjectives Make Stories Colorful",
+  "icon": "🎨",
+  "scenes": [
+   {
+    "title": "Spotting the Description",
+    "narration": [
+     "Have you ever wondered why some stories feel so bright and exciting?",
+     "It is because we use special words to describe people, places, and things.",
+     "These helper words are called adjectives."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📖",
+        "✨"
+       ],
+       "motion": "pulse",
+       "caption": "Exciting stories"
+      },
+      {
+       "items": [
+        "🧒",
+        "🏠",
+        "🍎"
+       ],
+       "motion": "float",
+       "caption": "Describing words"
+      },
+      {
+       "items": [
+        "✨",
+        "Aa"
+       ],
+       "motion": "rise",
+       "caption": "Meet Adjectives"
+      }
+     ]
+    }
+   },
+   {
+    "title": "How Adjectives Work",
+    "narration": [
+     "An adjective tells us more about a noun, like its size or color.",
+     "Instead of saying a dog, we say a fluffy dog.",
+     "The word fluffy is the adjective because it describes the dog."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📏",
+        "🎨"
+       ],
+       "motion": "chain",
+       "caption": "Size and color"
+      },
+      {
+       "items": [
+        "🐕",
+        "☁️"
+       ],
+       "motion": "grow",
+       "caption": "Adding detail"
+      },
+      {
+       "items": [
+        "fluffy",
+        "🐕"
+       ],
+       "motion": "pulse",
+       "caption": "The adjective"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Trip to the Market",
+    "narration": [
+     "Let us visit a busy market in Delhi to find adjectives.",
+     "Look, Rohan bought a juicy mango.",
+     "Juicy is the adjective describing the mango.",
+     "Next, he sees a tall man selling flowers.",
+     "Tall is the adjective describing the man."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "🛍️"
+       ],
+       "motion": "float",
+       "caption": "Delhi market"
+      },
+      {
+       "items": [
+        "🥭",
+        "😋"
+       ],
+       "motion": "rise",
+       "caption": "Juicy mango"
+      },
+      {
+       "items": [
+        "juicy",
+        "🥭"
+       ],
+       "motion": "pulse",
+       "caption": "Identifying adjectives"
+      },
+      {
+       "items": [
+        "👨",
+        "🌻"
+       ],
+       "motion": "grow",
+       "caption": "Tall man"
+      },
+      {
+       "items": [
+        "tall",
+        "👨"
+       ],
+       "motion": "pulse",
+       "caption": "Describing height"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Try It",
+    "narration": [
+     "Adjectives help us paint pictures with our words.",
+     "They describe nouns by telling us about color, size, or shape.",
+     "Think about it: What three adjectives would you use to describe your best friend?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🎨",
+        "🖌️"
+       ],
+       "motion": "float",
+       "caption": "Word pictures"
+      },
+      {
+       "items": [
+        "🔵",
+        "📏",
+        "⭕"
+       ],
+       "motion": "chain",
+       "caption": "Types of adjectives"
+      },
+      {
+       "items": [
+        "🧒",
+        "💬"
+       ],
+       "motion": "rise",
+       "caption": "Your turn"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Grammar: Adverbs": {
+  "id": "lib-english-g3-grammar-adverbs",
+  "topic": "Grammar: Adverbs",
+  "title": "Adverbs: Words That Describe Actions",
+  "icon": "🏃",
+  "scenes": [
+   {
+    "title": "Spotting Action Words",
+    "narration": [
+     "Look at Rohan playing in the park. What is he doing?",
+     "Rohan runs fast. Can you spot the action word?",
+     "Yes, runs is the action. But how does he run?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏃"
+       ],
+       "motion": "pulse",
+       "caption": "Action word"
+      },
+      {
+       "items": [
+        "🏃",
+        "fast"
+       ],
+       "motion": "push",
+       "caption": "Action word"
+      },
+      {
+       "items": [
+        "❓",
+        "🏃"
+       ],
+       "motion": "float",
+       "caption": "Asking how"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Introducing The Adverb",
+    "narration": [
+     "We use a special word to tell us more about the action.",
+     "This helper word is called an adverb.",
+     "Adverbs describe how, when, or where an action happens."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📖"
+       ],
+       "motion": "grow",
+       "caption": "New word"
+      },
+      {
+       "items": [
+        "Adverb"
+       ],
+       "motion": "pulse",
+       "caption": "Adverb name"
+      },
+      {
+       "items": [
+        "🏃",
+        "🕒",
+        "📍"
+       ],
+       "motion": "chain",
+       "caption": "What adverbs do"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Examples In Action",
+    "narration": [
+     "Look, Meera eats her lunch slowly.",
+     "The word slowly tells us how she eats.",
+     "Now, the teacher speaks loudly in class.",
+     "Loudly is the adverb because it describes the speaking."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👧",
+        "🥣",
+        "slowly"
+       ],
+       "motion": "float",
+       "caption": "Slowly"
+      },
+      {
+       "items": [
+        "slowly"
+       ],
+       "motion": "pulse",
+       "caption": "Describing eating"
+      },
+      {
+       "items": [
+        "👩‍🏫",
+        "loudly"
+       ],
+       "motion": "push",
+       "caption": "Loudly"
+      },
+      {
+       "items": [
+        "loudly"
+       ],
+       "motion": "rise",
+       "caption": "Describing speaking"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap And Practice",
+    "narration": [
+     "Adverbs give us more details about actions.",
+     "Many adverbs end with the letters L Y.",
+     "Think about it: How would you describe how you walk today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "✅"
+       ],
+       "motion": "chain",
+       "caption": "Summary"
+      },
+      {
+       "items": [
+        "L",
+        "Y"
+       ],
+       "motion": "grow",
+       "caption": "Look for LY"
+      },
+      {
+       "items": [
+        "🚶",
+        "❓"
+       ],
+       "motion": "float",
+       "caption": "Your turn"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Grammar: Singular and Plural": {
+  "id": "lib-english-g3-grammar-singular-and-plural",
+  "topic": "Grammar: Singular and Plural",
+  "title": "One or Many: Plural Fun",
+  "icon": "📚",
+  "scenes": [
+   {
+    "title": "The Mystery of Many Items",
+    "narration": [
+     "Have you noticed how we say apple for one, but apples for many?",
+     "When we have more than one thing, we usually add an s.",
+     "Let us see how to spot the difference in our bags."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍎"
+       ],
+       "motion": "pulse",
+       "caption": "Single Apple"
+      },
+      {
+       "items": [
+        "🍎",
+        "🍎",
+        "🍎"
+       ],
+       "motion": "grow",
+       "caption": "Many Apples"
+      },
+      {
+       "items": [
+        "🎒"
+       ],
+       "motion": "float",
+       "caption": "School Bag"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Learning the Simple Rules",
+    "narration": [
+     "Singular means there is only one of something.",
+     "Plural means there are two or more things together.",
+     "Adding an s makes most words turn from one to many.",
+     "Look at how a cup becomes cups."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "✏️"
+       ],
+       "motion": "pulse",
+       "caption": "One Pencil"
+      },
+      {
+       "items": [
+        "✏️",
+        "✏️",
+        "✏️"
+       ],
+       "motion": "chain",
+       "caption": "Multiple Pencils"
+      },
+      {
+       "items": [
+        "cat",
+        "cats"
+       ],
+       "motion": "grow",
+       "caption": "Add S"
+      },
+      {
+       "items": [
+        "cup",
+        "cups"
+       ],
+       "motion": "chain",
+       "caption": "Cup to Cups"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Examples From Your Classroom",
+    "narration": [
+     "Imagine you have one book on your desk.",
+     "Now, your friend brings three more books.",
+     "We write it as book plus s equals books.",
+     "See how easy it is to change the word?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📖"
+       ],
+       "motion": "float",
+       "caption": "One Book"
+      },
+      {
+       "items": [
+        "📖",
+        "📖",
+        "📖",
+        "📖"
+       ],
+       "motion": "push",
+       "caption": "Four Books"
+      },
+      {
+       "items": [
+        "book",
+        "+",
+        "s",
+        "=",
+        "books"
+       ],
+       "motion": "chain",
+       "caption": "Maths Grammar"
+      },
+      {
+       "items": [
+        "✅"
+       ],
+       "motion": "pulse",
+       "caption": "Correct Rule"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Quick Recap and Challenge",
+    "narration": [
+     "Singular is one, and plural is many things.",
+     "Most times, we just add an s at the end.",
+     "Think about it: how would you write the plural of pen?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "1",
+        "many"
+       ],
+       "motion": "pulse",
+       "caption": "Key Difference"
+      },
+      {
+       "items": [
+        "s"
+       ],
+       "motion": "grow",
+       "caption": "The S Rule"
+      },
+      {
+       "items": [
+        "pen",
+        "?"
+       ],
+       "motion": "float",
+       "caption": "Your Turn"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Grammar: Subject and Predicate": {
+  "id": "lib-english-g3-grammar-subject-and-predicate",
+  "topic": "Grammar: Subject and Predicate",
+  "title": "Who and What: Sentence Parts",
+  "icon": "📚",
+  "scenes": [
+   {
+    "title": "Meet the Sentence Parts",
+    "narration": [
+     "Have you ever wondered how we build a full sentence when we speak?",
+     "Every sentence has two main parts: a subject and a predicate.",
+     "Let us learn how these two pieces work together to share ideas."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "💬"
+       ],
+       "motion": "pulse",
+       "caption": "Building sentences"
+      },
+      {
+       "items": [
+        "🧩",
+        "🧩"
+       ],
+       "motion": "chain",
+       "caption": "Two parts"
+      },
+      {
+       "items": [
+        "💡"
+       ],
+       "motion": "rise",
+       "caption": "Learn together"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Subject and Predicate",
+    "narration": [
+     "The subject tells us who or what the sentence is about.",
+     "The predicate tells us what the subject is doing or being.",
+     "Together, they make a complete thought that everyone can understand."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👤",
+        "❓"
+       ],
+       "motion": "float",
+       "caption": "The subject"
+      },
+      {
+       "items": [
+        "🏃",
+        "✨"
+       ],
+       "motion": "push",
+       "caption": "The predicate"
+      },
+      {
+       "items": [
+        "✅"
+       ],
+       "motion": "chain",
+       "caption": "Complete sentence"
+      }
+     ]
+    }
+   },
+   {
+    "title": "See It in Action",
+    "narration": [
+     "Look at this sentence: Rohan eats a mango.",
+     "Rohan is the subject because he is the person doing the action.",
+     "Eats a mango is the predicate because it tells us his action."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "🥭"
+       ],
+       "motion": "pulse",
+       "caption": "Example sentence"
+      },
+      {
+       "items": [
+        "👦"
+       ],
+       "motion": "grow",
+       "caption": "The subject"
+      },
+      {
+       "items": [
+        "🍴",
+        "🥭"
+       ],
+       "motion": "push",
+       "caption": "The predicate"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Quick Recap",
+    "narration": [
+     "Remember, the subject is the who, and the predicate is the action.",
+     "Both parts are needed to make a perfect sentence every time.",
+     "Think about it: Can you name the subject in your own sentence?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👤",
+        "🏃"
+       ],
+       "motion": "pulse",
+       "caption": "Quick summary"
+      },
+      {
+       "items": [
+        "💯"
+       ],
+       "motion": "rise",
+       "caption": "Perfect sentence"
+      },
+      {
+       "items": [
+        "🤔",
+        "📝"
+       ],
+       "motion": "float",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Grammar: Conjunctions": {
+  "id": "lib-english-g3-grammar-conjunctions",
+  "topic": "Grammar: Conjunctions",
+  "title": "Connecting Words: Awesome Conjunctions",
+  "icon": "🔗",
+  "scenes": [
+   {
+    "title": "The Magic Glue",
+    "narration": [
+     "Have you ever wanted to join two short sentences into one big, fun sentence?",
+     "We use special connecting words called conjunctions to link our thoughts together.",
+     "Let's see how words like and, but, and or help us speak better."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "🍎",
+        "🍐"
+       ],
+       "motion": "pulse",
+       "caption": "Joining ideas"
+      },
+      {
+       "items": [
+        "🔗",
+        "🔤"
+       ],
+       "motion": "chain",
+       "caption": "Magic glue"
+      },
+      {
+       "items": [
+        "and",
+        "but",
+        "or"
+       ],
+       "motion": "float",
+       "caption": "Key words"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Using And, But, Or",
+    "narration": [
+     "We use and to add things together, like saying I like cricket and football.",
+     "We use but to show a difference, like saying it is sunny but very cold.",
+     "We use or to show a choice, like asking do you want milk or tea?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏏",
+        "⚽",
+        "and"
+       ],
+       "motion": "chain",
+       "caption": "Adding things"
+      },
+      {
+       "items": [
+        "☀️",
+        "🥶",
+        "but"
+       ],
+       "motion": "push",
+       "caption": "Showing contrast"
+      },
+      {
+       "items": [
+        "🥛",
+        "☕",
+        "or"
+       ],
+       "motion": "pulse",
+       "caption": "Making choices"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Let Us Practice",
+    "narration": [
+     "Look at Rohan. He likes mangoes. He likes bananas too.",
+     "We can combine them to say Rohan likes mangoes and bananas.",
+     "Now, imagine it is raining. We want to go to the park.",
+     "We say it is raining, but we want to go to the park."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🥭",
+        "🍌"
+       ],
+       "motion": "rise",
+       "caption": "Two sentences"
+      },
+      {
+       "items": [
+        "🥭",
+        "and",
+        "🍌"
+       ],
+       "motion": "chain",
+       "caption": "Joined sentence"
+      },
+      {
+       "items": [
+        "🌧️",
+        "🌳"
+       ],
+       "motion": "fall",
+       "caption": "The problem"
+      },
+      {
+       "items": [
+        "🌧️",
+        "but",
+        "🌳"
+       ],
+       "motion": "push",
+       "caption": "The solution"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Quick Recap",
+    "narration": [
+     "Conjunctions like and, but, and or are tools to make longer, smoother sentences.",
+     "Practice using these words when you write your next school story.",
+     "Think about it: Can you write one sentence about your favorite meal using the word and?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "and",
+        "but",
+        "or"
+       ],
+       "motion": "float",
+       "caption": "Summary"
+      },
+      {
+       "items": [
+        "📝",
+        "✨"
+       ],
+       "motion": "grow",
+       "caption": "Practice more"
+      },
+      {
+       "items": [
+        "🥘",
+        "?"
+       ],
+       "motion": "pulse",
+       "caption": "Your turn"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Grammar: Prepositions": {
+  "id": "lib-english-g3-grammar-prepositions",
+  "topic": "Grammar: Prepositions",
+  "title": "Where Is The Cricket Ball?",
+  "icon": "🏏",
+  "scenes": [
+   {
+    "title": "Finding Things Around Us",
+    "narration": [
+     "Have you ever lost your favorite toy and had to hunt for it?",
+     "Today we will learn how to tell exactly where things are hiding.",
+     "These helper words are called prepositions."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🧸",
+        "🔍"
+       ],
+       "motion": "pulse",
+       "caption": "Lost toy"
+      },
+      {
+       "items": [
+        "🏠",
+        "📍"
+       ],
+       "motion": "float",
+       "caption": "Learning location"
+      },
+      {
+       "items": [
+        "📖",
+        "✨"
+       ],
+       "motion": "grow",
+       "caption": "Prepositions"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Understanding Preposition Positions",
+    "narration": [
+     "A preposition shows the position of a noun.",
+     "Use the word in when something is inside a space.",
+     "Use on when it is sitting right on top.",
+     "Use under if it is hidden below something else."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📍",
+        "📦"
+       ],
+       "motion": "chain",
+       "caption": "Position words"
+      },
+      {
+       "items": [
+        "🍎",
+        "🧺"
+       ],
+       "motion": "push",
+       "caption": "In"
+      },
+      {
+       "items": [
+        "📚",
+        "🪑"
+       ],
+       "motion": "rise",
+       "caption": "On"
+      },
+      {
+       "items": [
+        "🐱",
+        "🛋️"
+       ],
+       "motion": "fall",
+       "caption": "Under"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Cricket Match Example",
+    "narration": [
+     "Rohan is playing cricket in his garden.",
+     "The cricket ball is in the red bag.",
+     "Now, the ball is on the wooden bench.",
+     "Oh no, the ball is under the mango tree!"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏏",
+        "👦"
+       ],
+       "motion": "float",
+       "caption": "Rohan plays"
+      },
+      {
+       "items": [
+        "🥎",
+        "🎒"
+       ],
+       "motion": "push",
+       "caption": "In bag"
+      },
+      {
+       "items": [
+        "🥎",
+        "🪑"
+       ],
+       "motion": "rise",
+       "caption": "On bench"
+      },
+      {
+       "items": [
+        "🥎",
+        "🌳"
+       ],
+       "motion": "fall",
+       "caption": "Under tree"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Practice",
+    "narration": [
+     "Prepositions like in, on, and under tell us where things are.",
+     "They help us describe the world clearly.",
+     "Think about it: Where is your school bag right now?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📍",
+        "📝"
+       ],
+       "motion": "chain",
+       "caption": "Quick recap"
+      },
+      {
+       "items": [
+        "🌍",
+        "🗣️"
+       ],
+       "motion": "grow",
+       "caption": "Clear speech"
+      },
+      {
+       "items": [
+        "🎒",
+        "❓"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Grammar: Simple Future": {
+  "id": "lib-english-g3-grammar-simple-future",
+  "topic": "Grammar: Simple Future",
+  "title": "Planning Your Future Fun",
+  "icon": "🚀",
+  "scenes": [
+   {
+    "title": "What Will You Do?",
+    "narration": [
+     "Look at your calendar, what will you do tomorrow?",
+     "We use special words to talk about things that have not happened yet.",
+     "Let us learn how to use will to talk about the future."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📅"
+       ],
+       "motion": "pulse",
+       "caption": "Future plans"
+      },
+      {
+       "items": [
+        "⏳"
+       ],
+       "motion": "float",
+       "caption": "Not yet"
+      },
+      {
+       "items": [
+        "✍️"
+       ],
+       "motion": "grow",
+       "caption": "Learning will"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Using The Word Will",
+    "narration": [
+     "To talk about the future, we just add the word will.",
+     "We put will before the action word, like this.",
+     "So, instead of I run, we say I will run.",
+     "It works the same for he, she, they, or Rohan."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "will"
+       ],
+       "motion": "pulse",
+       "caption": "Add will"
+      },
+      {
+       "items": [
+        "will",
+        "run"
+       ],
+       "motion": "chain",
+       "caption": "Action word"
+      },
+      {
+       "items": [
+        "I",
+        "will",
+        "run"
+       ],
+       "motion": "push",
+       "caption": "Future action"
+      },
+      {
+       "items": [
+        "He",
+        "will",
+        "eat"
+       ],
+       "motion": "float",
+       "caption": "Works for all"
+      }
+     ]
+    }
+   },
+   {
+    "title": "An Example At School",
+    "narration": [
+     "Imagine Rohan is at his desk in class.",
+     "Rohan has a book in his hand today.",
+     "Tomorrow, Rohan will read a new story.",
+     "See how we added will before the word read?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦"
+       ],
+       "motion": "float",
+       "caption": "Rohan"
+      },
+      {
+       "items": [
+        "📖"
+       ],
+       "motion": "pulse",
+       "caption": "Reading now"
+      },
+      {
+       "items": [
+        "Rohan",
+        "will",
+        "read"
+       ],
+       "motion": "chain",
+       "caption": "Future reading"
+      },
+      {
+       "items": [
+        "will",
+        "read"
+       ],
+       "motion": "pulse",
+       "caption": "Grammar rule"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Time To Recap",
+    "narration": [
+     "Use will to talk about things happening later.",
+     "Place will right before the action word.",
+     "Think about it: what will you eat for dinner tonight?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "will"
+       ],
+       "motion": "pulse",
+       "caption": "Future tense"
+      },
+      {
+       "items": [
+        "will",
+        "play"
+       ],
+       "motion": "chain",
+       "caption": "Correct order"
+      },
+      {
+       "items": [
+        "🍽️"
+       ],
+       "motion": "float",
+       "caption": "Your turn"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Grammar: Simple Present": {
+  "id": "lib-english-g3-grammar-simple-present",
+  "topic": "Grammar: Simple Present",
+  "title": "Talking About Daily Habits",
+  "icon": "☀️",
+  "scenes": [
+   {
+    "title": "What do you do daily?",
+    "narration": [
+     "Do you brush your teeth every single morning?",
+     "We use the simple present tense to talk about things we do every day.",
+     "Let us learn how to speak about our routines correctly."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🪥",
+        "🦷"
+       ],
+       "motion": "pulse",
+       "caption": "Daily habits"
+      },
+      {
+       "items": [
+        "📅"
+       ],
+       "motion": "float",
+       "caption": "Simple present"
+      },
+      {
+       "items": [
+        "🗣️",
+        "📖"
+       ],
+       "motion": "grow",
+       "caption": "Learning grammar"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Using the right verbs",
+    "narration": [
+     "For I, you, we, and they, just use the verb word.",
+     "Example: I eat a tasty dosa for breakfast.",
+     "When we say he, she, or it, we add an s to the verb.",
+     "Example: She eats a healthy apple every morning."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "I",
+        "we",
+        "run"
+       ],
+       "motion": "chain",
+       "caption": "Simple rule"
+      },
+      {
+       "items": [
+        "I",
+        "eat",
+        "dosa"
+       ],
+       "motion": "pulse",
+       "caption": "Eating dosa"
+      },
+      {
+       "items": [
+        "he",
+        "she",
+        "s"
+       ],
+       "motion": "push",
+       "caption": "Adding s"
+      },
+      {
+       "items": [
+        "she",
+        "eats",
+        "an apple"
+       ],
+       "motion": "grow",
+       "caption": "Adding s"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A trip to the park",
+    "narration": [
+     "Look at Rohan playing in the park.",
+     "Rohan plays with his red ball.",
+     "His friends run fast on the grass."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "Rohan",
+        "⚽"
+       ],
+       "motion": "float",
+       "caption": "Rohan plays"
+      },
+      {
+       "items": [
+        "Rohan",
+        "plays",
+        "⚽"
+       ],
+       "motion": "push",
+       "caption": "Action verb"
+      },
+      {
+       "items": [
+        "friends",
+        "run"
+       ],
+       "motion": "rise",
+       "caption": "Group action"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Quick recap and challenge",
+    "narration": [
+     "Remember, add s for he, she, and it.",
+     "Keep verbs plain for I, you, we, and they.",
+     "Think about it: what is one thing your best friend does every day?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "he",
+        "she",
+        "s"
+       ],
+       "motion": "pulse",
+       "caption": "Key rule"
+      },
+      {
+       "items": [
+        "I",
+        "they",
+        "jump"
+       ],
+       "motion": "float",
+       "caption": "Verb usage"
+      },
+      {
+       "items": [
+        "🤔",
+        "friend"
+       ],
+       "motion": "grow",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Grammar: Present Continuous": {
+  "id": "lib-english-g3-grammar-present-continuous",
+  "topic": "Grammar: Present Continuous",
+  "title": "What Are You Doing Now?",
+  "icon": "🏃",
+  "scenes": [
+   {
+    "title": "The Big Question",
+    "narration": [
+     "Look at Rohan playing in the park.",
+     "Have you ever wondered how to describe things happening right this second?",
+     "Today we learn how to say what is happening now."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "⚽"
+       ],
+       "motion": "pulse",
+       "caption": "Rohan plays"
+      },
+      {
+       "items": [
+        "❓",
+        "🕒"
+       ],
+       "motion": "pulse",
+       "caption": "Action now"
+      },
+      {
+       "items": [
+        "📚",
+        "✨"
+       ],
+       "motion": "grow",
+       "caption": "Learning grammar"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Secret Formula",
+    "narration": [
+     "To show action now, use a helping verb like am, is, or are.",
+     "Then, take your action word and add i-n-g to the end.",
+     "Like jump becomes jumping, or play becomes playing."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "am",
+        "is",
+        "are"
+       ],
+       "motion": "chain",
+       "caption": "Helping verbs"
+      },
+      {
+       "items": [
+        "jump",
+        "+",
+        "ing"
+       ],
+       "motion": "chain",
+       "caption": "Add ing"
+      },
+      {
+       "items": [
+        "jumping",
+        "playing"
+       ],
+       "motion": "grow",
+       "caption": "Action words"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Using It Together",
+    "narration": [
+     "If I am alone, I say I am reading a book.",
+     "If Meera is near, we say she is eating a mango.",
+     "When they are in a group, we say they are running fast."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "I",
+        "am",
+        "reading"
+       ],
+       "motion": "float",
+       "caption": "I am reading"
+      },
+      {
+       "items": [
+        "She",
+        "is",
+        "eating",
+        "🥭"
+       ],
+       "motion": "float",
+       "caption": "She is eating"
+      },
+      {
+       "items": [
+        "They",
+        "are",
+        "running"
+       ],
+       "motion": "push",
+       "caption": "They are running"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Quick Recap Time",
+    "narration": [
+     "Remember, use am, is, or are plus an action word with i-n-g.",
+     "This tells us exactly what is happening at this very moment.",
+     "Think about it: what are your friends doing in the classroom right now?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "am/is/are",
+        "+",
+        "verb-ing"
+       ],
+       "motion": "pulse",
+       "caption": "Grammar rule"
+      },
+      {
+       "items": [
+        "🕒",
+        "✅"
+       ],
+       "motion": "pulse",
+       "caption": "Action now"
+      },
+      {
+       "items": [
+        "🏫",
+        "🤔"
+       ],
+       "motion": "rise",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Grammar: Simple Past": {
+  "id": "lib-english-g3-grammar-simple-past",
+  "topic": "Grammar: Simple Past",
+  "title": "Learning Simple Past Tense",
+  "icon": "⏳",
+  "scenes": [
+   {
+    "title": "What Happened Yesterday?",
+    "narration": [
+     "Rohan played cricket in the park yesterday.",
+     "Do you know how to talk about things that are already done?",
+     "We use the simple past tense for completed actions."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏏",
+        "🏃"
+       ],
+       "motion": "pulse",
+       "caption": "Yesterday activity"
+      },
+      {
+       "items": [
+        "❓"
+       ],
+       "motion": "float",
+       "caption": "Past actions"
+      },
+      {
+       "items": [
+        "⏰"
+       ],
+       "motion": "chain",
+       "caption": "Past tense rule"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Adding ED to Verbs",
+    "narration": [
+     "Most verbs change by adding ed at the end.",
+     "Walk becomes walked, like Meera walked to school.",
+     "Jump becomes jumped, like the cat jumped high."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "+ed"
+       ],
+       "motion": "push",
+       "caption": "Add ed"
+      },
+      {
+       "items": [
+        "🚶",
+        "🏫"
+       ],
+       "motion": "rise",
+       "caption": "Walk to walked"
+      },
+      {
+       "items": [
+        "🐱",
+        "🔝"
+       ],
+       "motion": "rise",
+       "caption": "Jump to jumped"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Practicing With Sentences",
+    "narration": [
+     "Let us try a sentence with play.",
+     "I play with my toys becomes I played with my toys.",
+     "The action is finished, so we use played."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "play"
+       ],
+       "motion": "pulse",
+       "caption": "Word play"
+      },
+      {
+       "items": [
+        "🧸",
+        "played"
+       ],
+       "motion": "chain",
+       "caption": "Past sentence"
+      },
+      {
+       "items": [
+        "✅"
+       ],
+       "motion": "push",
+       "caption": "Finished action"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Quick Review",
+    "narration": [
+     "Remember, add ed to show the past.",
+     "It tells us the action happened before now.",
+     "Think about it: what game did you play yesterday?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "+ed"
+       ],
+       "motion": "pulse",
+       "caption": "Key rule"
+      },
+      {
+       "items": [
+        "📅"
+       ],
+       "motion": "float",
+       "caption": "Time frame"
+      },
+      {
+       "items": [
+        "🤔",
+        "🏏"
+       ],
+       "motion": "rise",
+       "caption": "Your turn"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Vocabulary: Synonyms": {
+  "id": "lib-english-g3-vocabulary-synonyms",
+  "topic": "Vocabulary: Synonyms",
+  "title": "Words That Mean The Same",
+  "icon": "📝",
+  "scenes": [
+   {
+    "title": "Spot the Hidden Twins",
+    "narration": [
+     "Look at this happy boy named Rohan playing in the park.",
+     "Rohan says he is glad to be here today.",
+     "Did you know glad means the exact same thing as happy?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "🌳"
+       ],
+       "motion": "float",
+       "caption": "Meet Rohan"
+      },
+      {
+       "items": [
+        "😊",
+        "glad"
+       ],
+       "motion": "pulse",
+       "caption": "Feeling glad"
+      },
+      {
+       "items": [
+        "😊",
+        "=",
+        "glad",
+        "happy"
+       ],
+       "motion": "chain",
+       "caption": "Word twins"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Learning About Synonyms",
+    "narration": [
+     "Words that have the same meaning are called synonyms.",
+     "Synonyms are like different names for the same toy.",
+     "Using them makes our stories much more exciting to read."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📖",
+        "synonyms"
+       ],
+       "motion": "pulse",
+       "caption": "What are synonyms"
+      },
+      {
+       "items": [
+        "🧸",
+        "🎮",
+        "toy"
+       ],
+       "motion": "push",
+       "caption": "Different names"
+      },
+      {
+       "items": [
+        "✨",
+        "📚"
+       ],
+       "motion": "grow",
+       "caption": "Better writing"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Examples in Our Day",
+    "narration": [
+     "If a dosa is very big, you can say it is large.",
+     "If your bag is fast, you can call it quick.",
+     "If a kitten is tiny, you can say it is small."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🥘",
+        "big",
+        "large"
+       ],
+       "motion": "grow",
+       "caption": "Big and large"
+      },
+      {
+       "items": [
+        "🎒",
+        "fast",
+        "quick"
+       ],
+       "motion": "push",
+       "caption": "Fast and quick"
+      },
+      {
+       "items": [
+        "🐱",
+        "tiny",
+        "small"
+       ],
+       "motion": "float",
+       "caption": "Tiny and small"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Quick Recap",
+    "narration": [
+     "Synonyms are different words that share the same meaning.",
+     "They help us describe things in brand new ways.",
+     "Think about it: Can you find a synonym for the word cold?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📝",
+        "same",
+        "meaning"
+       ],
+       "motion": "pulse",
+       "caption": "Meaning match"
+      },
+      {
+       "items": [
+        "🌟",
+        "new",
+        "words"
+       ],
+       "motion": "rise",
+       "caption": "New descriptions"
+      },
+      {
+       "items": [
+        "❄️",
+        "cold",
+        "?"
+       ],
+       "motion": "fall",
+       "caption": "Your turn"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Grammar: Question Words": {
+  "id": "lib-english-g3-grammar-question-words",
+  "topic": "Grammar: Question Words",
+  "title": "Learning Our Question Words",
+  "icon": "❓",
+  "scenes": [
+   {
+    "title": "The Curious Detective",
+    "narration": [
+     "Have you ever wondered how to find out something new?",
+     "We use special words to ask questions about our world.",
+     "Let's discover the magic of words like Who, What, and Where."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🕵️",
+        "🔎"
+       ],
+       "motion": "pulse",
+       "caption": "Stay curious"
+      },
+      {
+       "items": [
+        "❓",
+        "🌎"
+       ],
+       "motion": "float",
+       "caption": "Question words"
+      },
+      {
+       "items": [
+        "Who",
+        "What",
+        "Where"
+       ],
+       "motion": "chain",
+       "caption": "Meet the words"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Three Important Words",
+    "narration": [
+     "We use Who to ask about a person.",
+     "We use What to ask about a thing or action.",
+     "We use Where to ask about a place."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "Who",
+        "👤"
+       ],
+       "motion": "pulse",
+       "caption": "Who is person"
+      },
+      {
+       "items": [
+        "What",
+        "🍎",
+        "🏃"
+       ],
+       "motion": "pulse",
+       "caption": "What is thing"
+      },
+      {
+       "items": [
+        "Where",
+        "🏫"
+       ],
+       "motion": "pulse",
+       "caption": "Where is place"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Day With Rohan",
+    "narration": [
+     "Who is eating a mango? It is Rohan.",
+     "What is Rohan holding? A tasty yellow mango.",
+     "Where is Rohan sitting? Under a tree in the park."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "Who",
+        "🥭",
+        "👦"
+       ],
+       "motion": "chain",
+       "caption": "Who is Rohan"
+      },
+      {
+       "items": [
+        "What",
+        "🥭"
+       ],
+       "motion": "chain",
+       "caption": "What is mango"
+      },
+      {
+       "items": [
+        "Where",
+        "🌳",
+        "⛲"
+       ],
+       "motion": "chain",
+       "caption": "Where is park"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Quick Recap",
+    "narration": [
+     "Who asks for people, What for things, and Where for places.",
+     "Using these words helps you become a great detective.",
+     "Think about it: What question would you ask your best friend today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "Who",
+        "What",
+        "Where"
+       ],
+       "motion": "float",
+       "caption": "Remember these"
+      },
+      {
+       "items": [
+        "🕵️",
+        "📖"
+       ],
+       "motion": "grow",
+       "caption": "Great job"
+      },
+      {
+       "items": [
+        "💭",
+        "💬"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Grammar: Punctuation": {
+  "id": "lib-english-g3-grammar-punctuation",
+  "topic": "Grammar: Punctuation",
+  "title": "Punctuation Marks Save The Day",
+  "icon": "✍️",
+  "scenes": [
+   {
+    "title": "The Messy Story",
+    "narration": [
+     "Have you ever read a story with no dots or commas?",
+     "It looks like a big jumble of words, doesn't it?",
+     "Today, let's learn how punctuation fixes our sentences."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📖",
+        "❌"
+       ],
+       "motion": "pulse",
+       "caption": "Confusing reading"
+      },
+      {
+       "items": [
+        "🔡",
+        "🌀"
+       ],
+       "motion": "fall",
+       "caption": "Jumbled words"
+      },
+      {
+       "items": [
+        "✨",
+        "✅"
+       ],
+       "motion": "rise",
+       "caption": "Punctuation magic"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Meet The Punctuators",
+    "narration": [
+     "A full stop ends a sentence like a gentle break.",
+     "A comma lets you take a tiny breath while reading.",
+     "A question mark asks something, like where are you going?",
+     "An exclamation mark shows strong feelings like excitement!"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "."
+       ],
+       "motion": "push",
+       "caption": "Full stop"
+      },
+      {
+       "items": [
+        ","
+       ],
+       "motion": "float",
+       "caption": "Comma breath"
+      },
+      {
+       "items": [
+        "?"
+       ],
+       "motion": "rise",
+       "caption": "Question mark"
+      },
+      {
+       "items": [
+        "!"
+       ],
+       "motion": "pulse",
+       "caption": "Exclamation mark"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Rahul at the Market",
+    "narration": [
+     "Rahul went to the market to buy apples bananas and milk.",
+     "Without commas, it is hard to tell what he bought.",
+     "Now we add them: Rahul bought apples, bananas, and milk.",
+     "See how the commas separate the items clearly?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍎",
+        "🍌",
+        "🥛"
+       ],
+       "motion": "chain",
+       "caption": "The list"
+      },
+      {
+       "items": [
+        "🍎",
+        "🍌",
+        "🥛",
+        "❓"
+       ],
+       "motion": "fall",
+       "caption": "Missing commas"
+      },
+      {
+       "items": [
+        "🍎",
+        ",",
+        "🍌",
+        ",",
+        "🥛",
+        "."
+       ],
+       "motion": "push",
+       "caption": "Fixed sentence"
+      },
+      {
+       "items": [
+        "✅"
+       ],
+       "motion": "pulse",
+       "caption": "Correct list"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Wrap Up and Review",
+    "narration": [
+     "Full stops stop, commas pause, and question marks ask.",
+     "Exclamation marks show big feelings, like Yay or Oh!",
+     "Think about it: how would your sentence change if you forgot the period?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        ".",
+        ",",
+        "?"
+       ],
+       "motion": "chain",
+       "caption": "Quick summary"
+      },
+      {
+       "items": [
+        "!"
+       ],
+       "motion": "rise",
+       "caption": "Showing feelings"
+      },
+      {
+       "items": [
+        "🤔",
+        "✍️"
+       ],
+       "motion": "float",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Grammar: Capitalization": {
+  "id": "lib-english-g3-grammar-capitalization",
+  "topic": "Grammar: Capitalization",
+  "title": "The Magic of Capital Letters",
+  "icon": "✏️",
+  "scenes": [
+   {
+    "title": "Spotting the Hidden Rules",
+    "narration": [
+     "Have you noticed some letters in books are taller than others?",
+     "These big letters are called capital letters.",
+     "Do you know when we must use them?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "a",
+        "A",
+        "b",
+        "B"
+       ],
+       "motion": "pulse",
+       "caption": "Big letters"
+      },
+      {
+       "items": [
+        "A",
+        "B",
+        "C"
+       ],
+       "motion": "grow",
+       "caption": "Capital letters"
+      },
+      {
+       "items": [
+        "?",
+        "✏️"
+       ],
+       "motion": "float",
+       "caption": "The puzzle"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Starting Every Sentence Right",
+    "narration": [
+     "Every new sentence must begin with a capital letter.",
+     "Look at this: The cat sits.",
+     "The T is big, just like a starter should be."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "T",
+        "h",
+        "e"
+       ],
+       "motion": "chain",
+       "caption": "Start sentences"
+      },
+      {
+       "items": [
+        "T",
+        "cat",
+        "🪑"
+       ],
+       "motion": "push",
+       "caption": "Example sentence"
+      },
+      {
+       "items": [
+        "T"
+       ],
+       "motion": "pulse",
+       "caption": "Capital start"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Names Need Big Letters Too",
+    "narration": [
+     "Names of people always get a capital letter at the start.",
+     "If you write about Rohan or Priya, use a capital letter.",
+     "Even special places like Delhi need one too.",
+     "It shows they are very important words."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "A",
+        "r",
+        "u",
+        "n"
+       ],
+       "motion": "chain",
+       "caption": "Proper nouns"
+      },
+      {
+       "items": [
+        "R",
+        "P"
+       ],
+       "motion": "rise",
+       "caption": "Names"
+      },
+      {
+       "items": [
+        "D",
+        "e",
+        "l",
+        "h",
+        "i"
+       ],
+       "motion": "grow",
+       "caption": "Places"
+      },
+      {
+       "items": [
+        "⭐",
+        "✨"
+       ],
+       "motion": "float",
+       "caption": "Important words"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Time to Remember",
+    "narration": [
+     "Always use capitals for the start of sentences and names.",
+     "They help our writing look neat and easy to read.",
+     "Can you find a name in your book that needs a capital letter?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📝",
+        "✅"
+       ],
+       "motion": "chain",
+       "caption": "Summary"
+      },
+      {
+       "items": [
+        "📖",
+        "😊"
+       ],
+       "motion": "pulse",
+       "caption": "Neat writing"
+      },
+      {
+       "items": [
+        "🔍",
+        "📚"
+       ],
+       "motion": "push",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Vocabulary: Prefixes": {
+  "id": "lib-english-g3-vocabulary-prefixes",
+  "topic": "Vocabulary: Prefixes",
+  "title": "Unlocking Words With Prefixes",
+  "icon": "🧩",
+  "scenes": [
+   {
+    "title": "What Are Prefixes",
+    "narration": [
+     "Have you ever seen the word happy turn into unhappy?",
+     "Adding letters to the front changes a word's meaning.",
+     "These helper letters are called prefixes."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "😊",
+        "☹️"
+       ],
+       "motion": "pulse",
+       "caption": "Happy Unhappy"
+      },
+      {
+       "items": [
+        "🔤",
+        "➡️",
+        "word"
+       ],
+       "motion": "push",
+       "caption": "Changing Meanings"
+      },
+      {
+       "items": [
+        "🧩",
+        "prefix"
+       ],
+       "motion": "float",
+       "caption": "Meet Prefixes"
+      }
+     ]
+    }
+   },
+   {
+    "title": "How Prefixes Work",
+    "narration": [
+     "A prefix is a little piece added to the start.",
+     "It transforms the base word into something new.",
+     "It is like putting a hat on a word."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "un-",
+        "do"
+       ],
+       "motion": "chain",
+       "caption": "Start Pieces"
+      },
+      {
+       "items": [
+        "re-",
+        "play"
+       ],
+       "motion": "grow",
+       "caption": "New Words"
+      },
+      {
+       "items": [
+        "🎩",
+        "word"
+       ],
+       "motion": "rise",
+       "caption": "Word Hats"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Examples In Action",
+    "narration": [
+     "Take the word tie and add un- to make untie.",
+     "Take the word view and add re- to make review.",
+     "Take the word happy and add un- to make unhappy."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "un-",
+        "tie"
+       ],
+       "motion": "pull",
+       "caption": "Untie"
+      },
+      {
+       "items": [
+        "re-",
+        "view"
+       ],
+       "motion": "pulse",
+       "caption": "Review"
+      },
+      {
+       "items": [
+        "un-",
+        "happy"
+       ],
+       "motion": "fall",
+       "caption": "Unhappy"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap And Challenge",
+    "narration": [
+     "Prefixes go at the front to change meaning.",
+     "They help us build many more words easily.",
+     "Think about it, what happens if you add un- to kind?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "⬅️",
+        "🔤"
+       ],
+       "motion": "float",
+       "caption": "Front Addition"
+      },
+      {
+       "items": [
+        "🧱",
+        "📈"
+       ],
+       "motion": "grow",
+       "caption": "Building Words"
+      },
+      {
+       "items": [
+        "un-",
+        "kind",
+        "?"
+       ],
+       "motion": "pulse",
+       "caption": "Your Turn"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Vocabulary: Antonyms": {
+  "id": "lib-english-g3-vocabulary-antonyms",
+  "topic": "Vocabulary: Antonyms",
+  "title": "Learning All About Antonyms",
+  "icon": "🔄",
+  "scenes": [
+   {
+    "title": "What Are Opposites",
+    "narration": [
+     "Look at your tall school building and the tiny ants on the ground.",
+     "Tall and tiny are opposites, which we call antonyms.",
+     "Antonyms are words that have the opposite meaning."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏫",
+        "🐜"
+       ],
+       "motion": "pulse",
+       "caption": "Comparing sizes"
+      },
+      {
+       "items": [
+        "⬆️",
+        "⬇️"
+       ],
+       "motion": "float",
+       "caption": "Antonym definition"
+      },
+      {
+       "items": [
+        "↔️"
+       ],
+       "motion": "pulse",
+       "caption": "Opposite meanings"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Spotting Simple Antonyms",
+    "narration": [
+     "Let us look at some pairs together.",
+     "Hot tea in your cup and cold ice cream.",
+     "A fast car and a slow turtle.",
+     "The sun is bright but the moon is dark."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👀"
+       ],
+       "motion": "float",
+       "caption": "Look closer"
+      },
+      {
+       "items": [
+        "☕",
+        "🍦"
+       ],
+       "motion": "chain",
+       "caption": "Hot and cold"
+      },
+      {
+       "items": [
+        "🏎️",
+        "🐢"
+       ],
+       "motion": "chain",
+       "caption": "Fast and slow"
+      },
+      {
+       "items": [
+        "☀️",
+        "🌑"
+       ],
+       "motion": "chain",
+       "caption": "Bright and dark"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Using Antonyms Correctly",
+    "narration": [
+     "Rohan is happy because he won a game.",
+     "When he loses, he feels sad.",
+     "Happy and sad are perfect antonyms.",
+     "We use these to describe how we feel."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "😊"
+       ],
+       "motion": "grow",
+       "caption": "Happy Rohan"
+      },
+      {
+       "items": [
+        "☹️"
+       ],
+       "motion": "pulse",
+       "caption": "Sad Rohan"
+      },
+      {
+       "items": [
+        "😊",
+        "↔️",
+        "☹️"
+       ],
+       "motion": "push",
+       "caption": "Antonym pair"
+      },
+      {
+       "items": [
+        "🗣️"
+       ],
+       "motion": "float",
+       "caption": "Using words"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Quick Review",
+    "narration": [
+     "Antonyms are just opposite words.",
+     "They help make our sentences more interesting.",
+     "Can you think of the antonym for big?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "✅"
+       ],
+       "motion": "pulse",
+       "caption": "Summary"
+      },
+      {
+       "items": [
+        "📝"
+       ],
+       "motion": "rise",
+       "caption": "Why use them"
+      },
+      {
+       "items": [
+        "🐘"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Vocabulary: Homophones": {
+  "id": "lib-english-g3-vocabulary-homophones",
+  "topic": "Vocabulary: Homophones",
+  "title": "Fun With Sound-Alike Words",
+  "icon": "👂",
+  "scenes": [
+   {
+    "title": "The Mystery Of Similar Sounds",
+    "narration": [
+     "Have you ever heard two words that sound exactly the same but mean different things?",
+     "These special words are called homophones.",
+     "Let us discover how to tell them apart at home."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👂",
+        "🤔"
+       ],
+       "motion": "pulse",
+       "caption": "Listen closely"
+      },
+      {
+       "items": [
+        "🗣️",
+        "🔤"
+       ],
+       "motion": "float",
+       "caption": "Meet homophones"
+      },
+      {
+       "items": [
+        "🏠",
+        "📖"
+       ],
+       "motion": "chain",
+       "caption": "Let's explore"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Learning The Concept",
+    "narration": [
+     "Homophones sound the same, like two friends calling out to you.",
+     "But they have different spellings and different meanings.",
+     "Thinking about the meaning helps us pick the right one."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👯",
+        "🔊"
+       ],
+       "motion": "pulse",
+       "caption": "Same sounds"
+      },
+      {
+       "items": [
+        "📝",
+        "🔍"
+       ],
+       "motion": "push",
+       "caption": "Different meanings"
+      },
+      {
+       "items": [
+        "🧠",
+        "💡"
+       ],
+       "motion": "rise",
+       "caption": "Use your brain"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Real Life Examples",
+    "narration": [
+     "Take the word sun, which shines brightly in the sky.",
+     "Now take the word son, which means a boy child.",
+     "See how they sound the same but mean something totally different?",
+     "Another pair is blue, the color, and blew, like the wind."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "☀️"
+       ],
+       "motion": "rise",
+       "caption": "The bright sun"
+      },
+      {
+       "items": [
+        "👦"
+       ],
+       "motion": "grow",
+       "caption": "A boy son"
+      },
+      {
+       "items": [
+        "☀️",
+        "👦",
+        "❓"
+       ],
+       "motion": "chain",
+       "caption": "Compare them"
+      },
+      {
+       "items": [
+        "🔵",
+        "🌬️"
+       ],
+       "motion": "fall",
+       "caption": "Color and wind"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap And Practice",
+    "narration": [
+     "Homophones sound alike but have different spellings.",
+     "Always check the meaning before you write them down.",
+     "Can you think of any other homophones you use at school?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🔊",
+        "✍️"
+       ],
+       "motion": "pulse",
+       "caption": "Key rule"
+      },
+      {
+       "items": [
+        "📖",
+        "✅"
+       ],
+       "motion": "chain",
+       "caption": "Check meaning"
+      },
+      {
+       "items": [
+        "🏫",
+        "✏️"
+       ],
+       "motion": "float",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Vocabulary: Compound Words": {
+  "id": "lib-english-g3-vocabulary-compound-words",
+  "topic": "Vocabulary: Compound Words",
+  "title": "Magic of Compound Words",
+  "icon": "✨",
+  "scenes": [
+   {
+    "title": "Spotting Two Little Words",
+    "narration": [
+     "Have you ever noticed that some big words are just two small words joined together?",
+     "Look at the word housefly. It is made of house and fly.",
+     "We call these special words compound words."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏠",
+        "🪰"
+       ],
+       "motion": "pulse",
+       "caption": "Spotting words"
+      },
+      {
+       "items": [
+        "house",
+        "fly",
+        "housefly"
+       ],
+       "motion": "chain",
+       "caption": "Two parts"
+      },
+      {
+       "items": [
+        "✨",
+        "🔤"
+       ],
+       "motion": "grow",
+       "caption": "Compound words"
+      }
+     ]
+    }
+   },
+   {
+    "title": "How They Work",
+    "narration": [
+     "Think of it like building with blocks.",
+     "You take one word and push it right next to another.",
+     "When they touch, they become one brand new word.",
+     "The new word has a new meaning too."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🧱",
+        "🧱"
+       ],
+       "motion": "push",
+       "caption": "Building blocks"
+      },
+      {
+       "items": [
+        "sun",
+        "flower"
+       ],
+       "motion": "push",
+       "caption": "Join them"
+      },
+      {
+       "items": [
+        "sunflower"
+       ],
+       "motion": "grow",
+       "caption": "New word"
+      },
+      {
+       "items": [
+        "🌻"
+       ],
+       "motion": "float",
+       "caption": "New meaning"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Let Us Build Some",
+    "narration": [
+     "Let us take the word rain and add the word bow.",
+     "Together, they make the word rainbow.",
+     "How about foot plus ball?",
+     "That makes football, a game we love to play."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "rain",
+        "bow"
+       ],
+       "motion": "chain",
+       "caption": "Rain plus bow"
+      },
+      {
+       "items": [
+        "🌈"
+       ],
+       "motion": "rise",
+       "caption": "A rainbow"
+      },
+      {
+       "items": [
+        "foot",
+        "ball"
+       ],
+       "motion": "push",
+       "caption": "Foot plus ball"
+      },
+      {
+       "items": [
+        "⚽"
+       ],
+       "motion": "pulse",
+       "caption": "Football"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Challenge",
+    "narration": [
+     "Compound words are just two words joined to make one new word.",
+     "They are easy to spot once you know the trick.",
+     "Think about it, can you find a compound word in your own lunchbox today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🔤",
+        "➕",
+        "🔤"
+       ],
+       "motion": "chain",
+       "caption": "Simple rule"
+      },
+      {
+       "items": [
+        "💡"
+       ],
+       "motion": "pulse",
+       "caption": "Easy trick"
+      },
+      {
+       "items": [
+        "🥪"
+       ],
+       "motion": "float",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Vocabulary: Suffixes": {
+  "id": "lib-english-g3-vocabulary-suffixes",
+  "topic": "Vocabulary: Suffixes",
+  "title": "Super Suffixes: Word Magic",
+  "icon": "✨",
+  "scenes": [
+   {
+    "title": "The Mystery of Word Endings",
+    "narration": [
+     "Have you ever noticed how some words change when we add a little piece to the end?",
+     "Meet the suffix, a tiny group of letters that hops onto the end of a word.",
+     "Adding a suffix creates a brand new word with a special meaning."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "play",
+        "ing"
+       ],
+       "motion": "pulse",
+       "caption": "Adding endings"
+      },
+      {
+       "items": [
+        "fast",
+        "er"
+       ],
+       "motion": "rise",
+       "caption": "Meet suffixes"
+      },
+      {
+       "items": [
+        "jump",
+        "ed"
+       ],
+       "motion": "grow",
+       "caption": "Changing meanings"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Learning the Suffix Rules",
+    "narration": [
+     "First is -ing, which shows an action is happening right now, like playing in the park.",
+     "Then we have -ed, which tells us something already finished yesterday, like walked.",
+     "And -er helps us compare, like saying a cheetah is faster than a rabbit."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "play",
+        "ing"
+       ],
+       "motion": "chain",
+       "caption": "Action words"
+      },
+      {
+       "items": [
+        "walk",
+        "ed"
+       ],
+       "motion": "chain",
+       "caption": "Past actions"
+      },
+      {
+       "items": [
+        "fast",
+        "er"
+       ],
+       "motion": "chain",
+       "caption": "Comparing things"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Suffixes in Action",
+    "narration": [
+     "Look at the word jump. Add -ing and it becomes jumping, like you on a trampoline.",
+     "Now take the word help. Add -ed to show you helped your friend share their lunch.",
+     "Take the word tall. Add -er to say your brother is taller than you."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "jump",
+        "ing"
+       ],
+       "motion": "push",
+       "caption": "Jumping high"
+      },
+      {
+       "items": [
+        "help",
+        "ed"
+       ],
+       "motion": "push",
+       "caption": "Helping friends"
+      },
+      {
+       "items": [
+        "tall",
+        "er"
+       ],
+       "motion": "push",
+       "caption": "Growing taller"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Challenge",
+    "narration": [
+     "Suffixes go at the end of words to help us explain time and comparisons clearly.",
+     "Remember, just add them to the end of a base word to create something new.",
+     "Think about it: can you find a word with a suffix in your favorite storybook today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "ing",
+        "ed",
+        "er"
+       ],
+       "motion": "float",
+       "caption": "Suffix summary"
+      },
+      {
+       "items": [
+        "root",
+        "+",
+        "suffix"
+       ],
+       "motion": "pulse",
+       "caption": "Word building"
+      },
+      {
+       "items": [
+        "📖",
+        "👀"
+       ],
+       "motion": "rise",
+       "caption": "Your turn"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Vocabulary: Contextual Vocabulary": {
+  "id": "lib-english-g3-vocabulary-contextual-vocabulary",
+  "topic": "Vocabulary: Contextual Vocabulary",
+  "title": "Guessing New Words",
+  "icon": "📖",
+  "scenes": [
+   {
+    "title": "The Mystery Word",
+    "narration": [
+     "Have you ever found a word in a book you did not know?",
+     "Do not worry, you can be a word detective right now!",
+     "We use clues in sentences to find the meaning."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📖",
+        "🤔"
+       ],
+       "motion": "pulse",
+       "caption": "New words"
+      },
+      {
+       "items": [
+        "🕵️",
+        "🔍"
+       ],
+       "motion": "push",
+       "caption": "Word detective"
+      },
+      {
+       "items": [
+        "🧩",
+        "📝"
+       ],
+       "motion": "chain",
+       "caption": "Use clues"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Finding Your Clues",
+    "narration": [
+     "Look at the words right before your mystery word.",
+     "Check the words that come after it too.",
+     "These surrounding words are called context."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👈",
+        "📄"
+       ],
+       "motion": "float",
+       "caption": "Look before"
+      },
+      {
+       "items": [
+        "👉",
+        "📄"
+       ],
+       "motion": "float",
+       "caption": "Look after"
+      },
+      {
+       "items": [
+        "🔤",
+        "🎯"
+       ],
+       "motion": "pulse",
+       "caption": "Context clues"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Story Example",
+    "narration": [
+     "Rahul felt famished because he skipped lunch today.",
+     "Famished is a tricky word, but look at the clues.",
+     "He skipped lunch, so he must be very hungry.",
+     "Now we know famished means super hungry!"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "🍎",
+        "❌"
+       ],
+       "motion": "fall",
+       "caption": "Rahul's hunger"
+      },
+      {
+       "items": [
+        "❓",
+        "🍞"
+       ],
+       "motion": "pulse",
+       "caption": "Check clues"
+      },
+      {
+       "items": [
+        "😋",
+        "🍛"
+       ],
+       "motion": "grow",
+       "caption": "Very hungry"
+      },
+      {
+       "items": [
+        "✅",
+        "😋"
+       ],
+       "motion": "rise",
+       "caption": "Meaning found"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Become A Pro",
+    "narration": [
+     "Remember, check the clues around your mystery word.",
+     "Use the story to help you guess the meaning.",
+     "Think about it: What clues help you understand a word you just read?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🔍",
+        "📚"
+       ],
+       "motion": "chain",
+       "caption": "Check clues"
+      },
+      {
+       "items": [
+        "💡",
+        "📖"
+       ],
+       "motion": "rise",
+       "caption": "Use story"
+      },
+      {
+       "items": [
+        "💭",
+        "🤔"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Vocabulary: Word Families": {
+  "id": "lib-english-g3-vocabulary-word-families",
+  "topic": "Vocabulary: Word Families",
+  "title": "Fun With Word Families",
+  "icon": "📚",
+  "scenes": [
+   {
+    "title": "Spotting Secret Patterns",
+    "narration": [
+     "Have you noticed how some words look like twins?",
+     "Look at the words cat, hat, and mat.",
+     "They all end with the same sound, at."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "👦"
+       ],
+       "motion": "pulse",
+       "caption": "Word Twins"
+      },
+      {
+       "items": [
+        "cat",
+        "hat",
+        "mat"
+       ],
+       "motion": "float",
+       "caption": "Similar Words"
+      },
+      {
+       "items": [
+        "at"
+       ],
+       "motion": "pulse",
+       "caption": "Ending Sound"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Learning Word Families",
+    "narration": [
+     "Words that share a sound belong to a word family.",
+     "Just change the first letter to make a new friend.",
+     "The ending stays the same, like a family name."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏠"
+       ],
+       "motion": "grow",
+       "caption": "Word Family"
+      },
+      {
+       "items": [
+        "c",
+        "h",
+        "m"
+       ],
+       "motion": "chain",
+       "caption": "Change Letter"
+      },
+      {
+       "items": [
+        "at"
+       ],
+       "motion": "float",
+       "caption": "Shared Sound"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Building The Ig Family",
+    "narration": [
+     "Let us build words with the ig family.",
+     "Add a p to get pig.",
+     "Add a w to get wig.",
+     "Add a d to get dig."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "ig"
+       ],
+       "motion": "grow",
+       "caption": "Ig Family"
+      },
+      {
+       "items": [
+        "p",
+        "ig",
+        "🐷"
+       ],
+       "motion": "chain",
+       "caption": "Pig"
+      },
+      {
+       "items": [
+        "w",
+        "ig",
+        "💇"
+       ],
+       "motion": "chain",
+       "caption": "Wig"
+      },
+      {
+       "items": [
+        "d",
+        "ig",
+        "🚜"
+       ],
+       "motion": "chain",
+       "caption": "Dig"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Review And Practice",
+    "narration": [
+     "Word families make reading and writing so much faster.",
+     "Remember to look for the pattern at the end.",
+     "Can you think of three words that end in an?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📖",
+        "✍️"
+       ],
+       "motion": "rise",
+       "caption": "Reading Tips"
+      },
+      {
+       "items": [
+        "👀"
+       ],
+       "motion": "pulse",
+       "caption": "Find Patterns"
+      },
+      {
+       "items": [
+        "an"
+       ],
+       "motion": "float",
+       "caption": "Your Turn"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Vocabulary: Dictionary Skills": {
+  "id": "lib-english-g3-vocabulary-dictionary-skills",
+  "topic": "Vocabulary: Dictionary Skills",
+  "title": "Finding Words in the Dictionary",
+  "icon": "📖",
+  "scenes": [
+   {
+    "title": "The Mystery of Words",
+    "narration": [
+     "Have you ever found a word in a book you did not know?",
+     "You can use a dictionary to find the meaning of any word.",
+     "But how do we find them when there are thousands of words inside?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📖",
+        "❓"
+       ],
+       "motion": "pulse",
+       "caption": "New words"
+      },
+      {
+       "items": [
+        "📚"
+       ],
+       "motion": "float",
+       "caption": "The dictionary"
+      },
+      {
+       "items": [
+        "🔍",
+        "🔤"
+       ],
+       "motion": "push",
+       "caption": "Searching fast"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Alphabet Secret",
+    "narration": [
+     "Dictionaries are organized by the alphabet, just like a list of names.",
+     "Words starting with A come first, then B, and all the way to Z.",
+     "If two words start with the same letter, look at the second letter.",
+     "In cat and cup, A comes before U, so cat comes first."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "A",
+        "B",
+        "C"
+       ],
+       "motion": "chain",
+       "caption": "Alphabetical order"
+      },
+      {
+       "items": [
+        "🍎",
+        "🎈",
+        "🐱"
+       ],
+       "motion": "chain",
+       "caption": "A to Z"
+      },
+      {
+       "items": [
+        "cat",
+        "cup"
+       ],
+       "motion": "pulse",
+       "caption": "Next letter"
+      },
+      {
+       "items": [
+        "cat",
+        "cup"
+       ],
+       "motion": "chain",
+       "caption": "Comparing words"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Let's Find 'Mango'",
+    "narration": [
+     "Let us find the word mango in our dictionary.",
+     "First, we flip the pages to the M section.",
+     "Next, we look for words starting with ma.",
+     "Finally, we spot mango right there on the page."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🥭"
+       ],
+       "motion": "float",
+       "caption": "Target word"
+      },
+      {
+       "items": [
+        "M"
+       ],
+       "motion": "push",
+       "caption": "Find M"
+      },
+      {
+       "items": [
+        "m",
+        "a"
+       ],
+       "motion": "pulse",
+       "caption": "Ma section"
+      },
+      {
+       "items": [
+        "🥭",
+        "✅"
+       ],
+       "motion": "rise",
+       "caption": "Word found"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Practice",
+    "narration": [
+     "Remember, dictionaries follow the alphabet to keep words in order.",
+     "Always look at the first letter, then the second to find your word.",
+     "Think about it: which word comes first in a dictionary, apple or ant?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🔤",
+        "📖"
+       ],
+       "motion": "chain",
+       "caption": "Order matters"
+      },
+      {
+       "items": [
+        "1️⃣",
+        "2️⃣"
+       ],
+       "motion": "pulse",
+       "caption": "Steps to follow"
+      },
+      {
+       "items": [
+        "🍎",
+        "🐜"
+       ],
+       "motion": "float",
+       "caption": "Try it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Reading: Fables": {
+  "id": "lib-english-g3-reading-fables",
+  "topic": "Reading: Fables",
+  "title": "Learning From Clever Fables",
+  "icon": "📖",
+  "scenes": [
+   {
+    "title": "What Are Fables",
+    "narration": [
+     "Have you ever heard a story where animals talk and teach a lesson?",
+     "These short stories are called fables, and they are very fun to read.",
+     "Every fable has a special message called a moral at the end."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🦊",
+        "🦁",
+        "🐢"
+       ],
+       "motion": "pulse",
+       "caption": "Talking Animals"
+      },
+      {
+       "items": [
+        "📖"
+       ],
+       "motion": "float",
+       "caption": "What is Fable"
+      },
+      {
+       "items": [
+        "💡",
+        "✨"
+       ],
+       "motion": "rise",
+       "caption": "The Moral"
+      }
+     ]
+    }
+   },
+   {
+    "title": "How Fables Work",
+    "narration": [
+     "Fables usually have only two or three characters.",
+     "The characters often act like humans to show us right from wrong.",
+     "They face a problem, try to solve it, and learn a big lesson."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🐇",
+        "🐢"
+       ],
+       "motion": "push",
+       "caption": "Few Characters"
+      },
+      {
+       "items": [
+        "👤",
+        "🤝"
+       ],
+       "motion": "chain",
+       "caption": "Human Traits"
+      },
+      {
+       "items": [
+        "❓",
+        "✅"
+       ],
+       "motion": "chain",
+       "caption": "Solving Problems"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Tortoise and the Hare",
+    "narration": [
+     "Think of the story where the fast Hare races the slow Tortoise.",
+     "The Hare is lazy, but the Tortoise keeps going without stopping.",
+     "The Tortoise wins because he works hard and never gives up."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🐇",
+        "🏁",
+        "🐢"
+       ],
+       "motion": "push",
+       "caption": "The Race"
+      },
+      {
+       "items": [
+        "💤",
+        "🚶"
+       ],
+       "motion": "chain",
+       "caption": "Slow and Steady"
+      },
+      {
+       "items": [
+        "🏆",
+        "🐢"
+       ],
+       "motion": "rise",
+       "caption": "Hard Work Wins"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Think",
+    "narration": [
+     "Fables use animals to teach us important life lessons.",
+     "Look for the moral at the end of every fable you read.",
+     "Think about it: What is your favorite animal, and what lesson could it teach?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🦁",
+        "💡"
+       ],
+       "motion": "pulse",
+       "caption": "Lesson Learned"
+      },
+      {
+       "items": [
+        "📖",
+        "✅"
+       ],
+       "motion": "float",
+       "caption": "Find Morals"
+      },
+      {
+       "items": [
+        "🤔",
+        "🐾"
+       ],
+       "motion": "pulse",
+       "caption": "Think About It"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Reading: Stories": {
+  "id": "lib-english-g3-reading-stories",
+  "topic": "Reading: Stories",
+  "title": "Unlocking Magical Story Worlds",
+  "icon": "📖",
+  "scenes": [
+   {
+    "title": "The Magic of Reading",
+    "narration": [
+     "Do you ever wonder how paper pages turn into exciting adventures?",
+     "Reading is like having a secret key to open any door.",
+     "Let us learn how to read stories like a true detective."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📖",
+        "✨"
+       ],
+       "motion": "pulse",
+       "caption": "Opening a book"
+      },
+      {
+       "items": [
+        "🔑",
+        "🚪"
+       ],
+       "motion": "push",
+       "caption": "The secret key"
+      },
+      {
+       "items": [
+        "🔍",
+        "🕵️"
+       ],
+       "motion": "float",
+       "caption": "Story detective"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Finding the Clues",
+    "narration": [
+     "Every good story has characters, like Aarav or a brave cat.",
+     "The setting tells us where the story happens, maybe in a park.",
+     "The plot is just the sequence of events that take place."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "🐈"
+       ],
+       "motion": "grow",
+       "caption": "Meet characters"
+      },
+      {
+       "items": [
+        "🌳",
+        "📍"
+       ],
+       "motion": "float",
+       "caption": "The setting"
+      },
+      {
+       "items": [
+        "1️⃣",
+        "2️⃣",
+        "3️⃣"
+       ],
+       "motion": "chain",
+       "caption": "The plot"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Story Example",
+    "narration": [
+     "Imagine Meena finds a shiny golden key in her garden.",
+     "She uses the key to open an old wooden box.",
+     "Inside, she finds a map to a hidden treasure chest."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👧",
+        "🔑",
+        "🌻"
+       ],
+       "motion": "pulse",
+       "caption": "The discovery"
+      },
+      {
+       "items": [
+        "📦",
+        "🔓"
+       ],
+       "motion": "push",
+       "caption": "Action step"
+      },
+      {
+       "items": [
+        "🗺️",
+        "💰"
+       ],
+       "motion": "grow",
+       "caption": "The surprise"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Explore",
+    "narration": [
+     "Remember, always look for characters, the setting, and the plot.",
+     "Reading is the best way to travel without leaving your room.",
+     "Think about it: who is your favorite character in any story?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👤",
+        "🏡",
+        "📜"
+       ],
+       "motion": "chain",
+       "caption": "Key ingredients"
+      },
+      {
+       "items": [
+        "🏠",
+        "🌍"
+       ],
+       "motion": "float",
+       "caption": "Travel anywhere"
+      },
+      {
+       "items": [
+        "❓",
+        "💭"
+       ],
+       "motion": "pulse",
+       "caption": "Your turn"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Reading: Poems": {
+  "id": "lib-english-g3-reading-poems",
+  "topic": "Reading: Poems",
+  "title": "Playing With Rhyming Words",
+  "icon": "📖",
+  "scenes": [
+   {
+    "title": "What Makes a Poem?",
+    "narration": [
+     "Have you ever noticed how some stories sound like a catchy song?",
+     "Poems are special because they use rhythm and rhyming words.",
+     "Let us see why words like cat and mat belong together."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🎵",
+        "📚"
+       ],
+       "motion": "pulse",
+       "caption": "Musical words"
+      },
+      {
+       "items": [
+        "🥁",
+        "✨"
+       ],
+       "motion": "float",
+       "caption": "Rhythm and rhyme"
+      },
+      {
+       "items": [
+        "🐱",
+        "🧘"
+       ],
+       "motion": "chain",
+       "caption": "Matching sounds"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Understanding Rhyme",
+    "narration": [
+     "A rhyme happens when two words end with the same sound.",
+     "Like the word bat and the word hat.",
+     "The ending at sounds exactly the same in both."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👂",
+        "🔊"
+       ],
+       "motion": "pulse",
+       "caption": "Same sounds"
+      },
+      {
+       "items": [
+        "🏏",
+        "🎩"
+       ],
+       "motion": "push",
+       "caption": "Bat and hat"
+      },
+      {
+       "items": [
+        "a",
+        "t"
+       ],
+       "motion": "grow",
+       "caption": "Ending sound"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Let's Read a Poem",
+    "narration": [
+     "Rohan ate a sweet red apple in the park.",
+     "Then he heard a dog give a loud bark.",
+     "Apple and bark do not rhyme, but park and bark do!",
+     "Park and bark both end with the ark sound."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "🍎",
+        "🌳"
+       ],
+       "motion": "float",
+       "caption": "Rohan's apple"
+      },
+      {
+       "items": [
+        "🐕",
+        "📢"
+       ],
+       "motion": "rise",
+       "caption": "Dog bark"
+      },
+      {
+       "items": [
+        "🌳",
+        "🐕",
+        "❌"
+       ],
+       "motion": "chain",
+       "caption": "Perfect rhyme"
+      },
+      {
+       "items": [
+        "a",
+        "r",
+        "k"
+       ],
+       "motion": "pulse",
+       "caption": "Ark sound"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Practice",
+    "narration": [
+     "Remember, poems use rhyming words to create a fun beat.",
+     "Listen for the same ending sounds when you read aloud.",
+     "Can you find a word that rhymes with sun for your next poem?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📝",
+        "🎶"
+       ],
+       "motion": "grow",
+       "caption": "Poem rhythm"
+      },
+      {
+       "items": [
+        "📖",
+        "📢"
+       ],
+       "motion": "float",
+       "caption": "Read aloud"
+      },
+      {
+       "items": [
+        "☀️",
+        "❓"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Reading: Informational Passages": {
+  "id": "lib-english-g3-reading-informational-passages",
+  "topic": "Reading: Informational Passages",
+  "title": "Unlocking Secrets in Books",
+  "icon": "📖",
+  "scenes": [
+   {
+    "title": "Finding the Hook",
+    "narration": [
+     "Have you ever wondered how to find facts in your favorite book?",
+     "Reading informational passages helps us learn about our world.",
+     "Let's explore how to read like a detective today."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📚",
+        "🔍"
+       ],
+       "motion": "pulse",
+       "caption": "Finding facts"
+      },
+      {
+       "items": [
+        "🌍",
+        "✨"
+       ],
+       "motion": "rise",
+       "caption": "Learning world"
+      },
+      {
+       "items": [
+        "🕵️",
+        "🔎"
+       ],
+       "motion": "push",
+       "caption": "Reading detective"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Big Ideas",
+    "narration": [
+     "First, look for the main topic in the title.",
+     "Next, scan for bold words that give clues.",
+     "Read the first sentence to find the main idea.",
+     "Always check pictures for more information."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏷️",
+        "📖"
+       ],
+       "motion": "chain",
+       "caption": "Main topic"
+      },
+      {
+       "items": [
+        "✏️",
+        "❗"
+       ],
+       "motion": "pulse",
+       "caption": "Bold words"
+      },
+      {
+       "items": [
+        "1️⃣",
+        "💬"
+       ],
+       "motion": "grow",
+       "caption": "Main idea"
+      },
+      {
+       "items": [
+        "🖼️",
+        "👁️"
+       ],
+       "motion": "float",
+       "caption": "Picture clues"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Tiger Example",
+    "narration": [
+     "Look at a passage about the Bengal Tiger.",
+     "The title says: The Bengal Tiger's Home.",
+     "We see a bold word: Habitat.",
+     "It means the place where tigers live.",
+     "The picture shows them in a forest."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🐅",
+        "🇮🇳"
+       ],
+       "motion": "rise",
+       "caption": "Bengal Tiger"
+      },
+      {
+       "items": [
+        "🏠",
+        "🐅"
+       ],
+       "motion": "push",
+       "caption": "The title"
+      },
+      {
+       "items": [
+        "🌳",
+        "⭐"
+       ],
+       "motion": "pulse",
+       "caption": "Key term"
+      },
+      {
+       "items": [
+        "🏞️",
+        "🐅"
+       ],
+       "motion": "grow",
+       "caption": "Definition"
+      },
+      {
+       "items": [
+        "🌲",
+        "🐅"
+       ],
+       "motion": "float",
+       "caption": "Visual aid"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Summing Up",
+    "narration": [
+     "Remember to use titles, bold words, and pictures.",
+     "These help you understand new facts quickly.",
+     "Think about it: what new fact will you learn today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏷️",
+        "❗",
+        "🖼️"
+       ],
+       "motion": "chain",
+       "caption": "Three tools"
+      },
+      {
+       "items": [
+        "🧠",
+        "⚡"
+       ],
+       "motion": "grow",
+       "caption": "Quick learning"
+      },
+      {
+       "items": [
+        "🤔",
+        "💡"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Reading: Main Idea": {
+  "id": "lib-english-g3-reading-main-idea",
+  "topic": "Reading: Main Idea",
+  "title": "Finding the Main Idea",
+  "icon": "📖",
+  "scenes": [
+   {
+    "title": "The Big Secret",
+    "narration": [
+     "Have you ever wondered what a story is really about?",
+     "We look for the main idea to find the story's heart.",
+     "It is the most important message the author shares."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📚",
+        "🔍"
+       ],
+       "motion": "pulse",
+       "caption": "The Big Secret"
+      },
+      {
+       "items": [
+        "❤️",
+        "📖"
+       ],
+       "motion": "float",
+       "caption": "The Heart"
+      },
+      {
+       "items": [
+        "✍️",
+        "💡"
+       ],
+       "motion": "rise",
+       "caption": "Important Message"
+      }
+     ]
+    }
+   },
+   {
+    "title": "How to Find It",
+    "narration": [
+     "First, read the whole story carefully.",
+     "Next, look for words that repeat often.",
+     "Finally, ask yourself what the story is teaching."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👀",
+        "📖"
+       ],
+       "motion": "chain",
+       "caption": "Read Carefully"
+      },
+      {
+       "items": [
+        "🔄",
+        "word"
+       ],
+       "motion": "pulse",
+       "caption": "Repeated Words"
+      },
+      {
+       "items": [
+        "🤔",
+        "🏫"
+       ],
+       "motion": "float",
+       "caption": "Ask Why"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Trip to Delhi",
+    "narration": [
+     "Riya visited the Red Fort and saw the India Gate.",
+     "She ate yummy jalebis and saw the busy markets.",
+     "The main idea is that Riya had a fun day in Delhi."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏰",
+        "🇮🇳"
+       ],
+       "motion": "chain",
+       "caption": "Riya's Trip"
+      },
+      {
+       "items": [
+        "🥨",
+        "🛍️"
+       ],
+       "motion": "grow",
+       "caption": "Delhi Sights"
+      },
+      {
+       "items": [
+        "✅",
+        "Delhi"
+       ],
+       "motion": "pulse",
+       "caption": "Main Idea"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Wrap Up",
+    "narration": [
+     "Remember, the main idea is the big point, not just little details.",
+     "You are now ready to be a reading detective.",
+     "What is the main idea of your favorite book?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🌟",
+        "🧩"
+       ],
+       "motion": "float",
+       "caption": "Big Point"
+      },
+      {
+       "items": [
+        "🕵️",
+        "📚"
+       ],
+       "motion": "rise",
+       "caption": "Reading Detective"
+      },
+      {
+       "items": [
+        "❓",
+        "📖"
+       ],
+       "motion": "pulse",
+       "caption": "Think About It"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Reading: Supporting Details": {
+  "id": "lib-english-g3-reading-supporting-details",
+  "topic": "Reading: Supporting Details",
+  "title": "Finding the Secret Clues",
+  "icon": "🔍",
+  "scenes": [
+   {
+    "title": "The Big Mystery Idea",
+    "narration": [
+     "Have you ever wondered why some stories have so many extra sentences?",
+     "A main idea is like the trunk of a big mango tree.",
+     "The supporting details are like the branches holding the fruit."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📖",
+        "🤔"
+       ],
+       "motion": "pulse",
+       "caption": "Story mystery"
+      },
+      {
+       "items": [
+        "🌳",
+        "🥭"
+       ],
+       "motion": "grow",
+       "caption": "Main idea"
+      },
+      {
+       "items": [
+        "🌿",
+        "🥭"
+       ],
+       "motion": "rise",
+       "caption": "Supporting details"
+      }
+     ]
+    }
+   },
+   {
+    "title": "How Details Help Us",
+    "narration": [
+     "Supporting details give us more information about the main point.",
+     "They answer questions like who, what, where, or why.",
+     "Without them, a story would be very short and boring."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "💡",
+        "➕"
+       ],
+       "motion": "push",
+       "caption": "More info"
+      },
+      {
+       "items": [
+        "❓",
+        "👤",
+        "📍"
+       ],
+       "motion": "float",
+       "caption": "Asking questions"
+      },
+      {
+       "items": [
+        "✂️",
+        "📖"
+       ],
+       "motion": "fall",
+       "caption": "Adding detail"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Day at the Market",
+    "narration": [
+     "Main idea: Rohan went to the busy Delhi market today.",
+     "Detail one: He bought three juicy red apples.",
+     "Detail two: He saw a colorful kite flying high.",
+     "Detail three: The shopkeeper gave him a friendly smile."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "🛍️",
+        "🇮🇳"
+       ],
+       "motion": "chain",
+       "caption": "Main idea"
+      },
+      {
+       "items": [
+        "3",
+        "🍎"
+       ],
+       "motion": "chain",
+       "caption": "First detail"
+      },
+      {
+       "items": [
+        "🪁",
+        "⬆️"
+       ],
+       "motion": "chain",
+       "caption": "Second detail"
+      },
+      {
+       "items": [
+        "😊",
+        "💰"
+       ],
+       "motion": "chain",
+       "caption": "Third detail"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Quick Review Time",
+    "narration": [
+     "Remember, the main idea is the big topic.",
+     "Supporting details are the clues that explain it better.",
+     "Think about it: Can you find two details in your favorite book today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🎯"
+       ],
+       "motion": "pulse",
+       "caption": "Big topic"
+      },
+      {
+       "items": [
+        "🔍",
+        "🧩"
+       ],
+       "motion": "pull",
+       "caption": "Story clues"
+      },
+      {
+       "items": [
+        "📚",
+        "🙋"
+       ],
+       "motion": "float",
+       "caption": "Your turn"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Reading: Character Identification": {
+  "id": "lib-english-g3-reading-character-identification",
+  "topic": "Reading: Character Identification",
+  "title": "Who Is In The Story?",
+  "icon": "📖",
+  "scenes": [
+   {
+    "title": "Finding The Story Characters",
+    "narration": [
+     "Have you ever wondered who the people in your favorite stories are?",
+     "A character is a person, animal, or creature in a story.",
+     "They think, feel, and do things just like you do!"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🧒",
+        "👧",
+        "📚"
+       ],
+       "motion": "pulse",
+       "caption": "Meet characters"
+      },
+      {
+       "items": [
+        "🦁",
+        "👵",
+        "🤖"
+       ],
+       "motion": "float",
+       "caption": "Who are they"
+      },
+      {
+       "items": [
+        "💭",
+        "😊",
+        "🏃"
+       ],
+       "motion": "grow",
+       "caption": "Feelings and actions"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Looking For Clues",
+    "narration": [
+     "To find a character, look for their name in the book.",
+     "Look for words that tell us what they do, like runs or jumps.",
+     "Notice how they speak in the story using quotation marks."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "A",
+        "B",
+        "C"
+       ],
+       "motion": "pulse",
+       "caption": "Find names"
+      },
+      {
+       "items": [
+        "run",
+        "jump"
+       ],
+       "motion": "push",
+       "caption": "Action words"
+      },
+      {
+       "items": [
+        "\"",
+        "!",
+        "?"
+       ],
+       "motion": "chain",
+       "caption": "What they say"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Meet Little Rohan",
+    "narration": [
+     "Let us look at a story about Rohan who loves to draw.",
+     "Rohan picks up his blue pencil and smiles big.",
+     "Rohan says, I am drawing a big sun today.",
+     "We know Rohan is the character because he acts and speaks."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "🎨"
+       ],
+       "motion": "float",
+       "caption": "Rohan draws"
+      },
+      {
+       "items": [
+        "✏️",
+        "😊"
+       ],
+       "motion": "push",
+       "caption": "Rohan's tools"
+      },
+      {
+       "items": [
+        "\"I am drawing\""
+       ],
+       "motion": "pulse",
+       "caption": "Rohan speaks"
+      },
+      {
+       "items": [
+        "👦"
+       ],
+       "motion": "grow",
+       "caption": "Character identified"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap And Think",
+    "narration": [
+     "Characters can be people, animals, or even robots.",
+     "Find them by watching what they do and say.",
+     "Think about it: who is your favorite character and why?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👩",
+        "🐶",
+        "🤖"
+       ],
+       "motion": "float",
+       "caption": "Any type"
+      },
+      {
+       "items": [
+        "👁️",
+        "📖"
+       ],
+       "motion": "chain",
+       "caption": "Look for clues"
+      },
+      {
+       "items": [
+        "🤔",
+        "💭"
+       ],
+       "motion": "pulse",
+       "caption": "Your turn"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Reading: Sequence of Events": {
+  "id": "lib-english-g3-reading-sequence-of-events",
+  "topic": "Reading: Sequence of Events",
+  "title": "The Story Order Secret",
+  "icon": "📖",
+  "scenes": [
+   {
+    "title": "A Day in Order",
+    "narration": [
+     "Have you ever wondered why stories have a beginning, middle, and end?",
+     "Think about your morning before you come to school.",
+     "You wake up, eat breakfast, and pack your bag."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "☀️",
+        "🌅",
+        "🌙"
+       ],
+       "motion": "float",
+       "caption": "Story Time"
+      },
+      {
+       "items": [
+        "🛏️",
+        "🥣",
+        "🎒"
+       ],
+       "motion": "chain",
+       "caption": "Morning Steps"
+      },
+      {
+       "items": [
+        "Wake",
+        "Eat",
+        "Pack"
+       ],
+       "motion": "chain",
+       "caption": "First, Next, Last"
+      }
+     ]
+    }
+   },
+   {
+    "title": "What is Sequence?",
+    "narration": [
+     "Sequence is just a fancy word for putting things in the right order.",
+     "When reading, we look for clues like first, then, and finally.",
+     "If we mix the order up, the story sounds silly!"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "1️⃣",
+        "2️⃣",
+        "3️⃣"
+       ],
+       "motion": "pulse",
+       "caption": "Meaning of Sequence"
+      },
+      {
+       "items": [
+        "First",
+        "Then",
+        "Finally"
+       ],
+       "motion": "push",
+       "caption": "Clue Words"
+      },
+      {
+       "items": [
+        "🤪",
+        "📖"
+       ],
+       "motion": "fall",
+       "caption": "Mixed Order"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Making Aloo Paratha",
+    "narration": [
+     "Let us see how Rohan makes a yummy aloo paratha.",
+     "First, he mashes the boiled potatoes with spices.",
+     "Next, he stuffs the dough and rolls it flat.",
+     "Finally, he cooks it on the hot tawa until golden."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🥔",
+        "🥣",
+        "🍳"
+       ],
+       "motion": "chain",
+       "caption": "Rohan Cooking"
+      },
+      {
+       "items": [
+        "🥔",
+        "🧂"
+       ],
+       "motion": "push",
+       "caption": "Mashing"
+      },
+      {
+       "items": [
+        "🥟",
+        "🫓"
+       ],
+       "motion": "rise",
+       "caption": "Rolling"
+      },
+      {
+       "items": [
+        "🔥",
+        "🫓"
+       ],
+       "motion": "grow",
+       "caption": "Cooking"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Think",
+    "narration": [
+     "Remember, stories happen in a specific order to make sense.",
+     "Always look for those special sequence words while you read.",
+     "Think about it: What would happen if we ate dinner before breakfast?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "✅",
+        "📖"
+       ],
+       "motion": "pulse",
+       "caption": "Stay Organized"
+      },
+      {
+       "items": [
+        "🔍",
+        "📖"
+       ],
+       "motion": "float",
+       "caption": "Read Carefully"
+      },
+      {
+       "items": [
+        "🤔",
+        "🥣",
+        "🍽️"
+       ],
+       "motion": "fall",
+       "caption": "Think About It"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Reading: Making Simple Inferences": {
+  "id": "lib-english-g3-reading-making-simple-inferences",
+  "topic": "Reading: Making Simple Inferences",
+  "title": "Guessing The Story Clues",
+  "icon": "🕵️",
+  "scenes": [
+   {
+    "title": "What are Inferences",
+    "narration": [
+     "Have you ever looked at a friend and known they were happy without them saying a word?",
+     "That is called an inference, and we use it to understand stories better!",
+     "An inference is like being a detective using clues to find the hidden meaning."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "😊"
+       ],
+       "motion": "pulse",
+       "caption": "Reading feelings"
+      },
+      {
+       "items": [
+        "📖",
+        "💡"
+       ],
+       "motion": "rise",
+       "caption": "What is inference"
+      },
+      {
+       "items": [
+        "🔍",
+        "🕵️"
+       ],
+       "motion": "push",
+       "caption": "Detective work"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Finding Hidden Clues",
+    "narration": [
+     "Authors do not always tell us everything directly in the text.",
+     "We look at the words on the page and add what we already know.",
+     "This combination helps us guess what is happening in the story."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "✍️"
+       ],
+       "motion": "float",
+       "caption": "Hidden info"
+      },
+      {
+       "items": [
+        "📖",
+        "🧠"
+       ],
+       "motion": "chain",
+       "caption": "Text + Knowledge"
+      },
+      {
+       "items": [
+        "🤔",
+        "✅"
+       ],
+       "motion": "grow",
+       "caption": "The guess"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Example in Action",
+    "narration": [
+     "Imagine Rohan is wearing a raincoat and holding a wet umbrella.",
+     "The text says he is dripping wet and walking through puddles.",
+     "We know it is raining outside, even if the story never says it!"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "🧥",
+        "☂️"
+       ],
+       "motion": "fall",
+       "caption": "Rohan's gear"
+      },
+      {
+       "items": [
+        "💧",
+        "👣"
+       ],
+       "motion": "fall",
+       "caption": "The clues"
+      },
+      {
+       "items": [
+        "🌧️",
+        "🏠"
+       ],
+       "motion": "float",
+       "caption": "Raining outside"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Challenge",
+    "narration": [
+     "Remember, use text clues and what you know to make a smart guess.",
+     "Inferences turn reading into an exciting mystery for you to solve.",
+     "Think about it: If a character is shivering, what can you guess about the weather?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📖",
+        "🔍",
+        "💡"
+       ],
+       "motion": "chain",
+       "caption": "Key points"
+      },
+      {
+       "items": [
+        "🌟"
+       ],
+       "motion": "rise",
+       "caption": "Reading fun"
+      },
+      {
+       "items": [
+        "🥶",
+        "🌡️"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Reading: Vocabulary from Context": {
+  "id": "lib-english-g3-reading-vocabulary-from-context",
+  "topic": "Reading: Vocabulary from Context",
+  "title": "Finding Meaning in New Words",
+  "icon": "📖",
+  "scenes": [
+   {
+    "title": "The Mystery Word Challenge",
+    "narration": [
+     "Have you ever read a book and found a word you did not know?",
+     "Don't worry, because you can be a word detective!",
+     "Today we will learn how to guess meanings using clues around the word."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📚",
+        "🤔"
+       ],
+       "motion": "pulse",
+       "caption": "Unknown words"
+      },
+      {
+       "items": [
+        "🕵️",
+        "🔍"
+       ],
+       "motion": "grow",
+       "caption": "Word detective"
+      },
+      {
+       "items": [
+        "💡",
+        "📖"
+       ],
+       "motion": "chain",
+       "caption": "Finding clues"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Looking for Context Clues",
+    "narration": [
+     "Context clues are the other words in the sentence that give us hints.",
+     "First, look at the words right before and after the new word.",
+     "Think about what is happening in the story to help you guess.",
+     "The sentence often explains the meaning if you read it carefully."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📝",
+        "🔗"
+       ],
+       "motion": "chain",
+       "caption": "Context clues"
+      },
+      {
+       "items": [
+        "👀",
+        "➡️",
+        "⬅️"
+       ],
+       "motion": "push",
+       "caption": "Look around"
+      },
+      {
+       "items": [
+        "💭",
+        "📖"
+       ],
+       "motion": "float",
+       "caption": "Think hard"
+      },
+      {
+       "items": [
+        "✅",
+        "📖"
+       ],
+       "motion": "rise",
+       "caption": "Read carefully"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Solving a Word Puzzle",
+    "narration": [
+     "Let us try this: Rohan felt exhausted after playing cricket for three hours.",
+     "What does exhausted mean? Look at the clue: he played for three hours.",
+     "If you play sports for a long time, you feel very tired.",
+     "So, exhausted means very, very tired!"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏏",
+        "🥵"
+       ],
+       "motion": "fall",
+       "caption": "The example"
+      },
+      {
+       "items": [
+        "⏱️",
+        "🏏"
+       ],
+       "motion": "pulse",
+       "caption": "The clue"
+      },
+      {
+       "items": [
+        "😴",
+        "🏃"
+       ],
+       "motion": "float",
+       "caption": "The meaning"
+      },
+      {
+       "items": [
+        "🔤",
+        "tired"
+       ],
+       "motion": "grow",
+       "caption": "Meaning found"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Try It",
+    "narration": [
+     "Remember, be a detective and look for clues in the sentence.",
+     "Check if your guess makes sense in the story.",
+     "Can you find a new word today and guess its meaning?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🔍",
+        "📖"
+       ],
+       "motion": "chain",
+       "caption": "Use clues"
+      },
+      {
+       "items": [
+        "✅",
+        "🤔"
+       ],
+       "motion": "pulse",
+       "caption": "Check sense"
+      },
+      {
+       "items": [
+        "🌟",
+        "📖"
+       ],
+       "motion": "rise",
+       "caption": "Your turn"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Writing: Paragraph Writing": {
+  "id": "lib-english-g3-writing-paragraph-writing",
+  "topic": "Writing: Paragraph Writing",
+  "title": "Writing Your First Great Paragraph",
+  "icon": "✍️",
+  "scenes": [
+   {
+    "title": "The Big Hook",
+    "narration": [
+     "Have you ever wanted to tell a story about your favorite park or a trip to Delhi?",
+     "Writing a paragraph is like building a house for your ideas.",
+     "Do you know what makes a perfect paragraph?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "🌳",
+        "🎡"
+       ],
+       "motion": "float",
+       "caption": "Sharing stories"
+      },
+      {
+       "items": [
+        "🏠",
+        "🧱"
+       ],
+       "motion": "grow",
+       "caption": "Building ideas"
+      },
+      {
+       "items": [
+        "🤔",
+        "📝"
+       ],
+       "motion": "pulse",
+       "caption": "What is it?"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Three Main Parts",
+    "narration": [
+     "First, the topic sentence tells everyone exactly what you are writing about.",
+     "Next, you add supporting sentences that give juicy details.",
+     "Lastly, the closing sentence wraps everything up nicely."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🔝",
+        "📖"
+       ],
+       "motion": "rise",
+       "caption": "Topic sentence"
+      },
+      {
+       "items": [
+        "➕",
+        "💡"
+       ],
+       "motion": "chain",
+       "caption": "Adding details"
+      },
+      {
+       "items": [
+        "🔚",
+        "🎁"
+       ],
+       "motion": "pull",
+       "caption": "Closing sentence"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Let's Write Together",
+    "narration": [
+     "Let us write about a mango. Start with: The mango is a delicious fruit.",
+     "Next, add a detail: It is bright yellow and very sweet.",
+     "Finish it with: I love eating mangoes in summer."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🥭",
+        "😋"
+       ],
+       "motion": "pulse",
+       "caption": "Topic sentence"
+      },
+      {
+       "items": [
+        "🟡",
+        "🍭"
+       ],
+       "motion": "grow",
+       "caption": "Adding details"
+      },
+      {
+       "items": [
+        "☀️",
+        "🥭"
+       ],
+       "motion": "push",
+       "caption": "Closing sentence"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Try",
+    "narration": [
+     "Remember, a paragraph needs a beginning, middle details, and a clear end.",
+     "Keep your sentences focused on one single idea.",
+     "Think about it: What is one thing you want to write a paragraph about today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "1️⃣",
+        "2️⃣",
+        "3️⃣"
+       ],
+       "motion": "chain",
+       "caption": "Three parts"
+      },
+      {
+       "items": [
+        "🎯",
+        "💡"
+       ],
+       "motion": "pulse",
+       "caption": "Stay focused"
+      },
+      {
+       "items": [
+        "✏️",
+        "❓"
+       ],
+       "motion": "float",
+       "caption": "Your turn!"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Writing: Story Writing": {
+  "id": "lib-english-g3-writing-story-writing",
+  "topic": "Writing: Story Writing",
+  "title": "Writing Your Own Amazing Story",
+  "icon": "✍️",
+  "scenes": [
+   {
+    "title": "The Big Story Idea",
+    "narration": [
+     "Have you ever imagined a dragon living in a school canteen in Delhi?",
+     "Stories are just your imagination written down on paper.",
+     "Every great story needs a hero and something exciting to happen."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🐉",
+        "🏫"
+       ],
+       "motion": "pulse",
+       "caption": "Imagine ideas"
+      },
+      {
+       "items": [
+        "💭",
+        "📝"
+       ],
+       "motion": "grow",
+       "caption": "What is story"
+      },
+      {
+       "items": [
+        "👦",
+        "🌟"
+       ],
+       "motion": "rise",
+       "caption": "Key parts"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Building Your Story Map",
+    "narration": [
+     "First, introduce your hero in the beginning.",
+     "Next, show a problem they need to solve.",
+     "Finally, explain how they fix it to finish the story."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👤"
+       ],
+       "motion": "chain",
+       "caption": "The hero"
+      },
+      {
+       "items": [
+        "❓",
+        "🧩"
+       ],
+       "motion": "chain",
+       "caption": "The problem"
+      },
+      {
+       "items": [
+        "✅",
+        "🎉"
+       ],
+       "motion": "chain",
+       "caption": "The ending"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Writing About Ravi",
+    "narration": [
+     "Let us write about Ravi, a boy who lost his cricket ball.",
+     "Ravi looks for his ball under a big mango tree.",
+     "Suddenly, he finds it inside a friendly neighbor's garden."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏏",
+        "⚽"
+       ],
+       "motion": "pulse",
+       "caption": "Meet Ravi"
+      },
+      {
+       "items": [
+        "🌳",
+        "🥭"
+       ],
+       "motion": "float",
+       "caption": "The setting"
+      },
+      {
+       "items": [
+        "🏡",
+        "🎁"
+       ],
+       "motion": "push",
+       "caption": "The solution"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Reviewing Your Work",
+    "narration": [
+     "Remember to use capital letters and full stops in every sentence.",
+     "Always read your story aloud to hear if it sounds fun.",
+     "Think about it: If you were a superhero, what would your first mission be?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🅰️",
+        "."
+       ],
+       "motion": "pulse",
+       "caption": "Check grammar"
+      },
+      {
+       "items": [
+        "🗣️",
+        "👂"
+       ],
+       "motion": "float",
+       "caption": "Read aloud"
+      },
+      {
+       "items": [
+        "🦸",
+        "🌍"
+       ],
+       "motion": "grow",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Writing: Informal Letters": {
+  "id": "lib-english-g3-writing-informal-letters",
+  "topic": "Writing: Informal Letters",
+  "title": "Writing Letters to Friends",
+  "icon": "✉️",
+  "scenes": [
+   {
+    "title": "The Magic of Letters",
+    "narration": [
+     "Have you ever received a surprise letter in the post from a friend?",
+     "Writing a letter is a special way to share news with someone far away.",
+     "Let's learn how to write a friendly informal letter today!"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "✉️",
+        "😊"
+       ],
+       "motion": "float",
+       "caption": "Surprise letter"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🗺️"
+       ],
+       "motion": "float",
+       "caption": "Sharing news"
+      },
+      {
+       "items": [
+        "✍️",
+        "📝"
+       ],
+       "motion": "pulse",
+       "caption": "Informal letter"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Parts of a Letter",
+    "narration": [
+     "First, write your address and the date at the top right corner.",
+     "Next, start with a warm greeting like Dear Rohan.",
+     "Then, write the main message in a few simple sentences.",
+     "Finally, add a closing like Your friend, followed by your name."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏠",
+        "📅"
+       ],
+       "motion": "chain",
+       "caption": "Address and date"
+      },
+      {
+       "items": [
+        "👋",
+        "✍️"
+       ],
+       "motion": "pulse",
+       "caption": "The greeting"
+      },
+      {
+       "items": [
+        "💬",
+        "💭"
+       ],
+       "motion": "grow",
+       "caption": "The body"
+      },
+      {
+       "items": [
+        "🖊️",
+        "👤"
+       ],
+       "motion": "chain",
+       "caption": "The closing"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Writing to Priya",
+    "narration": [
+     "Let's write to our friend Priya about our new pet kitten.",
+     "Start with Dear Priya, and say how are you.",
+     "I have a tiny kitten named Mittu, she is very soft.",
+     "End with, See you soon, Love, Rahul."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🐱",
+        "👧"
+       ],
+       "motion": "rise",
+       "caption": "New kitten"
+      },
+      {
+       "items": [
+        "📝",
+        "Hi"
+       ],
+       "motion": "pulse",
+       "caption": "Greeting"
+      },
+      {
+       "items": [
+        "🐱",
+        "🐾"
+       ],
+       "motion": "grow",
+       "caption": "The news"
+      },
+      {
+       "items": [
+        "💌",
+        "✍️"
+       ],
+       "motion": "chain",
+       "caption": "The signature"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Think",
+    "narration": [
+     "Remember to include the date, greeting, your message, and a closing.",
+     "Keep your words friendly, just like how you talk to friends.",
+     "Think about it: who would you like to send your first letter to?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📅",
+        "👋",
+        "✉️"
+       ],
+       "motion": "pulse",
+       "caption": "Letter steps"
+      },
+      {
+       "items": [
+        "😊",
+        "🗣️"
+       ],
+       "motion": "float",
+       "caption": "Friendly tone"
+      },
+      {
+       "items": [
+        "🤔",
+        "✉️"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Writing: Diary Entry": {
+  "id": "lib-english-g3-writing-diary-entry",
+  "topic": "Writing: Diary Entry",
+  "title": "Writing Your Secret Diary",
+  "icon": "📔",
+  "scenes": [
+   {
+    "title": "What is a diary?",
+    "narration": [
+     "Have you ever wanted to keep your own secret book?",
+     "A diary is a special place to write about your day.",
+     "It is like telling a story to yourself."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📔",
+        "🔐"
+       ],
+       "motion": "pulse",
+       "caption": "Secret Book"
+      },
+      {
+       "items": [
+        "✍️",
+        "🗓️"
+       ],
+       "motion": "float",
+       "caption": "Daily Record"
+      },
+      {
+       "items": [
+        "🧒",
+        "📖"
+       ],
+       "motion": "grow",
+       "caption": "Personal Story"
+      }
+     ]
+    }
+   },
+   {
+    "title": "How to start writing",
+    "narration": [
+     "Always start by writing today's date at the top.",
+     "Next, say hello to your diary, like Dear Diary.",
+     "Use the word I when you talk about yourself.",
+     "Always remember to use past tense for things finished."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📅",
+        "15"
+       ],
+       "motion": "chain",
+       "caption": "Write Date"
+      },
+      {
+       "items": [
+        "✍️",
+        "👋"
+       ],
+       "motion": "pulse",
+       "caption": "Friendly Greeting"
+      },
+      {
+       "items": [
+        "🙋"
+       ],
+       "motion": "rise",
+       "caption": "Use I"
+      },
+      {
+       "items": [
+        "🏃",
+        "🏃‍♂️"
+       ],
+       "motion": "push",
+       "caption": "Past Tense"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Let's write an entry",
+    "narration": [
+     "Imagine you visited the zoo with Rohan today.",
+     "Write, I saw a tall giraffe at the zoo.",
+     "Then write, I ate a yummy mango ice cream.",
+     "End with, I had a very fun day."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🦁",
+        "🐒",
+        "🧒"
+       ],
+       "motion": "float",
+       "caption": "Visit Zoo"
+      },
+      {
+       "items": [
+        "🦒",
+        "👀"
+       ],
+       "motion": "chain",
+       "caption": "Write Sentence"
+      },
+      {
+       "items": [
+        "🍦",
+        "🥭"
+       ],
+       "motion": "grow",
+       "caption": "Describe Food"
+      },
+      {
+       "items": [
+        "😊",
+        "🌟"
+       ],
+       "motion": "rise",
+       "caption": "Happy Ending"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Practice",
+    "narration": [
+     "Remember, date first, greeting next, and talk about you.",
+     "Keep your diary safe and write in it every day.",
+     "What is one fun thing you will write about tonight?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📅",
+        "👋",
+        "🙋"
+       ],
+       "motion": "chain",
+       "caption": "Key Steps"
+      },
+      {
+       "items": [
+        "📔",
+        "🔒"
+       ],
+       "motion": "pulse",
+       "caption": "Keep Safe"
+      },
+      {
+       "items": [
+        "❓",
+        "💭"
+       ],
+       "motion": "float",
+       "caption": "Think About It"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Writing: Picture Composition": {
+  "id": "lib-english-g3-writing-picture-composition",
+  "topic": "Writing: Picture Composition",
+  "title": "Telling Stories Through Pictures",
+  "icon": "🖼️",
+  "scenes": [
+   {
+    "title": "Look at the Picture",
+    "narration": [
+     "Have you ever looked at a picture and wondered what is happening inside it?",
+     "Pictures are like frozen stories waiting for you to tell them.",
+     "Today we will learn how to write about a picture in three easy steps."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🖼️",
+        "🤔"
+       ],
+       "motion": "pulse",
+       "caption": "Observe"
+      },
+      {
+       "items": [
+        "❄️",
+        "📖"
+       ],
+       "motion": "float",
+       "caption": "Frozen story"
+      },
+      {
+       "items": [
+        "1️⃣",
+        "2️⃣",
+        "3️⃣"
+       ],
+       "motion": "chain",
+       "caption": "Three steps"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Three Magic Steps",
+    "narration": [
+     "First, list what you see, like people, animals, or objects.",
+     "Next, describe what is happening using action words.",
+     "Finally, add feelings to tell us if the scene is happy or calm."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "🐕",
+        "🌳"
+       ],
+       "motion": "push",
+       "caption": "List items"
+      },
+      {
+       "items": [
+        "🏃",
+        "⚽",
+        "☀️"
+       ],
+       "motion": "rise",
+       "caption": "Action words"
+      },
+      {
+       "items": [
+        "😊",
+        "🌈"
+       ],
+       "motion": "grow",
+       "caption": "Add feelings"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Writing About a Park",
+    "narration": [
+     "Imagine a picture of Rohan playing in a sunny park.",
+     "Step one: I see Rohan, a ball, and a big green tree.",
+     "Step two: Rohan is kicking the ball on the grass.",
+     "Step three: Rohan has a big smile because he is happy."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "🌳",
+        "☀️"
+       ],
+       "motion": "float",
+       "caption": "The scene"
+      },
+      {
+       "items": [
+        "Rohan",
+        "ball",
+        "tree"
+       ],
+       "motion": "chain",
+       "caption": "Listing"
+      },
+      {
+       "items": [
+        "Rohan",
+        "kicks",
+        "ball"
+       ],
+       "motion": "push",
+       "caption": "Action"
+      },
+      {
+       "items": [
+        "😊",
+        "happy"
+       ],
+       "motion": "grow",
+       "caption": "Feeling"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Challenge",
+    "narration": [
+     "Remember to list things, describe actions, and share feelings.",
+     "Your sentences will make the picture come alive for the reader.",
+     "Think about it: What story would you write about a picture of a rainy day?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📝",
+        "✨"
+       ],
+       "motion": "chain",
+       "caption": "Key points"
+      },
+      {
+       "items": [
+        "📖",
+        "🌟"
+       ],
+       "motion": "rise",
+       "caption": "Bring to life"
+      },
+      {
+       "items": [
+        "🌧️",
+        "📝"
+       ],
+       "motion": "pulse",
+       "caption": "Try it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Writing: Descriptive Writing": {
+  "id": "lib-english-g3-writing-descriptive-writing",
+  "topic": "Writing: Descriptive Writing",
+  "title": "Paint Pictures With Your Words",
+  "icon": "🎨",
+  "scenes": [
+   {
+    "title": "The Magic of Describing",
+    "narration": [
+     "Have you ever told a friend about a yummy treat you ate?",
+     "Instead of saying it was good, can you make them taste it?",
+     "Descriptive writing helps you paint a picture in the reader's mind."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍦"
+       ],
+       "motion": "pulse",
+       "caption": "Yummy treat"
+      },
+      {
+       "items": [
+        "😋"
+       ],
+       "motion": "grow",
+       "caption": "Make it real"
+      },
+      {
+       "items": [
+        "🎨",
+        "📖"
+       ],
+       "motion": "chain",
+       "caption": "Word pictures"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Using Your Five Senses",
+    "narration": [
+     "First, use your senses to find special details.",
+     "Does the object look bright, feel soft, or smell sweet?",
+     "These details make your sentences come alive for everyone."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👁️",
+        "👂",
+        "👃",
+        "👅",
+        "✋"
+       ],
+       "motion": "pulse",
+       "caption": "Five senses"
+      },
+      {
+       "items": [
+        "☀️",
+        "🧸",
+        "🌸"
+       ],
+       "motion": "rise",
+       "caption": "Adding detail"
+      },
+      {
+       "items": [
+        "✨",
+        "✍️"
+       ],
+       "motion": "float",
+       "caption": "Vivid details"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Example: Describing a Mango",
+    "narration": [
+     "Let us describe a ripe, juicy mango from the market.",
+     "Instead of saying 'it is yellow', say 'the mango is bright golden'.",
+     "Add a feeling: 'It feels smooth and heavy in my hand.'",
+     "Finish with taste: 'The fruit is sweet like honey.'"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🥭"
+       ],
+       "motion": "pulse",
+       "caption": "Golden mango"
+      },
+      {
+       "items": [
+        "🟡",
+        "🥭"
+       ],
+       "motion": "grow",
+       "caption": "Better adjectives"
+      },
+      {
+       "items": [
+        "✋",
+        "🥭"
+       ],
+       "motion": "push",
+       "caption": "Touch detail"
+      },
+      {
+       "items": [
+        "🍯",
+        "😋"
+       ],
+       "motion": "rise",
+       "caption": "Taste detail"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Try It",
+    "narration": [
+     "Remember to use your five senses to add color to your writing.",
+     "Pick better words to show, not just tell, what you see.",
+     "Think about it: How would you describe your favorite school bag?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👁️",
+        "🎨"
+       ],
+       "motion": "chain",
+       "caption": "Use senses"
+      },
+      {
+       "items": [
+        "✏️",
+        "📖"
+       ],
+       "motion": "float",
+       "caption": "Show not tell"
+      },
+      {
+       "items": [
+        "🎒"
+       ],
+       "motion": "pulse",
+       "caption": "Your turn"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Writing: Summarizing Short Passages": {
+  "id": "lib-english-g3-writing-summarizing-short-passages",
+  "topic": "Writing: Summarizing Short Passages",
+  "title": "How to Write a Summary",
+  "icon": "📝",
+  "scenes": [
+   {
+    "title": "The Big Mystery",
+    "narration": [
+     "Have you ever told a friend about a story you read?",
+     "You do not tell them every single word, right?",
+     "Summarizing is picking only the most important parts."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📖",
+        "👦"
+       ],
+       "motion": "float",
+       "caption": "Reading stories"
+      },
+      {
+       "items": [
+        "🚫",
+        "💬"
+       ],
+       "motion": "pulse",
+       "caption": "Don't say all"
+      },
+      {
+       "items": [
+        "✨",
+        "🎯"
+       ],
+       "motion": "push",
+       "caption": "Main ideas"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Finding the Gold",
+    "narration": [
+     "First, read your passage carefully from start to finish.",
+     "Then, ask yourself: Who is this story about?",
+     "Next, ask: What is the main thing that happened?",
+     "Ignore the small details that do not change the plot."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👁️",
+        "📖"
+       ],
+       "motion": "float",
+       "caption": "Read carefully"
+      },
+      {
+       "items": [
+        "👤"
+       ],
+       "motion": "pulse",
+       "caption": "Who"
+      },
+      {
+       "items": [
+        "⚡",
+        "✅"
+       ],
+       "motion": "grow",
+       "caption": "What happened"
+      },
+      {
+       "items": [
+        "🗑️",
+        "🤏"
+       ],
+       "motion": "pull",
+       "caption": "Remove details"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Story Example",
+    "narration": [
+     "Rohan went to the park and ate a red apple.",
+     "He played cricket with friends until the sun set.",
+     "A short summary is: Rohan played cricket at the park.",
+     "See? We kept the hero and the main action."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "🌳",
+        "🍎"
+       ],
+       "motion": "chain",
+       "caption": "Rohan's story"
+      },
+      {
+       "items": [
+        "🏏",
+        "☀️"
+       ],
+       "motion": "chain",
+       "caption": "Playing cricket"
+      },
+      {
+       "items": [
+        "📝",
+        "👦",
+        "🏏"
+       ],
+       "motion": "push",
+       "caption": "The summary"
+      },
+      {
+       "items": [
+        "⭐",
+        "✅"
+       ],
+       "motion": "pulse",
+       "caption": "Key points"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Wrap It Up",
+    "narration": [
+     "Remember, a summary is short and tells the main idea.",
+     "Always use your own words to describe the story.",
+     "Can you summarize your favorite book in just three sentences?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📏",
+        "💡"
+       ],
+       "motion": "float",
+       "caption": "Short summary"
+      },
+      {
+       "items": [
+        "✏️",
+        "🗣️"
+       ],
+       "motion": "grow",
+       "caption": "Own words"
+      },
+      {
+       "items": [
+        "🤔",
+        "📚"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Speaking and Listening: Storytelling": {
+  "id": "lib-english-g3-speaking-and-listening-storytelling",
+  "topic": "Speaking and Listening: Storytelling",
+  "title": "How to Tell Great Stories",
+  "icon": "📖",
+  "scenes": [
+   {
+    "title": "The Hook",
+    "narration": [
+     "Have you ever shared a funny story about your day at school?",
+     "Do you want to know how to make your tales super exciting?",
+     "Let us learn the secrets to being a great storyteller today!"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏫",
+        "😊"
+       ],
+       "motion": "pulse",
+       "caption": "Sharing stories"
+      },
+      {
+       "items": [
+        "✨",
+        "👂"
+       ],
+       "motion": "rise",
+       "caption": "Storytelling magic"
+      },
+      {
+       "items": [
+        "📚",
+        "🌟"
+       ],
+       "motion": "grow",
+       "caption": "Learn storytelling"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Idea",
+    "narration": [
+     "First, start with a clear beginning to introduce your characters.",
+     "Next, add a middle part where something interesting or tricky happens.",
+     "Finally, give your story a happy or clever ending.",
+     "Use feeling words to help your friends picture the scene."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "👧"
+       ],
+       "motion": "chain",
+       "caption": "Start strong"
+      },
+      {
+       "items": [
+        "🤔",
+        "🎢"
+       ],
+       "motion": "chain",
+       "caption": "The middle"
+      },
+      {
+       "items": [
+        "🏁",
+        "🌈"
+       ],
+       "motion": "chain",
+       "caption": "The finish"
+      },
+      {
+       "items": [
+        "🎨",
+        "💡"
+       ],
+       "motion": "pulse",
+       "caption": "Descriptive words"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Example",
+    "narration": [
+     "Imagine Rohan finds a shiny gold coin at the park.",
+     "Suddenly, a friendly squirrel tries to take his treasure!",
+     "Rohan trades a nut for the coin and smiles big.",
+     "See how using 'shiny', 'friendly', and 'big' makes it better?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "🪙",
+        "🌳"
+       ],
+       "motion": "float",
+       "caption": "The beginning"
+      },
+      {
+       "items": [
+        "🐿️",
+        "🪙"
+       ],
+       "motion": "push",
+       "caption": "The problem"
+      },
+      {
+       "items": [
+        "🥜",
+        "🪙",
+        "😊"
+       ],
+       "motion": "pull",
+       "caption": "The solution"
+      },
+      {
+       "items": [
+        "✨",
+        "🐿️",
+        "😊"
+       ],
+       "motion": "pulse",
+       "caption": "Using adjectives"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Recap",
+    "narration": [
+     "Remember to have a clear beginning, middle, and end.",
+     "Use exciting words to bring your story to life.",
+     "Think about it: what is one exciting story you can tell your family tonight?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "1️⃣",
+        "2️⃣",
+        "3️⃣"
+       ],
+       "motion": "chain",
+       "caption": "Structure"
+      },
+      {
+       "items": [
+        "📣",
+        "🌟"
+       ],
+       "motion": "rise",
+       "caption": "Be descriptive"
+      },
+      {
+       "items": [
+        "🏠",
+        "🗣️"
+       ],
+       "motion": "float",
+       "caption": "Your turn"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Speaking and Listening: Conversations": {
+  "id": "lib-english-g3-speaking-and-listening-conversations",
+  "topic": "Speaking and Listening: Conversations",
+  "title": "How to Have Great Conversations",
+  "icon": "🗣️",
+  "scenes": [
+   {
+    "title": "The Magic of Talking",
+    "narration": [
+     "Have you ever wondered how to make your friend feel happy while you talk?",
+     "A conversation is like a game of catch with words.",
+     "Do you listen as much as you speak?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "👧",
+        "💬"
+       ],
+       "motion": "pulse",
+       "caption": "Friendly chat"
+      },
+      {
+       "items": [
+        "🎾",
+        "💬"
+       ],
+       "motion": "float",
+       "caption": "Word catch"
+      },
+      {
+       "items": [
+        "👂",
+        "👄"
+       ],
+       "motion": "pulse",
+       "caption": "Listen well"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Taking Turns to Speak",
+    "narration": [
+     "First, wait for your friend to finish their sentence completely.",
+     "Look at them kindly so they know you are listening.",
+     "When it is your turn, use a clear voice to share your thoughts.",
+     "Avoid interrupting, just like waiting for your turn on the swing."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "✋",
+        "🛑"
+       ],
+       "motion": "push",
+       "caption": "Wait turn"
+      },
+      {
+       "items": [
+        "👀",
+        "😊"
+       ],
+       "motion": "float",
+       "caption": "Kind eyes"
+      },
+      {
+       "items": [
+        "📢",
+        "🗣️"
+       ],
+       "motion": "rise",
+       "caption": "Clear voice"
+      },
+      {
+       "items": [
+        "🛝",
+        "⏳"
+       ],
+       "motion": "chain",
+       "caption": "No interrupting"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Chat at School",
+    "narration": [
+     "Imagine Rohan tells you, I loved the history lesson today.",
+     "You should reply, That is great, what was your favorite part?",
+     "Rohan says, I liked learning about the Taj Mahal.",
+     "You respond, Me too, the white marble is beautiful!"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "📚",
+        "✨"
+       ],
+       "motion": "pulse",
+       "caption": "Rohan speaks"
+      },
+      {
+       "items": [
+        "💭",
+        "❓"
+       ],
+       "motion": "grow",
+       "caption": "Ask question"
+      },
+      {
+       "items": [
+        "🏰",
+        "🇮🇳"
+       ],
+       "motion": "float",
+       "caption": "Taj Mahal"
+      },
+      {
+       "items": [
+        "🤝",
+        "💖"
+       ],
+       "motion": "grow",
+       "caption": "Show interest"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Remembering Your Skills",
+    "narration": [
+     "Remember to listen carefully, take turns, and ask good questions.",
+     "Conversations are much better when everyone feels heard.",
+     "Think about it: Who will you have a kind conversation with today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👂",
+        "🔄",
+        "❓"
+       ],
+       "motion": "chain",
+       "caption": "Key tips"
+      },
+      {
+       "items": [
+        "😊",
+        "🌟"
+       ],
+       "motion": "rise",
+       "caption": "Feel heard"
+      },
+      {
+       "items": [
+        "🤔",
+        "💬"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Writing: Creative Writing": {
+  "id": "lib-english-g3-writing-creative-writing",
+  "topic": "Writing: Creative Writing",
+  "title": "Unlocking Your Storytelling Superpowers",
+  "icon": "✍️",
+  "scenes": [
+   {
+    "title": "The Magic of Ideas",
+    "narration": [
+     "Do you ever look at a blank page and wonder what to write?",
+     "Writing is like painting a picture in your reader's mind.",
+     "Let's learn how to turn your thoughts into an amazing story."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📄",
+        "🤔"
+       ],
+       "motion": "float",
+       "caption": "Blank Page"
+      },
+      {
+       "items": [
+        "🎨",
+        "🧠"
+       ],
+       "motion": "pulse",
+       "caption": "Word Pictures"
+      },
+      {
+       "items": [
+        "✨",
+        "📖"
+       ],
+       "motion": "grow",
+       "caption": "Story Magic"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Building Your Story World",
+    "narration": [
+     "First, pick a hero, like Ayesha who loves to explore.",
+     "Next, decide where she goes, like a bustling Delhi market.",
+     "Then, give her a problem to solve, like finding a lost key.",
+     "Finally, show how she solves it using her brave heart."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👧",
+        "🎒"
+       ],
+       "motion": "chain",
+       "caption": "Meet Character"
+      },
+      {
+       "items": [
+        "🇮🇳",
+        "🛍️"
+       ],
+       "motion": "chain",
+       "caption": "Setting Scene"
+      },
+      {
+       "items": [
+        "🔑",
+        "❓"
+       ],
+       "motion": "chain",
+       "caption": "The Problem"
+      },
+      {
+       "items": [
+        "💖",
+        "✅"
+       ],
+       "motion": "chain",
+       "caption": "The Solution"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Story in Action",
+    "narration": [
+     "Ayesha walked through the busy market smelling fresh spicy samosas.",
+     "She looked for her key under a bright red stall.",
+     "Suddenly, a friendly cat tapped her shiny silver key.",
+     "Ayesha smiled because her mystery was solved at last."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🥟",
+        "👃"
+       ],
+       "motion": "push",
+       "caption": "Use Senses"
+      },
+      {
+       "items": [
+        "📍",
+        "🟥"
+       ],
+       "motion": "push",
+       "caption": "Show Details"
+      },
+      {
+       "items": [
+        "🐱",
+        "🔑"
+       ],
+       "motion": "push",
+       "caption": "Action Words"
+      },
+      {
+       "items": [
+        "😊",
+        "🔓"
+       ],
+       "motion": "push",
+       "caption": "Happy Ending"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Time to Write",
+    "narration": [
+     "Remember to use your five senses to make stories feel real.",
+     "Always check your sentences start with capitals and end with stops.",
+     "Now, what is one exciting adventure you want to write about?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👁️",
+        "👂",
+        "👃",
+        "👅",
+        "✋"
+       ],
+       "motion": "pulse",
+       "caption": "Five Senses"
+      },
+      {
+       "items": [
+        "A",
+        ".",
+        "."
+       ],
+       "motion": "pulse",
+       "caption": "Grammar Check"
+      },
+      {
+       "items": [
+        "✍️",
+        "🌟"
+       ],
+       "motion": "rise",
+       "caption": "Think About It"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Speaking and Listening: Asking Questions": {
+  "id": "lib-english-g3-speaking-and-listening-asking-questions",
+  "topic": "Speaking and Listening: Asking Questions",
+  "title": "How to Ask Great Questions",
+  "icon": "❓",
+  "scenes": [
+   {
+    "title": "Why Ask Questions",
+    "narration": [
+     "Have you ever wondered why the sky is blue or how a bird flies?",
+     "Asking questions is the best way to learn new things every single day.",
+     "Let's learn how to ask clear questions to get the best answers."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "☀️",
+        "🐦"
+       ],
+       "motion": "pulse",
+       "caption": "Curious mind"
+      },
+      {
+       "items": [
+        "💡",
+        "👧",
+        "👦"
+       ],
+       "motion": "grow",
+       "caption": "Learning together"
+      },
+      {
+       "items": [
+        "🗣️",
+        "👂"
+       ],
+       "motion": "chain",
+       "caption": "Clear questions"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Question Starters",
+    "narration": [
+     "Use special words like Who, What, Where, When, Why, and How.",
+     "Who asks about a person, like Who is your best friend?",
+     "What asks about a thing, like What is for lunch today?",
+     "Where asks for a place, like Where is my red school bag?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "❓",
+        "📝"
+       ],
+       "motion": "pulse",
+       "caption": "Question words"
+      },
+      {
+       "items": [
+        "🙋",
+        "🧑‍🤝‍🧑"
+       ],
+       "motion": "float",
+       "caption": "Using Who"
+      },
+      {
+       "items": [
+        "🍱",
+        "🍎"
+       ],
+       "motion": "float",
+       "caption": "Using What"
+      },
+      {
+       "items": [
+        "🎒",
+        "📍"
+       ],
+       "motion": "float",
+       "caption": "Using Where"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Practice With Rahul",
+    "narration": [
+     "Rahul wants to know about a trip to the Taj Mahal.",
+     "He asks, When can we go to Agra to see it?",
+     "He also asks, How do we get there by train?",
+     "By using these words, Rahul gets all the information he needs."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🇮🇳",
+        "🏛️"
+       ],
+       "motion": "chain",
+       "caption": "Rahul's trip"
+      },
+      {
+       "items": [
+        "📅",
+        "🚗"
+       ],
+       "motion": "chain",
+       "caption": "Asking When"
+      },
+      {
+       "items": [
+        "🚂",
+        "🎫"
+       ],
+       "motion": "chain",
+       "caption": "Asking How"
+      },
+      {
+       "items": [
+        "✅",
+        "📖"
+       ],
+       "motion": "grow",
+       "caption": "Getting answers"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Time To Practice",
+    "narration": [
+     "Remember to use who, what, where, when, why, or how.",
+     "Listen carefully to the answer so you can learn even more.",
+     "Think about it: what is one question you want to ask your teacher today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "❓",
+        "🗣️"
+       ],
+       "motion": "pulse",
+       "caption": "Question tools"
+      },
+      {
+       "items": [
+        "👂",
+        "✨"
+       ],
+       "motion": "float",
+       "caption": "Active listening"
+      },
+      {
+       "items": [
+        "🏫",
+        "👩‍🏫"
+       ],
+       "motion": "pulse",
+       "caption": "Your turn"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Speaking and Listening: Describing Events": {
+  "id": "lib-english-g3-speaking-and-listening-describing-events",
+  "topic": "Speaking and Listening: Describing Events",
+  "title": "Telling A Great Story",
+  "icon": "🗣️",
+  "scenes": [
+   {
+    "title": "The Hook",
+    "narration": [
+     "Have you ever told a friend about your amazing day at the park?",
+     "Sometimes it is hard to explain exactly what happened, right?",
+     "Today, we will learn how to describe events so others can picture them!"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🧒",
+        "🌳",
+        "⚽"
+       ],
+       "motion": "pulse",
+       "caption": "Sharing stories"
+      },
+      {
+       "items": [
+        "🤔",
+        "💭"
+       ],
+       "motion": "float",
+       "caption": "Finding words"
+      },
+      {
+       "items": [
+        "📖",
+        "✨"
+       ],
+       "motion": "grow",
+       "caption": "Learning storytelling"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Three Steps",
+    "narration": [
+     "First, start by saying when and where the event happened.",
+     "Next, use action words to tell us what happened in order.",
+     "Finally, add a feeling word to describe how it made you feel."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "⏰",
+        "📍"
+       ],
+       "motion": "chain",
+       "caption": "Setting scene"
+      },
+      {
+       "items": [
+        "🏃",
+        "✏️",
+        "📢"
+       ],
+       "motion": "chain",
+       "caption": "Action words"
+      },
+      {
+       "items": [
+        "😊",
+        "😲",
+        "🥳"
+       ],
+       "motion": "chain",
+       "caption": "Feeling words"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Day at the Fair",
+    "narration": [
+     "Yesterday, I went to the village fair in Jaipur.",
+     "I bought a balloon and rode the spinning merry-go-round.",
+     "I felt so excited because the music was very loud!"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📅",
+        "🎡",
+        "🇮🇳"
+       ],
+       "motion": "float",
+       "caption": "The setting"
+      },
+      {
+       "items": [
+        "🎈",
+        "🎠"
+       ],
+       "motion": "push",
+       "caption": "The action"
+      },
+      {
+       "items": [
+        "🤩",
+        "🎶"
+       ],
+       "motion": "pulse",
+       "caption": "The feeling"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Think",
+    "narration": [
+     "Remember to share the when, the what, and your feelings.",
+     "Using these steps makes your stories fun to hear!",
+     "Think about it: What is one fun thing you did this weekend?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🕒",
+        "✅",
+        "❤️"
+       ],
+       "motion": "rise",
+       "caption": "Key points"
+      },
+      {
+       "items": [
+        "🌟",
+        "👂"
+       ],
+       "motion": "grow",
+       "caption": "Great storytelling"
+      },
+      {
+       "items": [
+        "💭",
+        "🗓️"
+       ],
+       "motion": "float",
+       "caption": "Your turn"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Speaking and Listening: Giving Instructions": {
+  "id": "lib-english-g3-speaking-and-listening-giving-instructions",
+  "topic": "Speaking and Listening: Giving Instructions",
+  "title": "Giving Clear Instructions",
+  "icon": "🗣️",
+  "scenes": [
+   {
+    "title": "The Mystery of Lost Directions",
+    "narration": [
+     "Have you ever tried to explain a game to a friend but they got confused?",
+     "Giving good instructions is like following a map to find hidden treasure.",
+     "Today, we will learn how to speak so everyone understands us perfectly."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🧒",
+        "🤔",
+        "🎮"
+       ],
+       "motion": "pulse",
+       "caption": "Confused friend"
+      },
+      {
+       "items": [
+        "🗺️",
+        "🏴‍☠️",
+        "💎"
+       ],
+       "motion": "float",
+       "caption": "Clear path"
+      },
+      {
+       "items": [
+        "🗣️",
+        "✅",
+        "👂"
+       ],
+       "motion": "rise",
+       "caption": "Speaking clearly"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Three Steps to Success",
+    "narration": [
+     "First, use short and simple sentences so your friend can follow along.",
+     "Second, speak in the right order like steps in a recipe.",
+     "Third, use polite words like please when you ask for help.",
+     "Always check if your listener understands by asking them a quick question."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "1",
+        "📝"
+       ],
+       "motion": "chain",
+       "caption": "Short sentences"
+      },
+      {
+       "items": [
+        "2",
+        "🥣",
+        "🍳"
+       ],
+       "motion": "chain",
+       "caption": "Step order"
+      },
+      {
+       "items": [
+        "3",
+        "🤝",
+        "🙏"
+       ],
+       "motion": "chain",
+       "caption": "Polite words"
+      },
+      {
+       "items": [
+        "👂",
+        "❓",
+        "✅"
+       ],
+       "motion": "pulse",
+       "caption": "Check understanding"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Making a Jam Sandwich",
+    "narration": [
+     "Let us tell Rahul how to make a yummy jam sandwich.",
+     "First, please put two slices of bread on a clean plate.",
+     "Next, spread the sweet jam on one slice using a knife.",
+     "Finally, put the other slice on top and enjoy your snack."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍞",
+        "🍓",
+        "🥄"
+       ],
+       "motion": "push",
+       "caption": "Jam sandwich"
+      },
+      {
+       "items": [
+        "1",
+        "🍞",
+        "🍽️"
+       ],
+       "motion": "push",
+       "caption": "Bread on plate"
+      },
+      {
+       "items": [
+        "2",
+        "🍓",
+        "🔪"
+       ],
+       "motion": "push",
+       "caption": "Spread jam"
+      },
+      {
+       "items": [
+        "3",
+        "🥪",
+        "😋"
+       ],
+       "motion": "push",
+       "caption": "Eat sandwich"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Try It",
+    "narration": [
+     "Remember to use simple steps and always be polite when you talk.",
+     "Clear instructions help everyone work together happily at school and home.",
+     "Think about it: what instructions would you give to teach someone a game?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "✨",
+        "📝",
+        "🙏"
+       ],
+       "motion": "float",
+       "caption": "Good habits"
+      },
+      {
+       "items": [
+        "🏫",
+        "🏠",
+        "🤝"
+       ],
+       "motion": "rise",
+       "caption": "Working together"
+      },
+      {
+       "items": [
+        "🤔",
+        "🎲",
+        "🗣️"
+       ],
+       "motion": "pulse",
+       "caption": "Think about it"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Speaking and Listening: Listening Comprehension": {
+  "id": "lib-english-g3-speaking-and-listening-listening-comprehension",
+  "topic": "Speaking and Listening: Listening Comprehension",
+  "title": "Becoming a Super Listener",
+  "icon": "👂",
+  "scenes": [
+   {
+    "title": "Why Listen Carefully?",
+    "narration": [
+     "Have you ever missed a cool instruction because you were busy playing?",
+     "Listening is more than just hearing sounds around you.",
+     "It is like catching a ball with your ears instead of your hands."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🏃",
+        "🧒"
+       ],
+       "motion": "float",
+       "caption": "Daydreaming"
+      },
+      {
+       "items": [
+        "👂",
+        "🔊"
+       ],
+       "motion": "pulse",
+       "caption": "Active Listening"
+      },
+      {
+       "items": [
+        "👂",
+        "🥎"
+       ],
+       "motion": "push",
+       "caption": "Catching Words"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Three Steps",
+    "narration": [
+     "First, look at the person who is speaking to you.",
+     "Second, stay quiet so you can hear every important word.",
+     "Third, think about what they mean before you answer."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👀",
+        "🙋"
+       ],
+       "motion": "chain",
+       "caption": "Eye Contact"
+      },
+      {
+       "items": [
+        "🤫",
+        "🔇"
+       ],
+       "motion": "chain",
+       "caption": "Stay Quiet"
+      },
+      {
+       "items": [
+        "🧠",
+        "💭"
+       ],
+       "motion": "chain",
+       "caption": "Think First"
+      }
+     ]
+    }
+   },
+   {
+    "title": "An Example at School",
+    "narration": [
+     "Imagine your teacher says, Bring your notebook to my desk.",
+     "If you are listening, you hear three things: notebook, desk, and bring.",
+     "Instead of running to the playground, you walk to the teacher."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📓",
+        "👩‍🏫"
+       ],
+       "motion": "grow",
+       "caption": "Clear Instruction"
+      },
+      {
+       "items": [
+        "📓",
+        "➡️",
+        "👩‍🏫"
+       ],
+       "motion": "push",
+       "caption": "Key Details"
+      },
+      {
+       "items": [
+        "🏃",
+        "🚫",
+        "🚶"
+       ],
+       "motion": "pull",
+       "caption": "Correct Action"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Recap and Try It",
+    "narration": [
+     "Remember: Look, stay quiet, and think to be a super listener.",
+     "Listening helps you learn faster and make fewer mistakes.",
+     "Think about it: What is one thing you will listen for today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👀",
+        "🤫",
+        "🧠"
+       ],
+       "motion": "pulse",
+       "caption": "Quick Recap"
+      },
+      {
+       "items": [
+        "✅",
+        "📈"
+       ],
+       "motion": "rise",
+       "caption": "Better Learning"
+      },
+      {
+       "items": [
+        "❓",
+        "👂"
+       ],
+       "motion": "float",
+       "caption": "Your Turn"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Speaking and Listening: Role-play": {
+  "id": "lib-english-g3-speaking-and-listening-role-play",
+  "topic": "Speaking and Listening: Role-play",
+  "title": "Let's Role-Play Together",
+  "icon": "🎭",
+  "scenes": [
+   {
+    "title": "The Magic of Pretend",
+    "narration": [
+     "Have you ever pretended to be a shopkeeper or a doctor?",
+     "Role-play is acting out a situation to learn how we talk to others.",
+     "It helps us practice using kind and clear words."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🍎",
+        "🩺"
+       ],
+       "motion": "pulse",
+       "caption": "Pretend Play"
+      },
+      {
+       "items": [
+        "🗣️",
+        "🤝"
+       ],
+       "motion": "chain",
+       "caption": "What is Role-play"
+      },
+      {
+       "items": [
+        "😊",
+        "💬"
+       ],
+       "motion": "rise",
+       "caption": "Better Communication"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Steps to Great Acting",
+    "narration": [
+     "First, choose your character and where the story happens.",
+     "Next, think about what your character wants to say.",
+     "Then, listen carefully to your partner before you speak."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👤",
+        "🏠"
+       ],
+       "motion": "chain",
+       "caption": "Pick Character"
+      },
+      {
+       "items": [
+        "💭",
+        "✨"
+       ],
+       "motion": "grow",
+       "caption": "Plan Words"
+      },
+      {
+       "items": [
+        "👂",
+        "👥"
+       ],
+       "motion": "push",
+       "caption": "Listen First"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Day at the Market",
+    "narration": [
+     "Imagine Rohan is buying apples from a fruit seller.",
+     "Rohan says, Hello, may I please buy two apples?",
+     "The seller says, Yes, that will be ten rupees.",
+     "Rohan replies, Thank you, have a nice day!"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👦",
+        "🍎",
+        "💰"
+       ],
+       "motion": "chain",
+       "caption": "The Scene"
+      },
+      {
+       "items": [
+        "Hello",
+        "2",
+        "🍎"
+       ],
+       "motion": "float",
+       "caption": "Polite Request"
+      },
+      {
+       "items": [
+        "10",
+        "₹",
+        "✅"
+       ],
+       "motion": "push",
+       "caption": "The Response"
+      },
+      {
+       "items": [
+        "Thank you"
+       ],
+       "motion": "rise",
+       "caption": "Being Kind"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Time to Wrap Up",
+    "narration": [
+     "Role-playing helps us speak clearly and listen with respect.",
+     "Always use polite words like please, thank you, and excuse me.",
+     "Think about it: who would you like to be in a role-play today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📢",
+        "👂"
+       ],
+       "motion": "pulse",
+       "caption": "Key Benefits"
+      },
+      {
+       "items": [
+        "✨"
+       ],
+       "motion": "grow",
+       "caption": "Polite Words"
+      },
+      {
+       "items": [
+        "🤔",
+        "🎭"
+       ],
+       "motion": "float",
+       "caption": "Your Turn"
+      }
+     ]
+    }
+   }
+  ]
+ }
+}

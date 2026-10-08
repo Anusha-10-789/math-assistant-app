@@ -4,6 +4,7 @@ import AdminPage from "./components/AdminPage";
 import ReadingPoster from "./components/ReadingPoster";
 import MathBackdrop from "./components/MathBackdrop";
 import SolarSystemBackdrop from "./components/SolarSystemBackdrop";
+import StorybookBackdrop from "./components/StorybookBackdrop";
 import WorldBackdrop from "./components/WorldBackdrop";
 import DownloadButtons from "./components/DownloadButtons";
 import ErrorMessage from "./components/ErrorMessage";
@@ -537,7 +538,8 @@ export default function App() {
   );
 
   // Inside the lessons the background matches the subject: a solar system
-  // for Science, a maths chalkboard for Maths, a world map for Social Studies.
+  // for Science, a maths chalkboard for Maths, a world map for Social Studies, a storybook
+  // library for English.
   const inLesson = view === "app" && stage !== "subject";
 
   return (
@@ -548,6 +550,8 @@ export default function App() {
         <SolarSystemBackdrop />
       ) : subject === "Social Studies" ? (
         <WorldBackdrop />
+      ) : subject === "English" ? (
+        <StorybookBackdrop />
       ) : (
         <MathBackdrop />
       )}
