@@ -5965,5 +5965,485 @@
     }
    }
   ]
+ },
+ "India: States and Union Territories": {
+  "id": "lib-general-knowledge-g2-india-states-and-union-territories",
+  "topic": "India: States and Union Territories",
+  "title": "Our States and Union Territories",
+  "icon": "🗺️",
+  "scenes": [
+   {
+    "title": "One Big Country",
+    "narration": [
+     "India is a very big country with many parts.",
+     "Each part has its own name, people and language.",
+     "What do we call these parts?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🗺️",
+        "🇮🇳"
+       ],
+       "motion": "grow",
+       "caption": "India"
+      },
+      {
+       "items": [
+        "🗣️",
+        "🏠",
+        "🍛"
+       ],
+       "motion": "float",
+       "caption": "Many parts"
+      },
+      {
+       "items": [
+        "🤔",
+        "❓"
+       ],
+       "motion": "pulse",
+       "caption": "Let us find out"
+      }
+     ]
+    }
+   },
+   {
+    "title": "States and Union Territories",
+    "narration": [
+     "India has 28 states and 8 Union Territories.",
+     "A state has its own government and Chief Minister.",
+     "Union Territories are looked after mostly by the central government.",
+     "Delhi, the capital of India, is a Union Territory."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "28",
+        "8"
+       ],
+       "motion": "pulse",
+       "caption": "28 and 8"
+      },
+      {
+       "items": [
+        "🏛️",
+        "🧑‍💼"
+       ],
+       "motion": "grow",
+       "caption": "States"
+      },
+      {
+       "items": [
+        "🏢",
+        "🇮🇳"
+       ],
+       "motion": "float",
+       "caption": "Union Territories"
+      },
+      {
+       "items": [
+        "🏛️",
+        "⭐"
+       ],
+       "motion": "pulse",
+       "caption": "Delhi"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Big and Small",
+    "narration": [
+     "Rajasthan is the biggest state by size.",
+     "Goa is the smallest state by size.",
+     "Andhra Pradesh is famous for its long coastline."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🐪",
+        "🏜️"
+       ],
+       "motion": "grow",
+       "caption": "Rajasthan"
+      },
+      {
+       "items": [
+        "🏖️",
+        "🌴"
+       ],
+       "motion": "pulse",
+       "caption": "Goa"
+      },
+      {
+       "items": [
+        "🌊",
+        "🏝️"
+       ],
+       "motion": "float",
+       "caption": "Andhra Pradesh"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Let Us Remember",
+    "narration": [
+     "28 states and 8 Union Territories make one India.",
+     "Every state is special in its own way.",
+     "Think about it: which state do you live in?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🧩",
+        "🇮🇳"
+       ],
+       "motion": "chain",
+       "caption": "One India"
+      },
+      {
+       "items": [
+        "🎉",
+        "🤝"
+       ],
+       "motion": "float",
+       "caption": "Unity"
+      },
+      {
+       "items": [
+        "🏠",
+        "🤔"
+       ],
+       "motion": "pulse",
+       "caption": "Your state"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Famous People: Mahatma Gandhi": {
+  "id": "lib-general-knowledge-g2-famous-people-mahatma-gandhi",
+  "topic": "Famous People: Mahatma Gandhi",
+  "title": "Bapu, Father of the Nation",
+  "icon": "🕊️",
+  "scenes": [
+   {
+    "title": "A Man in a Simple Dhoti",
+    "narration": [
+     "Have you seen a picture of a smiling man with round glasses on our rupee notes?",
+     "He is Mahatma Gandhi, whom we lovingly call Bapu.",
+     "Why do we call him the Father of the Nation?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👓",
+        "💵"
+       ],
+       "motion": "pulse",
+       "caption": "On our notes"
+      },
+      {
+       "items": [
+        "🧓",
+        "❤️"
+       ],
+       "motion": "grow",
+       "caption": "Bapu"
+      },
+      {
+       "items": [
+        "🤔",
+        "🇮🇳"
+       ],
+       "motion": "float",
+       "caption": "Let us learn"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Truth and Non-violence",
+    "narration": [
+     "Gandhiji was born on 2 October 1869 in Porbandar, Gujarat.",
+     "He believed in always telling the truth.",
+     "He taught us to fight without hurting anyone. This is called non-violence."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👶",
+        "📅"
+       ],
+       "motion": "grow",
+       "caption": "2 October 1869"
+      },
+      {
+       "items": [
+        "🗣️",
+        "✅"
+       ],
+       "motion": "pulse",
+       "caption": "Truth"
+      },
+      {
+       "items": [
+        "🕊️",
+        "🤝"
+       ],
+       "motion": "float",
+       "caption": "Non-violence"
+      }
+     ]
+    }
+   },
+   {
+    "title": "The Salt March",
+    "narration": [
+     "In 1930, Gandhiji walked about 390 kilometres to the sea at Dandi.",
+     "He made salt from sea water to protest an unfair British law.",
+     "Millions of Indians joined him to win freedom for India."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🚶",
+        "🌊"
+       ],
+       "motion": "push",
+       "caption": "Dandi March"
+      },
+      {
+       "items": [
+        "🧂",
+        "✊"
+       ],
+       "motion": "pulse",
+       "caption": "Salt"
+      },
+      {
+       "items": [
+        "👥",
+        "🇮🇳"
+       ],
+       "motion": "chain",
+       "caption": "Freedom"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Remembering Bapu",
+    "narration": [
+     "We celebrate Gandhi Jayanti on 2 October every year.",
+     "He spun his own cloth on a charkha to show self-reliance.",
+     "Think about it: how can you be truthful and kind today?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📅",
+        "🕊️"
+       ],
+       "motion": "pulse",
+       "caption": "Gandhi Jayanti"
+      },
+      {
+       "items": [
+        "🧵",
+        "⚙️"
+       ],
+       "motion": "float",
+       "caption": "Charkha"
+      },
+      {
+       "items": [
+        "💭",
+        "😊"
+       ],
+       "motion": "pulse",
+       "caption": "Be kind"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "Famous People: Dr. B. R. Ambedkar": {
+  "id": "lib-general-knowledge-g2-famous-people-dr-b-r-ambedkar",
+  "topic": "Famous People: Dr. B. R. Ambedkar",
+  "title": "Babasaheb Ambedkar",
+  "icon": "📜",
+  "scenes": [
+   {
+    "title": "The Rule Book of India",
+    "narration": [
+     "Every country needs rules so everyone is treated fairly.",
+     "India's big rule book is called the Constitution.",
+     "Do you know who led the team that wrote it?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📜",
+        "⚖️"
+       ],
+       "motion": "grow",
+       "caption": "Rules"
+      },
+      {
+       "items": [
+        "📘",
+        "🇮🇳"
+       ],
+       "motion": "pulse",
+       "caption": "Constitution"
+      },
+      {
+       "items": [
+        "🤔",
+        "✍️"
+       ],
+       "motion": "float",
+       "caption": "Let us find out"
+      }
+     ]
+    }
+   },
+   {
+    "title": "A Brilliant Student",
+    "narration": [
+     "Dr. B. R. Ambedkar was born on 14 April 1891.",
+     "As a child he faced unfair treatment, but he never stopped studying.",
+     "He studied in India, the USA and England and became a great scholar."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "👶",
+        "📅"
+       ],
+       "motion": "grow",
+       "caption": "14 April 1891"
+      },
+      {
+       "items": [
+        "📚",
+        "💪"
+       ],
+       "motion": "push",
+       "caption": "Never give up"
+      },
+      {
+       "items": [
+        "🎓",
+        "🌍"
+       ],
+       "motion": "chain",
+       "caption": "Great scholar"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Father of the Constitution",
+    "narration": [
+     "He was the chairman of the committee that drafted India's Constitution.",
+     "He fought for equality, so that every person gets the same rights.",
+     "He was given the Bharat Ratna in 1990."
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "🧑‍⚖️",
+        "📜"
+       ],
+       "motion": "pulse",
+       "caption": "Drafting chairman"
+      },
+      {
+       "items": [
+        "⚖️",
+        "🤝"
+       ],
+       "motion": "float",
+       "caption": "Equality"
+      },
+      {
+       "items": [
+        "🎖️",
+        "🇮🇳"
+       ],
+       "motion": "grow",
+       "caption": "Bharat Ratna"
+      }
+     ]
+    }
+   },
+   {
+    "title": "Remembering Babasaheb",
+    "narration": [
+     "We celebrate Ambedkar Jayanti on 14 April.",
+     "He taught us: educate, agitate and organise.",
+     "Think about it: how can you treat everyone in your class equally?"
+    ],
+    "anim": {
+     "kind": "scene",
+     "frames": [
+      {
+       "items": [
+        "📅",
+        "🎉"
+       ],
+       "motion": "pulse",
+       "caption": "Ambedkar Jayanti"
+      },
+      {
+       "items": [
+        "📚",
+        "✊",
+        "👥"
+       ],
+       "motion": "chain",
+       "caption": "His message"
+      },
+      {
+       "items": [
+        "🧒",
+        "👧",
+        "🤝"
+       ],
+       "motion": "pulse",
+       "caption": "Be fair"
+      }
+     ]
+    }
+   }
+  ]
  }
 }
