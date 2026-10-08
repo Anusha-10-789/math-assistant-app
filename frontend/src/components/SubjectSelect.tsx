@@ -49,14 +49,14 @@ export default function SubjectSelect({ onSelectSubject }: SubjectSelectProps) {
     <div className="space-y-6">
       <section>
         <h1 className="mb-4 px-1 text-2xl font-semibold sm:text-3xl">Choose a subject</h1>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {SUBJECTS.map((item) => (
             <button
               key={item.subject}
               type="button"
               onClick={() => onSelectSubject(item.subject)}
               className={`group relative overflow-hidden rounded-3xl bg-gradient-to-br p-6 text-left text-white shadow-lg transition hover:-translate-y-1 hover:shadow-xl ${item.className} ${
-                SUBJECTS.length % 2 === 1 && item === SUBJECTS[SUBJECTS.length - 1] ? "sm:col-span-2" : ""
+                SUBJECTS.length % 2 === 1 && item === SUBJECTS[SUBJECTS.length - 1] ? "sm:col-span-2 lg:col-span-1" : ""
               }`}
             >
               <span className="pointer-events-none absolute -right-4 -top-4 flex gap-1 text-5xl opacity-25 transition group-hover:rotate-6" aria-hidden="true">
